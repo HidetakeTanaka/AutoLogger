@@ -1,3 +1,6 @@
+'''Problem : Implement heuristic baselines with shared JSON format; ensure reproducibility.
+Author : Farhana Easmin Mithila (Comperative System)
+ Date : 9-13 Nov'''
 import json
 from pathlib import Path
 
