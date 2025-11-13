@@ -1,0 +1,14 @@
+{
+  "file": "example.py",
+  "functions": [
+    {
+      "name": "add",
+      "start_line": 3,
+      "end_line": 7,
+      "candidates": [
+        { "kind": "entry", "line": 3 },
+        { "kind": "return", "line": 6 }
+      ]
+    }
+  ]
+}
