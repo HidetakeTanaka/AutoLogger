@@ -95,24 +95,24 @@ class Candidate:
     code: Optional[str] = None
     context_before: Optional[List[str]] = None
     context_after: Optional[List[str]] = None
+    severity_hint: str = "INFO"  # New field
+    vars_in_scope: List[str] = None  # New field
 
     @staticmethod
     def from_dict(data: Dict[str, Any], file_fallback: str) -> "Candidate":
-        """Create a Candidate from a parser JSON dict.
-
-        We are defensive here because we don't know the exact schema used
-        in your group. Adjust this mapping once you have parser/schema.py.
-        """
+        """Create a Candidate from a parser JSON dict."""
         return Candidate(
             file=data.get("file", file_fallback),
             id=int(data.get("id", data.get("candidate_id", 0))),
-            lineno=int(data.get("lineno", data.get("line", 0))),
+            lineno=int(data.get("line", data.get("lineno", 0))),
             col_offset=int(data.get("col_offset", data.get("indent", 0) or 0)),
-            kind=str(data.get("kind", data.get("type", "generic"))),
-            function=data.get("function") or data.get("func_name"),
-            code=data.get("code") or data.get("source"),
-            context_before=data.get("context_before") or data.get("before"),
-            context_after=data.get("context_after") or data.get("after"),
+            kind=str(data.get("kind", "generic")),
+            function=data.get("function"),
+            code=data.get("code"),
+            context_before=data.get("context_before", []),
+            context_after=data.get("context_after", []),
+            severity_hint=data.get("severity_hint", "INFO"),  # Default to INFO
+            vars_in_scope=data.get("vars_in_scope", []),  # Default to empty list
         )
 
 
@@ -170,6 +170,9 @@ def build_user_prompt(candidate: Candidate) -> str:
         lines.append("\nContext after:")
         lines.extend(candidate.context_after)
 
+    if candidate.vars_in_scope:
+        lines.append(f"\nVariables in scope: {', '.join(candidate.vars_in_scope)}")
+
     lines.append(
         "\nWrite ONE Python statement using the logging module that would be "
         "useful at this position. Do not add comments; return only the statement."
@@ -224,25 +227,22 @@ def heuristic_logging_line(prompt: str) -> str:
     )
 
 
-def extract_logging_line(llm_output: str) -> str:
-    """Extract a single logging line from the raw LLM output.
-
-    Our system prompt already asks for a single statement, but we are defensive
-    in case the LLM returns extra whitespace or explanations.
-    """
-    # Take the first non-empty, non-comment line.
+def extract_logging_line(llm_output: str, candidate: Candidate) -> str:
+    """Extract a logging line from the raw LLM output based on severity and variables."""
+    severity = candidate.severity_hint.lower()  # Use severity_hint (DEBUG, INFO, etc.)
+    
+    # Default log generation using the severity
+    log_line = f"logging.{severity}('Some log message for {candidate.function} with variables: {', '.join(candidate.vars_in_scope)}')"
+    
+    # Now extract the actual generated log line from LLM output
     for raw_line in llm_output.splitlines():
         line = raw_line.strip()
-        if not line:
-            continue
-        # If user used backticks or ```python blocks, strip them.
-        if line.startswith("```"):
-            continue
-        # We accept lines that start with logging.<level> or print(…) as a backup.
         if line.startswith("logging.") or line.startswith("print("):
-            return line
-    # Fallback: return everything as-is, hope it's just one statement
-    return llm_output.strip()
+            return line  # Return the first valid log line found
+
+    # Fallback if no valid log line is generated
+    return log_line
+
 
 
 # ---------------------------------------------------------------------------
