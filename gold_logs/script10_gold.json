@@ -1,8 +1,23 @@
 {
   "file": "script10.py",
   "logs": [
-    { "line": 1, "kind": "entry", "level": "INFO", "message": "Entering get_price" },
-    { "line": 6, "kind": "entry", "level": "INFO", "message": "Entering main" },
-    { "line": 7, "kind": "io", "level": "INFO", "message": "Printing price" }
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering get_price"
+    },
+    {
+      "line": 7,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 9,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing price"
+    }
   ]
 }
