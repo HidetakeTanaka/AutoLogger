@@ -6,8 +6,8 @@
       "line": 2,
       "end_line": 2,
       "function": "foo",
-      "class": null,
-      "code": "def foo(...):",
+      "class_name": null,
+      "code": "def foo(x, y):",
       "vars_in_scope": [
         "result",
         "x",
@@ -21,9 +21,13 @@
       "line": 4,
       "end_line": 4,
       "function": "foo",
-      "class": null,
+      "class_name": null,
       "code": "return result",
-      "vars_in_scope": [],
+      "vars_in_scope": [
+        "result",
+        "x",
+        "y"
+      ],
       "why": "before return",
       "severity_hint": "INFO"
     }
