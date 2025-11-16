@@ -1,0 +1,9 @@
+{
+  "file": "script7.py",
+  "logs": [
+    { "line": 1, "kind": "entry", "level": "INFO", "message": "Entering safe_div" },
+    { "line": 3, "kind": "except", "level": "ERROR", "message": "Zero division in safe_div" },
+    { "line": 7, "kind": "entry", "level": "INFO", "message": "Entering main" },
+    { "line": 8, "kind": "io", "level": "INFO", "message": "Printing division result" }
+  ]
+}
