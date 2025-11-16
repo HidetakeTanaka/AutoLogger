@@ -1,8 +1,23 @@
 {
   "file": "script8.py",
   "logs": [
-    { "line": 1, "kind": "entry", "level": "INFO", "message": "Entering is_even" },
-    { "line": 5, "kind": "entry", "level": "INFO", "message": "Entering main" },
-    { "line": 7, "kind": "io", "level": "INFO", "message": "Printing even/odd" }
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering is_even"
+    },
+    {
+      "line": 5,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 8,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing even/odd"
+    }
   ]
 }
