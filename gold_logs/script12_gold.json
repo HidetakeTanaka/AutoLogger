@@ -1,0 +1,11 @@
+{
+  "file": "script12.py",
+  "logs": [
+    { "line": 1, "kind": "entry", "level": "INFO", "message": "Entering cubic_function" },
+    { "line": 5, "kind": "entry", "level": "INFO", "message": "Entering generate_values" },
+    { "line": 12, "kind": "entry", "level": "INFO", "message": "Entering plot_function" },
+    { "line": 23, "kind": "entry", "level": "INFO", "message": "Entering main" },
+    { "line": 14, "kind": "io", "level": "INFO", "message": "Showing cubic plot" },
+    { "line": 25, "kind": "except", "level": "ERROR", "message": "Exception in main" }
+  ]
+}
