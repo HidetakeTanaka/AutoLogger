@@ -226,7 +226,6 @@ def heuristic_logging_line(prompt: str) -> str:
         f"logging.info('AutoLogger: reached candidate in function {func_name}')"
     )
 
-
 def extract_logging_line(llm_output: str, candidate: Candidate) -> str:
     """Extract a logging line from the raw LLM output based on severity and variables."""
     severity = candidate.severity_hint.lower()  # Use severity_hint (DEBUG, INFO, etc.)
@@ -242,6 +241,7 @@ def extract_logging_line(llm_output: str, candidate: Candidate) -> str:
 
     # Fallback if no valid log line is generated
     return log_line
+
 
 
 
@@ -291,7 +291,8 @@ def generate_logs_for_candidates(
     for cand in candidates:
         prompt = build_user_prompt(cand)
         llm_output = call_llm(prompt, model=model)
-        log_line = extract_logging_line(llm_output)
+        log_line = extract_logging_line(llm_output, candidate)
+
 
         if verbose:
             print(f"Candidate {cand.id} @ {cand.file}:{cand.lineno}")
