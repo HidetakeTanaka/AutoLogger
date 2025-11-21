@@ -1,6 +1,8 @@
 """ 
 parser.py - AST Parser for AutoLogger
 AST: Abstract Syntax Tree: to understand the code structure
+Updated to make it easier for all modules(LLM, baseline, dataset) to consume a consistent output format
+
 -------------------------------------
 Detects candidate positions for inserting logging statements. 
 Provides a Python API(extract_candidates) and a CLI that
