@@ -209,3 +209,6 @@ __marimo__/
 # macOS system files
 .DS_Store
 
+# VSCode personal workspace settings
+.vscode/
+
