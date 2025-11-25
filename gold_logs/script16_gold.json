@@ -1,0 +1,23 @@
+{
+  "file": "script16.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering filter_positive"
+    },
+    {
+      "line": 9,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 12,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing positive numbers"
+    }
+  ]
+}
