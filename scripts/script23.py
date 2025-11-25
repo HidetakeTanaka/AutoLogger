@@ -1,4 +1,3 @@
-# script23.py
 def normalize(values):
     if not values:
         return []
