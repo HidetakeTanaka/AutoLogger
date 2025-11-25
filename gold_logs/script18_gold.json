@@ -1,0 +1,23 @@
+{
+  "file": "script18.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering find_word"
+    },
+    {
+      "line": 11,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 14,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing word index"
+    }
+  ]
+}
