@@ -1,4 +1,3 @@
-# script20.py
 def average_length(words):
     if not words:
         return 0.0
