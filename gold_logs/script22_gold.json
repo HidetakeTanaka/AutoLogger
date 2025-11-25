@@ -1,0 +1,29 @@
+{
+  "file": "script22.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering read_numbers"
+    },
+    {
+      "line": 12,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 15,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing count of numbers"
+    },
+    {
+      "line": 16,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "numbers.txt file missing"
+    }
+  ]
+}
