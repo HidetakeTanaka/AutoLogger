@@ -47,7 +47,7 @@ This produces:
 
 2. Copy it into the baselines folder:
 
-        copy example.candidates.json baselines/parser_output.json
+   copy example.candidates.json baselines/parser_output.json
 
 
 Now the baseline code can run successfully
