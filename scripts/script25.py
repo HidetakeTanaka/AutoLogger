@@ -1,4 +1,3 @@
-# script25.py
 import math
 
 
