@@ -1,4 +1,3 @@
-# script18.py
 def find_word(text, word):
     if not text:
         return -1
