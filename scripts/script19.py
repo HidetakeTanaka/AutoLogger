@@ -1,4 +1,3 @@
-# script19.py
 def safe_get(d, key, default=None):
     try:
         return d[key]
