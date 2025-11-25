@@ -1,4 +1,3 @@
-# script17.py
 def factorial(n):
     if n < 0:
         raise ValueError("Negative not allowed")
