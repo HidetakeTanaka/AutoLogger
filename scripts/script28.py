@@ -1,4 +1,3 @@
-# script28.py
 def chunk_list(values, size):
     if size <= 0:
         raise ValueError("size must be positive")
