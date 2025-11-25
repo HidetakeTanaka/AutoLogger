@@ -1,4 +1,3 @@
-# script27.py
 def count_vowels(s):
     vowels = set("aeiouAEIOU")
     count = 0
