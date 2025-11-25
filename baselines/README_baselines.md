@@ -1,4 +1,4 @@
-# Project Title 
+# Project Title  
 AutoLogger – Baseline Module (Role C: Baseline Implementer)
 #  Author
 Farhana Easmin Mithila
