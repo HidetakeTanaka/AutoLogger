@@ -1,4 +1,3 @@
-# script16.py
 def filter_positive(nums):
     result = []
     for n in nums:
