@@ -1,0 +1,23 @@
+{
+  "file": "script20.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering average_length"
+    },
+    {
+      "line": 8,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 11,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing average length"
+    }
+  ]
+}
