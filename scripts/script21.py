@@ -1,4 +1,3 @@
-# script21.py
 def clamp(value, low, high):
     if low > high:
         raise ValueError("low cannot be greater than high")
