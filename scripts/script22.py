@@ -1,4 +1,3 @@
-# script22.py
 def read_numbers(path):
     numbers = []
     with open(path) as f:
