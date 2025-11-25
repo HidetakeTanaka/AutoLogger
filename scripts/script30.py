@@ -1,4 +1,3 @@
-# script30.py
 def remove_duplicates(items):
     seen = set()
     result = []
