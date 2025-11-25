@@ -1,4 +1,3 @@
-# script29.py
 def median(values):
     if not values:
         return None
