@@ -1,0 +1,29 @@
+{
+  "file": "script25.py",
+  "logs": [
+    {
+      "line": 4,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering circle_area"
+    },
+    {
+      "line": 6,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "Negative radius error"
+    },
+    {
+      "line": 10,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 13,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing circle area"
+    }
+  ]
+}
