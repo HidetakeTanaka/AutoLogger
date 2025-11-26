@@ -64,6 +64,25 @@ Examples:
 
 Uses HuggingFace’s cloud-hosted inference API.
 
+### Design Highlights
+
+Modular backend selection (--provider)
+Robust fallback to prevent failure on quota/timeouts
+Single-line logging extraction enforcement
+Provider-agnostic architecture for future expansion
+Compatible with baseline and evaluation modules
+
+### Future Improvements
+
+Add Claude, Gemini, and Mistral as optional providers.
+Improve prompt tuning to utilise variables better.
+Add caching for repeated prompts.
+Support structured logging formats (JSON logs).
+
+Author
+Role: LLM Integration Engineer
+Contribution: Design, development and integration of LLM backend for AutoLogger.
+
 ---
 
 ## Setup Instructions
@@ -145,33 +164,10 @@ The system falls back to a simple heuristic log:
 
 logging.info("AutoLogger: reached candidate in function foo")
 
-
 This ensures the system never crashes and always produces output.
 
-### Design Highlights
 
-Modular backend selection (--provider)
 
-Robust fallback to prevent failure on quota/timeouts
 
-Single-line logging extraction enforcement
 
-Provider-agnostic architecture for future expansion
-
-Compatible with baseline and evaluation modules
-
-### Future Improvements
-
-Add Claude, Gemini, and Mistral as optional providers.
-
-Improve prompt tuning for better variable usage.
-
-Add caching for repeated prompts.
-
-Support structured logging formats (JSON logs).
-
-Author
-
-Role: LLM Integration Engineer
-Contribution: Design, development and integration of LLM backend for AutoLogger.
 
