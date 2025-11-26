@@ -1,0 +1,23 @@
+{
+  "file": "script4.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering add"
+    },
+    {
+      "line": 5,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 8,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing sum"
+    }
+  ]
+}

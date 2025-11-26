@@ -1,0 +1,41 @@
+{
+  "file": "script15.py",
+  "logs": [
+    {
+      "line": 6,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering surface_function"
+    },
+    {
+      "line": 11,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering generate_grid"
+    },
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering plot_surface"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 29,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Showing surface plot"
+    },
+    {
+      "line": 37,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "Exception in main"
+    }
+  ]
+}

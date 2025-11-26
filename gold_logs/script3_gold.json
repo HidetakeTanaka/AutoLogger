@@ -1,0 +1,29 @@
+{
+  "file": "script3.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering count_lines"
+    },
+    {
+      "line": 2,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Opening file"
+    },
+    {
+      "line": 6,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 9,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "File not found in main"
+    }
+  ]
+}
