@@ -1,0 +1,15 @@
+{
+  "file": "sample1.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 4,
+      "level": "WARNING",
+      "message": "Random log at line 4 in foo",
+      "kind": "return",
+      "function": "foo"
+    }
+  ]
+}

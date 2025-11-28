@@ -26,7 +26,7 @@ def run_random_baseline():
     with input_path.open("r", encoding="utf-8") as f:
         data = json.load(f)
 
-    file_path = data.get("file", "UNKNOWN")
+    file_path = Path(data.get("file", "UNKNOWN")).name
     candidates = data.get("candidates", [])
 
     logs = []

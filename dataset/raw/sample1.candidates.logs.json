@@ -6,14 +6,14 @@
       "lineno": 2,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug('AutoLogger: reached candidate in function foo')"
+      "log_code": "logging.debug(\"Entering foo with x=%r, y=%r\", x, y)"
     },
     {
       "candidate_id": 1,
       "lineno": 4,
       "col_offset": 0,
       "kind": "before_return",
-      "log_code": "logging.info('AutoLogger: reached candidate in function foo')"
+      "log_code": "logging.info(\"foo returning result=%r for inputs x=%r, y=%r\", result, x, y)"
     }
   ]
 }
