@@ -1,5 +1,5 @@
 {
-  "file": "dataset/raw/sample1.py",
+  "file": "sample1.py",
   "baseline_type": "heuristic",
   "logs": [
     {
