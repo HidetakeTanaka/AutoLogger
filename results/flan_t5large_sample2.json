@@ -1,0 +1,59 @@
+{
+  "file": "sample2.py",
+  "logs": [
+    {
+      "line": 2,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function process_numbers')"
+    },
+    {
+      "line": 7,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function process_numbers')"
+    },
+    {
+      "line": 11,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function safe_division')"
+    },
+    {
+      "line": 14,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('AutoLogger: reached candidate in function safe_division')"
+    },
+    {
+      "line": 16,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function safe_division')"
+    },
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function outer_function')"
+    },
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function inner_function')"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function inner_function')"
+    },
+    {
+      "line": 22,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function outer_function')"
+    }
+  ]
+}

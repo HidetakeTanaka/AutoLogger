@@ -1,0 +1,59 @@
+{
+  "file": "sample2.py",
+  "logs": [
+    {
+      "line": 2,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered process_numbers with nums={nums}\")"
+    },
+    {
+      "line": 7,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Returning total sum {total} for numbers {nums}\")"
+    },
+    {
+      "line": 11,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered safe_division with a={a}, b={b}\")"
+    },
+    {
+      "line": 14,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(\"Error in safe_division with a=%s, b=%s\", a, b, exc_info=True)"
+    },
+    {
+      "line": 16,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Returning result of safe_division: {result} for inputs a={a}, b={b}\")"
+    },
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered outer_function with x={x}\")"
+    },
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered inner_function with argument y={y}\")"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Returning value: {y * 2}\")"
+    },
+    {
+      "line": 22,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Returning result of inner_function with input x={x}\")"
+    }
+  ]
+}
