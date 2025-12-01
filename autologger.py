@@ -3,58 +3,33 @@ autologger.py
 
 LLM integration module for the AutoLogger project.
 
-This script reads parser output JSON files like `sample1.candidates.json`,
-sends each candidate logging position to an LLM (OpenAI GPT or Flan-T5 via
-HuggingFace Inference API) to generate a concrete logging statement, and
-writes out a new JSON file that other components can consume.
+NEW BEHAVIOUR (per evaluation feedback)
+---------------------------------------
+The LLM no longer always inserts a log for every candidate.
 
-Expected input JSON schema (from parser)
-----------------------------------------
-Example:
+Instead, for each candidate the LLM must decide:
 
-{
-  "file": "dataset/raw/sample1.py",
-  "candidates": [
-    {
-      "kind": "func_entry",
-      "line": 2,
-      "end_line": 2,
-      "function": "foo",
-      "class_name": null,
-      "code": "def foo(x, y):",
-      "vars_in_scope": ["result", "x", "y"],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "before_return",
-      "line": 4,
-      "end_line": 4,
-      "function": "foo",
-      "class_name": null,
-      "code": "return result",
-      "vars_in_scope": ["result", "x", "y"],
-      "why": "before return",
-      "severity_hint": "INFO"
-    }
-  ]
-}
+  - should_log: true/false
+  - log_code:  string with ONE Python logging statement (if should_log is true)
 
-Output JSON schema (produced by this script)
---------------------------------------------
-{
-  "file": "dataset/raw/sample1.py",
-  "logs": [
-    {
-      "candidate_id": 0,
-      "lineno": 2,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.debug('Entering foo with x=%s, y=%s', x, y)"
-    },
-    ...
-  ]
-}
+The LLM response is expected to be JSON like:
+
+  { "should_log": true,  "log_code": "logging.info('...')" }
+
+or
+
+  { "should_log": false, "log_code": "" }
+
+autologger.py will:
+
+  - Parse this JSON.
+  - Skip candidates where should_log == false.
+  - Only add entries to predictions[] for candidates with should_log == true.
+
+This allows meaningful evaluation of:
+  - GPT-4.1-mini vs GPT-5.1
+  - OpenAI vs Flan-T5
+  - Different precision/recall trade-offs.
 """
 
 from __future__ import annotations
@@ -62,9 +37,10 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 import requests
 
@@ -91,8 +67,8 @@ class Candidate:
     function: Optional[str] = None
     class_name: Optional[str] = None
     code: Optional[str] = None
-    context_before: Optional[List[str]] = None
-    context_after: Optional[List[str]] = None
+    context_before: List[str] = field(default_factory=list)
+    context_after: List[str] = field(default_factory=list)
     severity_hint: str = "INFO"
     vars_in_scope: List[str] = field(default_factory=list)
     why: Optional[str] = None
@@ -109,8 +85,8 @@ class Candidate:
             function=data.get("function"),
             class_name=data.get("class_name"),
             code=data.get("code"),
-            context_before=data.get("context_before") or [],
-            context_after=data.get("context_after") or [],
+            context_before=list(data.get("context_before") or []),
+            context_after=list(data.get("context_after") or []),
             severity_hint=str(data.get("severity_hint", "INFO")).upper(),
             vars_in_scope=list(data.get("vars_in_scope") or []),
             why=data.get("why"),
@@ -143,14 +119,18 @@ class LogPrediction:
 
 
 DEFAULT_SYSTEM_PROMPT = (
-    "You are an assistant that writes concise, high-quality Python logging "
-    "statements for existing code.\n"
-    "You receive a code snippet and metadata about where a log should be inserted.\n"
-    "Return exactly ONE Python statement using the standard 'logging' module.\n"
-    "- Use the suggested severity level if provided (DEBUG/INFO/WARNING/ERROR).\n"
-    "- Use the variables in scope when appropriate.\n"
-    "- Do NOT include any comments, extra text, or surrounding code.\n"
-    "- Prefer clear, informative messages, not too long."
+    "You are an assistant that decides whether a Python logging statement "
+    "should be inserted at a given code location, and if so, generates it.\n\n"
+    "You must respond ONLY with a SINGLE JSON object, without any extra text "
+    "or markdown code fences.\n\n"
+    "The JSON format MUST be exactly:\n"
+    '{ "should_log": true/false, "log_code": "<python_logging_statement_or_empty_string>" }\n\n'
+    "- If a log would be useful here, set should_log to true and log_code to a single "
+    "Python statement starting with logging.<level>(...).\n"
+    "- If no log is needed, set should_log to false and log_code to an empty string.\n"
+    "- Use the suggested severity level if provided (DEBUG/INFO/WARNING/ERROR/CRITICAL).\n"
+    "- Use variables in scope when appropriate.\n"
+    "- Do NOT include comments, explanations, or surrounding code."
 )
 
 
@@ -187,9 +167,9 @@ def build_user_prompt(candidate: Candidate) -> str:
         )
 
     lines.append(
-        "\nWrite ONE Python logging statement that would be useful at this position. "
-        "It must be a single line starting with logging.<level>(...). "
-        "Return only that statement, nothing else."
+        "\nDecide if a log is needed here. "
+        "Remember to respond ONLY with JSON of the form:\n"
+        '{ "should_log": true/false, "log_code": "logging.<level>(...)" }'
     )
 
     return "\n".join(lines)
@@ -204,9 +184,26 @@ def call_openai_chat(prompt: str, model: str) -> str:
     """Call an OpenAI chat model (e.g., gpt-4.1, gpt-4.1-mini, gpt-5.1)."""
     api_key = os.environ.get("OPENAI_API_KEY")
     if openai is None or not api_key:
-        return heuristic_logging_line(prompt)
+        return heuristic_decision_json(prompt)
 
     client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
+
+ feature/llm-1
+    try:
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": DEFAULT_SYSTEM_PROMPT},
+                {"role": "user", "content": prompt},
+            ],
+            max_tokens=120,
+            temperature=0.2,
+        )
+        text = response.choices[0].message.content or ""
+        return text.strip()
+    except Exception:
+        # On any error (including insufficient_quota), fall back
+        return heuristic_decision_json(prompt)
 
     response = client.chat.completions.create(
         model=model,
@@ -220,6 +217,7 @@ def call_openai_chat(prompt: str, model: str) -> str:
 
     text = response.choices[0].message.content or ""
     return text.strip()
+  main
 
 
 def call_flan_t5_hf(prompt: str, model: str) -> str:
@@ -230,7 +228,7 @@ def call_flan_t5_hf(prompt: str, model: str) -> str:
     """
     hf_key = os.environ.get("HUGGINGFACE_API_KEY")
     if not hf_key:
-        return heuristic_logging_line(prompt)
+        return heuristic_decision_json(prompt)
 
     url = f"https://api-inference.huggingface.co/models/{model}"
     headers = {
@@ -238,9 +236,9 @@ def call_flan_t5_hf(prompt: str, model: str) -> str:
         "Content-Type": "application/json",
     }
     payload = {
-        "inputs": prompt,
+        "inputs": f"{DEFAULT_SYSTEM_PROMPT}\n\nUSER PROMPT:\n{prompt}",
         "parameters": {
-            "max_new_tokens": 80,
+            "max_new_tokens": 120,
             "temperature": 0.2,
         },
     }
@@ -250,7 +248,7 @@ def call_flan_t5_hf(prompt: str, model: str) -> str:
         resp.raise_for_status()
         data = resp.json()
     except Exception:
-        return heuristic_logging_line(prompt)
+        return heuristic_decision_json(prompt)
 
     # HF typically returns a list of dicts with "generated_text"
     if isinstance(data, list) and data:
@@ -258,12 +256,14 @@ def call_flan_t5_hf(prompt: str, model: str) -> str:
         if isinstance(first, dict) and "generated_text" in first:
             return str(first["generated_text"]).strip()
 
-    # Fallback: string representation
-    return heuristic_logging_line(prompt)
+    return heuristic_decision_json(prompt)
 
 
 def call_llm(prompt: str, model: str, provider: str) -> str:
-    """Unified entry point for all LLM providers."""
+    """Unified entry point for all LLM providers.
+
+    Returns the raw text output from the model (expected to be JSON).
+    """
     provider = (provider or "openai").lower()
 
     if provider == "openai":
@@ -272,47 +272,96 @@ def call_llm(prompt: str, model: str, provider: str) -> str:
         return call_flan_t5_hf(prompt, model=model)
     else:
         # Unknown provider → fallback
-        return heuristic_logging_line(prompt)
+        return heuristic_decision_json(prompt)
 
 
-def heuristic_logging_line(prompt: str) -> str:
-    """Cheap fallback log line when no LLM is available or provider fails.
+# ---------------------------------------------------------------------------
+# JSON parsing & heuristic fallback
+# ---------------------------------------------------------------------------
 
-    We try to guess a useful message from the prompt, but keep it simple.
+
+def heuristic_decision_json(prompt: str) -> str:
+    """Fallback JSON decision when no LLM is available or call fails.
+
+    Very simple strategy:
+      - Always log (should_log = true)
+      - Use a generic INFO log mentioning the function name.
     """
     func_name = "unknown"
-    severity = "info"
+    severity = "INFO"
 
     for line in prompt.splitlines():
         if line.startswith("Enclosing function:"):
             func_name = line.split(":", 1)[1].strip()
         if line.startswith("Suggested severity:"):
-            sev = line.split(":", 1)[1].strip().lower()
-            if sev in {"debug", "info", "warning", "error", "critical"}:
+            sev = line.split(":", 1)[1].strip().upper()
+            if sev in {"DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"}:
                 severity = sev
 
-    return (
-        f"logging.{severity}('AutoLogger: reached candidate in function {func_name}')"
+    log_code = (
+        f"logging.{severity.lower()}('AutoLogger: reached candidate in function {func_name}')"
     )
 
+    decision = {
+        "should_log": True,
+        "log_code": log_code,
+    }
+    return json.dumps(decision)
 
-def extract_logging_line(llm_output: str) -> str:
-    """Extract a single logging line from the raw LLM output.
 
-    Our prompts already ask for a single statement, but we are defensive
-    in case the LLM returns extra whitespace or explanations.
+def parse_llm_decision(
+    raw_output: str, candidate: Candidate
+) -> Tuple[bool, str]:
+    """Parse LLM output into (should_log, log_code).
+
+    raw_output is expected to be a JSON object as a string, but we are defensive:
+      - Strip markdown code fences.
+      - Extract the first {...} block if needed.
+      - On failure, fall back to the heuristic decision.
     """
-    for raw_line in llm_output.splitlines():
-        line = raw_line.strip()
-        if not line:
-            continue
-        if line.startswith("```"):
-            continue
-        if line.startswith("logging."):
-            return line
-        if line.startswith("print("):
-            return line
-    return llm_output.strip()
+    text = raw_output.strip()
+
+    # Remove markdown code fences if present
+    if text.startswith("```"):
+        # Remove lines starting and ending with ```
+        lines = [
+            line for line in text.splitlines()
+            if not line.strip().startswith("```")
+        ]
+        text = "\n".join(lines).strip()
+
+    # Try direct JSON parsing first
+    def _try_parse(s: str) -> Optional[Dict[str, Any]]:
+        try:
+            return json.loads(s)
+        except Exception:
+            return None
+
+    data = _try_parse(text)
+
+    # If that fails, try to locate a JSON object using a regex
+    if data is None:
+        match = re.search(r"\{.*\}", text, flags=re.DOTALL)
+        if match:
+            data = _try_parse(match.group(0))
+
+    # If parsing still failed, fall back to heuristic
+    if data is None or not isinstance(data, dict):
+        fallback = json.loads(heuristic_decision_json(build_user_prompt(candidate)))
+        return bool(fallback.get("should_log", True)), str(
+            fallback.get("log_code", "")
+        )
+
+    should_log = bool(data.get("should_log", True))
+    log_code = str(data.get("log_code", "")).strip()
+
+    # Basic sanitisation: if should_log is true but log_code is empty, fall back
+    if should_log and not log_code:
+        fallback = json.loads(heuristic_decision_json(build_user_prompt(candidate)))
+        should_log = bool(fallback.get("should_log", True))
+        log_code = str(fallback.get("log_code", "")).strip()
+
+    return should_log, log_code
 
 
 # ---------------------------------------------------------------------------
@@ -352,23 +401,31 @@ def generate_logs_for_candidates(
     provider: str,
     verbose: bool = False,
 ) -> List[LogPrediction]:
-    """Run the LLM over all candidates and return predictions."""
+    """Run the LLM over all candidates and return predictions.
+
+    IMPORTANT CHANGE:
+      - We only add a LogPrediction when the LLM (or heuristic) returns
+        should_log == True.
+    """
     predictions: List[LogPrediction] = []
 
     for cand in candidates:
         prompt = build_user_prompt(cand)
-        llm_output = call_llm(prompt, model=model, provider=provider)
-        log_line = extract_logging_line(llm_output)
+        raw_output = call_llm(prompt, model=model, provider=provider)
+        should_log, log_line = parse_llm_decision(raw_output, cand)
 
         if verbose:
             print(f"Candidate {cand.id} @ {cand.file}:{cand.lineno}")
             print("Prompt:")
             print(prompt)
-            print("LLM output:")
-            print(llm_output)
-            print("Chosen log line:")
-            print(log_line)
+            print("Raw LLM output:")
+            print(raw_output)
+            print(f"Parsed decision: should_log={should_log}, log_code={log_line}")
             print("-" * 80)
+
+        if not should_log:
+            # Skip this candidate entirely
+            continue
 
         predictions.append(
             LogPrediction(
@@ -411,7 +468,7 @@ def write_predictions(
 def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "AutoLogger LLM module.\n\n"
+            "AutoLogger LLM module with JSON yes/no decisions.\n\n"
             "Examples:\n"
             "  python autologger.py sample1.candidates.json -o sample1.logs.json\n"
             "  python autologger.py sample1.candidates.json --provider flan "
