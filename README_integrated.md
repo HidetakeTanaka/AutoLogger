@@ -224,15 +224,15 @@ A1. Add your API key:
 export OPENAI_API_KEY="your_key_here"
 
 ```
-
-Q2. If HuggingFace model not available?
+<br>
+Q2. If HuggingFace model not available?<br>
 A2. Install additional packages:
 ```bash
 pip install transformers accelerate
 
 ```
 
-Q3. If UTF-8 encoding issues on Windows?
+Q3. If UTF-8 encoding issues on Windows? <br>
 A3. Use this code below:
 ```bash
 export PYTHONUTF8=1
