@@ -1,0 +1,21 @@
+# Core dependencies for AutoLogger
+astor
+tqdm
+
+# OpenAI LLM support
+openai>=1.23.0
+
+# HuggingFace / Flan-T5 support
+transformers>=4.40.0
+accelerate>=0.28.0
+sentencepiece  # for T5 tokenizer
+
+# Environment variable loading (optional but recommended)
+python-dotenv
+
+# JSON and evaluation utilities
+jsonschema
+numpy
+
+# If you use colored logs or rich printing
+rich

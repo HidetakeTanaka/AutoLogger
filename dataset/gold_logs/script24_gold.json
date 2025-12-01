@@ -1,0 +1,23 @@
+{
+  "file": "script24.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering is_palindrome"
+    },
+    {
+      "line": 6,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 9,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing palindrome result"
+    }
+  ]
+}

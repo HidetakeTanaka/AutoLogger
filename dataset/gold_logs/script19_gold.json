@@ -1,0 +1,35 @@
+{
+  "file": "script19.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering safe_get"
+    },
+    {
+      "line": 4,
+      "kind": "except",
+      "level": "WARNING",
+      "message": "KeyError handled in safe_get"
+    },
+    {
+      "line": 8,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 12,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing host"
+    },
+    {
+      "line": 13,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing timeout"
+    }
+  ]
+}

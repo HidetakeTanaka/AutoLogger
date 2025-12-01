@@ -1,0 +1,23 @@
+{
+  "file": "script27.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering count_vowels"
+    },
+    {
+      "line": 10,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 13,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing vowel count"
+    }
+  ]
+}

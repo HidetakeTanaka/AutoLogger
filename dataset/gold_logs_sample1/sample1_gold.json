@@ -1,0 +1,17 @@
+{
+  "file": "sample1.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering foo"
+    },
+    {
+      "line": 4,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning result in foo"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "file": "sample2.py",
+  "logs": [
+    {
+      "line": 2,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(\"Entering process_numbers with %d numbers: %s\", len(nums) if nums is not None else 0, nums)"
+    },
+    {
+      "line": 7,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(\"process_numbers returning total=%s for nums=%s\", total, nums)"
+    },
+    {
+      "line": 11,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(\"Entering safe_division with a=%s, b=%s\", a, b)"
+    },
+    {
+      "line": 14,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(\"Error in safe_division with a=%s, b=%s; partial result=%s\", a, b, result, exc_info=True)"
+    },
+    {
+      "line": 16,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(\"safe_division returning result=%s for a=%s, b=%s\", result, a, b)"
+    },
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(\"Entering outer_function with x=%r\", x)"
+    },
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(\"Entered inner_function with y=%r\", y)"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(\"inner_function returning result %s from input y=%s\", y * 2, y)"
+    },
+    {
+      "line": 22,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(\"outer_function returning result of inner_function with x=%r\", x)"
+    }
+  ]
+}

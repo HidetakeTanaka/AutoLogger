@@ -1,0 +1,23 @@
+{
+  "file": "script5.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering find_max"
+    },
+    {
+      "line": 7,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 9,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing max value"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "file": "script6.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering reverse"
+    },
+    {
+      "line": 7,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 8,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing reversed string"
+    }
+  ]
+}

@@ -188,6 +188,7 @@ def call_openai_chat(prompt: str, model: str) -> str:
 
     client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
 
+ feature/llm-1
     try:
         response = client.chat.completions.create(
             model=model,
@@ -203,6 +204,20 @@ def call_openai_chat(prompt: str, model: str) -> str:
     except Exception:
         # On any error (including insufficient_quota), fall back
         return heuristic_decision_json(prompt)
+
+    response = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": DEFAULT_SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+        ],
+        max_completion_tokens=200,
+        temperature=0.2,
+    )
+
+    text = response.choices[0].message.content or ""
+    return text.strip()
+  main
 
 
 def call_flan_t5_hf(prompt: str, model: str) -> str:

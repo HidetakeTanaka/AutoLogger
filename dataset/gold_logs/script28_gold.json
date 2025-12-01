@@ -1,0 +1,29 @@
+{
+  "file": "script28.py",
+  "logs": [
+    {
+      "line": 1,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering chunk_list"
+    },
+    {
+      "line": 3,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "Invalid chunk size"
+    },
+    {
+      "line": 10,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Entering main"
+    },
+    {
+      "line": 13,
+      "kind": "io",
+      "level": "INFO",
+      "message": "Printing chunks"
+    }
+  ]
+}
