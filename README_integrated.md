@@ -222,21 +222,20 @@ openai.error.AuthenticationError: No API key provided.
 A1. Add your API key:
 ```bash
 export OPENAI_API_KEY="your_key_here"
-
 ```
 <br>
 Q2. If HuggingFace model not available?<br>
 A2. Install additional packages:
+
 ```bash
 pip install transformers accelerate
-
 ```
-
+<br>
 Q3. If UTF-8 encoding issues on Windows? <br>
 A3. Use this code below:
+
 ```bash
 export PYTHONUTF8=1
-
 ```
 
 ---
