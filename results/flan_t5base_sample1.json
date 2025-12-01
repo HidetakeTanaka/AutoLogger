@@ -1,0 +1,17 @@
+{
+  "file": "sample1.py",
+  "logs": [
+    {
+      "line": 2,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function foo')"
+    },
+    {
+      "line": 4,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function foo')"
+    }
+  ]
+}

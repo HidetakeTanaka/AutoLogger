@@ -1,0 +1,43 @@
+{
+  "file": "sample2.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 7,
+      "level": "WARNING",
+      "message": "Random log at line 7 in process_numbers",
+      "kind": "return",
+      "function": "process_numbers"
+    },
+    {
+      "line": 11,
+      "level": "INFO",
+      "message": "Random log at line 11 in safe_division",
+      "kind": "entry",
+      "function": "safe_division"
+    },
+    {
+      "line": 21,
+      "level": "ERROR",
+      "message": "Random log at line 21 in inner_function",
+      "kind": "entry",
+      "function": "inner_function"
+    },
+    {
+      "line": 21,
+      "level": "DEBUG",
+      "message": "Random log at line 21 in inner_function",
+      "kind": "return",
+      "function": "inner_function"
+    },
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Random log at line 22 in outer_function",
+      "kind": "return",
+      "function": "outer_function"
+    }
+  ]
+}

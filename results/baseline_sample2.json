@@ -1,0 +1,69 @@
+{
+  "file": "sample2.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 2,
+      "level": "DEBUG",
+      "message": "Entering process_numbers",
+      "kind": "entry",
+      "function": "process_numbers"
+    },
+    {
+      "line": 7,
+      "level": "INFO",
+      "message": "Exiting process_numbers",
+      "kind": "return",
+      "function": "process_numbers"
+    },
+    {
+      "line": 11,
+      "level": "DEBUG",
+      "message": "Entering safe_division",
+      "kind": "entry",
+      "function": "safe_division"
+    },
+    {
+      "line": 14,
+      "level": "ERROR",
+      "message": "Exception in safe_division",
+      "kind": "except",
+      "function": "safe_division"
+    },
+    {
+      "line": 16,
+      "level": "INFO",
+      "message": "Exiting safe_division",
+      "kind": "return",
+      "function": "safe_division"
+    },
+    {
+      "line": 20,
+      "level": "DEBUG",
+      "message": "Entering outer_function",
+      "kind": "entry",
+      "function": "outer_function"
+    },
+    {
+      "line": 21,
+      "level": "DEBUG",
+      "message": "Entering inner_function",
+      "kind": "entry",
+      "function": "inner_function"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Exiting inner_function",
+      "kind": "return",
+      "function": "inner_function"
+    },
+    {
+      "line": 22,
+      "level": "INFO",
+      "message": "Exiting outer_function",
+      "kind": "return",
+      "function": "outer_function"
+    }
+  ]
+}

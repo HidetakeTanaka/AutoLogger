@@ -1,0 +1,20 @@
+{
+  "file": "sample1.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 2,
+      "level": "DEBUG",
+      "message": "Entering foo",
+      "kind": "entry",
+      "function": "foo"
+    },
+    {
+      "line": 4,
+      "level": "INFO",
+      "message": "Exiting foo",
+      "kind": "return",
+      "function": "foo"
+    }
+  ]
+}

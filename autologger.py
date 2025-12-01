@@ -214,7 +214,7 @@ def call_openai_chat(prompt: str, model: str) -> str:
             {"role": "system", "content": DEFAULT_SYSTEM_PROMPT},
             {"role": "user", "content": prompt},
         ],
-        max_tokens=80,
+        max_completion_tokens=200,
         temperature=0.2,
     )
 

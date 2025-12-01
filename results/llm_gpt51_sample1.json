@@ -1,0 +1,17 @@
+{
+  "file": "sample1.py",
+  "logs": [
+    {
+      "line": 2,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(\"Entering foo with x=%r, y=%r\", x, y)"
+    },
+    {
+      "line": 4,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(\"foo returning result=%r for inputs x=%r, y=%r\", result, x, y)"
+    }
+  ]
+}

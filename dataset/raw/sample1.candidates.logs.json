@@ -1,0 +1,19 @@
+{
+  "file": "sample1.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 2,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('AutoLogger: reached candidate in function foo')"
+    },
+    {
+      "candidate_id": 1,
+      "lineno": 4,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('AutoLogger: reached candidate in function foo')"
+    }
+  ]
+}
