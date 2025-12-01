@@ -7,7 +7,10 @@ against human-annotated gold standard data.
 This project is inspired by **UniLog (ICSE 2024)** and developed as part of the
 Software Engineering course at HSRW.
 
+
+
 ---
+
 
 ## Features
 - Python **AST-based analysis** to extract candidate logging locations
@@ -16,12 +19,14 @@ Software Engineering course at HSRW.
   - OpenAI GPT-4.1-mini
   - OpenAI GPT-5.1
   - Google Flan-T5 (base / large)
-- Unified evaluation pipeline with:
+- **Unified evaluation pipeline with:**
   - True Positives (TP)
   - False Positives (FP)
   - False Negatives (FN)
   - Precision, Recall, F1-score
   - (Optional) Position accuracy metrics
+
+
 
 ---
 
@@ -31,6 +36,7 @@ Software Engineering course at HSRW.
 ```bash
 git clone https://github.com/<your-username>/AutoLogger.git
 cd AutoLogger
+
 ```
 
 
@@ -40,6 +46,7 @@ cd AutoLogger
 python3 -m venv venv
 source venv/bin/activate     # macOS/Linux
 venv\Scripts\activate        # Windows
+
 ```
 
 
@@ -47,14 +54,19 @@ venv\Scripts\activate        # Windows
 ## 1.3. Install Dependencies
 ```bash
 pip install -r requirements.txt
+
 ```
 
 
 
-## 1.4. Configure API Keys (if using OpenAI)
+## 1.4. Configure API Keys (we use OpenAI for GPT and HuggingFace for Flan-T5)
 ```bash
 export OPENAI_API_KEY="your_key_here"
+export HUGGINGFACE_API_KEY="your_key_here"
+
 ```
+
+
 
 ---
 
@@ -81,6 +93,7 @@ AutoLogger/
   │     ├── run_eval_sample2.sh
   │     └── scriptXX.py
   └── README.md
+
 ```
 
 ---
@@ -94,10 +107,11 @@ pipeline.
 ```bash
 cd scripts
 ./run_eval_sample1.sh
+
 ```
 
 
-This will run:
+This will run the following proceduces...:
 * Heuristic baseline
 * Random baseline
 * LLM (GPT-4.1-mini)
@@ -111,6 +125,7 @@ Outputs will be stored in:
 baselines/
 dataset/raw/
 results/
+
 ```
 
 
@@ -118,19 +133,20 @@ results/
 ## 3.2. Run Sample 2
 ```bash
 ./run_eval_sample2.sh
+
 ```
 ---
 
 # 4. Understanding Evaluation Metrics
 Each evaluation produces the following values:
 
-True Positives (TP)
+**True Positives (TP):**<br>
 The model inserted a log statement at a location that is also annotated in the gold labels.
 
-False Positives (FP)
+**False Positives (FP):** <br>
 The model inserted a log in a location that is not in the gold labels.
 
-False Negatives (FN)
+**False Negatives (FN)**: <br>
 The model missed a gold-label location.
 
 ### Precision
@@ -146,7 +162,7 @@ Recall = TP / (TP + FN)
 F1 = 2 * (Precision * Recall) / (Precision + Recall)
 ```
 
-All metrics are printed automatically in the console after each model/baseline finishes.
+All metrics are printed automatically in the console after each model/baseline finishes!
 
 ---
 
@@ -156,20 +172,24 @@ All metrics are printed automatically in the console after each model/baseline f
 ```bash
 baselines/results_heuristic.json
 baselines/results_random.json
+
 ```
 
 ## 5.2. LLM raw predictions
 ```bash
 dataset/raw/<filename>.candidates.logs.json
+
 ```
 
 ## 5.3. LLM converted predictions
-```php-template
+```bash
 results/llm_<model>_<script>.json
+
 ```
 
 ## 5.4. Final evaluation summaries
 Printed in terminal and stored inside results/.
+<br>
 
 ---
 
@@ -190,36 +210,41 @@ dataset/gold/
 ```bash
 ./scripts/run_eval_dataset.sh
 ```
+<br>
 
 # 7. Troubleshooting
-No API key found
-```vbnet
+Q1. If no API key found like this below?: 
+```bash
 openai.error.AuthenticationError: No API key provided.
+
 ```
 
-→ Add:
+A1. Add your API key:
 ```bash
 export OPENAI_API_KEY="your_key_here"
+
 ```
 
-HuggingFace model not available
-Install additional packages:
+Q2. If HuggingFace model not available?
+A2. Install additional packages:
 ```bash
 pip install transformers accelerate
+
 ```
 
-UTF-8 encoding issues on Windows
-Use:
+Q3. If UTF-8 encoding issues on Windows?
+A3. Use this code below:
 ```bash
 export PYTHONUTF8=1
+
 ```
 
 ---
 
 # 8. Authors
-Developed by Team A/B/C/D (Software Engineering 2025, HSRW):
+Developed by Group 7 (Software Engineering WS2025/26, HSRW):
 
-A: AST Parser Developer: Hidetake Tanaka
+A: AST Parser Developer: Hidetake Tanaka(34254)
 
 B: LLM Integration: Khushi
 
