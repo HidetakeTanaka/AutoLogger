@@ -1,0 +1,167 @@
+{
+  "file": "script31.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 31,
+      "level": "DEBUG",
+      "message": "Entering score_ratio",
+      "kind": "entry",
+      "function": "score_ratio"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting score_ratio",
+      "kind": "return",
+      "function": "score_ratio"
+    },
+    {
+      "line": 33,
+      "level": "INFO",
+      "message": "Exiting score_ratio",
+      "kind": "return",
+      "function": "score_ratio"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Entering is_suspicious",
+      "kind": "entry",
+      "function": "is_suspicious"
+    },
+    {
+      "line": 38,
+      "level": "INFO",
+      "message": "Exiting is_suspicious",
+      "kind": "return",
+      "function": "is_suspicious"
+    },
+    {
+      "line": 41,
+      "level": "INFO",
+      "message": "Exiting is_suspicious",
+      "kind": "return",
+      "function": "is_suspicious"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Entering ensure_data_dir",
+      "kind": "entry",
+      "function": "ensure_data_dir"
+    },
+    {
+      "line": 49,
+      "level": "DEBUG",
+      "message": "Entering generate_sample_attempts",
+      "kind": "entry",
+      "function": "generate_sample_attempts"
+    },
+    {
+      "line": 76,
+      "level": "DEBUG",
+      "message": "Entering load_attempts",
+      "kind": "entry",
+      "function": "load_attempts"
+    },
+    {
+      "line": 99,
+      "level": "ERROR",
+      "message": "Exception in load_attempts",
+      "kind": "except",
+      "function": "load_attempts"
+    },
+    {
+      "line": 100,
+      "level": "INFO",
+      "message": "Exiting load_attempts",
+      "kind": "return",
+      "function": "load_attempts"
+    },
+    {
+      "line": 104,
+      "level": "DEBUG",
+      "message": "Entering group_by_user",
+      "kind": "entry",
+      "function": "group_by_user"
+    },
+    {
+      "line": 107,
+      "level": "INFO",
+      "message": "Exiting group_by_user",
+      "kind": "return",
+      "function": "group_by_user"
+    },
+    {
+      "line": 111,
+      "level": "DEBUG",
+      "message": "Entering summarize_user",
+      "kind": "entry",
+      "function": "summarize_user"
+    },
+    {
+      "line": 112,
+      "level": "INFO",
+      "message": "Exiting summarize_user",
+      "kind": "return",
+      "function": "summarize_user"
+    },
+    {
+      "line": 118,
+      "level": "INFO",
+      "message": "Exiting summarize_user",
+      "kind": "return",
+      "function": "summarize_user"
+    },
+    {
+      "line": 128,
+      "level": "DEBUG",
+      "message": "Entering find_suspicious_users",
+      "kind": "entry",
+      "function": "find_suspicious_users"
+    },
+    {
+      "line": 133,
+      "level": "INFO",
+      "message": "Exiting find_suspicious_users",
+      "kind": "return",
+      "function": "find_suspicious_users"
+    },
+    {
+      "line": 137,
+      "level": "DEBUG",
+      "message": "Entering interactive_menu",
+      "kind": "entry",
+      "function": "interactive_menu"
+    },
+    {
+      "line": 144,
+      "level": "ERROR",
+      "message": "Exception in interactive_menu",
+      "kind": "except",
+      "function": "interactive_menu"
+    },
+    {
+      "line": 145,
+      "level": "INFO",
+      "message": "Exiting interactive_menu",
+      "kind": "return",
+      "function": "interactive_menu"
+    },
+    {
+      "line": 171,
+      "level": "ERROR",
+      "message": "Exception in interactive_menu",
+      "kind": "except",
+      "function": "interactive_menu"
+    },
+    {
+      "line": 182,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    }
+  ]
+}

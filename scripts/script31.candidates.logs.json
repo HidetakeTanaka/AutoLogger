@@ -1,0 +1,166 @@
+{
+  "file": "script31.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 31,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entering QuizAttempt.score_ratio for quiz_id=%s with current state: %s\", getattr(self, 'quiz_id', None), self.__dict__)"
+    },
+    {
+      "candidate_id": 1,
+      "lineno": 32,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"QuizAttempt.score_ratio returning default score ratio 0.0 for attempt %s\", getattr(self, \"id\", None))"
+    },
+    {
+      "candidate_id": 2,
+      "lineno": 33,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"Calculated score_ratio for QuizAttempt %s: score=%s, max_score=%s, ratio=%s\", getattr(self, \"id\", None), self.score, self.max_score, self.score / self.max_score)"
+    },
+    {
+      "candidate_id": 3,
+      "lineno": 36,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entering QuizAttempt.is_suspicious with fast_threshold=%d, high_ratio=%.2f, very_fast=%s, very_high=%s for attempt_id=%s\", fast_threshold, high_ratio, very_fast, very_high, getattr(self, 'id', None))"
+    },
+    {
+      "candidate_id": 4,
+      "lineno": 38,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"QuizAttempt.is_suspicious returning False: very_fast=%s, very_high=%s, fast_threshold=%s, high_ratio=%s, self=%s\", very_fast, very_high, fast_threshold, high_ratio, self)"
+    },
+    {
+      "candidate_id": 5,
+      "lineno": 41,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"QuizAttempt.is_suspicious returning %s (very_fast=%s, very_high=%s, fast_threshold=%s, high_ratio=%s)\", very_fast and very_high, very_fast, very_high, fast_threshold, high_ratio)"
+    },
+    {
+      "candidate_id": 6,
+      "lineno": 45,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entering ensure_data_dir() to verify or create the data directory\")"
+    },
+    {
+      "candidate_id": 7,
+      "lineno": 49,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entering generate_sample_attempts with num_users=%d, max_score=%s, duration=%s, base=%s\", num_users, max_score, duration, base)"
+    },
+    {
+      "candidate_id": 8,
+      "lineno": 76,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entering load_attempts with path=%s\", path)"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 99,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(\"Failed to load attempts from %s with raw=%r, score=%r, max_score=%r, duration=%r; current attempts=%r\", path, raw, score, max_score, duration, attempts)"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 100,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"Loaded %d attempts from %s with max_score=%s, duration=%s, sample_score=%s\", len(attempts), path, max_score, duration, score)"
+    },
+    {
+      "candidate_id": 11,
+      "lineno": 104,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entering group_by_user with %d attempts\", len(attempts))"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 107,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"Returning grouped attempts for %d users\", len(grouped))"
+    },
+    {
+      "candidate_id": 13,
+      "lineno": 111,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entered summarize_user with %d attempts; any_passed=%s, suspicious=%s\", len(attempts), any_passed, suspicious)"
+    },
+    {
+      "candidate_id": 14,
+      "lineno": 112,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"Summarizing user: count=%d, best_ratio=%.4f, avg_ratio=%.4f, any_passed=%s, suspicious=%s\", len(attempts), best, avg, any_passed, suspicious)"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 118,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"Summarizing user attempts: count=%d, best_ratio=%.3f, avg_ratio=%.3f, any_passed=%s, suspicious=%s\", len(attempts), best, avg, any_passed, suspicious)"
+    },
+    {
+      "candidate_id": 16,
+      "lineno": 128,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entering find_suspicious_users with %d user groups\", len(grouped))"
+    },
+    {
+      "candidate_id": 17,
+      "lineno": 133,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"find_suspicious_users returning %d suspects: %s\", len(suspects), suspects)"
+    },
+    {
+      "candidate_id": 18,
+      "lineno": 137,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entered interactive_menu with initial state: attempts=%s, choice=%s, n=%s, n_str=%s, grouped=%s, summary=%s, suspects=%s\", attempts, choice, n, n_str, grouped, summary, suspects)"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 144,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(\"Error in interactive_menu while processing choice %r after %d attempts with n=%r, suspects=%r, grouped=%r, summary=%r\", choice, attempts, n_str or n, suspects, grouped, summary)"
+    },
+    {
+      "candidate_id": 20,
+      "lineno": 145,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"Exiting interactive_menu after %d attempts with choice=%r, n=%r, suspects_count=%d, grouped=%r, summary=%r\", attempts, choice, n_str, len(suspects) if suspects is not None else 0, grouped, summary)"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 171,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(\"Error in interactive_menu while processing choice %r on attempt %d with n=%r, suspects=%r, grouped=%r, summary=%r\", choice, attempts, n_str or n, suspects, grouped, summary)"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 182,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entered main()\")"
+    }
+  ]
+}
