@@ -1,0 +1,110 @@
+{
+  "file": "script63.py",
+  "logs": [
+    {
+      "candidate_id": 12,
+      "lineno": 48,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Student.from_dict: start deserializing student\")"
+    },
+    {
+      "candidate_id": 14,
+      "lineno": 62,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Student.from_dict: failed to deserialize student\", exc_info=True)"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 112,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"AnalyticsClient.fetch_benchmarks: fetching benchmarks for course_id=%s\", course_id)"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 119,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"AnalyticsClient.fetch_benchmarks: successfully decoded benchmark payload\")"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 121,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"AnalyticsClient.fetch_benchmarks: error while fetching benchmarks\", exc_info=True)"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 124,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"AnalyticsClient.push_summary: pushing summary for course_id=%s\", course_id)"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 132,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"AnalyticsClient.push_summary: remote service responded with success\")"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 134,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"AnalyticsClient.push_summary: failed to push summary\", exc_info=True)"
+    },
+    {
+      "candidate_id": 42,
+      "lineno": 138,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_course: loading course from %s\", path)"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 143,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_course: error reading or parsing course file\", exc_info=True)"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 147,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_course: writing course data to %s\", path)"
+    },
+    {
+      "candidate_id": 47,
+      "lineno": 155,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_course: failed to persist course file\", exc_info=True)"
+    },
+    {
+      "candidate_id": 50,
+      "lineno": 165,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"summarize_course: generated course summary for %d students\", count)"
+    },
+    {
+      "candidate_id": 56,
+      "lineno": 205,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main: starting execution with data_dir=%s base_url=%s\", data_dir, base_url)"
+    },
+    {
+      "candidate_id": 58,
+      "lineno": 228,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main: unhandled exception during execution\", exc_info=True)"
+    }
+  ]
+}
