@@ -1,35 +1,378 @@
 {
-  "file": "dataset/raw/sample1.py",
+  "file": "scripts/script31.py",
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 2,
-      "end_line": 2,
-      "function": "foo",
-      "class_name": null,
-      "code": "def foo(x, y):",
+      "line": 31,
+      "end_line": 31,
+      "function": "score_ratio",
+      "class_name": "QuizAttempt",
+      "code": "def score_ratio(self) -> float:",
       "vars_in_scope": [
-        "result",
-        "x",
-        "y"
+        "self"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
       "kind": "before_return",
-      "line": 4,
-      "end_line": 4,
-      "function": "foo",
-      "class_name": null,
-      "code": "return result",
+      "line": 32,
+      "end_line": 32,
+      "function": "score_ratio",
+      "class_name": "QuizAttempt",
+      "code": "return 0.0",
       "vars_in_scope": [
-        "result",
-        "x",
-        "y"
+        "self"
       ],
       "why": "before return",
       "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "score_ratio",
+      "class_name": "QuizAttempt",
+      "code": "return self.score / self.max_score",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 36,
+      "end_line": 36,
+      "function": "is_suspicious",
+      "class_name": "QuizAttempt",
+      "code": "def is_suspicious(self, fast_threshold: int = 60, high_ratio: float = 0.9) -> bool:",
+      "vars_in_scope": [
+        "fast_threshold",
+        "high_ratio",
+        "self",
+        "very_fast",
+        "very_high"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 38,
+      "end_line": 38,
+      "function": "is_suspicious",
+      "class_name": "QuizAttempt",
+      "code": "return False",
+      "vars_in_scope": [
+        "fast_threshold",
+        "high_ratio",
+        "self",
+        "very_fast",
+        "very_high"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 41,
+      "end_line": 41,
+      "function": "is_suspicious",
+      "class_name": "QuizAttempt",
+      "code": "return very_fast and very_high",
+      "vars_in_scope": [
+        "fast_threshold",
+        "high_ratio",
+        "self",
+        "very_fast",
+        "very_high"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 45,
+      "end_line": 45,
+      "function": "ensure_data_dir",
+      "class_name": null,
+      "code": "def ensure_data_dir() -> None:",
+      "vars_in_scope": [],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 49,
+      "end_line": 49,
+      "function": "generate_sample_attempts",
+      "class_name": null,
+      "code": "def generate_sample_attempts(num_users: int = 10) -> None:",
+      "vars_in_scope": [
+        "attempts",
+        "base",
+        "duration",
+        "max_score",
+        "num_users",
+        "score",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 76,
+      "end_line": 76,
+      "function": "load_attempts",
+      "class_name": null,
+      "code": "def load_attempts(path: Path) -> List[QuizAttempt]:",
+      "vars_in_scope": [
+        "attempts",
+        "duration",
+        "max_score",
+        "path",
+        "raw",
+        "score"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 99,
+      "end_line": 99,
+      "function": "load_attempts",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "attempts",
+        "duration",
+        "max_score",
+        "path",
+        "raw",
+        "score"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 100,
+      "end_line": 100,
+      "function": "load_attempts",
+      "class_name": null,
+      "code": "return attempts",
+      "vars_in_scope": [
+        "attempts",
+        "duration",
+        "max_score",
+        "path",
+        "raw",
+        "score"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 104,
+      "end_line": 104,
+      "function": "group_by_user",
+      "class_name": null,
+      "code": "def group_by_user(attempts: List[QuizAttempt]) -> Dict[str, List[QuizAttempt]]:",
+      "vars_in_scope": [
+        "attempts",
+        "grouped"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 107,
+      "end_line": 107,
+      "function": "group_by_user",
+      "class_name": null,
+      "code": "return grouped",
+      "vars_in_scope": [
+        "attempts",
+        "grouped"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 111,
+      "end_line": 111,
+      "function": "summarize_user",
+      "class_name": null,
+      "code": "def summarize_user(attempts: List[QuizAttempt]) -> Dict[str, object]:",
+      "vars_in_scope": [
+        "any_passed",
+        "attempts",
+        "avg",
+        "best",
+        "ratios",
+        "suspicious"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 112,
+      "end_line": 112,
+      "function": "summarize_user",
+      "class_name": null,
+      "code": "return {'count': 0, 'best_ratio': 0.0, 'avg_ratio': 0.0, 'any_passed': False}",
+      "vars_in_scope": [
+        "any_passed",
+        "attempts",
+        "avg",
+        "best",
+        "ratios",
+        "suspicious"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 118,
+      "end_line": 118,
+      "function": "summarize_user",
+      "class_name": null,
+      "code": "return {'count': len(attempts), 'best_ratio': round(best, 3), 'avg_ratio': round(avg, 3), 'any_passed': any_passed, 'suspicious': suspicious}",
+      "vars_in_scope": [
+        "any_passed",
+        "attempts",
+        "avg",
+        "best",
+        "ratios",
+        "suspicious"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 128,
+      "end_line": 128,
+      "function": "find_suspicious_users",
+      "class_name": null,
+      "code": "def find_suspicious_users(grouped: Dict[str, List[QuizAttempt]]) -> List[str]:",
+      "vars_in_scope": [
+        "grouped",
+        "summary",
+        "suspects"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 133,
+      "end_line": 133,
+      "function": "find_suspicious_users",
+      "class_name": null,
+      "code": "return suspects",
+      "vars_in_scope": [
+        "grouped",
+        "summary",
+        "suspects"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 137,
+      "end_line": 137,
+      "function": "interactive_menu",
+      "class_name": null,
+      "code": "def interactive_menu() -> None:",
+      "vars_in_scope": [
+        "attempts",
+        "choice",
+        "grouped",
+        "n",
+        "n_str",
+        "summary",
+        "suspects"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 144,
+      "end_line": 144,
+      "function": "interactive_menu",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "attempts",
+        "choice",
+        "grouped",
+        "n",
+        "n_str",
+        "summary",
+        "suspects"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 145,
+      "end_line": 145,
+      "function": "interactive_menu",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "attempts",
+        "choice",
+        "grouped",
+        "n",
+        "n_str",
+        "summary",
+        "suspects"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 171,
+      "end_line": 171,
+      "function": "interactive_menu",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "attempts",
+        "choice",
+        "grouped",
+        "n",
+        "n_str",
+        "summary",
+        "suspects"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 182,
+      "end_line": 182,
+      "function": "main",
+      "class_name": null,
+      "code": "def main() -> None:",
+      "vars_in_scope": [],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
     }
   ]
 }
