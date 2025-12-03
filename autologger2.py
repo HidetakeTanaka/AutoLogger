@@ -1,36 +1,15 @@
 """
-autologger.py
+autologger2.py
 
 LLM integration module for the AutoLogger project.
 
-NEW BEHAVIOUR (per evaluation feedback)
----------------------------------------
-The LLM no longer always inserts a log for every candidate.
-
-Instead, for each candidate the LLM must decide:
-
-  - should_log: true/false
-  - log_code:  string with ONE Python logging statement (if should_log is true)
-
-The LLM response is expected to be JSON like:
-
-  { "should_log": true,  "log_code": "logging.info('...')" }
-
-or
-
-  { "should_log": false, "log_code": "" }
-
-autologger.py will:
-
-  - Parse this JSON.
-  - Skip candidates where should_log == false.
-  - Only add entries to predictions[] for candidates with should_log == true.
-
-This allows meaningful evaluation of:
-  - GPT-4.1-mini vs GPT-5.1
-  - OpenAI vs Flan-T5
-  - Different precision/recall trade-offs.
+This version:
+- keeps the OpenAI provider as before (gpt-4.1-mini, gpt-5.1, ...)
+- uses the HuggingFace Inference API for the 'flan' provider
+  (google/flan-t5-*) and falls back to a heuristic decision when the
+  API call fails (e.g., 404 or missing HUGGINGFACE_API_KEY).
 """
+
 
 from __future__ import annotations
 
@@ -117,20 +96,22 @@ class LogPrediction:
 # Prompt construction
 # ---------------------------------------------------------------------------
 
-
 DEFAULT_SYSTEM_PROMPT = (
-    "You are an assistant that decides whether a Python logging statement "
-    "should be inserted at a given code location, and if so, generates it.\n\n"
-    "You must respond ONLY with a SINGLE JSON object, without any extra text "
-    "or markdown code fences.\n\n"
-    "The JSON format MUST be exactly:\n"
-    '{ "should_log": true/false, "log_code": "<python_logging_statement_or_empty_string>" }\n\n'
-    "- If a log would be useful here, set should_log to true and log_code to a single "
-    "Python statement starting with logging.<level>(...).\n"
-    "- If no log is needed, set should_log to false and log_code to an empty string.\n"
-    "- Use the suggested severity level if provided (DEBUG/INFO/WARNING/ERROR/CRITICAL).\n"
+    "You are an assistant that decides whether to insert Python logging statements "
+    "for existing code and, if appropriate, writes concise, high-quality log lines.\n"
+    "You receive a code snippet and metadata about a potential log position.\n"
+    "Your task is to decide whether a log is useful at this position and, if so, "
+    "return a single Python logging statement using the standard 'logging' module.\n"
+    "\n"
+    "You MUST return a JSON object with exactly the following keys:\n"
+    '  {\"should_log\": <bool>, \"log_code\": <string> }\n'
+    "- If you think a log should be inserted, set should_log=true and provide a "
+    "single Python logging statement in log_code (e.g. logging.info(...)).\n"
+    "- If you think a log is NOT needed, set should_log=false and use an empty "
+    "string for log_code.\n"
+    "- Use the suggested severity level if provided (DEBUG/INFO/WARNING/ERROR).\n"
     "- Use variables in scope when appropriate.\n"
-    "- Do NOT include comments, explanations, or surrounding code."
+    "- Do NOT include any comments, explanations, or extra text outside the JSON."
 )
 
 
@@ -167,23 +148,34 @@ def build_user_prompt(candidate: Candidate) -> str:
         )
 
     lines.append(
-        "\nDecide if a log is needed here. "
-        "Remember to respond ONLY with JSON of the form:\n"
-        '{ "should_log": true/false, "log_code": "logging.<level>(...)" }'
+        "\nDecide whether a log statement is REALLY useful at this position.\n"
+        "Most candidates should NOT be logged. Prefer should_log=false unless this log\n"
+        "would add clear debugging value beyond existing information.\n"
+        "Return ONLY a JSON object with these keys:\n"
+        '  {\"should_log\": <bool>, \"log_code\": <string> }\n'
+        "- should_log is true only if the log is clearly helpful, otherwise false.\n"
+        "- log_code is the logging statement when should_log is true, otherwise \"\"."
     )
 
     return "\n".join(lines)
 
 
-# ---------------------------------------------------------------------------
-# LLM backends: OpenAI GPT + Flan-T5 via HuggingFace
-# ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# LLM backends: OpenAI GPT + Flan-T5 (via HuggingFace Inference API)
+# ---------------------------------------------------------------------------
 
 def call_openai_chat(prompt: str, model: str) -> str:
-    """Call an OpenAI chat model (e.g., gpt-4.1, gpt-4.1-mini, gpt-5.1)."""
+    """Call an OpenAI chat model (e.g., gpt-4.1-mini, gpt-5.1).
+
+    If the OpenAI client or API key is not available, or if any error occurs
+    (e.g. insufficient_quota), this function returns a heuristic JSON decision
+    instead of raising an exception.
+    """
+    
     api_key = os.environ.get("OPENAI_API_KEY")
     if openai is None or not api_key:
+        # fall back to heuristic if OpenAI not available
         return heuristic_decision_json(prompt)
 
     client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
@@ -205,12 +197,17 @@ def call_openai_chat(prompt: str, model: str) -> str:
         return heuristic_decision_json(prompt)
 
 
-def call_flan_t5_hf(prompt: str, model: str) -> str:
-    """Call a Flan-T5 model via HuggingFace Inference API.
 
-    Example model: 'google/flan-t5-large'
+def call_flan_t5_hf(prompt: str, model: str) -> str:
+    """Call a Flan-T5 model via the (legacy) HuggingFace Inference API.
+
+    Example model: 'google/flan-t5-large'.
     Requires env var HUGGINGFACE_API_KEY.
+
+    If the request fails (e.g. 404, timeout, missing API key), this function
+    returns a heuristic JSON decision instead of raising an exception.
     """
+
     hf_key = os.environ.get("HUGGINGFACE_API_KEY")
     if not hf_key:
         return heuristic_decision_json(prompt)
@@ -260,18 +257,23 @@ def call_llm(prompt: str, model: str, provider: str) -> str:
         return heuristic_decision_json(prompt)
 
 
+
+
 # ---------------------------------------------------------------------------
 # JSON parsing & heuristic fallback
 # ---------------------------------------------------------------------------
 
 
 def heuristic_decision_json(prompt: str) -> str:
-    """Fallback JSON decision when no LLM is available or call fails.
+    """Fallback JSON decision when no LLM is available or the call fails.
 
     Very simple strategy:
       - Always log (should_log = true)
-      - Use a generic INFO log mentioning the function name.
+      - Use a generic log statement mentioning the function name.
+      - Use the suggested severity level from the prompt if available,
+        otherwise default to INFO.
     """
+    
     func_name = "unknown"
     severity = "INFO"
 
@@ -284,7 +286,7 @@ def heuristic_decision_json(prompt: str) -> str:
                 severity = sev
 
     log_code = (
-        f"logging.{severity.lower()}('AutoLogger: reached candidate in function {func_name}')"
+        f"logging.{severity.lower()}('[HEURISTIC] AutoLogger: reached candidate in function {func_name}')"
     )
 
     decision = {
@@ -455,8 +457,8 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         description=(
             "AutoLogger LLM module with JSON yes/no decisions.\n\n"
             "Examples:\n"
-            "  python autologger.py sample1.candidates.json -o sample1.logs.json\n"
-            "  python autologger.py sample1.candidates.json --provider flan "
+            "  python autologger2.py sample1.candidates.json -o sample1.logs.json\n"
+            "  python autologger2.py sample1.candidates.json --provider flan "
             "--model google/flan-t5-large\n"
         ),
         formatter_class=argparse.RawTextHelpFormatter,

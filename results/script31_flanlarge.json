@@ -1,0 +1,143 @@
+{
+  "file": "script31.py",
+  "logs": [
+    {
+      "line": 31,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function score_ratio')"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function score_ratio')"
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function score_ratio')"
+    },
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function is_suspicious')"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function is_suspicious')"
+    },
+    {
+      "line": 41,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function is_suspicious')"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function ensure_data_dir')"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function generate_sample_attempts')"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function load_attempts')"
+    },
+    {
+      "line": 99,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('AutoLogger: reached candidate in function load_attempts')"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function load_attempts')"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function group_by_user')"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function group_by_user')"
+    },
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function summarize_user')"
+    },
+    {
+      "line": 112,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function summarize_user')"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function summarize_user')"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function find_suspicious_users')"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function find_suspicious_users')"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function interactive_menu')"
+    },
+    {
+      "line": 144,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('AutoLogger: reached candidate in function interactive_menu')"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('AutoLogger: reached candidate in function interactive_menu')"
+    },
+    {
+      "line": 171,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('AutoLogger: reached candidate in function interactive_menu')"
+    },
+    {
+      "line": 182,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('AutoLogger: reached candidate in function main')"
+    }
+  ]
+}

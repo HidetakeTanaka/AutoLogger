@@ -2,22 +2,10 @@
   "file": "script31.py",
   "logs": [
     {
-      "line": 31,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Entered score_ratio method of QuizAttempt instance.\")"
-    },
-    {
-      "line": 32,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(\"Score ratio computed as 0.0 for QuizAttempt id %s\", self.id)"
-    },
-    {
       "line": 33,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Scoring ratio calculated: {self.score} / {self.max_score} = {self.score / self.max_score}')"
+      "message": "logging.info(f'Scoring ratio calculated: score={self.score}, max_score={self.max_score}, ratio={self.score / self.max_score}')"
     },
     {
       "line": 36,
@@ -29,19 +17,19 @@
       "line": 38,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"QuizAttempt.is_suspicious returning False with thresholds fast_threshold={fast_threshold}, high_ratio={high_ratio}, very_fast={very_fast}, very_high={very_high}\")"
+      "message": "logging.info(f'QuizAttempt.is_suspicious returning False with fast_threshold={fast_threshold}, high_ratio={high_ratio}, very_fast={very_fast}, very_high={very_high}')"
     },
     {
       "line": 41,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Suspicious check: very_fast={very_fast} (threshold={fast_threshold}), very_high={very_high} (threshold={high_ratio})\")"
+      "message": "logging.info(f'is_suspicious check: very_fast={very_fast}, very_high={very_high}, fast_threshold={fast_threshold}, high_ratio={high_ratio}')"
     },
     {
       "line": 45,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(\"Entered ensure_data_dir function\")"
+      "message": "logging.debug('Entered ensure_data_dir function')"
     },
     {
       "line": 49,
@@ -59,85 +47,67 @@
       "line": 99,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error(\"Failed to load attempts from %s after %s seconds with max score %s\", path, duration, max_score, exc_info=True)"
+      "message": "logging.error(f'Failed to load attempts from {path} after {duration}s with max_score {max_score}', exc_info=True)"
     },
     {
       "line": 100,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Loaded {len(attempts)} attempts from {path} with max score {max_score} in {duration:.2f}s\")"
+      "message": "logging.info(f'Loaded {len(attempts)} attempts from {path} with max_score={max_score} and final score={score} in {duration:.2f}s')"
     },
     {
       "line": 104,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(\"Entered group_by_user with %d attempts\", len(attempts))"
+      "message": "logging.debug(f\"Entered group_by_user with {len(attempts)} attempts\")"
     },
     {
       "line": 107,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(\"Returning grouped data with %d users and %d total attempts\", len(grouped), len(attempts))"
+      "message": "logging.info(f'Returning grouped data with {len(grouped)} users')"
     },
     {
       "line": 111,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered summarize_user with {len(attempts)} attempts\")"
-    },
-    {
-      "line": 112,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f\"Returning summary with count=0, best_ratio=0.0, avg_ratio=0.0, any_passed={any_passed}\")"
+      "message": "logging.debug(f\"Entering summarize_user with {len(attempts)} attempts\")"
     },
     {
       "line": 118,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Summary prepared with {len(attempts)} attempts, best ratio {best:.3f}, avg ratio {avg:.3f}, any_passed={any_passed}, suspicious={suspicious}\")"
+      "message": "logging.info(f\"Summary computed: count={len(attempts)}, best_ratio={round(best, 3)}, avg_ratio={round(avg, 3)}, any_passed={any_passed}, suspicious={suspicious}\")"
     },
     {
       "line": 128,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered find_suspicious_users with {len(grouped)} user groups to analyze.\")"
+      "message": "logging.debug(f\"Entered find_suspicious_users with {len(grouped)} user groups\")"
     },
     {
       "line": 133,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Returning {len(suspects)} suspicious users after analysis.\")"
+      "message": "logging.info(f'Returning suspects list with {len(suspects)} users identified as suspicious')"
     },
     {
       "line": 137,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(\"Entered interactive_menu function\")"
+      "message": "logging.debug('Entered interactive_menu function')"
     },
     {
       "line": 144,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error(\"Error processing choice '%s' after %d attempts\", choice, attempts, exc_info=True)"
-    },
-    {
-      "line": 145,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f\"Exiting interactive_menu with choice={choice}, attempts={attempts}, suspects={suspects}\")"
+      "message": "logging.error(f'Exception occurred during interactive menu processing with choice={choice}, attempts={attempts}', exc_info=True)"
     },
     {
       "line": 171,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error(\"Exception occurred in interactive_menu after %d attempts with choice=%s\", attempts, choice, exc_info=True)"
-    },
-    {
-      "line": 182,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Entered main function\")"
+      "message": "logging.error(f'Exception occurred during interactive menu processing with choice={choice}, attempts={attempts}')"
     }
   ]
 }

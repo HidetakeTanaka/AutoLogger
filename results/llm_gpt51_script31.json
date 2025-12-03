@@ -2,142 +2,52 @@
   "file": "script31.py",
   "logs": [
     {
-      "line": 31,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Entering QuizAttempt.score_ratio for quiz_id=%s with current state: %s\", getattr(self, 'quiz_id', None), self.__dict__)"
-    },
-    {
-      "line": 32,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(\"QuizAttempt.score_ratio returning default score ratio 0.0 for attempt %s\", getattr(self, \"id\", None))"
-    },
-    {
-      "line": 33,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(\"Calculated score_ratio for QuizAttempt %s: score=%s, max_score=%s, ratio=%s\", getattr(self, \"id\", None), self.score, self.max_score, self.score / self.max_score)"
-    },
-    {
-      "line": 36,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Entering QuizAttempt.is_suspicious with fast_threshold=%d, high_ratio=%.2f, very_fast=%s, very_high=%s for attempt_id=%s\", fast_threshold, high_ratio, very_fast, very_high, getattr(self, 'id', None))"
-    },
-    {
-      "line": 38,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(\"QuizAttempt.is_suspicious returning False: very_fast=%s, very_high=%s, fast_threshold=%s, high_ratio=%s, self=%s\", very_fast, very_high, fast_threshold, high_ratio, self)"
-    },
-    {
       "line": 41,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(\"QuizAttempt.is_suspicious returning %s (very_fast=%s, very_high=%s, fast_threshold=%s, high_ratio=%s)\", very_fast and very_high, very_fast, very_high, fast_threshold, high_ratio)"
-    },
-    {
-      "line": 45,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Entering ensure_data_dir() to verify or create the data directory\")"
-    },
-    {
-      "line": 49,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Entering generate_sample_attempts with num_users=%d, max_score=%s, duration=%s, base=%s\", num_users, max_score, duration, base)"
+      "message": "logging.info(\"QuizAttempt.is_suspicious result=%s (very_fast=%s, very_high=%s, fast_threshold=%s, high_ratio=%s)\", very_fast and very_high, very_fast, very_high, fast_threshold, high_ratio)"
     },
     {
       "line": 76,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(\"Entering load_attempts with path=%s\", path)"
+      "message": "logging.debug(\"Loading quiz attempts from %s\", path)"
     },
     {
       "line": 99,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error(\"Failed to load attempts from %s with raw=%r, score=%r, max_score=%r, duration=%r; current attempts=%r\", path, raw, score, max_score, duration, attempts)"
-    },
-    {
-      "line": 100,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(\"Loaded %d attempts from %s with max_score=%s, duration=%s, sample_score=%s\", len(attempts), path, max_score, duration, score)"
-    },
-    {
-      "line": 104,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Entering group_by_user with %d attempts\", len(attempts))"
-    },
-    {
-      "line": 107,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(\"Returning grouped attempts for %d users\", len(grouped))"
-    },
-    {
-      "line": 111,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Entered summarize_user with %d attempts; any_passed=%s, suspicious=%s\", len(attempts), any_passed, suspicious)"
-    },
-    {
-      "line": 112,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(\"Summarizing user: count=%d, best_ratio=%.4f, avg_ratio=%.4f, any_passed=%s, suspicious=%s\", len(attempts), best, avg, any_passed, suspicious)"
+      "message": "logging.error(\"Failed to load attempts from %s with raw=%r, score=%r, max_score=%r, duration=%r\", path, raw, score, max_score, duration, exc_info=True)"
     },
     {
       "line": 118,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(\"Summarizing user attempts: count=%d, best_ratio=%.3f, avg_ratio=%.3f, any_passed=%s, suspicious=%s\", len(attempts), best, avg, any_passed, suspicious)"
+      "message": "logging.info(\"User summary computed: count=%d, best_ratio=%.3f, avg_ratio=%.3f, any_passed=%s, suspicious=%s\", len(attempts), round(best, 3), round(avg, 3), any_passed, suspicious)"
     },
     {
       "line": 128,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(\"Entering find_suspicious_users with %d user groups\", len(grouped))"
+      "message": "logging.debug(\"Entering find_suspicious_users with %d grouped users\", len(grouped))"
     },
     {
       "line": 133,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(\"find_suspicious_users returning %d suspects: %s\", len(suspects), suspects)"
-    },
-    {
-      "line": 137,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Entered interactive_menu with initial state: attempts=%s, choice=%s, n=%s, n_str=%s, grouped=%s, summary=%s, suspects=%s\", attempts, choice, n, n_str, grouped, summary, suspects)"
+      "message": "logging.info(\"Identified %d suspicious users\", len(suspects))"
     },
     {
       "line": 144,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error(\"Error in interactive_menu while processing choice %r after %d attempts with n=%r, suspects=%r, grouped=%r, summary=%r\", choice, attempts, n_str or n, suspects, grouped, summary)"
-    },
-    {
-      "line": 145,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(\"Exiting interactive_menu after %d attempts with choice=%r, n=%r, suspects_count=%d, grouped=%r, summary=%r\", attempts, choice, n_str, len(suspects) if suspects is not None else 0, grouped, summary)"
+      "message": "logging.error(\"Error handling user choice '%s' after %d attempts (n=%s, suspects=%d)\", choice, attempts, n_str, len(suspects), exc_info=True)"
     },
     {
       "line": 171,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error(\"Error in interactive_menu while processing choice %r on attempt %d with n=%r, suspects=%r, grouped=%r, summary=%r\", choice, attempts, n_str or n, suspects, grouped, summary)"
-    },
-    {
-      "line": 182,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Entered main()\")"
+      "message": "logging.error(\"Error handling interactive menu choice '%s' after %d attempts (n=%s, suspects=%d)\", choice, attempts, n_str, len(suspects), exc_info=True)"
     }
   ]
 }
