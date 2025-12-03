@@ -1,0 +1,96 @@
+{
+  "file": "script40.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 19,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(f\"Item.is_in_stock quantity={quantity} stock={self.stock}\")"
+    },
+    {
+      "candidate_id": 23,
+      "lineno": 93,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(f\"Checking if order {order.order_id} can be fulfilled\")"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 100,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(f\"Applying order {order.order_id} with status={order.status}\")"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 118,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(f\"Loading inventory from {path}\")"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 124,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to read inventory file\", exc_info=True)"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 136,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to parse inventory data\", exc_info=True)"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 142,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(f\"Loading orders from {path}\")"
+    },
+    {
+      "candidate_id": 42,
+      "lineno": 161,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to parse orders file\", exc_info=True)"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 167,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(f\"Saving inventory to {path}\")"
+    },
+    {
+      "candidate_id": 51,
+      "lineno": 205,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(f\"Exporting order report to {path}\")"
+    },
+    {
+      "candidate_id": 52,
+      "lineno": 215,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(f\"Loading order config from {path}\")"
+    },
+    {
+      "candidate_id": 55,
+      "lineno": 221,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to load order config\", exc_info=True)"
+    },
+    {
+      "candidate_id": 57,
+      "lineno": 225,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(f\"Order processing started base_dir={base_dir}\")"
+    }
+  ]
+}
