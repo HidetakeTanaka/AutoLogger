@@ -1,0 +1,75 @@
+{
+  "file": "script71.py",
+  "logs": [
+    {
+      "candidate_id": 30,
+      "lineno": 107,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"fetch_recommendations entry\")"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 117,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"fetch_recommendations returning parsed recommendations\")"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 119,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"fetch_recommendations failed\", exc_info=True)"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 122,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_library entry\")"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 125,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"load_library loaded library from file\")"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 140,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_library failed while writing temp file\", exc_info=True)"
+    },
+    {
+      "candidate_id": 45,
+      "lineno": 147,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"compute_stats entry\")"
+    },
+    {
+      "candidate_id": 54,
+      "lineno": 192,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main entry\")"
+    },
+    {
+      "candidate_id": 56,
+      "lineno": 209,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.ERROR(\"main exiting with failure (inner error)\")"
+    },
+    {
+      "candidate_id": 59,
+      "lineno": 212,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"main completed successfully\")"
+    }
+  ]
+}
