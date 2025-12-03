@@ -1,0 +1,103 @@
+{
+  "file": "script77.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 22,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Task.is_overdue start for task_id=%s\", self.task_id)"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 46,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Task.from_dict called with raw keys=%s\", list(raw.keys()))"
+    },
+    {
+      "candidate_id": 11,
+      "lineno": 60,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Task.from_dict failed for raw=%r\", raw)"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 108,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"SuggestionClient.fetch_suggestions for user_id=%s\", user_id)"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 120,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"SuggestionClient.fetch_suggestions error for url=%s\", url)"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 124,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Loading TaskBoard from %s\", str(path))"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 131,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to load TaskBoard from %s\", str(path))"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 135,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Saving TaskBoard for user_id=%s to %s\", board.user_id, str(path))"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 143,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to save TaskBoard to %s\", str(path))"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 147,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Computing stats for %d tasks\", len(board.tasks))"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 156,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Simulating progress for %d days\", days)"
+    },
+    {
+      "candidate_id": 49,
+      "lineno": 172,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Applying %d suggestions\", len(recs) if recs is not None else 0)"
+    },
+    {
+      "candidate_id": 52,
+      "lineno": 190,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main starting with data_dir=%s base_url=%s\", data_dir, base_url)"
+    },
+    {
+      "candidate_id": 53,
+      "lineno": 221,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main failed for data_dir=%s\", data_dir)"
+    }
+  ]
+}
