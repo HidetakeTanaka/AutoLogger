@@ -1,0 +1,103 @@
+{
+  "file": "scripts\\script58.py",
+  "logs": [
+    {
+      "candidate_id": 6,
+      "lineno": 39,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Product.from_dict: parsing product data\")"
+    },
+    {
+      "candidate_id": 8,
+      "lineno": 48,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Product.from_dict: failed to parse product data\")"
+    },
+    {
+      "candidate_id": 17,
+      "lineno": 76,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Order.from_dict: parsing order data\")"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 91,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Order.from_dict: failed to parse order data\")"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 143,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"ApiClient.fetch_orders: requesting book_id=%s\", book_id)"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 150,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"ApiClient.fetch_orders: error while fetching book_id=%s\", book_id)"
+    },
+    {
+      "candidate_id": 42,
+      "lineno": 153,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"ApiClient.push_summary: pushing summary for book_id=%s\", book_id)"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 160,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"ApiClient.push_summary: failed to push summary for book_id=%s\", book_id)"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 164,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_order_book: loading order book from %s\", str(path))"
+    },
+    {
+      "candidate_id": 48,
+      "lineno": 168,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.WARNING(\"load_order_book: failed to load %s, using local book\", str(path))"
+    },
+    {
+      "candidate_id": 52,
+      "lineno": 174,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_order_book: saving order book to %s\", str(path))"
+    },
+    {
+      "candidate_id": 57,
+      "lineno": 194,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"summarize_orders: count=%d open=%d total_value=%.2f\", count, open_count, total_value)"
+    },
+    {
+      "candidate_id": 65,
+      "lineno": 230,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"main: starting order processing run\")"
+    },
+    {
+      "candidate_id": 66,
+      "lineno": 248,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main: failed while writing orders_report.json\")"
+    }
+  ]
+}
