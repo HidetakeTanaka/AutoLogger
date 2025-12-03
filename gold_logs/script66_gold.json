@@ -1,0 +1,110 @@
+{
+  "file": "script66.py",
+  "logs": [
+    {
+      "candidate_id": 4,
+      "lineno": 34,
+      "col_offset": 4,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Reading.from_dict called\")"
+    },
+    {
+      "candidate_id": 7,
+      "lineno": 46,
+      "col_offset": 8,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Reading.from_dict failed\")"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 56,
+      "col_offset": 4,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Station.add_reading called\")"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 62,
+      "col_offset": 4,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Station.latest called\")"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 67,
+      "col_offset": 4,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Station.average_temperature called\")"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 101,
+      "col_offset": 4,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"WeatherClient.fetch_station_data called\")"
+    },
+    {
+      "candidate_id": 28,
+      "lineno": 110,
+      "col_offset": 8,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"WeatherClient.fetch_station_data error\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 114,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_station called\")"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 119,
+      "col_offset": 4,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_station failed, using fallback station\")"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 123,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_station called\")"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 138,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"summarize_station called\")"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 153,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"merge_remote called\")"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 166,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"simulate_station called\")"
+    },
+    {
+      "candidate_id": 47,
+      "lineno": 186,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main started\")"
+    },
+    {
+      "candidate_id": 49,
+      "lineno": 203,
+      "col_offset": 8,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"main exiting with error\")"
+    }
+  ]
+}
