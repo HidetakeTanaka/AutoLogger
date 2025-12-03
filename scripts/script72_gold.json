@@ -1,0 +1,110 @@
+{
+  "file": "script72.py",
+  "logs": [
+    {
+      "candidate_id": 23,
+      "lineno": 94,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"HealthClient.check entered for URL %s\", url)"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 100,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"HealthClient.check success latency_ms=%s\", latency)"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 102,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"HealthClient.check URLError for URL %s\", url)"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 105,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"HealthClient.check unexpected error for URL %s\", url)"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 110,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_statuses from %s\", path)"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 115,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"load_statuses loaded %d records\", len(raw))"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 117,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_statuses failed for %s\", path)"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 121,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_statuses to %s\", path)"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 127,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_statuses write failed for %s\", tmp)"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 131,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_statuses cleanup failed for %s\", tmp)"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 149,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"detect_incidents entered for %d services\", len(statuses))"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 156,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"detect_incidents found %d incidents\", len(incidents))"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 180,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main started data_dir=%s run_live=%s\", data_dir, run_live)"
+    },
+    {
+      "candidate_id": 45,
+      "lineno": 207,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main failed while writing summary\")"
+    },
+    {
+      "candidate_id": 47,
+      "lineno": 210,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"main finished successfully\")"
+    }
+  ]
+}
