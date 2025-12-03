@@ -1,0 +1,110 @@
+{
+  "file": "scripts\\script41.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 21,
+      "col_offset": 4,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Book.is_recent entered years=%s\", years)"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 88,
+      "col_offset": 4,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"LibraryStore.load_books: loading from %s\", self.books_path)"
+    },
+    {
+      "candidate_id": 23,
+      "lineno": 101,
+      "col_offset": 8,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"LibraryStore.load_books: failed to parse book row\", exc_info=True)"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 105,
+      "col_offset": 4,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"LibraryStore.load_members: loading from %s\", self.members_path)"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 118,
+      "col_offset": 8,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"LibraryStore.load_members: failed to parse member row\", exc_info=True)"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 155,
+      "col_offset": 4,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"RemoteCatalogClient.fetch_metadata: fetching book_id=%s\", book_id)"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 161,
+      "col_offset": 8,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"RemoteCatalogClient.fetch_metadata: request failed for %s\", url, exc_info=True)"
+    },
+    {
+      "candidate_id": 45,
+      "lineno": 169,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_json_safely: loading %s\", path)"
+    },
+    {
+      "candidate_id": 48,
+      "lineno": 175,
+      "col_offset": 4,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_json_safely: error reading %s\", path, exc_info=True)"
+    },
+    {
+      "candidate_id": 54,
+      "lineno": 189,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"borrow_book: member_id=%s book_id=%s\", member_id, book_id)"
+    },
+    {
+      "candidate_id": 58,
+      "lineno": 198,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"borrow_book: borrow succeeded for member_id=%s book_id=%s\", member_id, book_id)"
+    },
+    {
+      "candidate_id": 59,
+      "lineno": 202,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"return_book: member_id=%s book_id=%s\", member_id, book_id)"
+    },
+    {
+      "candidate_id": 62,
+      "lineno": 209,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"return_book: return succeeded for member_id=%s book_id=%s\", member_id, book_id)"
+    },
+    {
+      "candidate_id": 63,
+      "lineno": 213,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"sync_remote_metadata: starting with limit=%s\", limit)"
+    },
+    {
+      "candidate_id": 68,
+      "lineno": 262,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"main: starting with base_dir=%s\", base_dir)"
+    }
+  ]
+}
