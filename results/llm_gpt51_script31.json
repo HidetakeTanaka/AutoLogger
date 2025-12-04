@@ -5,13 +5,13 @@
       "line": 76,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(\"Loading quiz attempts from path: %s\", path)"
+      "message": "logging.debug(\"Loading quiz attempts from %s\", path)"
     },
     {
-      "line": 118,
+      "line": 133,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(\"User summary computed: count=%d, best_ratio=%.3f, avg_ratio=%.3f, any_passed=%s, suspicious=%s\", len(attempts), round(best, 3), round(avg, 3), any_passed, suspicious)"
+      "message": "logging.info(\"Identified %d suspicious users\", len(suspects))"
     }
   ]
 }
