@@ -1,0 +1,110 @@
+{
+  "file": "script89.py",
+  "logs": [
+    {
+      "candidate_id": 8,
+      "lineno": 44,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Transaction.from_dict: start\")"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 47,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Transaction.from_dict: parsed transaction\")"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 56,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Transaction.from_dict: failed to parse, returning None\")"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 109,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"BudgetClient.fetch_exchange_rate: start\")"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 118,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"BudgetClient.fetch_exchange_rate: got exchange rate\")"
+    },
+    {
+      "candidate_id": 28,
+      "lineno": 120,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"BudgetClient.fetch_exchange_rate: error, returning None\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 123,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"BudgetClient.push_summary: start\")"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 131,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"BudgetClient.push_summary: push completed with HTTP status\")"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 133,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"BudgetClient.push_summary: failed to push summary\")"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 137,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_state: start\")"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 142,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"load_state: loaded state from file\")"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 144,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_state: failed to load, using default\")"
+    },
+    {
+      "candidate_id": 50,
+      "lineno": 209,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main: start\")"
+    },
+    {
+      "candidate_id": 51,
+      "lineno": 221,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main: unexpected error\")"
+    },
+    {
+      "candidate_id": 54,
+      "lineno": 226,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"main: finished successfully\")"
+    }
+  ]
+}

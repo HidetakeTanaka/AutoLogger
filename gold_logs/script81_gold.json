@@ -1,0 +1,110 @@
+{
+  "file": "script81.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 24,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Workout.is_recent entry\")"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 50,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Workout.from_dict entry\")"
+    },
+    {
+      "candidate_id": 11,
+      "lineno": 63,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Workout.from_dict failed; returning None\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 114,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"RecommendationClient.fetch_suggestions entry\")"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 125,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"RecommendationClient.fetch_suggestions returning items\")"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 127,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"RecommendationClient.fetch_suggestions failed; returning None\")"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 131,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_log entry\")"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 136,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"load_log loaded WorkoutLog from_dict\")"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 142,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_log entry\")"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 148,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_log failed while writing file\")"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 156,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"compute_daily_summary entry\")"
+    },
+    {
+      "candidate_id": 45,
+      "lineno": 161,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"compute_daily_summary returning daily summary\")"
+    },
+    {
+      "candidate_id": 54,
+      "lineno": 219,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main entry\")"
+    },
+    {
+      "candidate_id": 55,
+      "lineno": 250,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main encountered error; exiting with status 1\")"
+    },
+    {
+      "candidate_id": 57,
+      "lineno": 252,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"main completed successfully with status 0\")"
+    }
+  ]
+}

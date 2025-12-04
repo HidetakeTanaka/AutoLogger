@@ -2,28 +2,81 @@
   "file": "script22.py",
   "logs": [
     {
-      "line": 1,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering read_numbers"
+      "candidate_id": 1,
+      "lineno": 6,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering __init__ of Employee class\")"
     },
     {
-      "line": 12,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering main"
+      "candidate_id": 3,
+      "lineno": 14,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning employee info: {name: %s, position: %s, salary: %s}\", self.name, self.position, self.salary)"
     },
     {
-      "line": 15,
-      "kind": "io",
-      "level": "INFO",
-      "message": "Printing count of numbers"
+      "candidate_id": 5,
+      "lineno": 19,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering __init__ of Department class\")"
     },
     {
-      "line": 16,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "numbers.txt file missing"
+      "candidate_id": 7,
+      "lineno": 26,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering remove_employee in Department class\")"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 33,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning department info with employees: {name: %s, employees: %s}\", self.name, [employee.get_employee_info() for employee in self.employees])"
+    },
+    {
+      "candidate_id": 11,
+      "lineno": 41,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering __init__ of Company class\")"
+    },
+    {
+      "candidate_id": 13,
+      "lineno": 48,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning company info: {name: %s, departments: %s}\", self.name, [department.get_department_info() for department in self.departments])"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 55,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering read_json function\")"
+    },
+    {
+      "candidate_id": 18,
+      "lineno": 71,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering fetch_data function with URL: %s\", url)"
+    },
+    {
+      "candidate_id": 20,
+      "lineno": 84,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning product created: {name: %s, price: %s, quantity: %s, category: %s}\", name, price, quantity, category)"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 92,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering main function\")"
     }
   ]
 }

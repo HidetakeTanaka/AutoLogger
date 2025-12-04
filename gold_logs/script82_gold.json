@@ -1,0 +1,96 @@
+{
+  "file": "scripts\\script82.py",
+  "logs": [
+    {
+      "candidate_id": 24,
+      "lineno": 112,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"fetch_rates: start base=%s\", base)"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 121,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"fetch_rates: received %d rates\", len(rates) if isinstance(rates, dict) else 0)"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 123,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"fetch_rates: failed to fetch rates\", exc_info=True)"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 127,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_budget: path=%s\", path)"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 132,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"load_budget: loaded budget with %d transactions\", len(raw.get('transactions', [])) if isinstance(raw, dict) else -1)"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 134,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_budget: error reading budget file\", exc_info=True)"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 138,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_budget: path=%s, tx_count=%d\", path, len(budget.transactions))"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 145,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_budget: failed to write budget file\", exc_info=True)"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 151,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"compute_monthly_summary: year=%d month=%d\", year, month)"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 164,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"compute_monthly_summary: count=%d income=%.2f expense=%.2f\", len(selected), income, expense)"
+    },
+    {
+      "candidate_id": 45,
+      "lineno": 221,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main: start data_dir=%s base_url=%s\", data_dir, base_url)"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 238,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main: unhandled exception\", exc_info=True)"
+    },
+    {
+      "candidate_id": 48,
+      "lineno": 239,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"main: completed successfully\")"
+    }
+  ]
+}

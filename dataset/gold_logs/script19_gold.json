@@ -2,34 +2,109 @@
   "file": "script19.py",
   "logs": [
     {
-      "line": 1,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering safe_get"
+      "candidate_id": 5,
+      "lineno": 5,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered __init__ method of Product class.\")"
     },
     {
-      "line": 4,
-      "kind": "except",
-      "level": "WARNING",
-      "message": "KeyError handled in safe_get"
+      "candidate_id": 12,
+      "lineno": 12,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered update_quantity method of Product class.\")"
     },
     {
-      "line": 8,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering main"
+      "candidate_id": 14,
+      "lineno": 14,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered update_price method of Product class.\")"
     },
     {
-      "line": 12,
-      "kind": "io",
-      "level": "INFO",
-      "message": "Printing host"
+      "candidate_id": 17,
+      "lineno": 17,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered get_product_info method of Product class.\")"
     },
     {
-      "line": 13,
-      "kind": "io",
-      "level": "INFO",
-      "message": "Printing timeout"
+      "candidate_id": 18,
+      "lineno": 18,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning product info: %s\", self.get_product_info())"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 21,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered __init__ method of Inventory class.\")"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 24,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered add_product method of Inventory class.\")"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 27,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered remove_product method of Inventory class.\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 30,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Product removed successfully.\")"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 31,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Product not found.\")"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 34,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered get_inventory_value method of Inventory class.\")"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 37,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered get_products_by_category method of Inventory class.\")"
+    },
+    {
+      "candidate_id": 42,
+      "lineno": 42,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered read_json method of FileManager class.\")"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 46,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning data from JSON file.\")"
+    },
+    {
+      "candidate_id": 50,
+      "lineno": 50,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entered write_json method of FileManager class.\")"
     }
   ]
 }

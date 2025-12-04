@@ -1,0 +1,110 @@
+{
+  "file": "script85.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 21,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Review.is_recent entry hours=%s\", hours)"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 45,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Review.from_dict entry raw_keys=%s\", list(raw.keys()))"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 87,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"LibraryState.from_dict entry library_id=%s\", raw.get('library_id'))"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 104,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"ApiClient.fetch_global_average entry base_url=%s\", self.base_url)"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 115,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"fetch_global_average failed\", exc_info=True)"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 118,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"ApiClient.send_summary entry size=%s\", len(summary))"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 132,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"send_summary HTTP error\", exc_info=True)"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 138,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_state entry path=%s\", path)"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 145,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_state failed, using default state\", exc_info=True)"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 149,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_state entry path=%s\", path)"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 156,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_state failed\", exc_info=True)"
+    },
+    {
+      "candidate_id": 56,
+      "lineno": 201,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"summarize_state entry global_avg=%s\", global_avg)"
+    },
+    {
+      "candidate_id": 57,
+      "lineno": 212,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"summarize_state result relation=%s reviews=%s\", relation, len(state.reviews))"
+    },
+    {
+      "candidate_id": 58,
+      "lineno": 223,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main entry data_dir=%s base_url=%s\", data_dir, base_url)"
+    },
+    {
+      "candidate_id": 59,
+      "lineno": 239,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main encountered an error\", exc_info=True)"
+    }
+  ]
+}

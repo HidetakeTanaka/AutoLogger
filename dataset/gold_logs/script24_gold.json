@@ -2,22 +2,207 @@
   "file": "script24.py",
   "logs": [
     {
-      "line": 1,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering is_palindrome"
+      "candidate_id": 1,
+      "lineno": 9,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering __init__ method in Student class\")"
     },
     {
-      "line": 6,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering main"
+      "candidate_id": 2,
+      "lineno": 15,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering update_grade method in Student class\")"
     },
     {
-      "line": 9,
-      "kind": "io",
-      "level": "INFO",
-      "message": "Printing palindrome result"
+      "candidate_id": 3,
+      "lineno": 18,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering get_student_info method in Student class\")"
+    },
+    {
+      "candidate_id": 4,
+      "lineno": 18,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning student info for: {self.name}\")"
+    },
+    {
+      "candidate_id": 5,
+      "lineno": 23,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering __init__ method in School class\")"
+    },
+    {
+      "candidate_id": 6,
+      "lineno": 27,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering add_student method in School class\")"
+    },
+    {
+      "candidate_id": 7,
+      "lineno": 30,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering remove_student method in School class\")"
+    },
+    {
+      "candidate_id": 8,
+      "lineno": 33,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Student removed successfully\")"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 34,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Student not found for removal\")"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 37,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering get_school_info method in School class\")"
+    },
+    {
+      "candidate_id": 11,
+      "lineno": 37,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning school info for: {self.name}\")"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 43,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering read_json method in FileManager class\")"
+    },
+    {
+      "candidate_id": 13,
+      "lineno": 45,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Successfully read data from file: {file_path}\")"
+    },
+    {
+      "candidate_id": 14,
+      "lineno": 47,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Error reading file: {file_path}\")"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 47,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning empty list due to file read error\")"
+    },
+    {
+      "candidate_id": 16,
+      "lineno": 51,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering write_json method in FileManager class\")"
+    },
+    {
+      "candidate_id": 17,
+      "lineno": 55,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Error writing to file: {file_path}\")"
+    },
+    {
+      "candidate_id": 18,
+      "lineno": 61,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering fetch_data method in APIClient class\")"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 64,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Successfully fetched data from API: {url}\")"
+    },
+    {
+      "candidate_id": 20,
+      "lineno": 66,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Error fetching data from API: {url}\")"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 66,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning empty list due to API fetch error\")"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 70,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering load_schools function\")"
+    },
+    {
+      "candidate_id": 23,
+      "lineno": 78,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning loaded schools from file: {file_path}\")"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 82,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering save_schools function\")"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 87,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering create_student function\")"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 87,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning created student: {name}\")"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 91,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering fetch_external_data function\")"
+    },
+    {
+      "candidate_id": 28,
+      "lineno": 91,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning fetched API data from: {url}\")"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 95,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering main function\")"
     }
   ]
 }

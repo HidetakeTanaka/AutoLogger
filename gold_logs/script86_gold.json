@@ -1,0 +1,82 @@
+{
+  "file": "script86.py",
+  "logs": [
+    {
+      "candidate_id": 26,
+      "lineno": 104,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"fetch_tax_rate entry country=%s\", country)"
+    },
+    {
+      "candidate_id": 28,
+      "lineno": 113,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"fetch_tax_rate got rate=%s\", value)"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 115,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"fetch_tax_rate failed\", exc_info=True)"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 119,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_inventory path=%s\", path)"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 122,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"load_inventory loaded from disk\")"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 124,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_inventory parse error\", exc_info=True)"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 130,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_inventory path=%s\", path)"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 136,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_inventory failed\", exc_info=True)"
+    },
+    {
+      "candidate_id": 51,
+      "lineno": 199,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main entry data_dir=%s base_url=%s\", data_dir, base_url)"
+    },
+    {
+      "candidate_id": 52,
+      "lineno": 226,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main unexpected error\", exc_info=True)"
+    },
+    {
+      "candidate_id": 54,
+      "lineno": 229,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"main completed successfully\")"
+    }
+  ]
+}

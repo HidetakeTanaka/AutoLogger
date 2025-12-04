@@ -2,28 +2,221 @@
   "file": "script28.py",
   "logs": [
     {
-      "line": 1,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering chunk_list"
+      "candidate_id": 1,
+      "lineno": 9,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering __init__ method in Product class\")"
     },
     {
-      "line": 3,
+      "candidate_id": 2,
+      "lineno": 15,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering update_stock method in Product class\")"
+    },
+    {
+      "candidate_id": 3,
+      "lineno": 18,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering update_price method in Product class\")"
+    },
+    {
+      "candidate_id": 4,
+      "lineno": 21,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering get_product_info method in Product class\")"
+    },
+    {
+      "candidate_id": 5,
+      "lineno": 21,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning product info for: {self.name}\")"
+    },
+    {
+      "candidate_id": 6,
+      "lineno": 26,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering __init__ method in Inventory class\")"
+    },
+    {
+      "candidate_id": 7,
+      "lineno": 29,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering add_product method in Inventory class\")"
+    },
+    {
+      "candidate_id": 8,
+      "lineno": 32,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering remove_product method in Inventory class\")"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 35,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Product removed successfully\")"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 36,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Product not found for removal\")"
+    },
+    {
+      "candidate_id": 11,
+      "lineno": 39,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering get_inventory_value method in Inventory class\")"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 39,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning total inventory value\")"
+    },
+    {
+      "candidate_id": 13,
+      "lineno": 42,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering filter_by_category method in Inventory class\")"
+    },
+    {
+      "candidate_id": 14,
+      "lineno": 42,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning filtered products for category: {category}\")"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 48,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering read_json method in FileManager class\")"
+    },
+    {
+      "candidate_id": 16,
+      "lineno": 50,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"File successfully read: {file_path}\")"
+    },
+    {
+      "candidate_id": 17,
+      "lineno": 52,
+      "col_offset": 0,
       "kind": "except",
-      "level": "ERROR",
-      "message": "Invalid chunk size"
+      "log_code": "logging.ERROR(\"Error reading file: {file_path}\")"
     },
     {
-      "line": 10,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering main"
+      "candidate_id": 18,
+      "lineno": 52,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning empty list due to read error\")"
     },
     {
-      "line": 13,
-      "kind": "io",
-      "level": "INFO",
-      "message": "Printing chunks"
+      "candidate_id": 19,
+      "lineno": 56,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering write_json method in FileManager class\")"
+    },
+    {
+      "candidate_id": 20,
+      "lineno": 60,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Error writing to file: {file_path}\")"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 66,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering fetch_data method in APIClient class\")"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 69,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Successfully fetched data from API: {url}\")"
+    },
+    {
+      "candidate_id": 23,
+      "lineno": 71,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Error fetching data from API: {url}\")"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 71,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning empty list due to API fetch error\")"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 75,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering load_inventory function\")"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 80,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning loaded inventory from file: {file_path}\")"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 84,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering save_inventory function\")"
+    },
+    {
+      "candidate_id": 28,
+      "lineno": 89,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering process_inventory function\")"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 98,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering update_product_prices function\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 104,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering fetch_api_data function\")"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 108,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering main function\")"
     }
   ]
 }

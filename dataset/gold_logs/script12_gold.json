@@ -2,41 +2,81 @@
   "file": "script12.py",
   "logs": [
     {
-      "line": 5,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering cubic_function"
+      "candidate_id": 1,
+      "lineno": 7,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering __init__ method of Product class\")"
     },
     {
-      "line": 10,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering generate_values"
+      "candidate_id": 4,
+      "lineno": 19,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Returning product info: {name: %s, price: %s, quantity: %s, category: %s}\", self.name, self.price, self.quantity, self.category)"
     },
     {
-      "line": 17,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering plot_function"
+      "candidate_id": 6,
+      "lineno": 24,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering __init__ method of Inventory class\")"
     },
     {
-      "line": 28,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Entering main"
+      "candidate_id": 8,
+      "lineno": 30,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering remove_product method in Inventory class\")"
     },
     {
-      "line": 25,
-      "kind": "io",
-      "level": "INFO",
-      "message": "Showing cubic plot"
+      "candidate_id": 10,
+      "lineno": 37,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering get_inventory_value method in Inventory class\")"
     },
     {
-      "line": 33,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "Exception in main"
+      "candidate_id": 13,
+      "lineno": 45,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering read_json method in FileManager class\")"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 54,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering write_json method in FileManager class\")"
+    },
+    {
+      "candidate_id": 18,
+      "lineno": 62,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering create_product function\")"
+    },
+    {
+      "candidate_id": 20,
+      "lineno": 66,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering create_inventory function\")"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 70,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering fetch_data function\")"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 84,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering main function\")"
     }
   ]
 }
-
