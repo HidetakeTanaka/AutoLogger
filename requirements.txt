@@ -8,14 +8,20 @@ openai>=1.23.0
 # HuggingFace / Flan-T5 support
 transformers>=4.40.0
 accelerate>=0.28.0
-sentencepiece  # for T5 tokenizer
+sentencepiece
 
-# Environment variable loading (optional but recommended)
-python-dotenv
+# Optional: semantic similarity
+sentence-transformers>=2.2.2
 
 # JSON and evaluation utilities
 jsonschema
-numpy
+numpy<2   # Prevent torch + numpy conflict
 
-# If you use colored logs or rich printing
+# Environment variable loading
+python-dotenv
+
+# Optional: colored CLI output
 rich
+
+# Optional: PyTorch (required for sentence-transformers)
+torch
