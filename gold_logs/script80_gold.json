@@ -1,0 +1,110 @@
+{
+  "file": "script80.py",
+  "logs": [
+    {
+      "candidate_id": 8,
+      "lineno": 43,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Response.from_dict entry\")"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 54,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Response.from_dict failed to parse payload\")"
+    },
+    {
+      "candidate_id": 20,
+      "lineno": 81,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"SurveyState.from_dict entry\")"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 98,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"AnalyticsClient.fetch_benchmark entry\")"
+    },
+    {
+      "candidate_id": 28,
+      "lineno": 107,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Fetched benchmark value for survey\")"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 109,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"AnalyticsClient.fetch_benchmark request failed\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 112,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"AnalyticsClient.send_summary entry\")"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 121,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"AnalyticsClient.send_summary HTTP status indicates success\")"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 123,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"AnalyticsClient.send_summary failed to send data\")"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 127,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_survey entry\")"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 134,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_survey failed to read or parse file\")"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 138,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_survey entry\")"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 145,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_survey failed to write file atomically\")"
+    },
+    {
+      "candidate_id": 52,
+      "lineno": 192,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"summarize_state entry\")"
+    },
+    {
+      "candidate_id": 53,
+      "lineno": 204,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"summarize_state returning summary payload\")"
+    }
+  ]
+}
