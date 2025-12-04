@@ -1,26 +1,4 @@
 {
   "file": "script31.py",
-  "logs": [
-    {
-      "candidate_id": 8,
-      "lineno": 76,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.debug(\"Loading quiz attempts from %s\", path)"
-    },
-    {
-      "candidate_id": 12,
-      "lineno": 107,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.info(\"Grouped %d attempts into %d users\", len(attempts), len(grouped))"
-    },
-    {
-      "candidate_id": 17,
-      "lineno": 133,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.info(\"Identified %d suspicious users\", len(suspects))"
-    }
-  ]
+  "logs": []
 }

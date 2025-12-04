@@ -65,14 +65,14 @@ Make sure you are in the root of the repository (`AutoLogger/`):
 #### macOS / Linux
 
 ```bash
-cd ~/GitHub/AutoLogger
+cd path/to/AutoLogger
 pip install -r requirements.txt
 ```
 
 #### Windows (PowerShell)
 
 ```powershell
-cd "$Env:USERPROFILE\GitHub\AutoLogger"
+cd path/to/AutoLogger
 pip install -r requirements.txt
 ```
 
@@ -147,14 +147,14 @@ You may now continue with:
 ### macOS / Linux
 
 ```bash
-cd ~/GitHub/AutoLogger
+cd path/to/AutoLogger
 python3 parser/parser.py scripts/script31.py
 ```
 
 ### Windows
 
 ```powershell
-cd "$Env:USERPROFILE\GitHub\AutoLogger"
+cd path/to/AutoLogger
 python parser/parser.py scripts/script31.py
 ```
 
@@ -171,15 +171,16 @@ python parser/parser.py scripts/script31.py
 ### macOS / Linux
 
 ```bash
-mkdir -p dataset/gold_logs_script31
-mv script31_gold.json dataset/gold_logs_script31/
+mkdir -p dataset/gold_logs/gold_logs_script31
+mv dataset/gold_logs/script31_gold.json dataset/gold_logs/gold_logs_script31/
 ```
 
 ### Windows
 
 ```powershell
-mkdir -Force dataset/gold_logs_script31 | Out-Null
-Move-Item script31_gold.json dataset/gold_logs_script31/
+mkdir -Force dataset/gold_logs/gold_logs_script31 | Out-Null
+Move-Item dataset/gold_logs/script31_gold.json dataset/gold_logs/gold_logs_script31/
+
 ```
 
 ---
@@ -209,7 +210,7 @@ python3 baselines/baseline_heuristic.py
 cp baselines/results_heuristic.json results/baseline_script31.json
 
 python3 eval/eval_positions.py \
-  dataset/gold_logs_script31 \
+  dataset/gold_logs/gold_logs_script31 \
   results/baseline_script31.json
 ```
 
@@ -220,7 +221,7 @@ python baselines/baseline_heuristic.py
 Copy-Item baselines/results_heuristic.json results/baseline_script31.json
 
 python eval/eval_positions.py `
-  dataset/gold_logs_script31 `
+  dataset/gold_logs/gold_logs_script31 `
   results/baseline_script31.json
 ```
 
@@ -237,7 +238,7 @@ python3 baselines/baseline_random.py
 cp baselines/results_random.json results/baseline_random_script31.json
 
 python3 eval/eval_positions.py \
-  dataset/gold_logs_script31 \
+  dataset/gold_logs/gold_logs_script31 \
   results/baseline_random_script31.json
 ```
 
@@ -248,7 +249,7 @@ python baselines/baseline_random.py
 Copy-Item baselines/results_random.json results/baseline_random_script31.json
 
 python eval/eval_positions.py `
-  dataset/gold_logs_script31 `
+  dataset/gold_logs/gold_logs_script31 `
   results/baseline_random_script31.json
 ```
 
@@ -260,10 +261,17 @@ python eval/eval_positions.py `
 
 ## **1. Generate predictions**
 
+#### Optional: Measure LLM Runtime (Recommended for Final Report)
+
+#### To compare runtime performance across different LLMs (e.g., GPT-4.1-mini, GPT-5.1, Flan-T5-base/large), you should record the execution time for each model when generating predictions.
+
+#### This can be done by prefixing the command with time (macOS/Linux) or Measure-Command (Windows PowerShell).
+
+---
 macOS/Linux:
 
 ```bash
-python3 autologger.py \
+time python3 llm/autologger2.py \
   scripts/script31.candidates.json \
   --provider openai \
   --model gpt-4.1-mini
@@ -272,10 +280,12 @@ python3 autologger.py \
 Windows:
 
 ```powershell
-python autologger.py `
-  scripts/script31.candidates.json `
-  --provider openai `
-  --model gpt-4.1-mini
+Measure-Command {
+  python llm/autologger2.py `
+    scripts/script31.candidates.json `
+    --provider openai `
+    --model gpt-4.1-mini
+}
 ```
 
 ---
@@ -306,7 +316,7 @@ macOS/Linux:
 
 ```bash
 python3 eval/eval_positions.py \
-  dataset/gold_logs_script31 \
+  dataset/gold_logs/gold_logs_script31 \
   results/llm_gpt41mini_script31.json
 ```
 
@@ -314,7 +324,7 @@ Windows:
 
 ```powershell
 python eval/eval_positions.py `
-  dataset/gold_logs_script31 `
+  dataset/gold_logs/gold_logs_script31 `
   results/llm_gpt41mini_script31.json
 ```
 
@@ -329,6 +339,78 @@ Same commands as GPT-4.1-mini, but replace model:
 ```
 
 Evaluation identical.
+---
+
+## **1. Generate predictions**
+
+#### Optional: Measure LLM Runtime (Recommended for Final Report)
+
+#### To compare runtime performance across different LLMs (e.g., GPT-4.1-mini, GPT-5.1, Flan-T5-base/large), you should record the execution time for each model when generating predictions.
+
+#### This can be done by prefixing the command with time (macOS/Linux) or Measure-Command (Windows PowerShell).
+
+---
+
+macOS/Linux:
+
+```bash
+time python3 llm/autologger2.py \
+  scripts/script31.candidates.json \
+  --provider openai \
+  --model gpt-5.1
+
+```
+
+Windows:
+
+```powershell
+Measure-Command {
+  python llm/autologger2.py `
+    scripts/script31.candidates.json `
+    --provider openai `
+    --model gpt-5.1
+}
+```
+
+---
+
+## **2. Convert predictions**
+
+macOS/Linux:
+
+```bash
+python3 eval/convert_llm_for_eval.py \
+  scripts/script31.candidates.logs.json \
+  results/llm_gpt51_script31.json
+```
+
+Windows:
+
+```powershell
+python eval/convert_llm_for_eval.py `
+  scripts/script31.candidates.logs.json `
+  results/llm_gpt51_script31.json
+```
+
+---
+
+## **3. Evaluate**
+
+macOS/Linux:
+
+```bash
+python3 eval/eval_positions.py \
+  dataset/gold_logs/gold_logs_script31 \
+  results/llm_gpt51_script31.json
+```
+
+Windows:
+
+```powershell
+python eval/eval_positions.py `
+  dataset/gold_logs/gold_logs_script31 `
+  results/llm_gpt51_script31.json
+```
 
 ---
 
@@ -338,10 +420,17 @@ Evaluation identical.
 
 ## **1. Generate predictions**
 
+#### Optional: Measure LLM Runtime (Recommended for Final Report)
+
+#### To compare runtime performance across different LLMs (e.g., GPT-4.1-mini, GPT-5.1, Flan-T5-base/large), you should record the execution time for each model when generating predictions.
+
+#### This can be done by prefixing the command with time (macOS/Linux) or Measure-Command (Windows PowerShell).
+---
+
 macOS/Linux:
 
 ```bash
-python3 autologger.py scripts/script31.candidates.json \
+time python3 llm/autologger2.py scripts/script31.candidates.json \
   --provider flan \
   --model google/flan-t5-base \
   -o dataset/raw/script31.flanbase.logs.json
@@ -350,10 +439,12 @@ python3 autologger.py scripts/script31.candidates.json \
 Windows:
 
 ```powershell
-python autologger.py scripts/script31.candidates.json `
+Measure-Command {
+ python llm/autologger2.py scripts/script31.candidates.json `
   --provider flan `
   --model google/flan-t5-base `
   -o dataset/raw/script31.flanbase.logs.json
+}
 ```
 
 ---
@@ -384,7 +475,7 @@ macOS/Linux:
 
 ```bash
 python3 eval/eval_positions.py \
-  dataset/gold_logs_script31 \
+  dataset/gold_logs/gold_logs_script31 \
   results/script31_flanbase.json
 ```
 
@@ -392,7 +483,7 @@ Windows:
 
 ```powershell
 python eval/eval_positions.py `
-  dataset/gold_logs_script31 `
+  dataset/gold_logs/gold_logs_script31 `
   results/script31_flanbase.json
 ```
 
@@ -405,6 +496,79 @@ Same as Flan-T5-base, but replace:
 ```
 --model google/flan-t5-large
 ```
+
+## **1. Generate predictions**
+
+#### Optional: Measure LLM Runtime (Recommended for Final Report)
+
+#### To compare runtime performance across different LLMs (e.g., GPT-4.1-mini, GPT-5.1, Flan-T5-base/large), you should record the execution time for each model when generating predictions.
+
+#### This can be done by prefixing the command with time (macOS/Linux) or Measure-Command (Windows PowerShell).
+
+---
+macOS/Linux:
+
+```bash
+time python3 llm/autologger2.py \
+  scripts/script31.candidates.json \
+  --provider flan \
+  --model google/flan-t5-large \
+  -o dataset/raw/script31.flanlarge.logs.json
+
+```
+
+Windows:
+
+```powershell
+Measure-Command {
+ python llm/autologger2.py scripts/script31.candidates.json `
+  --provider flan `
+  --model google/flan-t5-large `
+  -o dataset/raw/script31.flanbase.logs.json
+}
+```
+
+---
+
+## **2. Convert predictions**
+
+macOS/Linux:
+
+```bash
+python3 eval/convert_llm_for_eval.py \
+  dataset/raw/script31.flanlarge.logs.json \
+  results/script31_flanlarge.json
+```
+
+Windows:
+
+```powershell
+python eval/convert_llm_for_eval.py `
+  dataset/raw/script31.flanlarge.logs.json `
+  results/script31_flanbase.json
+```
+
+---
+
+## **3. Evaluate**
+
+macOS/Linux:
+
+```bash
+python3 eval/eval_positions.py \
+  dataset/gold_logs/gold_logs_script31 \
+  results/script31_flanlarge.json
+```
+
+Windows:
+
+```powershell
+python eval/eval_positions.py `
+  dataset/gold_logs/gold_logs_script31 `
+  results/script31_flanlarge.json
+```
+
+
 
 ---
 
