@@ -281,32 +281,48 @@ def call_llm(prompt: str, model: str, provider: str) -> str:
 
 
 def heuristic_decision_json(prompt: str) -> str:
-    """Fallback JSON decision when no LLM is available or call fails.
+    """
+    Fallback JSON decision when no real LLM is available.
 
-    Very simple strategy:
-      - Always log (should_log = true)
-      - Use a generic INFO log mentioning the function name.
+  
+     Simple rule:
+      - For func_entry candidates  -> usually SKIP (should_log = false)
+      - For before_return / exception / io -> KEEP (should_log = true)
     """
     func_name = "unknown"
     severity = "INFO"
+    kind = "generic"
 
     for line in prompt.splitlines():
         if line.startswith("Enclosing function:"):
             func_name = line.split(":", 1)[1].strip()
-        if line.startswith("Suggested severity:"):
+        elif line.startswith("Candidate kind:"):
+            kind = line.split(":", 1)[1].strip()
+        elif line.startswith("Suggested severity:"):
             sev = line.split(":", 1)[1].strip().upper()
             if sev in {"DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"}:
                 severity = sev
 
-    log_code = (
-        f"logging.{severity.lower()}('AutoLogger: reached candidate in function {func_name}')"
-    )
+    # ---- decision logic ----
+    # Default: no log
+    should_log = False
 
-    decision = {
-        "should_log": True,
-        "log_code": log_code,
-    }
+    # We only log for "interesting" events:
+    if kind in {"before_return", "exception", "io"}:
+        should_log = True
+
+    # Build log code only when we decided to log
+    if should_log:
+        log_code = (
+            f"logging.{severity.lower()}("
+            f"'LLM-fallback at {func_name} ({kind})')"
+        )
+    else:
+        log_code = ""
+
+    decision = {"should_log": should_log, "log_code": log_code}
     return json.dumps(decision)
+
 
 
 def parse_llm_decision(
