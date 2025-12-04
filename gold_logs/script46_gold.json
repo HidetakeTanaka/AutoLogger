@@ -1,0 +1,103 @@
+{
+  "file": "script46.py",
+  "logs": [
+    {
+      "candidate_id": 41,
+      "lineno": 142,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_config: loading config from %s\", path)"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 148,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_config: failed to load config from %s\", path)"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 152,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_local_articles: loading articles from %s\", path)"
+    },
+    {
+      "candidate_id": 50,
+      "lineno": 166,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"load_local_articles: loaded %d articles from %s\", len(store._articles), path)"
+    },
+    {
+      "candidate_id": 51,
+      "lineno": 170,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"save_digest: writing digest to %s\", path)"
+    },
+    {
+      "candidate_id": 52,
+      "lineno": 178,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_digest: failed to write digest to %s\", path)"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 120,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"fetch_headlines: requesting headlines for topic=%s\", topic)"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 129,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"fetch_headlines: received %d articles from %s\", len(items), url)"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 106,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"_request_json: GET %s\", url)"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 115,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"_request_json: failed to fetch %s on attempt %d\", url, tries)"
+    },
+    {
+      "candidate_id": 11,
+      "lineno": 60,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.WARNING(\"Article.from_dict: failed to parse article with id=%s\", raw.get('article_id'))"
+    },
+    {
+      "candidate_id": 60,
+      "lineno": 211,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main: starting news digest for base_dir=%s topic=%s\", base_dir, topic)"
+    },
+    {
+      "candidate_id": 61,
+      "lineno": 226,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"main: no articles after filtering, returning 1\")"
+    },
+    {
+      "candidate_id": 63,
+      "lineno": 235,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"main: digest generated successfully, returning 0\")"
+    }
+  ]
+}

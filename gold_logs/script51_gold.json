@@ -1,0 +1,110 @@
+{
+  "file": "script51.py",
+  "logs": [
+    {
+      "candidate_id": 1,
+      "lineno": 16,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(f\"Entering Reading.is_recent with hours={hours}\")"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 38,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Reading.from_dict called\")"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 48,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to build Reading from dict; returning None\")"
+    },
+    {
+      "candidate_id": 16,
+      "lineno": 61,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(f\"Sensor.recent called with hours={hours}\")"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 98,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(f\"Fetching remote sensor data for id={sensor_id}\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 102,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(f\"Fetched and decoded remote payload for sensor_id={sensor_id}\")"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 104,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(f\"Error while fetching remote sensor data for id={sensor_id}\")"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 108,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(f\"Loading sensors from {path}\")"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 112,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.WARNING(f\"Failed to load sensors from {path}; returning empty dict\")"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 118,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(f\"Loaded {len(result)} sensors from {path}\")"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 122,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(f\"Saving {len(sensors)} sensors to {path}\")"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 129,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(f\"Error while writing sensors file to {path}\")"
+    },
+    {
+      "candidate_id": 47,
+      "lineno": 155,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(f\"main started with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "candidate_id": 48,
+      "lineno": 175,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Unhandled exception in main; returning status 1\")"
+    },
+    {
+      "candidate_id": 50,
+      "lineno": 177,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"main completed successfully with status 0\")"
+    }
+  ]
+}

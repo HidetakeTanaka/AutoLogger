@@ -1,0 +1,103 @@
+{
+  "file": "script47.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 20,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Product.is_discountable start product_id=%s now=%s\", self.product_id, now)"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 49,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Product.from_dict start raw=%r\", raw)"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 59,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Product.from_dict failed raw=%r\", raw)"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 110,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"PricingClient.fetch_price start product_id=%s url=%s\", product_id, url)"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 116,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"PricingClient.fetch_price request failed url=%s\", url)"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 125,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"PricingClient.fetch_price parsed price=%s for product_id=%s\", value, product_id)"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 127,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"PricingClient.fetch_price invalid price value=%r for product_id=%s\", value, product_id)"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 131,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_products opening %s\", path)"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 137,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_products failed for %s\", path)"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 147,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_cart writing cart to %s\", path)"
+    },
+    {
+      "candidate_id": 47,
+      "lineno": 153,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_cart failed to write temp file %s\", tmp)"
+    },
+    {
+      "candidate_id": 53,
+      "lineno": 188,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"sync_remote_prices start max_updates=%d products=%d\", max_updates, len(products))"
+    },
+    {
+      "candidate_id": 54,
+      "lineno": 198,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"sync_remote_prices finished updated=%d\", updated)"
+    },
+    {
+      "candidate_id": 57,
+      "lineno": 217,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main start base_dir=%s base_url=%s\", base_dir, base_url)"
+    }
+  ]
+}

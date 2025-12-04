@@ -1,0 +1,96 @@
+{
+  "file": "script37.py",
+  "logs": [
+    {
+      "candidate_id": 7,
+      "lineno": 43,
+      "col_offset": 8,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Task.from_dict called\")"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 52,
+      "col_offset": 8,
+      "kind": "before_return",
+      "log_code": "logging.DEBUG(\"Task.from_dict returning task\")"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 102,
+      "col_offset": 8,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"ProjectStore.load called\")"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 109,
+      "col_offset": 8,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"ProjectStore.load failed, resetting projects\")"
+    },
+    {
+      "candidate_id": 23,
+      "lineno": 119,
+      "col_offset": 8,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"ProjectStore.save writing projects to disk\")"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 147,
+      "col_offset": 8,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"RemoteClient.fetch_tasks started\")"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 153,
+      "col_offset": 8,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"RemoteClient.fetch_tasks request failed\")"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 161,
+      "col_offset": 8,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"RemoteClient.push_project started\")"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 169,
+      "col_offset": 8,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"RemoteClient.push_project failed\")"
+    },
+    {
+      "candidate_id": 49,
+      "lineno": 200,
+      "col_offset": 4,
+      "kind": "before_return",
+      "log_code": "logging.DEBUG(\"summarize_tasks computed summary\")"
+    },
+    {
+      "candidate_id": 52,
+      "lineno": 208,
+      "col_offset": 8,
+      "kind": "before_return",
+      "log_code": "logging.DEBUG(\"Configuration loaded from file\")"
+    },
+    {
+      "candidate_id": 53,
+      "lineno": 210,
+      "col_offset": 8,
+      "kind": "except",
+      "log_code": "logging.WARNING(\"Using default configuration after error\")"
+    },
+    {
+      "candidate_id": 62,
+      "lineno": 257,
+      "col_offset": 4,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"main started\")"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "file": "script32.py",
+  "logs": [
+    {
+      "candidate_id": 13,
+      "lineno": 76,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Loading users from %s\", self.path)"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 83,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to load users, falling back to empty store\")"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 119,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Loading events from %s\", self.path)"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 125,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Invalid or unreadable events file, returning empty list\")"
+    },
+    {
+      "candidate_id": 28,
+      "lineno": 131,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Skipping malformed event record during load\")"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 140,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Loaded %d events\", len(events))"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 144,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Generating %d random events for %d users\", count, len(users))"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 163,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"Writing %d events to %s\", len(events), path)"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 171,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.DEBUG(\"Filtered %d recent events from %d total\", len([e for e in events if e.is_recent(now, minutes=minutes)]), len(events))"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 186,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Assigning segments to %d users using %d events\", len(users), len(events))"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 193,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Finished segment assignment for %d users\", len(mapping))"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 197,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"Exporting segment memberships for %d users to %s\", len(mapping), path)"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 204,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Loading or creating users at %s\", path)"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 220,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"Starting segmentation pipeline with base_dir=%s\", base_dir)"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 241,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Segmentation pipeline completed successfully\")"
+    }
+  ]
+}

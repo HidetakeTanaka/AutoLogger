@@ -1,0 +1,103 @@
+{
+  "file": "script34.py",
+  "logs": [
+    {
+      "candidate_id": 10,
+      "lineno": 48,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Loading sensor definitions from %s\", self.path)"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 55,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to read sensors file %s, starting with empty store\", self.path)"
+    },
+    {
+      "candidate_id": 14,
+      "lineno": 65,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.WARNING(\"Skipping invalid sensor entry while loading configuration\")"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 77,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Loading readings from CSV %s\", path)"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 89,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to open readings CSV %s, returning empty list\", path)"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 92,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.WARNING(\"Skipping malformed CSV row while loading readings\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 113,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Finding alarms for %d sensors\", len(grouped))"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 133,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"Exporting %d alarms to %s\", len(alarms), path)"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 139,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"Exporting sensor statistics to %s\", path)"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 145,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Loading sensor configuration from %s\", path)"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 151,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to parse sensor configuration file %s, using defaults\", path)"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 155,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Summarizing readings for %d sensors\", len(grouped))"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 170,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"Starting sensor analytics pipeline\")"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 195,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Sensor analytics pipeline completed successfully\")"
+    }
+  ]
+}
