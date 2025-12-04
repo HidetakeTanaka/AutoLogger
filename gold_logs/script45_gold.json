@@ -1,0 +1,103 @@
+{
+  "file": "script45.py",
+  "logs": [
+    {
+      "candidate_id": 37,
+      "lineno": 128,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Parsing CSV file from %s\", path)"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 138,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to parse CSV file %s\", path)"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 139,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Parsed %d sensor readings from %s\", len(readings), path)"
+    },
+    {
+      "candidate_id": 45,
+      "lineno": 168,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"Saving telemetry report to %s\", path)"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 99,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Fetching remote config for device %s\", device_id)"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 109,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Fetched remote config for device %s\", device_id)"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 111,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Error fetching remote config for device %s\", device_id)"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 114,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Pushing aggregate payload with %d devices\", len(payload.get(\"summary\", {})))"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 124,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Error pushing aggregate payload to %s\", url)"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 181,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Loading config from %s\", path)"
+    },
+    {
+      "candidate_id": 49,
+      "lineno": 188,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to load config from %s\", path)"
+    },
+    {
+      "candidate_id": 53,
+      "lineno": 199,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Starting telemetry pipeline for dir=%s\", data_dir)"
+    },
+    {
+      "candidate_id": 54,
+      "lineno": 208,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.WARNING(\"No sensor readings found at %s\", csv_path)"
+    },
+    {
+      "candidate_id": 55,
+      "lineno": 217,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Telemetry pipeline completed successfully\")"
+    }
+  ]
+}

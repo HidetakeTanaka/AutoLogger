@@ -1,0 +1,96 @@
+{
+  "file": "script74.py",
+  "logs": [
+    {
+      "candidate_id": 22,
+      "lineno": 92,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"fetch_thresholds: start\")"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 99,
+      "col_offset": 4,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"fetch_thresholds: thresholds loaded successfully\")"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 101,
+      "col_offset": 4,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"fetch_thresholds: failed to load thresholds\")"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 104,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"push_summary: start\")"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 112,
+      "col_offset": 4,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"push_summary: received response from server\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 114,
+      "col_offset": 4,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"push_summary: network or HTTP error occurred\")"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 120,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_devices: reading devices from disk\")"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 122,
+      "col_offset": 4,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"load_devices: successfully loaded devices list\")"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 124,
+      "col_offset": 4,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_devices: error while reading or parsing file\")"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 144,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"summarize_devices: computing aggregate metrics\")"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 152,
+      "col_offset": 4,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"summarize_devices: summary computed\")"
+    },
+    {
+      "candidate_id": 52,
+      "lineno": 187,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main: starting device monitoring workflow\")"
+    },
+    {
+      "candidate_id": 53,
+      "lineno": 207,
+      "col_offset": 4,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main: unhandled error in workflow\")"
+    }
+  ]
+}

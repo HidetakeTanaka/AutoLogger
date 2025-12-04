@@ -1,0 +1,110 @@
+{
+  "file": "script33.py",
+  "logs": [
+    {
+      "candidate_id": 7,
+      "lineno": 40,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Probing URL %s\", url)"
+    },
+    {
+      "candidate_id": 8,
+      "lineno": 46,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"HTTP error while requesting %s\", url)"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 48,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Network error while requesting %s\", url)"
+    },
+    {
+      "candidate_id": 14,
+      "lineno": 57,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"Saving %d metric samples to %s\", len(samples), self.path)"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 70,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Loading metric samples from %s\", self.path)"
+    },
+    {
+      "candidate_id": 17,
+      "lineno": 76,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to read metrics file %s, returning empty list\", self.path)"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 84,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Skipping invalid metric record during load\")"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 90,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Reading endpoints from %s\", path)"
+    },
+    {
+      "candidate_id": 23,
+      "lineno": 96,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to parse endpoints configuration, returning empty list\")"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 104,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Skipping invalid endpoint configuration entry\")"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 138,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"Exporting metrics report with %d samples to %s\", len(samples), path)"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 157,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Measuring %d endpoints\", len(endpoints))"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 165,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Retrying %d failed endpoints\", len(failed))"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 179,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"Starting metrics collection pipeline with config %s\", config_path)"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 201,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Metrics collection pipeline finished successfully\")"
+    }
+  ]
+}

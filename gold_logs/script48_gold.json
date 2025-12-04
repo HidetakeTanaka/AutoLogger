@@ -1,0 +1,110 @@
+{
+  "file": "script48.py",
+  "logs": [
+    {
+      "candidate_id": 2,
+      "lineno": 24,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"WorkoutSession.is_recent: evaluated recency for days=%s\", days)"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 46,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"WorkoutSession.from_dict: starting parse for raw session %s\", raw.get('session_id'))"
+    },
+    {
+      "candidate_id": 11,
+      "lineno": 58,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"WorkoutSession.from_dict: failed to parse session payload\", exc_info=True)"
+    },
+    {
+      "candidate_id": 20,
+      "lineno": 87,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"UserProfile.from_dict: loading profile %s\", raw.get('user_id'))"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 101,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"UserProfile.from_dict: error while constructing profile\", exc_info=True)"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 113,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"RecommendationClient.fetch_recommendations: requesting goal=%s\", goal)"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 121,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"RecommendationClient.fetch_recommendations: HTTP error while fetching recommendations\", exc_info=True)"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 131,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_profiles: loading profiles from %s\", path)"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 137,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_profiles: failed to read or parse profile file\", exc_info=True)"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 147,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_profiles: writing %d profiles to %s\", len(list(profiles)), path)"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 154,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_profiles: failed while writing temp or replacing target file\", exc_info=True)"
+    },
+    {
+      "candidate_id": 49,
+      "lineno": 187,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_config: loading configuration from %s\", path)"
+    },
+    {
+      "candidate_id": 51,
+      "lineno": 191,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_config: error reading configuration file\", exc_info=True)"
+    },
+    {
+      "candidate_id": 55,
+      "lineno": 221,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main: starting workflow with base_dir=%s base_url=%s\", base_dir, base_url)"
+    },
+    {
+      "candidate_id": 58,
+      "lineno": 256,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main: unhandled exception during workflow\", exc_info=True)"
+    }
+  ]
+}

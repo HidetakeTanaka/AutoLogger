@@ -1,0 +1,110 @@
+{
+  "file": "scripts\\script55.py",
+  "logs": [
+    {
+      "candidate_id": 10,
+      "lineno": 49,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Book.from_dict: start\")"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 61,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Book.from_dict: failed to parse book data\")"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 112,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"LibraryClient.fetch_remote: start request\")"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 117,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"LibraryClient.fetch_remote: successfully parsed response\")"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 119,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"LibraryClient.fetch_remote: error while fetching remote library\")"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 123,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_library: loading library from disk\")"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 127,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.WARNING(\"load_library: failed to load, returning empty local library\")"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 133,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"save_library: saving library to disk\")"
+    },
+    {
+      "candidate_id": 42,
+      "lineno": 139,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"save_library: failed to write temporary file\")"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 152,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"summarize_library: computed summary for library\")"
+    },
+    {
+      "candidate_id": 53,
+      "lineno": 182,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"merge_remote_library: start merge with remote data\")"
+    },
+    {
+      "candidate_id": 55,
+      "lineno": 190,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"merge_remote_library: merge completed\")"
+    },
+    {
+      "candidate_id": 56,
+      "lineno": 194,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.INFO(\"main: starting library processing\")"
+    },
+    {
+      "candidate_id": 57,
+      "lineno": 209,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main: failed to write summary report\")"
+    },
+    {
+      "candidate_id": 58,
+      "lineno": 209,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.ERROR(\"main: exiting with status 1\")"
+    }
+  ]
+}

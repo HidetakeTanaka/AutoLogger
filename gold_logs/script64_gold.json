@@ -1,0 +1,110 @@
+{
+  "file": "script64.py",
+  "logs": [
+    {
+      "candidate_id": 25,
+      "lineno": 102,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering fetch_fleet_snapshot\")"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 109,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Fetched fleet snapshot from remote\")"
+    },
+    {
+      "candidate_id": 28,
+      "lineno": 111,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Error while fetching fleet snapshot\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 114,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering push_aggregates\")"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 121,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Successfully pushed aggregates to remote\")"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 123,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Error while pushing aggregates to remote\")"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 127,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Loading fleet from disk\")"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 131,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Failed to load fleet, using fallback\")"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 135,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Saving fleet to disk\")"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 141,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Error while writing fleet file\")"
+    },
+    {
+      "candidate_id": 42,
+      "lineno": 149,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Computing fleet statistics\")"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 160,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"Computed fleet statistics with non-empty device list\")"
+    },
+    {
+      "candidate_id": 49,
+      "lineno": 193,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Merging remote snapshot into local fleet\")"
+    },
+    {
+      "candidate_id": 52,
+      "lineno": 211,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Entering main in script64\")"
+    },
+    {
+      "candidate_id": 53,
+      "lineno": 230,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Unhandled error in main for script64\")"
+    }
+  ]
+}

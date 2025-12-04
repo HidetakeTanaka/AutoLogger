@@ -1,0 +1,89 @@
+{
+  "file": "scripts\\script59.py",
+  "logs": [
+    {
+      "candidate_id": 12,
+      "lineno": 56,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"Sensor.from_dict: start parsing raw data\")"
+    },
+    {
+      "candidate_id": 14,
+      "lineno": 69,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"Sensor.from_dict: failed to parse raw data\")"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 114,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"MetricsClient.fetch: requesting network data\")"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 121,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"MetricsClient.fetch: error during HTTP request\")"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 124,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"MetricsClient.push: sending payload to remote\")"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 129,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"MetricsClient.push: request completed successfully\")"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 135,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"load_network: loading network from disk\")"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 139,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"load_network: failed to read network file\")"
+    },
+    {
+      "candidate_id": 51,
+      "lineno": 170,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"aggregate_metrics: computed aggregate values\")"
+    },
+    {
+      "candidate_id": 56,
+      "lineno": 193,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.INFO(\"sync_remote_metrics: merged remote metrics into local network\")"
+    },
+    {
+      "candidate_id": 58,
+      "lineno": 206,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.DEBUG(\"main: starting metrics pipeline\")"
+    },
+    {
+      "candidate_id": 59,
+      "lineno": 224,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.ERROR(\"main: unhandled error in metrics pipeline\")"
+    }
+  ]
+}
