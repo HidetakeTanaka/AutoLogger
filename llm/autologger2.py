@@ -192,8 +192,9 @@ def call_openai_chat(prompt: str, model: str) -> str:
         )
         text = response.choices[0].message.content or ""
         return text.strip()
-    except Exception:
-        # On any error (including insufficient_quota), fall back
+    except Exception as e:
+        # PRINT THE ERROR so we can see it!
+        print(f"\n[ERROR] OpenAI Call Failed: {e}\n")
         return heuristic_decision_json(prompt)
 
 
