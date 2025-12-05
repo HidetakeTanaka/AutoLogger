@@ -163,6 +163,193 @@ python parser/parser.py scripts/script31.py
 ## **2. Generate `script31_gold.json` using ChatGPT**
 
 *(manual step)*
+Please generate new gold.json using ChatGPT using the following prompt.
+After that copy and paste it into the file "script.._gold.json" in the folder "dataset/gold_logs".
+
+```bash
+Here’s a ready-to-use English prompt you can give to ChatGPT:
+
+---
+
+Using the following two JSON inputs:
+
+1. **`candidates.json`** – a list of logging candidates extracted from a Python script.
+2. **`script31_gold.json`** – an example of the desired gold annotation format:
+
+```json
+{
+  "file": "script31.py",
+  "logs": [
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering QuizAttempt.is_suspicious"
+    },
+    {
+      "line": 41,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning suspicious flag in QuizAttempt.is_suspicious"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_attempts"
+    },
+    {
+      "line": 99,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse an attempt entry in load_attempts"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed attempts from load_attempts"
+    },
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_user"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning user summary in summarize_user"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering find_suspicious_users"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of suspicious users"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering interactive_menu"
+    },
+    {
+      "line": 144,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load attempts in interactive_menu"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Aborting interactive_menu after load failure"
+    },
+    {
+      "line": 171,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in interactive_menu loop"
+    },
+    {
+      "line": 182,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    }
+  ]
+}
+```
+
+I want you to construct a new **`gold.json`** file for the **target script** described in `candidates.json`.
+
+Please:
+
+1. **Read `candidates.json`** and use it as the source of possible log locations. Each candidate contains (at least) fields like:
+
+   * `file`
+   * `line` (or `lineno`)
+   * `kind` (e.g., `func_entry`, `before_return`, `except`, etc.)
+   * `function`
+   * `class_name` (may be `null`)
+   * `severity_hint` (e.g., `DEBUG`, `INFO`, `ERROR`)
+
+2. **Use `script31_gold.json` as the style and structure reference**:
+
+   * Similar logging density (not necessarily every candidate must become a log).
+   * Similar semantic patterns for messages, such as:
+
+     * `"Entering <Class>.<function>"` for function entries.
+     * `"Returning <value/summary> from <function>"` for returns.
+     * `"Failed to <action> in <function>"` or `"Unexpected error in <function>"` for exceptions.
+
+3. **Produce a single JSON object** with this exact structure:
+
+```json
+{
+  "file": "<SCRIPT_NAME>.py",
+  "logs": [
+    {
+      "line": <line_number>,
+      "kind": "<entry|return|exception|other>",
+      "level": "<DEBUG|INFO|WARNING|ERROR>",
+      "message": "<concise, human-readable log message>"
+    }
+  ]
+}
+```
+
+Where:
+
+* `"file"` is set to the script file name from `candidates.json` (without any leading directory like `scripts/` unless the example uses it).
+* `"logs"` is an array of selected log points derived from `candidates.json`.
+
+4. **Mapping guidelines** (from candidate fields to `logs` entries):
+
+* If candidate `kind` is:
+
+  * `func_entry` → `"kind": "entry"`, `"level"` usually `"DEBUG"`, message `"Entering <Class>.<function>"` or `"Entering <function>"` if no class.
+  * `before_return` → `"kind": "return"`, `"level"` usually `"INFO"`, message like `"Returning <summary> from <function>"`.
+  * `except` / `exception` → `"kind": "exception"`, `"level"` usually `"ERROR"`, message like `"Failed to <action> in <function>"` or `"Unexpected error in <function>"`.
+  * Other kinds may be mapped to `"kind": "other"` with an appropriate level and message if you decide they are useful.
+
+* Use the candidate’s `line` (or `lineno`) as the `"line"` field.
+
+* Use `severity_hint` as a suggestion for `"level"`, but keep it consistent with the example if needed.
+
+5. **Content and style requirements**:
+
+* Messages must be:
+
+  * Clear and human-readable.
+  * Consistent with `script31_gold.json` style.
+  * Specific to the function/class when possible (e.g., `QuizAttempt.is_suspicious`, `load_attempts`, `interactive_menu`, `main`).
+
+* You **do not** need to include every candidate; choose a reasonable subset that covers:
+
+  * Key function entries.
+  * Important returns.
+  * Exception paths and error-prone areas.
+  * Major top-level workflows (like `main`-style functions).
+
+6. **Output rules**:
+
+* **Only output the final `gold.json` object.**
+* Do **not** include explanations, comments, or any additional text.
+* Ensure the JSON is valid and can be parsed by a standard JSON parser.
+
+---
+
+(Then I will paste `candidates.json` below this prompt.)
+
+```
 
 ---
 

@@ -1,0 +1,47 @@
+{
+  "file": "script32.py",
+  "logs": [
+    {
+      "candidate_id": 15,
+      "lineno": 83,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(\"Failed to load user in UserStore.load\", exc_info=True, extra={\"uid\": uid, \"name\": name, \"country\": country})"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 159,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(\"Generated %d random events for %d users\", len(result), len(users))"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 163,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"write_events called for path=%s with %d events\", path, len(events))"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 170,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entering filter_recent_events with %d events, window=%d minutes, now=%s\", len(events), minutes, now)"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 197,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Exporting segments to %s with %d mapping entries\", path, len(mapping))"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 220,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(\"Entering main with base_dir=%s\", base_dir)"
+    }
+  ]
+}

@@ -1,0 +1,792 @@
+{
+  "file": "scripts/script33.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 19,
+      "end_line": 19,
+      "function": "to_dict",
+      "class_name": "Endpoint",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 19,
+      "end_line": 19,
+      "function": "to_dict",
+      "class_name": "Endpoint",
+      "code": "return {'name': self.name, 'url': self.url, 'weight': self.weight}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 29,
+      "end_line": 29,
+      "function": "is_error",
+      "class_name": "MetricSample",
+      "code": "def is_error(self) -> bool:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "is_error",
+      "class_name": "MetricSample",
+      "code": "return self.status_code >= 500",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 32,
+      "end_line": 32,
+      "function": "is_slow",
+      "class_name": "MetricSample",
+      "code": "def is_slow(self, threshold_ms: float = 800.0) -> bool:",
+      "vars_in_scope": [
+        "self",
+        "threshold_ms"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "is_slow",
+      "class_name": "MetricSample",
+      "code": "return self.response_time_ms > threshold_ms",
+      "vars_in_scope": [
+        "self",
+        "threshold_ms"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 37,
+      "end_line": 37,
+      "function": "__init__",
+      "class_name": "HttpProbe",
+      "code": "def __init__(self, timeout: int = 4) -> None:",
+      "vars_in_scope": [
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 40,
+      "end_line": 40,
+      "function": "measure",
+      "class_name": "HttpProbe",
+      "code": "def measure(self, url: str) -> MetricSample:",
+      "vars_in_scope": [
+        "_",
+        "req",
+        "self",
+        "status",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 46,
+      "end_line": 46,
+      "function": "measure",
+      "class_name": "HttpProbe",
+      "code": "except ...",
+      "vars_in_scope": [
+        "_",
+        "req",
+        "self",
+        "status",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 46,
+      "end_line": 46,
+      "function": "measure",
+      "class_name": "HttpProbe",
+      "code": "return MetricSample(endpoint=url, response_time_ms=self.timeout * 1000.0, status_code=e.code)",
+      "vars_in_scope": [
+        "_",
+        "req",
+        "self",
+        "status",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 48,
+      "end_line": 48,
+      "function": "measure",
+      "class_name": "HttpProbe",
+      "code": "except ...",
+      "vars_in_scope": [
+        "_",
+        "req",
+        "self",
+        "status",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 48,
+      "end_line": 48,
+      "function": "measure",
+      "class_name": "HttpProbe",
+      "code": "return MetricSample(endpoint=url, response_time_ms=self.timeout * 1000.0, status_code=599)",
+      "vars_in_scope": [
+        "_",
+        "req",
+        "self",
+        "status",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 49,
+      "end_line": 49,
+      "function": "measure",
+      "class_name": "HttpProbe",
+      "code": "return MetricSample(endpoint=url, response_time_ms=200.0, status_code=status)",
+      "vars_in_scope": [
+        "_",
+        "req",
+        "self",
+        "status",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 54,
+      "end_line": 54,
+      "function": "__init__",
+      "class_name": "MetricStore",
+      "code": "def __init__(self, path: Path) -> None:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 57,
+      "end_line": 57,
+      "function": "save",
+      "class_name": "MetricStore",
+      "code": "def save(self, samples: List[MetricSample]) -> None:",
+      "vars_in_scope": [
+        "payload",
+        "samples",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 70,
+      "end_line": 70,
+      "function": "load",
+      "class_name": "MetricStore",
+      "code": "def load(self) -> List[MetricSample]:",
+      "vars_in_scope": [
+        "code",
+        "data",
+        "endpoint",
+        "rt",
+        "samples",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 71,
+      "end_line": 71,
+      "function": "load",
+      "class_name": "MetricStore",
+      "code": "return []",
+      "vars_in_scope": [
+        "code",
+        "data",
+        "endpoint",
+        "rt",
+        "samples",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 76,
+      "end_line": 76,
+      "function": "load",
+      "class_name": "MetricStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "code",
+        "data",
+        "endpoint",
+        "rt",
+        "samples",
+        "self"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 76,
+      "end_line": 76,
+      "function": "load",
+      "class_name": "MetricStore",
+      "code": "return []",
+      "vars_in_scope": [
+        "code",
+        "data",
+        "endpoint",
+        "rt",
+        "samples",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 84,
+      "end_line": 84,
+      "function": "load",
+      "class_name": "MetricStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "code",
+        "data",
+        "endpoint",
+        "rt",
+        "samples",
+        "self"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 86,
+      "end_line": 86,
+      "function": "load",
+      "class_name": "MetricStore",
+      "code": "return samples",
+      "vars_in_scope": [
+        "code",
+        "data",
+        "endpoint",
+        "rt",
+        "samples",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 90,
+      "end_line": 90,
+      "function": "read_endpoints",
+      "class_name": null,
+      "code": "def read_endpoints(path: Path) -> List[Endpoint]:",
+      "vars_in_scope": [
+        "data",
+        "name",
+        "path",
+        "result",
+        "url",
+        "weight"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 91,
+      "end_line": 91,
+      "function": "read_endpoints",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "name",
+        "path",
+        "result",
+        "url",
+        "weight"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 96,
+      "end_line": 96,
+      "function": "read_endpoints",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "name",
+        "path",
+        "result",
+        "url",
+        "weight"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 96,
+      "end_line": 96,
+      "function": "read_endpoints",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "name",
+        "path",
+        "result",
+        "url",
+        "weight"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 104,
+      "end_line": 104,
+      "function": "read_endpoints",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "name",
+        "path",
+        "result",
+        "url",
+        "weight"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 106,
+      "end_line": 106,
+      "function": "read_endpoints",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "data",
+        "name",
+        "path",
+        "result",
+        "url",
+        "weight"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 110,
+      "end_line": 110,
+      "function": "group_by_endpoint",
+      "class_name": null,
+      "code": "def group_by_endpoint(samples: List[MetricSample]) -> Dict[str, List[MetricSample]]:",
+      "vars_in_scope": [
+        "grouped",
+        "samples"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 113,
+      "end_line": 113,
+      "function": "group_by_endpoint",
+      "class_name": null,
+      "code": "return grouped",
+      "vars_in_scope": [
+        "grouped",
+        "samples"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 117,
+      "end_line": 117,
+      "function": "compute_endpoint_stats",
+      "class_name": null,
+      "code": "def compute_endpoint_stats(samples: List[MetricSample]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "codes",
+        "errors",
+        "rts",
+        "samples"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 118,
+      "end_line": 118,
+      "function": "compute_endpoint_stats",
+      "class_name": null,
+      "code": "return {'count': 0, 'avg_rt': 0.0, 'error_rate': 0.0}",
+      "vars_in_scope": [
+        "codes",
+        "errors",
+        "rts",
+        "samples"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 122,
+      "end_line": 122,
+      "function": "compute_endpoint_stats",
+      "class_name": null,
+      "code": "return {'count': len(samples), 'avg_rt': mean(rts), 'error_rate': errors / len(samples)}",
+      "vars_in_scope": [
+        "codes",
+        "errors",
+        "rts",
+        "samples"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 130,
+      "end_line": 130,
+      "function": "compute_overall_stats",
+      "class_name": null,
+      "code": "def compute_overall_stats(samples: List[MetricSample]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "error",
+        "samples",
+        "slow"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 131,
+      "end_line": 131,
+      "function": "compute_overall_stats",
+      "class_name": null,
+      "code": "return {'total': 0, 'slow_count': 0, 'error_count': 0}",
+      "vars_in_scope": [
+        "error",
+        "samples",
+        "slow"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 134,
+      "end_line": 134,
+      "function": "compute_overall_stats",
+      "class_name": null,
+      "code": "return {'total': len(samples), 'slow_count': slow, 'error_count': error}",
+      "vars_in_scope": [
+        "error",
+        "samples",
+        "slow"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 138,
+      "end_line": 138,
+      "function": "export_report",
+      "class_name": null,
+      "code": "def export_report(path: Path, samples: List[MetricSample]) -> None:",
+      "vars_in_scope": [
+        "grouped",
+        "overall",
+        "path",
+        "payload",
+        "per_endpoint",
+        "samples"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 153,
+      "end_line": 153,
+      "function": "filter_failed",
+      "class_name": null,
+      "code": "def filter_failed(samples: List[MetricSample]) -> List[MetricSample]:",
+      "vars_in_scope": [
+        "samples"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 153,
+      "end_line": 153,
+      "function": "filter_failed",
+      "class_name": null,
+      "code": "return [s for s in samples if s.status_code >= 500]",
+      "vars_in_scope": [
+        "samples"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 157,
+      "end_line": 157,
+      "function": "measure_all",
+      "class_name": null,
+      "code": "def measure_all(endpoints: List[Endpoint], probe: HttpProbe) -> List[MetricSample]:",
+      "vars_in_scope": [
+        "endpoints",
+        "probe",
+        "sample",
+        "samples"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 161,
+      "end_line": 161,
+      "function": "measure_all",
+      "class_name": null,
+      "code": "return samples",
+      "vars_in_scope": [
+        "endpoints",
+        "probe",
+        "sample",
+        "samples"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 165,
+      "end_line": 165,
+      "function": "retry_failed",
+      "class_name": null,
+      "code": "def retry_failed(failed: List[MetricSample], endpoints: List[Endpoint], probe: HttpProbe) -> List[MetricSample]:",
+      "vars_in_scope": [
+        "endpoints",
+        "ep",
+        "failed",
+        "mapping",
+        "new_sample",
+        "probe",
+        "retried"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 166,
+      "end_line": 166,
+      "function": "retry_failed",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "endpoints",
+        "ep",
+        "failed",
+        "mapping",
+        "new_sample",
+        "probe",
+        "retried"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "retry_failed",
+      "class_name": null,
+      "code": "return retried",
+      "vars_in_scope": [
+        "endpoints",
+        "ep",
+        "failed",
+        "mapping",
+        "new_sample",
+        "probe",
+        "retried"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 179,
+      "end_line": 179,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(config_path: str = \"endpoints.json\") -> int:",
+      "vars_in_scope": [
+        "cfg_path",
+        "config_path",
+        "endpoints",
+        "failed",
+        "loaded_again",
+        "metrics_path",
+        "probe",
+        "report_path",
+        "retries",
+        "samples",
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 182,
+      "end_line": 182,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "cfg_path",
+        "config_path",
+        "endpoints",
+        "failed",
+        "loaded_again",
+        "metrics_path",
+        "probe",
+        "report_path",
+        "retries",
+        "samples",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 200,
+      "end_line": 200,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "cfg_path",
+        "config_path",
+        "endpoints",
+        "failed",
+        "loaded_again",
+        "metrics_path",
+        "probe",
+        "report_path",
+        "retries",
+        "samples",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 201,
+      "end_line": 201,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "cfg_path",
+        "config_path",
+        "endpoints",
+        "failed",
+        "loaded_again",
+        "metrics_path",
+        "probe",
+        "report_path",
+        "retries",
+        "samples",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

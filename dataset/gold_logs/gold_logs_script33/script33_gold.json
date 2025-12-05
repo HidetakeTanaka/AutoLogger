@@ -1,0 +1,287 @@
+{
+  "file": "script33.py",
+  "logs": [
+    {
+      "line": 19,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Endpoint.to_dict"
+    },
+    {
+      "line": 19,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning dict representation from Endpoint.to_dict"
+    },
+    {
+      "line": 29,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricSample.is_error"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning error flag from MetricSample.is_error"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricSample.is_slow"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning slow flag from MetricSample.is_slow"
+    },
+    {
+      "line": 37,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HttpProbe.**init**"
+    },
+    {
+      "line": 40,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HttpProbe.measure"
+    },
+    {
+      "line": 46,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "HTTP error while probing URL in HttpProbe.measure"
+    },
+    {
+      "line": 46,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback MetricSample for HTTP error in HttpProbe.measure"
+    },
+    {
+      "line": 48,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Request failed while probing URL in HttpProbe.measure"
+    },
+    {
+      "line": 48,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback MetricSample for request failure in HttpProbe.measure"
+    },
+    {
+      "line": 49,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning successful MetricSample from HttpProbe.measure"
+    },
+    {
+      "line": 54,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricStore.**init**"
+    },
+    {
+      "line": 57,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricStore.save"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricStore.load"
+    },
+    {
+      "line": 71,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty metric list from MetricStore.load"
+    },
+    {
+      "line": 76,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read metrics file in MetricStore.load"
+    },
+    {
+      "line": 76,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty metric list from MetricStore.load after read failure"
+    },
+    {
+      "line": 84,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse metrics data in MetricStore.load"
+    },
+    {
+      "line": 86,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning loaded metric samples from MetricStore.load"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering read_endpoints"
+    },
+    {
+      "line": 91,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty endpoint list from read_endpoints"
+    },
+    {
+      "line": 96,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read endpoints file in read_endpoints"
+    },
+    {
+      "line": 96,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty endpoint list from read_endpoints after read failure"
+    },
+    {
+      "line": 104,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse endpoints config in read_endpoints"
+    },
+    {
+      "line": 106,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed endpoints from read_endpoints"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering group_by_endpoint"
+    },
+    {
+      "line": 113,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning samples grouped by endpoint in group_by_endpoint"
+    },
+    {
+      "line": 117,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_endpoint_stats"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning default stats for empty sample list in compute_endpoint_stats"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed endpoint stats in compute_endpoint_stats"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_overall_stats"
+    },
+    {
+      "line": 131,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning default overall stats for empty sample list in compute_overall_stats"
+    },
+    {
+      "line": 134,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed overall stats in compute_overall_stats"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering export_report"
+    },
+    {
+      "line": 153,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_failed"
+    },
+    {
+      "line": 153,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered failed samples from filter_failed"
+    },
+    {
+      "line": 157,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering measure_all"
+    },
+    {
+      "line": 161,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning collected samples from measure_all"
+    },
+    {
+      "line": 165,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering retry_failed"
+    },
+    {
+      "line": 166,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty retry list from retry_failed"
+    },
+    {
+      "line": 175,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning retried samples from retry_failed"
+    },
+    {
+      "line": 179,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code 1 from main after initial failure"
+    },
+    {
+      "line": 200,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code 1 from main after retry failure"
+    },
+    {
+      "line": 201,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning success exit code 0 from main"
+    }
+  ]
+}
