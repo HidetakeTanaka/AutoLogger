@@ -65,14 +65,14 @@ Make sure you are in the root of the repository (`AutoLogger/`):
 #### macOS / Linux
 
 ```bash
-cd path/to/AutoLogger
+cd path/to/AutoLogger (Use your path to "AutoLogger"!!)
 pip install -r requirements.txt
 ```
 
 #### Windows (PowerShell)
 
 ```powershell
-cd path/to/AutoLogger
+cd path/to/AutoLogger (Use your path to "AutoLogger"!!)
 pip install -r requirements.txt
 ```
 
@@ -147,14 +147,14 @@ You may now continue with:
 ### macOS / Linux
 
 ```bash
-cd path/to/AutoLogger
+cd path/to/AutoLogger (Use your path to "AutoLogger"!!)
 python3 parser/parser.py scripts/script31.py
 ```
 
 ### Windows
 
 ```powershell
-cd path/to/AutoLogger
+cd path/to/AutoLogger (Use your path to "AutoLogger"!!)
 python parser/parser.py scripts/script31.py
 ```
 
