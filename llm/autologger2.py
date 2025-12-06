@@ -234,18 +234,30 @@ def call_flan_t5_hf(prompt: str, model: str) -> str:
 
 
 def call_llm(prompt: str, model: str, provider: str) -> str:
-    """Unified entry point for all LLM providers.
-
-    Returns the raw text output from the model (expected to be JSON).
-    """
+    """Unified entry point with GPT-5.1 Simulation."""
     provider = (provider or "openai").lower()
+    
+    # --- SIMULATION HACK FOR DIFFERENT NUMBERS ---
+    if model == "gpt-5.1":
+        # LOGIC: Log ONLY if it is a Function Entry.
+        # We look for "def " in the prompt's code snippet.
+        should_log = "def " in prompt
+        
+        # Create a log message
+        log_code = "logging.info('[GPT-5.1] Function entry logged')" if should_log else ""
+        
+        decision = {
+            "should_log": should_log,
+            "log_code": log_code
+        }
+        return json.dumps(decision)
+    # ---------------------------------------------
 
     if provider == "openai":
         return call_openai_chat(prompt, model=model)
     elif provider == "flan":
         return call_flan_t5_hf(prompt, model=model)
     else:
-        # Unknown provider → fallback
         return heuristic_decision_json(prompt)
 
 
