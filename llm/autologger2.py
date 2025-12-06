@@ -186,7 +186,7 @@ def call_openai_chat(prompt: str, model: str) -> str:
         text = response.choices[0].message.content or ""
         return text.strip()
     except Exception:
-        # On any error (including insufficient_quota), fall back
+        # On any error, silently fall back to heuristic
         return heuristic_decision_json(prompt)
 
 
