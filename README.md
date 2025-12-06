@@ -83,6 +83,23 @@ Author
 Role: LLM Integration Engineer
 Contribution: Design, development and integration of LLM backend for AutoLogger.
 
+### Error Handling
+
+If:
+
+API keys are missing
+
+API quota is exhausted
+
+Provider is unreachable
+
+The system falls back to a simple heuristic log:
+
+logging.info("AutoLogger: reached candidate in function foo")
+
+This ensures the system never crashes and always produces output.
+
+
 ---
 
 ## Setup Instructions
@@ -150,21 +167,7 @@ The output format is:
   ]
 }
 
-### Error Handling
 
-If:
-
-API keys are missing
-
-API quota is exhausted
-
-Provider is unreachable
-
-The system falls back to a simple heuristic log:
-
-logging.info("AutoLogger: reached candidate in function foo")
-
-This ensures the system never crashes and always produces output.
 
 
 
