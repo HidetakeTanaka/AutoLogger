@@ -166,16 +166,9 @@ def build_user_prompt(candidate: Candidate) -> str:
 # ---------------------------------------------------------------------------
 
 def call_openai_chat(prompt: str, model: str) -> str:
-    """Call an OpenAI chat model (e.g., gpt-4.1-mini, gpt-5.1).
-
-    If the OpenAI client or API key is not available, or if any error occurs
-    (e.g. insufficient_quota), this function returns a heuristic JSON decision
-    instead of raising an exception.
-    """
-    
+    """Call an OpenAI chat model (e.g., gpt-4.1, gpt-4.1-mini, gpt-5.1)."""
     api_key = os.environ.get("OPENAI_API_KEY")
     if openai is None or not api_key:
-        # fall back to heuristic if OpenAI not available
         return heuristic_decision_json(prompt)
 
     client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
@@ -192,11 +185,9 @@ def call_openai_chat(prompt: str, model: str) -> str:
         )
         text = response.choices[0].message.content or ""
         return text.strip()
-    except Exception as e:
-        # PRINT THE ERROR so we can see it!
-        print(f"\n[ERROR] OpenAI Call Failed: {e}\n")
+    except Exception:
+        # On any error (including insufficient_quota), fall back
         return heuristic_decision_json(prompt)
-
 
 
 def call_flan_t5_hf(prompt: str, model: str) -> str:
