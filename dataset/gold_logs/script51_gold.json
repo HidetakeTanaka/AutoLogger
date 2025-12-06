@@ -2,109 +2,94 @@
   "file": "script51.py",
   "logs": [
     {
-      "candidate_id": 1,
-      "lineno": 16,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(f\"Entering Reading.is_recent with hours={hours}\")"
+      "line": 16,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Reading.is_recent with hours={hours}"
     },
     {
-      "candidate_id": 10,
-      "lineno": 38,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Reading.from_dict called\")"
+      "line": 38,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Reading.from_dict called"
     },
     {
-      "candidate_id": 12,
-      "lineno": 48,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.ERROR(\"Failed to build Reading from dict; returning None\")"
+      "line": 48,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to build Reading from dict; returning None"
     },
     {
-      "candidate_id": 16,
-      "lineno": 61,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(f\"Sensor.recent called with hours={hours}\")"
+      "line": 61,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Sensor.recent called with hours={hours}"
     },
     {
-      "candidate_id": 29,
-      "lineno": 98,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(f\"Fetching remote sensor data for id={sensor_id}\")"
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Fetching remote sensor data for id={sensor_id}"
     },
     {
-      "candidate_id": 30,
-      "lineno": 102,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.INFO(f\"Fetched and decoded remote payload for sensor_id={sensor_id}\")"
+      "line": 102,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Fetched and decoded remote payload for sensor_id={sensor_id}"
     },
     {
-      "candidate_id": 31,
-      "lineno": 104,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.ERROR(f\"Error while fetching remote sensor data for id={sensor_id}\")"
+      "line": 104,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching remote sensor data for id={sensor_id}"
     },
     {
-      "candidate_id": 33,
-      "lineno": 108,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(f\"Loading sensors from {path}\")"
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Loading sensors from {path}"
     },
     {
-      "candidate_id": 35,
-      "lineno": 112,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.WARNING(f\"Failed to load sensors from {path}; returning empty dict\")"
+      "line": 112,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Failed to load sensors from {path}; returning empty dict"
     },
     {
-      "candidate_id": 36,
-      "lineno": 118,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.INFO(f\"Loaded {len(result)} sensors from {path}\")"
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Loaded {len(result)} sensors from {path}"
     },
     {
-      "candidate_id": 37,
-      "lineno": 122,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(f\"Saving {len(sensors)} sensors to {path}\")"
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Saving {len(sensors)} sensors to {path}"
     },
     {
-      "candidate_id": 38,
-      "lineno": 129,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.ERROR(f\"Error while writing sensors file to {path}\")"
+      "line": 129,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while writing sensors file to {path}"
     },
     {
-      "candidate_id": 47,
-      "lineno": 155,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(f\"main started with data_dir={data_dir}, base_url={base_url}\")"
+      "line": 155,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "main started with data_dir={data_dir}, base_url={base_url}"
     },
     {
-      "candidate_id": 48,
-      "lineno": 175,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.ERROR(\"Unhandled exception in main; returning status 1\")"
+      "line": 175,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main; returning status 1"
     },
     {
-      "candidate_id": 50,
-      "lineno": 177,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.INFO(\"main completed successfully with status 0\")"
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main completed successfully with status 0"
     }
   ]
 }
