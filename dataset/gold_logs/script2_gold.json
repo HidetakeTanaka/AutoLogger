@@ -2,81 +2,64 @@
   "file": "script2.py",
   "logs": [
     {
-      "candidate_id": 1,
-      "lineno": 7,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entering __init__ method of Product class\")"
+      "line": 7,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.__init__"
     },
     {
-      "candidate_id": 4,
-      "lineno": 19,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.INFO(\"Returning product info: %s\", self.get_product_info())"
+      "line": 19,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product info from Product.get_product_info"
     },
     {
-      "candidate_id": 7,
-      "lineno": 23,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entering __init__ method of Inventory class\")"
+      "line": 23,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.__init__"
     },
     {
-      "candidate_id": 12,
-      "lineno": 36,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.INFO(\"Returning inventory value: %f\", self.get_inventory_value())"
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning inventory value from Inventory.get_inventory_value"
     },
     {
-      "candidate_id": 15,
-      "lineno": 44,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entering read_json function with file path: %s\", file_path)"
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.read_json"
     },
     {
-      "candidate_id": 18,
-      "lineno": 52,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entering write_json function with file path: %s\", file_path)"
+      "line": 52,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.write_json"
     },
     {
-      "candidate_id": 20,
-      "lineno": 59,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entering create_product function with name: %s, price: %f\", name, price)"
+      "line": 59,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering create_product function"
     },
     {
-      "candidate_id": 23,
-      "lineno": 72,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entering main function\")"
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main function"
     },
     {
-      "candidate_id": 26,
-      "lineno": 73,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.ERROR(\"Exception occurred during fetch_data: %s\", str(e))"
+      "line": 73,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Exception occurred during fetch_data"
     },
     {
-      "candidate_id": 12,
-      "lineno": 36,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.INFO(\"Returning inventory value: %f\", self.get_inventory_value())"
-    },
-    {
-      "candidate_id": 18,
-      "lineno": 52,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.ERROR(\"Exception occurred during write_json: %s\", str(e))"
+      "line": 52,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Exception occurred during write_json"
     }
   ]
 }
