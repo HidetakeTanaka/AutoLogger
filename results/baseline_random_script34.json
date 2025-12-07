@@ -1,0 +1,99 @@
+{
+  "file": "script34.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 18,
+      "level": "WARNING",
+      "message": "Random log at line 18 in is_temperature",
+      "kind": "return",
+      "function": "is_temperature"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Random log at line 21 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 39,
+      "level": "ERROR",
+      "message": "Random log at line 39 in to_tuple",
+      "kind": "entry",
+      "function": "to_tuple"
+    },
+    {
+      "line": 39,
+      "level": "DEBUG",
+      "message": "Random log at line 39 in to_tuple",
+      "kind": "return",
+      "function": "to_tuple"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Random log at line 44 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Random log at line 70 in get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 73,
+      "level": "ERROR",
+      "message": "Random log at line 73 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 77,
+      "level": "WARNING",
+      "message": "Random log at line 77 in load_readings_csv",
+      "kind": "entry",
+      "function": "load_readings_csv"
+    },
+    {
+      "line": 79,
+      "level": "ERROR",
+      "message": "Random log at line 79 in load_readings_csv",
+      "kind": "return",
+      "function": "load_readings_csv"
+    },
+    {
+      "line": 89,
+      "level": "WARNING",
+      "message": "Random log at line 89 in load_readings_csv",
+      "kind": "except",
+      "function": "load_readings_csv"
+    },
+    {
+      "line": 145,
+      "level": "INFO",
+      "message": "Random log at line 145 in load_config",
+      "kind": "entry",
+      "function": "load_config"
+    },
+    {
+      "line": 194,
+      "level": "WARNING",
+      "message": "Random log at line 194 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 195,
+      "level": "WARNING",
+      "message": "Random log at line 195 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

@@ -166,7 +166,7 @@ python parser/parser.py scripts/script31.py
 Please generate new gold.json using ChatGPT using the following prompt.
 After that copy and paste it into the file "script.._gold.json" in the folder "dataset/gold_logs".
 
-```bash
+
 Here’s a ready-to-use English prompt you can give to ChatGPT:
 
 ---
@@ -349,7 +349,7 @@ Where:
 
 (Then I will paste `candidates.json` below this prompt.)
 
-```
+
 
 ---
 
