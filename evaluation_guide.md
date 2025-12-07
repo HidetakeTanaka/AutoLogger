@@ -40,7 +40,7 @@ This ensures:
 
 ---
 
-### **1. Create a new conda environment**
+### **0-1. Create a new conda environment**
 
 #### macOS / Linux
 
@@ -58,7 +58,7 @@ conda activate autologger_env
 
 ---
 
-### **2. Install dependencies from `requirements.txt`**
+### **0-2. Install dependencies from `requirements.txt`**
 
 Make sure you are in the root of the repository (`AutoLogger/`):
 
@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 ---
 
-### **3. Verify installation**
+### **0-3. Verify installation**
 
 ```bash
 python --version
@@ -89,7 +89,7 @@ You should see packages such as `openai`, `transformers`, `nltk`, `sentence-tran
 
 ---
 
-### **4. (Optional) Disable auto-activation of the base environment**
+### **0-4. (Optional) Disable auto-activation of the base environment**
 
 If `(base)` appears every time your terminal opens:
 
@@ -105,7 +105,7 @@ conda activate autologger_env
 
 ---
 
-### **5. Deactivating the virtual environment**
+### **0-5. Deactivating the virtual environment**
 
 ```bash
 conda deactivate
@@ -113,7 +113,7 @@ conda deactivate
 
 ---
 
-### **6. If terminal still auto-activates `(base)`**
+### **0-6. If terminal still auto-activates `(base)`**
 
 Check `.zshrc`:
 
@@ -142,7 +142,7 @@ You may now continue with:
 
 ---
 
-## **1. Run the parser**
+## **I-1. Run the parser**
 
 ### macOS / Linux
 
@@ -160,7 +160,7 @@ python parser/parser.py scripts/script31.py
 
 ---
 
-## **2. Generate `script31_gold.json` using ChatGPT**
+## **I-2. Generate `script31_gold.json` using ChatGPT**
 
 *(manual step)*
 Please generate new gold.json using ChatGPT using the following prompt.
@@ -353,7 +353,7 @@ Where:
 
 ---
 
-## **3. Create gold directory and move the file**
+## **I-3. Create gold directory and move the file**
 
 ### macOS / Linux
 
@@ -372,7 +372,7 @@ Move-Item dataset/gold_logs/script31_gold.json dataset/gold_logs/gold_logs_scrip
 
 ---
 
-## **4. Copy candidates for baseline**
+## **I-4. Copy candidates for baseline**
 
 macOS/Linux:
 
@@ -388,7 +388,7 @@ Copy-Item scripts/script31.candidates.json baselines/parser_output.json
 
 ---
 
-## **5. Run heuristic baseline and evaluate**
+## **I-5. Run heuristic baseline and evaluate**
 
 macOS/Linux:
 
@@ -446,7 +446,7 @@ python eval/eval_positions.py `
 
 ---
 
-## **1. Generate predictions**
+## **III-1. Generate predictions**
 
 #### Optional: Measure LLM Runtime (Recommended for Final Report)
 
@@ -477,7 +477,7 @@ Measure-Command {
 
 ---
 
-## **2. Convert predictions**
+## **III-2. Convert predictions**
 
 macOS/Linux:
 
@@ -497,7 +497,7 @@ python eval/convert_llm_for_eval.py `
 
 ---
 
-## **3. Evaluate**
+## **III-3. Evaluate**
 
 macOS/Linux:
 
@@ -528,7 +528,7 @@ Same commands as GPT-4.1-mini, but replace model:
 Evaluation identical.
 ---
 
-## **1. Generate predictions**
+## **IV-1. Generate predictions**
 
 #### Optional: Measure LLM Runtime (Recommended for Final Report)
 
@@ -561,7 +561,7 @@ Measure-Command {
 
 ---
 
-## **2. Convert predictions**
+## **IV-2. Convert predictions**
 
 macOS/Linux:
 
@@ -581,7 +581,7 @@ python eval/convert_llm_for_eval.py `
 
 ---
 
-## **3. Evaluate**
+## **IV-3. Evaluate**
 
 macOS/Linux:
 
@@ -605,7 +605,7 @@ python eval/eval_positions.py `
 
 ---
 
-## **1. Generate predictions**
+## **V-1. Generate predictions**
 
 #### Optional: Measure LLM Runtime (Recommended for Final Report)
 
@@ -636,7 +636,7 @@ Measure-Command {
 
 ---
 
-## **2. Convert predictions**
+## **V-2. Convert predictions**
 
 macOS/Linux:
 
@@ -656,7 +656,7 @@ python eval/convert_llm_for_eval.py `
 
 ---
 
-## **3. Evaluate**
+## **V-3. Evaluate**
 
 macOS/Linux:
 
@@ -684,7 +684,7 @@ Same as Flan-T5-base, but replace:
 --model google/flan-t5-large
 ```
 
-## **1. Generate predictions**
+## **VI-1. Generate predictions**
 
 #### Optional: Measure LLM Runtime (Recommended for Final Report)
 
@@ -717,7 +717,7 @@ Measure-Command {
 
 ---
 
-## **2. Convert predictions**
+## **VI-2. Convert predictions**
 
 macOS/Linux:
 
@@ -737,7 +737,7 @@ python eval/convert_llm_for_eval.py `
 
 ---
 
-## **3. Evaluate**
+## **VI-3. Evaluate**
 
 macOS/Linux:
 
@@ -763,7 +763,7 @@ python eval/eval_positions.py `
 
 ---
 
-## **1. Generate script list**
+## **VII-1. Generate script list**
 
 macOS/Linux:
 
@@ -779,7 +779,7 @@ Get-ChildItem scripts/*.py | ForEach-Object { $_.FullName } > evaluation_list.tx
 
 ---
 
-## **2. Batch-run parser**
+## **VII-2. Batch-run parser**
 
 macOS/Linux:
 
@@ -801,7 +801,7 @@ Get-Content evaluation_list.txt | ForEach-Object {
 
 ---
 
-## **3. Batch-run LLM (example: GPT-4.1-mini)**
+## **VII-3. Batch-run LLM (example: GPT-4.1-mini)**
 
 macOS/Linux:
 
@@ -825,7 +825,7 @@ Get-Content evaluation_list.txt | ForEach-Object {
 
 ---
 
-## **4. Count generated JSON files**
+## **VII-4. Count generated JSON files**
 
 macOS/Linux:
 
@@ -841,7 +841,7 @@ Windows:
 
 ---
 
-## **5. Document any crashes or malformed outputs**
+## **VII-5. Document any crashes or malformed outputs**
 
 Required for the Monday evaluation summary.
 
