@@ -711,7 +711,7 @@ Measure-Command {
  python llm/autologger2.py scripts/script31.candidates.json `
   --provider flan `
   --model google/flan-t5-large `
-  -o dataset/raw/script31.flanbase.logs.json
+  -o dataset/raw/script31.flanlarge.logs.json
 }
 ```
 
@@ -732,7 +732,7 @@ Windows:
 ```powershell
 python eval/convert_llm_for_eval.py `
   dataset/raw/script31.flanlarge.logs.json `
-  results/script31_flanbase.json
+  results/script31_flanlarge.json
 ```
 
 ---
