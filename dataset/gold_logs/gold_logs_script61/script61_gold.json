@@ -1,0 +1,78 @@
+{
+  "file": "script61.py",
+  "logs": [
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_price"
+    },
+    {
+      "line": 119,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning price from fetch_price"
+    },
+    {
+      "line": 121,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Request failed in fetch_price"
+    },
+    {
+      "line": 125,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_cart"
+    },
+    {
+      "line": 129,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read cart, using empty in load_cart"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_cart"
+    },
+    {
+      "line": 139,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to persist cart in save_cart"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering update_prices_from_remote"
+    },
+    {
+      "line": 181,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning updated count from update_prices_from_remote"
+    },
+    {
+      "line": 209,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 236,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main"
+    },
+    {
+      "line": 236,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Exiting with error in main"
+    }
+  ]
+}
+
