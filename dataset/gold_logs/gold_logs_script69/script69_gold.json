@@ -1,0 +1,102 @@
+{
+  "file": "script69.py",
+  "logs": [
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Order.from_dict"
+    },
+    {
+      "line": 47,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse order payload in Order.from_dict"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.fetch_benchmarks"
+    },
+    {
+      "line": 117,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Received benchmarks response from AnalyticsClient.fetch_benchmarks"
+    },
+    {
+      "line": 119,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error fetching benchmarks in AnalyticsClient.fetch_benchmarks"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.push_summary"
+    },
+    {
+      "line": 132,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error sending summary in AnalyticsClient.push_summary"
+    },
+    {
+      "line": 136,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_customers"
+    },
+    {
+      "line": 144,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read or parse customers file in load_customers"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_customers"
+    },
+    {
+      "line": 156,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error writing temporary customers file in save_customers"
+    },
+    {
+      "line": 164,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_kpis"
+    },
+    {
+      "line": 168,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed KPI metrics from compute_kpis"
+    },
+    {
+      "line": 221,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_benchmarks"
+    },
+    {
+      "line": 241,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 257,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error during main execution"
+    }
+  ]
+}
+

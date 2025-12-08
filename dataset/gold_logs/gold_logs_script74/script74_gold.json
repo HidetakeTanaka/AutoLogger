@@ -1,0 +1,90 @@
+{
+  "file": "script74.py",
+  "logs": [
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_thresholds"
+    },
+    {
+      "line": 99,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Thresholds loaded successfully"
+    },
+    {
+      "line": 101,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load thresholds in fetch_thresholds"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering push_summary"
+    },
+    {
+      "line": 112,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Received response from server"
+    },
+    {
+      "line": 114,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Network or HTTP error occurred in push_summary"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_devices"
+    },
+    {
+      "line": 115,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Successfully loaded devices list"
+    },
+    {
+      "line": 117,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while reading or parsing devices file in load_devices"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_devices"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Summary computed in summarize_devices"
+    },
+    {
+      "line": 187,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 207,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled error in main workflow"
+    },
+    {
+      "line": 210,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Main finished successfully"
+    }
+  ]
+}
+
