@@ -1,0 +1,167 @@
+{
+  "file": "script94.py",
+  "logs": [
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with minutes={minutes}\")"
+    },
+    {
+      "line": 31,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Creating SensorReading from dict with device_id={raw.get('device_id', '')}, metric={raw.get('metric', '')}, value={raw.get('value', 0.0)}, timestamp={ts}\")"
+    },
+    {
+      "line": 42,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create SensorReading from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 53,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_reading with reading: {reading}\")"
+    },
+    {
+      "line": 57,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering needs_refresh with hours={hours} for device {self}\")"
+    },
+    {
+      "line": 60,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering daily_average with day={day} and metric='{metric}'\")"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 81,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create DeviceState from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 96,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing TelemetryClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 99,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_remote_threshold for device_id={device_id}\")"
+    },
+    {
+      "line": 110,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched remote threshold value: {val} for device_id: {device_id}')"
+    },
+    {
+      "line": 112,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch remote threshold for device {device_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 112,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'fetch_remote_threshold returning None for device_id={device_id}, url={url}')"
+    },
+    {
+      "line": 115,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_summary with summary keys: {list(summary.keys())}\")"
+    },
+    {
+      "line": 129,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary to {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_state with path: {path}\")"
+    },
+    {
+      "line": 139,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load state from {path} with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_state with path={path} and state={state}\")"
+    },
+    {
+      "line": 150,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save state to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_stats with state: {state}\")"
+    },
+    {
+      "line": 167,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered simulate_readings with state={state} and hours={hours}\")"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_state with state={state} and remote_threshold={remote_threshold}\")"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summarizing state for device_id={state.device_id} with threshold={state.threshold}, count={stats['count']}, over_threshold={stats['over_threshold']}\")"
+    },
+    {
+      "line": 199,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 214,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

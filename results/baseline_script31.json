@@ -1,334 +1,166 @@
 {
-  "file": "script33.py",
+  "file": "script31.py",
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 19,
+      "line": 31,
       "level": "DEBUG",
-      "message": "Entering to_dict",
+      "message": "Entering score_ratio",
       "kind": "entry",
-      "function": "to_dict"
-    },
-    {
-      "line": 19,
-      "level": "INFO",
-      "message": "Exiting to_dict",
-      "kind": "return",
-      "function": "to_dict"
-    },
-    {
-      "line": 29,
-      "level": "DEBUG",
-      "message": "Entering is_error",
-      "kind": "entry",
-      "function": "is_error"
-    },
-    {
-      "line": 29,
-      "level": "INFO",
-      "message": "Exiting is_error",
-      "kind": "return",
-      "function": "is_error"
-    },
-    {
-      "line": 32,
-      "level": "DEBUG",
-      "message": "Entering is_slow",
-      "kind": "entry",
-      "function": "is_slow"
+      "function": "score_ratio"
     },
     {
       "line": 32,
       "level": "INFO",
-      "message": "Exiting is_slow",
+      "message": "Exiting score_ratio",
       "kind": "return",
-      "function": "is_slow"
+      "function": "score_ratio"
     },
     {
-      "line": 37,
-      "level": "DEBUG",
-      "message": "Entering __init__",
-      "kind": "entry",
-      "function": "__init__"
-    },
-    {
-      "line": 40,
-      "level": "DEBUG",
-      "message": "Entering measure",
-      "kind": "entry",
-      "function": "measure"
-    },
-    {
-      "line": 46,
-      "level": "ERROR",
-      "message": "Exception in measure",
-      "kind": "except",
-      "function": "measure"
-    },
-    {
-      "line": 46,
+      "line": 33,
       "level": "INFO",
-      "message": "Exiting measure",
+      "message": "Exiting score_ratio",
       "kind": "return",
-      "function": "measure"
+      "function": "score_ratio"
     },
     {
-      "line": 48,
-      "level": "ERROR",
-      "message": "Exception in measure",
-      "kind": "except",
-      "function": "measure"
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Entering is_suspicious",
+      "kind": "entry",
+      "function": "is_suspicious"
     },
     {
-      "line": 48,
+      "line": 38,
       "level": "INFO",
-      "message": "Exiting measure",
+      "message": "Exiting is_suspicious",
       "kind": "return",
-      "function": "measure"
+      "function": "is_suspicious"
+    },
+    {
+      "line": 41,
+      "level": "INFO",
+      "message": "Exiting is_suspicious",
+      "kind": "return",
+      "function": "is_suspicious"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Entering ensure_data_dir",
+      "kind": "entry",
+      "function": "ensure_data_dir"
     },
     {
       "line": 49,
-      "level": "INFO",
-      "message": "Exiting measure",
-      "kind": "return",
-      "function": "measure"
-    },
-    {
-      "line": 54,
       "level": "DEBUG",
-      "message": "Entering __init__",
+      "message": "Entering generate_sample_attempts",
       "kind": "entry",
-      "function": "__init__"
-    },
-    {
-      "line": 57,
-      "level": "DEBUG",
-      "message": "Entering save",
-      "kind": "entry",
-      "function": "save"
-    },
-    {
-      "line": 70,
-      "level": "DEBUG",
-      "message": "Entering load",
-      "kind": "entry",
-      "function": "load"
-    },
-    {
-      "line": 71,
-      "level": "INFO",
-      "message": "Exiting load",
-      "kind": "return",
-      "function": "load"
+      "function": "generate_sample_attempts"
     },
     {
       "line": 76,
-      "level": "ERROR",
-      "message": "Exception in load",
-      "kind": "except",
-      "function": "load"
-    },
-    {
-      "line": 76,
-      "level": "INFO",
-      "message": "Exiting load",
-      "kind": "return",
-      "function": "load"
-    },
-    {
-      "line": 84,
-      "level": "ERROR",
-      "message": "Exception in load",
-      "kind": "except",
-      "function": "load"
-    },
-    {
-      "line": 86,
-      "level": "INFO",
-      "message": "Exiting load",
-      "kind": "return",
-      "function": "load"
-    },
-    {
-      "line": 90,
       "level": "DEBUG",
-      "message": "Entering read_endpoints",
+      "message": "Entering load_attempts",
       "kind": "entry",
-      "function": "read_endpoints"
+      "function": "load_attempts"
     },
     {
-      "line": 91,
-      "level": "INFO",
-      "message": "Exiting read_endpoints",
-      "kind": "return",
-      "function": "read_endpoints"
-    },
-    {
-      "line": 96,
+      "line": 99,
       "level": "ERROR",
-      "message": "Exception in read_endpoints",
+      "message": "Exception in load_attempts",
       "kind": "except",
-      "function": "read_endpoints"
+      "function": "load_attempts"
     },
     {
-      "line": 96,
+      "line": 100,
       "level": "INFO",
-      "message": "Exiting read_endpoints",
+      "message": "Exiting load_attempts",
       "kind": "return",
-      "function": "read_endpoints"
+      "function": "load_attempts"
     },
     {
       "line": 104,
-      "level": "ERROR",
-      "message": "Exception in read_endpoints",
-      "kind": "except",
-      "function": "read_endpoints"
-    },
-    {
-      "line": 106,
-      "level": "INFO",
-      "message": "Exiting read_endpoints",
-      "kind": "return",
-      "function": "read_endpoints"
-    },
-    {
-      "line": 110,
       "level": "DEBUG",
-      "message": "Entering group_by_endpoint",
+      "message": "Entering group_by_user",
       "kind": "entry",
-      "function": "group_by_endpoint"
+      "function": "group_by_user"
     },
     {
-      "line": 113,
+      "line": 107,
       "level": "INFO",
-      "message": "Exiting group_by_endpoint",
+      "message": "Exiting group_by_user",
       "kind": "return",
-      "function": "group_by_endpoint"
+      "function": "group_by_user"
     },
     {
-      "line": 117,
+      "line": 111,
       "level": "DEBUG",
-      "message": "Entering compute_endpoint_stats",
+      "message": "Entering summarize_user",
       "kind": "entry",
-      "function": "compute_endpoint_stats"
+      "function": "summarize_user"
+    },
+    {
+      "line": 112,
+      "level": "INFO",
+      "message": "Exiting summarize_user",
+      "kind": "return",
+      "function": "summarize_user"
     },
     {
       "line": 118,
       "level": "INFO",
-      "message": "Exiting compute_endpoint_stats",
+      "message": "Exiting summarize_user",
       "kind": "return",
-      "function": "compute_endpoint_stats"
+      "function": "summarize_user"
     },
     {
-      "line": 122,
-      "level": "INFO",
-      "message": "Exiting compute_endpoint_stats",
-      "kind": "return",
-      "function": "compute_endpoint_stats"
-    },
-    {
-      "line": 130,
+      "line": 128,
       "level": "DEBUG",
-      "message": "Entering compute_overall_stats",
+      "message": "Entering find_suspicious_users",
       "kind": "entry",
-      "function": "compute_overall_stats"
+      "function": "find_suspicious_users"
     },
     {
-      "line": 131,
+      "line": 133,
       "level": "INFO",
-      "message": "Exiting compute_overall_stats",
+      "message": "Exiting find_suspicious_users",
       "kind": "return",
-      "function": "compute_overall_stats"
+      "function": "find_suspicious_users"
     },
     {
-      "line": 134,
-      "level": "INFO",
-      "message": "Exiting compute_overall_stats",
-      "kind": "return",
-      "function": "compute_overall_stats"
-    },
-    {
-      "line": 138,
+      "line": 137,
       "level": "DEBUG",
-      "message": "Entering export_report",
+      "message": "Entering interactive_menu",
       "kind": "entry",
-      "function": "export_report"
+      "function": "interactive_menu"
     },
     {
-      "line": 153,
-      "level": "DEBUG",
-      "message": "Entering filter_failed",
-      "kind": "entry",
-      "function": "filter_failed"
+      "line": 144,
+      "level": "ERROR",
+      "message": "Exception in interactive_menu",
+      "kind": "except",
+      "function": "interactive_menu"
     },
     {
-      "line": 153,
+      "line": 145,
       "level": "INFO",
-      "message": "Exiting filter_failed",
+      "message": "Exiting interactive_menu",
       "kind": "return",
-      "function": "filter_failed"
+      "function": "interactive_menu"
     },
     {
-      "line": 157,
-      "level": "DEBUG",
-      "message": "Entering measure_all",
-      "kind": "entry",
-      "function": "measure_all"
-    },
-    {
-      "line": 161,
-      "level": "INFO",
-      "message": "Exiting measure_all",
-      "kind": "return",
-      "function": "measure_all"
-    },
-    {
-      "line": 165,
-      "level": "DEBUG",
-      "message": "Entering retry_failed",
-      "kind": "entry",
-      "function": "retry_failed"
-    },
-    {
-      "line": 166,
-      "level": "INFO",
-      "message": "Exiting retry_failed",
-      "kind": "return",
-      "function": "retry_failed"
-    },
-    {
-      "line": 175,
-      "level": "INFO",
-      "message": "Exiting retry_failed",
-      "kind": "return",
-      "function": "retry_failed"
-    },
-    {
-      "line": 179,
-      "level": "DEBUG",
-      "message": "Entering main",
-      "kind": "entry",
-      "function": "main"
+      "line": 171,
+      "level": "ERROR",
+      "message": "Exception in interactive_menu",
+      "kind": "except",
+      "function": "interactive_menu"
     },
     {
       "line": 182,
-      "level": "INFO",
-      "message": "Exiting main",
-      "kind": "return",
-      "function": "main"
-    },
-    {
-      "line": 200,
-      "level": "INFO",
-      "message": "Exiting main",
-      "kind": "return",
-      "function": "main"
-    },
-    {
-      "line": 201,
-      "level": "INFO",
-      "message": "Exiting main",
-      "kind": "return",
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
       "function": "main"
     }
   ]

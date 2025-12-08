@@ -1,0 +1,197 @@
+{
+  "file": "script96.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with hours={hours} for NewsItem id={self.id if hasattr(self, 'id') else 'unknown'}\")"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_category with query='{query}'\")"
+    },
+    {
+      "line": 47,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering from_dict with raw data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 63,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create NewsItem from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered prefers method with category='{category}'\")"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering needs_refresh with days={days}\")"
+    },
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 106,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create UserPrefs from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 116,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_item with item: {item}\")"
+    },
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_items with hours={hours}\")"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering {cls.__name__}.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 145,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'RecommendationClient initialized with base_url={base_url} and timeout={timeout}')"
+    },
+    {
+      "line": 149,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_remote_prefs for user_id={user_id}\")"
+    },
+    {
+      "line": 163,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'fetch_remote_prefs returning None for user_id={user_id} from url={url}')"
+    },
+    {
+      "line": 166,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch remote preferences for user_id={user_id} from url={url}', exc_info=True)"
+    },
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_state with path: {path}\")"
+    },
+    {
+      "line": 173,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully loaded state from {path} with keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 175,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load state from {path}')"
+    },
+    {
+      "line": 177,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load state from {path}')"
+    },
+    {
+      "line": 181,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_state with path={path} and state={state}\")"
+    },
+    {
+      "line": 187,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save state to {path} with payload {payload} and state {state}', exc_info=True)"
+    },
+    {
+      "line": 187,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'State saved successfully to {path}')"
+    },
+    {
+      "line": 191,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entered compute_category_stats with state: {state}')"
+    },
+    {
+      "line": 200,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Category '{cat}' stats computed: counts={counts}, avg_sentiment={avg}\")"
+    },
+    {
+      "line": 204,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering apply_remote_prefs with state={state} and client={client}\")"
+    },
+    {
+      "line": 215,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered simulate_items with state={state} and days={days}\")"
+    },
+    {
+      "line": 235,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation complete: {len(created)} items created over {days} days starting from {day_base}.')"
+    },
+    {
+      "line": 239,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_state with state={state} and today={today}\")"
+    },
+    {
+      "line": 243,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summarizing state for user_id={state.user_id}: total_items={len(state.items)}, recent_items={len(recent)}\")"
+    },
+    {
+      "line": 254,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 268,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

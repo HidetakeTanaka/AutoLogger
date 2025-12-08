@@ -1,0 +1,113 @@
+{
+  "file": "script82.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_income",
+      "kind": "return",
+      "function": "is_income"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Random log at line 26 in matches_category",
+      "kind": "entry",
+      "function": "matches_category"
+    },
+    {
+      "line": 34,
+      "level": "ERROR",
+      "message": "Random log at line 34 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 34,
+      "level": "DEBUG",
+      "message": "Random log at line 34 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Random log at line 45 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 75,
+      "level": "DEBUG",
+      "message": "Random log at line 75 in balance",
+      "kind": "return",
+      "function": "balance"
+    },
+    {
+      "line": 81,
+      "level": "ERROR",
+      "message": "Random log at line 81 in by_category",
+      "kind": "return",
+      "function": "by_category"
+    },
+    {
+      "line": 84,
+      "level": "WARNING",
+      "message": "Random log at line 84 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 92,
+      "level": "ERROR",
+      "message": "Random log at line 92 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 100,
+      "level": "WARNING",
+      "message": "Random log at line 100 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 134,
+      "level": "INFO",
+      "message": "Random log at line 134 in load_budget",
+      "kind": "return",
+      "function": "load_budget"
+    },
+    {
+      "line": 177,
+      "level": "WARNING",
+      "message": "Random log at line 177 in apply_exchange_rates",
+      "kind": "return",
+      "function": "apply_exchange_rates"
+    },
+    {
+      "line": 196,
+      "level": "WARNING",
+      "message": "Random log at line 196 in apply_exchange_rates",
+      "kind": "return",
+      "function": "apply_exchange_rates"
+    },
+    {
+      "line": 221,
+      "level": "INFO",
+      "message": "Random log at line 221 in main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 238,
+      "level": "ERROR",
+      "message": "Random log at line 238 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

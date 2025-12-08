@@ -1,0 +1,291 @@
+{
+  "file": "script92.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricSample.is_recent"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning non-recent status from MetricSample.is_recent"
+    },
+    {
+      "line": 25,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent status from MetricSample.is_recent"
+    },
+
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricSample.matches_tag"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result from MetricSample.matches_tag"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result from MetricSample.matches_tag"
+    },
+
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricSample.to_dict"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized metric sample from MetricSample.to_dict"
+    },
+
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricSample.from_dict"
+    },
+    {
+      "line": 55,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse metric sample in MetricSample.from_dict"
+    },
+    {
+      "line": 55,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from MetricSample.from_dict"
+    },
+
+    {
+      "line": 66,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Profile.needs_update"
+    },
+    {
+      "line": 67,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning update-needed evaluation from Profile.needs_update"
+    },
+
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Profile.to_dict"
+    },
+    {
+      "line": 70,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized profile from Profile.to_dict"
+    },
+
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Profile.from_dict"
+    },
+    {
+      "line": 89,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse profile in Profile.from_dict"
+    },
+    {
+      "line": 89,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from Profile.from_dict"
+    },
+
+    {
+      "line": 99,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricsState.__post_init__"
+    },
+
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricsState.add_sample"
+    },
+    {
+      "line": 104,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from MetricsState.add_sample"
+    },
+
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricsState.recent_samples"
+    },
+    {
+      "line": 108,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent samples from MetricsState.recent_samples"
+    },
+
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricsState.average_value"
+    },
+    {
+      "line": 113,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from MetricsState.average_value"
+    },
+    {
+      "line": 114,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning average value from MetricsState.average_value"
+    },
+
+    {
+      "line": 117,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricsState.to_dict"
+    },
+    {
+      "line": 117,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized metrics state from MetricsState.to_dict"
+    },
+
+    {
+      "line": 125,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricsState.from_dict"
+    },
+    {
+      "line": 135,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning MetricsState instance from MetricsState.from_dict"
+    },
+
+    {
+      "line": 140,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.__init__"
+    },
+
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient._url"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty URL from RecommendationClient._url"
+    },
+    {
+      "line": 146,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL from RecommendationClient._url"
+    },
+
+    {
+      "line": 149,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.fetch_target"
+    },
+    {
+      "line": 151,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from RecommendationClient.fetch_target"
+    },
+    {
+      "line": 157,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch target in RecommendationClient.fetch_target"
+    },
+    {
+      "line": 157,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from RecommendationClient.fetch_target"
+    },
+    {
+      "line": 162,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from RecommendationClient.fetch_target"
+    },
+    {
+      "line": 163,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed target from RecommendationClient.fetch_target"
+    },
+    {
+      "line": 165,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch target in RecommendationClient.fetch_target"
+    },
+    {
+      "line": 165,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from RecommendationClient.fetch_target"
+    },
+
+    {
+      "line": 169,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_state"
+    },
+    {
+      "line": 170,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback MetricsState in load_state"
+    },
+    {
+      "line": 174,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning MetricsState.from_dict result in load_state"
+    }
+  ]
+}

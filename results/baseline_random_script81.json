@@ -1,0 +1,120 @@
+{
+  "file": "script81.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 26,
+      "level": "WARNING",
+      "message": "Random log at line 26 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 27,
+      "level": "INFO",
+      "message": "Random log at line 27 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 35,
+      "level": "ERROR",
+      "message": "Random log at line 35 in matches_kind",
+      "kind": "return",
+      "function": "matches_kind"
+    },
+    {
+      "line": 38,
+      "level": "DEBUG",
+      "message": "Random log at line 38 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 38,
+      "level": "DEBUG",
+      "message": "Random log at line 38 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 73,
+      "level": "DEBUG",
+      "message": "Random log at line 73 in add_workout",
+      "kind": "return",
+      "function": "add_workout"
+    },
+    {
+      "line": 77,
+      "level": "ERROR",
+      "message": "Random log at line 77 in filter_by_kind",
+      "kind": "return",
+      "function": "filter_by_kind"
+    },
+    {
+      "line": 80,
+      "level": "WARNING",
+      "message": "Random log at line 80 in recent_workouts",
+      "kind": "return",
+      "function": "recent_workouts"
+    },
+    {
+      "line": 83,
+      "level": "ERROR",
+      "message": "Random log at line 83 in total_calories",
+      "kind": "entry",
+      "function": "total_calories"
+    },
+    {
+      "line": 84,
+      "level": "WARNING",
+      "message": "Random log at line 84 in total_calories",
+      "kind": "return",
+      "function": "total_calories"
+    },
+    {
+      "line": 127,
+      "level": "INFO",
+      "message": "Random log at line 127 in fetch_suggestions",
+      "kind": "except",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 148,
+      "level": "WARNING",
+      "message": "Random log at line 148 in save_log",
+      "kind": "except",
+      "function": "save_log"
+    },
+    {
+      "line": 152,
+      "level": "WARNING",
+      "message": "Random log at line 152 in save_log",
+      "kind": "except",
+      "function": "save_log"
+    },
+    {
+      "line": 161,
+      "level": "INFO",
+      "message": "Random log at line 161 in compute_daily_summary",
+      "kind": "return",
+      "function": "compute_daily_summary"
+    },
+    {
+      "line": 171,
+      "level": "ERROR",
+      "message": "Random log at line 171 in simulate_day",
+      "kind": "return",
+      "function": "simulate_day"
+    },
+    {
+      "line": 250,
+      "level": "DEBUG",
+      "message": "Random log at line 250 in main",
+      "kind": "except",
+      "function": "main"
+    }
+  ]
+}

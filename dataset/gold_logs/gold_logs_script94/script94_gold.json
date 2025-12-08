@@ -1,0 +1,316 @@
+{
+  "file": "script94.py",
+  "logs": [
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.is_recent"
+    },
+    {
+      "line": 18,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent evaluation from SensorReading.is_recent"
+    },
+
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.to_dict"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized sensor reading from SensorReading.to_dict"
+    },
+
+    {
+      "line": 31,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.from_dict"
+    },
+    {
+      "line": 42,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse sensor reading in SensorReading.from_dict"
+    },
+    {
+      "line": 42,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from SensorReading.from_dict"
+    },
+
+    {
+      "line": 53,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.add_reading"
+    },
+
+    {
+      "line": 57,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.needs_refresh"
+    },
+    {
+      "line": 57,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning refresh-needed evaluation from DeviceState.needs_refresh"
+    },
+
+    {
+      "line": 60,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.daily_average"
+    },
+    {
+      "line": 65,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning daily average from DeviceState.daily_average"
+    },
+
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.to_dict"
+    },
+    {
+      "line": 68,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized device state from DeviceState.to_dict"
+    },
+
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.from_dict"
+    },
+    {
+      "line": 81,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse device state in DeviceState.from_dict"
+    },
+    {
+      "line": 91,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning DeviceState instance from DeviceState.from_dict"
+    },
+
+    {
+      "line": 96,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TelemetryClient.__init__"
+    },
+
+    {
+      "line": 99,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TelemetryClient._url"
+    },
+    {
+      "line": 99,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL from TelemetryClient._url"
+    },
+
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TelemetryClient.fetch_remote_threshold"
+    },
+    {
+      "line": 104,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from TelemetryClient.fetch_remote_threshold"
+    },
+    {
+      "line": 110,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed threshold from TelemetryClient.fetch_remote_threshold"
+    },
+    {
+      "line": 112,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch remote threshold in TelemetryClient.fetch_remote_threshold"
+    },
+    {
+      "line": 112,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from TelemetryClient.fetch_remote_threshold"
+    },
+
+    {
+      "line": 115,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TelemetryClient.push_summary"
+    },
+    {
+      "line": 117,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from TelemetryClient.push_summary"
+    },
+    {
+      "line": 127,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning push result from TelemetryClient.push_summary"
+    },
+    {
+      "line": 129,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to push summary in TelemetryClient.push_summary"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from TelemetryClient.push_summary"
+    },
+
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_state"
+    },
+    {
+      "line": 134,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback DeviceState in load_state"
+    },
+    {
+      "line": 137,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning DeviceState.from_dict result in load_state"
+    },
+    {
+      "line": 139,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load device state in load_state"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback DeviceState in load_state"
+    },
+
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_state"
+    },
+    {
+      "line": 150,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save device state in save_state"
+    },
+    {
+      "line": 150,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from save_state"
+    },
+
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_stats"
+    },
+    {
+      "line": 155,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty statistics from compute_stats"
+    },
+    {
+      "line": 163,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed statistics from compute_stats"
+    },
+
+    {
+      "line": 167,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_readings"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created reading count from simulate_readings"
+    },
+
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_state"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summarized device state from summarize_state"
+    },
+
+    {
+      "line": 199,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 214,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 214,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 1 from main"
+    },
+    {
+      "line": 215,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 from main"
+    }
+  ]
+}

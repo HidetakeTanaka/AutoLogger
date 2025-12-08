@@ -1,0 +1,185 @@
+{
+  "file": "script97.py",
+  "logs": [
+    {
+      "line": 19,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with hours={hours}\")"
+    },
+    {
+      "line": 25,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering score method of DataRecord instance {self}\")"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning score value: {self.value}')"
+    },
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 53,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create DataRecord from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 62,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entering DataStore.load method')"
+    },
+    {
+      "line": 73,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load record: {rec} with raw data: {raw}')"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entering save method of DataStore with payload: %s', payload)"
+    },
+    {
+      "line": 82,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to save payload: %s', payload, exc_info=True)"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_record with record: {record}\")"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering iter_recent with hours={hours}\")"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Initializing ApiClient with base_url={base_url} and timeout={timeout}')"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with endpoint: {endpoint}\")"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_json with endpoint: {endpoint}\")"
+    },
+    {
+      "line": 116,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully retrieved and parsed JSON from endpoint {endpoint}')"
+    },
+    {
+      "line": 118,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to get JSON from endpoint {endpoint} at URL {url} with response text: {text}')"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_remote_records with limit={limit}\")"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Parsed {len(out)} records from raw input.')"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_by_tag with tag={tag} and {len(list(records))} records\")"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning {len(records)} records filtered by tag: {tag}')"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_summary with {len(records) if hasattr(records, '__len__') else 'unknown number of'} records\")"
+    },
+    {
+      "line": 149,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summary computed with count={len(items)}, avg_value={avg}, max_score={max_score}\")"
+    },
+    {
+      "line": 153,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering read_local_config with path: {path}\")"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Configuration read successfully from {path}')"
+    },
+    {
+      "line": 162,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to read local config from {path}')"
+    },
+    {
+      "line": 166,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering write_report with path={path} and summary keys={list(summary.keys())}\")"
+    },
+    {
+      "line": 171,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to write report to {path} with summary {summary}', exc_info=True)"
+    },
+    {
+      "line": 175,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered sync_remote_data with limit={limit}\")"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Sync completed with {len(new_records)} new records.')"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with config_path={config_path}\")"
+    }
+  ]
+}

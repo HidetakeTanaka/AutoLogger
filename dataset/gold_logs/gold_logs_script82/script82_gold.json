@@ -1,0 +1,239 @@
+{
+  "file": "script82.py",
+  "logs": [
+    {
+      "line": 23,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Transaction.is_income"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning income flag from Transaction.is_income"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Transaction.matches_category"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning category match result from Transaction.matches_category"
+    },
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Transaction.to_dict"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized transaction dictionary from Transaction.to_dict"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Transaction.from_dict"
+    },
+    {
+      "line": 57,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse transaction data in Transaction.from_dict"
+    },
+    {
+      "line": 57,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None after failure in Transaction.from_dict"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering BudgetState.add_transaction"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering BudgetState.balance"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning balance from BudgetState.balance"
+    },
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering BudgetState.by_category"
+    },
+    {
+      "line": 81,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning category totals from BudgetState.by_category"
+    },
+    {
+      "line": 84,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering BudgetState.to_dict"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized budget dictionary from BudgetState.to_dict"
+    },
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering BudgetState.from_dict"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning BudgetState instance from BudgetState.from_dict"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RateClient.__init__"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RateClient._url"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL from RateClient._url"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RateClient.fetch_rates"
+    },
+    {
+      "line": 123,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch rates in RateClient.fetch_rates"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed rates from RateClient.fetch_rates"
+    },
+    {
+      "line": 127,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_budget"
+    },
+    {
+      "line": 134,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load budget in load_budget"
+    },
+    {
+      "line": 134,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback budget in load_budget"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_budget"
+    },
+    {
+      "line": 145,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save budget in save_budget"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Aborting save_budget after failure"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_monthly_summary"
+    },
+    {
+      "line": 164,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning monthly summary from compute_monthly_summary"
+    },
+    {
+      "line": 176,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering apply_exchange_rates"
+    },
+    {
+      "line": 196,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning converted budget from apply_exchange_rates"
+    },
+    {
+      "line": 200,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_spending"
+    },
+    {
+      "line": 217,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning simulated spending days from simulate_spending"
+    },
+    {
+      "line": 221,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 238,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 239,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code from main"
+    }
+  ]
+}

@@ -1,0 +1,1093 @@
+{
+  "file": "scripts\\script93.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_recent",
+      "class_name": "Event",
+      "code": "def is_recent(self, minutes: int = 60) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_recent",
+      "class_name": "Event",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "Event",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches_type",
+      "class_name": "Event",
+      "code": "def matches_type(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches_type",
+      "class_name": "Event",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "matches_type",
+      "class_name": "Event",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches_type",
+      "class_name": "Event",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "Event",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "Event",
+      "code": "return {'event_id': self.event_id, 'kind': self.kind, 'value': self.value, 'occurred_at': self.occurred_at.isoformat(), 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 45,
+      "end_line": 45,
+      "function": "from_dict",
+      "class_name": "Event",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Event\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 48,
+      "end_line": 48,
+      "function": "from_dict",
+      "class_name": "Event",
+      "code": "return cls(event_id=str(raw.get('event_id', '')), kind=str(raw.get('kind', '')), value=float(raw.get('value', 0.0)), occurred_at=ts, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "Event",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "Event",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 67,
+      "end_line": 67,
+      "function": "prefers",
+      "class_name": "UserProfile",
+      "code": "def prefers(self, kind: str) -> bool:",
+      "vars_in_scope": [
+        "kind",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 68,
+      "end_line": 68,
+      "function": "prefers",
+      "class_name": "UserProfile",
+      "code": "return True",
+      "vars_in_scope": [
+        "kind",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 69,
+      "end_line": 69,
+      "function": "prefers",
+      "class_name": "UserProfile",
+      "code": "return kind.lower() in (k.lower() for k in self.preferred_kinds)",
+      "vars_in_scope": [
+        "kind",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "needs_refresh",
+      "class_name": "UserProfile",
+      "code": "def needs_refresh(self, days: int = 7) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 73,
+      "end_line": 73,
+      "function": "needs_refresh",
+      "class_name": "UserProfile",
+      "code": "return self.updated_at < cutoff",
+      "vars_in_scope": [
+        "cutoff",
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 76,
+      "end_line": 76,
+      "function": "to_dict",
+      "class_name": "UserProfile",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 76,
+      "end_line": 76,
+      "function": "to_dict",
+      "class_name": "UserProfile",
+      "code": "return {'user_id': self.user_id, 'name': self.name, 'preferred_kinds': list(self.preferred_kinds), 'updated_at': self.updated_at.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 85,
+      "end_line": 85,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"UserProfile\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 88,
+      "end_line": 88,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "return cls(user_id=str(raw.get('user_id', '')), name=str(raw.get('name', '')), preferred_kinds=list(raw.get('preferred_kinds', [])), updated_at=ts)",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 95,
+      "end_line": 95,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 95,
+      "end_line": 95,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 105,
+      "end_line": 105,
+      "function": "add_event",
+      "class_name": "TimelineState",
+      "code": "def add_event(self, event: Event) -> None:",
+      "vars_in_scope": [
+        "event",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 108,
+      "end_line": 108,
+      "function": "recent_events",
+      "class_name": "TimelineState",
+      "code": "def recent_events(self, minutes: int = 60) -> List[Event]:",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 108,
+      "end_line": 108,
+      "function": "recent_events",
+      "class_name": "TimelineState",
+      "code": "return [e for e in self.events if e.is_recent(minutes)]",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 111,
+      "end_line": 111,
+      "function": "to_dict",
+      "class_name": "TimelineState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "to_dict",
+      "class_name": "TimelineState",
+      "code": "return {'user_id': self.user_id, 'profile': self.profile.to_dict() if self.profile else None, 'events': [e.to_dict() for e in self.events]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 119,
+      "end_line": 119,
+      "function": "from_dict",
+      "class_name": "TimelineState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"TimelineState\":",
+      "vars_in_scope": [
+        "cls",
+        "e",
+        "p_raw",
+        "prof",
+        "raw",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 129,
+      "end_line": 129,
+      "function": "from_dict",
+      "class_name": "TimelineState",
+      "code": "return state",
+      "vars_in_scope": [
+        "cls",
+        "e",
+        "p_raw",
+        "prof",
+        "raw",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 134,
+      "end_line": 134,
+      "function": "__init__",
+      "class_name": "AnalyticsClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 138,
+      "end_line": 138,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "return ''",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 140,
+      "end_line": 140,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 143,
+      "end_line": 143,
+      "function": "fetch_score",
+      "class_name": "AnalyticsClient",
+      "code": "def fetch_score(self, user_id: str) -> Optional[float]:",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "score",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 145,
+      "end_line": 145,
+      "function": "fetch_score",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "score",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 152,
+      "end_line": 152,
+      "function": "fetch_score",
+      "class_name": "AnalyticsClient",
+      "code": "return float(score) if score is not None else None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "score",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 154,
+      "end_line": 154,
+      "function": "fetch_score",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "score",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 154,
+      "end_line": 154,
+      "function": "fetch_score",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "score",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 157,
+      "end_line": 157,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "def push_summary(self, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 159,
+      "end_line": 159,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 164,
+      "end_line": 164,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 166,
+      "end_line": 166,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 166,
+      "end_line": 166,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 170,
+      "end_line": 170,
+      "function": "load_state",
+      "class_name": null,
+      "code": "def load_state(path: Path) -> TimelineState:",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 171,
+      "end_line": 171,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return TimelineState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return TimelineState.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 177,
+      "end_line": 177,
+      "function": "load_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 177,
+      "end_line": 177,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return TimelineState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 181,
+      "end_line": 181,
+      "function": "save_state",
+      "class_name": null,
+      "code": "def save_state(path: Path, state: TimelineState) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 188,
+      "end_line": 188,
+      "function": "save_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 188,
+      "end_line": 188,
+      "function": "save_state",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 192,
+      "end_line": 192,
+      "function": "compute_engagement",
+      "class_name": null,
+      "code": "def compute_engagement(state: TimelineState) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "all_vals",
+        "avg_by_kind",
+        "by_kind",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 193,
+      "end_line": 193,
+      "function": "compute_engagement",
+      "class_name": null,
+      "code": "return {'count': 0, 'avg_value': None, 'by_kind': {}}",
+      "vars_in_scope": [
+        "all_vals",
+        "avg_by_kind",
+        "by_kind",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 199,
+      "end_line": 199,
+      "function": "compute_engagement",
+      "class_name": null,
+      "code": "return {'count': len(state.events), 'avg_value': sum(all_vals) / len(all_vals), 'by_kind': avg_by_kind}",
+      "vars_in_scope": [
+        "all_vals",
+        "avg_by_kind",
+        "by_kind",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 203,
+      "end_line": 203,
+      "function": "detect_bursts",
+      "class_name": null,
+      "code": "def detect_bursts(state: TimelineState, window_minutes: int = 30) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "bursts",
+        "end",
+        "sorted_events",
+        "start",
+        "state",
+        "window_minutes",
+        "window_start"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 204,
+      "end_line": 204,
+      "function": "detect_bursts",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "bursts",
+        "end",
+        "sorted_events",
+        "start",
+        "state",
+        "window_minutes",
+        "window_start"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 216,
+      "end_line": 216,
+      "function": "detect_bursts",
+      "class_name": null,
+      "code": "return bursts",
+      "vars_in_scope": [
+        "bursts",
+        "end",
+        "sorted_events",
+        "start",
+        "state",
+        "window_minutes",
+        "window_start"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 220,
+      "end_line": 220,
+      "function": "simulate_events",
+      "class_name": null,
+      "code": "def simulate_events(state: TimelineState, count: int = 10) -> int:",
+      "vars_in_scope": [
+        "count",
+        "created",
+        "ev",
+        "kind",
+        "kinds",
+        "now",
+        "state",
+        "ts",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 230,
+      "end_line": 230,
+      "function": "simulate_events",
+      "class_name": null,
+      "code": "return created",
+      "vars_in_scope": [
+        "count",
+        "created",
+        "ev",
+        "kind",
+        "kinds",
+        "now",
+        "state",
+        "ts",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 234,
+      "end_line": 234,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "def summarize_state(state: TimelineState, score: Optional[float]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "bursts",
+        "engagement",
+        "score",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 236,
+      "end_line": 236,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "return {'user_id': state.user_id, 'profile_name': state.profile.name if state.profile else None, 'score': score, 'engagement': engagement, 'burst_count': len(bursts)}",
+      "vars_in_scope": [
+        "bursts",
+        "engagement",
+        "score",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 246,
+      "end_line": 246,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "score",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 266,
+      "end_line": 266,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "score",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 266,
+      "end_line": 266,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "score",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 267,
+      "end_line": 267,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "score",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

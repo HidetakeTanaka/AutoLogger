@@ -1,0 +1,293 @@
+{
+  "file": "script96.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsItem.is_recent"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recency flag in NewsItem.is_recent"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsItem.matches_category"
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning category match result in NewsItem.matches_category"
+    },
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsItem.to_dict"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning dict representation in NewsItem.to_dict"
+    },
+    {
+      "line": 47,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsItem.from_dict"
+    },
+    {
+      "line": 63,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse NewsItem data in NewsItem.from_dict"
+    },
+    {
+      "line": 63,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from NewsItem.from_dict after failure"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserPrefs.prefers"
+    },
+    {
+      "line": 76,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning preference match in UserPrefs.prefers"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserPrefs.needs_refresh"
+    },
+    {
+      "line": 80,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning refresh-needed flag in UserPrefs.needs_refresh"
+    },
+    {
+      "line": 83,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserPrefs.to_dict"
+    },
+    {
+      "line": 83,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning dict representation in UserPrefs.to_dict"
+    },
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserPrefs.from_dict"
+    },
+    {
+      "line": 106,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse UserPrefs data in UserPrefs.from_dict"
+    },
+    {
+      "line": 106,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from UserPrefs.from_dict after failure"
+    },
+    {
+      "line": 116,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FeedState.add_item"
+    },
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FeedState.recent_items"
+    },
+    {
+      "line": 119,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent items in FeedState.recent_items"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FeedState.to_dict"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning dict representation in FeedState.to_dict"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FeedState.from_dict"
+    },
+    {
+      "line": 140,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning FeedState instance in FeedState.from_dict"
+    },
+    {
+      "line": 145,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.__init__"
+    },
+    {
+      "line": 149,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient._url"
+    },
+    {
+      "line": 151,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning resolved URL in RecommendationClient._url"
+    },
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.fetch_remote_prefs"
+    },
+    {
+      "line": 166,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch remote preferences in RecommendationClient.fetch_remote_prefs"
+    },
+    {
+      "line": 166,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from RecommendationClient.fetch_remote_prefs after failure"
+    },
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_state"
+    },
+    {
+      "line": 175,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load state in load_state"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback FeedState from load_state"
+    },
+    {
+      "line": 181,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_state"
+    },
+    {
+      "line": 187,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save state in save_state"
+    },
+    {
+      "line": 187,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Aborting save_state after failure"
+    },
+    {
+      "line": 191,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_category_stats"
+    },
+    {
+      "line": 200,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed category statistics in compute_category_stats"
+    },
+    {
+      "line": 204,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering apply_remote_prefs"
+    },
+    {
+      "line": 211,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning applied remote preferences in apply_remote_prefs"
+    },
+    {
+      "line": 215,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_items"
+    },
+    {
+      "line": 235,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning simulated item count in simulate_items"
+    },
+    {
+      "line": 239,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_state"
+    },
+    {
+      "line": 243,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summarized state in summarize_state"
+    },
+    {
+      "line": 254,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 268,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 270,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code from main"
+    }
+  ]
+}

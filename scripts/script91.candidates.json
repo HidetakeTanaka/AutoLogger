@@ -1,0 +1,968 @@
+{
+  "file": "scripts\\script91.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_overdue",
+      "class_name": "Task",
+      "code": "def is_overdue(self, now: Optional[datetime] = None) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "now",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "is_overdue",
+      "class_name": "Task",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "now",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 28,
+      "end_line": 28,
+      "function": "is_overdue",
+      "class_name": "Task",
+      "code": "return now > cutoff",
+      "vars_in_scope": [
+        "cutoff",
+        "now",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 31,
+      "end_line": 31,
+      "function": "matches_tag",
+      "class_name": "Task",
+      "code": "def matches_tag(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "matches_tag",
+      "class_name": "Task",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 34,
+      "end_line": 34,
+      "function": "matches_tag",
+      "class_name": "Task",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 37,
+      "end_line": 37,
+      "function": "to_dict",
+      "class_name": "Task",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 37,
+      "end_line": 37,
+      "function": "to_dict",
+      "class_name": "Task",
+      "code": "return {'task_id': self.task_id, 'title': self.title, 'priority': self.priority, 'estimated_minutes': self.estimated_minutes, 'created_at': self.created_at.isoformat(), 'completed': self.completed, 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 49,
+      "end_line": 49,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Task\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 51,
+      "end_line": 51,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "return cls(task_id=str(raw.get('task_id', '')), title=str(raw.get('title', '')), priority=int(raw.get('priority', 0)), estimated_minutes=int(raw.get('estimated_minutes', 0)), created_at=ts, completed=bool(raw.get('completed', False)), tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 61,
+      "end_line": 61,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 61,
+      "end_line": 61,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "needs_refresh",
+      "class_name": "UserSettings",
+      "code": "def needs_refresh(self, hours: int = 72) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 73,
+      "end_line": 73,
+      "function": "needs_refresh",
+      "class_name": "UserSettings",
+      "code": "return self.updated_at < cutoff",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 76,
+      "end_line": 76,
+      "function": "to_dict",
+      "class_name": "UserSettings",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 76,
+      "end_line": 76,
+      "function": "to_dict",
+      "class_name": "UserSettings",
+      "code": "return {'user_id': self.user_id, 'daily_capacity': self.daily_capacity, 'timezone': self.timezone, 'updated_at': self.updated_at.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 85,
+      "end_line": 85,
+      "function": "from_dict",
+      "class_name": "UserSettings",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"UserSettings\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 87,
+      "end_line": 87,
+      "function": "from_dict",
+      "class_name": "UserSettings",
+      "code": "return cls(user_id=str(raw.get('user_id', '')), daily_capacity=int(raw.get('daily_capacity', 240)), timezone=str(raw.get('timezone', 'UTC')), updated_at=ts)",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 94,
+      "end_line": 94,
+      "function": "from_dict",
+      "class_name": "UserSettings",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 94,
+      "end_line": 94,
+      "function": "from_dict",
+      "class_name": "UserSettings",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 104,
+      "end_line": 104,
+      "function": "add_task",
+      "class_name": "PlannerState",
+      "code": "def add_task(self, task: Task) -> None:",
+      "vars_in_scope": [
+        "self",
+        "task"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 107,
+      "end_line": 107,
+      "function": "pending_tasks",
+      "class_name": "PlannerState",
+      "code": "def pending_tasks(self) -> List[Task]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 107,
+      "end_line": 107,
+      "function": "pending_tasks",
+      "class_name": "PlannerState",
+      "code": "return [t for t in self.tasks if not t.completed]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 110,
+      "end_line": 110,
+      "function": "to_dict",
+      "class_name": "PlannerState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 110,
+      "end_line": 110,
+      "function": "to_dict",
+      "class_name": "PlannerState",
+      "code": "return {'user_id': self.user_id, 'settings': self.settings.to_dict() if self.settings else None, 'tasks': [t.to_dict() for t in self.tasks]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 118,
+      "end_line": 118,
+      "function": "from_dict",
+      "class_name": "PlannerState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"PlannerState\":",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "s_raw",
+        "state",
+        "t"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 127,
+      "end_line": 127,
+      "function": "from_dict",
+      "class_name": "PlannerState",
+      "code": "return state",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "s_raw",
+        "state",
+        "t"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 132,
+      "end_line": 132,
+      "function": "__init__",
+      "class_name": "SuggestionClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 136,
+      "end_line": 136,
+      "function": "_url",
+      "class_name": "SuggestionClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 137,
+      "end_line": 137,
+      "function": "_url",
+      "class_name": "SuggestionClient",
+      "code": "return ''",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 138,
+      "end_line": 138,
+      "function": "_url",
+      "class_name": "SuggestionClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 141,
+      "end_line": 141,
+      "function": "fetch_suggestions",
+      "class_name": "SuggestionClient",
+      "code": "def fetch_suggestions(self, user_id: str) -> Optional[List[Dict[str, Any]]]:",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 143,
+      "end_line": 143,
+      "function": "fetch_suggestions",
+      "class_name": "SuggestionClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 150,
+      "end_line": 150,
+      "function": "fetch_suggestions",
+      "class_name": "SuggestionClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 151,
+      "end_line": 151,
+      "function": "fetch_suggestions",
+      "class_name": "SuggestionClient",
+      "code": "return parsed",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 153,
+      "end_line": 153,
+      "function": "fetch_suggestions",
+      "class_name": "SuggestionClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 153,
+      "end_line": 153,
+      "function": "fetch_suggestions",
+      "class_name": "SuggestionClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 157,
+      "end_line": 157,
+      "function": "load_state",
+      "class_name": null,
+      "code": "def load_state(path: Path) -> PlannerState:",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return PlannerState.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 162,
+      "end_line": 162,
+      "function": "load_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 162,
+      "end_line": 162,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return PlannerState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 164,
+      "end_line": 164,
+      "function": "load_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 164,
+      "end_line": 164,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return PlannerState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 168,
+      "end_line": 168,
+      "function": "save_state",
+      "class_name": null,
+      "code": "def save_state(path: Path, state: PlannerState) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 174,
+      "end_line": 174,
+      "function": "save_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 174,
+      "end_line": 174,
+      "function": "save_state",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 178,
+      "end_line": 178,
+      "function": "compute_daily_plan",
+      "class_name": null,
+      "code": "def compute_daily_plan(state: PlannerState, for_date: Optional[date] = None) -> List[Task]:",
+      "vars_in_scope": [
+        "capacity",
+        "for_date",
+        "remaining",
+        "selected",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 179,
+      "end_line": 179,
+      "function": "compute_daily_plan",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "capacity",
+        "for_date",
+        "remaining",
+        "selected",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 189,
+      "end_line": 189,
+      "function": "compute_daily_plan",
+      "class_name": null,
+      "code": "return selected",
+      "vars_in_scope": [
+        "capacity",
+        "for_date",
+        "remaining",
+        "selected",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 193,
+      "end_line": 193,
+      "function": "simulate_day",
+      "class_name": null,
+      "code": "def simulate_day(state: PlannerState) -> int:",
+      "vars_in_scope": [
+        "done",
+        "plan",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 196,
+      "end_line": 196,
+      "function": "simulate_day",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "done",
+        "plan",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 201,
+      "end_line": 201,
+      "function": "simulate_day",
+      "class_name": null,
+      "code": "return done",
+      "vars_in_scope": [
+        "done",
+        "plan",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 205,
+      "end_line": 205,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "def summarize_state(state: PlannerState) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "overdue",
+        "pending",
+        "state",
+        "topics",
+        "total"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 212,
+      "end_line": 212,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "return {'user_id': state.user_id, 'total_tasks': total, 'pending_tasks': pending, 'overdue_tasks': overdue, 'tags': topics}",
+      "vars_in_scope": [
+        "overdue",
+        "pending",
+        "state",
+        "topics",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 222,
+      "end_line": 222,
+      "function": "apply_suggestions",
+      "class_name": null,
+      "code": "def apply_suggestions(state: PlannerState, suggestions: Optional[List[Dict[str, Any]]]) -> int:",
+      "vars_in_scope": [
+        "created",
+        "now",
+        "state",
+        "suggestions",
+        "t",
+        "title"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 223,
+      "end_line": 223,
+      "function": "apply_suggestions",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "created",
+        "now",
+        "state",
+        "suggestions",
+        "t",
+        "title"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 240,
+      "end_line": 240,
+      "function": "apply_suggestions",
+      "class_name": null,
+      "code": "return created",
+      "vars_in_scope": [
+        "created",
+        "now",
+        "state",
+        "suggestions",
+        "t",
+        "title"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 244,
+      "end_line": 244,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "sugg",
+        "summary",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 262,
+      "end_line": 262,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "sugg",
+        "summary",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 262,
+      "end_line": 262,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "sugg",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 263,
+      "end_line": 263,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "sugg",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

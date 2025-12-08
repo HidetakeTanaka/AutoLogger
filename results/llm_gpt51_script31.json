@@ -2,16 +2,64 @@
   "file": "script31.py",
   "logs": [
     {
-      "line": 76,
+      "line": 31,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(\"Loading quiz attempts from %s\", path)"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 133,
-      "kind": "return",
+      "line": 36,
+      "kind": "entry",
       "level": "INFO",
-      "message": "logging.info(\"Identified %d suspicious users\", len(suspects))"
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
+      "line": 182,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     }
   ]
 }

@@ -1,0 +1,209 @@
+{
+  "file": "script99.py",
+  "logs": [
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Creating SensorReading from dict with timestamp={ts} and value={raw.get('value', 0.0)}\")"
+    },
+    {
+      "line": 32,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse timestamp from raw data: {ts_raw}', exc_info=True)"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_reading with value={value}\")"
+    },
+    {
+      "line": 47,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_average with minutes={minutes} for device {self}\")"
+    },
+    {
+      "line": 53,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_online method of DeviceState for device {self}\")"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 77,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Creating DeviceState from dict with device_id={raw.get('device_id', '')}, status={raw.get('status', 'offline')}, updated_at={ts}\")"
+    },
+    {
+      "line": 84,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse device state from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_or_create with device_id={device_id}\")"
+    },
+    {
+      "line": 94,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning device {device_id} from get_or_create')"
+    },
+    {
+      "line": 97,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning device with ID {device_id} from get_or_create')"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Fleet.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 117,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing ApiGateway with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 126,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_device_snapshot with device_id={device_id}\")"
+    },
+    {
+      "line": 128,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'No snapshot found for device_id {device_id}, returning None')"
+    },
+    {
+      "line": 138,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning snapshot data for device_id={device_id}')"
+    },
+    {
+      "line": 140,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch device snapshot for device_id={device_id} from url={url}: {text}')"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_fleet with path: {path}\")"
+    },
+    {
+      "line": 151,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded fleet data from {path} with {len(raw)} entries')"
+    },
+    {
+      "line": 153,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load fleet from {path}')"
+    },
+    {
+      "line": 157,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_fleet with path={path} and fleet={fleet}\")"
+    },
+    {
+      "line": 163,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save fleet to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 167,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Starting compute_fleet_stats for fleet: {fleet}')"
+    },
+    {
+      "line": 185,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering read_config with path: {path}\")"
+    },
+    {
+      "line": 192,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Configuration loaded successfully from {path}')"
+    },
+    {
+      "line": 194,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to read config from {path} with content: {text}')"
+    },
+    {
+      "line": 198,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered refresh_from_remote with fleet={fleet}, device_ids={list(device_ids)}\")"
+    },
+    {
+      "line": 210,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Error refreshing from remote for devices {device_ids} in fleet {fleet}', exc_info=True)"
+    },
+    {
+      "line": 212,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Refresh from remote completed with updated status: {updated}')"
+    },
+    {
+      "line": 216,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering write_report with path={path} and stats keys={list(stats.keys())}\")"
+    },
+    {
+      "line": 222,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to write report to {path} with stats {stats} and tmp data {tmp}', exc_info=True)"
+    },
+    {
+      "line": 226,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with config_path={config_path}\")"
+    }
+  ]
+}

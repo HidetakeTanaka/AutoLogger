@@ -1,0 +1,929 @@
+{
+  "file": "scripts\\script81.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "Workout",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "is_recent",
+      "class_name": "Workout",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "is_recent",
+      "class_name": "Workout",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches_kind",
+      "class_name": "Workout",
+      "code": "def matches_kind(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches_kind",
+      "class_name": "Workout",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 34,
+      "end_line": 34,
+      "function": "matches_kind",
+      "class_name": "Workout",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "matches_kind",
+      "class_name": "Workout",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 38,
+      "end_line": 38,
+      "function": "to_dict",
+      "class_name": "Workout",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 38,
+      "end_line": 38,
+      "function": "to_dict",
+      "class_name": "Workout",
+      "code": "return {'user_id': self.user_id, 'workout_id': self.workout_id, 'kind': self.kind, 'duration_min': self.duration_min, 'calories': self.calories, 'tags': list(self.tags), 'timestamp': self.timestamp.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 50,
+      "end_line": 50,
+      "function": "from_dict",
+      "class_name": "Workout",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Workout\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 53,
+      "end_line": 53,
+      "function": "from_dict",
+      "class_name": "Workout",
+      "code": "return cls(user_id=str(raw.get('user_id', '')), workout_id=str(raw.get('workout_id', '')), kind=str(raw.get('kind', '')), duration_min=int(raw.get('duration_min', 0)), calories=int(raw.get('calories', 0)), tags=list(raw.get('tags', [])), timestamp=ts)",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 63,
+      "end_line": 63,
+      "function": "from_dict",
+      "class_name": "Workout",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 63,
+      "end_line": 63,
+      "function": "from_dict",
+      "class_name": "Workout",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "add_workout",
+      "class_name": "WorkoutLog",
+      "code": "def add_workout(self, workout: Workout) -> None:",
+      "vars_in_scope": [
+        "self",
+        "workout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 73,
+      "end_line": 73,
+      "function": "add_workout",
+      "class_name": "WorkoutLog",
+      "code": "return",
+      "vars_in_scope": [
+        "self",
+        "workout"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 77,
+      "end_line": 77,
+      "function": "filter_by_kind",
+      "class_name": "WorkoutLog",
+      "code": "def filter_by_kind(self, query: str = \"\") -> List[Workout]:",
+      "vars_in_scope": [
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 77,
+      "end_line": 77,
+      "function": "filter_by_kind",
+      "class_name": "WorkoutLog",
+      "code": "return [w for w in self.workouts if w.matches_kind(query)]",
+      "vars_in_scope": [
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 80,
+      "end_line": 80,
+      "function": "recent_workouts",
+      "class_name": "WorkoutLog",
+      "code": "def recent_workouts(self, hours: int = 24) -> List[Workout]:",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 80,
+      "end_line": 80,
+      "function": "recent_workouts",
+      "class_name": "WorkoutLog",
+      "code": "return [w for w in self.workouts if w.is_recent(hours)]",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 83,
+      "end_line": 83,
+      "function": "total_calories",
+      "class_name": "WorkoutLog",
+      "code": "def total_calories(self, day: Optional[date] = None) -> int:",
+      "vars_in_scope": [
+        "day",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "total_calories",
+      "class_name": "WorkoutLog",
+      "code": "return sum((w.calories for w in self.workouts))",
+      "vars_in_scope": [
+        "day",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 85,
+      "end_line": 85,
+      "function": "total_calories",
+      "class_name": "WorkoutLog",
+      "code": "return sum((w.calories for w in self.workouts if w.timestamp.date() == day))",
+      "vars_in_scope": [
+        "day",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 90,
+      "end_line": 90,
+      "function": "to_dict",
+      "class_name": "WorkoutLog",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 90,
+      "end_line": 90,
+      "function": "to_dict",
+      "class_name": "WorkoutLog",
+      "code": "return {'user_id': self.user_id, 'workouts': [w.to_dict() for w in self.workouts]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 97,
+      "end_line": 97,
+      "function": "from_dict",
+      "class_name": "WorkoutLog",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"WorkoutLog\":",
+      "vars_in_scope": [
+        "cls",
+        "log",
+        "raw",
+        "w"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 102,
+      "end_line": 102,
+      "function": "from_dict",
+      "class_name": "WorkoutLog",
+      "code": "return log",
+      "vars_in_scope": [
+        "cls",
+        "log",
+        "raw",
+        "w"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 107,
+      "end_line": 107,
+      "function": "__init__",
+      "class_name": "RecommendationClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 111,
+      "end_line": 111,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "def _url(self, kind: str) -> str:",
+      "vars_in_scope": [
+        "kind",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "return f'{self.base_url}/recommend?kind={kind}'",
+      "vars_in_scope": [
+        "kind",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 114,
+      "end_line": 114,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "def fetch_suggestions(self, kind: str) -> Optional[List[Dict[str, Any]]]:",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "kind",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "kind",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 124,
+      "end_line": 124,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "kind",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 125,
+      "end_line": 125,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "return items",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "kind",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 127,
+      "end_line": 127,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "kind",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 127,
+      "end_line": 127,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "kind",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 131,
+      "end_line": 131,
+      "function": "load_log",
+      "class_name": null,
+      "code": "def load_log(path: Path) -> WorkoutLog:",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw_text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 132,
+      "end_line": 132,
+      "function": "load_log",
+      "class_name": null,
+      "code": "return WorkoutLog(user_id='local')",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw_text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 136,
+      "end_line": 136,
+      "function": "load_log",
+      "class_name": null,
+      "code": "return WorkoutLog.from_dict(data)",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw_text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 138,
+      "end_line": 138,
+      "function": "load_log",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw_text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 138,
+      "end_line": 138,
+      "function": "load_log",
+      "class_name": null,
+      "code": "return WorkoutLog(user_id='local')",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw_text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 142,
+      "end_line": 142,
+      "function": "save_log",
+      "class_name": null,
+      "code": "def save_log(path: Path, log: WorkoutLog) -> None:",
+      "vars_in_scope": [
+        "log",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 148,
+      "end_line": 148,
+      "function": "save_log",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "log",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 152,
+      "end_line": 152,
+      "function": "save_log",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "log",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 156,
+      "end_line": 156,
+      "function": "compute_daily_summary",
+      "class_name": null,
+      "code": "def compute_daily_summary(log: WorkoutLog, day: date) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "day",
+        "day_workouts",
+        "log",
+        "total_cal",
+        "total_duration"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 158,
+      "end_line": 158,
+      "function": "compute_daily_summary",
+      "class_name": null,
+      "code": "return {'date': day.isoformat(), 'count': 0, 'duration': 0, 'calories': 0}",
+      "vars_in_scope": [
+        "day",
+        "day_workouts",
+        "log",
+        "total_cal",
+        "total_duration"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 161,
+      "end_line": 161,
+      "function": "compute_daily_summary",
+      "class_name": null,
+      "code": "return {'date': day.isoformat(), 'count': len(day_workouts), 'duration': total_duration, 'calories': total_cal}",
+      "vars_in_scope": [
+        "day",
+        "day_workouts",
+        "log",
+        "total_cal",
+        "total_duration"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 170,
+      "end_line": 170,
+      "function": "simulate_day",
+      "class_name": null,
+      "code": "def simulate_day(log: WorkoutLog, target_calories: int = 400) -> int:",
+      "vars_in_scope": [
+        "added",
+        "base",
+        "log",
+        "target_calories",
+        "total",
+        "w"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 171,
+      "end_line": 171,
+      "function": "simulate_day",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "added",
+        "base",
+        "log",
+        "target_calories",
+        "total",
+        "w"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 188,
+      "end_line": 188,
+      "function": "simulate_day",
+      "class_name": null,
+      "code": "return added",
+      "vars_in_scope": [
+        "added",
+        "base",
+        "log",
+        "target_calories",
+        "total",
+        "w"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 192,
+      "end_line": 192,
+      "function": "merge_remote_recs",
+      "class_name": null,
+      "code": "def merge_remote_recs(log: WorkoutLog, recs: Optional[List[Dict[str, Any]]]) -> int:",
+      "vars_in_scope": [
+        "added",
+        "log",
+        "recs",
+        "w"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 193,
+      "end_line": 193,
+      "function": "merge_remote_recs",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "added",
+        "log",
+        "recs",
+        "w"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 204,
+      "end_line": 204,
+      "function": "merge_remote_recs",
+      "class_name": null,
+      "code": "return added",
+      "vars_in_scope": [
+        "added",
+        "log",
+        "recs",
+        "w"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 208,
+      "end_line": 208,
+      "function": "summarize",
+      "class_name": null,
+      "code": "def summarize(log: WorkoutLog) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "log",
+        "today"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 209,
+      "end_line": 209,
+      "function": "summarize",
+      "class_name": null,
+      "code": "return {'user_id': log.user_id, 'total_workouts': len(log.workouts), 'total_calories': log.total_calories(), 'today_calories': log.total_calories(today), 'recent_24h': len(log.recent_workouts(24))}",
+      "vars_in_scope": [
+        "log",
+        "today"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 219,
+      "end_line": 219,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "log",
+        "recs",
+        "store_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 250,
+      "end_line": 250,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "log",
+        "recs",
+        "store_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 250,
+      "end_line": 250,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "log",
+        "recs",
+        "store_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 252,
+      "end_line": 252,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "log",
+        "recs",
+        "store_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

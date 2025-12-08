@@ -1,0 +1,975 @@
+{
+  "file": "scripts\\script88.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_recent",
+      "class_name": "SensorReading",
+      "code": "def is_recent(self, minutes: int = 30) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_recent",
+      "class_name": "SensorReading",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "SensorReading",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches_tag",
+      "class_name": "SensorReading",
+      "code": "def matches_tag(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches_tag",
+      "class_name": "SensorReading",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "matches_tag",
+      "class_name": "SensorReading",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches_tag",
+      "class_name": "SensorReading",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "SensorReading",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "SensorReading",
+      "code": "return {'device_id': self.device_id, 'metric': self.metric, 'value': self.value, 'recorded_at': self.recorded_at.isoformat(), 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 45,
+      "end_line": 45,
+      "function": "from_dict",
+      "class_name": "SensorReading",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"SensorReading\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 48,
+      "end_line": 48,
+      "function": "from_dict",
+      "class_name": "SensorReading",
+      "code": "return cls(device_id=str(raw.get('device_id', '')), metric=str(raw.get('metric', '')), value=float(raw.get('value', 0.0)), recorded_at=ts, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "SensorReading",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "SensorReading",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 67,
+      "end_line": 67,
+      "function": "is_stale",
+      "class_name": "DeviceStatus",
+      "code": "def is_stale(self, minutes: int = 10) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 68,
+      "end_line": 68,
+      "function": "is_stale",
+      "class_name": "DeviceStatus",
+      "code": "return self.last_seen < cutoff",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 71,
+      "end_line": 71,
+      "function": "to_dict",
+      "class_name": "DeviceStatus",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 71,
+      "end_line": 71,
+      "function": "to_dict",
+      "class_name": "DeviceStatus",
+      "code": "return {'device_id': self.device_id, 'name': self.name, 'online': self.online, 'last_seen': self.last_seen.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 80,
+      "end_line": 80,
+      "function": "from_dict",
+      "class_name": "DeviceStatus",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"DeviceStatus\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 83,
+      "end_line": 83,
+      "function": "from_dict",
+      "class_name": "DeviceStatus",
+      "code": "return cls(device_id=str(raw.get('device_id', '')), name=str(raw.get('name', '')), online=bool(raw.get('online', False)), last_seen=ts)",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 90,
+      "end_line": 90,
+      "function": "from_dict",
+      "class_name": "DeviceStatus",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 90,
+      "end_line": 90,
+      "function": "from_dict",
+      "class_name": "DeviceStatus",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 100,
+      "end_line": 100,
+      "function": "add_reading",
+      "class_name": "MonitoringState",
+      "code": "def add_reading(self, reading: SensorReading) -> None:",
+      "vars_in_scope": [
+        "reading",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 103,
+      "end_line": 103,
+      "function": "recent_readings",
+      "class_name": "MonitoringState",
+      "code": "def recent_readings(self, minutes: int = 30) -> List[SensorReading]:",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 103,
+      "end_line": 103,
+      "function": "recent_readings",
+      "class_name": "MonitoringState",
+      "code": "return [r for r in self.readings if r.is_recent(minutes)]",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 106,
+      "end_line": 106,
+      "function": "filter_metric",
+      "class_name": "MonitoringState",
+      "code": "def filter_metric(self, metric: str) -> List[SensorReading]:",
+      "vars_in_scope": [
+        "metric",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 106,
+      "end_line": 106,
+      "function": "filter_metric",
+      "class_name": "MonitoringState",
+      "code": "return [r for r in self.readings if r.metric == metric]",
+      "vars_in_scope": [
+        "metric",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 109,
+      "end_line": 109,
+      "function": "to_dict",
+      "class_name": "MonitoringState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "to_dict",
+      "class_name": "MonitoringState",
+      "code": "return {'site_id': self.site_id, 'devices': [d.to_dict() for d in self.devices.values()], 'readings': [r.to_dict() for r in self.readings]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 117,
+      "end_line": 117,
+      "function": "from_dict",
+      "class_name": "MonitoringState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"MonitoringState\":",
+      "vars_in_scope": [
+        "cls",
+        "d",
+        "r",
+        "raw",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 126,
+      "end_line": 126,
+      "function": "from_dict",
+      "class_name": "MonitoringState",
+      "code": "return state",
+      "vars_in_scope": [
+        "cls",
+        "d",
+        "r",
+        "raw",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 131,
+      "end_line": 131,
+      "function": "__init__",
+      "class_name": "AlertClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 135,
+      "end_line": 135,
+      "function": "_url",
+      "class_name": "AlertClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 135,
+      "end_line": 135,
+      "function": "_url",
+      "class_name": "AlertClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\" if self.base_url else ''",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 138,
+      "end_line": 138,
+      "function": "push_alerts",
+      "class_name": "AlertClient",
+      "code": "def push_alerts(self, alerts: List[Dict[str, Any]]) -> bool:",
+      "vars_in_scope": [
+        "alerts",
+        "body",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "push_alerts",
+      "class_name": "AlertClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "alerts",
+        "body",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 145,
+      "end_line": 145,
+      "function": "push_alerts",
+      "class_name": "AlertClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "alerts",
+        "body",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 147,
+      "end_line": 147,
+      "function": "push_alerts",
+      "class_name": "AlertClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "alerts",
+        "body",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 147,
+      "end_line": 147,
+      "function": "push_alerts",
+      "class_name": "AlertClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "alerts",
+        "body",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 151,
+      "end_line": 151,
+      "function": "load_state",
+      "class_name": null,
+      "code": "def load_state(path: Path) -> MonitoringState:",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 152,
+      "end_line": 152,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return MonitoringState(site_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 156,
+      "end_line": 156,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return MonitoringState.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 158,
+      "end_line": 158,
+      "function": "load_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 158,
+      "end_line": 158,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return MonitoringState(site_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 162,
+      "end_line": 162,
+      "function": "save_state",
+      "class_name": null,
+      "code": "def save_state(path: Path, state: MonitoringState) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 168,
+      "end_line": 168,
+      "function": "save_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 168,
+      "end_line": 168,
+      "function": "save_state",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 172,
+      "end_line": 172,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "def compute_stats(state: MonitoringState) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "avg",
+        "by_metric",
+        "overall_vals",
+        "state",
+        "totals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 173,
+      "end_line": 173,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': 0, 'avg': None, 'by_metric': {}}",
+      "vars_in_scope": [
+        "avg",
+        "by_metric",
+        "overall_vals",
+        "state",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 184,
+      "end_line": 184,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': len(state.readings), 'avg': avg, 'by_metric': by_metric}",
+      "vars_in_scope": [
+        "avg",
+        "by_metric",
+        "overall_vals",
+        "state",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 188,
+      "end_line": 188,
+      "function": "filter_alerts",
+      "class_name": null,
+      "code": "def filter_alerts(state: MonitoringState, metric: str, limit: float) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "alerts",
+        "limit",
+        "metric",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 199,
+      "end_line": 199,
+      "function": "filter_alerts",
+      "class_name": null,
+      "code": "return alerts",
+      "vars_in_scope": [
+        "alerts",
+        "limit",
+        "metric",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 203,
+      "end_line": 203,
+      "function": "simulate_readings",
+      "class_name": null,
+      "code": "def simulate_readings(state: MonitoringState, count: int = 10) -> int:",
+      "vars_in_scope": [
+        "count",
+        "created",
+        "device_ids",
+        "did",
+        "metric",
+        "metrics",
+        "state",
+        "ts",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 204,
+      "end_line": 204,
+      "function": "simulate_readings",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "count",
+        "created",
+        "device_ids",
+        "did",
+        "metric",
+        "metrics",
+        "state",
+        "ts",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 223,
+      "end_line": 223,
+      "function": "simulate_readings",
+      "class_name": null,
+      "code": "return created",
+      "vars_in_scope": [
+        "count",
+        "created",
+        "device_ids",
+        "did",
+        "metric",
+        "metrics",
+        "state",
+        "ts",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 227,
+      "end_line": 227,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "def summarize_state(state: MonitoringState) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "online",
+        "stale",
+        "state",
+        "stats"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 230,
+      "end_line": 230,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "return {'site_id': state.site_id, 'devices': len(state.devices), 'online_devices': online, 'stale_devices': stale, 'reading_count': stats['count'], 'avg_value': stats['avg']}",
+      "vars_in_scope": [
+        "online",
+        "stale",
+        "state",
+        "stats"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 241,
+      "end_line": 241,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "alert_payloads",
+        "alerts",
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "did",
+        "now",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 272,
+      "end_line": 272,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "alert_payloads",
+        "alerts",
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "did",
+        "now",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 272,
+      "end_line": 272,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "alert_payloads",
+        "alerts",
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "did",
+        "now",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 273,
+      "end_line": 273,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "alert_payloads",
+        "alerts",
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "did",
+        "now",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

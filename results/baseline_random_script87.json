@@ -1,0 +1,141 @@
+{
+  "file": "script87.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 24,
+      "level": "WARNING",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Random log at line 25 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 33,
+      "level": "ERROR",
+      "message": "Random log at line 33 in matches_tag",
+      "kind": "return",
+      "function": "matches_tag"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Random log at line 36 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Random log at line 36 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 72,
+      "level": "DEBUG",
+      "message": "Random log at line 72 in needs_update",
+      "kind": "return",
+      "function": "needs_update"
+    },
+    {
+      "line": 75,
+      "level": "ERROR",
+      "message": "Random log at line 75 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 87,
+      "level": "WARNING",
+      "message": "Random log at line 87 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 95,
+      "level": "ERROR",
+      "message": "Random log at line 95 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 95,
+      "level": "WARNING",
+      "message": "Random log at line 95 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 147,
+      "level": "INFO",
+      "message": "Random log at line 147 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 166,
+      "level": "WARNING",
+      "message": "Random log at line 166 in fetch_plan",
+      "kind": "return",
+      "function": "fetch_plan"
+    },
+    {
+      "line": 168,
+      "level": "WARNING",
+      "message": "Random log at line 168 in fetch_plan",
+      "kind": "return",
+      "function": "fetch_plan"
+    },
+    {
+      "line": 176,
+      "level": "INFO",
+      "message": "Random log at line 176 in load_state",
+      "kind": "return",
+      "function": "load_state"
+    },
+    {
+      "line": 178,
+      "level": "ERROR",
+      "message": "Random log at line 178 in load_state",
+      "kind": "return",
+      "function": "load_state"
+    },
+    {
+      "line": 208,
+      "level": "DEBUG",
+      "message": "Random log at line 208 in compute_daily_stats",
+      "kind": "return",
+      "function": "compute_daily_stats"
+    },
+    {
+      "line": 241,
+      "level": "WARNING",
+      "message": "Random log at line 241 in apply_recommendation",
+      "kind": "return",
+      "function": "apply_recommendation"
+    },
+    {
+      "line": 245,
+      "level": "ERROR",
+      "message": "Random log at line 245 in simulate_workouts",
+      "kind": "entry",
+      "function": "simulate_workouts"
+    },
+    {
+      "line": 284,
+      "level": "INFO",
+      "message": "Random log at line 284 in summarize_state",
+      "kind": "return",
+      "function": "summarize_state"
+    }
+  ]
+}

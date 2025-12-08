@@ -1,0 +1,141 @@
+{
+  "file": "script83.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 24,
+      "level": "WARNING",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Random log at line 25 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 33,
+      "level": "ERROR",
+      "message": "Random log at line 33 in matches_tag",
+      "kind": "return",
+      "function": "matches_tag"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Random log at line 36 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Random log at line 36 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 73,
+      "level": "DEBUG",
+      "message": "Random log at line 73 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 76,
+      "level": "ERROR",
+      "message": "Random log at line 76 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 79,
+      "level": "WARNING",
+      "message": "Random log at line 79 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 89,
+      "level": "ERROR",
+      "message": "Random log at line 89 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 92,
+      "level": "WARNING",
+      "message": "Random log at line 92 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 143,
+      "level": "INFO",
+      "message": "Random log at line 143 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 163,
+      "level": "WARNING",
+      "message": "Random log at line 163 in fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 167,
+      "level": "WARNING",
+      "message": "Random log at line 167 in load_store",
+      "kind": "entry",
+      "function": "load_store"
+    },
+    {
+      "line": 172,
+      "level": "INFO",
+      "message": "Random log at line 172 in load_store",
+      "kind": "return",
+      "function": "load_store"
+    },
+    {
+      "line": 174,
+      "level": "ERROR",
+      "message": "Random log at line 174 in load_store",
+      "kind": "return",
+      "function": "load_store"
+    },
+    {
+      "line": 215,
+      "level": "DEBUG",
+      "message": "Random log at line 215 in apply_recommendations",
+      "kind": "return",
+      "function": "apply_recommendations"
+    },
+    {
+      "line": 236,
+      "level": "WARNING",
+      "message": "Random log at line 236 in simulate_study",
+      "kind": "return",
+      "function": "simulate_study"
+    },
+    {
+      "line": 240,
+      "level": "ERROR",
+      "message": "Random log at line 240 in summarize",
+      "kind": "entry",
+      "function": "summarize"
+    },
+    {
+      "line": 269,
+      "level": "INFO",
+      "message": "Random log at line 269 in main",
+      "kind": "except",
+      "function": "main"
+    }
+  ]
+}

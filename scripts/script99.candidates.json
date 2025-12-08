@@ -1,0 +1,1170 @@
+{
+  "file": "scripts\\script99.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 17,
+      "end_line": 17,
+      "function": "is_recent",
+      "class_name": "SensorReading",
+      "code": "def is_recent(self, minutes: int = 10) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 19,
+      "end_line": 19,
+      "function": "is_recent",
+      "class_name": "SensorReading",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 20,
+      "end_line": 20,
+      "function": "is_recent",
+      "class_name": "SensorReading",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 23,
+      "end_line": 23,
+      "function": "to_dict",
+      "class_name": "SensorReading",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "to_dict",
+      "class_name": "SensorReading",
+      "code": "return {'ts': self.ts.isoformat(), 'value': self.value}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 27,
+      "end_line": 27,
+      "function": "from_dict",
+      "class_name": "SensorReading",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"SensorReading\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "from_dict",
+      "class_name": "SensorReading",
+      "code": "return cls(ts=ts, value=float(raw.get('value', 0.0)))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 32,
+      "end_line": 32,
+      "function": "from_dict",
+      "class_name": "SensorReading",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "from_dict",
+      "class_name": "SensorReading",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 43,
+      "end_line": 43,
+      "function": "add_reading",
+      "class_name": "DeviceState",
+      "code": "def add_reading(self, value: float) -> None:",
+      "vars_in_scope": [
+        "self",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 47,
+      "end_line": 47,
+      "function": "recent_average",
+      "class_name": "DeviceState",
+      "code": "def recent_average(self, minutes: int = 30) -> float:",
+      "vars_in_scope": [
+        "minutes",
+        "recent",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 49,
+      "end_line": 49,
+      "function": "recent_average",
+      "class_name": "DeviceState",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "minutes",
+        "recent",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 50,
+      "end_line": 50,
+      "function": "recent_average",
+      "class_name": "DeviceState",
+      "code": "return sum(recent) / len(recent)",
+      "vars_in_scope": [
+        "minutes",
+        "recent",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 53,
+      "end_line": 53,
+      "function": "is_online",
+      "class_name": "DeviceState",
+      "code": "def is_online(self) -> bool:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 54,
+      "end_line": 54,
+      "function": "is_online",
+      "class_name": "DeviceState",
+      "code": "return False",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 56,
+      "end_line": 56,
+      "function": "is_online",
+      "class_name": "DeviceState",
+      "code": "return False",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 57,
+      "end_line": 57,
+      "function": "is_online",
+      "class_name": "DeviceState",
+      "code": "return True",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 60,
+      "end_line": 60,
+      "function": "to_dict",
+      "class_name": "DeviceState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 60,
+      "end_line": 60,
+      "function": "to_dict",
+      "class_name": "DeviceState",
+      "code": "return {'device_id': self.device_id, 'status': self.status, 'updated_at': self.updated_at.isoformat(), 'readings': [r.to_dict() for r in self.readings]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 69,
+      "end_line": 69,
+      "function": "from_dict",
+      "class_name": "DeviceState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"DeviceState\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "readings",
+        "sr",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 77,
+      "end_line": 77,
+      "function": "from_dict",
+      "class_name": "DeviceState",
+      "code": "return cls(device_id=str(raw.get('device_id', '')), status=str(raw.get('status', 'offline')), readings=readings, updated_at=ts)",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "readings",
+        "sr",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 84,
+      "end_line": 84,
+      "function": "from_dict",
+      "class_name": "DeviceState",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "readings",
+        "sr",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "from_dict",
+      "class_name": "DeviceState",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "readings",
+        "sr",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 92,
+      "end_line": 92,
+      "function": "get_or_create",
+      "class_name": "Fleet",
+      "code": "def get_or_create(self, device_id: str) -> DeviceState:",
+      "vars_in_scope": [
+        "dev",
+        "device_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 94,
+      "end_line": 94,
+      "function": "get_or_create",
+      "class_name": "Fleet",
+      "code": "return d",
+      "vars_in_scope": [
+        "dev",
+        "device_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 97,
+      "end_line": 97,
+      "function": "get_or_create",
+      "class_name": "Fleet",
+      "code": "return dev",
+      "vars_in_scope": [
+        "dev",
+        "device_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 100,
+      "end_line": 100,
+      "function": "online_devices",
+      "class_name": "Fleet",
+      "code": "def online_devices(self) -> List[DeviceState]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 100,
+      "end_line": 100,
+      "function": "online_devices",
+      "class_name": "Fleet",
+      "code": "return [d for d in self.devices if d.is_online()]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 103,
+      "end_line": 103,
+      "function": "to_dict",
+      "class_name": "Fleet",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 103,
+      "end_line": 103,
+      "function": "to_dict",
+      "class_name": "Fleet",
+      "code": "return {'devices': [d.to_dict() for d in self.devices]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 107,
+      "end_line": 107,
+      "function": "from_dict",
+      "class_name": "Fleet",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Fleet\":",
+      "vars_in_scope": [
+        "cls",
+        "dev",
+        "fleet",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 112,
+      "end_line": 112,
+      "function": "from_dict",
+      "class_name": "Fleet",
+      "code": "return fleet",
+      "vars_in_scope": [
+        "cls",
+        "dev",
+        "fleet",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 117,
+      "end_line": 117,
+      "function": "__init__",
+      "class_name": "ApiGateway",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 121,
+      "end_line": 121,
+      "function": "_url",
+      "class_name": "ApiGateway",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 122,
+      "end_line": 122,
+      "function": "_url",
+      "class_name": "ApiGateway",
+      "code": "return ''",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 123,
+      "end_line": 123,
+      "function": "_url",
+      "class_name": "ApiGateway",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 126,
+      "end_line": 126,
+      "function": "fetch_device_snapshot",
+      "class_name": "ApiGateway",
+      "code": "def fetch_device_snapshot(self, device_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 128,
+      "end_line": 128,
+      "function": "fetch_device_snapshot",
+      "class_name": "ApiGateway",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 134,
+      "end_line": 134,
+      "function": "fetch_device_snapshot",
+      "class_name": "ApiGateway",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 137,
+      "end_line": 137,
+      "function": "fetch_device_snapshot",
+      "class_name": "ApiGateway",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 138,
+      "end_line": 138,
+      "function": "fetch_device_snapshot",
+      "class_name": "ApiGateway",
+      "code": "return data",
+      "vars_in_scope": [
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 140,
+      "end_line": 140,
+      "function": "fetch_device_snapshot",
+      "class_name": "ApiGateway",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 140,
+      "end_line": 140,
+      "function": "fetch_device_snapshot",
+      "class_name": "ApiGateway",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 144,
+      "end_line": 144,
+      "function": "load_fleet",
+      "class_name": null,
+      "code": "def load_fleet(path: Path) -> Fleet:",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 145,
+      "end_line": 145,
+      "function": "load_fleet",
+      "class_name": null,
+      "code": "return Fleet()",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 150,
+      "end_line": 150,
+      "function": "load_fleet",
+      "class_name": null,
+      "code": "return Fleet()",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 151,
+      "end_line": 151,
+      "function": "load_fleet",
+      "class_name": null,
+      "code": "return Fleet.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 153,
+      "end_line": 153,
+      "function": "load_fleet",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 153,
+      "end_line": 153,
+      "function": "load_fleet",
+      "class_name": null,
+      "code": "return Fleet()",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 157,
+      "end_line": 157,
+      "function": "save_fleet",
+      "class_name": null,
+      "code": "def save_fleet(path: Path, fleet: Fleet) -> None:",
+      "vars_in_scope": [
+        "fleet",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 163,
+      "end_line": 163,
+      "function": "save_fleet",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "fleet",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 163,
+      "end_line": 163,
+      "function": "save_fleet",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "fleet",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 167,
+      "end_line": 167,
+      "function": "compute_fleet_stats",
+      "class_name": null,
+      "code": "def compute_fleet_stats(fleet: Fleet) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "avg",
+        "fleet",
+        "online",
+        "values"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 168,
+      "end_line": 168,
+      "function": "compute_fleet_stats",
+      "class_name": null,
+      "code": "return {'count': 0, 'online': 0, 'avg_recent': 0.0}",
+      "vars_in_scope": [
+        "avg",
+        "fleet",
+        "online",
+        "values"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 176,
+      "end_line": 176,
+      "function": "compute_fleet_stats",
+      "class_name": null,
+      "code": "return {'count': len(fleet.devices), 'online': len(online), 'avg_recent': 0.0}",
+      "vars_in_scope": [
+        "avg",
+        "fleet",
+        "online",
+        "values"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 177,
+      "end_line": 177,
+      "function": "compute_fleet_stats",
+      "class_name": null,
+      "code": "return {'count': len(fleet.devices), 'online': len(online), 'avg_recent': sum(values) / len(values)}",
+      "vars_in_scope": [
+        "avg",
+        "fleet",
+        "online",
+        "values"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 185,
+      "end_line": 185,
+      "function": "read_config",
+      "class_name": null,
+      "code": "def read_config(path: Path) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 186,
+      "end_line": 186,
+      "function": "read_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 191,
+      "end_line": 191,
+      "function": "read_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 192,
+      "end_line": 192,
+      "function": "read_config",
+      "class_name": null,
+      "code": "return cfg",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 194,
+      "end_line": 194,
+      "function": "read_config",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 194,
+      "end_line": 194,
+      "function": "read_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 198,
+      "end_line": 198,
+      "function": "refresh_from_remote",
+      "class_name": null,
+      "code": "def refresh_from_remote(fleet: Fleet, api: ApiGateway, device_ids: Iterable[str]) -> int:",
+      "vars_in_scope": [
+        "api",
+        "dev",
+        "device_ids",
+        "fleet",
+        "snapshot",
+        "status",
+        "updated"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 210,
+      "end_line": 210,
+      "function": "refresh_from_remote",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "api",
+        "dev",
+        "device_ids",
+        "fleet",
+        "snapshot",
+        "status",
+        "updated"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 212,
+      "end_line": 212,
+      "function": "refresh_from_remote",
+      "class_name": null,
+      "code": "return updated",
+      "vars_in_scope": [
+        "api",
+        "dev",
+        "device_ids",
+        "fleet",
+        "snapshot",
+        "status",
+        "updated"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 216,
+      "end_line": 216,
+      "function": "write_report",
+      "class_name": null,
+      "code": "def write_report(path: Path, stats: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "path",
+        "stats",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 220,
+      "end_line": 220,
+      "function": "write_report",
+      "class_name": null,
+      "code": "return True",
+      "vars_in_scope": [
+        "path",
+        "stats",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 222,
+      "end_line": 222,
+      "function": "write_report",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "stats",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 222,
+      "end_line": 222,
+      "function": "write_report",
+      "class_name": null,
+      "code": "return False",
+      "vars_in_scope": [
+        "path",
+        "stats",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 226,
+      "end_line": 226,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(config_path: str = \"fleet_config.json\") -> int:",
+      "vars_in_scope": [
+        "api",
+        "base_url",
+        "cfg",
+        "changed",
+        "config_path",
+        "data_path",
+        "device_ids",
+        "devices_cfg",
+        "fleet",
+        "ok",
+        "report_path",
+        "retries",
+        "stats"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 248,
+      "end_line": 248,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "api",
+        "base_url",
+        "cfg",
+        "changed",
+        "config_path",
+        "data_path",
+        "device_ids",
+        "devices_cfg",
+        "fleet",
+        "ok",
+        "report_path",
+        "retries",
+        "stats"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 250,
+      "end_line": 250,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "api",
+        "base_url",
+        "cfg",
+        "changed",
+        "config_path",
+        "data_path",
+        "device_ids",
+        "devices_cfg",
+        "fleet",
+        "ok",
+        "report_path",
+        "retries",
+        "stats"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 251,
+      "end_line": 251,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "api",
+        "base_url",
+        "cfg",
+        "changed",
+        "config_path",
+        "data_path",
+        "device_ids",
+        "devices_cfg",
+        "fleet",
+        "ok",
+        "report_path",
+        "retries",
+        "stats"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

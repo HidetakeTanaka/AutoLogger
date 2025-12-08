@@ -1,0 +1,1087 @@
+{
+  "file": "scripts\\script92.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "MetricSample",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "MetricSample",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 25,
+      "end_line": 25,
+      "function": "is_recent",
+      "class_name": "MetricSample",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 28,
+      "end_line": 28,
+      "function": "matches_tag",
+      "class_name": "MetricSample",
+      "code": "def matches_tag(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches_tag",
+      "class_name": "MetricSample",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "matches_tag",
+      "class_name": "MetricSample",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 34,
+      "end_line": 34,
+      "function": "to_dict",
+      "class_name": "MetricSample",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 34,
+      "end_line": 34,
+      "function": "to_dict",
+      "class_name": "MetricSample",
+      "code": "return {'user_id': self.user_id, 'metric': self.metric, 'value': self.value, 'recorded_at': self.recorded_at.isoformat(), 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 44,
+      "end_line": 44,
+      "function": "from_dict",
+      "class_name": "MetricSample",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"MetricSample\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 47,
+      "end_line": 47,
+      "function": "from_dict",
+      "class_name": "MetricSample",
+      "code": "return cls(user_id=str(raw.get('user_id', '')), metric=str(raw.get('metric', '')), value=float(raw.get('value', 0.0)), recorded_at=ts, tags=set(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 55,
+      "end_line": 55,
+      "function": "from_dict",
+      "class_name": "MetricSample",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 55,
+      "end_line": 55,
+      "function": "from_dict",
+      "class_name": "MetricSample",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 66,
+      "end_line": 66,
+      "function": "needs_update",
+      "class_name": "Profile",
+      "code": "def needs_update(self, hours: int = 72) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "needs_update",
+      "class_name": "Profile",
+      "code": "return self.updated_at < cutoff",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 70,
+      "end_line": 70,
+      "function": "to_dict",
+      "class_name": "Profile",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 70,
+      "end_line": 70,
+      "function": "to_dict",
+      "class_name": "Profile",
+      "code": "return {'user_id': self.user_id, 'name': self.name, 'target_value': self.target_value, 'updated_at': self.updated_at.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 79,
+      "end_line": 79,
+      "function": "from_dict",
+      "class_name": "Profile",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Profile\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 82,
+      "end_line": 82,
+      "function": "from_dict",
+      "class_name": "Profile",
+      "code": "return cls(user_id=str(raw.get('user_id', '')), name=str(raw.get('name', '')), target_value=float(raw.get('target_value', 0.0)), updated_at=ts)",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 89,
+      "end_line": 89,
+      "function": "from_dict",
+      "class_name": "Profile",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 89,
+      "end_line": 89,
+      "function": "from_dict",
+      "class_name": "Profile",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 99,
+      "end_line": 99,
+      "function": "__post_init__",
+      "class_name": "MetricsState",
+      "code": "def __post_init__(self) -> None:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 103,
+      "end_line": 103,
+      "function": "add_sample",
+      "class_name": "MetricsState",
+      "code": "def add_sample(self, sample: MetricSample) -> None:",
+      "vars_in_scope": [
+        "sample",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 104,
+      "end_line": 104,
+      "function": "add_sample",
+      "class_name": "MetricsState",
+      "code": "return",
+      "vars_in_scope": [
+        "sample",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 108,
+      "end_line": 108,
+      "function": "recent_samples",
+      "class_name": "MetricsState",
+      "code": "def recent_samples(self, hours: int = 24) -> List[MetricSample]:",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 108,
+      "end_line": 108,
+      "function": "recent_samples",
+      "class_name": "MetricsState",
+      "code": "return [s for s in self.samples if s.is_recent(hours)]",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 111,
+      "end_line": 111,
+      "function": "average_value",
+      "class_name": "MetricsState",
+      "code": "def average_value(self, metric: str) -> Optional[float]:",
+      "vars_in_scope": [
+        "metric",
+        "self",
+        "vals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 113,
+      "end_line": 113,
+      "function": "average_value",
+      "class_name": "MetricsState",
+      "code": "return None",
+      "vars_in_scope": [
+        "metric",
+        "self",
+        "vals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 114,
+      "end_line": 114,
+      "function": "average_value",
+      "class_name": "MetricsState",
+      "code": "return sum(vals) / len(vals)",
+      "vars_in_scope": [
+        "metric",
+        "self",
+        "vals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 117,
+      "end_line": 117,
+      "function": "to_dict",
+      "class_name": "MetricsState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 117,
+      "end_line": 117,
+      "function": "to_dict",
+      "class_name": "MetricsState",
+      "code": "return {'user_id': self.user_id, 'profile': self.profile.to_dict() if self.profile else None, 'samples': [s.to_dict() for s in self.samples]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 125,
+      "end_line": 125,
+      "function": "from_dict",
+      "class_name": "MetricsState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"MetricsState\":",
+      "vars_in_scope": [
+        "cls",
+        "p_raw",
+        "prof",
+        "raw",
+        "s",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 135,
+      "end_line": 135,
+      "function": "from_dict",
+      "class_name": "MetricsState",
+      "code": "return state",
+      "vars_in_scope": [
+        "cls",
+        "p_raw",
+        "prof",
+        "raw",
+        "s",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 140,
+      "end_line": 140,
+      "function": "__init__",
+      "class_name": "RecommendationClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 144,
+      "end_line": 144,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 145,
+      "end_line": 145,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "return ''",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 146,
+      "end_line": 146,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 149,
+      "end_line": 149,
+      "function": "fetch_target",
+      "class_name": "RecommendationClient",
+      "code": "def fetch_target(self, user_id: str) -> Optional[float]:",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id",
+        "val"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 151,
+      "end_line": 151,
+      "function": "fetch_target",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id",
+        "val"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 157,
+      "end_line": 157,
+      "function": "fetch_target",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id",
+        "val"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 157,
+      "end_line": 157,
+      "function": "fetch_target",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id",
+        "val"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 162,
+      "end_line": 162,
+      "function": "fetch_target",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id",
+        "val"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 163,
+      "end_line": 163,
+      "function": "fetch_target",
+      "class_name": "RecommendationClient",
+      "code": "return float(val)",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id",
+        "val"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 165,
+      "end_line": 165,
+      "function": "fetch_target",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id",
+        "val"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 165,
+      "end_line": 165,
+      "function": "fetch_target",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id",
+        "val"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 169,
+      "end_line": 169,
+      "function": "load_state",
+      "class_name": null,
+      "code": "def load_state(path: Path) -> MetricsState:",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 170,
+      "end_line": 170,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return MetricsState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 174,
+      "end_line": 174,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return MetricsState.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 176,
+      "end_line": 176,
+      "function": "load_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 176,
+      "end_line": 176,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return MetricsState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 180,
+      "end_line": 180,
+      "function": "save_state",
+      "class_name": null,
+      "code": "def save_state(path: Path, state: MetricsState) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 187,
+      "end_line": 187,
+      "function": "save_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 187,
+      "end_line": 187,
+      "function": "save_state",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 193,
+      "end_line": 193,
+      "function": "compute_daily_summary",
+      "class_name": null,
+      "code": "def compute_daily_summary(",
+      "vars_in_scope": [
+        "avg",
+        "day",
+        "state",
+        "vals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 197,
+      "end_line": 197,
+      "function": "compute_daily_summary",
+      "class_name": null,
+      "code": "return {'date': day.isoformat(), 'count': 0, 'avg': None}",
+      "vars_in_scope": [
+        "avg",
+        "day",
+        "state",
+        "vals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 199,
+      "end_line": 199,
+      "function": "compute_daily_summary",
+      "class_name": null,
+      "code": "return {'date': day.isoformat(), 'count': len(vals), 'avg': avg}",
+      "vars_in_scope": [
+        "avg",
+        "day",
+        "state",
+        "vals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 203,
+      "end_line": 203,
+      "function": "apply_remote_target",
+      "class_name": null,
+      "code": "def apply_remote_target(state: MetricsState, client: RecommendationClient) -> Optional[float]:",
+      "vars_in_scope": [
+        "client",
+        "state",
+        "val"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 204,
+      "end_line": 204,
+      "function": "apply_remote_target",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "client",
+        "state",
+        "val"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 207,
+      "end_line": 207,
+      "function": "apply_remote_target",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "client",
+        "state",
+        "val"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 218,
+      "end_line": 218,
+      "function": "apply_remote_target",
+      "class_name": null,
+      "code": "return val",
+      "vars_in_scope": [
+        "client",
+        "state",
+        "val"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 222,
+      "end_line": 222,
+      "function": "simulate_samples",
+      "class_name": null,
+      "code": "def simulate_samples(state: MetricsState, days: int = 3) -> int:",
+      "vars_in_scope": [
+        "created",
+        "days",
+        "i",
+        "metric",
+        "metrics",
+        "now",
+        "sample",
+        "state",
+        "ts",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 240,
+      "end_line": 240,
+      "function": "simulate_samples",
+      "class_name": null,
+      "code": "return created",
+      "vars_in_scope": [
+        "created",
+        "days",
+        "i",
+        "metric",
+        "metrics",
+        "now",
+        "sample",
+        "state",
+        "ts",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 244,
+      "end_line": 244,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "def summarize_state(state: MetricsState, remote_target: Optional[float]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "avg_steps",
+        "remote_target",
+        "state",
+        "target",
+        "today"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 249,
+      "end_line": 249,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "return {'user_id': state.user_id, 'today': today, 'avg_steps': avg_steps, 'target_value': target, 'sample_count': len(state.samples)}",
+      "vars_in_scope": [
+        "avg_steps",
+        "remote_target",
+        "state",
+        "target",
+        "today"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 259,
+      "end_line": 259,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload",
+        "target"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 276,
+      "end_line": 276,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload",
+        "target"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 276,
+      "end_line": 276,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload",
+        "target"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 277,
+      "end_line": 277,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload",
+        "target"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

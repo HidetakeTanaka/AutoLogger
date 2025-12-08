@@ -1,0 +1,155 @@
+{
+  "file": "script77.py",
+  "logs": [
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches with query: {query}\")"
+    },
+    {
+      "line": 46,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 60,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Task from dict with raw data: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_task with task: {task}\")"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering complete_task with task_id={task_id}\")"
+    },
+    {
+      "line": 76,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Task completion failed for task_id={task_id}')"
+    },
+    {
+      "line": 78,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Task {task_id} marked as complete.')"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering search with query='{query}'\")"
+    },
+    {
+      "line": 91,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 96,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('TaskBoard created from dict with %d tasks', len(board.tasks))"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Starting SuggestionClient.__init__ with base_url={base_url} and timeout={timeout}')"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with user_id={user_id}\")"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_suggestions with user_id={user_id}\")"
+    },
+    {
+      "line": 120,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch suggestions for user_id={user_id} from url={url}', exc_info=True)"
+    },
+    {
+      "line": 124,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_board with path: {path}\")"
+    },
+    {
+      "line": 131,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load board from {path} with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 131,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('Returning default TaskBoard for user_id local')"
+    },
+    {
+      "line": 135,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_board with path={path} and board={board}\")"
+    },
+    {
+      "line": 143,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save board to {path} with payload {payload} and tmp {tmp}', exc_info=True)"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_stats with board: {board}\")"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Computed stats: count={len(tasks)}, completed={completed}, overdue={overdue}\")"
+    },
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_progress with board={board} for {days} days\")"
+    },
+    {
+      "line": 172,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"apply_suggestions called with board={board} and {len(recs) if recs else 0} recommendations\")"
+    },
+    {
+      "line": 190,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 221,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

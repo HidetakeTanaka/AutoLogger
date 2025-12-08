@@ -1,0 +1,932 @@
+{
+  "file": "scripts\\script97.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 19,
+      "end_line": 19,
+      "function": "is_recent",
+      "class_name": "DataRecord",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_recent",
+      "class_name": "DataRecord",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "DataRecord",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 25,
+      "end_line": 25,
+      "function": "score",
+      "class_name": "DataRecord",
+      "code": "def score(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "score",
+      "class_name": "DataRecord",
+      "code": "return self.value",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "score",
+      "class_name": "DataRecord",
+      "code": "return self.value + len(self.tags) * 0.1",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 30,
+      "end_line": 30,
+      "function": "to_dict",
+      "class_name": "DataRecord",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "to_dict",
+      "class_name": "DataRecord",
+      "code": "return {'record_id': self.record_id, 'value': self.value, 'timestamp': self.timestamp.isoformat(), 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 39,
+      "end_line": 39,
+      "function": "from_dict",
+      "class_name": "DataRecord",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"DataRecord\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 46,
+      "end_line": 46,
+      "function": "from_dict",
+      "class_name": "DataRecord",
+      "code": "return cls(record_id=str(raw.get('record_id', '')), value=float(raw.get('value', 0.0)), timestamp=ts, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 53,
+      "end_line": 53,
+      "function": "from_dict",
+      "class_name": "DataRecord",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 53,
+      "end_line": 53,
+      "function": "from_dict",
+      "class_name": "DataRecord",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 62,
+      "end_line": 62,
+      "function": "load",
+      "class_name": "DataStore",
+      "code": "def load(self) -> None:",
+      "vars_in_scope": [
+        "raw",
+        "rec",
+        "self",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 63,
+      "end_line": 63,
+      "function": "load",
+      "class_name": "DataStore",
+      "code": "return",
+      "vars_in_scope": [
+        "raw",
+        "rec",
+        "self",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 73,
+      "end_line": 73,
+      "function": "load",
+      "class_name": "DataStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "raw",
+        "rec",
+        "self",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 76,
+      "end_line": 76,
+      "function": "save",
+      "class_name": "DataStore",
+      "code": "def save(self) -> None:",
+      "vars_in_scope": [
+        "payload",
+        "self",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 82,
+      "end_line": 82,
+      "function": "save",
+      "class_name": "DataStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "payload",
+        "self",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 82,
+      "end_line": 82,
+      "function": "save",
+      "class_name": "DataStore",
+      "code": "return",
+      "vars_in_scope": [
+        "payload",
+        "self",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 85,
+      "end_line": 85,
+      "function": "add_record",
+      "class_name": "DataStore",
+      "code": "def add_record(self, record: DataRecord) -> None:",
+      "vars_in_scope": [
+        "record",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 88,
+      "end_line": 88,
+      "function": "iter_recent",
+      "class_name": "DataStore",
+      "code": "def iter_recent(self, hours: int = 24) -> Iterable[DataRecord]:",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 88,
+      "end_line": 88,
+      "function": "iter_recent",
+      "class_name": "DataStore",
+      "code": "return (r for r in self.records if r.is_recent(hours))",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 91,
+      "end_line": 91,
+      "function": "average_value",
+      "class_name": "DataStore",
+      "code": "def average_value(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 92,
+      "end_line": 92,
+      "function": "average_value",
+      "class_name": "DataStore",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 93,
+      "end_line": 93,
+      "function": "average_value",
+      "class_name": "DataStore",
+      "code": "return sum((r.value for r in self.records)) / len(self.records)",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 98,
+      "end_line": 98,
+      "function": "__init__",
+      "class_name": "ApiClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 102,
+      "end_line": 102,
+      "function": "_url",
+      "class_name": "ApiClient",
+      "code": "def _url(self, endpoint: str) -> str:",
+      "vars_in_scope": [
+        "endpoint",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 103,
+      "end_line": 103,
+      "function": "_url",
+      "class_name": "ApiClient",
+      "code": "return ''",
+      "vars_in_scope": [
+        "endpoint",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 104,
+      "end_line": 104,
+      "function": "_url",
+      "class_name": "ApiClient",
+      "code": "return f\"{self.base_url}/{endpoint.lstrip('/')}\"",
+      "vars_in_scope": [
+        "endpoint",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 107,
+      "end_line": 107,
+      "function": "get_json",
+      "class_name": "ApiClient",
+      "code": "def get_json(self, endpoint: str) -> Optional[Any]:",
+      "vars_in_scope": [
+        "endpoint",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "get_json",
+      "class_name": "ApiClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "endpoint",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "get_json",
+      "class_name": "ApiClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "endpoint",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 116,
+      "end_line": 116,
+      "function": "get_json",
+      "class_name": "ApiClient",
+      "code": "return json.loads(text)",
+      "vars_in_scope": [
+        "endpoint",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 118,
+      "end_line": 118,
+      "function": "get_json",
+      "class_name": "ApiClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "endpoint",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 118,
+      "end_line": 118,
+      "function": "get_json",
+      "class_name": "ApiClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "endpoint",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch_remote_records",
+      "class_name": "ApiClient",
+      "code": "def fetch_remote_records(self, limit: int = 10) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "limit",
+        "payload",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 123,
+      "end_line": 123,
+      "function": "fetch_remote_records",
+      "class_name": "ApiClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "limit",
+        "payload",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 124,
+      "end_line": 124,
+      "function": "fetch_remote_records",
+      "class_name": "ApiClient",
+      "code": "return [r for r in payload if isinstance(r, dict)]",
+      "vars_in_scope": [
+        "limit",
+        "payload",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 128,
+      "end_line": 128,
+      "function": "parse_records",
+      "class_name": null,
+      "code": "def parse_records(raw: Iterable[Dict[str, Any]]) -> List[DataRecord]:",
+      "vars_in_scope": [
+        "out",
+        "raw",
+        "rec"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 133,
+      "end_line": 133,
+      "function": "parse_records",
+      "class_name": null,
+      "code": "return out",
+      "vars_in_scope": [
+        "out",
+        "raw",
+        "rec"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 137,
+      "end_line": 137,
+      "function": "filter_by_tag",
+      "class_name": null,
+      "code": "def filter_by_tag(records: Iterable[DataRecord], tag: str) -> List[DataRecord]:",
+      "vars_in_scope": [
+        "records",
+        "tag"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "filter_by_tag",
+      "class_name": null,
+      "code": "return list(records)",
+      "vars_in_scope": [
+        "records",
+        "tag"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 140,
+      "end_line": 140,
+      "function": "filter_by_tag",
+      "class_name": null,
+      "code": "return [r for r in records if any((tag in t.lower() for t in r.tags))]",
+      "vars_in_scope": [
+        "records",
+        "tag"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 144,
+      "end_line": 144,
+      "function": "compute_summary",
+      "class_name": null,
+      "code": "def compute_summary(records: Iterable[DataRecord]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "avg",
+        "items",
+        "max_score",
+        "records"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 146,
+      "end_line": 146,
+      "function": "compute_summary",
+      "class_name": null,
+      "code": "return {'count': 0, 'avg_value': 0.0, 'max_score': 0.0}",
+      "vars_in_scope": [
+        "avg",
+        "items",
+        "max_score",
+        "records"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 149,
+      "end_line": 149,
+      "function": "compute_summary",
+      "class_name": null,
+      "code": "return {'count': len(items), 'avg_value': avg, 'max_score': max_score}",
+      "vars_in_scope": [
+        "avg",
+        "items",
+        "max_score",
+        "records"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 153,
+      "end_line": 153,
+      "function": "read_local_config",
+      "class_name": null,
+      "code": "def read_local_config(path: Path) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 154,
+      "end_line": 154,
+      "function": "read_local_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 159,
+      "end_line": 159,
+      "function": "read_local_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "read_local_config",
+      "class_name": null,
+      "code": "return cfg",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 162,
+      "end_line": 162,
+      "function": "read_local_config",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 162,
+      "end_line": 162,
+      "function": "read_local_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 166,
+      "end_line": 166,
+      "function": "write_report",
+      "class_name": null,
+      "code": "def write_report(path: Path, summary: Dict[str, Any]) -> None:",
+      "vars_in_scope": [
+        "path",
+        "summary",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 171,
+      "end_line": 171,
+      "function": "write_report",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "summary",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 171,
+      "end_line": 171,
+      "function": "write_report",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "summary",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 175,
+      "end_line": 175,
+      "function": "sync_remote_data",
+      "class_name": null,
+      "code": "def sync_remote_data(store: DataStore, client: ApiClient, limit: int = 10) -> int:",
+      "vars_in_scope": [
+        "client",
+        "limit",
+        "new_records",
+        "raw",
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 177,
+      "end_line": 177,
+      "function": "sync_remote_data",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "client",
+        "limit",
+        "new_records",
+        "raw",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 182,
+      "end_line": 182,
+      "function": "sync_remote_data",
+      "class_name": null,
+      "code": "return len(new_records)",
+      "vars_in_scope": [
+        "client",
+        "limit",
+        "new_records",
+        "raw",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 186,
+      "end_line": 186,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(config_path: str = \"config.json\") -> int:",
+      "vars_in_scope": [
+        "base_url",
+        "cfg",
+        "cfg_file",
+        "client",
+        "config_path",
+        "data_path",
+        "filtered",
+        "report_path",
+        "retries",
+        "store",
+        "summary"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 207,
+      "end_line": 207,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base_url",
+        "cfg",
+        "cfg_file",
+        "client",
+        "config_path",
+        "data_path",
+        "filtered",
+        "report_path",
+        "retries",
+        "store",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 209,
+      "end_line": 209,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base_url",
+        "cfg",
+        "cfg_file",
+        "client",
+        "config_path",
+        "data_path",
+        "filtered",
+        "report_path",
+        "retries",
+        "store",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

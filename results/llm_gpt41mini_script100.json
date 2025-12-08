@@ -1,0 +1,167 @@
+{
+  "file": "script100.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Profile is not active: current hours {hours} is less than cutoff {cutoff}')"
+    },
+    {
+      "line": 41,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 52,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Profile from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_topics with topics={topics}\")"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 99,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Article from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_article with article id={article.id}\")"
+    },
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering personalized_feed with limit={limit}\")"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning top {limit} items from filtered recommendations, total filtered count: {len(filtered)}')"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize method of RecommendationSession with feed: {feed}\")"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summarizing for user_id={self.profile.user_id} with {len(feed)} feed items and topics={list(self.profile.topics)}\")"
+    },
+    {
+      "line": 132,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing RemoteCatalog with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 136,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 141,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_articles with topic={topic}\")"
+    },
+    {
+      "line": 156,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch articles from {url} on topic {topic}: {text}')"
+    },
+    {
+      "line": 160,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_profiles with path: {path}\")"
+    },
+    {
+      "line": 172,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded profiles from {path} with {len(result)} entries')"
+    },
+    {
+      "line": 174,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load profile from {path} with error: {raw}')"
+    },
+    {
+      "line": 178,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_profiles with path={path} and {len(profiles)} profiles\")"
+    },
+    {
+      "line": 184,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save profiles to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Starting parse_articles with {len(raw)} raw items')"
+    },
+    {
+      "line": 193,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Parsed {len(out)} articles from raw input.')"
+    },
+    {
+      "line": 197,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered build_recommendations with profile id={profile.id} and catalog id={catalog.id}\")"
+    },
+    {
+      "line": 207,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering write_summary with path={path} and summary keys={list(summary.keys())}\")"
+    },
+    {
+      "line": 213,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to write summary to {path} with tmp data: {tmp}', exc_info=True)"
+    },
+    {
+      "line": 217,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with config_path={config_path}\")"
+    },
+    {
+      "line": 224,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

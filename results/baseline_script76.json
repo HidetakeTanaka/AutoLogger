@@ -1,0 +1,398 @@
+{
+  "file": "script76.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 27,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 30,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 30,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 41,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 48,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 57,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 57,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 67,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 75,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 78,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 84,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 84,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 94,
+      "level": "DEBUG",
+      "message": "Entering add_habit",
+      "kind": "entry",
+      "function": "add_habit"
+    },
+    {
+      "line": 97,
+      "level": "DEBUG",
+      "message": "Entering add_entry",
+      "kind": "entry",
+      "function": "add_entry"
+    },
+    {
+      "line": 101,
+      "level": "DEBUG",
+      "message": "Entering filter_habits",
+      "kind": "entry",
+      "function": "filter_habits"
+    },
+    {
+      "line": 101,
+      "level": "INFO",
+      "message": "Exiting filter_habits",
+      "kind": "return",
+      "function": "filter_habits"
+    },
+    {
+      "line": 104,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 104,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 112,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 121,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 126,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 130,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 130,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 133,
+      "level": "DEBUG",
+      "message": "Entering fetch_advice",
+      "kind": "entry",
+      "function": "fetch_advice"
+    },
+    {
+      "line": 139,
+      "level": "ERROR",
+      "message": "Exception in fetch_advice",
+      "kind": "except",
+      "function": "fetch_advice"
+    },
+    {
+      "line": 139,
+      "level": "INFO",
+      "message": "Exiting fetch_advice",
+      "kind": "return",
+      "function": "fetch_advice"
+    },
+    {
+      "line": 144,
+      "level": "INFO",
+      "message": "Exiting fetch_advice",
+      "kind": "return",
+      "function": "fetch_advice"
+    },
+    {
+      "line": 146,
+      "level": "ERROR",
+      "message": "Exception in fetch_advice",
+      "kind": "except",
+      "function": "fetch_advice"
+    },
+    {
+      "line": 146,
+      "level": "INFO",
+      "message": "Exiting fetch_advice",
+      "kind": "return",
+      "function": "fetch_advice"
+    },
+    {
+      "line": 150,
+      "level": "DEBUG",
+      "message": "Entering load_book",
+      "kind": "entry",
+      "function": "load_book"
+    },
+    {
+      "line": 151,
+      "level": "INFO",
+      "message": "Exiting load_book",
+      "kind": "return",
+      "function": "load_book"
+    },
+    {
+      "line": 155,
+      "level": "INFO",
+      "message": "Exiting load_book",
+      "kind": "return",
+      "function": "load_book"
+    },
+    {
+      "line": 157,
+      "level": "ERROR",
+      "message": "Exception in load_book",
+      "kind": "except",
+      "function": "load_book"
+    },
+    {
+      "line": 157,
+      "level": "INFO",
+      "message": "Exiting load_book",
+      "kind": "return",
+      "function": "load_book"
+    },
+    {
+      "line": 161,
+      "level": "DEBUG",
+      "message": "Entering save_book",
+      "kind": "entry",
+      "function": "save_book"
+    },
+    {
+      "line": 168,
+      "level": "ERROR",
+      "message": "Exception in save_book",
+      "kind": "except",
+      "function": "save_book"
+    },
+    {
+      "line": 172,
+      "level": "ERROR",
+      "message": "Exception in save_book",
+      "kind": "except",
+      "function": "save_book"
+    },
+    {
+      "line": 176,
+      "level": "DEBUG",
+      "message": "Entering compute_daily_totals",
+      "kind": "entry",
+      "function": "compute_daily_totals"
+    },
+    {
+      "line": 182,
+      "level": "INFO",
+      "message": "Exiting compute_daily_totals",
+      "kind": "return",
+      "function": "compute_daily_totals"
+    },
+    {
+      "line": 186,
+      "level": "DEBUG",
+      "message": "Entering compute_streaks",
+      "kind": "entry",
+      "function": "compute_streaks"
+    },
+    {
+      "line": 187,
+      "level": "INFO",
+      "message": "Exiting compute_streaks",
+      "kind": "return",
+      "function": "compute_streaks"
+    },
+    {
+      "line": 199,
+      "level": "INFO",
+      "message": "Exiting compute_streaks",
+      "kind": "return",
+      "function": "compute_streaks"
+    },
+    {
+      "line": 203,
+      "level": "DEBUG",
+      "message": "Entering summarize_book",
+      "kind": "entry",
+      "function": "summarize_book"
+    },
+    {
+      "line": 204,
+      "level": "INFO",
+      "message": "Exiting summarize_book",
+      "kind": "return",
+      "function": "summarize_book"
+    },
+    {
+      "line": 207,
+      "level": "INFO",
+      "message": "Exiting summarize_book",
+      "kind": "return",
+      "function": "summarize_book"
+    },
+    {
+      "line": 215,
+      "level": "DEBUG",
+      "message": "Entering simulate_day",
+      "kind": "entry",
+      "function": "simulate_day"
+    },
+    {
+      "line": 228,
+      "level": "DEBUG",
+      "message": "Entering ensure_sample_habits",
+      "kind": "entry",
+      "function": "ensure_sample_habits"
+    },
+    {
+      "line": 229,
+      "level": "INFO",
+      "message": "Exiting ensure_sample_habits",
+      "kind": "return",
+      "function": "ensure_sample_habits"
+    },
+    {
+      "line": 240,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 256,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 256,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 257,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

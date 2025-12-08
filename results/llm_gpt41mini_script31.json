@@ -2,12 +2,6 @@
   "file": "script31.py",
   "logs": [
     {
-      "line": 33,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Scoring ratio computed: score={self.score}, max_score={self.max_score}, ratio={self.score / self.max_score}')"
-    },
-    {
       "line": 36,
       "kind": "entry",
       "level": "DEBUG",
@@ -17,7 +11,7 @@
       "line": 41,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'is_suspicious check: very_fast={very_fast}, very_high={very_high}, returning {very_fast and very_high}')"
+      "message": "logging.info(f'is_suspicious result: very_fast={very_fast}, very_high={very_high}')"
     },
     {
       "line": 45,
@@ -41,19 +35,25 @@
       "line": 99,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load attempts from {path} after reading {len(raw)} entries, max_score={max_score}, duration={duration}s', exc_info=True)"
+      "message": "logging.error(f'Failed to load attempts from {path} after {duration}s with max score {max_score}')"
     },
     {
       "line": 100,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Loaded {len(attempts)} attempts from {path} with max_score={max_score} and final score={score}')"
+      "message": "logging.info(f'Loaded {len(attempts)} attempts from {path} with max score {max_score} in {duration:.2f}s')"
     },
     {
       "line": 104,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering group_by_user with {len(attempts)} attempts\")"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning grouped data with {len(grouped)} users and {len(attempts)} attempts processed')"
     },
     {
       "line": 111,
@@ -71,7 +71,7 @@
       "line": 128,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered find_suspicious_users with {len(grouped)} user groups\")"
+      "message": "logging.debug(f'Starting find_suspicious_users with {len(grouped)} user groups')"
     },
     {
       "line": 133,
@@ -89,7 +89,7 @@
       "line": 144,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error('Exception occurred during interactive_menu with choice %s after %d attempts', choice, attempts, exc_info=True)"
+      "message": "logging.error(f'Exception occurred during interactive_menu with choice={choice}, attempts={attempts}', exc_info=True)"
     },
     {
       "line": 171,

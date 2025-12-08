@@ -1,0 +1,191 @@
+{
+  "file": "script86.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_low_stock with threshold={threshold}\")"
+    },
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches() with query='{query}' for product {self}\")"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 59,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Product from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_product with product: {product}\")"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering search method with query: '{query}'\")"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entering total_value method of Inventory class')"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering low_stock with threshold={threshold}\")"
+    },
+    {
+      "line": 87,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering Inventory.from_dict with raw data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing PricingClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_tax_rate with country={country}\")"
+    },
+    {
+      "line": 105,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'No tax rate found for country: {country}, returning None')"
+    },
+    {
+      "line": 113,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched tax rate for country {country}: {value}')"
+    },
+    {
+      "line": 115,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch tax rate for country {country} from URL {url}', exc_info=True)"
+    },
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_inventory with path: {path}\")"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded inventory from {path} with {len(raw)} items')"
+    },
+    {
+      "line": 124,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load inventory from {path}')"
+    },
+    {
+      "line": 126,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load inventory from {path}')"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_inventory with path={path} and inventory size={len(inv.items)}\")"
+    },
+    {
+      "line": 136,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save inventory to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 140,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save inventory to {path} with payload {payload} and temp file {tmp}', exc_info=True)"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering apply_markdown with tag={tag}, pct={pct}, inventory size={len(inv)}\")"
+    },
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_daily_projection with Inventory id={inv.id if hasattr(inv, 'id') else 'unknown'} and hours={hours}\")"
+    },
+    {
+      "line": 162,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Computed daily projection total: {total} for age: {age}, factor: {factor}, hours: {hours}, inv: {inv} at {now}')"
+    },
+    {
+      "line": 166,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_sales with inventory: {inv} for {days} days\")"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation complete: days={days}, initial inventory={inv}, quantity={qty}, total sold={sold}')"
+    },
+    {
+      "line": 181,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_inventory with Inventory: {inv}, tax_rate: {tax_rate}\")"
+    },
+    {
+      "line": 190,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summary for store {inv.store_id}: base value={base_value}, value with tax={taxed}, low stock count={len(inv.low_stock())}\")"
+    },
+    {
+      "line": 199,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 226,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

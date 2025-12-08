@@ -1,0 +1,426 @@
+{
+  "file": "script79.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 24,
+      "level": "DEBUG",
+      "message": "Entering matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 28,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 32,
+      "level": "DEBUG",
+      "message": "Entering is_long",
+      "kind": "entry",
+      "function": "is_long"
+    },
+    {
+      "line": 33,
+      "level": "INFO",
+      "message": "Exiting is_long",
+      "kind": "return",
+      "function": "is_long"
+    },
+    {
+      "line": 34,
+      "level": "INFO",
+      "message": "Exiting is_long",
+      "kind": "return",
+      "function": "is_long"
+    },
+    {
+      "line": 37,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 37,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 49,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 52,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 62,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 62,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 71,
+      "level": "DEBUG",
+      "message": "Entering add_book",
+      "kind": "entry",
+      "function": "add_book"
+    },
+    {
+      "line": 76,
+      "level": "DEBUG",
+      "message": "Entering mark_read",
+      "kind": "entry",
+      "function": "mark_read"
+    },
+    {
+      "line": 78,
+      "level": "INFO",
+      "message": "Exiting mark_read",
+      "kind": "return",
+      "function": "mark_read"
+    },
+    {
+      "line": 80,
+      "level": "INFO",
+      "message": "Exiting mark_read",
+      "kind": "return",
+      "function": "mark_read"
+    },
+    {
+      "line": 82,
+      "level": "INFO",
+      "message": "Exiting mark_read",
+      "kind": "return",
+      "function": "mark_read"
+    },
+    {
+      "line": 85,
+      "level": "DEBUG",
+      "message": "Entering search",
+      "kind": "entry",
+      "function": "search"
+    },
+    {
+      "line": 85,
+      "level": "INFO",
+      "message": "Exiting search",
+      "kind": "return",
+      "function": "search"
+    },
+    {
+      "line": 88,
+      "level": "DEBUG",
+      "message": "Entering recommendations_local",
+      "kind": "entry",
+      "function": "recommendations_local"
+    },
+    {
+      "line": 90,
+      "level": "INFO",
+      "message": "Exiting recommendations_local",
+      "kind": "return",
+      "function": "recommendations_local"
+    },
+    {
+      "line": 92,
+      "level": "INFO",
+      "message": "Exiting recommendations_local",
+      "kind": "return",
+      "function": "recommendations_local"
+    },
+    {
+      "line": 95,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 95,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 102,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 107,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 112,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 116,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 116,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 119,
+      "level": "DEBUG",
+      "message": "Entering fetch_recommendations",
+      "kind": "entry",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 120,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 127,
+      "level": "ERROR",
+      "message": "Exception in fetch_recommendations",
+      "kind": "except",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 127,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 132,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 133,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 135,
+      "level": "ERROR",
+      "message": "Exception in fetch_recommendations",
+      "kind": "except",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 135,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 139,
+      "level": "DEBUG",
+      "message": "Entering load_library",
+      "kind": "entry",
+      "function": "load_library"
+    },
+    {
+      "line": 140,
+      "level": "INFO",
+      "message": "Exiting load_library",
+      "kind": "return",
+      "function": "load_library"
+    },
+    {
+      "line": 144,
+      "level": "INFO",
+      "message": "Exiting load_library",
+      "kind": "return",
+      "function": "load_library"
+    },
+    {
+      "line": 146,
+      "level": "ERROR",
+      "message": "Exception in load_library",
+      "kind": "except",
+      "function": "load_library"
+    },
+    {
+      "line": 146,
+      "level": "INFO",
+      "message": "Exiting load_library",
+      "kind": "return",
+      "function": "load_library"
+    },
+    {
+      "line": 150,
+      "level": "DEBUG",
+      "message": "Entering save_library",
+      "kind": "entry",
+      "function": "save_library"
+    },
+    {
+      "line": 156,
+      "level": "ERROR",
+      "message": "Exception in save_library",
+      "kind": "except",
+      "function": "save_library"
+    },
+    {
+      "line": 156,
+      "level": "INFO",
+      "message": "Exiting save_library",
+      "kind": "return",
+      "function": "save_library"
+    },
+    {
+      "line": 160,
+      "level": "DEBUG",
+      "message": "Entering summarize_library",
+      "kind": "entry",
+      "function": "summarize_library"
+    },
+    {
+      "line": 161,
+      "level": "INFO",
+      "message": "Exiting summarize_library",
+      "kind": "return",
+      "function": "summarize_library"
+    },
+    {
+      "line": 165,
+      "level": "INFO",
+      "message": "Exiting summarize_library",
+      "kind": "return",
+      "function": "summarize_library"
+    },
+    {
+      "line": 169,
+      "level": "DEBUG",
+      "message": "Entering simulate_reading",
+      "kind": "entry",
+      "function": "simulate_reading"
+    },
+    {
+      "line": 170,
+      "level": "INFO",
+      "message": "Exiting simulate_reading",
+      "kind": "return",
+      "function": "simulate_reading"
+    },
+    {
+      "line": 180,
+      "level": "INFO",
+      "message": "Exiting simulate_reading",
+      "kind": "return",
+      "function": "simulate_reading"
+    },
+    {
+      "line": 184,
+      "level": "DEBUG",
+      "message": "Entering pick_random_book",
+      "kind": "entry",
+      "function": "pick_random_book"
+    },
+    {
+      "line": 185,
+      "level": "INFO",
+      "message": "Exiting pick_random_book",
+      "kind": "return",
+      "function": "pick_random_book"
+    },
+    {
+      "line": 188,
+      "level": "INFO",
+      "message": "Exiting pick_random_book",
+      "kind": "return",
+      "function": "pick_random_book"
+    },
+    {
+      "line": 189,
+      "level": "INFO",
+      "message": "Exiting pick_random_book",
+      "kind": "return",
+      "function": "pick_random_book"
+    },
+    {
+      "line": 193,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 220,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 220,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 221,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}
