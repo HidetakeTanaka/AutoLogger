@@ -1,0 +1,1090 @@
+{
+  "file": "scripts/script41.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_recent",
+      "class_name": "Book",
+      "code": "def is_recent(self, years: int = 5) -> bool:",
+      "vars_in_scope": [
+        "current_year",
+        "self",
+        "years"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "Book",
+      "code": "return self.year >= current_year - years",
+      "vars_in_scope": [
+        "current_year",
+        "self",
+        "years"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 25,
+      "end_line": 25,
+      "function": "matches_query",
+      "class_name": "Book",
+      "code": "def matches_query(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches_query",
+      "class_name": "Book",
+      "code": "return False",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches_query",
+      "class_name": "Book",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches_query",
+      "class_name": "Book",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 33,
+      "end_line": 33,
+      "function": "to_dict",
+      "class_name": "Book",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "to_dict",
+      "class_name": "Book",
+      "code": "return {'book_id': self.book_id, 'title': self.title, 'author': self.author, 'year': self.year, 'tags': self.tags, 'available': self.available}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 52,
+      "end_line": 52,
+      "function": "can_borrow",
+      "class_name": "Member",
+      "code": "def can_borrow(self, limit: int = 5) -> bool:",
+      "vars_in_scope": [
+        "limit",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 53,
+      "end_line": 53,
+      "function": "can_borrow",
+      "class_name": "Member",
+      "code": "return False",
+      "vars_in_scope": [
+        "limit",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 54,
+      "end_line": 54,
+      "function": "can_borrow",
+      "class_name": "Member",
+      "code": "return len(self.borrowed_ids) < limit",
+      "vars_in_scope": [
+        "limit",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 57,
+      "end_line": 57,
+      "function": "borrow",
+      "class_name": "Member",
+      "code": "def borrow(self, book_id: str, limit: int = 5) -> bool:",
+      "vars_in_scope": [
+        "book_id",
+        "limit",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 58,
+      "end_line": 58,
+      "function": "borrow",
+      "class_name": "Member",
+      "code": "return False",
+      "vars_in_scope": [
+        "book_id",
+        "limit",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 60,
+      "end_line": 60,
+      "function": "borrow",
+      "class_name": "Member",
+      "code": "return False",
+      "vars_in_scope": [
+        "book_id",
+        "limit",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 62,
+      "end_line": 62,
+      "function": "borrow",
+      "class_name": "Member",
+      "code": "return True",
+      "vars_in_scope": [
+        "book_id",
+        "limit",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 65,
+      "end_line": 65,
+      "function": "return_book",
+      "class_name": "Member",
+      "code": "def return_book(self, book_id: str) -> bool:",
+      "vars_in_scope": [
+        "book_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 66,
+      "end_line": 66,
+      "function": "return_book",
+      "class_name": "Member",
+      "code": "return False",
+      "vars_in_scope": [
+        "book_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 68,
+      "end_line": 68,
+      "function": "return_book",
+      "class_name": "Member",
+      "code": "return True",
+      "vars_in_scope": [
+        "book_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 71,
+      "end_line": 71,
+      "function": "to_dict",
+      "class_name": "Member",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 71,
+      "end_line": 71,
+      "function": "to_dict",
+      "class_name": "Member",
+      "code": "return {'member_id': self.member_id, 'name': self.name, 'active': self.active, 'joined_at': self.joined_at.isoformat(), 'borrowed_ids': list(self.borrowed_ids)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 82,
+      "end_line": 82,
+      "function": "__init__",
+      "class_name": "LibraryStore",
+      "code": "def __init__(self, books_path: Path, members_path: Path) -> None:",
+      "vars_in_scope": [
+        "books_path",
+        "members_path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 88,
+      "end_line": 88,
+      "function": "load_books",
+      "class_name": "LibraryStore",
+      "code": "def load_books(self) -> None:",
+      "vars_in_scope": [
+        "b",
+        "data",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 101,
+      "end_line": 101,
+      "function": "load_books",
+      "class_name": "LibraryStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "b",
+        "data",
+        "self"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 105,
+      "end_line": 105,
+      "function": "load_members",
+      "class_name": "LibraryStore",
+      "code": "def load_members(self) -> None:",
+      "vars_in_scope": [
+        "data",
+        "joined",
+        "m",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 118,
+      "end_line": 118,
+      "function": "load_members",
+      "class_name": "LibraryStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "joined",
+        "m",
+        "self"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 122,
+      "end_line": 122,
+      "function": "save_books",
+      "class_name": "LibraryStore",
+      "code": "def save_books(self) -> None:",
+      "vars_in_scope": [
+        "payload",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 128,
+      "end_line": 128,
+      "function": "save_members",
+      "class_name": "LibraryStore",
+      "code": "def save_members(self) -> None:",
+      "vars_in_scope": [
+        "payload",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 134,
+      "end_line": 134,
+      "function": "get_book",
+      "class_name": "LibraryStore",
+      "code": "def get_book(self, book_id: str) -> Optional[Book]:",
+      "vars_in_scope": [
+        "book_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 134,
+      "end_line": 134,
+      "function": "get_book",
+      "class_name": "LibraryStore",
+      "code": "return self._books.get(book_id)",
+      "vars_in_scope": [
+        "book_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 137,
+      "end_line": 137,
+      "function": "get_member",
+      "class_name": "LibraryStore",
+      "code": "def get_member(self, member_id: str) -> Optional[Member]:",
+      "vars_in_scope": [
+        "member_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 137,
+      "end_line": 137,
+      "function": "get_member",
+      "class_name": "LibraryStore",
+      "code": "return self._members.get(member_id)",
+      "vars_in_scope": [
+        "member_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 140,
+      "end_line": 140,
+      "function": "all_books",
+      "class_name": "LibraryStore",
+      "code": "def all_books(self) -> List[Book]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 140,
+      "end_line": 140,
+      "function": "all_books",
+      "class_name": "LibraryStore",
+      "code": "return list(self._books.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 143,
+      "end_line": 143,
+      "function": "all_members",
+      "class_name": "LibraryStore",
+      "code": "def all_members(self) -> List[Member]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 143,
+      "end_line": 143,
+      "function": "all_members",
+      "class_name": "LibraryStore",
+      "code": "return list(self._members.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 148,
+      "end_line": 148,
+      "function": "__init__",
+      "class_name": "RemoteCatalogClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 152,
+      "end_line": 152,
+      "function": "_url",
+      "class_name": "RemoteCatalogClient",
+      "code": "def _url(self, book_id: str) -> str:",
+      "vars_in_scope": [
+        "book_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 152,
+      "end_line": 152,
+      "function": "_url",
+      "class_name": "RemoteCatalogClient",
+      "code": "return f'{self.base_url}/books/{book_id}'",
+      "vars_in_scope": [
+        "book_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 155,
+      "end_line": 155,
+      "function": "fetch_metadata",
+      "class_name": "RemoteCatalogClient",
+      "code": "def fetch_metadata(self, book_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "body",
+        "book_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 161,
+      "end_line": 161,
+      "function": "fetch_metadata",
+      "class_name": "RemoteCatalogClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "book_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 161,
+      "end_line": 161,
+      "function": "fetch_metadata",
+      "class_name": "RemoteCatalogClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "book_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 163,
+      "end_line": 163,
+      "function": "fetch_metadata",
+      "class_name": "RemoteCatalogClient",
+      "code": "return json.loads(body.decode('utf-8'))",
+      "vars_in_scope": [
+        "body",
+        "book_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 165,
+      "end_line": 165,
+      "function": "fetch_metadata",
+      "class_name": "RemoteCatalogClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "book_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 165,
+      "end_line": 165,
+      "function": "fetch_metadata",
+      "class_name": "RemoteCatalogClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "book_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 169,
+      "end_line": 169,
+      "function": "load_json_safely",
+      "class_name": null,
+      "code": "def load_json_safely(path: Path) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 170,
+      "end_line": 170,
+      "function": "load_json_safely",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 173,
+      "end_line": 173,
+      "function": "load_json_safely",
+      "class_name": null,
+      "code": "return json.load(f)",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 175,
+      "end_line": 175,
+      "function": "load_json_safely",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "load_json_safely",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 179,
+      "end_line": 179,
+      "function": "search_books",
+      "class_name": null,
+      "code": "def search_books(books: List[Book], query: str, limit: int = 10) -> List[Book]:",
+      "vars_in_scope": [
+        "books",
+        "limit",
+        "matches",
+        "query"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 180,
+      "end_line": 180,
+      "function": "search_books",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "books",
+        "limit",
+        "matches",
+        "query"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 183,
+      "end_line": 183,
+      "function": "search_books",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "books",
+        "limit",
+        "matches",
+        "query"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 185,
+      "end_line": 185,
+      "function": "search_books",
+      "class_name": null,
+      "code": "return matches[:limit]",
+      "vars_in_scope": [
+        "books",
+        "limit",
+        "matches",
+        "query"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 189,
+      "end_line": 189,
+      "function": "borrow_book",
+      "class_name": null,
+      "code": "def borrow_book(store: LibraryStore, member_id: str, book_id: str) -> bool:",
+      "vars_in_scope": [
+        "book",
+        "book_id",
+        "member",
+        "member_id",
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 191,
+      "end_line": 191,
+      "function": "borrow_book",
+      "class_name": null,
+      "code": "return False",
+      "vars_in_scope": [
+        "book",
+        "book_id",
+        "member",
+        "member_id",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 194,
+      "end_line": 194,
+      "function": "borrow_book",
+      "class_name": null,
+      "code": "return False",
+      "vars_in_scope": [
+        "book",
+        "book_id",
+        "member",
+        "member_id",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 196,
+      "end_line": 196,
+      "function": "borrow_book",
+      "class_name": null,
+      "code": "return False",
+      "vars_in_scope": [
+        "book",
+        "book_id",
+        "member",
+        "member_id",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 198,
+      "end_line": 198,
+      "function": "borrow_book",
+      "class_name": null,
+      "code": "return True",
+      "vars_in_scope": [
+        "book",
+        "book_id",
+        "member",
+        "member_id",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 202,
+      "end_line": 202,
+      "function": "return_book",
+      "class_name": null,
+      "code": "def return_book(store: LibraryStore, member_id: str, book_id: str) -> bool:",
+      "vars_in_scope": [
+        "book",
+        "book_id",
+        "member",
+        "member_id",
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 205,
+      "end_line": 205,
+      "function": "return_book",
+      "class_name": null,
+      "code": "return False",
+      "vars_in_scope": [
+        "book",
+        "book_id",
+        "member",
+        "member_id",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 207,
+      "end_line": 207,
+      "function": "return_book",
+      "class_name": null,
+      "code": "return False",
+      "vars_in_scope": [
+        "book",
+        "book_id",
+        "member",
+        "member_id",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 209,
+      "end_line": 209,
+      "function": "return_book",
+      "class_name": null,
+      "code": "return True",
+      "vars_in_scope": [
+        "book",
+        "book_id",
+        "member",
+        "member_id",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 213,
+      "end_line": 213,
+      "function": "sync_remote_metadata",
+      "class_name": null,
+      "code": "def sync_remote_metadata(store: LibraryStore, client: RemoteCatalogClient, limit: int = 5) -> int:",
+      "vars_in_scope": [
+        "author",
+        "client",
+        "limit",
+        "meta",
+        "store",
+        "tags",
+        "title",
+        "updated"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 230,
+      "end_line": 230,
+      "function": "sync_remote_metadata",
+      "class_name": null,
+      "code": "return updated",
+      "vars_in_scope": [
+        "author",
+        "client",
+        "limit",
+        "meta",
+        "store",
+        "tags",
+        "title",
+        "updated"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 234,
+      "end_line": 234,
+      "function": "export_summary",
+      "class_name": null,
+      "code": "def export_summary(path: Path, store: LibraryStore) -> None:",
+      "vars_in_scope": [
+        "active_members",
+        "available",
+        "books",
+        "borrowed",
+        "members",
+        "path",
+        "payload",
+        "store",
+        "total_books"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 252,
+      "end_line": 252,
+      "function": "purge_inactive_members",
+      "class_name": null,
+      "code": "def purge_inactive_members(store: LibraryStore, older_than_days: int = 365) -> int:",
+      "vars_in_scope": [
+        "cutoff",
+        "older_than_days",
+        "removed",
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 258,
+      "end_line": 258,
+      "function": "purge_inactive_members",
+      "class_name": null,
+      "code": "return removed",
+      "vars_in_scope": [
+        "cutoff",
+        "older_than_days",
+        "removed",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 262,
+      "end_line": 262,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(base_dir: str = \"data\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "books_path",
+        "cfg",
+        "cfg_path",
+        "client",
+        "members_path",
+        "store",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 272,
+      "end_line": 272,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "books_path",
+        "cfg",
+        "cfg_path",
+        "client",
+        "members_path",
+        "store",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 285,
+      "end_line": 285,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "books_path",
+        "cfg",
+        "cfg_path",
+        "client",
+        "members_path",
+        "store",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

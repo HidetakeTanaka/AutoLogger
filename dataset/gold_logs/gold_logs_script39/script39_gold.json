@@ -1,0 +1,347 @@
+{
+  "file": "script39.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.is_valid"
+    },
+    {
+      "line": 22,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.is_valid returning False for invalid or unsupported rating"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.is_valid returning based on rating range check 0.0 <= rating <= 5.0"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.to_dict"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.to_dict returning serialized product data"
+    },
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Review.is_recent"
+    },
+    {
+      "line": 45,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Review.is_recent returning recency flag based on hours threshold"
+    },
+    {
+      "line": 48,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Review.to_dict"
+    },
+    {
+      "line": 48,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Review.to_dict returning serialized review with ISO timestamp"
+    },
+    {
+      "line": 64,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering User.is_adult"
+    },
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "INFO",
+      "message": "User.is_adult returning True if user age is 18 or older"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering User.to_dict"
+    },
+    {
+      "line": 67,
+      "kind": "return",
+      "level": "INFO",
+      "message": "User.to_dict returning serialized user profile"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing ProductCatalog with products file path"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProductCatalog.load"
+    },
+    {
+      "line": 82,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ProductCatalog.load returning after successfully loading products"
+    },
+    {
+      "line": 87,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "ProductCatalog.load failed to read or parse products file"
+    },
+    {
+      "line": 88,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ProductCatalog.load returning without modifying catalog after failure"
+    },
+    {
+      "line": 99,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "ProductCatalog.load encountered error while constructing Product instances"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProductCatalog.all"
+    },
+    {
+      "line": 104,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ProductCatalog.all returning list of all products"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProductCatalog.get"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ProductCatalog.get returning product by product_id or None"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing ReviewStore with reviews file path"
+    },
+    {
+      "line": 115,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ReviewStore.load"
+    },
+    {
+      "line": 116,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ReviewStore.load returning empty list because no reviews could be loaded yet"
+    },
+    {
+      "line": 121,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "ReviewStore.load failed while opening or decoding reviews file"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ReviewStore.load returning empty list after read failure"
+    },
+    {
+      "line": 134,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "ReviewStore.load failed while parsing individual review entries"
+    },
+    {
+      "line": 136,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ReviewStore.load returning list of successfully parsed reviews"
+    },
+    {
+      "line": 141,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing ApiClient with base URL and timeout"
+    },
+    {
+      "line": 145,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiClient.get_json"
+    },
+    {
+      "line": 150,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ApiClient.get_json returning parsed JSON response body"
+    },
+    {
+      "line": 152,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "ApiClient.get_json failed to fetch or parse JSON from endpoint"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ApiClient.get_json returning None after request or parse error"
+    },
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_recent_reviews"
+    },
+    {
+      "line": 157,
+      "kind": "return",
+      "level": "INFO",
+      "message": "filter_recent_reviews returning reviews within given hours window"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering group_reviews_by_product"
+    },
+    {
+      "line": 164,
+      "kind": "return",
+      "level": "INFO",
+      "message": "group_reviews_by_product returning mapping from product_id to reviews"
+    },
+    {
+      "line": 168,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_average_scores"
+    },
+    {
+      "line": 175,
+      "kind": "return",
+      "level": "INFO",
+      "message": "compute_average_scores returning average review scores per product"
+    },
+    {
+      "line": 179,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_users"
+    },
+    {
+      "line": 180,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_users returning empty user mapping as default"
+    },
+    {
+      "line": 185,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_users failed to read or parse users file"
+    },
+    {
+      "line": 185,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_users returning empty user mapping after failure"
+    },
+    {
+      "line": 196,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_users encountered error while constructing User instances"
+    },
+    {
+      "line": 197,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_users returning mapping of successfully loaded users"
+    },
+    {
+      "line": 201,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_remote_products"
+    },
+    {
+      "line": 203,
+      "kind": "return",
+      "level": "INFO",
+      "message": "fetch_remote_products returning empty list because remote data is missing or invalid"
+    },
+    {
+      "line": 205,
+      "kind": "return",
+      "level": "INFO",
+      "message": "fetch_remote_products returning list of normalized remote products"
+    },
+    {
+      "line": 209,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering select_top_products"
+    },
+    {
+      "line": 210,
+      "kind": "return",
+      "level": "INFO",
+      "message": "select_top_products returning empty list because no scores are available"
+    },
+    {
+      "line": 212,
+      "kind": "return",
+      "level": "INFO",
+      "message": "select_top_products returning product_ids sorted by descending score"
+    },
+    {
+      "line": 216,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering write_report"
+    },
+    {
+      "line": 231,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 244,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 due to configuration or data loading issue"
+    },
+    {
+      "line": 252,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successful report generation"
+    }
+  ]
+}

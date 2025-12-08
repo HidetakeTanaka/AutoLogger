@@ -1,0 +1,341 @@
+{
+  "file": "script45.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.is_recent"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.is_recent returning comparison between timestamp and recent window"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.is_anomalous"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.is_anomalous returning True due to invalid or missing status"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.is_anomalous returning True because value is below minimum threshold"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.is_anomalous returning True because value is above maximum threshold"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.is_anomalous returning False because value is within expected range"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.to_row"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.to_row returning CSV row fields for reading"
+    },
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.from_row"
+    },
+    {
+      "line": 50,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.from_row returning None due to missing required fields"
+    },
+    {
+      "line": 51,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.from_row created SensorReading from CSV row"
+    },
+    {
+      "line": 53,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "SensorReading.from_row failed to parse CSV row into SensorReading"
+    },
+    {
+      "line": 53,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.from_row returning None after parsing error"
+    },
+    {
+      "line": 64,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.update with new SensorReading"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.average_value"
+    },
+    {
+      "line": 70,
+      "kind": "return",
+      "level": "INFO",
+      "message": "DeviceState.average_value returning None because there are no values"
+    },
+    {
+      "line": 71,
+      "kind": "return",
+      "level": "INFO",
+      "message": "DeviceState.average_value returning arithmetic mean of recorded values"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.is_stale"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "DeviceState.is_stale returning True because device has never been seen or has no readings"
+    },
+    {
+      "line": 76,
+      "kind": "return",
+      "level": "INFO",
+      "message": "DeviceState.is_stale returning comparison between last_seen and staleness threshold"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.to_dict"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "DeviceState.to_dict returning serialized device state summary"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing TelemetryClient with base URL and timeout"
+    },
+    {
+      "line": 94,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TelemetryClient._url"
+    },
+    {
+      "line": 96,
+      "kind": "return",
+      "level": "INFO",
+      "message": "TelemetryClient._url returning full URL for request path"
+    },
+    {
+      "line": 99,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TelemetryClient.fetch_remote_config"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "TelemetryClient.fetch_remote_config returning empty config before HTTP request"
+    },
+    {
+      "line": 108,
+      "kind": "return",
+      "level": "INFO",
+      "message": "TelemetryClient.fetch_remote_config returning empty config after non-OK response"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "TelemetryClient.fetch_remote_config returning parsed remote config"
+    },
+    {
+      "line": 111,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "TelemetryClient.fetch_remote_config failed to fetch or parse remote config"
+    },
+    {
+      "line": 111,
+      "kind": "return",
+      "level": "INFO",
+      "message": "TelemetryClient.fetch_remote_config returning empty config after exception"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TelemetryClient.push_aggregate"
+    },
+    {
+      "line": 115,
+      "kind": "return",
+      "level": "INFO",
+      "message": "TelemetryClient.push_aggregate returning False before sending aggregate payload"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "TelemetryClient.push_aggregate returning success flag based on HTTP status code"
+    },
+    {
+      "line": 124,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "TelemetryClient.push_aggregate failed while sending aggregate payload"
+    },
+    {
+      "line": 124,
+      "kind": "return",
+      "level": "INFO",
+      "message": "TelemetryClient.push_aggregate returning False after exception"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering parse_csv"
+    },
+    {
+      "line": 138,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "parse_csv failed to read or parse CSV file"
+    },
+    {
+      "line": 138,
+      "kind": "return",
+      "level": "INFO",
+      "message": "parse_csv returning empty readings list after failure"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "INFO",
+      "message": "parse_csv returning parsed SensorReading list from CSV"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering aggregate_by_device"
+    },
+    {
+      "line": 148,
+      "kind": "return",
+      "level": "INFO",
+      "message": "aggregate_by_device returning per-device aggregated state"
+    },
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering detect_anomalies"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "INFO",
+      "message": "detect_anomalies returning list of anomalous SensorReading objects"
+    },
+    {
+      "line": 168,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_report to write anomaly and device summary"
+    },
+    {
+      "line": 181,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_config"
+    },
+    {
+      "line": 185,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning empty config because file is missing or empty"
+    },
+    {
+      "line": 186,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning configuration loaded from JSON file"
+    },
+    {
+      "line": 188,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_config failed to read or parse configuration file"
+    },
+    {
+      "line": 188,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning empty config after exception"
+    },
+    {
+      "line": 192,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_anomalies"
+    },
+    {
+      "line": 195,
+      "kind": "return",
+      "level": "INFO",
+      "message": "summarize_anomalies returning per-device anomaly counts"
+    },
+    {
+      "line": 199,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main for telemetry processing pipeline"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 due to early configuration or input error"
+    },
+    {
+      "line": 217,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successfully generating telemetry report"
+    }
+  ]
+}

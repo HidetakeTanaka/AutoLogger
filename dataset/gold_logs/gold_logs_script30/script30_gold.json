@@ -1,0 +1,137 @@
+{
+  "file": "script30.py",
+  "logs": [
+    {
+      "line": 9,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing DataProcessor with data"
+    },
+    {
+      "line": 12,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataProcessor.filter_data"
+    },
+    {
+      "line": 13,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered data from DataProcessor.filter_data"
+    },
+    {
+      "line": 16,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataProcessor.aggregate_data"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning aggregation result from DataProcessor.aggregate_data"
+    },
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataProcessor.transform_data"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning transformed data from DataProcessor.transform_data"
+    },
+    {
+      "line": 33,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileHandler.read_file"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning JSON data from FileHandler.read_file"
+    },
+    {
+      "line": 38,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read file in FileHandler.read_file"
+    },
+    {
+      "line": 39,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from FileHandler.read_file after failure"
+    },
+    {
+      "line": 41,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read file in FileHandler.read_file"
+    },
+    {
+      "line": 42,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from FileHandler.read_file after failure"
+    },
+    {
+      "line": 46,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileHandler.write_file"
+    },
+    {
+      "line": 51,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write file in FileHandler.write_file"
+    },
+    {
+      "line": 57,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering APIClient.fetch_data"
+    },
+    {
+      "line": 61,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed API response in APIClient.fetch_data"
+    },
+    {
+      "line": 63,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch data in APIClient.fetch_data"
+    },
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from APIClient.fetch_data after failure"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering process_and_save_data"
+    },
+    {
+      "line": 72,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Finished processing and saving data in process_and_save_data"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    }
+  ]
+}

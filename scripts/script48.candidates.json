@@ -1,0 +1,1019 @@
+{
+  "file": "scripts/script48.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "WorkoutSession",
+      "code": "def is_recent(self, days: int = 7) -> bool:",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_recent",
+      "class_name": "WorkoutSession",
+      "code": "return False",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "WorkoutSession",
+      "code": "return self.ts >= datetime.utcnow() - timedelta(days=days)",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches_goal",
+      "class_name": "WorkoutSession",
+      "code": "def matches_goal(self, goal: str) -> bool:",
+      "vars_in_scope": [
+        "goal",
+        "q",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches_goal",
+      "class_name": "WorkoutSession",
+      "code": "return True",
+      "vars_in_scope": [
+        "goal",
+        "q",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "matches_goal",
+      "class_name": "WorkoutSession",
+      "code": "return True",
+      "vars_in_scope": [
+        "goal",
+        "q",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches_goal",
+      "class_name": "WorkoutSession",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "goal",
+        "q",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "WorkoutSession",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "WorkoutSession",
+      "code": "return {'session_id': self.session_id, 'kind': self.kind, 'duration_minutes': self.duration_minutes, 'calories': self.calories, 'ts': self.ts.isoformat(), 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 46,
+      "end_line": 46,
+      "function": "from_dict",
+      "class_name": "WorkoutSession",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"WorkoutSession\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 49,
+      "end_line": 49,
+      "function": "from_dict",
+      "class_name": "WorkoutSession",
+      "code": "return cls(session_id=str(raw.get('session_id', '')), kind=str(raw.get('kind', '')), duration_minutes=int(raw.get('duration_minutes', 0)), calories=int(raw.get('calories', 0)), ts=ts, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 58,
+      "end_line": 58,
+      "function": "from_dict",
+      "class_name": "WorkoutSession",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 58,
+      "end_line": 58,
+      "function": "from_dict",
+      "class_name": "WorkoutSession",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 69,
+      "end_line": 69,
+      "function": "add_session",
+      "class_name": "UserProfile",
+      "code": "def add_session(self, session: WorkoutSession) -> None:",
+      "vars_in_scope": [
+        "self",
+        "session"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "recent_sessions",
+      "class_name": "UserProfile",
+      "code": "def recent_sessions(self, days: int = 7) -> List[WorkoutSession]:",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 72,
+      "end_line": 72,
+      "function": "recent_sessions",
+      "class_name": "UserProfile",
+      "code": "return [s for s in self.sessions if s.is_recent(days)]",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 75,
+      "end_line": 75,
+      "function": "total_calories",
+      "class_name": "UserProfile",
+      "code": "def total_calories(self, days: int = 30) -> int:",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 75,
+      "end_line": 75,
+      "function": "total_calories",
+      "class_name": "UserProfile",
+      "code": "return sum((s.calories for s in self.recent_sessions(days)))",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 78,
+      "end_line": 78,
+      "function": "to_dict",
+      "class_name": "UserProfile",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 78,
+      "end_line": 78,
+      "function": "to_dict",
+      "class_name": "UserProfile",
+      "code": "return {'user_id': self.user_id, 'name': self.name, 'goal': self.goal, 'sessions': [s.to_dict() for s in self.sessions]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 87,
+      "end_line": 87,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"UserProfile\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "s",
+        "sess_raw",
+        "sessions"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 94,
+      "end_line": 94,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "return cls(user_id=str(raw.get('user_id', '')), name=str(raw.get('name', '')), goal=str(raw.get('goal', '')), sessions=sessions)",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "s",
+        "sess_raw",
+        "sessions"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 101,
+      "end_line": 101,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "s",
+        "sess_raw",
+        "sessions"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 101,
+      "end_line": 101,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "s",
+        "sess_raw",
+        "sessions"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 106,
+      "end_line": 106,
+      "function": "__init__",
+      "class_name": "RecommendationClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 4) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 110,
+      "end_line": 110,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "def _url(self, goal: str) -> str:",
+      "vars_in_scope": [
+        "goal",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 110,
+      "end_line": 110,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "return f'{self.base_url}/recommendations?goal={goal}'",
+      "vars_in_scope": [
+        "goal",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 113,
+      "end_line": 113,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "def fetch_recommendations(self, goal: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "goal",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 114,
+      "end_line": 114,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "goal",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "goal",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "goal",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 125,
+      "end_line": 125,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "goal",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 125,
+      "end_line": 125,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "goal",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 127,
+      "end_line": 127,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "return [i for i in items if isinstance(i, dict)]",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "goal",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 131,
+      "end_line": 131,
+      "function": "load_profiles",
+      "class_name": null,
+      "code": "def load_profiles(path: Path) -> Dict[str, UserProfile]:",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "prof",
+        "result"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 132,
+      "end_line": 132,
+      "function": "load_profiles",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "prof",
+        "result"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 137,
+      "end_line": 137,
+      "function": "load_profiles",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "prof",
+        "result"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 137,
+      "end_line": 137,
+      "function": "load_profiles",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "prof",
+        "result"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 143,
+      "end_line": 143,
+      "function": "load_profiles",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "prof",
+        "result"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 147,
+      "end_line": 147,
+      "function": "save_profiles",
+      "class_name": null,
+      "code": "def save_profiles(path: Path, profiles: Iterable[UserProfile]) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "profiles",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 154,
+      "end_line": 154,
+      "function": "save_profiles",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "profiles",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 158,
+      "end_line": 158,
+      "function": "save_profiles",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "profiles",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 162,
+      "end_line": 162,
+      "function": "choose_next_session",
+      "class_name": null,
+      "code": "def choose_next_session(profile: UserProfile) -> Optional[WorkoutSession]:",
+      "vars_in_scope": [
+        "pool",
+        "profile",
+        "recent"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 164,
+      "end_line": 164,
+      "function": "choose_next_session",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "pool",
+        "profile",
+        "recent"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 169,
+      "end_line": 169,
+      "function": "choose_next_session",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "pool",
+        "profile",
+        "recent"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 170,
+      "end_line": 170,
+      "function": "choose_next_session",
+      "class_name": null,
+      "code": "return random.choice(pool)",
+      "vars_in_scope": [
+        "pool",
+        "profile",
+        "recent"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 174,
+      "end_line": 174,
+      "function": "summarize_sessions",
+      "class_name": null,
+      "code": "def summarize_sessions(sessions: Iterable[WorkoutSession]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "items",
+        "sessions",
+        "total_calories",
+        "total_minutes"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 176,
+      "end_line": 176,
+      "function": "summarize_sessions",
+      "class_name": null,
+      "code": "return {'count': 0, 'total_minutes': 0, 'avg_calories': 0.0}",
+      "vars_in_scope": [
+        "items",
+        "sessions",
+        "total_calories",
+        "total_minutes"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 179,
+      "end_line": 179,
+      "function": "summarize_sessions",
+      "class_name": null,
+      "code": "return {'count': len(items), 'total_minutes': total_minutes, 'avg_calories': total_calories / len(items)}",
+      "vars_in_scope": [
+        "items",
+        "sessions",
+        "total_calories",
+        "total_minutes"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 187,
+      "end_line": 187,
+      "function": "load_config",
+      "class_name": null,
+      "code": "def load_config(path: Path) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 189,
+      "end_line": 189,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return json.load(f)",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 191,
+      "end_line": 191,
+      "function": "load_config",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 191,
+      "end_line": 191,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 195,
+      "end_line": 195,
+      "function": "ensure_sample_profile",
+      "class_name": null,
+      "code": "def ensure_sample_profile(path: Path) -> None:",
+      "vars_in_scope": [
+        "now",
+        "path",
+        "profile",
+        "sessions"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 196,
+      "end_line": 196,
+      "function": "ensure_sample_profile",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "now",
+        "path",
+        "profile",
+        "sessions"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 221,
+      "end_line": 221,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(base_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "cfg",
+        "cfg_path",
+        "client",
+        "profile",
+        "profiles",
+        "profiles_path",
+        "recs",
+        "report",
+        "report_path",
+        "suggestion",
+        "summary",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 231,
+      "end_line": 231,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "cfg",
+        "cfg_path",
+        "client",
+        "profile",
+        "profiles",
+        "profiles_path",
+        "recs",
+        "report",
+        "report_path",
+        "suggestion",
+        "summary",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 236,
+      "end_line": 236,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "cfg",
+        "cfg_path",
+        "client",
+        "profile",
+        "profiles",
+        "profiles_path",
+        "recs",
+        "report",
+        "report_path",
+        "suggestion",
+        "summary",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 256,
+      "end_line": 256,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "cfg",
+        "cfg_path",
+        "client",
+        "profile",
+        "profiles",
+        "profiles_path",
+        "recs",
+        "report",
+        "report_path",
+        "suggestion",
+        "summary",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 256,
+      "end_line": 256,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "cfg",
+        "cfg_path",
+        "client",
+        "profile",
+        "profiles",
+        "profiles_path",
+        "recs",
+        "report",
+        "report_path",
+        "suggestion",
+        "summary",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 258,
+      "end_line": 258,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "cfg",
+        "cfg_path",
+        "client",
+        "profile",
+        "profiles",
+        "profiles_path",
+        "recs",
+        "report",
+        "report_path",
+        "suggestion",
+        "summary",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "file": "script37.py",
+  "logs": [
+    {
+      "line": 49,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse due date from raw input: {raw_due}', exc_info=True)"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_task with task: {task}\")"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering remove_task with task_id={task_id}\")"
+    },
+    {
+      "line": 87,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing ProjectStore with path: {path}\")"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entering ProjectStore.load method')"
+    },
+    {
+      "line": 109,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to load project data', exc_info=True)"
+    },
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save method of ProjectStore with payload: {payload} and tmp: {tmp}\")"
+    },
+    {
+      "line": 127,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get method with project_id={project_id}\")"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering upsert with project id={project.id}\")"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing RemoteClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 142,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_tasks with project_id={project_id}\")"
+    },
+    {
+      "line": 153,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch tasks from {url} for project {project_id} with request {req} and body {body}', exc_info=True)"
+    },
+    {
+      "line": 157,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch tasks from {url} for project {project_id} with request {req} and body {body}', exc_info=True)"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_project with project: {project}\")"
+    },
+    {
+      "line": 167,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Push project to {url} completed with status code {resp.status}')"
+    },
+    {
+      "line": 169,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push project {project} to {url}', exc_info=True)"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering filter_overdue with {len(list(tasks))} tasks and current time {now}\")"
+    },
+    {
+      "line": 178,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering filter_by_tag with tag={tag} and {len(list(tasks))} tasks\")"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Filtered tasks by tag \"{tag}\": {len(result)} tasks found')"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered sort_by_priority with {len(tasks)} tasks\")"
+    },
+    {
+      "line": 190,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_tasks with {len(tasks)} tasks\")"
+    },
+    {
+      "line": 200,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Task summary computed: total={total}, open={open_count}, overdue={overdue_count}\")"
+    },
+    {
+      "line": 204,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_config with path={path}\")"
+    },
+    {
+      "line": 210,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load configuration from {path}', exc_info=True)"
+    },
+    {
+      "line": 214,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered ensure_demo_project with store: %s', store)"
+    },
+    {
+      "line": 234,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered sync_if_enabled with project_id={project_id} and base_url={base_url}\")"
+    },
+    {
+      "line": 251,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering export_summary with path={path} and summary keys={list(summary.keys())}\")"
+    },
+    {
+      "line": 257,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "file": "script36.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 19,
+      "level": "WARNING",
+      "message": "Random log at line 19 in can_withdraw",
+      "kind": "return",
+      "function": "can_withdraw"
+    },
+    {
+      "line": 20,
+      "level": "INFO",
+      "message": "Random log at line 20 in can_withdraw",
+      "kind": "return",
+      "function": "can_withdraw"
+    },
+    {
+      "line": 29,
+      "level": "ERROR",
+      "message": "Random log at line 29 in deposit",
+      "kind": "entry",
+      "function": "deposit"
+    },
+    {
+      "line": 30,
+      "level": "DEBUG",
+      "message": "Random log at line 30 in deposit",
+      "kind": "return",
+      "function": "deposit"
+    },
+    {
+      "line": 32,
+      "level": "DEBUG",
+      "message": "Random log at line 32 in deposit",
+      "kind": "return",
+      "function": "deposit"
+    },
+    {
+      "line": 55,
+      "level": "DEBUG",
+      "message": "Random log at line 55 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 70,
+      "level": "ERROR",
+      "message": "Random log at line 70 in load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 77,
+      "level": "WARNING",
+      "message": "Random log at line 77 in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 78,
+      "level": "ERROR",
+      "message": "Random log at line 78 in load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 87,
+      "level": "WARNING",
+      "message": "Random log at line 87 in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 130,
+      "level": "INFO",
+      "message": "Random log at line 130 in save",
+      "kind": "entry",
+      "function": "save"
+    },
+    {
+      "line": 174,
+      "level": "WARNING",
+      "message": "Random log at line 174 in find_suspicious_transactions",
+      "kind": "return",
+      "function": "find_suspicious_transactions"
+    },
+    {
+      "line": 178,
+      "level": "WARNING",
+      "message": "Random log at line 178 in export_summary",
+      "kind": "entry",
+      "function": "export_summary"
+    },
+    {
+      "line": 192,
+      "level": "INFO",
+      "message": "Random log at line 192 in load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 197,
+      "level": "ERROR",
+      "message": "Random log at line 197 in load_config",
+      "kind": "except",
+      "function": "load_config"
+    }
+  ]
+}

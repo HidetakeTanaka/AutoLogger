@@ -1,0 +1,925 @@
+{
+  "file": "scripts/script38.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 19,
+      "end_line": 19,
+      "function": "is_valid",
+      "class_name": "SensorReading",
+      "code": "def is_valid(self) -> bool:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 20,
+      "end_line": 20,
+      "function": "is_valid",
+      "class_name": "SensorReading",
+      "code": "return False",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_valid",
+      "class_name": "SensorReading",
+      "code": "return self.unit in {'C', 'F', 'K', 'percent', 'ppm'}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 24,
+      "end_line": 24,
+      "function": "to_dict",
+      "class_name": "SensorReading",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "to_dict",
+      "class_name": "SensorReading",
+      "code": "return {'sensor_id': self.sensor_id, 'timestamp': self.timestamp, 'value': self.value, 'unit': self.unit}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 40,
+      "end_line": 40,
+      "function": "add_reading",
+      "class_name": "Device",
+      "code": "def add_reading(self, reading: SensorReading) -> None:",
+      "vars_in_scope": [
+        "reading",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 41,
+      "end_line": 41,
+      "function": "add_reading",
+      "class_name": "Device",
+      "code": "return",
+      "vars_in_scope": [
+        "reading",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 45,
+      "end_line": 45,
+      "function": "latest_value",
+      "class_name": "Device",
+      "code": "def latest_value(self) -> Optional[SensorReading]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 46,
+      "end_line": 46,
+      "function": "latest_value",
+      "class_name": "Device",
+      "code": "return None",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 47,
+      "end_line": 47,
+      "function": "latest_value",
+      "class_name": "Device",
+      "code": "return max(self.readings, key=lambda r: r.timestamp)",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 50,
+      "end_line": 50,
+      "function": "to_dict",
+      "class_name": "Device",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 50,
+      "end_line": 50,
+      "function": "to_dict",
+      "class_name": "Device",
+      "code": "return {'device_id': self.device_id, 'location': self.location, 'active': self.active, 'readings': [r.to_dict() for r in self.readings]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 63,
+      "end_line": 63,
+      "function": "get_or_create",
+      "class_name": "Fleet",
+      "code": "def get_or_create(self, device_id: str, location: str) -> Device:",
+      "vars_in_scope": [
+        "dev",
+        "device_id",
+        "location",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 64,
+      "end_line": 64,
+      "function": "get_or_create",
+      "class_name": "Fleet",
+      "code": "return self.devices[device_id]",
+      "vars_in_scope": [
+        "dev",
+        "device_id",
+        "location",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "get_or_create",
+      "class_name": "Fleet",
+      "code": "return dev",
+      "vars_in_scope": [
+        "dev",
+        "device_id",
+        "location",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 70,
+      "end_line": 70,
+      "function": "all_readings",
+      "class_name": "Fleet",
+      "code": "def all_readings(self) -> List[SensorReading]:",
+      "vars_in_scope": [
+        "result",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 73,
+      "end_line": 73,
+      "function": "all_readings",
+      "class_name": "Fleet",
+      "code": "return result",
+      "vars_in_scope": [
+        "result",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 76,
+      "end_line": 76,
+      "function": "to_dict",
+      "class_name": "Fleet",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 76,
+      "end_line": 76,
+      "function": "to_dict",
+      "class_name": "Fleet",
+      "code": "return {'devices': [d.to_dict() for d in self.devices.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 80,
+      "end_line": 80,
+      "function": "load_config",
+      "class_name": null,
+      "code": "def load_config(path: Path) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 81,
+      "end_line": 81,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return json.load(f)",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 86,
+      "end_line": 86,
+      "function": "load_config",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 86,
+      "end_line": 86,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 90,
+      "end_line": 90,
+      "function": "fetch_remote_readings",
+      "class_name": null,
+      "code": "def fetch_remote_readings(url: str, retries: int = 2, timeout: int = 4) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "attempt",
+        "data",
+        "items",
+        "raw",
+        "req",
+        "retries",
+        "timeout",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 97,
+      "end_line": 97,
+      "function": "fetch_remote_readings",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "attempt",
+        "data",
+        "items",
+        "raw",
+        "req",
+        "retries",
+        "timeout",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 98,
+      "end_line": 98,
+      "function": "fetch_remote_readings",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "attempt",
+        "data",
+        "items",
+        "raw",
+        "req",
+        "retries",
+        "timeout",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 105,
+      "end_line": 105,
+      "function": "fetch_remote_readings",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "attempt",
+        "data",
+        "items",
+        "raw",
+        "req",
+        "retries",
+        "timeout",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 105,
+      "end_line": 105,
+      "function": "fetch_remote_readings",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "attempt",
+        "data",
+        "items",
+        "raw",
+        "req",
+        "retries",
+        "timeout",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 108,
+      "end_line": 108,
+      "function": "fetch_remote_readings",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "attempt",
+        "data",
+        "items",
+        "raw",
+        "req",
+        "retries",
+        "timeout",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "fetch_remote_readings",
+      "class_name": null,
+      "code": "return [dict(item) for item in items]",
+      "vars_in_scope": [
+        "attempt",
+        "data",
+        "items",
+        "raw",
+        "req",
+        "retries",
+        "timeout",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 110,
+      "end_line": 110,
+      "function": "fetch_remote_readings",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "attempt",
+        "data",
+        "items",
+        "raw",
+        "req",
+        "retries",
+        "timeout",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 114,
+      "end_line": 114,
+      "function": "read_local_cache",
+      "class_name": null,
+      "code": "def read_local_cache(path: Path) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "read_local_cache",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 120,
+      "end_line": 120,
+      "function": "read_local_cache",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 120,
+      "end_line": 120,
+      "function": "read_local_cache",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 123,
+      "end_line": 123,
+      "function": "read_local_cache",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 124,
+      "end_line": 124,
+      "function": "read_local_cache",
+      "class_name": null,
+      "code": "return [dict(row) for row in rows]",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 128,
+      "end_line": 128,
+      "function": "normalize_row",
+      "class_name": null,
+      "code": "def normalize_row(row: Dict[str, Any]) -> Optional[SensorReading]:",
+      "vars_in_scope": [
+        "device_id",
+        "location",
+        "reading",
+        "row",
+        "sensor_id",
+        "ts",
+        "unit",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 136,
+      "end_line": 136,
+      "function": "normalize_row",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "device_id",
+        "location",
+        "reading",
+        "row",
+        "sensor_id",
+        "ts",
+        "unit",
+        "value"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 136,
+      "end_line": 136,
+      "function": "normalize_row",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "device_id",
+        "location",
+        "reading",
+        "row",
+        "sensor_id",
+        "ts",
+        "unit",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "normalize_row",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "device_id",
+        "location",
+        "reading",
+        "row",
+        "sensor_id",
+        "ts",
+        "unit",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 140,
+      "end_line": 140,
+      "function": "normalize_row",
+      "class_name": null,
+      "code": "return reading",
+      "vars_in_scope": [
+        "device_id",
+        "location",
+        "reading",
+        "row",
+        "sensor_id",
+        "ts",
+        "unit",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 144,
+      "end_line": 144,
+      "function": "ingest_readings",
+      "class_name": null,
+      "code": "def ingest_readings(fleet: Fleet, rows: List[Dict[str, Any]]) -> None:",
+      "vars_in_scope": [
+        "dev",
+        "device_id",
+        "fleet",
+        "location",
+        "reading",
+        "rows"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 155,
+      "end_line": 155,
+      "function": "compute_statistics",
+      "class_name": null,
+      "code": "def compute_statistics(readings: List[SensorReading]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "count",
+        "readings",
+        "total",
+        "values"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 156,
+      "end_line": 156,
+      "function": "compute_statistics",
+      "class_name": null,
+      "code": "return {'count': 0, 'min': 0.0, 'max': 0.0, 'avg': 0.0}",
+      "vars_in_scope": [
+        "count",
+        "readings",
+        "total",
+        "values"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 161,
+      "end_line": 161,
+      "function": "compute_statistics",
+      "class_name": null,
+      "code": "return {'count': 0, 'min': 0.0, 'max': 0.0, 'avg': 0.0}",
+      "vars_in_scope": [
+        "count",
+        "readings",
+        "total",
+        "values"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 162,
+      "end_line": 162,
+      "function": "compute_statistics",
+      "class_name": null,
+      "code": "return {'count': count, 'min': min(values), 'max': max(values), 'avg': total / count}",
+      "vars_in_scope": [
+        "count",
+        "readings",
+        "total",
+        "values"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 171,
+      "end_line": 171,
+      "function": "group_by_unit",
+      "class_name": null,
+      "code": "def group_by_unit(readings: List[SensorReading]) -> Dict[str, Dict[str, Any]]:",
+      "vars_in_scope": [
+        "grouped",
+        "readings",
+        "result"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 177,
+      "end_line": 177,
+      "function": "group_by_unit",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "grouped",
+        "readings",
+        "result"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 181,
+      "end_line": 181,
+      "function": "save_report",
+      "class_name": null,
+      "code": "def save_report(path: Path, fleet: Fleet, stats: Dict[str, Any]) -> None:",
+      "vars_in_scope": [
+        "fleet",
+        "path",
+        "payload",
+        "stats"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 192,
+      "end_line": 192,
+      "function": "select_recent",
+      "class_name": null,
+      "code": "def select_recent(readings: List[SensorReading], seconds: int = 600) -> List[SensorReading]:",
+      "vars_in_scope": [
+        "readings",
+        "seconds",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 193,
+      "end_line": 193,
+      "function": "select_recent",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "readings",
+        "seconds",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 195,
+      "end_line": 195,
+      "function": "select_recent",
+      "class_name": null,
+      "code": "return [r for r in readings if r.timestamp >= threshold]",
+      "vars_in_scope": [
+        "readings",
+        "seconds",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 199,
+      "end_line": 199,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(base_dir: str = \"data\") -> int:",
+      "vars_in_scope": [
+        "all_readings",
+        "api_url",
+        "base",
+        "base_dir",
+        "cache_path",
+        "cfg",
+        "fleet",
+        "local_rows",
+        "recent",
+        "remote_rows",
+        "report_path",
+        "stats"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 216,
+      "end_line": 216,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "all_readings",
+        "api_url",
+        "base",
+        "base_dir",
+        "cache_path",
+        "cfg",
+        "fleet",
+        "local_rows",
+        "recent",
+        "remote_rows",
+        "report_path",
+        "stats"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 226,
+      "end_line": 226,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "all_readings",
+        "api_url",
+        "base",
+        "base_dir",
+        "cache_path",
+        "cfg",
+        "fleet",
+        "local_rows",
+        "recent",
+        "remote_rows",
+        "report_path",
+        "stats"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

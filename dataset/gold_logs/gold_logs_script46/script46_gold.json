@@ -1,0 +1,389 @@
+{
+  "file": "script46.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.is_recent"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Article.is_recent returning False because article is missing published timestamp or cannot be evaluated"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Article.is_recent returning comparison between published time and recent window"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.matches_query"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Article.matches_query returning True based on title or body text"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Article.matches_query returning True based on source or metadata fields"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Article.matches_query returning True because query matches one of the tags"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.to_dict"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Article.to_dict returning serialized article dictionary"
+    },
+    {
+      "line": 47,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.from_dict"
+    },
+    {
+      "line": 50,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Article.from_dict created Article from raw dictionary"
+    },
+    {
+      "line": 60,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Article.from_dict failed to parse article payload"
+    },
+    {
+      "line": 60,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Article.from_dict returning None after parse error"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsStore.add"
+    },
+    {
+      "line": 69,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsStore.add skipping insert because an equal or higher scored article with same ID already exists"
+    },
+    {
+      "line": 72,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsStore.add stored or updated article in internal index"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsStore.get"
+    },
+    {
+      "line": 76,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsStore.get returning article by ID or None if not found"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsStore.all"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsStore.all returning list of all stored articles"
+    },
+    {
+      "line": 82,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsStore.recent"
+    },
+    {
+      "line": 82,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsStore.recent returning articles that are considered recent"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsStore.filter"
+    },
+    {
+      "line": 92,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsStore.filter returning articles that match query and minimum score"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing NewsApiClient with base URL and timeout"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsApiClient._url"
+    },
+    {
+      "line": 103,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient._url returning full URL for request path"
+    },
+    {
+      "line": 106,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsApiClient._request_json"
+    },
+    {
+      "line": 113,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient._request_json returning parsed JSON response body"
+    },
+    {
+      "line": 115,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "NewsApiClient._request_json encountered an exception while fetching or parsing JSON"
+    },
+    {
+      "line": 116,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient._request_json returning None after request failure"
+    },
+    {
+      "line": 117,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient._request_json returning None after exhausting retry attempts"
+    },
+    {
+      "line": 120,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsApiClient.fetch_headlines"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient.fetch_headlines returning empty list before issuing HTTP request"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient.fetch_headlines returning empty list because response did not contain items"
+    },
+    {
+      "line": 128,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient.fetch_headlines returning empty list due to invalid response structure"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient.fetch_headlines returning list of headline dictionaries from API response"
+    },
+    {
+      "line": 132,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering NewsApiClient.fetch_article_detail"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient.fetch_article_detail returning None because detail endpoint returned no data"
+    },
+    {
+      "line": 137,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient.fetch_article_detail returning None due to invalid or unexpected payload"
+    },
+    {
+      "line": 138,
+      "kind": "return",
+      "level": "INFO",
+      "message": "NewsApiClient.fetch_article_detail returning parsed article detail dictionary"
+    },
+    {
+      "line": 142,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_config"
+    },
+    {
+      "line": 143,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning empty configuration because file does not exist or is empty"
+    },
+    {
+      "line": 146,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning configuration loaded from JSON file"
+    },
+    {
+      "line": 148,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_config failed to read or parse configuration file"
+    },
+    {
+      "line": 148,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning empty configuration after exception"
+    },
+    {
+      "line": 152,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_local_articles"
+    },
+    {
+      "line": 154,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_local_articles returning NewsStore populated from local file"
+    },
+    {
+      "line": 159,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_local_articles failed to load articles from local file"
+    },
+    {
+      "line": 159,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_local_articles returning NewsStore after load failure"
+    },
+    {
+      "line": 166,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_local_articles returning NewsStore after processing all local records"
+    },
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_digest"
+    },
+    {
+      "line": 178,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "save_digest failed while writing news digest to disk"
+    },
+    {
+      "line": 183,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_articles_by_score"
+    },
+    {
+      "line": 185,
+      "kind": "return",
+      "level": "INFO",
+      "message": "filter_articles_by_score returning empty list because no articles met minimum score"
+    },
+    {
+      "line": 186,
+      "kind": "return",
+      "level": "INFO",
+      "message": "filter_articles_by_score returning articles sorted by score in descending order"
+    },
+    {
+      "line": 190,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering group_by_source"
+    },
+    {
+      "line": 193,
+      "kind": "return",
+      "level": "INFO",
+      "message": "group_by_source returning mapping from source name to list of articles"
+    },
+    {
+      "line": 197,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_sources"
+    },
+    {
+      "line": 207,
+      "kind": "return",
+      "level": "INFO",
+      "message": "summarize_sources returning per-source article counts and top-scoring articles"
+    },
+    {
+      "line": 211,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main for news digest generation"
+    },
+    {
+      "line": 226,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 due to configuration or API error while building digest"
+    },
+    {
+      "line": 234,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successfully creating and saving news digest"
+    },
+    {
+      "line": 235,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after completing without errors but with no new articles"
+    }
+  ]
+}

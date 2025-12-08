@@ -1,0 +1,370 @@
+{
+  "file": "script36.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 18,
+      "level": "DEBUG",
+      "message": "Entering can_withdraw",
+      "kind": "entry",
+      "function": "can_withdraw"
+    },
+    {
+      "line": 19,
+      "level": "INFO",
+      "message": "Exiting can_withdraw",
+      "kind": "return",
+      "function": "can_withdraw"
+    },
+    {
+      "line": 20,
+      "level": "INFO",
+      "message": "Exiting can_withdraw",
+      "kind": "return",
+      "function": "can_withdraw"
+    },
+    {
+      "line": 23,
+      "level": "DEBUG",
+      "message": "Entering withdraw",
+      "kind": "entry",
+      "function": "withdraw"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting withdraw",
+      "kind": "return",
+      "function": "withdraw"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Exiting withdraw",
+      "kind": "return",
+      "function": "withdraw"
+    },
+    {
+      "line": 29,
+      "level": "DEBUG",
+      "message": "Entering deposit",
+      "kind": "entry",
+      "function": "deposit"
+    },
+    {
+      "line": 30,
+      "level": "INFO",
+      "message": "Exiting deposit",
+      "kind": "return",
+      "function": "deposit"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting deposit",
+      "kind": "return",
+      "function": "deposit"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 35,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 52,
+      "level": "DEBUG",
+      "message": "Entering is_debit",
+      "kind": "entry",
+      "function": "is_debit"
+    },
+    {
+      "line": 52,
+      "level": "INFO",
+      "message": "Exiting is_debit",
+      "kind": "return",
+      "function": "is_debit"
+    },
+    {
+      "line": 55,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 55,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 66,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Entering load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 72,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 77,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 78,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 87,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 92,
+      "level": "DEBUG",
+      "message": "Entering save",
+      "kind": "entry",
+      "function": "save"
+    },
+    {
+      "line": 98,
+      "level": "DEBUG",
+      "message": "Entering get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 98,
+      "level": "INFO",
+      "message": "Exiting get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 101,
+      "level": "DEBUG",
+      "message": "Entering all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 101,
+      "level": "INFO",
+      "message": "Exiting all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 106,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 109,
+      "level": "DEBUG",
+      "message": "Entering load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 110,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 115,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 115,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 125,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 127,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 130,
+      "level": "DEBUG",
+      "message": "Entering save",
+      "kind": "entry",
+      "function": "save"
+    },
+    {
+      "line": 137,
+      "level": "DEBUG",
+      "message": "Entering apply_transactions",
+      "kind": "entry",
+      "function": "apply_transactions"
+    },
+    {
+      "line": 154,
+      "level": "INFO",
+      "message": "Exiting apply_transactions",
+      "kind": "return",
+      "function": "apply_transactions"
+    },
+    {
+      "line": 158,
+      "level": "DEBUG",
+      "message": "Entering summarize_accounts",
+      "kind": "entry",
+      "function": "summarize_accounts"
+    },
+    {
+      "line": 159,
+      "level": "INFO",
+      "message": "Exiting summarize_accounts",
+      "kind": "return",
+      "function": "summarize_accounts"
+    },
+    {
+      "line": 163,
+      "level": "INFO",
+      "message": "Exiting summarize_accounts",
+      "kind": "return",
+      "function": "summarize_accounts"
+    },
+    {
+      "line": 167,
+      "level": "DEBUG",
+      "message": "Entering find_suspicious_transactions",
+      "kind": "entry",
+      "function": "find_suspicious_transactions"
+    },
+    {
+      "line": 168,
+      "level": "INFO",
+      "message": "Exiting find_suspicious_transactions",
+      "kind": "return",
+      "function": "find_suspicious_transactions"
+    },
+    {
+      "line": 174,
+      "level": "INFO",
+      "message": "Exiting find_suspicious_transactions",
+      "kind": "return",
+      "function": "find_suspicious_transactions"
+    },
+    {
+      "line": 178,
+      "level": "DEBUG",
+      "message": "Entering export_summary",
+      "kind": "entry",
+      "function": "export_summary"
+    },
+    {
+      "line": 184,
+      "level": "DEBUG",
+      "message": "Entering export_suspicious",
+      "kind": "entry",
+      "function": "export_suspicious"
+    },
+    {
+      "line": 191,
+      "level": "DEBUG",
+      "message": "Entering load_config",
+      "kind": "entry",
+      "function": "load_config"
+    },
+    {
+      "line": 192,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 195,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 197,
+      "level": "ERROR",
+      "message": "Exception in load_config",
+      "kind": "except",
+      "function": "load_config"
+    },
+    {
+      "line": 197,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 201,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 215,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 231,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

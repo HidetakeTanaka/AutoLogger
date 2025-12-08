@@ -1,0 +1,141 @@
+{
+  "file": "script37.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Random log at line 26 in is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 32,
+      "level": "ERROR",
+      "message": "Random log at line 32 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 43,
+      "level": "DEBUG",
+      "message": "Random log at line 43 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 49,
+      "level": "DEBUG",
+      "message": "Random log at line 49 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 79,
+      "level": "DEBUG",
+      "message": "Random log at line 79 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 87,
+      "level": "ERROR",
+      "message": "Random log at line 87 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 98,
+      "level": "WARNING",
+      "message": "Random log at line 98 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 102,
+      "level": "ERROR",
+      "message": "Random log at line 102 in load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 104,
+      "level": "WARNING",
+      "message": "Random log at line 104 in load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 153,
+      "level": "INFO",
+      "message": "Random log at line 153 in fetch_tasks",
+      "kind": "except",
+      "function": "fetch_tasks"
+    },
+    {
+      "line": 169,
+      "level": "WARNING",
+      "message": "Random log at line 169 in push_project",
+      "kind": "return",
+      "function": "push_project"
+    },
+    {
+      "line": 173,
+      "level": "WARNING",
+      "message": "Random log at line 173 in filter_overdue",
+      "kind": "entry",
+      "function": "filter_overdue"
+    },
+    {
+      "line": 182,
+      "level": "INFO",
+      "message": "Random log at line 182 in filter_by_tag",
+      "kind": "return",
+      "function": "filter_by_tag"
+    },
+    {
+      "line": 186,
+      "level": "ERROR",
+      "message": "Random log at line 186 in sort_by_priority",
+      "kind": "return",
+      "function": "sort_by_priority"
+    },
+    {
+      "line": 214,
+      "level": "DEBUG",
+      "message": "Random log at line 214 in ensure_demo_project",
+      "kind": "entry",
+      "function": "ensure_demo_project"
+    },
+    {
+      "line": 235,
+      "level": "WARNING",
+      "message": "Random log at line 235 in sync_if_enabled",
+      "kind": "return",
+      "function": "sync_if_enabled"
+    },
+    {
+      "line": 241,
+      "level": "ERROR",
+      "message": "Random log at line 241 in sync_if_enabled",
+      "kind": "return",
+      "function": "sync_if_enabled"
+    },
+    {
+      "line": 281,
+      "level": "INFO",
+      "message": "Random log at line 281 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

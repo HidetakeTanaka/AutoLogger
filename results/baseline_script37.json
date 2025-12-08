@@ -1,0 +1,461 @@
+{
+  "file": "script37.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering is_overdue",
+      "kind": "entry",
+      "function": "is_overdue"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Exiting is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 29,
+      "level": "DEBUG",
+      "message": "Entering is_open",
+      "kind": "entry",
+      "function": "is_open"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting is_open",
+      "kind": "return",
+      "function": "is_open"
+    },
+    {
+      "line": 32,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 43,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 49,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 52,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 69,
+      "level": "DEBUG",
+      "message": "Entering add_task",
+      "kind": "entry",
+      "function": "add_task"
+    },
+    {
+      "line": 72,
+      "level": "DEBUG",
+      "message": "Entering remove_task",
+      "kind": "entry",
+      "function": "remove_task"
+    },
+    {
+      "line": 75,
+      "level": "INFO",
+      "message": "Exiting remove_task",
+      "kind": "return",
+      "function": "remove_task"
+    },
+    {
+      "line": 76,
+      "level": "INFO",
+      "message": "Exiting remove_task",
+      "kind": "return",
+      "function": "remove_task"
+    },
+    {
+      "line": 79,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 79,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 87,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 89,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 98,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 102,
+      "level": "DEBUG",
+      "message": "Entering load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 104,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 109,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 110,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 119,
+      "level": "DEBUG",
+      "message": "Entering save",
+      "kind": "entry",
+      "function": "save"
+    },
+    {
+      "line": 127,
+      "level": "DEBUG",
+      "message": "Entering get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 127,
+      "level": "INFO",
+      "message": "Exiting get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 130,
+      "level": "DEBUG",
+      "message": "Entering upsert",
+      "kind": "entry",
+      "function": "upsert"
+    },
+    {
+      "line": 133,
+      "level": "DEBUG",
+      "message": "Entering all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 133,
+      "level": "INFO",
+      "message": "Exiting all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 138,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 142,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 144,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 147,
+      "level": "DEBUG",
+      "message": "Entering fetch_tasks",
+      "kind": "entry",
+      "function": "fetch_tasks"
+    },
+    {
+      "line": 153,
+      "level": "ERROR",
+      "message": "Exception in fetch_tasks",
+      "kind": "except",
+      "function": "fetch_tasks"
+    },
+    {
+      "line": 153,
+      "level": "INFO",
+      "message": "Exiting fetch_tasks",
+      "kind": "return",
+      "function": "fetch_tasks"
+    },
+    {
+      "line": 157,
+      "level": "ERROR",
+      "message": "Exception in fetch_tasks",
+      "kind": "except",
+      "function": "fetch_tasks"
+    },
+    {
+      "line": 157,
+      "level": "INFO",
+      "message": "Exiting fetch_tasks",
+      "kind": "return",
+      "function": "fetch_tasks"
+    },
+    {
+      "line": 158,
+      "level": "INFO",
+      "message": "Exiting fetch_tasks",
+      "kind": "return",
+      "function": "fetch_tasks"
+    },
+    {
+      "line": 161,
+      "level": "DEBUG",
+      "message": "Entering push_project",
+      "kind": "entry",
+      "function": "push_project"
+    },
+    {
+      "line": 167,
+      "level": "INFO",
+      "message": "Exiting push_project",
+      "kind": "return",
+      "function": "push_project"
+    },
+    {
+      "line": 169,
+      "level": "ERROR",
+      "message": "Exception in push_project",
+      "kind": "except",
+      "function": "push_project"
+    },
+    {
+      "line": 169,
+      "level": "INFO",
+      "message": "Exiting push_project",
+      "kind": "return",
+      "function": "push_project"
+    },
+    {
+      "line": 173,
+      "level": "DEBUG",
+      "message": "Entering filter_overdue",
+      "kind": "entry",
+      "function": "filter_overdue"
+    },
+    {
+      "line": 174,
+      "level": "INFO",
+      "message": "Exiting filter_overdue",
+      "kind": "return",
+      "function": "filter_overdue"
+    },
+    {
+      "line": 178,
+      "level": "DEBUG",
+      "message": "Entering filter_by_tag",
+      "kind": "entry",
+      "function": "filter_by_tag"
+    },
+    {
+      "line": 182,
+      "level": "INFO",
+      "message": "Exiting filter_by_tag",
+      "kind": "return",
+      "function": "filter_by_tag"
+    },
+    {
+      "line": 186,
+      "level": "DEBUG",
+      "message": "Entering sort_by_priority",
+      "kind": "entry",
+      "function": "sort_by_priority"
+    },
+    {
+      "line": 186,
+      "level": "INFO",
+      "message": "Exiting sort_by_priority",
+      "kind": "return",
+      "function": "sort_by_priority"
+    },
+    {
+      "line": 190,
+      "level": "DEBUG",
+      "message": "Entering summarize_tasks",
+      "kind": "entry",
+      "function": "summarize_tasks"
+    },
+    {
+      "line": 200,
+      "level": "INFO",
+      "message": "Exiting summarize_tasks",
+      "kind": "return",
+      "function": "summarize_tasks"
+    },
+    {
+      "line": 204,
+      "level": "DEBUG",
+      "message": "Entering load_config",
+      "kind": "entry",
+      "function": "load_config"
+    },
+    {
+      "line": 205,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 208,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 210,
+      "level": "ERROR",
+      "message": "Exception in load_config",
+      "kind": "except",
+      "function": "load_config"
+    },
+    {
+      "line": 210,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 214,
+      "level": "DEBUG",
+      "message": "Entering ensure_demo_project",
+      "kind": "entry",
+      "function": "ensure_demo_project"
+    },
+    {
+      "line": 215,
+      "level": "INFO",
+      "message": "Exiting ensure_demo_project",
+      "kind": "return",
+      "function": "ensure_demo_project"
+    },
+    {
+      "line": 234,
+      "level": "DEBUG",
+      "message": "Entering sync_if_enabled",
+      "kind": "entry",
+      "function": "sync_if_enabled"
+    },
+    {
+      "line": 235,
+      "level": "INFO",
+      "message": "Exiting sync_if_enabled",
+      "kind": "return",
+      "function": "sync_if_enabled"
+    },
+    {
+      "line": 241,
+      "level": "INFO",
+      "message": "Exiting sync_if_enabled",
+      "kind": "return",
+      "function": "sync_if_enabled"
+    },
+    {
+      "line": 244,
+      "level": "INFO",
+      "message": "Exiting sync_if_enabled",
+      "kind": "return",
+      "function": "sync_if_enabled"
+    },
+    {
+      "line": 251,
+      "level": "DEBUG",
+      "message": "Entering export_summary",
+      "kind": "entry",
+      "function": "export_summary"
+    },
+    {
+      "line": 257,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 281,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 282,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

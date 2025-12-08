@@ -1,0 +1,351 @@
+{
+  "file": "script49.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Transaction.is_recent"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Transaction.is_recent returning False because transaction is not within recent window"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Transaction.is_recent returning result based on timestamp cutoff"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Transaction.is_large"
+    },
+    {
+      "line": 28,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Transaction.is_large returning False because amount is below threshold"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Transaction.is_large returning True because absolute amount exceeds threshold"
+    },
+
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Transaction.to_dict"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Transaction.to_dict returning serialized transaction dictionary"
+    },
+
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Transaction.from_dict"
+    },
+    {
+      "line": 46,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Transaction.from_dict returning None because raw payload is missing required fields"
+    },
+    {
+      "line": 48,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Transaction.from_dict created Transaction instance from raw dictionary"
+    },
+    {
+      "line": 57,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Transaction.from_dict failed to parse transaction payload"
+    },
+    {
+      "line": 57,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Transaction.from_dict returning None after parse error"
+    },
+
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Account.add_transaction"
+    },
+    {
+      "line": 69,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Account.add_transaction appended transaction to account history"
+    },
+
+    {
+      "line": 73,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Account.balance"
+    },
+    {
+      "line": 73,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Account.balance returning sum of all transaction amounts"
+    },
+
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Account.recent_spending"
+    },
+    {
+      "line": 77,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Account.recent_spending returning total spending over recent window"
+    },
+
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Account.to_dict"
+    },
+    {
+      "line": 80,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Account.to_dict returning serialized account with transactions"
+    },
+
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing BudgetClient with base URL and timeout"
+    },
+
+    {
+      "line": 94,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering BudgetClient._url"
+    },
+    {
+      "line": 94,
+      "kind": "return",
+      "level": "INFO",
+      "message": "BudgetClient._url returning budget endpoint URL for account"
+    },
+
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering BudgetClient.fetch_limits"
+    },
+    {
+      "line": 98,
+      "kind": "return",
+      "level": "INFO",
+      "message": "BudgetClient.fetch_limits returning empty limits because base URL or account_id is not configured"
+    },
+    {
+      "line": 106,
+      "kind": "return",
+      "level": "INFO",
+      "message": "BudgetClient.fetch_limits returning empty limits because response body is missing or invalid"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "BudgetClient.fetch_limits returning parsed numeric limits per category"
+    },
+    {
+      "line": 109,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "BudgetClient.fetch_limits encountered an exception while requesting or parsing limits"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "BudgetClient.fetch_limits returning empty limits after error"
+    },
+
+    {
+      "line": 113,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_transactions"
+    },
+    {
+      "line": 114,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_transactions returning empty list because file does not exist or is empty"
+    },
+    {
+      "line": 119,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_transactions failed to load or parse transactions file"
+    },
+    {
+      "line": 119,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_transactions returning empty list after exception"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_transactions returning empty list because no valid transactions were found"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_transactions returning list of parsed Transaction instances"
+    },
+
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_transactions"
+    },
+    {
+      "line": 141,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "save_transactions encountered an exception while writing transactions to temporary file"
+    },
+    {
+      "line": 145,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "save_transactions encountered an exception while moving temporary file into place"
+    },
+
+    {
+      "line": 149,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering group_by_category"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "group_by_category returning mapping of categories to transactions"
+    },
+
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_account"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "INFO",
+      "message": "summarize_account returning balance and per-category totals for account"
+    },
+
+    {
+      "line": 172,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering detect_overspend"
+    },
+    {
+      "line": 173,
+      "kind": "return",
+      "level": "INFO",
+      "message": "detect_overspend returning empty overspend report because no limits are configured"
+    },
+    {
+      "line": 181,
+      "kind": "return",
+      "level": "INFO",
+      "message": "detect_overspend returning categories where spending exceeded limits"
+    },
+
+    {
+      "line": 187,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_large_transactions"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "filter_large_transactions returning empty list because no transactions met the threshold"
+    },
+    {
+      "line": 190,
+      "kind": "return",
+      "level": "INFO",
+      "message": "filter_large_transactions returning large transactions sorted by absolute amount"
+    },
+
+    {
+      "line": 194,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main for budgeting and transaction analysis workflow"
+    },
+    {
+      "line": 200,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 due to missing account info or transaction data"
+    },
+    {
+      "line": 206,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "main caught exception while loading data or computing summary"
+    },
+    {
+      "line": 233,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "main caught unexpected exception during budgeting run"
+    },
+    {
+      "line": 233,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 after handling error"
+    },
+    {
+      "line": 235,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successfully generating budget report"
+    }
+  ]
+}

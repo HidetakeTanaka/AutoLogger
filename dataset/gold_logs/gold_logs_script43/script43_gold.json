@@ -1,0 +1,317 @@
+{
+  "file": "script43.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Note.is_recent"
+    },
+    {
+      "line": 22,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.is_recent returning comparison result for recent note window"
+    },
+    {
+      "line": 25,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Note.matches_query"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.matches_query returning False for non-matching query"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.matches_query returning True because query matched title or body"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.matches_query returning tag-based query match result"
+    },
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Note.to_dict"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.to_dict returning serialized note data"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Note.from_dict"
+    },
+    {
+      "line": 50,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Note.from_dict failed to parse created_at or basic fields from raw mapping"
+    },
+    {
+      "line": 53,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.from_dict created Note instance from raw mapping"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Notebook.add"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Notebook.get"
+    },
+    {
+      "line": 71,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Notebook.get returning note for given ID or None"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Notebook.all"
+    },
+    {
+      "line": 74,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Notebook.all returning list of all notes"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Notebook.active_notes"
+    },
+    {
+      "line": 77,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Notebook.active_notes returning non-archived notes"
+    },
+    {
+      "line": 82,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing SyncClient with base URL and timeout"
+    },
+    {
+      "line": 86,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient._url"
+    },
+    {
+      "line": 88,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient._url returning full URL for remote path"
+    },
+    {
+      "line": 91,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.fetch_notes"
+    },
+    {
+      "line": 97,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "SyncClient.fetch_notes request to remote notes endpoint failed"
+    },
+    {
+      "line": 97,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.fetch_notes returning empty list after request failure"
+    },
+    {
+      "line": 101,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "SyncClient.fetch_notes encountered error while decoding or parsing response"
+    },
+    {
+      "line": 101,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.fetch_notes returning empty list after parse error"
+    },
+    {
+      "line": 104,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.fetch_notes returning empty list because response contained no items"
+    },
+    {
+      "line": 105,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.fetch_notes returning normalized list of remote note rows"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_notes"
+    },
+    {
+      "line": 111,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_notes returning notebook loaded from disk"
+    },
+    {
+      "line": 116,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_notes failed to read or parse notes file"
+    },
+    {
+      "line": 116,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_notes returning partially populated notebook after failure"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_notes returning notebook after processing all note entries"
+    },
+    {
+      "line": 126,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_notes"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_notes_by_tag"
+    },
+    {
+      "line": 135,
+      "kind": "return",
+      "level": "INFO",
+      "message": "filter_notes_by_tag returning empty list for missing tag or notes"
+    },
+    {
+      "line": 136,
+      "kind": "return",
+      "level": "INFO",
+      "message": "filter_notes_by_tag returning notes that contain the requested tag"
+    },
+    {
+      "line": 140,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering search_notes"
+    },
+    {
+      "line": 142,
+      "kind": "return",
+      "level": "INFO",
+      "message": "search_notes returning list of notes matching query"
+    },
+    {
+      "line": 146,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_remote_notes"
+    },
+    {
+      "line": 158,
+      "kind": "return",
+      "level": "INFO",
+      "message": "merge_remote_notes returning count of merged or updated remote notes"
+    },
+    {
+      "line": 162,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_by_tag"
+    },
+    {
+      "line": 169,
+      "kind": "return",
+      "level": "INFO",
+      "message": "summarize_by_tag returning per-tag note counts"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering choose_note_to_review"
+    },
+    {
+      "line": 175,
+      "kind": "return",
+      "level": "INFO",
+      "message": "choose_note_to_review returning None because there are no candidate notes"
+    },
+    {
+      "line": 181,
+      "kind": "return",
+      "level": "INFO",
+      "message": "choose_note_to_review returning randomly selected candidate note"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "choose_note_to_review returning first candidate note as deterministic fallback"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main for notes CLI with base directory configuration"
+    },
+    {
+      "line": 196,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "main encountered error while loading configuration or notes data"
+    },
+    {
+      "line": 215,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "main encountered error while syncing, summarizing, or saving notes"
+    },
+    {
+      "line": 215,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 after handling error"
+    },
+    {
+      "line": 216,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successfully processing notes workflow"
+    }
+  ]
+}
