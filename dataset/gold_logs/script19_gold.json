@@ -2,109 +2,94 @@
   "file": "script19.py",
   "logs": [
     {
-      "candidate_id": 5,
-      "lineno": 5,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered __init__ method of Product class.\")"
+      "line": 5,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.__init__"
     },
     {
-      "candidate_id": 12,
-      "lineno": 12,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered update_quantity method of Product class.\")"
+      "line": 12,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.update_quantity"
     },
     {
-      "candidate_id": 14,
-      "lineno": 14,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered update_price method of Product class.\")"
+      "line": 14,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.update_price"
     },
     {
-      "candidate_id": 17,
-      "lineno": 17,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered get_product_info method of Product class.\")"
+      "line": 17,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.get_product_info"
     },
     {
-      "candidate_id": 18,
-      "lineno": 18,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.INFO(\"Returning product info: %s\", self.get_product_info())"
+      "line": 18,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product info: %s"
     },
     {
-      "candidate_id": 21,
-      "lineno": 21,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered __init__ method of Inventory class.\")"
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.__init__"
     },
     {
-      "candidate_id": 24,
-      "lineno": 24,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered add_product method of Inventory class.\")"
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.add_product"
     },
     {
-      "candidate_id": 27,
-      "lineno": 27,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered remove_product method of Inventory class.\")"
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.remove_product"
     },
     {
-      "candidate_id": 30,
-      "lineno": 30,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.INFO(\"Product removed successfully.\")"
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product removed successfully"
     },
     {
-      "candidate_id": 31,
-      "lineno": 31,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.INFO(\"Product not found.\")"
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product not found"
     },
     {
-      "candidate_id": 34,
-      "lineno": 34,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered get_inventory_value method of Inventory class.\")"
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.get_inventory_value"
     },
     {
-      "candidate_id": 37,
-      "lineno": 37,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered get_products_by_category method of Inventory class.\")"
+      "line": 37,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.get_products_by_category"
     },
     {
-      "candidate_id": 42,
-      "lineno": 42,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered read_json method of FileManager class.\")"
+      "line": 42,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered FileManager.read_json"
     },
     {
-      "candidate_id": 46,
-      "lineno": 46,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.INFO(\"Returning data from JSON file.\")"
+      "line": 46,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning data from JSON file"
     },
     {
-      "candidate_id": 50,
-      "lineno": 50,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"Entered write_json method of FileManager class.\")"
+      "line": 50,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered FileManager.write_json"
     }
   ]
 }
