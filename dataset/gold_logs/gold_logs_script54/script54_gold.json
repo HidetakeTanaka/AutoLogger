@@ -1,0 +1,95 @@
+{
+  "file": "script54.py",
+  "logs": [
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.from_dict"
+    },
+    {
+      "line": 47,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning article %s from Article.from_dict"
+    },
+    {
+      "line": 56,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse payload in Article.from_dict"
+    },
+    {
+      "line": 56,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None after error in Article.from_dict"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.fetch_remote_feed"
+    },
+    {
+      "line": 108,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning remote feed for %s from SyncClient.fetch_remote_feed"
+    },
+    {
+      "line": 110,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching feed %s in SyncClient.fetch_remote_feed"
+    },
+    {
+      "line": 110,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None due to fetch error in SyncClient.fetch_remote_feed"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_feed"
+    },
+    {
+      "line": 121,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read or parse %s in load_feed"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty local feed for %s in load_feed"
+    },
+    {
+      "line": 125,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_feed"
+    },
+    {
+      "line": 132,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write feed file %s in save_feed"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_feed"
+    },
+    {
+      "line": 148,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning feed summary from summarize_feed"
+    }
+  ]
+}
