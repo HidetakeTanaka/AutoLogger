@@ -1,0 +1,398 @@
+{
+  "file": "script45.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 26,
+      "level": "DEBUG",
+      "message": "Entering is_anomalous",
+      "kind": "entry",
+      "function": "is_anomalous"
+    },
+    {
+      "line": 27,
+      "level": "INFO",
+      "message": "Exiting is_anomalous",
+      "kind": "return",
+      "function": "is_anomalous"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting is_anomalous",
+      "kind": "return",
+      "function": "is_anomalous"
+    },
+    {
+      "line": 31,
+      "level": "INFO",
+      "message": "Exiting is_anomalous",
+      "kind": "return",
+      "function": "is_anomalous"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting is_anomalous",
+      "kind": "return",
+      "function": "is_anomalous"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Entering to_row",
+      "kind": "entry",
+      "function": "to_row"
+    },
+    {
+      "line": 35,
+      "level": "INFO",
+      "message": "Exiting to_row",
+      "kind": "return",
+      "function": "to_row"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Entering from_row",
+      "kind": "entry",
+      "function": "from_row"
+    },
+    {
+      "line": 50,
+      "level": "INFO",
+      "message": "Exiting from_row",
+      "kind": "return",
+      "function": "from_row"
+    },
+    {
+      "line": 51,
+      "level": "INFO",
+      "message": "Exiting from_row",
+      "kind": "return",
+      "function": "from_row"
+    },
+    {
+      "line": 53,
+      "level": "ERROR",
+      "message": "Exception in from_row",
+      "kind": "except",
+      "function": "from_row"
+    },
+    {
+      "line": 53,
+      "level": "INFO",
+      "message": "Exiting from_row",
+      "kind": "return",
+      "function": "from_row"
+    },
+    {
+      "line": 64,
+      "level": "DEBUG",
+      "message": "Entering update",
+      "kind": "entry",
+      "function": "update"
+    },
+    {
+      "line": 69,
+      "level": "DEBUG",
+      "message": "Entering average_value",
+      "kind": "entry",
+      "function": "average_value"
+    },
+    {
+      "line": 70,
+      "level": "INFO",
+      "message": "Exiting average_value",
+      "kind": "return",
+      "function": "average_value"
+    },
+    {
+      "line": 71,
+      "level": "INFO",
+      "message": "Exiting average_value",
+      "kind": "return",
+      "function": "average_value"
+    },
+    {
+      "line": 74,
+      "level": "DEBUG",
+      "message": "Entering is_stale",
+      "kind": "entry",
+      "function": "is_stale"
+    },
+    {
+      "line": 75,
+      "level": "INFO",
+      "message": "Exiting is_stale",
+      "kind": "return",
+      "function": "is_stale"
+    },
+    {
+      "line": 76,
+      "level": "INFO",
+      "message": "Exiting is_stale",
+      "kind": "return",
+      "function": "is_stale"
+    },
+    {
+      "line": 79,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 79,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 90,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 94,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 96,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 99,
+      "level": "DEBUG",
+      "message": "Entering fetch_remote_config",
+      "kind": "entry",
+      "function": "fetch_remote_config"
+    },
+    {
+      "line": 100,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_config",
+      "kind": "return",
+      "function": "fetch_remote_config"
+    },
+    {
+      "line": 108,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_config",
+      "kind": "return",
+      "function": "fetch_remote_config"
+    },
+    {
+      "line": 109,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_config",
+      "kind": "return",
+      "function": "fetch_remote_config"
+    },
+    {
+      "line": 111,
+      "level": "ERROR",
+      "message": "Exception in fetch_remote_config",
+      "kind": "except",
+      "function": "fetch_remote_config"
+    },
+    {
+      "line": 111,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_config",
+      "kind": "return",
+      "function": "fetch_remote_config"
+    },
+    {
+      "line": 114,
+      "level": "DEBUG",
+      "message": "Entering push_aggregate",
+      "kind": "entry",
+      "function": "push_aggregate"
+    },
+    {
+      "line": 115,
+      "level": "INFO",
+      "message": "Exiting push_aggregate",
+      "kind": "return",
+      "function": "push_aggregate"
+    },
+    {
+      "line": 122,
+      "level": "INFO",
+      "message": "Exiting push_aggregate",
+      "kind": "return",
+      "function": "push_aggregate"
+    },
+    {
+      "line": 124,
+      "level": "ERROR",
+      "message": "Exception in push_aggregate",
+      "kind": "except",
+      "function": "push_aggregate"
+    },
+    {
+      "line": 124,
+      "level": "INFO",
+      "message": "Exiting push_aggregate",
+      "kind": "return",
+      "function": "push_aggregate"
+    },
+    {
+      "line": 128,
+      "level": "DEBUG",
+      "message": "Entering parse_csv",
+      "kind": "entry",
+      "function": "parse_csv"
+    },
+    {
+      "line": 138,
+      "level": "ERROR",
+      "message": "Exception in parse_csv",
+      "kind": "except",
+      "function": "parse_csv"
+    },
+    {
+      "line": 138,
+      "level": "INFO",
+      "message": "Exiting parse_csv",
+      "kind": "return",
+      "function": "parse_csv"
+    },
+    {
+      "line": 139,
+      "level": "INFO",
+      "message": "Exiting parse_csv",
+      "kind": "return",
+      "function": "parse_csv"
+    },
+    {
+      "line": 143,
+      "level": "DEBUG",
+      "message": "Entering aggregate_by_device",
+      "kind": "entry",
+      "function": "aggregate_by_device"
+    },
+    {
+      "line": 148,
+      "level": "INFO",
+      "message": "Exiting aggregate_by_device",
+      "kind": "return",
+      "function": "aggregate_by_device"
+    },
+    {
+      "line": 156,
+      "level": "DEBUG",
+      "message": "Entering detect_anomalies",
+      "kind": "entry",
+      "function": "detect_anomalies"
+    },
+    {
+      "line": 160,
+      "level": "INFO",
+      "message": "Exiting detect_anomalies",
+      "kind": "return",
+      "function": "detect_anomalies"
+    },
+    {
+      "line": 168,
+      "level": "DEBUG",
+      "message": "Entering save_report",
+      "kind": "entry",
+      "function": "save_report"
+    },
+    {
+      "line": 181,
+      "level": "DEBUG",
+      "message": "Entering load_config",
+      "kind": "entry",
+      "function": "load_config"
+    },
+    {
+      "line": 185,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 186,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 188,
+      "level": "ERROR",
+      "message": "Exception in load_config",
+      "kind": "except",
+      "function": "load_config"
+    },
+    {
+      "line": 188,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 192,
+      "level": "DEBUG",
+      "message": "Entering summarize_anomalies",
+      "kind": "entry",
+      "function": "summarize_anomalies"
+    },
+    {
+      "line": 195,
+      "level": "INFO",
+      "message": "Exiting summarize_anomalies",
+      "kind": "return",
+      "function": "summarize_anomalies"
+    },
+    {
+      "line": 199,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 208,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 217,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

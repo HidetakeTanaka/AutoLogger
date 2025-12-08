@@ -1,0 +1,173 @@
+{
+  "file": "script39.py",
+  "logs": [
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'User {self} age check: {self.age} - is_adult: {self.age >= 18}')"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing ProductCatalog with path: {path}\")"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entering ProductCatalog.load method')"
+    },
+    {
+      "line": 87,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load product data: {data}', exc_info=True)"
+    },
+    {
+      "line": 99,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load product data: {data} in product {p}', exc_info=True)"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get method with product_id={product_id}\")"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Retrieved product with ID {product_id}')"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing ReviewStore with path: {path}\")"
+    },
+    {
+      "line": 115,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load method of ReviewStore at timestamp {ts}\")"
+    },
+    {
+      "line": 121,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to load review data at timestamp %s: %s', ts, exc_info=True)"
+    },
+    {
+      "line": 134,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to load review data at timestamp %s: %s', ts, exc_info=True)"
+    },
+    {
+      "line": 136,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'ReviewStore.load completed with {len(result)} items loaded at timestamp {ts}')"
+    },
+    {
+      "line": 141,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing ApiClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 145,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_json with endpoint: {endpoint}\")"
+    },
+    {
+      "line": 152,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to get JSON from endpoint {endpoint} at URL {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_recent_reviews with {len(list(reviews))} reviews and hours={hours}\")"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Starting group_reviews_by_product with {len(list(reviews))} reviews')"
+    },
+    {
+      "line": 164,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning grouped reviews by product with {len(grouped)} products grouped from {len(reviews)} total reviews.')"
+    },
+    {
+      "line": 168,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Starting compute_average_scores with groups: {list(groups.keys())}')"
+    },
+    {
+      "line": 175,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Computed average scores for {len(groups)} groups with {len(values)} values, returning result.')"
+    },
+    {
+      "line": 179,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_users with path: {path}\")"
+    },
+    {
+      "line": 185,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load user data from {path}: {result}')"
+    },
+    {
+      "line": 196,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load users from {path} with data: {data}')"
+    },
+    {
+      "line": 197,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded {len(result)} users from {path}')"
+    },
+    {
+      "line": 201,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_remote_products with client: {client}\")"
+    },
+    {
+      "line": 209,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered select_top_products with limit={limit} and scores keys={list(scores.keys())}\")"
+    },
+    {
+      "line": 216,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering write_report with path={path}, number of products={len(products)}, and scores keys={list(scores.keys())}\")"
+    },
+    {
+      "line": 231,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"
+    }
+  ]
+}

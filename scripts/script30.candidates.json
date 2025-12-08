@@ -1,0 +1,327 @@
+{
+  "file": "scripts/script30.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 9,
+      "end_line": 9,
+      "function": "__init__",
+      "class_name": "DataProcessor",
+      "code": "def __init__(self, data: List[Dict[str, Any]]):",
+      "vars_in_scope": [
+        "data",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 12,
+      "end_line": 12,
+      "function": "filter_data",
+      "class_name": "DataProcessor",
+      "code": "def filter_data(self, threshold: int) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 13,
+      "end_line": 13,
+      "function": "filter_data",
+      "class_name": "DataProcessor",
+      "code": "return [item for item in self.data if item['value'] > threshold]",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 16,
+      "end_line": 16,
+      "function": "aggregate_data",
+      "class_name": "DataProcessor",
+      "code": "def aggregate_data(self) -> Dict[str, int]:",
+      "vars_in_scope": [
+        "aggregation",
+        "key",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 21,
+      "end_line": 21,
+      "function": "aggregate_data",
+      "class_name": "DataProcessor",
+      "code": "return aggregation",
+      "vars_in_scope": [
+        "aggregation",
+        "key",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 24,
+      "end_line": 24,
+      "function": "transform_data",
+      "class_name": "DataProcessor",
+      "code": "def transform_data(self) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "transform_data",
+      "class_name": "DataProcessor",
+      "code": "return self.data",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 33,
+      "end_line": 33,
+      "function": "read_file",
+      "class_name": "FileHandler",
+      "code": "def read_file(file_path: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 36,
+      "end_line": 36,
+      "function": "read_file",
+      "class_name": "FileHandler",
+      "code": "return json.load(file)",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 38,
+      "end_line": 38,
+      "function": "read_file",
+      "class_name": "FileHandler",
+      "code": "except ...",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 39,
+      "end_line": 39,
+      "function": "read_file",
+      "class_name": "FileHandler",
+      "code": "return []",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 41,
+      "end_line": 41,
+      "function": "read_file",
+      "class_name": "FileHandler",
+      "code": "except ...",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 42,
+      "end_line": 42,
+      "function": "read_file",
+      "class_name": "FileHandler",
+      "code": "return []",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 46,
+      "end_line": 46,
+      "function": "write_file",
+      "class_name": "FileHandler",
+      "code": "def write_file(file_path: str, data: List[Dict[str, Any]]) -> None:",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 51,
+      "end_line": 51,
+      "function": "write_file",
+      "class_name": "FileHandler",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 57,
+      "end_line": 57,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "def fetch_data(url: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 61,
+      "end_line": 61,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "return response.json()",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 63,
+      "end_line": 63,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 64,
+      "end_line": 64,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 68,
+      "end_line": 68,
+      "function": "process_and_save_data",
+      "class_name": null,
+      "code": "def process_and_save_data(input_file: str, output_file: str, threshold: int, api_url: str) -> None:",
+      "vars_in_scope": [
+        "aggregated_data",
+        "api_data",
+        "api_url",
+        "combined_data",
+        "file_data",
+        "filtered_data",
+        "input_file",
+        "output_file",
+        "processor",
+        "threshold",
+        "transformed_data"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 72,
+      "end_line": 72,
+      "function": "process_and_save_data",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "aggregated_data",
+        "api_data",
+        "api_url",
+        "combined_data",
+        "file_data",
+        "filtered_data",
+        "input_file",
+        "output_file",
+        "processor",
+        "threshold",
+        "transformed_data"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 88,
+      "end_line": 88,
+      "function": "main",
+      "class_name": null,
+      "code": "def main() -> None:",
+      "vars_in_scope": [
+        "api_url",
+        "input_file",
+        "output_file",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    }
+  ]
+}

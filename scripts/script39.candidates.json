@@ -1,0 +1,882 @@
+{
+  "file": "scripts/script39.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_valid",
+      "class_name": "Product",
+      "code": "def is_valid(self) -> bool:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_valid",
+      "class_name": "Product",
+      "code": "return False",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_valid",
+      "class_name": "Product",
+      "code": "return 0.0 <= self.rating <= 5.0",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 26,
+      "end_line": 26,
+      "function": "to_dict",
+      "class_name": "Product",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "to_dict",
+      "class_name": "Product",
+      "code": "return {'product_id': self.product_id, 'name': self.name, 'category': self.category, 'price': self.price, 'rating': self.rating}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 44,
+      "end_line": 44,
+      "function": "is_recent",
+      "class_name": "Review",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "hours",
+        "now",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 45,
+      "end_line": 45,
+      "function": "is_recent",
+      "class_name": "Review",
+      "code": "return now - self.ts <= timedelta(hours=hours)",
+      "vars_in_scope": [
+        "hours",
+        "now",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 48,
+      "end_line": 48,
+      "function": "to_dict",
+      "class_name": "Review",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 48,
+      "end_line": 48,
+      "function": "to_dict",
+      "class_name": "Review",
+      "code": "return {'review_id': self.review_id, 'product_id': self.product_id, 'user_id': self.user_id, 'score': self.score, 'ts': self.ts.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 64,
+      "end_line": 64,
+      "function": "is_adult",
+      "class_name": "User",
+      "code": "def is_adult(self) -> bool:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 64,
+      "end_line": 64,
+      "function": "is_adult",
+      "class_name": "User",
+      "code": "return self.age >= 18",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 67,
+      "end_line": 67,
+      "function": "to_dict",
+      "class_name": "User",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "to_dict",
+      "class_name": "User",
+      "code": "return {'user_id': self.user_id, 'country': self.country, 'age': self.age}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 76,
+      "end_line": 76,
+      "function": "__init__",
+      "class_name": "ProductCatalog",
+      "code": "def __init__(self, path: Path) -> None:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 80,
+      "end_line": 80,
+      "function": "load",
+      "class_name": "ProductCatalog",
+      "code": "def load(self) -> None:",
+      "vars_in_scope": [
+        "data",
+        "p",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 82,
+      "end_line": 82,
+      "function": "load",
+      "class_name": "ProductCatalog",
+      "code": "return",
+      "vars_in_scope": [
+        "data",
+        "p",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 87,
+      "end_line": 87,
+      "function": "load",
+      "class_name": "ProductCatalog",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "p",
+        "self"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 88,
+      "end_line": 88,
+      "function": "load",
+      "class_name": "ProductCatalog",
+      "code": "return",
+      "vars_in_scope": [
+        "data",
+        "p",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 99,
+      "end_line": 99,
+      "function": "load",
+      "class_name": "ProductCatalog",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "p",
+        "self"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 104,
+      "end_line": 104,
+      "function": "all",
+      "class_name": "ProductCatalog",
+      "code": "def all(self) -> List[Product]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 104,
+      "end_line": 104,
+      "function": "all",
+      "class_name": "ProductCatalog",
+      "code": "return list(self._products.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 107,
+      "end_line": 107,
+      "function": "get",
+      "class_name": "ProductCatalog",
+      "code": "def get(self, product_id: str) -> Optional[Product]:",
+      "vars_in_scope": [
+        "product_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 107,
+      "end_line": 107,
+      "function": "get",
+      "class_name": "ProductCatalog",
+      "code": "return self._products.get(product_id)",
+      "vars_in_scope": [
+        "product_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 112,
+      "end_line": 112,
+      "function": "__init__",
+      "class_name": "ReviewStore",
+      "code": "def __init__(self, path: Path) -> None:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 115,
+      "end_line": 115,
+      "function": "load",
+      "class_name": "ReviewStore",
+      "code": "def load(self) -> List[Review]:",
+      "vars_in_scope": [
+        "data",
+        "r",
+        "result",
+        "self",
+        "ts"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 116,
+      "end_line": 116,
+      "function": "load",
+      "class_name": "ReviewStore",
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "r",
+        "result",
+        "self",
+        "ts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 121,
+      "end_line": 121,
+      "function": "load",
+      "class_name": "ReviewStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "r",
+        "result",
+        "self",
+        "ts"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "load",
+      "class_name": "ReviewStore",
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "r",
+        "result",
+        "self",
+        "ts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 134,
+      "end_line": 134,
+      "function": "load",
+      "class_name": "ReviewStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "r",
+        "result",
+        "self",
+        "ts"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 136,
+      "end_line": 136,
+      "function": "load",
+      "class_name": "ReviewStore",
+      "code": "return result",
+      "vars_in_scope": [
+        "data",
+        "r",
+        "result",
+        "self",
+        "ts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 141,
+      "end_line": 141,
+      "function": "__init__",
+      "class_name": "ApiClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 4) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 145,
+      "end_line": 145,
+      "function": "get_json",
+      "class_name": "ApiClient",
+      "code": "def get_json(self, endpoint: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "body",
+        "endpoint",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 150,
+      "end_line": 150,
+      "function": "get_json",
+      "class_name": "ApiClient",
+      "code": "return json.loads(body.decode('utf-8'))",
+      "vars_in_scope": [
+        "body",
+        "endpoint",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 152,
+      "end_line": 152,
+      "function": "get_json",
+      "class_name": "ApiClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "endpoint",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 152,
+      "end_line": 152,
+      "function": "get_json",
+      "class_name": "ApiClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "endpoint",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 156,
+      "end_line": 156,
+      "function": "filter_recent_reviews",
+      "class_name": null,
+      "code": "def filter_recent_reviews(reviews: Iterable[Review], hours: int = 48) -> List[Review]:",
+      "vars_in_scope": [
+        "hours",
+        "now",
+        "reviews"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 157,
+      "end_line": 157,
+      "function": "filter_recent_reviews",
+      "class_name": null,
+      "code": "return [r for r in reviews if now - r.ts <= timedelta(hours=hours)]",
+      "vars_in_scope": [
+        "hours",
+        "now",
+        "reviews"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 161,
+      "end_line": 161,
+      "function": "group_reviews_by_product",
+      "class_name": null,
+      "code": "def group_reviews_by_product(reviews: Iterable[Review]) -> Dict[str, List[Review]]:",
+      "vars_in_scope": [
+        "grouped",
+        "reviews"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 164,
+      "end_line": 164,
+      "function": "group_reviews_by_product",
+      "class_name": null,
+      "code": "return grouped",
+      "vars_in_scope": [
+        "grouped",
+        "reviews"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 168,
+      "end_line": 168,
+      "function": "compute_average_scores",
+      "class_name": null,
+      "code": "def compute_average_scores(groups: Dict[str, List[Review]]) -> Dict[str, float]:",
+      "vars_in_scope": [
+        "groups",
+        "result",
+        "values"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "compute_average_scores",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "groups",
+        "result",
+        "values"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 179,
+      "end_line": 179,
+      "function": "load_users",
+      "class_name": null,
+      "code": "def load_users(path: Path) -> Dict[str, User]:",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "result",
+        "u"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 180,
+      "end_line": 180,
+      "function": "load_users",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "result",
+        "u"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 185,
+      "end_line": 185,
+      "function": "load_users",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "result",
+        "u"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 185,
+      "end_line": 185,
+      "function": "load_users",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "result",
+        "u"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 196,
+      "end_line": 196,
+      "function": "load_users",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "result",
+        "u"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 197,
+      "end_line": 197,
+      "function": "load_users",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "result",
+        "u"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 201,
+      "end_line": 201,
+      "function": "fetch_remote_products",
+      "class_name": null,
+      "code": "def fetch_remote_products(client: ApiClient) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "client",
+        "data",
+        "items"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 203,
+      "end_line": 203,
+      "function": "fetch_remote_products",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "client",
+        "data",
+        "items"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 205,
+      "end_line": 205,
+      "function": "fetch_remote_products",
+      "class_name": null,
+      "code": "return [dict(it) for it in items]",
+      "vars_in_scope": [
+        "client",
+        "data",
+        "items"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 209,
+      "end_line": 209,
+      "function": "select_top_products",
+      "class_name": null,
+      "code": "def select_top_products(scores: Dict[str, float], limit: int = 5) -> List[str]:",
+      "vars_in_scope": [
+        "limit",
+        "scores",
+        "sorted_items"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 210,
+      "end_line": 210,
+      "function": "select_top_products",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "limit",
+        "scores",
+        "sorted_items"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 212,
+      "end_line": 212,
+      "function": "select_top_products",
+      "class_name": null,
+      "code": "return [pid for pid, _ in sorted_items[:limit]]",
+      "vars_in_scope": [
+        "limit",
+        "scores",
+        "sorted_items"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 216,
+      "end_line": 216,
+      "function": "write_report",
+      "class_name": null,
+      "code": "def write_report(path: Path, products: List[Product], scores: Dict[str, float]) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "products",
+        "scores"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 231,
+      "end_line": 231,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(base_dir: str = \"data\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "catalog",
+        "grouped",
+        "products",
+        "products_path",
+        "recent",
+        "report_path",
+        "review_store",
+        "reviews",
+        "reviews_path",
+        "scores"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 244,
+      "end_line": 244,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "catalog",
+        "grouped",
+        "products",
+        "products_path",
+        "recent",
+        "report_path",
+        "review_store",
+        "reviews",
+        "reviews_path",
+        "scores"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 252,
+      "end_line": 252,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "catalog",
+        "grouped",
+        "products",
+        "products_path",
+        "recent",
+        "report_path",
+        "review_store",
+        "reviews",
+        "reviews_path",
+        "scores"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

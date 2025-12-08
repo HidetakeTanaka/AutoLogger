@@ -1,0 +1,405 @@
+{
+  "file": "script38.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 19,
+      "level": "DEBUG",
+      "message": "Entering is_valid",
+      "kind": "entry",
+      "function": "is_valid"
+    },
+    {
+      "line": 20,
+      "level": "INFO",
+      "message": "Exiting is_valid",
+      "kind": "return",
+      "function": "is_valid"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Exiting is_valid",
+      "kind": "return",
+      "function": "is_valid"
+    },
+    {
+      "line": 24,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 40,
+      "level": "DEBUG",
+      "message": "Entering add_reading",
+      "kind": "entry",
+      "function": "add_reading"
+    },
+    {
+      "line": 41,
+      "level": "INFO",
+      "message": "Exiting add_reading",
+      "kind": "return",
+      "function": "add_reading"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Entering latest_value",
+      "kind": "entry",
+      "function": "latest_value"
+    },
+    {
+      "line": 46,
+      "level": "INFO",
+      "message": "Exiting latest_value",
+      "kind": "return",
+      "function": "latest_value"
+    },
+    {
+      "line": 47,
+      "level": "INFO",
+      "message": "Exiting latest_value",
+      "kind": "return",
+      "function": "latest_value"
+    },
+    {
+      "line": 50,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 50,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 63,
+      "level": "DEBUG",
+      "message": "Entering get_or_create",
+      "kind": "entry",
+      "function": "get_or_create"
+    },
+    {
+      "line": 64,
+      "level": "INFO",
+      "message": "Exiting get_or_create",
+      "kind": "return",
+      "function": "get_or_create"
+    },
+    {
+      "line": 67,
+      "level": "INFO",
+      "message": "Exiting get_or_create",
+      "kind": "return",
+      "function": "get_or_create"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Entering all_readings",
+      "kind": "entry",
+      "function": "all_readings"
+    },
+    {
+      "line": 73,
+      "level": "INFO",
+      "message": "Exiting all_readings",
+      "kind": "return",
+      "function": "all_readings"
+    },
+    {
+      "line": 76,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 76,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 80,
+      "level": "DEBUG",
+      "message": "Entering load_config",
+      "kind": "entry",
+      "function": "load_config"
+    },
+    {
+      "line": 81,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 84,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 86,
+      "level": "ERROR",
+      "message": "Exception in load_config",
+      "kind": "except",
+      "function": "load_config"
+    },
+    {
+      "line": 86,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 90,
+      "level": "DEBUG",
+      "message": "Entering fetch_remote_readings",
+      "kind": "entry",
+      "function": "fetch_remote_readings"
+    },
+    {
+      "line": 97,
+      "level": "ERROR",
+      "message": "Exception in fetch_remote_readings",
+      "kind": "except",
+      "function": "fetch_remote_readings"
+    },
+    {
+      "line": 98,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_readings",
+      "kind": "return",
+      "function": "fetch_remote_readings"
+    },
+    {
+      "line": 105,
+      "level": "ERROR",
+      "message": "Exception in fetch_remote_readings",
+      "kind": "except",
+      "function": "fetch_remote_readings"
+    },
+    {
+      "line": 105,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_readings",
+      "kind": "return",
+      "function": "fetch_remote_readings"
+    },
+    {
+      "line": 108,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_readings",
+      "kind": "return",
+      "function": "fetch_remote_readings"
+    },
+    {
+      "line": 109,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_readings",
+      "kind": "return",
+      "function": "fetch_remote_readings"
+    },
+    {
+      "line": 110,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_readings",
+      "kind": "return",
+      "function": "fetch_remote_readings"
+    },
+    {
+      "line": 114,
+      "level": "DEBUG",
+      "message": "Entering read_local_cache",
+      "kind": "entry",
+      "function": "read_local_cache"
+    },
+    {
+      "line": 115,
+      "level": "INFO",
+      "message": "Exiting read_local_cache",
+      "kind": "return",
+      "function": "read_local_cache"
+    },
+    {
+      "line": 120,
+      "level": "ERROR",
+      "message": "Exception in read_local_cache",
+      "kind": "except",
+      "function": "read_local_cache"
+    },
+    {
+      "line": 120,
+      "level": "INFO",
+      "message": "Exiting read_local_cache",
+      "kind": "return",
+      "function": "read_local_cache"
+    },
+    {
+      "line": 123,
+      "level": "INFO",
+      "message": "Exiting read_local_cache",
+      "kind": "return",
+      "function": "read_local_cache"
+    },
+    {
+      "line": 124,
+      "level": "INFO",
+      "message": "Exiting read_local_cache",
+      "kind": "return",
+      "function": "read_local_cache"
+    },
+    {
+      "line": 128,
+      "level": "DEBUG",
+      "message": "Entering normalize_row",
+      "kind": "entry",
+      "function": "normalize_row"
+    },
+    {
+      "line": 136,
+      "level": "ERROR",
+      "message": "Exception in normalize_row",
+      "kind": "except",
+      "function": "normalize_row"
+    },
+    {
+      "line": 136,
+      "level": "INFO",
+      "message": "Exiting normalize_row",
+      "kind": "return",
+      "function": "normalize_row"
+    },
+    {
+      "line": 139,
+      "level": "INFO",
+      "message": "Exiting normalize_row",
+      "kind": "return",
+      "function": "normalize_row"
+    },
+    {
+      "line": 140,
+      "level": "INFO",
+      "message": "Exiting normalize_row",
+      "kind": "return",
+      "function": "normalize_row"
+    },
+    {
+      "line": 144,
+      "level": "DEBUG",
+      "message": "Entering ingest_readings",
+      "kind": "entry",
+      "function": "ingest_readings"
+    },
+    {
+      "line": 155,
+      "level": "DEBUG",
+      "message": "Entering compute_statistics",
+      "kind": "entry",
+      "function": "compute_statistics"
+    },
+    {
+      "line": 156,
+      "level": "INFO",
+      "message": "Exiting compute_statistics",
+      "kind": "return",
+      "function": "compute_statistics"
+    },
+    {
+      "line": 161,
+      "level": "INFO",
+      "message": "Exiting compute_statistics",
+      "kind": "return",
+      "function": "compute_statistics"
+    },
+    {
+      "line": 162,
+      "level": "INFO",
+      "message": "Exiting compute_statistics",
+      "kind": "return",
+      "function": "compute_statistics"
+    },
+    {
+      "line": 171,
+      "level": "DEBUG",
+      "message": "Entering group_by_unit",
+      "kind": "entry",
+      "function": "group_by_unit"
+    },
+    {
+      "line": 177,
+      "level": "INFO",
+      "message": "Exiting group_by_unit",
+      "kind": "return",
+      "function": "group_by_unit"
+    },
+    {
+      "line": 181,
+      "level": "DEBUG",
+      "message": "Entering save_report",
+      "kind": "entry",
+      "function": "save_report"
+    },
+    {
+      "line": 192,
+      "level": "DEBUG",
+      "message": "Entering select_recent",
+      "kind": "entry",
+      "function": "select_recent"
+    },
+    {
+      "line": 193,
+      "level": "INFO",
+      "message": "Exiting select_recent",
+      "kind": "return",
+      "function": "select_recent"
+    },
+    {
+      "line": 195,
+      "level": "INFO",
+      "message": "Exiting select_recent",
+      "kind": "return",
+      "function": "select_recent"
+    },
+    {
+      "line": 199,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 216,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 226,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

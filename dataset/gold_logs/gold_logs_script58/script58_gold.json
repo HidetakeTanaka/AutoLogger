@@ -1,0 +1,90 @@
+{
+  "file": "script58.py",
+  "logs": [
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.from_dict"
+    },
+    {
+      "line": 48,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse product data in Product.from_dict"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Order.from_dict"
+    },
+    {
+      "line": 91,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse order data in Order.from_dict"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiClient.fetch_orders"
+    },
+    {
+      "line": 150,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching orders for book_id=%s in ApiClient.fetch_orders"
+    },
+    {
+      "line": 153,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiClient.push_summary"
+    },
+    {
+      "line": 160,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to push summary for book_id=%s in ApiClient.push_summary"
+    },
+    {
+      "line": 164,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_order_book"
+    },
+    {
+      "line": 168,
+      "kind": "exception",
+      "level": "WARNING",
+      "message": "Failed to load order book from %s, using local book in load_order_book"
+    },
+    {
+      "line": 174,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_order_book"
+    },
+    {
+      "line": 194,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning order summary from summarize_orders"
+    },
+    {
+      "line": 230,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Starting order processing run in main"
+    },
+    {
+      "line": 248,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed while writing orders_report.json in main"
+    }
+  ]
+}
+

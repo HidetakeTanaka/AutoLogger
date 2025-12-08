@@ -1,61 +1,61 @@
 {
-  "file": "scripts\\script100.py",
+  "file": "scripts/script50.py",
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 20,
-      "end_line": 20,
-      "function": "is_active",
-      "class_name": "Profile",
-      "code": "def is_active(self, hours: int = 24) -> bool:",
+      "line": 18,
+      "end_line": 18,
+      "function": "__init__",
+      "class_name": "Note",
+      "code": "def __init__(",
       "vars_in_scope": [
-        "cutoff",
-        "hours",
-        "self"
+        "content",
+        "created",
+        "note_id",
+        "self",
+        "tags",
+        "title"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
-      "line": 21,
-      "end_line": 21,
-      "function": "is_active",
-      "class_name": "Profile",
-      "code": "return False",
-      "vars_in_scope": [
-        "cutoff",
-        "hours",
-        "self"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 24,
-      "end_line": 24,
-      "function": "is_active",
-      "class_name": "Profile",
-      "code": "return False",
-      "vars_in_scope": [
-        "cutoff",
-        "hours",
-        "self"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
+      "kind": "func_entry",
       "line": 25,
       "end_line": 25,
-      "function": "is_active",
-      "class_name": "Profile",
-      "code": "return True",
+      "function": "is_recent",
+      "class_name": "Note",
+      "code": "def is_recent(self, days: int = 7) -> bool:",
       "vars_in_scope": [
-        "cutoff",
-        "hours",
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "is_recent",
+      "class_name": "Note",
+      "code": "return False",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "is_recent",
+      "class_name": "Note",
+      "code": "return self.created >= datetime.utcnow() - timedelta(days=days)",
+      "vars_in_scope": [
+        "days",
         "self"
       ],
       "why": "before return",
@@ -63,23 +63,85 @@
     },
     {
       "kind": "func_entry",
-      "line": 28,
-      "end_line": 28,
-      "function": "update_last_seen",
-      "class_name": "Profile",
-      "code": "def update_last_seen(self) -> None:",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches_query",
+      "class_name": "Note",
+      "code": "def matches_query(self, query: str) -> bool:",
       "vars_in_scope": [
+        "q",
+        "query",
         "self"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches_query",
+      "class_name": "Note",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 34,
+      "end_line": 34,
+      "function": "matches_query",
+      "class_name": "Note",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 36,
+      "end_line": 36,
+      "function": "matches_query",
+      "class_name": "Note",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 37,
+      "end_line": 37,
+      "function": "matches_query",
+      "class_name": "Note",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
       "kind": "func_entry",
-      "line": 31,
-      "end_line": 31,
+      "line": 40,
+      "end_line": 40,
       "function": "to_dict",
-      "class_name": "Profile",
+      "class_name": "Note",
       "code": "def to_dict(self) -> Dict[str, Any]:",
       "vars_in_scope": [
         "self"
@@ -89,11 +151,11 @@
     },
     {
       "kind": "before_return",
-      "line": 31,
-      "end_line": 31,
+      "line": 40,
+      "end_line": 40,
       "function": "to_dict",
-      "class_name": "Profile",
-      "code": "return {'user_id': self.user_id, 'name': self.name, 'active': self.active, 'last_seen': self.last_seen.isoformat(), 'topics': list(self.topics)}",
+      "class_name": "Note",
+      "code": "return {'note_id': self.note_id, 'title': self.title, 'content': self.content, 'created': self.created.isoformat(), 'tags': list(self.tags)}",
       "vars_in_scope": [
         "self"
       ],
@@ -102,109 +164,64 @@
     },
     {
       "kind": "func_entry",
-      "line": 41,
-      "end_line": 41,
+      "line": 50,
+      "end_line": 50,
       "function": "from_dict",
-      "class_name": "Profile",
-      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Profile\"]:",
+      "class_name": "Note",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Note\"]:",
       "vars_in_scope": [
         "cls",
-        "raw",
-        "ts",
-        "ts_raw"
+        "created",
+        "created_raw",
+        "raw"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
       "kind": "before_return",
-      "line": 44,
-      "end_line": 44,
+      "line": 57,
+      "end_line": 57,
       "function": "from_dict",
-      "class_name": "Profile",
-      "code": "return cls(user_id=str(raw.get('user_id', '')), name=str(raw.get('name', '')), active=bool(raw.get('active', True)), last_seen=ts, topics=list(raw.get('topics', [])))",
+      "class_name": "Note",
+      "code": "return cls(note_id=str(raw.get('note_id', '')), title=str(raw.get('title', '')), content=str(raw.get('content', '')), created=created, tags=list(raw.get('tags', [])))",
       "vars_in_scope": [
         "cls",
-        "raw",
-        "ts",
-        "ts_raw"
+        "created",
+        "created_raw",
+        "raw"
       ],
       "why": "before return",
       "severity_hint": "INFO"
     },
     {
       "kind": "except",
-      "line": 52,
-      "end_line": 52,
+      "line": 65,
+      "end_line": 65,
       "function": "from_dict",
-      "class_name": "Profile",
+      "class_name": "Note",
       "code": "except ...",
       "vars_in_scope": [
         "cls",
-        "raw",
-        "ts",
-        "ts_raw"
+        "created",
+        "created_raw",
+        "raw"
       ],
       "why": "inside except",
       "severity_hint": "ERROR"
     },
     {
       "kind": "before_return",
-      "line": 52,
-      "end_line": 52,
+      "line": 65,
+      "end_line": 65,
       "function": "from_dict",
-      "class_name": "Profile",
+      "class_name": "Note",
       "code": "return None",
       "vars_in_scope": [
         "cls",
-        "raw",
-        "ts",
-        "ts_raw"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 64,
-      "end_line": 64,
-      "function": "is_recent",
-      "class_name": "Article",
-      "code": "def is_recent(self, days: int = 3) -> bool:",
-      "vars_in_scope": [
-        "cutoff",
-        "days",
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "before_return",
-      "line": 66,
-      "end_line": 66,
-      "function": "is_recent",
-      "class_name": "Article",
-      "code": "return False",
-      "vars_in_scope": [
-        "cutoff",
-        "days",
-        "self"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 67,
-      "end_line": 67,
-      "function": "is_recent",
-      "class_name": "Article",
-      "code": "return True",
-      "vars_in_scope": [
-        "cutoff",
-        "days",
-        "self"
+        "created",
+        "created_raw",
+        "raw"
       ],
       "why": "before return",
       "severity_hint": "INFO"
@@ -213,68 +230,125 @@
       "kind": "func_entry",
       "line": 70,
       "end_line": 70,
-      "function": "matches_topics",
-      "class_name": "Article",
-      "code": "def matches_topics(self, topics: Iterable[str]) -> bool:",
+      "function": "__init__",
+      "class_name": "Notebook",
+      "code": "def __init__(self, notebook_id: str, owner: str) -> None:",
       "vars_in_scope": [
-        "self",
-        "topics",
-        "topics_l"
+        "notebook_id",
+        "owner",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 75,
+      "end_line": 75,
+      "function": "add",
+      "class_name": "Notebook",
+      "code": "def add(self, note: Note) -> None:",
+      "vars_in_scope": [
+        "note",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 78,
+      "end_line": 78,
+      "function": "get",
+      "class_name": "Notebook",
+      "code": "def get(self, note_id: str) -> Optional[Note]:",
+      "vars_in_scope": [
+        "note_id",
+        "self"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
       "kind": "before_return",
-      "line": 72,
-      "end_line": 72,
-      "function": "matches_topics",
-      "class_name": "Article",
-      "code": "return True",
+      "line": 78,
+      "end_line": 78,
+      "function": "get",
+      "class_name": "Notebook",
+      "code": "return self._notes.get(note_id)",
       "vars_in_scope": [
-        "self",
-        "topics",
-        "topics_l"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 74,
-      "end_line": 74,
-      "function": "matches_topics",
-      "class_name": "Article",
-      "code": "return True",
-      "vars_in_scope": [
-        "self",
-        "topics",
-        "topics_l"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 75,
-      "end_line": 75,
-      "function": "matches_topics",
-      "class_name": "Article",
-      "code": "return any((t in self.title.lower() for t in topics_l))",
-      "vars_in_scope": [
-        "self",
-        "topics",
-        "topics_l"
+        "note_id",
+        "self"
       ],
       "why": "before return",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 78,
-      "end_line": 78,
+      "line": 81,
+      "end_line": 81,
+      "function": "all",
+      "class_name": "Notebook",
+      "code": "def all(self) -> List[Note]:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 81,
+      "end_line": 81,
+      "function": "all",
+      "class_name": "Notebook",
+      "code": "return list(self._notes.values())",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 84,
+      "end_line": 84,
+      "function": "search",
+      "class_name": "Notebook",
+      "code": "def search(self, query: str = \"\", recent_days: Optional[int] = None) -> List[Note]:",
+      "vars_in_scope": [
+        "items",
+        "query",
+        "recent_days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 91,
+      "end_line": 91,
+      "function": "search",
+      "class_name": "Notebook",
+      "code": "return items",
+      "vars_in_scope": [
+        "items",
+        "query",
+        "recent_days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 94,
+      "end_line": 94,
       "function": "to_dict",
-      "class_name": "Article",
+      "class_name": "Notebook",
       "code": "def to_dict(self) -> Dict[str, Any]:",
       "vars_in_scope": [
         "self"
@@ -284,11 +358,11 @@
     },
     {
       "kind": "before_return",
-      "line": 78,
-      "end_line": 78,
+      "line": 94,
+      "end_line": 94,
       "function": "to_dict",
-      "class_name": "Article",
-      "code": "return {'article_id': self.article_id, 'title': self.title, 'topic': self.topic, 'published_at': self.published_at.isoformat(), 'score': self.score}",
+      "class_name": "Notebook",
+      "code": "return {'notebook_id': self.notebook_id, 'owner': self.owner, 'notes': [n.to_dict() for n in self._notes.values()]}",
       "vars_in_scope": [
         "self"
       ],
@@ -297,161 +371,42 @@
     },
     {
       "kind": "func_entry",
-      "line": 88,
-      "end_line": 88,
+      "line": 102,
+      "end_line": 102,
       "function": "from_dict",
-      "class_name": "Article",
-      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Article\"]:",
+      "class_name": "Notebook",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Notebook\":",
       "vars_in_scope": [
         "cls",
-        "raw",
-        "ts",
-        "ts_raw"
+        "nb",
+        "note",
+        "raw"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
       "kind": "before_return",
-      "line": 91,
-      "end_line": 91,
+      "line": 110,
+      "end_line": 110,
       "function": "from_dict",
-      "class_name": "Article",
-      "code": "return cls(article_id=str(raw.get('article_id', '')), title=str(raw.get('title', '')), topic=str(raw.get('topic', '')), published_at=ts, score=float(raw.get('score', 0.0)))",
+      "class_name": "Notebook",
+      "code": "return nb",
       "vars_in_scope": [
         "cls",
-        "raw",
-        "ts",
-        "ts_raw"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "except",
-      "line": 99,
-      "end_line": 99,
-      "function": "from_dict",
-      "class_name": "Article",
-      "code": "except ...",
-      "vars_in_scope": [
-        "cls",
-        "raw",
-        "ts",
-        "ts_raw"
-      ],
-      "why": "inside except",
-      "severity_hint": "ERROR"
-    },
-    {
-      "kind": "before_return",
-      "line": 99,
-      "end_line": 99,
-      "function": "from_dict",
-      "class_name": "Article",
-      "code": "return None",
-      "vars_in_scope": [
-        "cls",
-        "raw",
-        "ts",
-        "ts_raw"
+        "nb",
+        "note",
+        "raw"
       ],
       "why": "before return",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 108,
-      "end_line": 108,
-      "function": "add_article",
-      "class_name": "RecommendationSession",
-      "code": "def add_article(self, article: Article) -> None:",
-      "vars_in_scope": [
-        "article",
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "func_entry",
-      "line": 111,
-      "end_line": 111,
-      "function": "personalized_feed",
-      "class_name": "RecommendationSession",
-      "code": "def personalized_feed(self, limit: int = 10) -> List[Article]:",
-      "vars_in_scope": [
-        "filtered",
-        "limit",
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "before_return",
-      "line": 112,
-      "end_line": 112,
-      "function": "personalized_feed",
-      "class_name": "RecommendationSession",
-      "code": "return []",
-      "vars_in_scope": [
-        "filtered",
-        "limit",
-        "self"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 118,
-      "end_line": 118,
-      "function": "personalized_feed",
-      "class_name": "RecommendationSession",
-      "code": "return filtered[:limit]",
-      "vars_in_scope": [
-        "filtered",
-        "limit",
-        "self"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 121,
-      "end_line": 121,
-      "function": "summarize",
-      "class_name": "RecommendationSession",
-      "code": "def summarize(self) -> Dict[str, Any]:",
-      "vars_in_scope": [
-        "feed",
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "before_return",
-      "line": 122,
-      "end_line": 122,
-      "function": "summarize",
-      "class_name": "RecommendationSession",
-      "code": "return {'user_id': self.profile.user_id, 'feed_count': len(feed), 'topics': list(self.profile.topics), 'top_titles': [a.title for a in feed]}",
-      "vars_in_scope": [
-        "feed",
-        "self"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 132,
-      "end_line": 132,
+      "line": 115,
+      "end_line": 115,
       "function": "__init__",
-      "class_name": "RemoteCatalog",
+      "class_name": "SyncClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
       "vars_in_scope": [
         "base_url",
@@ -463,10 +418,10 @@
     },
     {
       "kind": "func_entry",
-      "line": 136,
-      "end_line": 136,
+      "line": 119,
+      "end_line": 119,
       "function": "_url",
-      "class_name": "RemoteCatalog",
+      "class_name": "SyncClient",
       "code": "def _url(self, path: str) -> str:",
       "vars_in_scope": [
         "path",
@@ -477,25 +432,11 @@
     },
     {
       "kind": "before_return",
-      "line": 137,
-      "end_line": 137,
+      "line": 121,
+      "end_line": 121,
       "function": "_url",
-      "class_name": "RemoteCatalog",
-      "code": "return ''",
-      "vars_in_scope": [
-        "path",
-        "self"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 138,
-      "end_line": 138,
-      "function": "_url",
-      "class_name": "RemoteCatalog",
-      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "class_name": "SyncClient",
+      "code": "return self.base_url + path",
       "vars_in_scope": [
         "path",
         "self"
@@ -505,17 +446,15 @@
     },
     {
       "kind": "func_entry",
-      "line": 141,
-      "end_line": 141,
-      "function": "fetch_articles",
-      "class_name": "RemoteCatalog",
-      "code": "def fetch_articles(self, topic: Optional[str] = None) -> List[Dict[str, Any]]:",
+      "line": 124,
+      "end_line": 124,
+      "function": "fetch_remote_notebook",
+      "class_name": "SyncClient",
+      "code": "def fetch_remote_notebook(self, notebook_id: str) -> Optional[Dict[str, Any]]:",
       "vars_in_scope": [
-        "data",
-        "req",
+        "body",
+        "notebook_id",
         "self",
-        "text",
-        "topic",
         "url"
       ],
       "why": "function entry",
@@ -523,53 +462,15 @@
     },
     {
       "kind": "before_return",
-      "line": 146,
-      "end_line": 146,
-      "function": "fetch_articles",
-      "class_name": "RemoteCatalog",
-      "code": "return []",
+      "line": 125,
+      "end_line": 125,
+      "function": "fetch_remote_notebook",
+      "class_name": "SyncClient",
+      "code": "return None",
       "vars_in_scope": [
-        "data",
-        "req",
+        "body",
+        "notebook_id",
         "self",
-        "text",
-        "topic",
-        "url"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 153,
-      "end_line": 153,
-      "function": "fetch_articles",
-      "class_name": "RemoteCatalog",
-      "code": "return []",
-      "vars_in_scope": [
-        "data",
-        "req",
-        "self",
-        "text",
-        "topic",
-        "url"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 154,
-      "end_line": 154,
-      "function": "fetch_articles",
-      "class_name": "RemoteCatalog",
-      "code": "return [d for d in data if isinstance(d, dict)]",
-      "vars_in_scope": [
-        "data",
-        "req",
-        "self",
-        "text",
-        "topic",
         "url"
       ],
       "why": "before return",
@@ -577,17 +478,15 @@
     },
     {
       "kind": "except",
-      "line": 156,
-      "end_line": 156,
-      "function": "fetch_articles",
-      "class_name": "RemoteCatalog",
+      "line": 131,
+      "end_line": 131,
+      "function": "fetch_remote_notebook",
+      "class_name": "SyncClient",
       "code": "except ...",
       "vars_in_scope": [
-        "data",
-        "req",
+        "body",
+        "notebook_id",
         "self",
-        "text",
-        "topic",
         "url"
       ],
       "why": "inside except",
@@ -595,17 +494,95 @@
     },
     {
       "kind": "before_return",
-      "line": 156,
-      "end_line": 156,
-      "function": "fetch_articles",
-      "class_name": "RemoteCatalog",
-      "code": "return []",
+      "line": 131,
+      "end_line": 131,
+      "function": "fetch_remote_notebook",
+      "class_name": "SyncClient",
+      "code": "return None",
       "vars_in_scope": [
-        "data",
-        "req",
+        "body",
+        "notebook_id",
         "self",
-        "text",
-        "topic",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 133,
+      "end_line": 133,
+      "function": "fetch_remote_notebook",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "notebook_id",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 133,
+      "end_line": 133,
+      "function": "fetch_remote_notebook",
+      "class_name": "SyncClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "notebook_id",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 135,
+      "end_line": 135,
+      "function": "fetch_remote_notebook",
+      "class_name": "SyncClient",
+      "code": "return json.loads(body.decode('utf-8'))",
+      "vars_in_scope": [
+        "body",
+        "notebook_id",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 137,
+      "end_line": 137,
+      "function": "fetch_remote_notebook",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "notebook_id",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 137,
+      "end_line": 137,
+      "function": "fetch_remote_notebook",
+      "class_name": "SyncClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "notebook_id",
+        "self",
         "url"
       ],
       "why": "before return",
@@ -613,456 +590,393 @@
     },
     {
       "kind": "func_entry",
-      "line": 160,
-      "end_line": 160,
-      "function": "load_profiles",
-      "class_name": null,
-      "code": "def load_profiles(path: Path) -> List[Profile]:",
+      "line": 140,
+      "end_line": 140,
+      "function": "push_notebook",
+      "class_name": "SyncClient",
+      "code": "def push_notebook(self, payload: Dict[str, Any]) -> bool:",
       "vars_in_scope": [
-        "p",
-        "path",
-        "raw",
-        "result",
-        "text"
+        "code",
+        "data",
+        "payload",
+        "req",
+        "self",
+        "url"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
       "kind": "before_return",
-      "line": 161,
-      "end_line": 161,
-      "function": "load_profiles",
-      "class_name": null,
-      "code": "return []",
+      "line": 141,
+      "end_line": 141,
+      "function": "push_notebook",
+      "class_name": "SyncClient",
+      "code": "return False",
       "vars_in_scope": [
-        "p",
-        "path",
-        "raw",
-        "result",
-        "text"
+        "code",
+        "data",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 150,
+      "end_line": 150,
+      "function": "push_notebook",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "code",
+        "data",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 150,
+      "end_line": 150,
+      "function": "push_notebook",
+      "class_name": "SyncClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "code",
+        "data",
+        "payload",
+        "req",
+        "self",
+        "url"
       ],
       "why": "before return",
       "severity_hint": "INFO"
     },
     {
       "kind": "before_return",
+      "line": 151,
+      "end_line": 151,
+      "function": "push_notebook",
+      "class_name": "SyncClient",
+      "code": "return 200 <= code < 300",
+      "vars_in_scope": [
+        "code",
+        "data",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 155,
+      "end_line": 155,
+      "function": "load_notebook",
+      "class_name": null,
+      "code": "def load_notebook(path: Path) -> Notebook:",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 156,
+      "end_line": 156,
+      "function": "load_notebook",
+      "class_name": null,
+      "code": "return Notebook(notebook_id='local', owner='unknown')",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "load_notebook",
+      "class_name": null,
+      "code": "return Notebook.from_dict(data)",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 162,
+      "end_line": 162,
+      "function": "load_notebook",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 162,
+      "end_line": 162,
+      "function": "load_notebook",
+      "class_name": null,
+      "code": "return Notebook(notebook_id='local', owner='unknown')",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
       "line": 166,
       "end_line": 166,
-      "function": "load_profiles",
+      "function": "save_notebook",
       "class_name": null,
-      "code": "return []",
+      "code": "def save_notebook(path: Path, notebook: Notebook) -> None:",
       "vars_in_scope": [
-        "p",
+        "notebook",
         "path",
-        "raw",
-        "result",
-        "text"
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 173,
+      "end_line": 173,
+      "function": "save_notebook",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "notebook",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 177,
+      "end_line": 177,
+      "function": "save_notebook",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "notebook",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 181,
+      "end_line": 181,
+      "function": "summarize_tags",
+      "class_name": null,
+      "code": "def summarize_tags(notes: Iterable[Note]) -> Dict[str, int]:",
+      "vars_in_scope": [
+        "counts",
+        "notes",
+        "seen",
+        "t"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 190,
+      "end_line": 190,
+      "function": "summarize_tags",
+      "class_name": null,
+      "code": "return counts",
+      "vars_in_scope": [
+        "counts",
+        "notes",
+        "seen",
+        "t"
       ],
       "why": "before return",
       "severity_hint": "INFO"
     },
     {
+      "kind": "func_entry",
+      "line": 194,
+      "end_line": 194,
+      "function": "merge_notebooks",
+      "class_name": null,
+      "code": "def merge_notebooks(local: Notebook, remote: Notebook) -> Notebook:",
+      "vars_in_scope": [
+        "local",
+        "remote",
+        "result"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
       "kind": "before_return",
-      "line": 172,
-      "end_line": 172,
-      "function": "load_profiles",
+      "line": 200,
+      "end_line": 200,
+      "function": "merge_notebooks",
       "class_name": null,
       "code": "return result",
       "vars_in_scope": [
-        "p",
-        "path",
-        "raw",
-        "result",
-        "text"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "except",
-      "line": 174,
-      "end_line": 174,
-      "function": "load_profiles",
-      "class_name": null,
-      "code": "except ...",
-      "vars_in_scope": [
-        "p",
-        "path",
-        "raw",
-        "result",
-        "text"
-      ],
-      "why": "inside except",
-      "severity_hint": "ERROR"
-    },
-    {
-      "kind": "before_return",
-      "line": 174,
-      "end_line": 174,
-      "function": "load_profiles",
-      "class_name": null,
-      "code": "return []",
-      "vars_in_scope": [
-        "p",
-        "path",
-        "raw",
-        "result",
-        "text"
+        "local",
+        "remote",
+        "result"
       ],
       "why": "before return",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 178,
-      "end_line": 178,
-      "function": "save_profiles",
+      "line": 204,
+      "end_line": 204,
+      "function": "pick_random_note",
       "class_name": null,
-      "code": "def save_profiles(path: Path, profiles: List[Profile]) -> None:",
+      "code": "def pick_random_note(notebook: Notebook, only_recent: bool = False) -> Optional[Note]:",
       "vars_in_scope": [
-        "path",
-        "payload",
-        "profiles",
-        "tmp"
+        "candidates",
+        "idx",
+        "notebook",
+        "only_recent"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 184,
-      "end_line": 184,
-      "function": "save_profiles",
+      "kind": "before_return",
+      "line": 208,
+      "end_line": 208,
+      "function": "pick_random_note",
       "class_name": null,
-      "code": "except ...",
+      "code": "return None",
       "vars_in_scope": [
-        "path",
-        "payload",
-        "profiles",
-        "tmp"
+        "candidates",
+        "idx",
+        "notebook",
+        "only_recent"
       ],
-      "why": "inside except",
-      "severity_hint": "ERROR"
+      "why": "before return",
+      "severity_hint": "INFO"
     },
     {
       "kind": "before_return",
-      "line": 184,
-      "end_line": 184,
-      "function": "save_profiles",
+      "line": 210,
+      "end_line": 210,
+      "function": "pick_random_note",
       "class_name": null,
-      "code": "return",
+      "code": "return candidates[idx]",
       "vars_in_scope": [
-        "path",
-        "payload",
-        "profiles",
-        "tmp"
+        "candidates",
+        "idx",
+        "notebook",
+        "only_recent"
       ],
       "why": "before return",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 188,
-      "end_line": 188,
-      "function": "parse_articles",
+      "line": 214,
+      "end_line": 214,
+      "function": "main",
       "class_name": null,
-      "code": "def parse_articles(raw: Iterable[Dict[str, Any]]) -> List[Article]:",
+      "code": "def main(base_dir: str = \"data\", base_url: str = \"\") -> int:",
       "vars_in_scope": [
-        "art",
-        "out",
-        "raw"
+        "base",
+        "base_dir",
+        "base_url",
+        "client",
+        "local_nb",
+        "now",
+        "path",
+        "picked",
+        "remote_data",
+        "remote_nb",
+        "report",
+        "sample",
+        "tags_summary"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
       "kind": "before_return",
-      "line": 193,
-      "end_line": 193,
-      "function": "parse_articles",
+      "line": 251,
+      "end_line": 251,
+      "function": "main",
       "class_name": null,
-      "code": "return out",
+      "code": "return 1",
       "vars_in_scope": [
-        "art",
-        "out",
-        "raw"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 197,
-      "end_line": 197,
-      "function": "build_recommendations",
-      "class_name": null,
-      "code": "def build_recommendations(profile: Profile, catalog: RemoteCatalog) -> RecommendationSession:",
-      "vars_in_scope": [
-        "catalog",
-        "profile",
-        "raw",
-        "session",
-        "topics"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "before_return",
-      "line": 203,
-      "end_line": 203,
-      "function": "build_recommendations",
-      "class_name": null,
-      "code": "return session",
-      "vars_in_scope": [
-        "catalog",
-        "profile",
-        "raw",
-        "session",
-        "topics"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 207,
-      "end_line": 207,
-      "function": "write_summary",
-      "class_name": null,
-      "code": "def write_summary(path: Path, summary: Dict[str, Any]) -> bool:",
-      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "client",
+        "local_nb",
+        "now",
         "path",
-        "summary",
-        "tmp"
+        "picked",
+        "remote_data",
+        "remote_nb",
+        "report",
+        "sample",
+        "tags_summary"
       ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
+      "why": "before return",
+      "severity_hint": "INFO"
     },
     {
       "kind": "before_return",
-      "line": 211,
-      "end_line": 211,
-      "function": "write_summary",
+      "line": 253,
+      "end_line": 253,
+      "function": "main",
       "class_name": null,
-      "code": "return True",
+      "code": "return 0",
       "vars_in_scope": [
+        "base",
+        "base_dir",
+        "base_url",
+        "client",
+        "local_nb",
+        "now",
         "path",
-        "summary",
-        "tmp"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "except",
-      "line": 213,
-      "end_line": 213,
-      "function": "write_summary",
-      "class_name": null,
-      "code": "except ...",
-      "vars_in_scope": [
-        "path",
-        "summary",
-        "tmp"
-      ],
-      "why": "inside except",
-      "severity_hint": "ERROR"
-    },
-    {
-      "kind": "before_return",
-      "line": 213,
-      "end_line": 213,
-      "function": "write_summary",
-      "class_name": null,
-      "code": "return False",
-      "vars_in_scope": [
-        "path",
-        "summary",
-        "tmp"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 217,
-      "end_line": 217,
-      "function": "main",
-      "class_name": null,
-      "code": "def main(config_path: str = \"reco_config.json\") -> int:",
-      "vars_in_scope": [
-        "base_url",
-        "catalog",
-        "cfg",
-        "cfg_file",
-        "cfg_raw",
-        "config_path",
-        "profiles",
-        "profiles_path",
-        "retries",
-        "selected",
-        "session",
-        "summary",
-        "summary_path",
-        "user_id"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "before_return",
-      "line": 219,
-      "end_line": 219,
-      "function": "main",
-      "class_name": null,
-      "code": "return 1",
-      "vars_in_scope": [
-        "base_url",
-        "catalog",
-        "cfg",
-        "cfg_file",
-        "cfg_raw",
-        "config_path",
-        "profiles",
-        "profiles_path",
-        "retries",
-        "selected",
-        "session",
-        "summary",
-        "summary_path",
-        "user_id"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "except",
-      "line": 224,
-      "end_line": 224,
-      "function": "main",
-      "class_name": null,
-      "code": "except ...",
-      "vars_in_scope": [
-        "base_url",
-        "catalog",
-        "cfg",
-        "cfg_file",
-        "cfg_raw",
-        "config_path",
-        "profiles",
-        "profiles_path",
-        "retries",
-        "selected",
-        "session",
-        "summary",
-        "summary_path",
-        "user_id"
-      ],
-      "why": "inside except",
-      "severity_hint": "ERROR"
-    },
-    {
-      "kind": "before_return",
-      "line": 224,
-      "end_line": 224,
-      "function": "main",
-      "class_name": null,
-      "code": "return 1",
-      "vars_in_scope": [
-        "base_url",
-        "catalog",
-        "cfg",
-        "cfg_file",
-        "cfg_raw",
-        "config_path",
-        "profiles",
-        "profiles_path",
-        "retries",
-        "selected",
-        "session",
-        "summary",
-        "summary_path",
-        "user_id"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 234,
-      "end_line": 234,
-      "function": "main",
-      "class_name": null,
-      "code": "return 1",
-      "vars_in_scope": [
-        "base_url",
-        "catalog",
-        "cfg",
-        "cfg_file",
-        "cfg_raw",
-        "config_path",
-        "profiles",
-        "profiles_path",
-        "retries",
-        "selected",
-        "session",
-        "summary",
-        "summary_path",
-        "user_id"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 248,
-      "end_line": 248,
-      "function": "main",
-      "class_name": null,
-      "code": "return 1",
-      "vars_in_scope": [
-        "base_url",
-        "catalog",
-        "cfg",
-        "cfg_file",
-        "cfg_raw",
-        "config_path",
-        "profiles",
-        "profiles_path",
-        "retries",
-        "selected",
-        "session",
-        "summary",
-        "summary_path",
-        "user_id"
-      ],
-      "why": "before return",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "before_return",
-      "line": 252,
-      "end_line": 252,
-      "function": "main",
-      "class_name": null,
-      "code": "return 1",
-      "vars_in_scope": [
-        "base_url",
-        "catalog",
-        "cfg",
-        "cfg_file",
-        "cfg_raw",
-        "config_path",
-        "profiles",
-        "profiles_path",
-        "retries",
-        "selected",
-        "session",
-        "summary",
-        "summary_path",
-        "user_id"
+        "picked",
+        "remote_data",
+        "remote_nb",
+        "report",
+        "sample",
+        "tags_summary"
       ],
       "why": "before return",
       "severity_hint": "INFO"
@@ -1075,20 +989,19 @@
       "class_name": null,
       "code": "return 0",
       "vars_in_scope": [
+        "base",
+        "base_dir",
         "base_url",
-        "catalog",
-        "cfg",
-        "cfg_file",
-        "cfg_raw",
-        "config_path",
-        "profiles",
-        "profiles_path",
-        "retries",
-        "selected",
-        "session",
-        "summary",
-        "summary_path",
-        "user_id"
+        "client",
+        "local_nb",
+        "now",
+        "path",
+        "picked",
+        "remote_data",
+        "remote_nb",
+        "report",
+        "sample",
+        "tags_summary"
       ],
       "why": "before return",
       "severity_hint": "INFO"

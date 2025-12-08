@@ -1,0 +1,85 @@
+{
+  "file": "script35.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 19,
+      "level": "WARNING",
+      "message": "Random log at line 19 in popularity_score",
+      "kind": "return",
+      "function": "popularity_score"
+    },
+    {
+      "line": 20,
+      "level": "INFO",
+      "message": "Random log at line 20 in popularity_score",
+      "kind": "return",
+      "function": "popularity_score"
+    },
+    {
+      "line": 45,
+      "level": "ERROR",
+      "message": "Random log at line 45 in load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 47,
+      "level": "DEBUG",
+      "message": "Random log at line 47 in load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 52,
+      "level": "DEBUG",
+      "message": "Random log at line 52 in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 77,
+      "level": "DEBUG",
+      "message": "Random log at line 77 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 82,
+      "level": "ERROR",
+      "message": "Random log at line 82 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 86,
+      "level": "WARNING",
+      "message": "Random log at line 86 in load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 91,
+      "level": "ERROR",
+      "message": "Random log at line 91 in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 91,
+      "level": "WARNING",
+      "message": "Random log at line 91 in load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 168,
+      "level": "INFO",
+      "message": "Random log at line 168 in load_config",
+      "kind": "return",
+      "function": "load_config"
+    }
+  ]
+}

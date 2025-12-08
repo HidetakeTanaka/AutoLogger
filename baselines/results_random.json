@@ -1,140 +1,133 @@
 {
-  "file": "script100.py",
+  "file": "script50.py",
   "baseline_type": "random",
   "seed": 42,
   "probability": 0.3,
   "logs": [
     {
-      "line": 21,
+      "line": 25,
       "level": "WARNING",
-      "message": "Random log at line 21 in is_active",
-      "kind": "return",
-      "function": "is_active"
+      "message": "Random log at line 25 in is_recent",
+      "kind": "entry",
+      "function": "is_recent"
     },
     {
       "line": 24,
       "level": "INFO",
-      "message": "Random log at line 24 in is_active",
+      "message": "Random log at line 26 in is_recent",
       "kind": "return",
-      "function": "is_active"
+      "function": "is_recent"
     },
     {
-      "line": 31,
+      "line": 34,
       "level": "ERROR",
-      "message": "Random log at line 31 in to_dict",
+      "message": "Random log at line 34 in matches_query",
       "kind": "return",
-      "function": "to_dict"
+      "function": "matches_query"
     },
     {
-      "line": 41,
+      "line": 36,
       "level": "DEBUG",
-      "message": "Random log at line 41 in from_dict",
-      "kind": "entry",
+      "message": "Random log at line 36 in matches_query",
+      "kind": "return",
+      "function": "matches_query"
+    },
+    {
+      "line": 37,
+      "level": "DEBUG",
+      "message": "Random log at line 37 in matches_query",
+      "kind": "return",
+      "function": "matches_query"
+    },
+    {
+      "line": 65,
+      "level": "DEBUG",
+      "message": "Random log at line 65 in from_dict",
+      "kind": "return",
       "function": "from_dict"
     },
     {
-      "line": 44,
-      "level": "DEBUG",
-      "message": "Random log at line 44 in from_dict",
-      "kind": "return",
-      "function": "from_dict"
-    },
-    {
-      "line": 70,
-      "level": "DEBUG",
-      "message": "Random log at line 70 in matches_topics",
-      "kind": "entry",
-      "function": "matches_topics"
-    },
-    {
-      "line": 74,
+      "line": 75,
       "level": "ERROR",
-      "message": "Random log at line 74 in matches_topics",
-      "kind": "return",
-      "function": "matches_topics"
+      "message": "Random log at line 75 in add",
+      "kind": "entry",
+      "function": "add"
     },
     {
       "line": 78,
       "level": "WARNING",
-      "message": "Random log at line 78 in to_dict",
-      "kind": "entry",
-      "function": "to_dict"
+      "message": "Random log at line 78 in get",
+      "kind": "return",
+      "function": "get"
     },
     {
-      "line": 78,
+      "line": 81,
       "level": "ERROR",
-      "message": "Random log at line 78 in to_dict",
-      "kind": "return",
-      "function": "to_dict"
-    },
-    {
-      "line": 88,
-      "level": "WARNING",
-      "message": "Random log at line 88 in from_dict",
+      "message": "Random log at line 81 in all",
       "kind": "entry",
-      "function": "from_dict"
+      "function": "all"
     },
     {
-      "line": 138,
-      "level": "INFO",
-      "message": "Random log at line 138 in _url",
-      "kind": "return",
-      "function": "_url"
-    },
-    {
-      "line": 161,
+      "line": 81,
       "level": "WARNING",
-      "message": "Random log at line 161 in load_profiles",
+      "message": "Random log at line 81 in all",
       "kind": "return",
-      "function": "load_profiles"
+      "function": "all"
     },
     {
-      "line": 166,
-      "level": "WARNING",
-      "message": "Random log at line 166 in load_profiles",
-      "kind": "return",
-      "function": "load_profiles"
-    },
-    {
-      "line": 174,
+      "line": 131,
       "level": "INFO",
-      "message": "Random log at line 174 in load_profiles",
+      "message": "Random log at line 131 in fetch_remote_notebook",
       "kind": "return",
-      "function": "load_profiles"
+      "function": "fetch_remote_notebook"
     },
     {
-      "line": 184,
-      "level": "ERROR",
-      "message": "Random log at line 184 in save_profiles",
+      "line": 150,
+      "level": "WARNING",
+      "message": "Random log at line 150 in push_notebook",
       "kind": "except",
-      "function": "save_profiles"
+      "function": "push_notebook"
     },
     {
-      "line": 213,
+      "line": 150,
+      "level": "WARNING",
+      "message": "Random log at line 150 in push_notebook",
+      "kind": "return",
+      "function": "push_notebook"
+    },
+    {
+      "line": 156,
+      "level": "INFO",
+      "message": "Random log at line 156 in load_notebook",
+      "kind": "return",
+      "function": "load_notebook"
+    },
+    {
+      "line": 162,
+      "level": "ERROR",
+      "message": "Random log at line 162 in load_notebook",
+      "kind": "except",
+      "function": "load_notebook"
+    },
+    {
+      "line": 200,
       "level": "DEBUG",
-      "message": "Random log at line 213 in write_summary",
-      "kind": "except",
-      "function": "write_summary"
+      "message": "Random log at line 200 in merge_notebooks",
+      "kind": "return",
+      "function": "merge_notebooks"
     },
     {
-      "line": 219,
+      "line": 210,
       "level": "WARNING",
-      "message": "Random log at line 219 in main",
+      "message": "Random log at line 210 in pick_random_note",
       "kind": "return",
-      "function": "main"
+      "function": "pick_random_note"
     },
     {
-      "line": 224,
+      "line": 214,
       "level": "ERROR",
-      "message": "Random log at line 224 in main",
-      "kind": "except",
-      "function": "main"
-    },
-    {
-      "line": 252,
-      "level": "INFO",
-      "message": "Random log at line 252 in main",
-      "kind": "return",
+      "message": "Random log at line 214 in main",
+      "kind": "entry",
       "function": "main"
     }
   ]

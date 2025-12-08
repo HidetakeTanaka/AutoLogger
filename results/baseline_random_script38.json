@@ -1,0 +1,120 @@
+{
+  "file": "script38.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 20,
+      "level": "WARNING",
+      "message": "Random log at line 20 in is_valid",
+      "kind": "return",
+      "function": "is_valid"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Random log at line 21 in is_valid",
+      "kind": "return",
+      "function": "is_valid"
+    },
+    {
+      "line": 41,
+      "level": "ERROR",
+      "message": "Random log at line 41 in add_reading",
+      "kind": "return",
+      "function": "add_reading"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Random log at line 45 in latest_value",
+      "kind": "entry",
+      "function": "latest_value"
+    },
+    {
+      "line": 46,
+      "level": "DEBUG",
+      "message": "Random log at line 46 in latest_value",
+      "kind": "return",
+      "function": "latest_value"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Random log at line 67 in get_or_create",
+      "kind": "return",
+      "function": "get_or_create"
+    },
+    {
+      "line": 73,
+      "level": "ERROR",
+      "message": "Random log at line 73 in all_readings",
+      "kind": "return",
+      "function": "all_readings"
+    },
+    {
+      "line": 76,
+      "level": "WARNING",
+      "message": "Random log at line 76 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 80,
+      "level": "ERROR",
+      "message": "Random log at line 80 in load_config",
+      "kind": "entry",
+      "function": "load_config"
+    },
+    {
+      "line": 81,
+      "level": "WARNING",
+      "message": "Random log at line 81 in load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 115,
+      "level": "INFO",
+      "message": "Random log at line 115 in read_local_cache",
+      "kind": "return",
+      "function": "read_local_cache"
+    },
+    {
+      "line": 139,
+      "level": "WARNING",
+      "message": "Random log at line 139 in normalize_row",
+      "kind": "return",
+      "function": "normalize_row"
+    },
+    {
+      "line": 140,
+      "level": "WARNING",
+      "message": "Random log at line 140 in normalize_row",
+      "kind": "return",
+      "function": "normalize_row"
+    },
+    {
+      "line": 156,
+      "level": "INFO",
+      "message": "Random log at line 156 in compute_statistics",
+      "kind": "return",
+      "function": "compute_statistics"
+    },
+    {
+      "line": 162,
+      "level": "ERROR",
+      "message": "Random log at line 162 in compute_statistics",
+      "kind": "return",
+      "function": "compute_statistics"
+    },
+    {
+      "line": 216,
+      "level": "DEBUG",
+      "message": "Random log at line 216 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

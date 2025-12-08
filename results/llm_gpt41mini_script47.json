@@ -1,0 +1,209 @@
+{
+  "file": "script47.py",
+  "logs": [
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_discountable with now={now}\")"
+    },
+    {
+      "line": 29,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_query with query='{query}' for product {self}\")"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 57,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Creating Product from dict with product_id={pid}, name={name}, base_price={price}, tags={tags}, active={active}')"
+    },
+    {
+      "line": 59,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Product from dict with data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add method: product={product}, quantity={quantity}\")"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered total_price method of Cart class')"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing PricingClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with product_id={product_id}\")"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Generated URL for product_id {product_id}: {self.base_url}/price/{product_id}')"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_price with product_id={product_id}\")"
+    },
+    {
+      "line": 116,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch price for product_id {product_id} from {url} with request {req} and response body {body}')"
+    },
+    {
+      "line": 116,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Price fetch returned None for product_id={product_id} at url={url}')"
+    },
+    {
+      "line": 120,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch price for product_id={product_id} from {url} with data={data}')"
+    },
+    {
+      "line": 120,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Price fetch returned None for product_id={product_id} from url={url}')"
+    },
+    {
+      "line": 123,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'fetch_price returning None for product_id={product_id} from url={url}')"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched price for product_id {product_id}: {value}')"
+    },
+    {
+      "line": 127,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch price for product_id={product_id} from {url} with request {req} and response body {body}')"
+    },
+    {
+      "line": 127,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Price fetch failed for product_id={product_id}, returning None')"
+    },
+    {
+      "line": 131,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_products with path: {path}\")"
+    },
+    {
+      "line": 137,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load product from path {path} with data {data}', exc_info=True)"
+    },
+    {
+      "line": 143,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded {len(result)} products from {path}')"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_cart with path={path} and cart={cart}\")"
+    },
+    {
+      "line": 153,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save cart to {path} with temporary file {tmp}', exc_info=True)"
+    },
+    {
+      "line": 157,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save cart to {path} with temporary file {tmp}', exc_info=True)"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Applying discounts to {len(list(products))} products at {now}\")"
+    },
+    {
+      "line": 173,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning discounts: {discounts}')"
+    },
+    {
+      "line": 177,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_cart_total with cart containing {len(cart.items)} items and discounts: {discounts}\")"
+    },
+    {
+      "line": 184,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Computed cart total: {total} with discounts: {discounts} and rate: {rate}')"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting sync_remote_prices with {len(products)} products, max_updates={max_updates}\")"
+    },
+    {
+      "line": 198,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Sync completed with {updated} products updated out of {max_updates} max updates.')"
+    },
+    {
+      "line": 202,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_cart with cart containing {len(cart.items)} items and discounts: {discounts}\")"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Cart summary prepared with {cart.total_quantity()} items, total before: {total_before}, total after: {total_after}, savings rate: {savings_rate:.2%}\")"
+    },
+    {
+      "line": 217,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}, base_url={base_url}\")"
+    }
+  ]
+}

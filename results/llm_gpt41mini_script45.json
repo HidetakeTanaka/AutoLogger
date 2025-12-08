@@ -1,0 +1,161 @@
+{
+  "file": "script45.py",
+  "logs": [
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_anomalous with min_val={min_val}, max_val={max_val}\")"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Anomaly detected in sensor reading: value out of range ({min_val}, {max_val})')"
+    },
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_row with row data: {row}\")"
+    },
+    {
+      "line": 53,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create SensorReading from row {row} for device {device_id}', exc_info=True)"
+    },
+    {
+      "line": 64,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering update with reading: {reading}\")"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_stale with max_age_minutes={max_age_minutes} for device {self}\")"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing TelemetryClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 99,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_remote_config with device_id={device_id}\")"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning remote config data for device_id={device_id} with {len(data)} entries')"
+    },
+    {
+      "line": 111,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch remote config from {url} for device {device_id}', exc_info=True)"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_aggregate with payload keys: {list(payload.keys())}\")"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Push aggregate response code: {code}, success: {200 <= code < 300}')"
+    },
+    {
+      "line": 124,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push aggregate data to {url} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered parse_csv with path: {path}\")"
+    },
+    {
+      "line": 138,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Error parsing CSV file at path: {path}', exc_info=True)"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning {len(readings)} readings parsed from {path}')"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting aggregate_by_device with {len(list(readings))} readings\")"
+    },
+    {
+      "line": 148,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning aggregated data for {len(devices)} devices')"
+    },
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered detect_anomalies with readings count: {len(readings)}\")"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Detected {len(anomalies)} anomalies in readings with min_val={min_val} and max_val={max_val}')"
+    },
+    {
+      "line": 168,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_report with path={path}, report keys={list(report.keys())}, anomalies count={len(anomalies)}, devices count={len(devices)}\")"
+    },
+    {
+      "line": 181,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_config with path: {path}\")"
+    },
+    {
+      "line": 188,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
+    },
+    {
+      "line": 192,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_anomalies with {len(list(anomalies))} anomalies\")"
+    },
+    {
+      "line": 195,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Summarized anomaly counts: {counts}')"
+    },
+    {
+      "line": 199,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    }
+  ]
+}

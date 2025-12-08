@@ -1,0 +1,263 @@
+{
+  "file": "script34.py",
+  "logs": [
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.is_temperature"
+    },
+    {
+      "line": 18,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning temperature unit check result from Sensor.is_temperature"
+    },
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.to_dict"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning dict representation from Sensor.to_dict"
+    },
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Reading.exceeds"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning threshold comparison result from Reading.exceeds"
+    },
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Reading.to_tuple"
+    },
+    {
+      "line": 39,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning (sensor_id, value) tuple from Reading.to_tuple"
+    },
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorStore.**init**"
+    },
+    {
+      "line": 48,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorStore.load"
+    },
+    {
+      "line": 50,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from SensorStore.load"
+    },
+    {
+      "line": 55,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load sensors file in SensorStore.load"
+    },
+    {
+      "line": 56,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from SensorStore.load after load failure"
+    },
+    {
+      "line": 65,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse sensor data in SensorStore.load"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorStore.get"
+    },
+    {
+      "line": 70,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning sensor from SensorStore.get"
+    },
+    {
+      "line": 73,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorStore.all"
+    },
+    {
+      "line": 73,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of sensors from SensorStore.all"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_readings_csv"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning readings from load_readings_csv"
+    },
+    {
+      "line": 89,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to open readings CSV in load_readings_csv"
+    },
+    {
+      "line": 92,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse readings CSV in load_readings_csv"
+    },
+    {
+      "line": 92,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning readings from load_readings_csv after parse error"
+    },
+    {
+      "line": 93,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning readings from load_readings_csv after successful load"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering group_by_sensor"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning readings grouped by sensor in group_by_sensor"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_statistics"
+    },
+    {
+      "line": 105,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning default statistics for empty values in compute_statistics"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed statistics in compute_statistics"
+    },
+    {
+      "line": 113,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering find_alarms"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning alarms list from find_alarms"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering export_alarms"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering export_stats"
+    },
+    {
+      "line": 145,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_config"
+    },
+    {
+      "line": 146,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty config from load_config"
+    },
+    {
+      "line": 149,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning loaded config from load_config"
+    },
+    {
+      "line": 151,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load config in load_config"
+    },
+    {
+      "line": 151,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty config from load_config after error"
+    },
+    {
+      "line": 155,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_sensors"
+    },
+    {
+      "line": 166,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning sensor summary from summarize_sensors"
+    },
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 194,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code 1 from main"
+    },
+    {
+      "line": 195,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code 0 from main"
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "file": "scripts/script29.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 9,
+      "end_line": 9,
+      "function": "__init__",
+      "class_name": "DataAnalyzer",
+      "code": "def __init__(self, data: List[Dict[str, Any]]):",
+      "vars_in_scope": [
+        "data",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 12,
+      "end_line": 12,
+      "function": "filter_by_value",
+      "class_name": "DataAnalyzer",
+      "code": "def filter_by_value(self, threshold: int) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 13,
+      "end_line": 13,
+      "function": "filter_by_value",
+      "class_name": "DataAnalyzer",
+      "code": "return [item for item in self.data if item['value'] >= threshold]",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 16,
+      "end_line": 16,
+      "function": "group_by_category",
+      "class_name": "DataAnalyzer",
+      "code": "def group_by_category(self) -> Dict[str, List[Dict[str, Any]]]:",
+      "vars_in_scope": [
+        "category",
+        "grouped",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "group_by_category",
+      "class_name": "DataAnalyzer",
+      "code": "return grouped",
+      "vars_in_scope": [
+        "category",
+        "grouped",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 26,
+      "end_line": 26,
+      "function": "calculate_average",
+      "class_name": "DataAnalyzer",
+      "code": "def calculate_average(self, category: str) -> float:",
+      "vars_in_scope": [
+        "category",
+        "category_data",
+        "self",
+        "total"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "calculate_average",
+      "class_name": "DataAnalyzer",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "category",
+        "category_data",
+        "self",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "calculate_average",
+      "class_name": "DataAnalyzer",
+      "code": "return total / len(category_data)",
+      "vars_in_scope": [
+        "category",
+        "category_data",
+        "self",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 37,
+      "end_line": 37,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "def read_json(file_path: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 40,
+      "end_line": 40,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return json.load(file)",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 42,
+      "end_line": 42,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 42,
+      "end_line": 42,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return []",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 44,
+      "end_line": 44,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 44,
+      "end_line": 44,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return []",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 48,
+      "end_line": 48,
+      "function": "write_json",
+      "class_name": "FileManager",
+      "code": "def write_json(file_path: str, data: List[Dict[str, Any]]) -> None:",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 53,
+      "end_line": 53,
+      "function": "write_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 59,
+      "end_line": 59,
+      "function": "fetch_data",
+      "class_name": "APIHandler",
+      "code": "def fetch_data(url: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 63,
+      "end_line": 63,
+      "function": "fetch_data",
+      "class_name": "APIHandler",
+      "code": "return response.json()",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 65,
+      "end_line": 65,
+      "function": "fetch_data",
+      "class_name": "APIHandler",
+      "code": "except ...",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 65,
+      "end_line": 65,
+      "function": "fetch_data",
+      "class_name": "APIHandler",
+      "code": "return []",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 69,
+      "end_line": 69,
+      "function": "process_and_save_data",
+      "class_name": null,
+      "code": "def process_and_save_data(input_file: str, output_file: str, threshold: int, api_url: str) -> None:",
+      "vars_in_scope": [
+        "analyzer",
+        "api_data",
+        "api_url",
+        "combined_data",
+        "file_data",
+        "filtered_data",
+        "grouped_data",
+        "input_file",
+        "output_file",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 72,
+      "end_line": 72,
+      "function": "process_and_save_data",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "analyzer",
+        "api_data",
+        "api_url",
+        "combined_data",
+        "file_data",
+        "filtered_data",
+        "grouped_data",
+        "input_file",
+        "output_file",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 85,
+      "end_line": 85,
+      "function": "analyze_category_data",
+      "class_name": null,
+      "code": "def analyze_category_data(input_file: str, category: str) -> float:",
+      "vars_in_scope": [
+        "analyzer",
+        "category",
+        "file_data",
+        "input_file"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 88,
+      "end_line": 88,
+      "function": "analyze_category_data",
+      "class_name": null,
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "analyzer",
+        "category",
+        "file_data",
+        "input_file"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 91,
+      "end_line": 91,
+      "function": "analyze_category_data",
+      "class_name": null,
+      "code": "return analyzer.calculate_average(category)",
+      "vars_in_scope": [
+        "analyzer",
+        "category",
+        "file_data",
+        "input_file"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 95,
+      "end_line": 95,
+      "function": "get_data_from_url",
+      "class_name": null,
+      "code": "def get_data_from_url(url: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 96,
+      "end_line": 96,
+      "function": "get_data_from_url",
+      "class_name": null,
+      "code": "return APIHandler.fetch_data(url)",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 100,
+      "end_line": 100,
+      "function": "main",
+      "class_name": null,
+      "code": "def main() -> None:",
+      "vars_in_scope": [
+        "api_url",
+        "average_value",
+        "category",
+        "input_file",
+        "output_file",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    }
+  ]
+}

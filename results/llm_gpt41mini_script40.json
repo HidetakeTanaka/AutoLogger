@@ -1,0 +1,179 @@
+{
+  "file": "script40.py",
+  "logs": [
+    {
+      "line": 19,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Checking stock for item {self} with requested quantity {quantity}\")"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Checking stock for item {self}: requested {quantity}, available {self.stock}, in stock: {self.stock >= quantity}')"
+    },
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering reserve method with quantity={quantity} for item id={self.id}\")"
+    },
+    {
+      "line": 25,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Reservation failed for item {self} with quantity {quantity}')"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Reserved {quantity} units of item {self}.')"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering total() with item: {item}\")"
+    },
+    {
+      "line": 59,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering total_amount with {len(items)} items\")"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_item with item: {item}\")"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Inventory.get with item_id={item_id}\")"
+    },
+    {
+      "line": 93,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering can_fulfil with order id: {order.id}\")"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering apply_order with order: {order}\")"
+    },
+    {
+      "line": 118,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_inventory with path: {path}\")"
+    },
+    {
+      "line": 124,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load inventory from {path} for item {item}', exc_info=True)"
+    },
+    {
+      "line": 136,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load inventory from {path} with item {item}', exc_info=True)"
+    },
+    {
+      "line": 138,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Inventory loaded with {len(inv)} items from {path}')"
+    },
+    {
+      "line": 142,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_orders with path={path}\")"
+    },
+    {
+      "line": 148,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load order {order_id} for customer {customer_id} with item {item_id} at {created_at}', exc_info=True)"
+    },
+    {
+      "line": 161,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load order {order_id} for customer {customer_id} at {created_at}', exc_info=True)"
+    },
+    {
+      "line": 167,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_inventory with path={path} and inventory items count={len(inventory)}\")"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_orders with {len(list(orders))} orders and inventory size {len(inventory)}\")"
+    },
+    {
+      "line": 189,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered find_high_value_orders with threshold={threshold}\")"
+    },
+    {
+      "line": 194,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Found {len(result)} high value orders above threshold {threshold}')"
+    },
+    {
+      "line": 198,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered group_orders_by_customer with {len(list(orders))} orders\")"
+    },
+    {
+      "line": 201,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning grouped orders by customer with {len(grouped)} customers and {len(orders)} total orders')"
+    },
+    {
+      "line": 205,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered export_report with path={path}, summary keys={list(summary.keys())}, high_value count={len(high_value)}\")"
+    },
+    {
+      "line": 215,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_config with path: {path}\")"
+    },
+    {
+      "line": 219,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Configuration loaded successfully from {path}')"
+    },
+    {
+      "line": 221,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
+    },
+    {
+      "line": 225,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"
+    }
+  ]
+}

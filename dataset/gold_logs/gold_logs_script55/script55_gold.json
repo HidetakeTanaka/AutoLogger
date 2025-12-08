@@ -1,0 +1,96 @@
+{
+  "file": "script55.py",
+  "logs": [
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.from_dict"
+    },
+    {
+      "line": 61,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse book data in Book.from_dict"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryClient.fetch_remote"
+    },
+    {
+      "line": 117,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed response from LibraryClient.fetch_remote"
+    },
+    {
+      "line": 119,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch remote library in LibraryClient.fetch_remote"
+    },
+    {
+      "line": 123,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_library"
+    },
+    {
+      "line": 127,
+      "kind": "exception",
+      "level": "WARNING",
+      "message": "Failed to load library, returning empty local library in load_library"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_library"
+    },
+    {
+      "line": 139,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write temporary file in save_library"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning library summary from summarize_library"
+    },
+    {
+      "line": 182,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_remote_library"
+    },
+    {
+      "line": 190,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning merged library from merge_remote_library"
+    },
+    {
+      "line": 194,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Starting library processing in main"
+    },
+    {
+      "line": 209,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write summary report in main"
+    },
+    {
+      "line": 209,
+      "kind": "return",
+      "level": "ERROR",
+      "message": "Exiting with status 1 in main"
+    }
+  ]
+}
+

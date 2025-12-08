@@ -1,0 +1,134 @@
+{
+  "file": "script40.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 20,
+      "level": "WARNING",
+      "message": "Random log at line 20 in is_in_stock",
+      "kind": "return",
+      "function": "is_in_stock"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Random log at line 21 in is_in_stock",
+      "kind": "return",
+      "function": "is_in_stock"
+    },
+    {
+      "line": 30,
+      "level": "ERROR",
+      "message": "Random log at line 30 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 30,
+      "level": "DEBUG",
+      "message": "Random log at line 30 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Random log at line 45 in total",
+      "kind": "entry",
+      "function": "total"
+    },
+    {
+      "line": 68,
+      "level": "DEBUG",
+      "message": "Random log at line 68 in is_open",
+      "kind": "return",
+      "function": "is_open"
+    },
+    {
+      "line": 79,
+      "level": "ERROR",
+      "message": "Random log at line 79 in get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 82,
+      "level": "WARNING",
+      "message": "Random log at line 82 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 82,
+      "level": "ERROR",
+      "message": "Random log at line 82 in all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 85,
+      "level": "WARNING",
+      "message": "Random log at line 85 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 119,
+      "level": "INFO",
+      "message": "Random log at line 119 in load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 148,
+      "level": "WARNING",
+      "message": "Random log at line 148 in load_orders",
+      "kind": "return",
+      "function": "load_orders"
+    },
+    {
+      "line": 161,
+      "level": "WARNING",
+      "message": "Random log at line 161 in load_orders",
+      "kind": "except",
+      "function": "load_orders"
+    },
+    {
+      "line": 173,
+      "level": "INFO",
+      "message": "Random log at line 173 in summarize_orders",
+      "kind": "entry",
+      "function": "summarize_orders"
+    },
+    {
+      "line": 189,
+      "level": "ERROR",
+      "message": "Random log at line 189 in find_high_value_orders",
+      "kind": "entry",
+      "function": "find_high_value_orders"
+    },
+    {
+      "line": 221,
+      "level": "DEBUG",
+      "message": "Random log at line 221 in load_config",
+      "kind": "except",
+      "function": "load_config"
+    },
+    {
+      "line": 234,
+      "level": "WARNING",
+      "message": "Random log at line 234 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 260,
+      "level": "ERROR",
+      "message": "Random log at line 260 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

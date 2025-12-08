@@ -1,0 +1,245 @@
+{
+  "file": "script35.py",
+  "logs": [
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.popularity_score"
+    },
+    {
+      "line": 19,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning likes-based popularity score in Article.popularity_score"
+    },
+    {
+      "line": 20,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning percentage popularity score in Article.popularity_score"
+    },
+    {
+      "line": 23,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.to_dict"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning dict representation from Article.to_dict"
+    },
+    {
+      "line": 41,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ArticleStore.**init**"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ArticleStore.load"
+    },
+    {
+      "line": 47,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from ArticleStore.load"
+    },
+    {
+      "line": 52,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load articles file in ArticleStore.load"
+    },
+    {
+      "line": 53,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from ArticleStore.load after load failure"
+    },
+    {
+      "line": 63,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse article data in ArticleStore.load"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ArticleStore.save"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ArticleStore.get"
+    },
+    {
+      "line": 74,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning article from ArticleStore.get"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ArticleStore.all"
+    },
+    {
+      "line": 77,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of articles from ArticleStore.all"
+    },
+    {
+      "line": 82,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserHistoryStore.**init**"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserHistoryStore.load"
+    },
+    {
+      "line": 86,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty history mapping from UserHistoryStore.load"
+    },
+    {
+      "line": 91,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load user history file in UserHistoryStore.load"
+    },
+    {
+      "line": 91,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty history mapping from UserHistoryStore.load after error"
+    },
+    {
+      "line": 99,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed user history mapping from UserHistoryStore.load"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering sort_articles_by_popularity"
+    },
+    {
+      "line": 103,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning articles sorted by popularity in sort_articles_by_popularity"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering build_recommendations_for_user"
+    },
+    {
+      "line": 117,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recommendations for user in build_recommendations_for_user"
+    },
+    {
+      "line": 125,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering build_recommendations"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning all user recommendations from build_recommendations"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering export_recommendations"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_category_stats"
+    },
+    {
+      "line": 157,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning category statistics from compute_category_stats"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering export_category_stats"
+    },
+    {
+      "line": 167,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_config"
+    },
+    {
+      "line": 168,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty config from load_config"
+    },
+    {
+      "line": 171,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning loaded config from load_config"
+    },
+    {
+      "line": 173,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load config in load_config"
+    },
+    {
+      "line": 173,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty config from load_config after error"
+    },
+    {
+      "line": 177,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 187,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code 1 from main"
+    },
+    {
+      "line": 203,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code 0 from main"
+    }
+  ]
+}

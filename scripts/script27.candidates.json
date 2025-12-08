@@ -1,0 +1,429 @@
+{
+  "file": "scripts/script27.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 9,
+      "end_line": 9,
+      "function": "__init__",
+      "class_name": "Customer",
+      "code": "def __init__(self, name: str, email: str, age: int, address: str) -> None:",
+      "vars_in_scope": [
+        "address",
+        "age",
+        "email",
+        "name",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 15,
+      "end_line": 15,
+      "function": "update_email",
+      "class_name": "Customer",
+      "code": "def update_email(self, new_email: str) -> None:",
+      "vars_in_scope": [
+        "new_email",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 18,
+      "end_line": 18,
+      "function": "get_customer_info",
+      "class_name": "Customer",
+      "code": "def get_customer_info(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 18,
+      "end_line": 18,
+      "function": "get_customer_info",
+      "class_name": "Customer",
+      "code": "return {'name': self.name, 'email': self.email, 'age': self.age, 'address': self.address}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 23,
+      "end_line": 23,
+      "function": "__init__",
+      "class_name": "Order",
+      "code": "def __init__(self, order_id: str, customer: Customer, items: List[str], total_amount: float) -> None:",
+      "vars_in_scope": [
+        "customer",
+        "items",
+        "order_id",
+        "self",
+        "total_amount"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 29,
+      "end_line": 29,
+      "function": "add_item",
+      "class_name": "Order",
+      "code": "def add_item(self, item: str) -> None:",
+      "vars_in_scope": [
+        "item",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 32,
+      "end_line": 32,
+      "function": "get_order_summary",
+      "class_name": "Order",
+      "code": "def get_order_summary(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "get_order_summary",
+      "class_name": "Order",
+      "code": "return {'order_id': self.order_id, 'customer': self.customer.get_customer_info(), 'items': self.items, 'total_amount': self.total_amount}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 38,
+      "end_line": 38,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "def read_json(file_path: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 40,
+      "end_line": 40,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return json.load(file)",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 42,
+      "end_line": 42,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 42,
+      "end_line": 42,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return []",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 46,
+      "end_line": 46,
+      "function": "write_json",
+      "class_name": "FileManager",
+      "code": "def write_json(file_path: str, data: List[Dict[str, Any]]) -> None:",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 50,
+      "end_line": 50,
+      "function": "write_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 56,
+      "end_line": 56,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "def fetch_data(url: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 59,
+      "end_line": 59,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "return response.json()",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 61,
+      "end_line": 61,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 61,
+      "end_line": 61,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 65,
+      "end_line": 65,
+      "function": "load_customers",
+      "class_name": null,
+      "code": "def load_customers(file_path: str) -> List[Customer]:",
+      "vars_in_scope": [
+        "customer",
+        "customer_data",
+        "customers",
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 70,
+      "end_line": 70,
+      "function": "load_customers",
+      "class_name": null,
+      "code": "return customers",
+      "vars_in_scope": [
+        "customer",
+        "customer_data",
+        "customers",
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "save_customers",
+      "class_name": null,
+      "code": "def save_customers(customers: List[Customer], file_path: str) -> None:",
+      "vars_in_scope": [
+        "customer_data",
+        "customers",
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 79,
+      "end_line": 79,
+      "function": "create_order",
+      "class_name": null,
+      "code": "def create_order(customer: Customer, items: List[str], total_amount: float) -> Order:",
+      "vars_in_scope": [
+        "customer",
+        "items",
+        "order",
+        "order_id",
+        "total_amount"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 81,
+      "end_line": 81,
+      "function": "create_order",
+      "class_name": null,
+      "code": "return order",
+      "vars_in_scope": [
+        "customer",
+        "items",
+        "order",
+        "order_id",
+        "total_amount"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 85,
+      "end_line": 85,
+      "function": "update_customer_email",
+      "class_name": null,
+      "code": "def update_customer_email(customers: List[Customer], name: str, new_email: str) -> bool:",
+      "vars_in_scope": [
+        "customers",
+        "name",
+        "new_email"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 88,
+      "end_line": 88,
+      "function": "update_customer_email",
+      "class_name": null,
+      "code": "return True",
+      "vars_in_scope": [
+        "customers",
+        "name",
+        "new_email"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 89,
+      "end_line": 89,
+      "function": "update_customer_email",
+      "class_name": null,
+      "code": "return False",
+      "vars_in_scope": [
+        "customers",
+        "name",
+        "new_email"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 93,
+      "end_line": 93,
+      "function": "fetch_api_data",
+      "class_name": null,
+      "code": "def fetch_api_data(url: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 93,
+      "end_line": 93,
+      "function": "fetch_api_data",
+      "class_name": null,
+      "code": "return APIClient.fetch_data(url)",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 97,
+      "end_line": 97,
+      "function": "main",
+      "class_name": null,
+      "code": "def main() -> None:",
+      "vars_in_scope": [
+        "api_data",
+        "api_url",
+        "customer",
+        "customers",
+        "input_file",
+        "items",
+        "order",
+        "output_file",
+        "total_amount",
+        "updated"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    }
+  ]
+}

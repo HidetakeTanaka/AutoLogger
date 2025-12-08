@@ -1,0 +1,137 @@
+{
+  "file": "script5.py",
+  "logs": [
+    {
+      "line": 6,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing Product with name={name}, price={price}, quantity={quantity}, category={category}\")"
+    },
+    {
+      "line": 12,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering update_quantity with quantity={quantity} for product id={self.id}\")"
+    },
+    {
+      "line": 15,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering update_price with price={price}\")"
+    },
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_product_info for product id: {self.id}\")"
+    },
+    {
+      "line": 31,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_product with product: {product}\")"
+    },
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering remove_product with name={name}\")"
+    },
+    {
+      "line": 37,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Product \"{name}\" successfully removed from inventory.')"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Failed to remove product: {name} not found in inventory.')"
+    },
+    {
+      "line": 41,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered get_inventory_value method of Inventory class')"
+    },
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_products_by_category with category={category}\")"
+    },
+    {
+      "line": 44,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Retrieving products in category: {category}')"
+    },
+    {
+      "line": 50,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering read_json with file_path={file_path}\")"
+    },
+    {
+      "line": 52,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully read JSON from {file_path}')"
+    },
+    {
+      "line": 54,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to read JSON file at {file_path}', exc_info=True)"
+    },
+    {
+      "line": 59,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering write_json with file_path={file_path} and data of length={len(data)}\")"
+    },
+    {
+      "line": 63,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to write JSON data to {file_path}', exc_info=True)"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering create_product with name={name}, price={price}, quantity={quantity}, category={category}\")"
+    },
+    {
+      "line": 67,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Creating product with name={name}, price={price}, quantity={quantity}, category={category}')"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered create_inventory function')"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_data with url: {url}\")"
+    },
+    {
+      "line": 79,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch data from {url} with response: {response}')"
+    },
+    {
+      "line": 84,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered main function')"
+    }
+  ]
+}

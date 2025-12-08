@@ -1,0 +1,90 @@
+{
+  "file": "script56.py",
+  "logs": [
+    {
+      "line": 51,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.from_dict"
+    },
+    {
+      "line": 66,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse task data in Task.from_dict"
+    },
+    {
+      "line": 117,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.fetch_remote"
+    },
+    {
+      "line": 124,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch remote tasks for list_id=%s in SyncClient.fetch_remote"
+    },
+    {
+      "line": 127,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.push_update"
+    },
+    {
+      "line": 134,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to push update for list_id=%s in SyncClient.push_update"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_task_list"
+    },
+    {
+      "line": 142,
+      "kind": "exception",
+      "level": "WARNING",
+      "message": "Failed to load tasks from %s, using empty list in load_task_list"
+    },
+    {
+      "line": 148,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_task_list"
+    },
+    {
+      "line": 154,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write tasks to %s in save_task_list"
+    },
+    {
+      "line": 167,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning task list summary from summarize_task_list"
+    },
+    {
+      "line": 221,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_remote_tasks"
+    },
+    {
+      "line": 233,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Starting task synchronization run in main"
+    },
+    {
+      "line": 248,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write tasks_report.json in main"
+    }
+  ]
+}
+

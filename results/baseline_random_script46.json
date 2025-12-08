@@ -1,0 +1,141 @@
+{
+  "file": "script46.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 32,
+      "level": "ERROR",
+      "message": "Random log at line 32 in matches_query",
+      "kind": "return",
+      "function": "matches_query"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 69,
+      "level": "DEBUG",
+      "message": "Random log at line 69 in add",
+      "kind": "return",
+      "function": "add"
+    },
+    {
+      "line": 76,
+      "level": "ERROR",
+      "message": "Random log at line 76 in get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 79,
+      "level": "WARNING",
+      "message": "Random log at line 79 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 79,
+      "level": "ERROR",
+      "message": "Random log at line 79 in all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 82,
+      "level": "WARNING",
+      "message": "Random log at line 82 in recent",
+      "kind": "entry",
+      "function": "recent"
+    },
+    {
+      "line": 121,
+      "level": "INFO",
+      "message": "Random log at line 121 in fetch_headlines",
+      "kind": "return",
+      "function": "fetch_headlines"
+    },
+    {
+      "line": 142,
+      "level": "WARNING",
+      "message": "Random log at line 142 in load_config",
+      "kind": "entry",
+      "function": "load_config"
+    },
+    {
+      "line": 143,
+      "level": "WARNING",
+      "message": "Random log at line 143 in load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 148,
+      "level": "INFO",
+      "message": "Random log at line 148 in load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 154,
+      "level": "ERROR",
+      "message": "Random log at line 154 in load_local_articles",
+      "kind": "return",
+      "function": "load_local_articles"
+    },
+    {
+      "line": 186,
+      "level": "DEBUG",
+      "message": "Random log at line 186 in filter_articles_by_score",
+      "kind": "return",
+      "function": "filter_articles_by_score"
+    },
+    {
+      "line": 197,
+      "level": "WARNING",
+      "message": "Random log at line 197 in summarize_sources",
+      "kind": "entry",
+      "function": "summarize_sources"
+    },
+    {
+      "line": 207,
+      "level": "ERROR",
+      "message": "Random log at line 207 in summarize_sources",
+      "kind": "return",
+      "function": "summarize_sources"
+    },
+    {
+      "line": 235,
+      "level": "INFO",
+      "message": "Random log at line 235 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

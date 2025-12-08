@@ -1,0 +1,388 @@
+{
+  "file": "script48.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering WorkoutSession.is_recent"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "WorkoutSession.is_recent returning False because session is not within recent window"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "WorkoutSession.is_recent returning result based on timestamp cutoff"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering WorkoutSession.matches_goal"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "WorkoutSession.matches_goal returning True based on workout kind match"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "WorkoutSession.matches_goal returning True based on goal match in session metadata"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "WorkoutSession.matches_goal returning True because goal matches at least one tag"
+    },
+
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering WorkoutSession.to_dict"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "WorkoutSession.to_dict returning serialized session dictionary"
+    },
+
+    {
+      "line": 46,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering WorkoutSession.from_dict"
+    },
+    {
+      "line": 49,
+      "kind": "return",
+      "level": "INFO",
+      "message": "WorkoutSession.from_dict created WorkoutSession instance from raw dictionary"
+    },
+    {
+      "line": 58,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "WorkoutSession.from_dict failed to parse session payload"
+    },
+    {
+      "line": 58,
+      "kind": "return",
+      "level": "INFO",
+      "message": "WorkoutSession.from_dict returning None after parse error"
+    },
+
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.add_session"
+    },
+
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.recent_sessions"
+    },
+    {
+      "line": 72,
+      "kind": "return",
+      "level": "INFO",
+      "message": "UserProfile.recent_sessions returning list of recent workout sessions"
+    },
+
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.total_calories"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "UserProfile.total_calories returning total calories over recent sessions"
+    },
+
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.to_dict"
+    },
+    {
+      "line": 78,
+      "kind": "return",
+      "level": "INFO",
+      "message": "UserProfile.to_dict returning serialized user profile with sessions"
+    },
+
+    {
+      "line": 87,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.from_dict"
+    },
+    {
+      "line": 94,
+      "kind": "return",
+      "level": "INFO",
+      "message": "UserProfile.from_dict created UserProfile instance from raw dictionary"
+    },
+    {
+      "line": 101,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "UserProfile.from_dict failed to parse user profile payload"
+    },
+    {
+      "line": 101,
+      "kind": "return",
+      "level": "INFO",
+      "message": "UserProfile.from_dict returning None after parse error"
+    },
+
+    {
+      "line": 106,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing RecommendationClient with base URL and timeout"
+    },
+
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient._url"
+    },
+    {
+      "line": 110,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RecommendationClient._url returning goal-specific recommendations endpoint URL"
+    },
+
+    {
+      "line": 113,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.fetch_recommendations"
+    },
+    {
+      "line": 114,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RecommendationClient.fetch_recommendations returning empty list because goal or base URL is not configured"
+    },
+    {
+      "line": 121,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "RecommendationClient.fetch_recommendations encountered an exception while performing HTTP request"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RecommendationClient.fetch_recommendations returning empty list after request failure"
+    },
+    {
+      "line": 125,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "RecommendationClient.fetch_recommendations encountered an exception while parsing response JSON"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RecommendationClient.fetch_recommendations returning empty list after JSON parse error"
+    },
+    {
+      "line": 127,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RecommendationClient.fetch_recommendations returning filtered list of recommendation dictionaries"
+    },
+
+    {
+      "line": 131,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_profiles"
+    },
+    {
+      "line": 132,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_profiles returning empty profile mapping because file does not exist or is empty"
+    },
+    {
+      "line": 137,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_profiles failed to load or parse profiles file"
+    },
+    {
+      "line": 137,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_profiles returning empty profile mapping after exception"
+    },
+    {
+      "line": 143,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_profiles returning mapping of user IDs to UserProfile instances"
+    },
+
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_profiles"
+    },
+    {
+      "line": 154,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "save_profiles encountered an exception while writing profiles to temporary file"
+    },
+    {
+      "line": 158,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "save_profiles encountered an exception while moving temporary file into place"
+    },
+
+    {
+      "line": 162,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering choose_next_session"
+    },
+    {
+      "line": 164,
+      "kind": "return",
+      "level": "INFO",
+      "message": "choose_next_session returning None because profile has no recent sessions"
+    },
+    {
+      "line": 169,
+      "kind": "return",
+      "level": "INFO",
+      "message": "choose_next_session returning None because no candidate sessions matched goal"
+    },
+    {
+      "line": 170,
+      "kind": "return",
+      "level": "INFO",
+      "message": "choose_next_session returning randomly selected suggested session"
+    },
+
+    {
+      "line": 174,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_sessions"
+    },
+    {
+      "line": 176,
+      "kind": "return",
+      "level": "INFO",
+      "message": "summarize_sessions returning empty summary because there are no sessions"
+    },
+    {
+      "line": 179,
+      "kind": "return",
+      "level": "INFO",
+      "message": "summarize_sessions returning count, total minutes, and average calories over sessions"
+    },
+
+    {
+      "line": 187,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_config"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning configuration loaded from JSON file"
+    },
+    {
+      "line": 191,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_config failed to load or parse configuration file"
+    },
+    {
+      "line": 191,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning empty configuration after error"
+    },
+
+    {
+      "line": 195,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ensure_sample_profile"
+    },
+    {
+      "line": 196,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ensure_sample_profile returning early because sample profile already exists or cannot be created"
+    },
+
+    {
+      "line": 221,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main for workout recommendation workflow"
+    },
+    {
+      "line": 231,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 due to missing or invalid configuration"
+    },
+    {
+      "line": 236,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 because profiles or recommendations could not be processed"
+    },
+    {
+      "line": 256,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "main caught unexpected exception during workout recommendation run"
+    },
+    {
+      "line": 256,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 after handling unexpected exception"
+    },
+    {
+      "line": 258,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successfully generating workout report and suggestion"
+    }
+  ]
+}

@@ -2,137 +2,118 @@
   "file": "script53.py",
   "logs": [
     {
-      "candidate_id": 0,
-      "lineno": 22,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering is_recent\")"
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering is_recent"
     },
     {
-      "candidate_id": 9,
-      "lineno": 35,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering to_dict for Product\")"
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering to_dict for Product"
     },
     {
-      "candidate_id": 14,
-      "lineno": 45,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering Product.from_dict\")"
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.from_dict"
     },
     {
-      "candidate_id": 16,
-      "lineno": 56,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.ERROR(\"exception in Product.from_dict\")"
+      "line": 56,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to execute Product.from_dict"
     },
     {
-      "candidate_id": 18,
-      "lineno": 65,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering add_product\")"
+      "line": 65,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering add_product"
     },
     {
-      "candidate_id": 24,
-      "lineno": 78,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering total_value\")"
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering total_value"
     },
     {
-      "candidate_id": 29,
-      "lineno": 88,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering Inventory.from_dict\")"
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.from_dict"
     },
     {
-      "candidate_id": 33,
-      "lineno": 98,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering PricingClient.__init__\")"
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PricingClient.__init__"
     },
     {
-      "candidate_id": 35,
-      "lineno": 102,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering _url\")"
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering _url"
     },
     {
-      "candidate_id": 37,
-      "lineno": 105,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering fetch_remote_prices\")"
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_remote_prices"
     },
     {
-      "candidate_id": 41,
-      "lineno": 117,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.ERROR(\"exception in fetch_remote_prices\")"
+      "line": 117,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch remote prices"
     },
     {
-      "candidate_id": 43,
-      "lineno": 122,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering load_inventory\")"
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_inventory"
     },
     {
-      "candidate_id": 46,
-      "lineno": 129,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.ERROR(\"exception in load_inventory\")"
+      "line": 129,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load inventory"
     },
     {
-      "candidate_id": 48,
-      "lineno": 133,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering save_inventory\")"
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_inventory"
     },
     {
-      "candidate_id": 52,
-      "lineno": 146,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering apply_price_updates\")"
+      "line": 146,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering apply_price_updates"
     },
     {
-      "candidate_id": 58,
-      "lineno": 159,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering summarize_inventory\")"
+      "line": 159,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_inventory"
     },
     {
-      "candidate_id": 64,
-      "lineno": 173,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering pick_random_product\")"
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering pick_random_product"
     },
     {
-      "candidate_id": 68,
-      "lineno": 185,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.DEBUG(\"entering main\")"
+      "line": 185,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
     },
     {
-      "candidate_id": 70,
-      "lineno": 204,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.ERROR(\"exception in main\")"
+      "line": 204,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
     }
   ]
 }

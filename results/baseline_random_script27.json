@@ -1,0 +1,78 @@
+{
+  "file": "script27.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 15,
+      "level": "WARNING",
+      "message": "Random log at line 15 in update_email",
+      "kind": "entry",
+      "function": "update_email"
+    },
+    {
+      "line": 18,
+      "level": "INFO",
+      "message": "Random log at line 18 in get_customer_info",
+      "kind": "entry",
+      "function": "get_customer_info"
+    },
+    {
+      "line": 32,
+      "level": "ERROR",
+      "message": "Random log at line 32 in get_order_summary",
+      "kind": "entry",
+      "function": "get_order_summary"
+    },
+    {
+      "line": 32,
+      "level": "DEBUG",
+      "message": "Random log at line 32 in get_order_summary",
+      "kind": "return",
+      "function": "get_order_summary"
+    },
+    {
+      "line": 38,
+      "level": "DEBUG",
+      "message": "Random log at line 38 in read_json",
+      "kind": "entry",
+      "function": "read_json"
+    },
+    {
+      "line": 56,
+      "level": "DEBUG",
+      "message": "Random log at line 56 in fetch_data",
+      "kind": "entry",
+      "function": "fetch_data"
+    },
+    {
+      "line": 61,
+      "level": "ERROR",
+      "message": "Random log at line 61 in fetch_data",
+      "kind": "except",
+      "function": "fetch_data"
+    },
+    {
+      "line": 65,
+      "level": "WARNING",
+      "message": "Random log at line 65 in load_customers",
+      "kind": "entry",
+      "function": "load_customers"
+    },
+    {
+      "line": 70,
+      "level": "ERROR",
+      "message": "Random log at line 70 in load_customers",
+      "kind": "return",
+      "function": "load_customers"
+    },
+    {
+      "line": 74,
+      "level": "WARNING",
+      "message": "Random log at line 74 in save_customers",
+      "kind": "entry",
+      "function": "save_customers"
+    }
+  ]
+}
