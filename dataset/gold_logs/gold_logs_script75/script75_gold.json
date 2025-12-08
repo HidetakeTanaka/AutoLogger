@@ -1,0 +1,90 @@
+{
+  "file": "script75.py",
+  "logs": [
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_rate"
+    },
+    {
+      "line": 99,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Thresholds loaded successfully"
+    },
+    {
+      "line": 101,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching rate"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_products"
+    },
+    {
+      "line": 112,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read products file"
+    },
+    {
+      "line": 119,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse products JSON"
+    },
+    {
+      "line": 126,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_products"
+    },
+    {
+      "line": 132,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write products file"
+    },
+    {
+      "line": 136,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to finalize products save"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_devices"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Summary computed"
+    },
+    {
+      "line": 189,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 227,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main"
+    },
+    {
+      "line": 228,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Main completed successfully"
+    }
+  ]
+}
+
