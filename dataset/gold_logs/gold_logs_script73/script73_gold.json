@@ -1,0 +1,96 @@
+{
+  "file": "script73.py",
+  "logs": [
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Transaction.from_dict"
+    },
+    {
+      "line": 45,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Transaction from dict, returning None"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.fetch_benchmarks"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Fetched benchmarks from remote API"
+    },
+    {
+      "line": 119,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch benchmarks in AnalyticsClient.fetch_benchmarks"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.push_summary"
+    },
+    {
+      "line": 132,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to send summary in AnalyticsClient.push_summary"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_account"
+    },
+    {
+      "line": 137,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load account, using fallback"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_kpis"
+    },
+    {
+      "line": 158,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Computed non-empty KPIs for account"
+    },
+    {
+      "line": 189,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_categories"
+    },
+    {
+      "line": 201,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 227,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main, returning error code 1"
+    },
+    {
+      "line": 228,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Main completed successfully with code 0"
+    }
+  ]
+}
+
