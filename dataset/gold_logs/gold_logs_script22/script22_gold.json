@@ -1,0 +1,71 @@
+{
+  "file": "script22.py",
+  "logs": [
+    {
+      "line": 6,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering __init__ of Employee class"
+    },
+    {
+      "line": 14,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning employee info: {name: %s, position: %s, salary: %s}"
+    },
+    {
+      "line": 19,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering __init__ of Department class"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering remove_employee in Department class"
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning department info with employees: {name: %s, employees: %s}"
+    },
+    {
+      "line": 41,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering __init__ of Company class"
+    },
+    {
+      "line": 48,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning company info: {name: %s, departments: %s}"
+    },
+    {
+      "line": 55,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering read_json function"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_data function with URL: %s"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product created: {name: %s, price: %s, quantity: %s, category: %s}"
+    },
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main function"
+    }
+  ]
+}
