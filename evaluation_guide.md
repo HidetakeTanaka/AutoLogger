@@ -865,8 +865,8 @@ We used a Google spreadsheet to record the evaluation: <link>
 | **Macro Average** | Treat each script equally. Calculate F1 for each script, then take the simple average.                             | Average(F1_list)                   |
 | **Micro Average** | Treat each *log event* equally. Sum TP/FP/FN across all scripts, then compute precision/recall/F1 from the totals. | Use (TP_total, FP_total, FN_total) |
 
- **Macro = per-script fairness**
- **Micro = overall performance fairness**
+* **Macro = per-script fairness** 
+* **Micro = overall performance fairness**
 
 Both are needed for a complete evaluation.
 
