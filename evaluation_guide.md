@@ -847,3 +847,128 @@ Required for the Monday evaluation summary.
 
 ---
 
+---
+
+# **Ⅷ. How to Analyze Our Evaluation Results**
+
+---
+
+### *Explanation of Macro/Micro averages + how to calculate in Google Sheets*
+
+We used a Google spreadsheet to record the evaluation: <link>
+---
+
+## **Ⅷ-1. Macro vs Micro — What’s the difference?**
+
+| Type              | Meaning                                                                                                            | How it’s calculated                |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------- |
+| **Macro Average** | Treat each script equally. Calculate F1 for each script, then take the simple average.                             | Average(F1_list)                   |
+| **Micro Average** | Treat each *log event* equally. Sum TP/FP/FN across all scripts, then compute precision/recall/F1 from the totals. | Use (TP_total, FP_total, FN_total) |
+
+ **Macro = per-script fairness**
+ **Micro = overall performance fairness**
+
+Both are needed for a complete evaluation.
+
+---
+
+#  **Ⅷ-2. For the final project, what we should compute (100 scripts)**
+
+For each model:
+
+* **Macro Precision / Macro Recall / Macro F1**
+* **Micro Precision / Micro Recall / Micro F1**
+
+This gives a statistically solid comparison across the entire dataset.
+
+You already did Script26–50 — great work!
+The other teammates (Script1–25, 51–75, 76–100) will fill the rest.
+
+---
+
+#  **Ⅷ-3. How to calculate in Google Sheets (simple formulas)**
+
+Assume your sheet looks like this:
+
+| Script | System | TP | FP | FN | Precision | Recall | F1 |
+| ------ | ------ | -- | -- | -- | --------- | ------ | -- |
+
+Example row:
+
+```
+Script26 | Heuristic | 24 | 8 | 3 | 0.750 | 0.889 | 0.814
+Script26 | GPT-4.1   | 15 | 7 | 12 | 0.682 | 0.556 | 0.612
+```
+
+---
+
+##  **A. Macro F1 (simple average across scripts)**
+
+Formula:
+
+```gs
+=AVERAGE(FILTER(H:H, B:B="Heuristic"))
+```
+
+(Assuming column H = F1)
+
+---
+
+##  **B. Micro averages (sum TP/FP/FN first)**
+
+### 1. Total TP for a model:
+
+```gs
+=SUM(FILTER(C:C, B:B="Heuristic"))
+```
+
+### 2. Total FP:
+
+```gs
+=SUM(FILTER(D:D, B:B="Heuristic"))
+```
+
+### 3. Total FN:
+
+```gs
+=SUM(FILTER(E:E, B:B="Heuristic"))
+```
+
+---
+
+##  Micro Precision
+
+```gs
+= TP_total / (TP_total + FP_total)
+```
+
+---
+
+##  Micro Recall
+
+```gs
+= TP_total / (TP_total + FN_total)
+```
+
+---
+
+##  Micro F1
+
+```gs
+= 2 * A * B / (A + B)
+```
+
+(where A = Micro Precision, B = Micro Recall)
+
+---
+
+#  **Ⅷ-4. What the final summary table should look like**
+
+For each model:
+
+| Model | Macro P | Macro R | Macro F1 | Micro P | Micro R | Micro F1 |
+| ----- | ------- | ------- | -------- | ------- | ------- | -------- |
+
+With 100 scripts, this gives a strong statistical basis for comparison.
+
+---
