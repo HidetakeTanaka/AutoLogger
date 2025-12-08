@@ -6,105 +6,133 @@
       "lineno": 7,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Initializing Product with name={name}, price={price}, quantity={quantity}, category={category}\")"
     },
     {
       "candidate_id": 1,
       "lineno": 13,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering update_quantity with quantity={quantity} for product id={self.id}\")"
     },
     {
       "candidate_id": 2,
       "lineno": 16,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
-    },
-    {
-      "candidate_id": 3,
-      "lineno": 19,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
-    },
-    {
-      "candidate_id": 5,
-      "lineno": 29,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering update_price with price={price}\")"
     },
     {
       "candidate_id": 6,
       "lineno": 32,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering add_product with product: {product}\")"
     },
     {
       "candidate_id": 7,
       "lineno": 35,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering remove_product with name={name}\")"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 39,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(f'Failed to remove product: {name} not found in inventory.')"
     },
     {
       "candidate_id": 10,
       "lineno": 42,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug('Entered get_inventory_value method of Inventory class')"
     },
     {
       "candidate_id": 12,
       "lineno": 45,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering get_products_by_category with category={category}\")"
+    },
+    {
+      "candidate_id": 13,
+      "lineno": 45,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(f'Retrieved products for category: {category}')"
     },
     {
       "candidate_id": 14,
       "lineno": 51,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering read_json with file_path={file_path}\")"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 53,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(f'Successfully read JSON file: {file_path}')"
+    },
+    {
+      "candidate_id": 16,
+      "lineno": 55,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(f'Failed to read JSON file at {file_path}', exc_info=True)"
     },
     {
       "candidate_id": 18,
       "lineno": 59,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering write_json with file_path={file_path} and data of length={len(data)}\")"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 63,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(f'Failed to write JSON data to {file_path}')"
     },
     {
       "candidate_id": 20,
       "lineno": 67,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering create_product with name={name}, price={price}, quantity={quantity}, category={category}\")"
     },
     {
       "candidate_id": 22,
       "lineno": 71,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug('Entered create_inventory function')"
     },
     {
       "candidate_id": 24,
       "lineno": 75,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entered fetch_data with url={url}\")"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 79,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(f'Failed to fetch data from {url}', exc_info=True)"
     },
     {
       "candidate_id": 28,
       "lineno": 83,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug('Entered main function')"
     }
   ]
 }
