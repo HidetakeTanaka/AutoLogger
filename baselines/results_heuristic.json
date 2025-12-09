@@ -1,446 +1,166 @@
 {
-  "file": "script50.py",
+  "file": "script31.py",
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 20,
+      "line": 31,
       "level": "DEBUG",
-      "message": "Entering __init__",
+      "message": "Entering score_ratio",
       "kind": "entry",
-      "function": "__init__"
-    },
-    {
-      "line": 25,
-      "level": "DEBUG",
-      "message": "Entering is_recent",
-      "kind": "entry",
-      "function": "is_recent"
-    },
-    {
-      "line": 26,
-      "level": "INFO",
-      "message": "Exiting is_recent",
-      "kind": "return",
-      "function": "is_recent"
-    },
-    {
-      "line": 27,
-      "level": "INFO",
-      "message": "Exiting is_recent",
-      "kind": "return",
-      "function": "is_recent"
-    },
-    {
-      "line": 30,
-      "level": "DEBUG",
-      "message": "Entering matches_query",
-      "kind": "entry",
-      "function": "matches_query"
+      "function": "score_ratio"
     },
     {
       "line": 32,
       "level": "INFO",
-      "message": "Exiting matches_query",
+      "message": "Exiting score_ratio",
       "kind": "return",
-      "function": "matches_query"
+      "function": "score_ratio"
     },
     {
-      "line": 34,
+      "line": 33,
       "level": "INFO",
-      "message": "Exiting matches_query",
+      "message": "Exiting score_ratio",
       "kind": "return",
-      "function": "matches_query"
+      "function": "score_ratio"
     },
     {
       "line": 36,
-      "level": "INFO",
-      "message": "Exiting matches_query",
-      "kind": "return",
-      "function": "matches_query"
-    },
-    {
-      "line": 37,
-      "level": "INFO",
-      "message": "Exiting matches_query",
-      "kind": "return",
-      "function": "matches_query"
-    },
-    {
-      "line": 40,
       "level": "DEBUG",
-      "message": "Entering to_dict",
+      "message": "Entering is_suspicious",
       "kind": "entry",
-      "function": "to_dict"
+      "function": "is_suspicious"
     },
     {
-      "line": 40,
+      "line": 38,
       "level": "INFO",
-      "message": "Exiting to_dict",
+      "message": "Exiting is_suspicious",
       "kind": "return",
-      "function": "to_dict"
+      "function": "is_suspicious"
     },
     {
-      "line": 50,
+      "line": 41,
+      "level": "INFO",
+      "message": "Exiting is_suspicious",
+      "kind": "return",
+      "function": "is_suspicious"
+    },
+    {
+      "line": 45,
       "level": "DEBUG",
-      "message": "Entering from_dict",
+      "message": "Entering ensure_data_dir",
       "kind": "entry",
-      "function": "from_dict"
+      "function": "ensure_data_dir"
     },
     {
-      "line": 57,
-      "level": "INFO",
-      "message": "Exiting from_dict",
-      "kind": "return",
-      "function": "from_dict"
+      "line": 49,
+      "level": "DEBUG",
+      "message": "Entering generate_sample_attempts",
+      "kind": "entry",
+      "function": "generate_sample_attempts"
     },
     {
-      "line": 65,
+      "line": 76,
+      "level": "DEBUG",
+      "message": "Entering load_attempts",
+      "kind": "entry",
+      "function": "load_attempts"
+    },
+    {
+      "line": 99,
       "level": "ERROR",
-      "message": "Exception in from_dict",
+      "message": "Exception in load_attempts",
       "kind": "except",
-      "function": "from_dict"
+      "function": "load_attempts"
     },
     {
-      "line": 65,
+      "line": 100,
       "level": "INFO",
-      "message": "Exiting from_dict",
+      "message": "Exiting load_attempts",
       "kind": "return",
-      "function": "from_dict"
+      "function": "load_attempts"
     },
     {
-      "line": 70,
+      "line": 104,
       "level": "DEBUG",
-      "message": "Entering __init__",
+      "message": "Entering group_by_user",
       "kind": "entry",
-      "function": "__init__"
+      "function": "group_by_user"
     },
     {
-      "line": 75,
-      "level": "DEBUG",
-      "message": "Entering add",
-      "kind": "entry",
-      "function": "add"
-    },
-    {
-      "line": 78,
-      "level": "DEBUG",
-      "message": "Entering get",
-      "kind": "entry",
-      "function": "get"
-    },
-    {
-      "line": 78,
+      "line": 107,
       "level": "INFO",
-      "message": "Exiting get",
+      "message": "Exiting group_by_user",
       "kind": "return",
-      "function": "get"
+      "function": "group_by_user"
     },
     {
-      "line": 81,
+      "line": 111,
       "level": "DEBUG",
-      "message": "Entering all",
+      "message": "Entering summarize_user",
       "kind": "entry",
-      "function": "all"
+      "function": "summarize_user"
     },
     {
-      "line": 81,
+      "line": 112,
       "level": "INFO",
-      "message": "Exiting all",
+      "message": "Exiting summarize_user",
       "kind": "return",
-      "function": "all"
+      "function": "summarize_user"
     },
     {
-      "line": 84,
+      "line": 118,
+      "level": "INFO",
+      "message": "Exiting summarize_user",
+      "kind": "return",
+      "function": "summarize_user"
+    },
+    {
+      "line": 128,
       "level": "DEBUG",
-      "message": "Entering search",
+      "message": "Entering find_suspicious_users",
       "kind": "entry",
-      "function": "search"
-    },
-    {
-      "line": 91,
-      "level": "INFO",
-      "message": "Exiting search",
-      "kind": "return",
-      "function": "search"
-    },
-    {
-      "line": 94,
-      "level": "DEBUG",
-      "message": "Entering to_dict",
-      "kind": "entry",
-      "function": "to_dict"
-    },
-    {
-      "line": 94,
-      "level": "INFO",
-      "message": "Exiting to_dict",
-      "kind": "return",
-      "function": "to_dict"
-    },
-    {
-      "line": 102,
-      "level": "DEBUG",
-      "message": "Entering from_dict",
-      "kind": "entry",
-      "function": "from_dict"
-    },
-    {
-      "line": 110,
-      "level": "INFO",
-      "message": "Exiting from_dict",
-      "kind": "return",
-      "function": "from_dict"
-    },
-    {
-      "line": 115,
-      "level": "DEBUG",
-      "message": "Entering __init__",
-      "kind": "entry",
-      "function": "__init__"
-    },
-    {
-      "line": 119,
-      "level": "DEBUG",
-      "message": "Entering _url",
-      "kind": "entry",
-      "function": "_url"
-    },
-    {
-      "line": 121,
-      "level": "INFO",
-      "message": "Exiting _url",
-      "kind": "return",
-      "function": "_url"
-    },
-    {
-      "line": 124,
-      "level": "DEBUG",
-      "message": "Entering fetch_remote_notebook",
-      "kind": "entry",
-      "function": "fetch_remote_notebook"
-    },
-    {
-      "line": 125,
-      "level": "INFO",
-      "message": "Exiting fetch_remote_notebook",
-      "kind": "return",
-      "function": "fetch_remote_notebook"
-    },
-    {
-      "line": 131,
-      "level": "ERROR",
-      "message": "Exception in fetch_remote_notebook",
-      "kind": "except",
-      "function": "fetch_remote_notebook"
-    },
-    {
-      "line": 131,
-      "level": "INFO",
-      "message": "Exiting fetch_remote_notebook",
-      "kind": "return",
-      "function": "fetch_remote_notebook"
-    },
-    {
-      "line": 133,
-      "level": "ERROR",
-      "message": "Exception in fetch_remote_notebook",
-      "kind": "except",
-      "function": "fetch_remote_notebook"
+      "function": "find_suspicious_users"
     },
     {
       "line": 133,
       "level": "INFO",
-      "message": "Exiting fetch_remote_notebook",
+      "message": "Exiting find_suspicious_users",
       "kind": "return",
-      "function": "fetch_remote_notebook"
-    },
-    {
-      "line": 135,
-      "level": "INFO",
-      "message": "Exiting fetch_remote_notebook",
-      "kind": "return",
-      "function": "fetch_remote_notebook"
+      "function": "find_suspicious_users"
     },
     {
       "line": 137,
+      "level": "DEBUG",
+      "message": "Entering interactive_menu",
+      "kind": "entry",
+      "function": "interactive_menu"
+    },
+    {
+      "line": 144,
       "level": "ERROR",
-      "message": "Exception in fetch_remote_notebook",
+      "message": "Exception in interactive_menu",
       "kind": "except",
-      "function": "fetch_remote_notebook"
+      "function": "interactive_menu"
     },
     {
-      "line": 137,
+      "line": 145,
       "level": "INFO",
-      "message": "Exiting fetch_remote_notebook",
+      "message": "Exiting interactive_menu",
       "kind": "return",
-      "function": "fetch_remote_notebook"
+      "function": "interactive_menu"
     },
     {
-      "line": 140,
-      "level": "DEBUG",
-      "message": "Entering push_notebook",
-      "kind": "entry",
-      "function": "push_notebook"
-    },
-    {
-      "line": 141,
-      "level": "INFO",
-      "message": "Exiting push_notebook",
-      "kind": "return",
-      "function": "push_notebook"
-    },
-    {
-      "line": 150,
+      "line": 171,
       "level": "ERROR",
-      "message": "Exception in push_notebook",
+      "message": "Exception in interactive_menu",
       "kind": "except",
-      "function": "push_notebook"
+      "function": "interactive_menu"
     },
     {
-      "line": 150,
-      "level": "INFO",
-      "message": "Exiting push_notebook",
-      "kind": "return",
-      "function": "push_notebook"
-    },
-    {
-      "line": 156,
-      "level": "INFO",
-      "message": "Exiting push_notebook",
-      "kind": "return",
-      "function": "push_notebook"
-    },
-    {
-      "line": 160,
-      "level": "DEBUG",
-      "message": "Entering load_notebook",
-      "kind": "entry",
-      "function": "load_notebook"
-    },
-    {
-      "line": 156,
-      "level": "INFO",
-      "message": "Exiting load_notebook",
-      "kind": "return",
-      "function": "load_notebook"
-    },
-    {
-      "line": 160,
-      "level": "INFO",
-      "message": "Exiting load_notebook",
-      "kind": "return",
-      "function": "load_notebook"
-    },
-    {
-      "line": 162,
-      "level": "ERROR",
-      "message": "Exception in load_notebook",
-      "kind": "except",
-      "function": "load_notebook"
-    },
-    {
-      "line": 162,
-      "level": "INFO",
-      "message": "Exiting load_notebook",
-      "kind": "return",
-      "function": "load_notebook"
-    },
-    {
-      "line": 166,
-      "level": "DEBUG",
-      "message": "Entering save_notebook",
-      "kind": "entry",
-      "function": "save_notebook"
-    },
-    {
-      "line": 173,
-      "level": "ERROR",
-      "message": "Exception in save_notebook",
-      "kind": "except",
-      "function": "save_notebook"
-    },
-    {
-      "line": 177,
-      "level": "ERROR",
-      "message": "Exception in save_notebook",
-      "kind": "except",
-      "function": "save_notebook"
-    },
-    {
-      "line": 181,
-      "level": "DEBUG",
-      "message": "Entering summarize_tags",
-      "kind": "entry",
-      "function": "summarize_tags"
-    },
-    {
-      "line": 190,
-      "level": "INFO",
-      "message": "Exiting summarize_tags",
-      "kind": "return",
-      "function": "summarize_tags"
-    },
-    {
-      "line": 194,
-      "level": "DEBUG",
-      "message": "Entering merge_notebooks",
-      "kind": "entry",
-      "function": "merge_notebooks"
-    },
-    {
-      "line": 200,
-      "level": "INFO",
-      "message": "Exiting merge_notebooks",
-      "kind": "return",
-      "function": "merge_notebooks"
-    },
-    {
-      "line": 204,
-      "level": "DEBUG",
-      "message": "Entering pick_random_note",
-      "kind": "entry",
-      "function": "pick_random_note"
-    },
-    {
-      "line": 208,
-      "level": "INFO",
-      "message": "Exiting pick_random_note",
-      "kind": "return",
-      "function": "pick_random_note"
-    },
-    {
-      "line": 210,
-      "level": "INFO",
-      "message": "Exiting pick_random_note",
-      "kind": "return",
-      "function": "pick_random_note"
-    },
-    {
-      "line": 214,
+      "line": 182,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
-      "function": "main"
-    },
-    {
-      "line": 251,
-      "level": "INFO",
-      "message": "Exiting main",
-      "kind": "return",
-      "function": "main"
-    },
-    {
-      "line": 253,
-      "level": "INFO",
-      "message": "Exiting main",
-      "kind": "return",
-      "function": "main"
-    },
-    {
-      "line": 254,
-      "level": "INFO",
-      "message": "Exiting main",
-      "kind": "return",
       "function": "main"
     }
   ]
