@@ -1,0 +1,221 @@
+{
+  "file": "script65.py",
+  "logs": [
+    {
+      "line": 23,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_low_stock with threshold={threshold}\")"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches method with query: {query}\")"
+    },
+    {
+      "line": 52,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Product.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 67,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Product from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Initializing Inventory with inventory_id={inventory_id}')"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add method with product: {product}\")"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Inventory.get with product_id={product_id}\")"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering search with query='{query}'\")"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering low_stock with threshold={threshold}\")"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering Inventory.from_dict with raw data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 103,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Inventory created from dict with {len(inv.items)} items')"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing PricingClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with product_id={product_id}\")"
+    },
+    {
+      "line": 115,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_price with product_id={product_id}\")"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'fetch_price returning None for product_id={product_id}')"
+    },
+    {
+      "line": 123,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Fetched price for product_id {product_id}: {data['price']}\")"
+    },
+    {
+      "line": 125,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch price for product_id {product_id} from {url} with request {req} and body {body}', exc_info=True)"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'fetch_price returning None for product_id={product_id} from url={url}')"
+    },
+    {
+      "line": 129,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_inventory with path: {path}\")"
+    },
+    {
+      "line": 131,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded inventory from {path} with {len(raw)} items')"
+    },
+    {
+      "line": 133,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load inventory from {path}')"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('Returning local inventory with inventory_id=\"local\"')"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_inventory with path={path} and inventory items count={len(inv.items)}\")"
+    },
+    {
+      "line": 143,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save inventory to {path} with payload {payload}')"
+    },
+    {
+      "line": 147,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save inventory to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_summary with inventory containing {len(inv.products)} products\")"
+    },
+    {
+      "line": 156,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summary computed: count={len(products)}, avg_price={total_price / len(products):.2f}, low_stock={low}\")"
+    },
+    {
+      "line": 164,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered update_prices with Inventory: {inv} and PricingClient: {client}\")"
+    },
+    {
+      "line": 171,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Price update completed. Updated status: {updated}')"
+    },
+    {
+      "line": 175,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_sales with rounds={rounds} and inventory={inv}\")"
+    },
+    {
+      "line": 178,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation completed: {rounds} rounds, total sold: {sold}, inventory left: {inv}')"
+    },
+    {
+      "line": 185,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation completed: {rounds} rounds, total products sold: {sold}, inventory left: {inv}')"
+    },
+    {
+      "line": 189,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered restock_low with min_stock={min_stock}, target_stock={target_stock}\")"
+    },
+    {
+      "line": 195,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Restock completed with count={count}, min_stock={min_stock}, target_stock={target_stock}')"
+    },
+    {
+      "line": 199,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 217,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

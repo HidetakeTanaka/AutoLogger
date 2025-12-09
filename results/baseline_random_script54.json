@@ -1,0 +1,113 @@
+{
+  "file": "script54.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 21,
+      "level": "WARNING",
+      "message": "Random log at line 21 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 22,
+      "level": "INFO",
+      "message": "Random log at line 22 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 30,
+      "level": "ERROR",
+      "message": "Random log at line 30 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Random log at line 33 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Random log at line 33 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 68,
+      "level": "DEBUG",
+      "message": "Random log at line 68 in add_article",
+      "kind": "return",
+      "function": "add_article"
+    },
+    {
+      "line": 72,
+      "level": "ERROR",
+      "message": "Random log at line 72 in recent_articles",
+      "kind": "return",
+      "function": "recent_articles"
+    },
+    {
+      "line": 75,
+      "level": "WARNING",
+      "message": "Random log at line 75 in search",
+      "kind": "return",
+      "function": "search"
+    },
+    {
+      "line": 78,
+      "level": "ERROR",
+      "message": "Random log at line 78 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 78,
+      "level": "WARNING",
+      "message": "Random log at line 78 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 121,
+      "level": "INFO",
+      "message": "Random log at line 121 in load_feed",
+      "kind": "except",
+      "function": "load_feed"
+    },
+    {
+      "line": 163,
+      "level": "WARNING",
+      "message": "Random log at line 163 in filter_articles",
+      "kind": "return",
+      "function": "filter_articles"
+    },
+    {
+      "line": 167,
+      "level": "WARNING",
+      "message": "Random log at line 167 in paginate_titles",
+      "kind": "entry",
+      "function": "paginate_titles"
+    },
+    {
+      "line": 179,
+      "level": "INFO",
+      "message": "Random log at line 179 in pick_random_article",
+      "kind": "entry",
+      "function": "pick_random_article"
+    },
+    {
+      "line": 185,
+      "level": "ERROR",
+      "message": "Random log at line 185 in pick_random_article",
+      "kind": "return",
+      "function": "pick_random_article"
+    }
+  ]
+}

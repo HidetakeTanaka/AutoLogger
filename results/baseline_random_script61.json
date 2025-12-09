@@ -1,0 +1,113 @@
+{
+  "file": "script61.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 22,
+      "level": "WARNING",
+      "message": "Random log at line 22 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 37,
+      "level": "ERROR",
+      "message": "Random log at line 37 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 38,
+      "level": "DEBUG",
+      "message": "Random log at line 38 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Random log at line 45 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Random log at line 70 in remove",
+      "kind": "entry",
+      "function": "remove"
+    },
+    {
+      "line": 74,
+      "level": "ERROR",
+      "message": "Random log at line 74 in total",
+      "kind": "return",
+      "function": "total"
+    },
+    {
+      "line": 77,
+      "level": "WARNING",
+      "message": "Random log at line 77 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 91,
+      "level": "ERROR",
+      "message": "Random log at line 91 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 100,
+      "level": "WARNING",
+      "message": "Random log at line 100 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 133,
+      "level": "INFO",
+      "message": "Random log at line 133 in save_cart",
+      "kind": "entry",
+      "function": "save_cart"
+    },
+    {
+      "line": 160,
+      "level": "WARNING",
+      "message": "Random log at line 160 in pick_best_deal",
+      "kind": "entry",
+      "function": "pick_best_deal"
+    },
+    {
+      "line": 161,
+      "level": "WARNING",
+      "message": "Random log at line 161 in pick_best_deal",
+      "kind": "return",
+      "function": "pick_best_deal"
+    },
+    {
+      "line": 181,
+      "level": "INFO",
+      "message": "Random log at line 181 in update_prices_from_remote",
+      "kind": "return",
+      "function": "update_prices_from_remote"
+    },
+    {
+      "line": 205,
+      "level": "ERROR",
+      "message": "Random log at line 205 in simulate_cart",
+      "kind": "return",
+      "function": "simulate_cart"
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "file": "script72.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 21,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 27,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 27,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 38,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 44,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 44,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 54,
+      "level": "DEBUG",
+      "message": "Entering add_sample",
+      "kind": "entry",
+      "function": "add_sample"
+    },
+    {
+      "line": 57,
+      "level": "DEBUG",
+      "message": "Entering recent_samples",
+      "kind": "entry",
+      "function": "recent_samples"
+    },
+    {
+      "line": 57,
+      "level": "INFO",
+      "message": "Exiting recent_samples",
+      "kind": "return",
+      "function": "recent_samples"
+    },
+    {
+      "line": 60,
+      "level": "DEBUG",
+      "message": "Entering availability",
+      "kind": "entry",
+      "function": "availability"
+    },
+    {
+      "line": 62,
+      "level": "INFO",
+      "message": "Exiting availability",
+      "kind": "return",
+      "function": "availability"
+    },
+    {
+      "line": 64,
+      "level": "INFO",
+      "message": "Exiting availability",
+      "kind": "return",
+      "function": "availability"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Entering avg_latency",
+      "kind": "entry",
+      "function": "avg_latency"
+    },
+    {
+      "line": 69,
+      "level": "INFO",
+      "message": "Exiting avg_latency",
+      "kind": "return",
+      "function": "avg_latency"
+    },
+    {
+      "line": 70,
+      "level": "INFO",
+      "message": "Exiting avg_latency",
+      "kind": "return",
+      "function": "avg_latency"
+    },
+    {
+      "line": 73,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 73,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 81,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 86,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 91,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 94,
+      "level": "DEBUG",
+      "message": "Entering check",
+      "kind": "entry",
+      "function": "check"
+    },
+    {
+      "line": 100,
+      "level": "INFO",
+      "message": "Exiting check",
+      "kind": "return",
+      "function": "check"
+    },
+    {
+      "line": 102,
+      "level": "ERROR",
+      "message": "Exception in check",
+      "kind": "except",
+      "function": "check"
+    },
+    {
+      "line": 103,
+      "level": "INFO",
+      "message": "Exiting check",
+      "kind": "return",
+      "function": "check"
+    },
+    {
+      "line": 105,
+      "level": "ERROR",
+      "message": "Exception in check",
+      "kind": "except",
+      "function": "check"
+    },
+    {
+      "line": 106,
+      "level": "INFO",
+      "message": "Exiting check",
+      "kind": "return",
+      "function": "check"
+    },
+    {
+      "line": 110,
+      "level": "DEBUG",
+      "message": "Entering load_statuses",
+      "kind": "entry",
+      "function": "load_statuses"
+    },
+    {
+      "line": 111,
+      "level": "INFO",
+      "message": "Exiting load_statuses",
+      "kind": "return",
+      "function": "load_statuses"
+    },
+    {
+      "line": 115,
+      "level": "INFO",
+      "message": "Exiting load_statuses",
+      "kind": "return",
+      "function": "load_statuses"
+    },
+    {
+      "line": 117,
+      "level": "ERROR",
+      "message": "Exception in load_statuses",
+      "kind": "except",
+      "function": "load_statuses"
+    },
+    {
+      "line": 117,
+      "level": "INFO",
+      "message": "Exiting load_statuses",
+      "kind": "return",
+      "function": "load_statuses"
+    },
+    {
+      "line": 121,
+      "level": "DEBUG",
+      "message": "Entering save_statuses",
+      "kind": "entry",
+      "function": "save_statuses"
+    },
+    {
+      "line": 127,
+      "level": "ERROR",
+      "message": "Exception in save_statuses",
+      "kind": "except",
+      "function": "save_statuses"
+    },
+    {
+      "line": 131,
+      "level": "ERROR",
+      "message": "Exception in save_statuses",
+      "kind": "except",
+      "function": "save_statuses"
+    },
+    {
+      "line": 135,
+      "level": "DEBUG",
+      "message": "Entering summarize_statuses",
+      "kind": "entry",
+      "function": "summarize_statuses"
+    },
+    {
+      "line": 145,
+      "level": "INFO",
+      "message": "Exiting summarize_statuses",
+      "kind": "return",
+      "function": "summarize_statuses"
+    },
+    {
+      "line": 149,
+      "level": "DEBUG",
+      "message": "Entering detect_incidents",
+      "kind": "entry",
+      "function": "detect_incidents"
+    },
+    {
+      "line": 156,
+      "level": "INFO",
+      "message": "Exiting detect_incidents",
+      "kind": "return",
+      "function": "detect_incidents"
+    },
+    {
+      "line": 160,
+      "level": "DEBUG",
+      "message": "Entering simulate_checks",
+      "kind": "entry",
+      "function": "simulate_checks"
+    },
+    {
+      "line": 172,
+      "level": "DEBUG",
+      "message": "Entering ensure_services",
+      "kind": "entry",
+      "function": "ensure_services"
+    },
+    {
+      "line": 176,
+      "level": "INFO",
+      "message": "Exiting ensure_services",
+      "kind": "return",
+      "function": "ensure_services"
+    },
+    {
+      "line": 180,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 207,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 207,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 210,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "file": "script72.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 38,
+      "level": "ERROR",
+      "message": "Random log at line 38 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Random log at line 44 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Random log at line 44 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 64,
+      "level": "DEBUG",
+      "message": "Random log at line 64 in availability",
+      "kind": "return",
+      "function": "availability"
+    },
+    {
+      "line": 69,
+      "level": "ERROR",
+      "message": "Random log at line 69 in avg_latency",
+      "kind": "return",
+      "function": "avg_latency"
+    },
+    {
+      "line": 73,
+      "level": "WARNING",
+      "message": "Random log at line 73 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 73,
+      "level": "ERROR",
+      "message": "Random log at line 73 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 81,
+      "level": "WARNING",
+      "message": "Random log at line 81 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 117,
+      "level": "INFO",
+      "message": "Random log at line 117 in load_statuses",
+      "kind": "return",
+      "function": "load_statuses"
+    },
+    {
+      "line": 160,
+      "level": "WARNING",
+      "message": "Random log at line 160 in simulate_checks",
+      "kind": "entry",
+      "function": "simulate_checks"
+    },
+    {
+      "line": 172,
+      "level": "WARNING",
+      "message": "Random log at line 172 in ensure_services",
+      "kind": "entry",
+      "function": "ensure_services"
+    },
+    {
+      "line": 207,
+      "level": "INFO",
+      "message": "Random log at line 207 in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 210,
+      "level": "ERROR",
+      "message": "Random log at line 210 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "file": "script64.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 28,
+      "level": "DEBUG",
+      "message": "Entering update_metric",
+      "kind": "entry",
+      "function": "update_metric"
+    },
+    {
+      "line": 34,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 34,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 49,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 57,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 57,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 62,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 66,
+      "level": "DEBUG",
+      "message": "Entering add",
+      "kind": "entry",
+      "function": "add"
+    },
+    {
+      "line": 69,
+      "level": "DEBUG",
+      "message": "Entering get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 69,
+      "level": "INFO",
+      "message": "Exiting get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 72,
+      "level": "DEBUG",
+      "message": "Entering all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 72,
+      "level": "INFO",
+      "message": "Exiting all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 75,
+      "level": "DEBUG",
+      "message": "Entering active_devices",
+      "kind": "entry",
+      "function": "active_devices"
+    },
+    {
+      "line": 75,
+      "level": "INFO",
+      "message": "Exiting active_devices",
+      "kind": "return",
+      "function": "active_devices"
+    },
+    {
+      "line": 78,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 78,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 85,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 90,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 95,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 99,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 99,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 102,
+      "level": "DEBUG",
+      "message": "Entering fetch_fleet_snapshot",
+      "kind": "entry",
+      "function": "fetch_fleet_snapshot"
+    },
+    {
+      "line": 103,
+      "level": "INFO",
+      "message": "Exiting fetch_fleet_snapshot",
+      "kind": "return",
+      "function": "fetch_fleet_snapshot"
+    },
+    {
+      "line": 109,
+      "level": "INFO",
+      "message": "Exiting fetch_fleet_snapshot",
+      "kind": "return",
+      "function": "fetch_fleet_snapshot"
+    },
+    {
+      "line": 111,
+      "level": "ERROR",
+      "message": "Exception in fetch_fleet_snapshot",
+      "kind": "except",
+      "function": "fetch_fleet_snapshot"
+    },
+    {
+      "line": 111,
+      "level": "INFO",
+      "message": "Exiting fetch_fleet_snapshot",
+      "kind": "return",
+      "function": "fetch_fleet_snapshot"
+    },
+    {
+      "line": 114,
+      "level": "DEBUG",
+      "message": "Entering push_aggregates",
+      "kind": "entry",
+      "function": "push_aggregates"
+    },
+    {
+      "line": 115,
+      "level": "INFO",
+      "message": "Exiting push_aggregates",
+      "kind": "return",
+      "function": "push_aggregates"
+    },
+    {
+      "line": 121,
+      "level": "INFO",
+      "message": "Exiting push_aggregates",
+      "kind": "return",
+      "function": "push_aggregates"
+    },
+    {
+      "line": 123,
+      "level": "ERROR",
+      "message": "Exception in push_aggregates",
+      "kind": "except",
+      "function": "push_aggregates"
+    },
+    {
+      "line": 123,
+      "level": "INFO",
+      "message": "Exiting push_aggregates",
+      "kind": "return",
+      "function": "push_aggregates"
+    },
+    {
+      "line": 127,
+      "level": "DEBUG",
+      "message": "Entering load_fleet",
+      "kind": "entry",
+      "function": "load_fleet"
+    },
+    {
+      "line": 129,
+      "level": "INFO",
+      "message": "Exiting load_fleet",
+      "kind": "return",
+      "function": "load_fleet"
+    },
+    {
+      "line": 131,
+      "level": "ERROR",
+      "message": "Exception in load_fleet",
+      "kind": "except",
+      "function": "load_fleet"
+    },
+    {
+      "line": 131,
+      "level": "INFO",
+      "message": "Exiting load_fleet",
+      "kind": "return",
+      "function": "load_fleet"
+    },
+    {
+      "line": 135,
+      "level": "DEBUG",
+      "message": "Entering save_fleet",
+      "kind": "entry",
+      "function": "save_fleet"
+    },
+    {
+      "line": 141,
+      "level": "ERROR",
+      "message": "Exception in save_fleet",
+      "kind": "except",
+      "function": "save_fleet"
+    },
+    {
+      "line": 145,
+      "level": "ERROR",
+      "message": "Exception in save_fleet",
+      "kind": "except",
+      "function": "save_fleet"
+    },
+    {
+      "line": 149,
+      "level": "DEBUG",
+      "message": "Entering compute_stats",
+      "kind": "entry",
+      "function": "compute_stats"
+    },
+    {
+      "line": 151,
+      "level": "INFO",
+      "message": "Exiting compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
+    },
+    {
+      "line": 160,
+      "level": "INFO",
+      "message": "Exiting compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
+    },
+    {
+      "line": 164,
+      "level": "DEBUG",
+      "message": "Entering detect_offline",
+      "kind": "entry",
+      "function": "detect_offline"
+    },
+    {
+      "line": 165,
+      "level": "INFO",
+      "message": "Exiting detect_offline",
+      "kind": "return",
+      "function": "detect_offline"
+    },
+    {
+      "line": 173,
+      "level": "DEBUG",
+      "message": "Entering simulate_fleet",
+      "kind": "entry",
+      "function": "simulate_fleet"
+    },
+    {
+      "line": 189,
+      "level": "INFO",
+      "message": "Exiting simulate_fleet",
+      "kind": "return",
+      "function": "simulate_fleet"
+    },
+    {
+      "line": 193,
+      "level": "DEBUG",
+      "message": "Entering merge_remote_snapshot",
+      "kind": "entry",
+      "function": "merge_remote_snapshot"
+    },
+    {
+      "line": 194,
+      "level": "INFO",
+      "message": "Exiting merge_remote_snapshot",
+      "kind": "return",
+      "function": "merge_remote_snapshot"
+    },
+    {
+      "line": 207,
+      "level": "INFO",
+      "message": "Exiting merge_remote_snapshot",
+      "kind": "return",
+      "function": "merge_remote_snapshot"
+    },
+    {
+      "line": 211,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 230,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 230,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 233,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

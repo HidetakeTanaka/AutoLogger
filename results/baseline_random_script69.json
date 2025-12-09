@@ -1,0 +1,120 @@
+{
+  "file": "script69.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Random log at line 26 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 47,
+      "level": "ERROR",
+      "message": "Random log at line 47 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 47,
+      "level": "DEBUG",
+      "message": "Random log at line 47 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 59,
+      "level": "DEBUG",
+      "message": "Random log at line 59 in add_order",
+      "kind": "entry",
+      "function": "add_order"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Random log at line 70 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 73,
+      "level": "ERROR",
+      "message": "Random log at line 73 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 87,
+      "level": "WARNING",
+      "message": "Random log at line 87 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 98,
+      "level": "ERROR",
+      "message": "Random log at line 98 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 103,
+      "level": "WARNING",
+      "message": "Random log at line 103 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 136,
+      "level": "INFO",
+      "message": "Random log at line 136 in load_customers",
+      "kind": "entry",
+      "function": "load_customers"
+    },
+    {
+      "line": 160,
+      "level": "WARNING",
+      "message": "Random log at line 160 in save_customers",
+      "kind": "except",
+      "function": "save_customers"
+    },
+    {
+      "line": 164,
+      "level": "WARNING",
+      "message": "Random log at line 164 in compute_kpis",
+      "kind": "entry",
+      "function": "compute_kpis"
+    },
+    {
+      "line": 176,
+      "level": "INFO",
+      "message": "Random log at line 176 in simulate_orders",
+      "kind": "entry",
+      "function": "simulate_orders"
+    },
+    {
+      "line": 195,
+      "level": "ERROR",
+      "message": "Random log at line 195 in simulate_orders",
+      "kind": "return",
+      "function": "simulate_orders"
+    },
+    {
+      "line": 250,
+      "level": "DEBUG",
+      "message": "Random log at line 250 in main",
+      "kind": "except",
+      "function": "main"
+    }
+  ]
+}

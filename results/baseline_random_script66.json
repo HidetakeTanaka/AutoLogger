@@ -1,0 +1,113 @@
+{
+  "file": "script66.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 22,
+      "level": "WARNING",
+      "message": "Random log at line 22 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Random log at line 25 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 39,
+      "level": "ERROR",
+      "message": "Random log at line 39 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 46,
+      "level": "DEBUG",
+      "message": "Random log at line 46 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 46,
+      "level": "DEBUG",
+      "message": "Random log at line 46 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 64,
+      "level": "DEBUG",
+      "message": "Random log at line 64 in latest",
+      "kind": "return",
+      "function": "latest"
+    },
+    {
+      "line": 69,
+      "level": "ERROR",
+      "message": "Random log at line 69 in average_temperature",
+      "kind": "return",
+      "function": "average_temperature"
+    },
+    {
+      "line": 73,
+      "level": "WARNING",
+      "message": "Random log at line 73 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 73,
+      "level": "ERROR",
+      "message": "Random log at line 73 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 81,
+      "level": "WARNING",
+      "message": "Random log at line 81 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 119,
+      "level": "INFO",
+      "message": "Random log at line 119 in load_station",
+      "kind": "return",
+      "function": "load_station"
+    },
+    {
+      "line": 154,
+      "level": "WARNING",
+      "message": "Random log at line 154 in merge_remote",
+      "kind": "return",
+      "function": "merge_remote"
+    },
+    {
+      "line": 162,
+      "level": "WARNING",
+      "message": "Random log at line 162 in merge_remote",
+      "kind": "return",
+      "function": "merge_remote"
+    },
+    {
+      "line": 182,
+      "level": "INFO",
+      "message": "Random log at line 182 in filter_hot_readings",
+      "kind": "entry",
+      "function": "filter_hot_readings"
+    },
+    {
+      "line": 186,
+      "level": "ERROR",
+      "message": "Random log at line 186 in main",
+      "kind": "entry",
+      "function": "main"
+    }
+  ]
+}

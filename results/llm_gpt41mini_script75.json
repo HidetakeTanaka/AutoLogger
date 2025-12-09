@@ -1,0 +1,179 @@
+{
+  "file": "script75.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Product {self} stock check: {self.stock} units available, in stock: {self.stock > 0}')"
+    },
+    {
+      "line": 25,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches method with query: {query}\")"
+    },
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering from_dict with raw data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 56,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Product from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_item with product_id={product_id}, quantity={quantity}\")"
+    },
+    {
+      "line": 73,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Added item to cart: product_id={product_id}, quantity={quantity}')"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing PricingClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with currency={currency}\")"
+    },
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_rate with currency={currency}\")"
+    },
+    {
+      "line": 103,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched rate for {currency}: {rate}')"
+    },
+    {
+      "line": 105,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch rate for currency {currency} from {url} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 105,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'No rate found for currency {currency}, returning None')"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_products with path: {path}\")"
+    },
+    {
+      "line": 112,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load product from path {path} with data {data}', exc_info=True)"
+    },
+    {
+      "line": 120,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded {len(products)} products from {path}')"
+    },
+    {
+      "line": 122,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load product from path {path} with data {data}', exc_info=True)"
+    },
+    {
+      "line": 126,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_products with path={path} and {len(products)} products\")"
+    },
+    {
+      "line": 132,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save products to {path} with payload {payload} and tmp file {tmp}', exc_info=True)"
+    },
+    {
+      "line": 136,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save products to {path} with payload {payload} and tmp file {tmp}', exc_info=True)"
+    },
+    {
+      "line": 140,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_products with query='{query}' and {len(products)} products\")"
+    },
+    {
+      "line": 141,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Filtering products with query \"{query}\" resulted in {len([p for p in products if p.is_in_stock()])} in-stock products')"
+    },
+    {
+      "line": 146,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_totals with cart containing {len(cart.items)} items and {len(products)} products.\")"
+    },
+    {
+      "line": 155,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Computed totals with total={total}, missing={missing}, count={cart.total_items()}')"
+    },
+    {
+      "line": 159,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_cart with {len(products)} products and {steps} steps\")"
+    },
+    {
+      "line": 169,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation completed at step {step}/{steps} with cart contents: {cart}')"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered convert_total with total={total} and rate={rate}\")"
+    },
+    {
+      "line": 175,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Converting total: {total} with rate: {rate}, result: {total * rate}')"
+    },
+    {
+      "line": 179,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 212,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

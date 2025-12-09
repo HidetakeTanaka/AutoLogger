@@ -1,0 +1,363 @@
+{
+  "file": "script75.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering is_in_stock",
+      "kind": "entry",
+      "function": "is_in_stock"
+    },
+    {
+      "line": 22,
+      "level": "INFO",
+      "message": "Exiting is_in_stock",
+      "kind": "return",
+      "function": "is_in_stock"
+    },
+    {
+      "line": 25,
+      "level": "DEBUG",
+      "message": "Entering matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 27,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 30,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 33,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 47,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 56,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 56,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Entering add_item",
+      "kind": "entry",
+      "function": "add_item"
+    },
+    {
+      "line": 73,
+      "level": "INFO",
+      "message": "Exiting add_item",
+      "kind": "return",
+      "function": "add_item"
+    },
+    {
+      "line": 77,
+      "level": "DEBUG",
+      "message": "Entering total_items",
+      "kind": "entry",
+      "function": "total_items"
+    },
+    {
+      "line": 77,
+      "level": "INFO",
+      "message": "Exiting total_items",
+      "kind": "return",
+      "function": "total_items"
+    },
+    {
+      "line": 80,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 80,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 85,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 89,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 89,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 92,
+      "level": "DEBUG",
+      "message": "Entering fetch_rate",
+      "kind": "entry",
+      "function": "fetch_rate"
+    },
+    {
+      "line": 93,
+      "level": "INFO",
+      "message": "Exiting fetch_rate",
+      "kind": "return",
+      "function": "fetch_rate"
+    },
+    {
+      "line": 102,
+      "level": "INFO",
+      "message": "Exiting fetch_rate",
+      "kind": "return",
+      "function": "fetch_rate"
+    },
+    {
+      "line": 103,
+      "level": "INFO",
+      "message": "Exiting fetch_rate",
+      "kind": "return",
+      "function": "fetch_rate"
+    },
+    {
+      "line": 105,
+      "level": "ERROR",
+      "message": "Exception in fetch_rate",
+      "kind": "except",
+      "function": "fetch_rate"
+    },
+    {
+      "line": 105,
+      "level": "INFO",
+      "message": "Exiting fetch_rate",
+      "kind": "return",
+      "function": "fetch_rate"
+    },
+    {
+      "line": 109,
+      "level": "DEBUG",
+      "message": "Entering load_products",
+      "kind": "entry",
+      "function": "load_products"
+    },
+    {
+      "line": 112,
+      "level": "ERROR",
+      "message": "Exception in load_products",
+      "kind": "except",
+      "function": "load_products"
+    },
+    {
+      "line": 112,
+      "level": "INFO",
+      "message": "Exiting load_products",
+      "kind": "return",
+      "function": "load_products"
+    },
+    {
+      "line": 120,
+      "level": "INFO",
+      "message": "Exiting load_products",
+      "kind": "return",
+      "function": "load_products"
+    },
+    {
+      "line": 122,
+      "level": "ERROR",
+      "message": "Exception in load_products",
+      "kind": "except",
+      "function": "load_products"
+    },
+    {
+      "line": 122,
+      "level": "INFO",
+      "message": "Exiting load_products",
+      "kind": "return",
+      "function": "load_products"
+    },
+    {
+      "line": 126,
+      "level": "DEBUG",
+      "message": "Entering save_products",
+      "kind": "entry",
+      "function": "save_products"
+    },
+    {
+      "line": 132,
+      "level": "ERROR",
+      "message": "Exception in save_products",
+      "kind": "except",
+      "function": "save_products"
+    },
+    {
+      "line": 136,
+      "level": "ERROR",
+      "message": "Exception in save_products",
+      "kind": "except",
+      "function": "save_products"
+    },
+    {
+      "line": 140,
+      "level": "DEBUG",
+      "message": "Entering filter_products",
+      "kind": "entry",
+      "function": "filter_products"
+    },
+    {
+      "line": 141,
+      "level": "INFO",
+      "message": "Exiting filter_products",
+      "kind": "return",
+      "function": "filter_products"
+    },
+    {
+      "line": 142,
+      "level": "INFO",
+      "message": "Exiting filter_products",
+      "kind": "return",
+      "function": "filter_products"
+    },
+    {
+      "line": 146,
+      "level": "DEBUG",
+      "message": "Entering compute_totals",
+      "kind": "entry",
+      "function": "compute_totals"
+    },
+    {
+      "line": 155,
+      "level": "INFO",
+      "message": "Exiting compute_totals",
+      "kind": "return",
+      "function": "compute_totals"
+    },
+    {
+      "line": 159,
+      "level": "DEBUG",
+      "message": "Entering simulate_cart",
+      "kind": "entry",
+      "function": "simulate_cart"
+    },
+    {
+      "line": 162,
+      "level": "INFO",
+      "message": "Exiting simulate_cart",
+      "kind": "return",
+      "function": "simulate_cart"
+    },
+    {
+      "line": 169,
+      "level": "INFO",
+      "message": "Exiting simulate_cart",
+      "kind": "return",
+      "function": "simulate_cart"
+    },
+    {
+      "line": 173,
+      "level": "DEBUG",
+      "message": "Entering convert_total",
+      "kind": "entry",
+      "function": "convert_total"
+    },
+    {
+      "line": 174,
+      "level": "INFO",
+      "message": "Exiting convert_total",
+      "kind": "return",
+      "function": "convert_total"
+    },
+    {
+      "line": 175,
+      "level": "INFO",
+      "message": "Exiting convert_total",
+      "kind": "return",
+      "function": "convert_total"
+    },
+    {
+      "line": 179,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 212,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 212,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 214,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

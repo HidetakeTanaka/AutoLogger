@@ -1,0 +1,120 @@
+{
+  "file": "script65.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_low_stock",
+      "kind": "return",
+      "function": "is_low_stock"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Random log at line 26 in age_hours",
+      "kind": "entry",
+      "function": "age_hours"
+    },
+    {
+      "line": 36,
+      "level": "ERROR",
+      "message": "Random log at line 36 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 37,
+      "level": "DEBUG",
+      "message": "Random log at line 37 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 40,
+      "level": "DEBUG",
+      "message": "Random log at line 40 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 72,
+      "level": "DEBUG",
+      "message": "Random log at line 72 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 79,
+      "level": "ERROR",
+      "message": "Random log at line 79 in get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 82,
+      "level": "WARNING",
+      "message": "Random log at line 82 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 82,
+      "level": "ERROR",
+      "message": "Random log at line 82 in all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 85,
+      "level": "WARNING",
+      "message": "Random log at line 85 in search",
+      "kind": "entry",
+      "function": "search"
+    },
+    {
+      "line": 123,
+      "level": "INFO",
+      "message": "Random log at line 123 in fetch_price",
+      "kind": "return",
+      "function": "fetch_price"
+    },
+    {
+      "line": 143,
+      "level": "WARNING",
+      "message": "Random log at line 143 in save_inventory",
+      "kind": "except",
+      "function": "save_inventory"
+    },
+    {
+      "line": 147,
+      "level": "WARNING",
+      "message": "Random log at line 147 in save_inventory",
+      "kind": "except",
+      "function": "save_inventory"
+    },
+    {
+      "line": 156,
+      "level": "INFO",
+      "message": "Random log at line 156 in compute_summary",
+      "kind": "return",
+      "function": "compute_summary"
+    },
+    {
+      "line": 171,
+      "level": "ERROR",
+      "message": "Random log at line 171 in update_prices",
+      "kind": "return",
+      "function": "update_prices"
+    },
+    {
+      "line": 217,
+      "level": "DEBUG",
+      "message": "Random log at line 217 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "file": "script71.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 22,
+      "level": "WARNING",
+      "message": "Random log at line 22 in is_finished",
+      "kind": "return",
+      "function": "is_finished"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Random log at line 23 in is_finished",
+      "kind": "return",
+      "function": "is_finished"
+    },
+    {
+      "line": 31,
+      "level": "ERROR",
+      "message": "Random log at line 31 in matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Random log at line 33 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 64,
+      "level": "DEBUG",
+      "message": "Random log at line 64 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 72,
+      "level": "ERROR",
+      "message": "Random log at line 72 in add_book",
+      "kind": "entry",
+      "function": "add_book"
+    },
+    {
+      "line": 75,
+      "level": "WARNING",
+      "message": "Random log at line 75 in get_book",
+      "kind": "return",
+      "function": "get_book"
+    },
+    {
+      "line": 78,
+      "level": "ERROR",
+      "message": "Random log at line 78 in search",
+      "kind": "entry",
+      "function": "search"
+    },
+    {
+      "line": 78,
+      "level": "WARNING",
+      "message": "Random log at line 78 in search",
+      "kind": "return",
+      "function": "search"
+    },
+    {
+      "line": 117,
+      "level": "INFO",
+      "message": "Random log at line 117 in fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 129,
+      "level": "WARNING",
+      "message": "Random log at line 129 in load_library",
+      "kind": "return",
+      "function": "load_library"
+    },
+    {
+      "line": 132,
+      "level": "WARNING",
+      "message": "Random log at line 132 in save_library",
+      "kind": "entry",
+      "function": "save_library"
+    },
+    {
+      "line": 147,
+      "level": "INFO",
+      "message": "Random log at line 147 in compute_stats",
+      "kind": "entry",
+      "function": "compute_stats"
+    },
+    {
+      "line": 152,
+      "level": "ERROR",
+      "message": "Random log at line 152 in compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
+    },
+    {
+      "line": 209,
+      "level": "DEBUG",
+      "message": "Random log at line 209 in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 211,
+      "level": "WARNING",
+      "message": "Random log at line 211 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 212,
+      "level": "ERROR",
+      "message": "Random log at line 212 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

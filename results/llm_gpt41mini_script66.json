@@ -1,0 +1,173 @@
+{
+  "file": "script66.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with minutes={minutes}\")"
+    },
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 39,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Creating Reading instance from dict with station_id={raw.get(\"station_id\", \"\")}, timestamp={ts}, temperature={raw.get(\"temperature\", 0.0)}, humidity={raw.get(\"humidity\", 0.0)}')"
+    },
+    {
+      "line": 46,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Reading from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_reading with reading: {reading}\")"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered average_temperature with recent_minutes={recent_minutes}\")"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Station.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 94,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing WeatherClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with station_id={station_id}\")"
+    },
+    {
+      "line": 98,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning URL for station_id {station_id}: {self.base_url}/stations/{station_id}.json')"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_station_data with station_id={station_id}\")"
+    },
+    {
+      "line": 108,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully fetched and decoded data for station_id={station_id} from {url}')"
+    },
+    {
+      "line": 110,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch data for station {station_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 110,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'No data found for station_id {station_id}, returning None')"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_station with path: {path}\")"
+    },
+    {
+      "line": 119,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load station data from {path}')"
+    },
+    {
+      "line": 123,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_station with path={path} and station={station}\")"
+    },
+    {
+      "line": 130,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save station data to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 134,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save station data to {path} with payload {payload}')"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_station for station: {station}\")"
+    },
+    {
+      "line": 153,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering merge_remote for station {station} with remote_raw data: {remote_raw}\")"
+    },
+    {
+      "line": 154,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merge completed for station {station}: {added} new entries added, {len(existing_times)} existing entries retained.')"
+    },
+    {
+      "line": 162,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merge completed for station {station} with {len(added)} new entries added.')"
+    },
+    {
+      "line": 166,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_station for station {station.id} with steps={steps}\")"
+    },
+    {
+      "line": 178,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation completed for station {station} after {steps} steps with {len(history)} history records.')"
+    },
+    {
+      "line": 182,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_hot_readings with station={station} and threshold={threshold}\")"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir} and base_url={base_url}\")"
+    },
+    {
+      "line": 203,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Exception occurred while processing station {station} at path {station_path}', exc_info=True)"
+    }
+  ]
+}

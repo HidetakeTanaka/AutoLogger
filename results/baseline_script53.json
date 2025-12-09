@@ -1,0 +1,363 @@
+{
+  "file": "script53.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 27,
+      "level": "DEBUG",
+      "message": "Entering matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 31,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 35,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 48,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 56,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 56,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 65,
+      "level": "DEBUG",
+      "message": "Entering add_product",
+      "kind": "entry",
+      "function": "add_product"
+    },
+    {
+      "line": 68,
+      "level": "INFO",
+      "message": "Exiting add_product",
+      "kind": "return",
+      "function": "add_product"
+    },
+    {
+      "line": 72,
+      "level": "DEBUG",
+      "message": "Entering find",
+      "kind": "entry",
+      "function": "find"
+    },
+    {
+      "line": 72,
+      "level": "INFO",
+      "message": "Exiting find",
+      "kind": "return",
+      "function": "find"
+    },
+    {
+      "line": 75,
+      "level": "DEBUG",
+      "message": "Entering recent_products",
+      "kind": "entry",
+      "function": "recent_products"
+    },
+    {
+      "line": 75,
+      "level": "INFO",
+      "message": "Exiting recent_products",
+      "kind": "return",
+      "function": "recent_products"
+    },
+    {
+      "line": 78,
+      "level": "DEBUG",
+      "message": "Entering total_value",
+      "kind": "entry",
+      "function": "total_value"
+    },
+    {
+      "line": 78,
+      "level": "INFO",
+      "message": "Exiting total_value",
+      "kind": "return",
+      "function": "total_value"
+    },
+    {
+      "line": 81,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 81,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 88,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 93,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 98,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 102,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 102,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 105,
+      "level": "DEBUG",
+      "message": "Entering fetch_remote_prices",
+      "kind": "entry",
+      "function": "fetch_remote_prices"
+    },
+    {
+      "line": 117,
+      "level": "ERROR",
+      "message": "Exception in fetch_remote_prices",
+      "kind": "except",
+      "function": "fetch_remote_prices"
+    },
+    {
+      "line": 118,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_prices",
+      "kind": "return",
+      "function": "fetch_remote_prices"
+    },
+    {
+      "line": 122,
+      "level": "DEBUG",
+      "message": "Entering load_inventory",
+      "kind": "entry",
+      "function": "load_inventory"
+    },
+    {
+      "line": 123,
+      "level": "INFO",
+      "message": "Exiting load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 127,
+      "level": "INFO",
+      "message": "Exiting load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 129,
+      "level": "ERROR",
+      "message": "Exception in load_inventory",
+      "kind": "except",
+      "function": "load_inventory"
+    },
+    {
+      "line": 129,
+      "level": "INFO",
+      "message": "Exiting load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 133,
+      "level": "DEBUG",
+      "message": "Entering save_inventory",
+      "kind": "entry",
+      "function": "save_inventory"
+    },
+    {
+      "line": 141,
+      "level": "ERROR",
+      "message": "Exception in save_inventory",
+      "kind": "except",
+      "function": "save_inventory"
+    },
+    {
+      "line": 146,
+      "level": "DEBUG",
+      "message": "Entering apply_price_updates",
+      "kind": "entry",
+      "function": "apply_price_updates"
+    },
+    {
+      "line": 155,
+      "level": "INFO",
+      "message": "Exiting apply_price_updates",
+      "kind": "return",
+      "function": "apply_price_updates"
+    },
+    {
+      "line": 159,
+      "level": "DEBUG",
+      "message": "Entering summarize_inventory",
+      "kind": "entry",
+      "function": "summarize_inventory"
+    },
+    {
+      "line": 161,
+      "level": "INFO",
+      "message": "Exiting summarize_inventory",
+      "kind": "return",
+      "function": "summarize_inventory"
+    },
+    {
+      "line": 164,
+      "level": "INFO",
+      "message": "Exiting summarize_inventory",
+      "kind": "return",
+      "function": "summarize_inventory"
+    },
+    {
+      "line": 173,
+      "level": "DEBUG",
+      "message": "Entering pick_random_product",
+      "kind": "entry",
+      "function": "pick_random_product"
+    },
+    {
+      "line": 174,
+      "level": "INFO",
+      "message": "Exiting pick_random_product",
+      "kind": "return",
+      "function": "pick_random_product"
+    },
+    {
+      "line": 180,
+      "level": "INFO",
+      "message": "Exiting pick_random_product",
+      "kind": "return",
+      "function": "pick_random_product"
+    },
+    {
+      "line": 181,
+      "level": "INFO",
+      "message": "Exiting pick_random_product",
+      "kind": "return",
+      "function": "pick_random_product"
+    },
+    {
+      "line": 185,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 204,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 204,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 207,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

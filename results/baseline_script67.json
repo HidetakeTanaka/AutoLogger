@@ -1,0 +1,349 @@
+{
+  "file": "script67.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 26,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 39,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 47,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 47,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 57,
+      "level": "DEBUG",
+      "message": "Entering touch",
+      "kind": "entry",
+      "function": "touch"
+    },
+    {
+      "line": 60,
+      "level": "DEBUG",
+      "message": "Entering update_interest",
+      "kind": "entry",
+      "function": "update_interest"
+    },
+    {
+      "line": 64,
+      "level": "DEBUG",
+      "message": "Entering preferred_categories",
+      "kind": "entry",
+      "function": "preferred_categories"
+    },
+    {
+      "line": 64,
+      "level": "INFO",
+      "message": "Exiting preferred_categories",
+      "kind": "return",
+      "function": "preferred_categories"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 67,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 75,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 79,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 80,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 89,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 93,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 93,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 96,
+      "level": "DEBUG",
+      "message": "Entering fetch_recommendations",
+      "kind": "entry",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 102,
+      "level": "ERROR",
+      "message": "Exception in fetch_recommendations",
+      "kind": "except",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 102,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 106,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 107,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 109,
+      "level": "ERROR",
+      "message": "Exception in fetch_recommendations",
+      "kind": "except",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 109,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 113,
+      "level": "DEBUG",
+      "message": "Entering load_user",
+      "kind": "entry",
+      "function": "load_user"
+    },
+    {
+      "line": 116,
+      "level": "INFO",
+      "message": "Exiting load_user",
+      "kind": "return",
+      "function": "load_user"
+    },
+    {
+      "line": 118,
+      "level": "ERROR",
+      "message": "Exception in load_user",
+      "kind": "except",
+      "function": "load_user"
+    },
+    {
+      "line": 118,
+      "level": "INFO",
+      "message": "Exiting load_user",
+      "kind": "return",
+      "function": "load_user"
+    },
+    {
+      "line": 122,
+      "level": "DEBUG",
+      "message": "Entering save_user",
+      "kind": "entry",
+      "function": "save_user"
+    },
+    {
+      "line": 129,
+      "level": "ERROR",
+      "message": "Exception in save_user",
+      "kind": "except",
+      "function": "save_user"
+    },
+    {
+      "line": 133,
+      "level": "ERROR",
+      "message": "Exception in save_user",
+      "kind": "except",
+      "function": "save_user"
+    },
+    {
+      "line": 137,
+      "level": "DEBUG",
+      "message": "Entering normalize_scores",
+      "kind": "entry",
+      "function": "normalize_scores"
+    },
+    {
+      "line": 138,
+      "level": "INFO",
+      "message": "Exiting normalize_scores",
+      "kind": "return",
+      "function": "normalize_scores"
+    },
+    {
+      "line": 147,
+      "level": "DEBUG",
+      "message": "Entering enrich_with_preferences",
+      "kind": "entry",
+      "function": "enrich_with_preferences"
+    },
+    {
+      "line": 148,
+      "level": "INFO",
+      "message": "Exiting enrich_with_preferences",
+      "kind": "return",
+      "function": "enrich_with_preferences"
+    },
+    {
+      "line": 154,
+      "level": "INFO",
+      "message": "Exiting enrich_with_preferences",
+      "kind": "return",
+      "function": "enrich_with_preferences"
+    },
+    {
+      "line": 158,
+      "level": "DEBUG",
+      "message": "Entering compute_preferences",
+      "kind": "entry",
+      "function": "compute_preferences"
+    },
+    {
+      "line": 159,
+      "level": "INFO",
+      "message": "Exiting compute_preferences",
+      "kind": "return",
+      "function": "compute_preferences"
+    },
+    {
+      "line": 164,
+      "level": "INFO",
+      "message": "Exiting compute_preferences",
+      "kind": "return",
+      "function": "compute_preferences"
+    },
+    {
+      "line": 170,
+      "level": "DEBUG",
+      "message": "Entering simulate_session",
+      "kind": "entry",
+      "function": "simulate_session"
+    },
+    {
+      "line": 172,
+      "level": "INFO",
+      "message": "Exiting simulate_session",
+      "kind": "return",
+      "function": "simulate_session"
+    },
+    {
+      "line": 179,
+      "level": "INFO",
+      "message": "Exiting simulate_session",
+      "kind": "return",
+      "function": "simulate_session"
+    },
+    {
+      "line": 183,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 226,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 226,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 227,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}
