@@ -4,176 +4,92 @@
     {
       "line": 6,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 12,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function update_quantity')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 16,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function update_price')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 20,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function get_product_info')"
-    },
-    {
-      "line": 20,
-      "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_product_info')"
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 25,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 28,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function add_product')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 31,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function remove_product')"
-    },
-    {
-      "line": 34,
-      "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function remove_product')"
-    },
-    {
-      "line": 35,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function remove_product')"
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 38,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function get_inventory_value')"
-    },
-    {
-      "line": 38,
-      "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_inventory_value')"
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 41,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function get_products_by_category')"
-    },
-    {
-      "line": 41,
-      "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_products_by_category')"
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 47,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
-    },
-    {
-      "line": 49,
-      "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
-    },
-    {
-      "line": 51,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
-    },
-    {
-      "line": 51,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 55,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function write_json')"
-    },
-    {
-      "line": 59,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function write_json')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 63,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function create_product')"
-    },
-    {
-      "line": 63,
-      "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function create_product')"
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 67,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function create_inventory')"
-    },
-    {
-      "line": 67,
-      "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function create_inventory')"
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 71,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function fetch_data')"
-    },
-    {
-      "line": 76,
-      "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_data')"
-    },
-    {
-      "line": 78,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function fetch_data')"
-    },
-    {
-      "line": 78,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_data')"
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 82,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function main')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     }
   ]
 }
