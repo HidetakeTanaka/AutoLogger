@@ -1,0 +1,921 @@
+{
+  "file": "scripts\\script73.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 20,
+      "end_line": 20,
+      "function": "is_recent",
+      "class_name": "Transaction",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "hours",
+        "ref",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "Transaction",
+      "code": "return False",
+      "vars_in_scope": [
+        "hours",
+        "ref",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_recent",
+      "class_name": "Transaction",
+      "code": "return True",
+      "vars_in_scope": [
+        "hours",
+        "ref",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 26,
+      "end_line": 26,
+      "function": "to_dict",
+      "class_name": "Transaction",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "to_dict",
+      "class_name": "Transaction",
+      "code": "return {'tx_id': self.tx_id, 'amount': self.amount, 'created_at': self.created_at.isoformat(), 'category': self.category}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "from_dict",
+      "class_name": "Transaction",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Transaction\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 38,
+      "end_line": 38,
+      "function": "from_dict",
+      "class_name": "Transaction",
+      "code": "return cls(tx_id=str(raw.get('tx_id', '')), amount=float(raw.get('amount', 0.0)), created_at=ts, category=str(raw.get('category', '')))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 45,
+      "end_line": 45,
+      "function": "from_dict",
+      "class_name": "Transaction",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 45,
+      "end_line": 45,
+      "function": "from_dict",
+      "class_name": "Transaction",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 56,
+      "end_line": 56,
+      "function": "add_transaction",
+      "class_name": "UserAccount",
+      "code": "def add_transaction(self, tx: Transaction) -> None:",
+      "vars_in_scope": [
+        "self",
+        "tx"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 60,
+      "end_line": 60,
+      "function": "recent_transactions",
+      "class_name": "UserAccount",
+      "code": "def recent_transactions(self, hours: int = 24) -> List[Transaction]:",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 60,
+      "end_line": 60,
+      "function": "recent_transactions",
+      "class_name": "UserAccount",
+      "code": "return [t for t in self.transactions if t.is_recent(hours)]",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 63,
+      "end_line": 63,
+      "function": "spending_by_category",
+      "class_name": "UserAccount",
+      "code": "def spending_by_category(self) -> Dict[str, float]:",
+      "vars_in_scope": [
+        "self",
+        "totals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "spending_by_category",
+      "class_name": "UserAccount",
+      "code": "return totals",
+      "vars_in_scope": [
+        "self",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 70,
+      "end_line": 70,
+      "function": "to_dict",
+      "class_name": "UserAccount",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 70,
+      "end_line": 70,
+      "function": "to_dict",
+      "class_name": "UserAccount",
+      "code": "return {'user_id': self.user_id, 'name': self.name, 'balance': self.balance, 'transactions': [t.to_dict() for t in self.transactions]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 79,
+      "end_line": 79,
+      "function": "from_dict",
+      "class_name": "UserAccount",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"UserAccount\":",
+      "vars_in_scope": [
+        "acc",
+        "cls",
+        "raw",
+        "tx"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 88,
+      "end_line": 88,
+      "function": "from_dict",
+      "class_name": "UserAccount",
+      "code": "return acc",
+      "vars_in_scope": [
+        "acc",
+        "cls",
+        "raw",
+        "tx"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 93,
+      "end_line": 93,
+      "function": "__init__",
+      "class_name": "AnalyticsClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 97,
+      "end_line": 97,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "def _url(self, user_id: str) -> str:",
+      "vars_in_scope": [
+        "self",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 97,
+      "end_line": 97,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "return f'{self.base_url}/users/{user_id}/benchmarks.json'",
+      "vars_in_scope": [
+        "self",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 100,
+      "end_line": 100,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "def fetch_benchmarks(self, user_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 101,
+      "end_line": 101,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 107,
+      "end_line": 107,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return json.loads(data.decode('utf-8'))",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 109,
+      "end_line": 109,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 111,
+      "end_line": 111,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 114,
+      "end_line": 114,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "def push_summary(self, user_id: str, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 122,
+      "end_line": 122,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 124,
+      "end_line": 124,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 124,
+      "end_line": 124,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 128,
+      "end_line": 128,
+      "function": "load_account",
+      "class_name": null,
+      "code": "def load_account(path: Path) -> UserAccount:",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 131,
+      "end_line": 131,
+      "function": "load_account",
+      "class_name": null,
+      "code": "return UserAccount.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 133,
+      "end_line": 133,
+      "function": "load_account",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 133,
+      "end_line": 133,
+      "function": "load_account",
+      "class_name": null,
+      "code": "return UserAccount(user_id='local', name='Local User')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 137,
+      "end_line": 137,
+      "function": "save_account",
+      "class_name": null,
+      "code": "def save_account(path: Path, account: UserAccount) -> None:",
+      "vars_in_scope": [
+        "account",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 143,
+      "end_line": 143,
+      "function": "save_account",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "account",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 143,
+      "end_line": 143,
+      "function": "save_account",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "account",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 147,
+      "end_line": 147,
+      "function": "save_account",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "account",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 147,
+      "end_line": 147,
+      "function": "save_account",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "account",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 151,
+      "end_line": 151,
+      "function": "compute_kpis",
+      "class_name": null,
+      "code": "def compute_kpis(account: UserAccount) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "account",
+        "amounts",
+        "avg",
+        "cutoff",
+        "spend_30d",
+        "txs"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 153,
+      "end_line": 153,
+      "function": "compute_kpis",
+      "class_name": null,
+      "code": "return {'tx_count': 0, 'avg_amount': 0.0, 'spend_30d': 0.0}",
+      "vars_in_scope": [
+        "account",
+        "amounts",
+        "avg",
+        "cutoff",
+        "spend_30d",
+        "txs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 158,
+      "end_line": 158,
+      "function": "compute_kpis",
+      "class_name": null,
+      "code": "return {'tx_count': len(txs), 'avg_amount': avg, 'spend_30d': spend_30d}",
+      "vars_in_scope": [
+        "account",
+        "amounts",
+        "avg",
+        "cutoff",
+        "spend_30d",
+        "txs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 162,
+      "end_line": 162,
+      "function": "simulate_day",
+      "class_name": null,
+      "code": "def simulate_day(account: UserAccount, count: int = 5) -> None:",
+      "vars_in_scope": [
+        "account",
+        "amount",
+        "base",
+        "cat",
+        "categories",
+        "count",
+        "tx"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 179,
+      "end_line": 179,
+      "function": "merge_benchmarks",
+      "class_name": null,
+      "code": "def merge_benchmarks(kpis: Dict[str, Any], remote: Optional[Dict[str, Any]]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "kpis",
+        "merged",
+        "remote"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 180,
+      "end_line": 180,
+      "function": "merge_benchmarks",
+      "class_name": null,
+      "code": "return kpis",
+      "vars_in_scope": [
+        "kpis",
+        "merged",
+        "remote"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 185,
+      "end_line": 185,
+      "function": "merge_benchmarks",
+      "class_name": null,
+      "code": "return merged",
+      "vars_in_scope": [
+        "kpis",
+        "merged",
+        "remote"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 189,
+      "end_line": 189,
+      "function": "summarize_categories",
+      "class_name": null,
+      "code": "def summarize_categories(account: UserAccount) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "account",
+        "max_spend",
+        "result",
+        "share",
+        "totals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 191,
+      "end_line": 191,
+      "function": "summarize_categories",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "account",
+        "max_spend",
+        "result",
+        "share",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 197,
+      "end_line": 197,
+      "function": "summarize_categories",
+      "class_name": null,
+      "code": "return sorted(result, key=lambda x: x['amount'], reverse=True)",
+      "vars_in_scope": [
+        "account",
+        "max_spend",
+        "result",
+        "share",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 201,
+      "end_line": 201,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "account",
+        "account_path",
+        "base",
+        "base_url",
+        "cat_summary",
+        "client",
+        "data_dir",
+        "kpis",
+        "merged",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 227,
+      "end_line": 227,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "account",
+        "account_path",
+        "base",
+        "base_url",
+        "cat_summary",
+        "client",
+        "data_dir",
+        "kpis",
+        "merged",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 227,
+      "end_line": 227,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "account",
+        "account_path",
+        "base",
+        "base_url",
+        "cat_summary",
+        "client",
+        "data_dir",
+        "kpis",
+        "merged",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 228,
+      "end_line": 228,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "account",
+        "account_path",
+        "base",
+        "base_url",
+        "cat_summary",
+        "client",
+        "data_dir",
+        "kpis",
+        "merged",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

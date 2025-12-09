@@ -1,0 +1,968 @@
+{
+  "file": "scripts\\script63.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 20,
+      "end_line": 20,
+      "function": "average",
+      "class_name": "Student",
+      "code": "def average(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 21,
+      "end_line": 21,
+      "function": "average",
+      "class_name": "Student",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 22,
+      "end_line": 22,
+      "function": "average",
+      "class_name": "Student",
+      "code": "return sum(self.grades.values()) / len(self.grades)",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 25,
+      "end_line": 25,
+      "function": "passed",
+      "class_name": "Student",
+      "code": "def passed(self, threshold: float = 50.0) -> bool:",
+      "vars_in_scope": [
+        "avg",
+        "self",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "passed",
+      "class_name": "Student",
+      "code": "return False",
+      "vars_in_scope": [
+        "avg",
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 28,
+      "end_line": 28,
+      "function": "passed",
+      "class_name": "Student",
+      "code": "return avg >= threshold",
+      "vars_in_scope": [
+        "avg",
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 31,
+      "end_line": 31,
+      "function": "matches",
+      "class_name": "Student",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "matches",
+      "class_name": "Student",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "matches",
+      "class_name": "Student",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 36,
+      "end_line": 36,
+      "function": "matches",
+      "class_name": "Student",
+      "code": "return q in self.student_id.lower()",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 39,
+      "end_line": 39,
+      "function": "to_dict",
+      "class_name": "Student",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 39,
+      "end_line": 39,
+      "function": "to_dict",
+      "class_name": "Student",
+      "code": "return {'student_id': self.student_id, 'name': self.name, 'grades': self.grades, 'enrolled_at': self.enrolled_at.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 48,
+      "end_line": 48,
+      "function": "from_dict",
+      "class_name": "Student",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Student\"]:",
+      "vars_in_scope": [
+        "cls",
+        "enrolled",
+        "enrolled_raw",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 55,
+      "end_line": 55,
+      "function": "from_dict",
+      "class_name": "Student",
+      "code": "return cls(student_id=str(raw.get('student_id', '')), name=str(raw.get('name', '')), grades=dict(raw.get('grades', {})), enrolled_at=enrolled)",
+      "vars_in_scope": [
+        "cls",
+        "enrolled",
+        "enrolled_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 62,
+      "end_line": 62,
+      "function": "from_dict",
+      "class_name": "Student",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "enrolled",
+        "enrolled_raw",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 62,
+      "end_line": 62,
+      "function": "from_dict",
+      "class_name": "Student",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "enrolled",
+        "enrolled_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 67,
+      "end_line": 67,
+      "function": "__init__",
+      "class_name": "Course",
+      "code": "def __init__(self, course_id: str, title: str) -> None:",
+      "vars_in_scope": [
+        "course_id",
+        "self",
+        "title"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "add_student",
+      "class_name": "Course",
+      "code": "def add_student(self, student: Student) -> None:",
+      "vars_in_scope": [
+        "self",
+        "student"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 75,
+      "end_line": 75,
+      "function": "get_student",
+      "class_name": "Course",
+      "code": "def get_student(self, student_id: str) -> Optional[Student]:",
+      "vars_in_scope": [
+        "self",
+        "student_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 75,
+      "end_line": 75,
+      "function": "get_student",
+      "class_name": "Course",
+      "code": "return self._students.get(student_id)",
+      "vars_in_scope": [
+        "self",
+        "student_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 78,
+      "end_line": 78,
+      "function": "all_students",
+      "class_name": "Course",
+      "code": "def all_students(self) -> List[Student]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 78,
+      "end_line": 78,
+      "function": "all_students",
+      "class_name": "Course",
+      "code": "return list(self._students.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 81,
+      "end_line": 81,
+      "function": "class_average",
+      "class_name": "Course",
+      "code": "def class_average(self) -> float:",
+      "vars_in_scope": [
+        "self",
+        "students"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 83,
+      "end_line": 83,
+      "function": "class_average",
+      "class_name": "Course",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "self",
+        "students"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "class_average",
+      "class_name": "Course",
+      "code": "return sum((s.average() for s in students)) / len(students)",
+      "vars_in_scope": [
+        "self",
+        "students"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 87,
+      "end_line": 87,
+      "function": "to_dict",
+      "class_name": "Course",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 87,
+      "end_line": 87,
+      "function": "to_dict",
+      "class_name": "Course",
+      "code": "return {'course_id': self.course_id, 'title': self.title, 'students': [s.to_dict() for s in self._students.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 95,
+      "end_line": 95,
+      "function": "from_dict",
+      "class_name": "Course",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Course\":",
+      "vars_in_scope": [
+        "cls",
+        "course",
+        "raw",
+        "student"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 100,
+      "end_line": 100,
+      "function": "from_dict",
+      "class_name": "Course",
+      "code": "return course",
+      "vars_in_scope": [
+        "cls",
+        "course",
+        "raw",
+        "student"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 105,
+      "end_line": 105,
+      "function": "__init__",
+      "class_name": "AnalyticsClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 109,
+      "end_line": 109,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "def _url(self, course_id: str) -> str:",
+      "vars_in_scope": [
+        "course_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "return f'{self.base_url}/courses/{course_id}/benchmarks.json'",
+      "vars_in_scope": [
+        "course_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 112,
+      "end_line": 112,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "def fetch_benchmarks(self, course_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "course_id",
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 113,
+      "end_line": 113,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "course_id",
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 119,
+      "end_line": 119,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return json.loads(data.decode('utf-8'))",
+      "vars_in_scope": [
+        "course_id",
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "course_id",
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "course_id",
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 124,
+      "end_line": 124,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "def push_summary(self, course_id: str, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "course_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 125,
+      "end_line": 125,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "course_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 132,
+      "end_line": 132,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "course_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 134,
+      "end_line": 134,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "course_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 134,
+      "end_line": 134,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "course_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 138,
+      "end_line": 138,
+      "function": "load_course",
+      "class_name": null,
+      "code": "def load_course(path: Path) -> Course:",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 141,
+      "end_line": 141,
+      "function": "load_course",
+      "class_name": null,
+      "code": "return Course.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 143,
+      "end_line": 143,
+      "function": "load_course",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 143,
+      "end_line": 143,
+      "function": "load_course",
+      "class_name": null,
+      "code": "return Course(course_id='local', title='Local Course')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 147,
+      "end_line": 147,
+      "function": "save_course",
+      "class_name": null,
+      "code": "def save_course(path: Path, course: Course) -> None:",
+      "vars_in_scope": [
+        "course",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 155,
+      "end_line": 155,
+      "function": "save_course",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "course",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 160,
+      "end_line": 160,
+      "function": "summarize_course",
+      "class_name": null,
+      "code": "def summarize_course(course: Course) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "count",
+        "course",
+        "passed",
+        "students"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 162,
+      "end_line": 162,
+      "function": "summarize_course",
+      "class_name": null,
+      "code": "return {'count': 0, 'class_avg': 0.0, 'pass_rate': 0.0}",
+      "vars_in_scope": [
+        "count",
+        "course",
+        "passed",
+        "students"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 165,
+      "end_line": 165,
+      "function": "summarize_course",
+      "class_name": null,
+      "code": "return {'count': count, 'class_avg': course.class_average(), 'pass_rate': passed / count if count else 0.0}",
+      "vars_in_scope": [
+        "count",
+        "course",
+        "passed",
+        "students"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 173,
+      "end_line": 173,
+      "function": "apply_curve",
+      "class_name": null,
+      "code": "def apply_curve(course: Course, curve: float = 5.0) -> None:",
+      "vars_in_scope": [
+        "course",
+        "curve",
+        "new_grade"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 182,
+      "end_line": 182,
+      "function": "merge_remote_benchmarks",
+      "class_name": null,
+      "code": "def merge_remote_benchmarks(",
+      "vars_in_scope": [
+        "merged",
+        "remote",
+        "summary",
+        "target"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 183,
+      "end_line": 183,
+      "function": "merge_remote_benchmarks",
+      "class_name": null,
+      "code": "return summary",
+      "vars_in_scope": [
+        "merged",
+        "remote",
+        "summary",
+        "target"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 189,
+      "end_line": 189,
+      "function": "merge_remote_benchmarks",
+      "class_name": null,
+      "code": "return merged",
+      "vars_in_scope": [
+        "merged",
+        "remote",
+        "summary",
+        "target"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 193,
+      "end_line": 193,
+      "function": "simulate_study",
+      "class_name": null,
+      "code": "def simulate_study(course: Course, days: int = 3) -> None:",
+      "vars_in_scope": [
+        "course",
+        "current",
+        "day",
+        "days",
+        "increment",
+        "subject",
+        "subjects"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 205,
+      "end_line": 205,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "course",
+        "course_path",
+        "data_dir",
+        "ok",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 222,
+      "end_line": 222,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "course",
+        "course_path",
+        "data_dir",
+        "ok",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 228,
+      "end_line": 228,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "course",
+        "course_path",
+        "data_dir",
+        "ok",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 228,
+      "end_line": 228,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "course",
+        "course_path",
+        "data_dir",
+        "ok",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 229,
+      "end_line": 229,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "course",
+        "course_path",
+        "data_dir",
+        "ok",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

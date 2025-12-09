@@ -1,0 +1,858 @@
+{
+  "file": "scripts\\script54.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 20,
+      "end_line": 20,
+      "function": "is_recent",
+      "class_name": "Article",
+      "code": "def is_recent(self, days: int = 7) -> bool:",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_recent",
+      "class_name": "Article",
+      "code": "return False",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "Article",
+      "code": "return self.published >= datetime.utcnow() - timedelta(days=days)",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 25,
+      "end_line": 25,
+      "function": "matches",
+      "class_name": "Article",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches",
+      "class_name": "Article",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches",
+      "class_name": "Article",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches",
+      "class_name": "Article",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 33,
+      "end_line": 33,
+      "function": "to_dict",
+      "class_name": "Article",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "to_dict",
+      "class_name": "Article",
+      "code": "return {'article_id': self.article_id, 'title': self.title, 'author': self.author, 'published': self.published.isoformat(), 'tags': list(self.tags), 'views': self.views}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 44,
+      "end_line": 44,
+      "function": "from_dict",
+      "class_name": "Article",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Article\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 47,
+      "end_line": 47,
+      "function": "from_dict",
+      "class_name": "Article",
+      "code": "return cls(article_id=str(raw.get('article_id', '')), title=str(raw.get('title', '')), author=str(raw.get('author', '')), published=ts, tags=list(raw.get('tags', [])), views=int(raw.get('views', 0)))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "Article",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "Article",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 66,
+      "end_line": 66,
+      "function": "add_article",
+      "class_name": "Feed",
+      "code": "def add_article(self, article: Article) -> None:",
+      "vars_in_scope": [
+        "article",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 68,
+      "end_line": 68,
+      "function": "add_article",
+      "class_name": "Feed",
+      "code": "return",
+      "vars_in_scope": [
+        "article",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "recent_articles",
+      "class_name": "Feed",
+      "code": "def recent_articles(self, days: int = 7) -> List[Article]:",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 72,
+      "end_line": 72,
+      "function": "recent_articles",
+      "class_name": "Feed",
+      "code": "return [a for a in self.articles if a.is_recent(days)]",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 75,
+      "end_line": 75,
+      "function": "search",
+      "class_name": "Feed",
+      "code": "def search(self, query: str) -> List[Article]:",
+      "vars_in_scope": [
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 75,
+      "end_line": 75,
+      "function": "search",
+      "class_name": "Feed",
+      "code": "return [a for a in self.articles if a.matches(query)]",
+      "vars_in_scope": [
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 78,
+      "end_line": 78,
+      "function": "to_dict",
+      "class_name": "Feed",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 78,
+      "end_line": 78,
+      "function": "to_dict",
+      "class_name": "Feed",
+      "code": "return {'feed_id': self.feed_id, 'name': self.name, 'articles': [a.to_dict() for a in self.articles]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 86,
+      "end_line": 86,
+      "function": "from_dict",
+      "class_name": "Feed",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Feed\":",
+      "vars_in_scope": [
+        "art",
+        "cls",
+        "feed",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 91,
+      "end_line": 91,
+      "function": "from_dict",
+      "class_name": "Feed",
+      "code": "return feed",
+      "vars_in_scope": [
+        "art",
+        "cls",
+        "feed",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 96,
+      "end_line": 96,
+      "function": "__init__",
+      "class_name": "SyncClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 4) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 100,
+      "end_line": 100,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "def _url(self, feed_id: str) -> str:",
+      "vars_in_scope": [
+        "feed_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 100,
+      "end_line": 100,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "return f'{self.base_url}/feeds/{feed_id}.json'",
+      "vars_in_scope": [
+        "feed_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 103,
+      "end_line": 103,
+      "function": "fetch_remote_feed",
+      "class_name": "SyncClient",
+      "code": "def fetch_remote_feed(self, feed_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "body",
+        "feed_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 108,
+      "end_line": 108,
+      "function": "fetch_remote_feed",
+      "class_name": "SyncClient",
+      "code": "return json.loads(body.decode('utf-8'))",
+      "vars_in_scope": [
+        "body",
+        "feed_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 110,
+      "end_line": 110,
+      "function": "fetch_remote_feed",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "feed_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 110,
+      "end_line": 110,
+      "function": "fetch_remote_feed",
+      "class_name": "SyncClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "feed_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 114,
+      "end_line": 114,
+      "function": "load_feed",
+      "class_name": null,
+      "code": "def load_feed(path: Path) -> Feed:",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "load_feed",
+      "class_name": null,
+      "code": "return Feed(feed_id='local', name='Local Feed')",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 119,
+      "end_line": 119,
+      "function": "load_feed",
+      "class_name": null,
+      "code": "return Feed.from_dict(data)",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 121,
+      "end_line": 121,
+      "function": "load_feed",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "load_feed",
+      "class_name": null,
+      "code": "return Feed(feed_id='local', name='Local Feed')",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 125,
+      "end_line": 125,
+      "function": "save_feed",
+      "class_name": null,
+      "code": "def save_feed(path: Path, feed: Feed) -> None:",
+      "vars_in_scope": [
+        "feed",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 132,
+      "end_line": 132,
+      "function": "save_feed",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "feed",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 137,
+      "end_line": 137,
+      "function": "summarize_feed",
+      "class_name": null,
+      "code": "def summarize_feed(feed: Feed) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "art",
+        "authors",
+        "feed",
+        "idx",
+        "items",
+        "views"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "summarize_feed",
+      "class_name": null,
+      "code": "return {'count': 0, 'authors': {}, 'avg_views': 0.0}",
+      "vars_in_scope": [
+        "art",
+        "authors",
+        "feed",
+        "idx",
+        "items",
+        "views"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 148,
+      "end_line": 148,
+      "function": "summarize_feed",
+      "class_name": null,
+      "code": "return {'count': len(items), 'authors': authors, 'avg_views': views / len(items)}",
+      "vars_in_scope": [
+        "art",
+        "authors",
+        "feed",
+        "idx",
+        "items",
+        "views"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 156,
+      "end_line": 156,
+      "function": "filter_articles",
+      "class_name": null,
+      "code": "def filter_articles(feed: Feed, min_views: int = 0, recent_days: Optional[int] = None) -> List[Article]:",
+      "vars_in_scope": [
+        "feed",
+        "min_views",
+        "recent_days",
+        "result"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 163,
+      "end_line": 163,
+      "function": "filter_articles",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "feed",
+        "min_views",
+        "recent_days",
+        "result"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 167,
+      "end_line": 167,
+      "function": "paginate_titles",
+      "class_name": null,
+      "code": "def paginate_titles(articles: Iterable[Article], page_size: int = 5) -> List[List[str]]:",
+      "vars_in_scope": [
+        "articles",
+        "i",
+        "items",
+        "page_size",
+        "pages"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 169,
+      "end_line": 169,
+      "function": "paginate_titles",
+      "class_name": null,
+      "code": "return [[a.title for a in items]]",
+      "vars_in_scope": [
+        "articles",
+        "i",
+        "items",
+        "page_size",
+        "pages"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "paginate_titles",
+      "class_name": null,
+      "code": "return pages",
+      "vars_in_scope": [
+        "articles",
+        "i",
+        "items",
+        "page_size",
+        "pages"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 179,
+      "end_line": 179,
+      "function": "pick_random_article",
+      "class_name": null,
+      "code": "def pick_random_article(feed: Feed, recent_only: bool = False) -> Optional[Article]:",
+      "vars_in_scope": [
+        "candidates",
+        "feed",
+        "recent_only"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 184,
+      "end_line": 184,
+      "function": "pick_random_article",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "candidates",
+        "feed",
+        "recent_only"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 185,
+      "end_line": 185,
+      "function": "pick_random_article",
+      "class_name": null,
+      "code": "return random.choice(candidates)",
+      "vars_in_scope": [
+        "candidates",
+        "feed",
+        "recent_only"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 189,
+      "end_line": 189,
+      "function": "merge_remote",
+      "class_name": null,
+      "code": "def merge_remote(feed: Feed, remote_rows: Iterable[Dict[str, Any]]) -> int:",
+      "vars_in_scope": [
+        "added",
+        "art",
+        "by_id",
+        "feed",
+        "local",
+        "remote_rows"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 205,
+      "end_line": 205,
+      "function": "merge_remote",
+      "class_name": null,
+      "code": "return added",
+      "vars_in_scope": [
+        "added",
+        "art",
+        "by_id",
+        "feed",
+        "local",
+        "remote_rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 209,
+      "end_line": 209,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(base_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "added",
+        "base",
+        "base_dir",
+        "base_url",
+        "client",
+        "feed",
+        "feed_path",
+        "remote",
+        "report_path",
+        "summary"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 227,
+      "end_line": 227,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "added",
+        "base",
+        "base_dir",
+        "base_url",
+        "client",
+        "feed",
+        "feed_path",
+        "remote",
+        "report_path",
+        "summary"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 227,
+      "end_line": 227,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "added",
+        "base",
+        "base_dir",
+        "base_url",
+        "client",
+        "feed",
+        "feed_path",
+        "remote",
+        "report_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 229,
+      "end_line": 229,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "added",
+        "base",
+        "base_dir",
+        "base_url",
+        "client",
+        "feed",
+        "feed_path",
+        "remote",
+        "report_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

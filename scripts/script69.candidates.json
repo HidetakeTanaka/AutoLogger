@@ -1,0 +1,945 @@
+{
+  "file": "scripts\\script69.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "Order",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "hours",
+        "ref",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_recent",
+      "class_name": "Order",
+      "code": "return self.created_at >= ref",
+      "vars_in_scope": [
+        "hours",
+        "ref",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 26,
+      "end_line": 26,
+      "function": "to_dict",
+      "class_name": "Order",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "to_dict",
+      "class_name": "Order",
+      "code": "return {'order_id': self.order_id, 'customer_id': self.customer_id, 'total': self.total, 'created_at': self.created_at.isoformat(), 'items': self.items}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 36,
+      "end_line": 36,
+      "function": "from_dict",
+      "class_name": "Order",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Order\"]:",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 39,
+      "end_line": 39,
+      "function": "from_dict",
+      "class_name": "Order",
+      "code": "return cls(order_id=str(raw.get('order_id', '')), customer_id=str(raw.get('customer_id', '')), total=float(raw.get('total', 0.0)), created_at=created, items=dict(raw.get('items', {})))",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 47,
+      "end_line": 47,
+      "function": "from_dict",
+      "class_name": "Order",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 47,
+      "end_line": 47,
+      "function": "from_dict",
+      "class_name": "Order",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 59,
+      "end_line": 59,
+      "function": "add_order",
+      "class_name": "Customer",
+      "code": "def add_order(self, order: Order) -> None:",
+      "vars_in_scope": [
+        "order",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 60,
+      "end_line": 60,
+      "function": "add_order",
+      "class_name": "Customer",
+      "code": "return",
+      "vars_in_scope": [
+        "order",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 64,
+      "end_line": 64,
+      "function": "lifetime_value",
+      "class_name": "Customer",
+      "code": "def lifetime_value(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 64,
+      "end_line": 64,
+      "function": "lifetime_value",
+      "class_name": "Customer",
+      "code": "return sum((o.total for o in self.orders))",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 67,
+      "end_line": 67,
+      "function": "matches",
+      "class_name": "Customer",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 69,
+      "end_line": 69,
+      "function": "matches",
+      "class_name": "Customer",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 70,
+      "end_line": 70,
+      "function": "matches",
+      "class_name": "Customer",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 73,
+      "end_line": 73,
+      "function": "to_dict",
+      "class_name": "Customer",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 73,
+      "end_line": 73,
+      "function": "to_dict",
+      "class_name": "Customer",
+      "code": "return {'customer_id': self.customer_id, 'name': self.name, 'joined_at': self.joined_at.isoformat(), 'tags': list(self.tags), 'orders': [o.to_dict() for o in self.orders]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 83,
+      "end_line": 83,
+      "function": "from_dict",
+      "class_name": "Customer",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Customer\":",
+      "vars_in_scope": [
+        "cls",
+        "customer",
+        "joined",
+        "joined_raw",
+        "order",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 87,
+      "end_line": 87,
+      "function": "from_dict",
+      "class_name": "Customer",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "customer",
+        "joined",
+        "joined_raw",
+        "order",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 98,
+      "end_line": 98,
+      "function": "from_dict",
+      "class_name": "Customer",
+      "code": "return customer",
+      "vars_in_scope": [
+        "cls",
+        "customer",
+        "joined",
+        "joined_raw",
+        "order",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 103,
+      "end_line": 103,
+      "function": "__init__",
+      "class_name": "AnalyticsClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 107,
+      "end_line": 107,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 107,
+      "end_line": 107,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 110,
+      "end_line": 110,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "def fetch_benchmarks(self) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 117,
+      "end_line": 117,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return json.loads(data.decode('utf-8'))",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 119,
+      "end_line": 119,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 119,
+      "end_line": 119,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 122,
+      "end_line": 122,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "def push_summary(self, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 123,
+      "end_line": 123,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 130,
+      "end_line": 130,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 132,
+      "end_line": 132,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 132,
+      "end_line": 132,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 136,
+      "end_line": 136,
+      "function": "load_customers",
+      "class_name": null,
+      "code": "def load_customers(path: Path) -> List[Customer]:",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw",
+        "result"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 142,
+      "end_line": 142,
+      "function": "load_customers",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw",
+        "result"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 144,
+      "end_line": 144,
+      "function": "load_customers",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw",
+        "result"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 144,
+      "end_line": 144,
+      "function": "load_customers",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw",
+        "result"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 146,
+      "end_line": 146,
+      "function": "load_customers",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw",
+        "result"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 146,
+      "end_line": 146,
+      "function": "load_customers",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw",
+        "result"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 150,
+      "end_line": 150,
+      "function": "save_customers",
+      "class_name": null,
+      "code": "def save_customers(path: Path, customers: List[Customer]) -> None:",
+      "vars_in_scope": [
+        "customers",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 156,
+      "end_line": 156,
+      "function": "save_customers",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "customers",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 160,
+      "end_line": 160,
+      "function": "save_customers",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "customers",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 164,
+      "end_line": 164,
+      "function": "compute_kpis",
+      "class_name": null,
+      "code": "def compute_kpis(customers: List[Customer]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "active",
+        "customers",
+        "ltvs"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 165,
+      "end_line": 165,
+      "function": "compute_kpis",
+      "class_name": null,
+      "code": "return {'count': 0, 'avg_ltv': 0.0, 'active': 0}",
+      "vars_in_scope": [
+        "active",
+        "customers",
+        "ltvs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 168,
+      "end_line": 168,
+      "function": "compute_kpis",
+      "class_name": null,
+      "code": "return {'count': len(customers), 'avg_ltv': sum(ltvs) / len(ltvs), 'active': active}",
+      "vars_in_scope": [
+        "active",
+        "customers",
+        "ltvs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 176,
+      "end_line": 176,
+      "function": "simulate_orders",
+      "class_name": null,
+      "code": "def simulate_orders(customers: List[Customer], days: int = 3) -> List[Order]:",
+      "vars_in_scope": [
+        "customers",
+        "day",
+        "days",
+        "history",
+        "items",
+        "order",
+        "total"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 178,
+      "end_line": 178,
+      "function": "simulate_orders",
+      "class_name": null,
+      "code": "return history",
+      "vars_in_scope": [
+        "customers",
+        "day",
+        "days",
+        "history",
+        "items",
+        "order",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 195,
+      "end_line": 195,
+      "function": "simulate_orders",
+      "class_name": null,
+      "code": "return history",
+      "vars_in_scope": [
+        "customers",
+        "day",
+        "days",
+        "history",
+        "items",
+        "order",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 199,
+      "end_line": 199,
+      "function": "apply_discounts",
+      "class_name": null,
+      "code": "def apply_discounts(customers: List[Customer], threshold: float = 200.0, pct: float = 0.1) -> int:",
+      "vars_in_scope": [
+        "customers",
+        "pct",
+        "threshold",
+        "updated"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 205,
+      "end_line": 205,
+      "function": "apply_discounts",
+      "class_name": null,
+      "code": "return updated",
+      "vars_in_scope": [
+        "customers",
+        "pct",
+        "threshold",
+        "updated"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 209,
+      "end_line": 209,
+      "function": "merge_remote_benchmarks",
+      "class_name": null,
+      "code": "def merge_remote_benchmarks(summary: Dict[str, Any], remote: Optional[Dict[str, Any]]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "remote",
+        "result",
+        "summary"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 210,
+      "end_line": 210,
+      "function": "merge_remote_benchmarks",
+      "class_name": null,
+      "code": "return summary",
+      "vars_in_scope": [
+        "remote",
+        "result",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 217,
+      "end_line": 217,
+      "function": "merge_remote_benchmarks",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "remote",
+        "result",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 221,
+      "end_line": 221,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "customers",
+        "customers_path",
+        "data_dir",
+        "kpis",
+        "merged",
+        "remote",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 244,
+      "end_line": 244,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "customers",
+        "customers_path",
+        "data_dir",
+        "kpis",
+        "merged",
+        "remote",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 250,
+      "end_line": 250,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "customers",
+        "customers_path",
+        "data_dir",
+        "kpis",
+        "merged",
+        "remote",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 250,
+      "end_line": 250,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "customers",
+        "customers_path",
+        "data_dir",
+        "kpis",
+        "merged",
+        "remote",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 251,
+      "end_line": 251,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "customers",
+        "customers_path",
+        "data_dir",
+        "kpis",
+        "merged",
+        "remote",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}
