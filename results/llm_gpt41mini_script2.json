@@ -5,175 +5,109 @@
       "line": 7,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+      "message": "logging.debug(f\"Initializing Product: name={name}, price={price}, quantity={quantity}, category={category}\")"
     },
     {
       "line": 13,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function update_quantity')"
+      "message": "logging.debug(f\"Entering update_quantity with quantity={quantity} for product id={self.id}\")"
     },
     {
       "line": 16,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function update_price')"
-    },
-    {
-      "line": 19,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function get_product_info')"
-    },
-    {
-      "line": 19,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_product_info')"
-    },
-    {
-      "line": 23,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+      "message": "logging.debug(f\"Entering update_price with price={price}\")"
     },
     {
       "line": 26,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function add_product')"
+      "message": "logging.debug(f\"Entering add_product with product: {product}\")"
     },
     {
       "line": 29,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function remove_product')"
-    },
-    {
-      "line": 32,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function remove_product')"
-    },
-    {
-      "line": 33,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function remove_product')"
-    },
-    {
-      "line": 36,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function get_inventory_value')"
-    },
-    {
-      "line": 36,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_inventory_value')"
+      "message": "logging.debug(f\"Entering remove_product with name={name}\")"
     },
     {
       "line": 39,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function get_products_by_category')"
-    },
-    {
-      "line": 39,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_products_by_category')"
+      "message": "logging.debug(f\"Entering get_products_by_category with category={category}\")"
     },
     {
       "line": 44,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
+      "message": "logging.debug(f\"Entering read_json with file_path={file_path}\")"
     },
     {
       "line": 46,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
+      "message": "logging.info(f'Successfully read JSON file from {file_path}')"
     },
     {
       "line": 48,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
+      "message": "logging.error(f'Failed to read JSON file at {file_path}', exc_info=True)"
     },
     {
       "line": 48,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
+      "message": "logging.info(f'No JSON data found in file: {file_path}, returning empty list')"
     },
     {
       "line": 52,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function write_json')"
+      "message": "logging.debug(f\"Entering write_json with file_path={file_path} and data of length={len(data)}\")"
     },
     {
       "line": 56,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function write_json')"
+      "message": "logging.error(f'Failed to write JSON data to {file_path}', exc_info=True)"
     },
     {
       "line": 59,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function create_product')"
+      "message": "logging.debug(f\"Entered create_product with name={name}, price={price}, quantity={quantity}, category={category}\")"
     },
     {
       "line": 59,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function create_product')"
+      "message": "logging.info(f'Creating product with name={name}, price={price}, quantity={quantity}, category={category}')"
     },
     {
       "line": 62,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function create_inventory')"
-    },
-    {
-      "line": 62,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function create_inventory')"
+      "message": "logging.debug('Entered create_inventory function')"
     },
     {
       "line": 65,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function fetch_data')"
-    },
-    {
-      "line": 67,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_data')"
+      "message": "logging.debug(f\"Entered fetch_data with url: {url}\")"
     },
     {
       "line": 69,
       "kind": "except",
       "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function fetch_data')"
-    },
-    {
-      "line": 69,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_data')"
+      "message": "logging.error(f'Failed to fetch data from {url} with response: {response}', exc_info=True)"
     },
     {
       "line": 72,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function main')"
+      "message": "logging.debug('Entered main function')"
     }
   ]
 }

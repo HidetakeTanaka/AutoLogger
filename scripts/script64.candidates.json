@@ -1,0 +1,904 @@
+{
+  "file": "scripts\\script64.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "Device",
+      "code": "def is_recent(self, minutes: int = 5) -> bool:",
+      "vars_in_scope": [
+        "minutes",
+        "ref",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "Device",
+      "code": "return True",
+      "vars_in_scope": [
+        "minutes",
+        "ref",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 25,
+      "end_line": 25,
+      "function": "is_recent",
+      "class_name": "Device",
+      "code": "return False",
+      "vars_in_scope": [
+        "minutes",
+        "ref",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 28,
+      "end_line": 28,
+      "function": "update_metric",
+      "class_name": "Device",
+      "code": "def update_metric(self, name: str, value: float) -> None:",
+      "vars_in_scope": [
+        "name",
+        "self",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 34,
+      "end_line": 34,
+      "function": "to_dict",
+      "class_name": "Device",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 34,
+      "end_line": 34,
+      "function": "to_dict",
+      "class_name": "Device",
+      "code": "return {'device_id': self.device_id, 'kind': self.kind, 'last_seen': self.last_seen.isoformat(), 'online': self.online, 'metrics': self.metrics}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 44,
+      "end_line": 44,
+      "function": "from_dict",
+      "class_name": "Device",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Device\"]:",
+      "vars_in_scope": [
+        "cls",
+        "last_seen",
+        "raw",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 49,
+      "end_line": 49,
+      "function": "from_dict",
+      "class_name": "Device",
+      "code": "return cls(device_id=str(raw.get('device_id', '')), kind=str(raw.get('kind', '')), last_seen=last_seen, online=bool(raw.get('online', True)), metrics=dict(raw.get('metrics', {})))",
+      "vars_in_scope": [
+        "cls",
+        "last_seen",
+        "raw",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 57,
+      "end_line": 57,
+      "function": "from_dict",
+      "class_name": "Device",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "last_seen",
+        "raw",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 57,
+      "end_line": 57,
+      "function": "from_dict",
+      "class_name": "Device",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "last_seen",
+        "raw",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 62,
+      "end_line": 62,
+      "function": "__init__",
+      "class_name": "Fleet",
+      "code": "def __init__(self, fleet_id: str) -> None:",
+      "vars_in_scope": [
+        "fleet_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 66,
+      "end_line": 66,
+      "function": "add",
+      "class_name": "Fleet",
+      "code": "def add(self, device: Device) -> None:",
+      "vars_in_scope": [
+        "device",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 69,
+      "end_line": 69,
+      "function": "get",
+      "class_name": "Fleet",
+      "code": "def get(self, device_id: str) -> Optional[Device]:",
+      "vars_in_scope": [
+        "device_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 69,
+      "end_line": 69,
+      "function": "get",
+      "class_name": "Fleet",
+      "code": "return self._devices.get(device_id)",
+      "vars_in_scope": [
+        "device_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "all",
+      "class_name": "Fleet",
+      "code": "def all(self) -> List[Device]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 72,
+      "end_line": 72,
+      "function": "all",
+      "class_name": "Fleet",
+      "code": "return list(self._devices.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 75,
+      "end_line": 75,
+      "function": "active_devices",
+      "class_name": "Fleet",
+      "code": "def active_devices(self) -> List[Device]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 75,
+      "end_line": 75,
+      "function": "active_devices",
+      "class_name": "Fleet",
+      "code": "return [d for d in self._devices.values() if d.online]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 78,
+      "end_line": 78,
+      "function": "to_dict",
+      "class_name": "Fleet",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 78,
+      "end_line": 78,
+      "function": "to_dict",
+      "class_name": "Fleet",
+      "code": "return {'fleet_id': self.fleet_id, 'devices': [d.to_dict() for d in self._devices.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 85,
+      "end_line": 85,
+      "function": "from_dict",
+      "class_name": "Fleet",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Fleet\":",
+      "vars_in_scope": [
+        "cls",
+        "dev",
+        "fleet",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 90,
+      "end_line": 90,
+      "function": "from_dict",
+      "class_name": "Fleet",
+      "code": "return fleet",
+      "vars_in_scope": [
+        "cls",
+        "dev",
+        "fleet",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 95,
+      "end_line": 95,
+      "function": "__init__",
+      "class_name": "TelemetryClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 99,
+      "end_line": 99,
+      "function": "_url",
+      "class_name": "TelemetryClient",
+      "code": "def _url(self, fleet_id: str) -> str:",
+      "vars_in_scope": [
+        "fleet_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 99,
+      "end_line": 99,
+      "function": "_url",
+      "class_name": "TelemetryClient",
+      "code": "return f'{self.base_url}/fleets/{fleet_id}.json'",
+      "vars_in_scope": [
+        "fleet_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 102,
+      "end_line": 102,
+      "function": "fetch_fleet_snapshot",
+      "class_name": "TelemetryClient",
+      "code": "def fetch_fleet_snapshot(self, fleet_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "body",
+        "fleet_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 103,
+      "end_line": 103,
+      "function": "fetch_fleet_snapshot",
+      "class_name": "TelemetryClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "fleet_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "fetch_fleet_snapshot",
+      "class_name": "TelemetryClient",
+      "code": "return json.loads(body.decode('utf-8'))",
+      "vars_in_scope": [
+        "body",
+        "fleet_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 111,
+      "end_line": 111,
+      "function": "fetch_fleet_snapshot",
+      "class_name": "TelemetryClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "fleet_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "fetch_fleet_snapshot",
+      "class_name": "TelemetryClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "fleet_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 114,
+      "end_line": 114,
+      "function": "push_aggregates",
+      "class_name": "TelemetryClient",
+      "code": "def push_aggregates(self, fleet_id: str, payload: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "data",
+        "fleet_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "push_aggregates",
+      "class_name": "TelemetryClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "data",
+        "fleet_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "push_aggregates",
+      "class_name": "TelemetryClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "data",
+        "fleet_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 123,
+      "end_line": 123,
+      "function": "push_aggregates",
+      "class_name": "TelemetryClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "fleet_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 123,
+      "end_line": 123,
+      "function": "push_aggregates",
+      "class_name": "TelemetryClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "data",
+        "fleet_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 127,
+      "end_line": 127,
+      "function": "load_fleet",
+      "class_name": null,
+      "code": "def load_fleet(path: Path) -> Fleet:",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 129,
+      "end_line": 129,
+      "function": "load_fleet",
+      "class_name": null,
+      "code": "return Fleet.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 131,
+      "end_line": 131,
+      "function": "load_fleet",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 131,
+      "end_line": 131,
+      "function": "load_fleet",
+      "class_name": null,
+      "code": "return Fleet(fleet_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 135,
+      "end_line": 135,
+      "function": "save_fleet",
+      "class_name": null,
+      "code": "def save_fleet(path: Path, fleet: Fleet) -> None:",
+      "vars_in_scope": [
+        "fleet",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 141,
+      "end_line": 141,
+      "function": "save_fleet",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "fleet",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 145,
+      "end_line": 145,
+      "function": "save_fleet",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "fleet",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 149,
+      "end_line": 149,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "def compute_stats(fleet: Fleet) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "avg_metrics",
+        "counts",
+        "devices",
+        "fleet",
+        "online",
+        "totals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 151,
+      "end_line": 151,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': 0, 'online': 0, 'avg_metrics': {}}",
+      "vars_in_scope": [
+        "avg_metrics",
+        "counts",
+        "devices",
+        "fleet",
+        "online",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': len(devices), 'online': online, 'avg_metrics': avg_metrics}",
+      "vars_in_scope": [
+        "avg_metrics",
+        "counts",
+        "devices",
+        "fleet",
+        "online",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 164,
+      "end_line": 164,
+      "function": "detect_offline",
+      "class_name": null,
+      "code": "def detect_offline(fleet: Fleet, minutes: int = 10) -> List[str]:",
+      "vars_in_scope": [
+        "fleet",
+        "minutes",
+        "ref"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 165,
+      "end_line": 165,
+      "function": "detect_offline",
+      "class_name": null,
+      "code": "return [d.device_id for d in fleet.all() if not d.online or d.last_seen < ref]",
+      "vars_in_scope": [
+        "fleet",
+        "minutes",
+        "ref"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 173,
+      "end_line": 173,
+      "function": "simulate_fleet",
+      "class_name": null,
+      "code": "def simulate_fleet(fleet: Fleet, steps: int = 3) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "dev",
+        "device_ids",
+        "fleet",
+        "history",
+        "metric_name",
+        "picked",
+        "step",
+        "steps",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 189,
+      "end_line": 189,
+      "function": "simulate_fleet",
+      "class_name": null,
+      "code": "return history",
+      "vars_in_scope": [
+        "dev",
+        "device_ids",
+        "fleet",
+        "history",
+        "metric_name",
+        "picked",
+        "step",
+        "steps",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 193,
+      "end_line": 193,
+      "function": "merge_remote_snapshot",
+      "class_name": null,
+      "code": "def merge_remote_snapshot(fleet: Fleet, remote_raw: Optional[Dict[str, Any]]) -> int:",
+      "vars_in_scope": [
+        "added",
+        "fleet",
+        "local",
+        "remote",
+        "remote_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 194,
+      "end_line": 194,
+      "function": "merge_remote_snapshot",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "added",
+        "fleet",
+        "local",
+        "remote",
+        "remote_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 207,
+      "end_line": 207,
+      "function": "merge_remote_snapshot",
+      "class_name": null,
+      "code": "return added",
+      "vars_in_scope": [
+        "added",
+        "fleet",
+        "local",
+        "remote",
+        "remote_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 211,
+      "end_line": 211,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "fleet",
+        "fleet_path",
+        "remote",
+        "stats",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 230,
+      "end_line": 230,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "fleet",
+        "fleet_path",
+        "remote",
+        "stats",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 230,
+      "end_line": 230,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "fleet",
+        "fleet_path",
+        "remote",
+        "stats",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 233,
+      "end_line": 233,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "fleet",
+        "fleet_path",
+        "remote",
+        "stats",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

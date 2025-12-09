@@ -1,0 +1,120 @@
+{
+  "file": "script74.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 20,
+      "level": "WARNING",
+      "message": "Random log at line 20 in is_ok",
+      "kind": "return",
+      "function": "is_ok"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Random log at line 21 in is_ok",
+      "kind": "return",
+      "function": "is_ok"
+    },
+    {
+      "line": 35,
+      "level": "ERROR",
+      "message": "Random log at line 35 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 41,
+      "level": "DEBUG",
+      "message": "Random log at line 41 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 41,
+      "level": "DEBUG",
+      "message": "Random log at line 41 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 61,
+      "level": "DEBUG",
+      "message": "Random log at line 61 in avg_value",
+      "kind": "return",
+      "function": "avg_value"
+    },
+    {
+      "line": 64,
+      "level": "ERROR",
+      "message": "Random log at line 64 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 80,
+      "level": "WARNING",
+      "message": "Random log at line 80 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 85,
+      "level": "ERROR",
+      "message": "Random log at line 85 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 89,
+      "level": "WARNING",
+      "message": "Random log at line 89 in _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 116,
+      "level": "INFO",
+      "message": "Random log at line 116 in push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 136,
+      "level": "WARNING",
+      "message": "Random log at line 136 in save_devices",
+      "kind": "except",
+      "function": "save_devices"
+    },
+    {
+      "line": 140,
+      "level": "WARNING",
+      "message": "Random log at line 140 in save_devices",
+      "kind": "except",
+      "function": "save_devices"
+    },
+    {
+      "line": 145,
+      "level": "INFO",
+      "message": "Random log at line 145 in summarize_devices",
+      "kind": "return",
+      "function": "summarize_devices"
+    },
+    {
+      "line": 162,
+      "level": "ERROR",
+      "message": "Random log at line 162 in detect_anomalies",
+      "kind": "entry",
+      "function": "detect_anomalies"
+    },
+    {
+      "line": 210,
+      "level": "DEBUG",
+      "message": "Random log at line 210 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

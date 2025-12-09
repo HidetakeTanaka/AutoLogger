@@ -1,0 +1,180 @@
+{
+  "file": "script51.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 10,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Initializing Reading with id={reading_id}, value={value}, timestamp={ts}, tags={list(tags)}\")"
+    },
+    {
+      "candidate_id": 4,
+      "lineno": 21,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entering matches with keyword: {keyword}\")"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 38,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 48,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(f'Failed to create Reading from dict: {raw}', exc_info=True)"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 58,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entering add_reading with reading: {r}\")"
+    },
+    {
+      "candidate_id": 16,
+      "lineno": 61,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entered recent() with hours={hours}\")"
+    },
+    {
+      "candidate_id": 18,
+      "lineno": 64,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entering filter_by_tag with tag={tag}\")"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 75,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entering {cls.__name__}.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 86,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(f'Failed to create Sensor from dict: {raw}', exc_info=True)"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 91,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Initializing SyncClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 95,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entering _url with sensor_id={sensor_id}\")"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 98,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entered fetch_remote with sensor_id={sensor_id}\")"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 104,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(f'Failed to fetch remote data for sensor_id {sensor_id} from {url}')"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 108,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entering load_sensors with path: {path}\")"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 112,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(f'Failed to load sensor data from {path} with data {data}: {result}')"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 118,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(f'Successfully loaded sensors from {path} with {len(result)} entries')"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 122,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entering save_sensors with path={path} and {len(sensors)} sensors\")"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 129,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error(f'Failed to save sensors data to {path} with payload {payload}')"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 134,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entering merge_sensor with local sensor: {local} and remote sensor: {remote}\")"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 140,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entered summarize function with {len(sens)} sensors\")"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 144,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(f'Summarize result: count={len(items)}, avg_readings={sum(rcounts) / len(items):.2f}')"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 148,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entering pick_random_recent with sensor: {sensor}\")"
+    },
+    {
+      "candidate_id": 45,
+      "lineno": 150,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info(f'No candidates found for sensor {sensor}, returning None')"
+    },
+    {
+      "candidate_id": 47,
+      "lineno": 155,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "candidate_id": 48,
+      "lineno": 175,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error('Exception occurred while processing report or sensors data', exc_info=True)"
+    }
+  ]
+}

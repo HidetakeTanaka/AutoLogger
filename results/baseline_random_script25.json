@@ -1,0 +1,78 @@
+{
+  "file": "script25.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 15,
+      "level": "WARNING",
+      "message": "Random log at line 15 in update_salary",
+      "kind": "entry",
+      "function": "update_salary"
+    },
+    {
+      "line": 18,
+      "level": "INFO",
+      "message": "Random log at line 18 in get_employee_info",
+      "kind": "entry",
+      "function": "get_employee_info"
+    },
+    {
+      "line": 30,
+      "level": "ERROR",
+      "message": "Random log at line 30 in remove_employee",
+      "kind": "entry",
+      "function": "remove_employee"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Random log at line 33 in remove_employee",
+      "kind": "return",
+      "function": "remove_employee"
+    },
+    {
+      "line": 34,
+      "level": "DEBUG",
+      "message": "Random log at line 34 in remove_employee",
+      "kind": "return",
+      "function": "remove_employee"
+    },
+    {
+      "line": 47,
+      "level": "DEBUG",
+      "message": "Random log at line 47 in read_json",
+      "kind": "return",
+      "function": "read_json"
+    },
+    {
+      "line": 55,
+      "level": "ERROR",
+      "message": "Random log at line 55 in write_json",
+      "kind": "except",
+      "function": "write_json"
+    },
+    {
+      "line": 64,
+      "level": "WARNING",
+      "message": "Random log at line 64 in fetch_data",
+      "kind": "return",
+      "function": "fetch_data"
+    },
+    {
+      "line": 66,
+      "level": "ERROR",
+      "message": "Random log at line 66 in fetch_data",
+      "kind": "except",
+      "function": "fetch_data"
+    },
+    {
+      "line": 66,
+      "level": "WARNING",
+      "message": "Random log at line 66 in fetch_data",
+      "kind": "return",
+      "function": "fetch_data"
+    }
+  ]
+}

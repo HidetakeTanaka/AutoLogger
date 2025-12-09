@@ -1,0 +1,973 @@
+{
+  "file": "scripts\\script70.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_long",
+      "class_name": "Task",
+      "code": "def is_long(self, threshold: int = 60) -> bool:",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_long",
+      "class_name": "Task",
+      "code": "return False",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_long",
+      "class_name": "Task",
+      "code": "return self.duration_min >= threshold",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches",
+      "class_name": "Task",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches",
+      "class_name": "Task",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "matches",
+      "class_name": "Task",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches",
+      "class_name": "Task",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "mark_done",
+      "class_name": "Task",
+      "code": "def mark_done(self) -> None:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 38,
+      "end_line": 38,
+      "function": "to_dict",
+      "class_name": "Task",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 38,
+      "end_line": 38,
+      "function": "to_dict",
+      "class_name": "Task",
+      "code": "return {'task_id': self.task_id, 'title': self.title, 'duration_min': self.duration_min, 'completed': self.completed, 'tags': list(self.tags), 'created_at': self.created_at.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 49,
+      "end_line": 49,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Task\"]:",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "return cls(task_id=str(raw.get('task_id', '')), title=str(raw.get('title', '')), duration_min=int(raw.get('duration_min', 0)), completed=bool(raw.get('completed', False)), tags=list(raw.get('tags', [])), created_at=created)",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 65,
+      "end_line": 65,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 65,
+      "end_line": 65,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 75,
+      "end_line": 75,
+      "function": "add_task",
+      "class_name": "Project",
+      "code": "def add_task(self, task: Task) -> None:",
+      "vars_in_scope": [
+        "self",
+        "task"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 78,
+      "end_line": 78,
+      "function": "get_task",
+      "class_name": "Project",
+      "code": "def get_task(self, task_id: str) -> Optional[Task]:",
+      "vars_in_scope": [
+        "self",
+        "task_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 80,
+      "end_line": 80,
+      "function": "get_task",
+      "class_name": "Project",
+      "code": "return t",
+      "vars_in_scope": [
+        "self",
+        "task_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 81,
+      "end_line": 81,
+      "function": "get_task",
+      "class_name": "Project",
+      "code": "return None",
+      "vars_in_scope": [
+        "self",
+        "task_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 84,
+      "end_line": 84,
+      "function": "completed_tasks",
+      "class_name": "Project",
+      "code": "def completed_tasks(self) -> List[Task]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "completed_tasks",
+      "class_name": "Project",
+      "code": "return [t for t in self.tasks if t.completed]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 87,
+      "end_line": 87,
+      "function": "active_tasks",
+      "class_name": "Project",
+      "code": "def active_tasks(self) -> List[Task]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 87,
+      "end_line": 87,
+      "function": "active_tasks",
+      "class_name": "Project",
+      "code": "return [t for t in self.tasks if not t.completed]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 90,
+      "end_line": 90,
+      "function": "to_dict",
+      "class_name": "Project",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 90,
+      "end_line": 90,
+      "function": "to_dict",
+      "class_name": "Project",
+      "code": "return {'project_id': self.project_id, 'name': self.name, 'tasks': [t.to_dict() for t in self.tasks]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 98,
+      "end_line": 98,
+      "function": "from_dict",
+      "class_name": "Project",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Project\":",
+      "vars_in_scope": [
+        "cls",
+        "project",
+        "raw",
+        "t"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 107,
+      "end_line": 107,
+      "function": "from_dict",
+      "class_name": "Project",
+      "code": "return project",
+      "vars_in_scope": [
+        "cls",
+        "project",
+        "raw",
+        "t"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 112,
+      "end_line": 112,
+      "function": "__init__",
+      "class_name": "AnalyticsClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 116,
+      "end_line": 116,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "def _url(self, project_id: str) -> str:",
+      "vars_in_scope": [
+        "project_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 116,
+      "end_line": 116,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "return f'{self.base_url}/projects/{project_id}/suggestions.json'",
+      "vars_in_scope": [
+        "project_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 119,
+      "end_line": 119,
+      "function": "fetch_suggestions",
+      "class_name": "AnalyticsClient",
+      "code": "def fetch_suggestions(self, project_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 120,
+      "end_line": 120,
+      "function": "fetch_suggestions",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 126,
+      "end_line": 126,
+      "function": "fetch_suggestions",
+      "class_name": "AnalyticsClient",
+      "code": "return json.loads(data.decode('utf-8'))",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 128,
+      "end_line": 128,
+      "function": "fetch_suggestions",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 128,
+      "end_line": 128,
+      "function": "fetch_suggestions",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 131,
+      "end_line": 131,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "def push_summary(self, project_id: str, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "project_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 132,
+      "end_line": 132,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "project_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "project_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 141,
+      "end_line": 141,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "project_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 141,
+      "end_line": 141,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "project_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 145,
+      "end_line": 145,
+      "function": "load_project",
+      "class_name": null,
+      "code": "def load_project(path: Path) -> Project:",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 148,
+      "end_line": 148,
+      "function": "load_project",
+      "class_name": null,
+      "code": "return Project.from_dict(raw)",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 150,
+      "end_line": 150,
+      "function": "load_project",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 150,
+      "end_line": 150,
+      "function": "load_project",
+      "class_name": null,
+      "code": "return Project(project_id='local', name='Local Project')",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 154,
+      "end_line": 154,
+      "function": "save_project",
+      "class_name": null,
+      "code": "def save_project(path: Path, project: Project) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "project",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 160,
+      "end_line": 160,
+      "function": "save_project",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "project",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 164,
+      "end_line": 164,
+      "function": "save_project",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "project",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 168,
+      "end_line": 168,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "def compute_stats(project: Project) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "avg",
+        "completed",
+        "durations",
+        "long_tasks",
+        "project",
+        "tasks"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 170,
+      "end_line": 170,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': 0, 'completed': 0, 'avg_duration': 0.0, 'long_tasks': 0}",
+      "vars_in_scope": [
+        "avg",
+        "completed",
+        "durations",
+        "long_tasks",
+        "project",
+        "tasks"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': len(tasks), 'completed': completed, 'avg_duration': 0.0, 'long_tasks': long_tasks}",
+      "vars_in_scope": [
+        "avg",
+        "completed",
+        "durations",
+        "long_tasks",
+        "project",
+        "tasks"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 182,
+      "end_line": 182,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': len(tasks), 'completed': completed, 'avg_duration': avg, 'long_tasks': long_tasks}",
+      "vars_in_scope": [
+        "avg",
+        "completed",
+        "durations",
+        "long_tasks",
+        "project",
+        "tasks"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 191,
+      "end_line": 191,
+      "function": "simulate_work",
+      "class_name": null,
+      "code": "def simulate_work(project: Project, steps: int = 3) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "delta",
+        "history",
+        "index",
+        "project",
+        "step",
+        "steps",
+        "task"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 193,
+      "end_line": 193,
+      "function": "simulate_work",
+      "class_name": null,
+      "code": "return history",
+      "vars_in_scope": [
+        "delta",
+        "history",
+        "index",
+        "project",
+        "step",
+        "steps",
+        "task"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 208,
+      "end_line": 208,
+      "function": "simulate_work",
+      "class_name": null,
+      "code": "return history",
+      "vars_in_scope": [
+        "delta",
+        "history",
+        "index",
+        "project",
+        "step",
+        "steps",
+        "task"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 212,
+      "end_line": 212,
+      "function": "merge_remote_suggestions",
+      "class_name": null,
+      "code": "def merge_remote_suggestions(project: Project, remote: Optional[Dict[str, Any]]) -> int:",
+      "vars_in_scope": [
+        "added",
+        "existing_ids",
+        "project",
+        "remote",
+        "t",
+        "tid"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 213,
+      "end_line": 213,
+      "function": "merge_remote_suggestions",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "added",
+        "existing_ids",
+        "project",
+        "remote",
+        "t",
+        "tid"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 226,
+      "end_line": 226,
+      "function": "merge_remote_suggestions",
+      "class_name": null,
+      "code": "return added",
+      "vars_in_scope": [
+        "added",
+        "existing_ids",
+        "project",
+        "remote",
+        "t",
+        "tid"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 230,
+      "end_line": 230,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "project",
+        "project_path",
+        "remote",
+        "stats",
+        "summary",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 252,
+      "end_line": 252,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "project",
+        "project_path",
+        "remote",
+        "stats",
+        "summary",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 252,
+      "end_line": 252,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "project",
+        "project_path",
+        "remote",
+        "stats",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 253,
+      "end_line": 253,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "project",
+        "project_path",
+        "remote",
+        "stats",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

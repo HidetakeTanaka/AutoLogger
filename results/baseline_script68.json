@@ -1,0 +1,398 @@
+{
+  "file": "script68.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering is_long",
+      "kind": "entry",
+      "function": "is_long"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_long",
+      "kind": "return",
+      "function": "is_long"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting is_long",
+      "kind": "return",
+      "function": "is_long"
+    },
+    {
+      "line": 27,
+      "level": "DEBUG",
+      "message": "Entering matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 31,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 35,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 46,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 53,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 62,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 62,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 74,
+      "level": "DEBUG",
+      "message": "Entering add_session",
+      "kind": "entry",
+      "function": "add_session"
+    },
+    {
+      "line": 75,
+      "level": "INFO",
+      "message": "Exiting add_session",
+      "kind": "return",
+      "function": "add_session"
+    },
+    {
+      "line": 80,
+      "level": "DEBUG",
+      "message": "Entering total_minutes",
+      "kind": "entry",
+      "function": "total_minutes"
+    },
+    {
+      "line": 80,
+      "level": "INFO",
+      "message": "Exiting total_minutes",
+      "kind": "return",
+      "function": "total_minutes"
+    },
+    {
+      "line": 83,
+      "level": "DEBUG",
+      "message": "Entering weekly_progress",
+      "kind": "entry",
+      "function": "weekly_progress"
+    },
+    {
+      "line": 89,
+      "level": "INFO",
+      "message": "Exiting weekly_progress",
+      "kind": "return",
+      "function": "weekly_progress"
+    },
+    {
+      "line": 90,
+      "level": "INFO",
+      "message": "Exiting weekly_progress",
+      "kind": "return",
+      "function": "weekly_progress"
+    },
+    {
+      "line": 93,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 93,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 103,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 111,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 122,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 127,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 131,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 131,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 134,
+      "level": "DEBUG",
+      "message": "Entering fetch_benchmarks",
+      "kind": "entry",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 136,
+      "level": "INFO",
+      "message": "Exiting fetch_benchmarks",
+      "kind": "return",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 141,
+      "level": "INFO",
+      "message": "Exiting fetch_benchmarks",
+      "kind": "return",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 143,
+      "level": "ERROR",
+      "message": "Exception in fetch_benchmarks",
+      "kind": "except",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 143,
+      "level": "INFO",
+      "message": "Exiting fetch_benchmarks",
+      "kind": "return",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 146,
+      "level": "DEBUG",
+      "message": "Entering push_summary",
+      "kind": "entry",
+      "function": "push_summary"
+    },
+    {
+      "line": 147,
+      "level": "INFO",
+      "message": "Exiting push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 158,
+      "level": "INFO",
+      "message": "Exiting push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 160,
+      "level": "ERROR",
+      "message": "Exception in push_summary",
+      "kind": "except",
+      "function": "push_summary"
+    },
+    {
+      "line": 160,
+      "level": "INFO",
+      "message": "Exiting push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 164,
+      "level": "DEBUG",
+      "message": "Entering load_profile",
+      "kind": "entry",
+      "function": "load_profile"
+    },
+    {
+      "line": 167,
+      "level": "INFO",
+      "message": "Exiting load_profile",
+      "kind": "return",
+      "function": "load_profile"
+    },
+    {
+      "line": 169,
+      "level": "ERROR",
+      "message": "Exception in load_profile",
+      "kind": "except",
+      "function": "load_profile"
+    },
+    {
+      "line": 169,
+      "level": "INFO",
+      "message": "Exiting load_profile",
+      "kind": "return",
+      "function": "load_profile"
+    },
+    {
+      "line": 173,
+      "level": "DEBUG",
+      "message": "Entering save_profile",
+      "kind": "entry",
+      "function": "save_profile"
+    },
+    {
+      "line": 180,
+      "level": "ERROR",
+      "message": "Exception in save_profile",
+      "kind": "except",
+      "function": "save_profile"
+    },
+    {
+      "line": 184,
+      "level": "ERROR",
+      "message": "Exception in save_profile",
+      "kind": "except",
+      "function": "save_profile"
+    },
+    {
+      "line": 188,
+      "level": "DEBUG",
+      "message": "Entering summarize_profile",
+      "kind": "entry",
+      "function": "summarize_profile"
+    },
+    {
+      "line": 189,
+      "level": "INFO",
+      "message": "Exiting summarize_profile",
+      "kind": "return",
+      "function": "summarize_profile"
+    },
+    {
+      "line": 197,
+      "level": "INFO",
+      "message": "Exiting summarize_profile",
+      "kind": "return",
+      "function": "summarize_profile"
+    },
+    {
+      "line": 208,
+      "level": "DEBUG",
+      "message": "Entering simulate_week",
+      "kind": "entry",
+      "function": "simulate_week"
+    },
+    {
+      "line": 228,
+      "level": "DEBUG",
+      "message": "Entering merge_benchmarks",
+      "kind": "entry",
+      "function": "merge_benchmarks"
+    },
+    {
+      "line": 229,
+      "level": "INFO",
+      "message": "Exiting merge_benchmarks",
+      "kind": "return",
+      "function": "merge_benchmarks"
+    },
+    {
+      "line": 237,
+      "level": "INFO",
+      "message": "Exiting merge_benchmarks",
+      "kind": "return",
+      "function": "merge_benchmarks"
+    },
+    {
+      "line": 241,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 257,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 257,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 260,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

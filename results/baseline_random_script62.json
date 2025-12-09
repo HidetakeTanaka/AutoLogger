@@ -1,0 +1,127 @@
+{
+  "file": "script62.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 25,
+      "level": "WARNING",
+      "message": "Random log at line 25 in is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 27,
+      "level": "INFO",
+      "message": "Random log at line 27 in is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 37,
+      "level": "ERROR",
+      "message": "Random log at line 37 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 38,
+      "level": "DEBUG",
+      "message": "Random log at line 38 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 41,
+      "level": "DEBUG",
+      "message": "Random log at line 41 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 72,
+      "level": "DEBUG",
+      "message": "Random log at line 72 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 80,
+      "level": "ERROR",
+      "message": "Random log at line 80 in get_task",
+      "kind": "entry",
+      "function": "get_task"
+    },
+    {
+      "line": 83,
+      "level": "WARNING",
+      "message": "Random log at line 83 in pending_tasks",
+      "kind": "entry",
+      "function": "pending_tasks"
+    },
+    {
+      "line": 83,
+      "level": "ERROR",
+      "message": "Random log at line 83 in pending_tasks",
+      "kind": "return",
+      "function": "pending_tasks"
+    },
+    {
+      "line": 86,
+      "level": "WARNING",
+      "message": "Random log at line 86 in completed_ratio",
+      "kind": "entry",
+      "function": "completed_ratio"
+    },
+    {
+      "line": 130,
+      "level": "INFO",
+      "message": "Random log at line 130 in fetch_project",
+      "kind": "except",
+      "function": "fetch_project"
+    },
+    {
+      "line": 153,
+      "level": "WARNING",
+      "message": "Random log at line 153 in load_project",
+      "kind": "return",
+      "function": "load_project"
+    },
+    {
+      "line": 155,
+      "level": "WARNING",
+      "message": "Random log at line 155 in load_project",
+      "kind": "except",
+      "function": "load_project"
+    },
+    {
+      "line": 165,
+      "level": "INFO",
+      "message": "Random log at line 165 in save_project",
+      "kind": "except",
+      "function": "save_project"
+    },
+    {
+      "line": 173,
+      "level": "ERROR",
+      "message": "Random log at line 173 in summarize_project",
+      "kind": "entry",
+      "function": "summarize_project"
+    },
+    {
+      "line": 224,
+      "level": "DEBUG",
+      "message": "Random log at line 224 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 232,
+      "level": "WARNING",
+      "message": "Random log at line 232 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

@@ -1,0 +1,962 @@
+{
+  "file": "scripts\\script59.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 18,
+      "end_line": 18,
+      "function": "is_recent",
+      "class_name": "MetricSample",
+      "code": "def is_recent(self, minutes: int = 10) -> bool:",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 19,
+      "end_line": 19,
+      "function": "is_recent",
+      "class_name": "MetricSample",
+      "code": "return False",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 20,
+      "end_line": 20,
+      "function": "is_recent",
+      "class_name": "MetricSample",
+      "code": "return self.timestamp >= datetime.utcnow() - timedelta(minutes=minutes)",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 31,
+      "end_line": 31,
+      "function": "add_sample",
+      "class_name": "Sensor",
+      "code": "def add_sample(self, value: float) -> None:",
+      "vars_in_scope": [
+        "self",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "add_sample",
+      "class_name": "Sensor",
+      "code": "return",
+      "vars_in_scope": [
+        "self",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 36,
+      "end_line": 36,
+      "function": "latest",
+      "class_name": "Sensor",
+      "code": "def latest(self) -> Optional[MetricSample]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 37,
+      "end_line": 37,
+      "function": "latest",
+      "class_name": "Sensor",
+      "code": "return None",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 38,
+      "end_line": 38,
+      "function": "latest",
+      "class_name": "Sensor",
+      "code": "return max(self.samples, key=lambda s: s.timestamp)",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 41,
+      "end_line": 41,
+      "function": "recent_values",
+      "class_name": "Sensor",
+      "code": "def recent_values(self, minutes: int = 10) -> List[float]:",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 41,
+      "end_line": 41,
+      "function": "recent_values",
+      "class_name": "Sensor",
+      "code": "return [s.value for s in self.samples if s.is_recent(minutes)]",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 44,
+      "end_line": 44,
+      "function": "to_dict",
+      "class_name": "Sensor",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 44,
+      "end_line": 44,
+      "function": "to_dict",
+      "class_name": "Sensor",
+      "code": "return {'sensor_id': self.sensor_id, 'kind': self.kind, 'enabled': self.enabled, 'samples': [{'timestamp': s.timestamp.isoformat(), 'value': s.value} for s in self.samples]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "Sensor",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[Sensor]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "samples",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 62,
+      "end_line": 62,
+      "function": "from_dict",
+      "class_name": "Sensor",
+      "code": "return cls(sensor_id=str(raw.get('sensor_id', '')), kind=str(raw.get('kind', '')), samples=samples, enabled=bool(raw.get('enabled', True)))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "samples",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 69,
+      "end_line": 69,
+      "function": "from_dict",
+      "class_name": "Sensor",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "samples",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 69,
+      "end_line": 69,
+      "function": "from_dict",
+      "class_name": "Sensor",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "samples",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "__init__",
+      "class_name": "SensorNetwork",
+      "code": "def __init__(self, network_id: str) -> None:",
+      "vars_in_scope": [
+        "network_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 78,
+      "end_line": 78,
+      "function": "add",
+      "class_name": "SensorNetwork",
+      "code": "def add(self, sensor: Sensor) -> None:",
+      "vars_in_scope": [
+        "self",
+        "sensor"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 81,
+      "end_line": 81,
+      "function": "get",
+      "class_name": "SensorNetwork",
+      "code": "def get(self, sensor_id: str) -> Optional[Sensor]:",
+      "vars_in_scope": [
+        "self",
+        "sensor_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 81,
+      "end_line": 81,
+      "function": "get",
+      "class_name": "SensorNetwork",
+      "code": "return self._sensors.get(sensor_id)",
+      "vars_in_scope": [
+        "self",
+        "sensor_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 84,
+      "end_line": 84,
+      "function": "all",
+      "class_name": "SensorNetwork",
+      "code": "def all(self) -> List[Sensor]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "all",
+      "class_name": "SensorNetwork",
+      "code": "return list(self._sensors.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 87,
+      "end_line": 87,
+      "function": "enabled_sensors",
+      "class_name": "SensorNetwork",
+      "code": "def enabled_sensors(self) -> List[Sensor]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 87,
+      "end_line": 87,
+      "function": "enabled_sensors",
+      "class_name": "SensorNetwork",
+      "code": "return [s for s in self._sensors.values() if s.enabled]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 90,
+      "end_line": 90,
+      "function": "to_dict",
+      "class_name": "SensorNetwork",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 90,
+      "end_line": 90,
+      "function": "to_dict",
+      "class_name": "SensorNetwork",
+      "code": "return {'network_id': self.network_id, 'sensors': [s.to_dict() for s in self._sensors.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 97,
+      "end_line": 97,
+      "function": "from_dict",
+      "class_name": "SensorNetwork",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> SensorNetwork:",
+      "vars_in_scope": [
+        "cls",
+        "net",
+        "raw",
+        "s"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 102,
+      "end_line": 102,
+      "function": "from_dict",
+      "class_name": "SensorNetwork",
+      "code": "return net",
+      "vars_in_scope": [
+        "cls",
+        "net",
+        "raw",
+        "s"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 107,
+      "end_line": 107,
+      "function": "__init__",
+      "class_name": "MetricsClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 111,
+      "end_line": 111,
+      "function": "_url",
+      "class_name": "MetricsClient",
+      "code": "def _url(self, network_id: str) -> str:",
+      "vars_in_scope": [
+        "network_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "_url",
+      "class_name": "MetricsClient",
+      "code": "return f'{self.base_url}/networks/{network_id}.json'",
+      "vars_in_scope": [
+        "network_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 114,
+      "end_line": 114,
+      "function": "fetch",
+      "class_name": "MetricsClient",
+      "code": "def fetch(self, network_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "body",
+        "network_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 119,
+      "end_line": 119,
+      "function": "fetch",
+      "class_name": "MetricsClient",
+      "code": "return json.loads(body.decode('utf-8'))",
+      "vars_in_scope": [
+        "body",
+        "network_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch",
+      "class_name": "MetricsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "network_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch",
+      "class_name": "MetricsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "network_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 124,
+      "end_line": 124,
+      "function": "push",
+      "class_name": "MetricsClient",
+      "code": "def push(self, network_id: str, payload: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "data",
+        "network_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 129,
+      "end_line": 129,
+      "function": "push",
+      "class_name": "MetricsClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "data",
+        "network_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 131,
+      "end_line": 131,
+      "function": "push",
+      "class_name": "MetricsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "network_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 131,
+      "end_line": 131,
+      "function": "push",
+      "class_name": "MetricsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "data",
+        "network_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 135,
+      "end_line": 135,
+      "function": "load_network",
+      "class_name": null,
+      "code": "def load_network(path: Path) -> SensorNetwork:",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 137,
+      "end_line": 137,
+      "function": "load_network",
+      "class_name": null,
+      "code": "return SensorNetwork.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 139,
+      "end_line": 139,
+      "function": "load_network",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "load_network",
+      "class_name": null,
+      "code": "return SensorNetwork(network_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 141,
+      "end_line": 141,
+      "function": "load_network",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 141,
+      "end_line": 141,
+      "function": "load_network",
+      "class_name": null,
+      "code": "return SensorNetwork(network_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 145,
+      "end_line": 145,
+      "function": "save_network",
+      "class_name": null,
+      "code": "def save_network(path: Path, net: SensorNetwork) -> None:",
+      "vars_in_scope": [
+        "net",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 151,
+      "end_line": 151,
+      "function": "save_network",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "net",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 155,
+      "end_line": 155,
+      "function": "save_network",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "net",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 159,
+      "end_line": 159,
+      "function": "aggregate_metrics",
+      "class_name": null,
+      "code": "def aggregate_metrics(net: SensorNetwork) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "avg",
+        "latest",
+        "net",
+        "sensors",
+        "values"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 161,
+      "end_line": 161,
+      "function": "aggregate_metrics",
+      "class_name": null,
+      "code": "return {'sensor_count': 0, 'avg_value': 0.0}",
+      "vars_in_scope": [
+        "avg",
+        "latest",
+        "net",
+        "sensors",
+        "values"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 168,
+      "end_line": 168,
+      "function": "aggregate_metrics",
+      "class_name": null,
+      "code": "return {'sensor_count': len(sensors), 'avg_value': 0.0}",
+      "vars_in_scope": [
+        "avg",
+        "latest",
+        "net",
+        "sensors",
+        "values"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 170,
+      "end_line": 170,
+      "function": "aggregate_metrics",
+      "class_name": null,
+      "code": "return {'sensor_count': len(sensors), 'avg_value': avg}",
+      "vars_in_scope": [
+        "avg",
+        "latest",
+        "net",
+        "sensors",
+        "values"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 174,
+      "end_line": 174,
+      "function": "detect_anomalies",
+      "class_name": null,
+      "code": "def detect_anomalies(net: SensorNetwork, threshold: float = 100.0) -> List[str]:",
+      "vars_in_scope": [
+        "net",
+        "outliers",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 180,
+      "end_line": 180,
+      "function": "detect_anomalies",
+      "class_name": null,
+      "code": "return outliers",
+      "vars_in_scope": [
+        "net",
+        "outliers",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 184,
+      "end_line": 184,
+      "function": "sync_remote_metrics",
+      "class_name": null,
+      "code": "def sync_remote_metrics(net: SensorNetwork, client: MetricsClient) -> int:",
+      "vars_in_scope": [
+        "added",
+        "client",
+        "data",
+        "net",
+        "remote"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 186,
+      "end_line": 186,
+      "function": "sync_remote_metrics",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "added",
+        "client",
+        "data",
+        "net",
+        "remote"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 193,
+      "end_line": 193,
+      "function": "sync_remote_metrics",
+      "class_name": null,
+      "code": "return added",
+      "vars_in_scope": [
+        "added",
+        "client",
+        "data",
+        "net",
+        "remote"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 197,
+      "end_line": 197,
+      "function": "simulate_network",
+      "class_name": null,
+      "code": "def simulate_network(net: SensorNetwork, rounds: int = 3) -> None:",
+      "vars_in_scope": [
+        "net",
+        "rounds",
+        "step",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 206,
+      "end_line": 206,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "net",
+        "net_path",
+        "report_path",
+        "summary"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 224,
+      "end_line": 224,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "net",
+        "net_path",
+        "report_path",
+        "summary"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 224,
+      "end_line": 224,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "net",
+        "net_path",
+        "report_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 227,
+      "end_line": 227,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "net",
+        "net_path",
+        "report_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

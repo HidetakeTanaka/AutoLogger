@@ -1,0 +1,179 @@
+{
+  "file": "script74.py",
+  "logs": [
+    {
+      "line": 19,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_ok with threshold={threshold}\")"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 41,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse timestamp from raw data: {ts_raw}', exc_info=True)"
+    },
+    {
+      "line": 51,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_reading with reading: {reading}\")"
+    },
+    {
+      "line": 54,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_readings with minutes={minutes}\")"
+    },
+    {
+      "line": 58,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered avg_value with minutes={minutes}\")"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing MetricsClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered fetch_thresholds method with url: %s', url)"
+    },
+    {
+      "line": 101,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch thresholds from {url} with request {req}', exc_info=True)"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_summary with summary keys: {list(summary.keys())}\")"
+    },
+    {
+      "line": 112,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Push summary to {url} returned status {resp.status}')"
+    },
+    {
+      "line": 114,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary to {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 116,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary to {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 120,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_devices with path: {path}\")"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded {len(raw)} devices from {path}')"
+    },
+    {
+      "line": 124,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load devices from {path} with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 126,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load devices from {path} with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_devices with path={path} and {len(devices)} devices\")"
+    },
+    {
+      "line": 136,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save devices to {path} with payload {payload}')"
+    },
+    {
+      "line": 140,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save devices to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_devices with {len(devices)} devices\")"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Summarizing devices: count={len(devices)}, overall_avg={overall_avg}')"
+    },
+    {
+      "line": 162,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered detect_anomalies with devices={devices}, incidents={incidents}, limit={limit}, thresholds={thresholds}\")"
+    },
+    {
+      "line": 169,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Detected {len(incidents)} anomalies with limit={limit} and thresholds={thresholds}')"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_cycle with {len(devices)} devices and {cycles} cycles\")"
+    },
+    {
+      "line": 187,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 207,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

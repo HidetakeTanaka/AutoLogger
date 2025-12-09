@@ -1,0 +1,797 @@
+{
+  "file": "scripts\\script51.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 10,
+      "end_line": 10,
+      "function": "__init__",
+      "class_name": "Reading",
+      "code": "def __init__(self, reading_id: str, value: float, ts: datetime, tags: Iterable[str]) -> None:",
+      "vars_in_scope": [
+        "reading_id",
+        "self",
+        "tags",
+        "ts",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 16,
+      "end_line": 16,
+      "function": "is_recent",
+      "class_name": "Reading",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 17,
+      "end_line": 17,
+      "function": "is_recent",
+      "class_name": "Reading",
+      "code": "return False",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 18,
+      "end_line": 18,
+      "function": "is_recent",
+      "class_name": "Reading",
+      "code": "return self.ts >= datetime.utcnow() - timedelta(hours=hours)",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "matches",
+      "class_name": "Reading",
+      "code": "def matches(self, keyword: str) -> bool:",
+      "vars_in_scope": [
+        "keyword",
+        "q",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "matches",
+      "class_name": "Reading",
+      "code": "return True",
+      "vars_in_scope": [
+        "keyword",
+        "q",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 25,
+      "end_line": 25,
+      "function": "matches",
+      "class_name": "Reading",
+      "code": "return True",
+      "vars_in_scope": [
+        "keyword",
+        "q",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "matches",
+      "class_name": "Reading",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "keyword",
+        "q",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 29,
+      "end_line": 29,
+      "function": "to_dict",
+      "class_name": "Reading",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "to_dict",
+      "class_name": "Reading",
+      "code": "return {'reading_id': self.reading_id, 'value': self.value, 'ts': self.ts.isoformat(), 'tags': self.tags}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 38,
+      "end_line": 38,
+      "function": "from_dict",
+      "class_name": "Reading",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Reading\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 41,
+      "end_line": 41,
+      "function": "from_dict",
+      "class_name": "Reading",
+      "code": "return cls(reading_id=str(raw.get('reading_id', '')), value=float(raw.get('value', 0.0)), ts=ts, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 48,
+      "end_line": 48,
+      "function": "from_dict",
+      "class_name": "Reading",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 48,
+      "end_line": 48,
+      "function": "from_dict",
+      "class_name": "Reading",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 53,
+      "end_line": 53,
+      "function": "__init__",
+      "class_name": "Sensor",
+      "code": "def __init__(self, sensor_id: str, location: str) -> None:",
+      "vars_in_scope": [
+        "location",
+        "self",
+        "sensor_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 58,
+      "end_line": 58,
+      "function": "add_reading",
+      "class_name": "Sensor",
+      "code": "def add_reading(self, r: Reading) -> None:",
+      "vars_in_scope": [
+        "r",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 61,
+      "end_line": 61,
+      "function": "recent",
+      "class_name": "Sensor",
+      "code": "def recent(self, hours: int = 24) -> List[Reading]:",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 61,
+      "end_line": 61,
+      "function": "recent",
+      "class_name": "Sensor",
+      "code": "return [r for r in self.readings if r.is_recent(hours)]",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 64,
+      "end_line": 64,
+      "function": "filter_by_tag",
+      "class_name": "Sensor",
+      "code": "def filter_by_tag(self, tag: str) -> List[Reading]:",
+      "vars_in_scope": [
+        "self",
+        "tag"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 64,
+      "end_line": 64,
+      "function": "filter_by_tag",
+      "class_name": "Sensor",
+      "code": "return [r for r in self.readings if tag.lower() in (t.lower() for t in r.tags)]",
+      "vars_in_scope": [
+        "self",
+        "tag"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 67,
+      "end_line": 67,
+      "function": "to_dict",
+      "class_name": "Sensor",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "to_dict",
+      "class_name": "Sensor",
+      "code": "return {'sensor_id': self.sensor_id, 'location': self.location, 'readings': [r.to_dict() for r in self.readings]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 75,
+      "end_line": 75,
+      "function": "from_dict",
+      "class_name": "Sensor",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Sensor\"]:",
+      "vars_in_scope": [
+        "cls",
+        "r",
+        "raw",
+        "s"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "from_dict",
+      "class_name": "Sensor",
+      "code": "return s",
+      "vars_in_scope": [
+        "cls",
+        "r",
+        "raw",
+        "s"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 86,
+      "end_line": 86,
+      "function": "from_dict",
+      "class_name": "Sensor",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "r",
+        "raw",
+        "s"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 86,
+      "end_line": 86,
+      "function": "from_dict",
+      "class_name": "Sensor",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "r",
+        "raw",
+        "s"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 91,
+      "end_line": 91,
+      "function": "__init__",
+      "class_name": "SyncClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 4) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 95,
+      "end_line": 95,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "def _url(self, sensor_id: str) -> str:",
+      "vars_in_scope": [
+        "self",
+        "sensor_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 95,
+      "end_line": 95,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "return f'{self.base_url}/sensors/{sensor_id}'",
+      "vars_in_scope": [
+        "self",
+        "sensor_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 98,
+      "end_line": 98,
+      "function": "fetch_remote",
+      "class_name": "SyncClient",
+      "code": "def fetch_remote(self, sensor_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "body",
+        "self",
+        "sensor_id",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 102,
+      "end_line": 102,
+      "function": "fetch_remote",
+      "class_name": "SyncClient",
+      "code": "return json.loads(body.decode('utf-8'))",
+      "vars_in_scope": [
+        "body",
+        "self",
+        "sensor_id",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 104,
+      "end_line": 104,
+      "function": "fetch_remote",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "self",
+        "sensor_id",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 104,
+      "end_line": 104,
+      "function": "fetch_remote",
+      "class_name": "SyncClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "self",
+        "sensor_id",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 108,
+      "end_line": 108,
+      "function": "load_sensors",
+      "class_name": null,
+      "code": "def load_sensors(path: Path) -> Dict[str, Sensor]:",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "result",
+        "s"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 112,
+      "end_line": 112,
+      "function": "load_sensors",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "result",
+        "s"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 112,
+      "end_line": 112,
+      "function": "load_sensors",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "result",
+        "s"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 118,
+      "end_line": 118,
+      "function": "load_sensors",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "result",
+        "s"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 122,
+      "end_line": 122,
+      "function": "save_sensors",
+      "class_name": null,
+      "code": "def save_sensors(path: Path, sensors: Dict[str, Sensor]) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "sensors",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 129,
+      "end_line": 129,
+      "function": "save_sensors",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "sensors",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 134,
+      "end_line": 134,
+      "function": "merge_sensor",
+      "class_name": null,
+      "code": "def merge_sensor(local: Sensor, remote: Sensor) -> Sensor:",
+      "vars_in_scope": [
+        "local",
+        "merged",
+        "remote"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 136,
+      "end_line": 136,
+      "function": "merge_sensor",
+      "class_name": null,
+      "code": "return merged",
+      "vars_in_scope": [
+        "local",
+        "merged",
+        "remote"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 140,
+      "end_line": 140,
+      "function": "summarize",
+      "class_name": null,
+      "code": "def summarize(sens: Iterable[Sensor]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "items",
+        "rcounts",
+        "sens"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 142,
+      "end_line": 142,
+      "function": "summarize",
+      "class_name": null,
+      "code": "return {'count': 0, 'avg_readings': 0.0}",
+      "vars_in_scope": [
+        "items",
+        "rcounts",
+        "sens"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 144,
+      "end_line": 144,
+      "function": "summarize",
+      "class_name": null,
+      "code": "return {'count': len(items), 'avg_readings': sum(rcounts) / len(items)}",
+      "vars_in_scope": [
+        "items",
+        "rcounts",
+        "sens"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 148,
+      "end_line": 148,
+      "function": "pick_random_recent",
+      "class_name": null,
+      "code": "def pick_random_recent(sensor: Sensor) -> Optional[Reading]:",
+      "vars_in_scope": [
+        "cands",
+        "sensor"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 150,
+      "end_line": 150,
+      "function": "pick_random_recent",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "cands",
+        "sensor"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 151,
+      "end_line": 151,
+      "function": "pick_random_recent",
+      "class_name": null,
+      "code": "return random.choice(cands)",
+      "vars_in_scope": [
+        "cands",
+        "sensor"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 155,
+      "end_line": 155,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "r",
+        "rdata",
+        "report",
+        "report_path",
+        "sensors",
+        "sensors_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 175,
+      "end_line": 175,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "r",
+        "rdata",
+        "report",
+        "report_path",
+        "sensors",
+        "sensors_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "r",
+        "rdata",
+        "report",
+        "report_path",
+        "sensors",
+        "sensors_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 177,
+      "end_line": 177,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "r",
+        "rdata",
+        "report",
+        "report_path",
+        "sensors",
+        "sensors_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

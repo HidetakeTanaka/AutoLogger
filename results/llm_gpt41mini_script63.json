@@ -1,0 +1,203 @@
+{
+  "file": "script63.py",
+  "logs": [
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering average method for Student: {self}\")"
+    },
+    {
+      "line": 22,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Calculated average grade for student {self}: {sum(self.grades.values()) / len(self.grades):.2f}')"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Student did not pass: average {avg} is below threshold {threshold}')"
+    },
+    {
+      "line": 31,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches method with query: {query}\")"
+    },
+    {
+      "line": 48,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 62,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse enrollment date from raw data: {enrolled_raw}')"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing Course with course_id={course_id}, title={title}\")"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_student with student: {student}\")"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_student with student_id={student_id}\")"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Retrieving student with ID: {student_id}')"
+    },
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering all_students method of Course instance {self}\")"
+    },
+    {
+      "line": 95,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing AnalyticsClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with course_id={course_id}\")"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_benchmarks with course_id={course_id}\")"
+    },
+    {
+      "line": 121,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch benchmarks for course_id {course_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 124,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_summary with course_id={course_id} and summary keys={list(summary.keys())}\")"
+    },
+    {
+      "line": 132,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Push summary response status: {resp.status} for course_id: {course_id}')"
+    },
+    {
+      "line": 134,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary for course_id {course_id} to {url} with body {body}')"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_course with path: {path}\")"
+    },
+    {
+      "line": 141,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded course from {path} with data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 143,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load course from {path} with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_course with path={path} and course={course}\")"
+    },
+    {
+      "line": 155,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save course {course} to path {path} with payload {payload} and tmp {tmp}', exc_info=True)"
+    },
+    {
+      "line": 160,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_course with course id: {course.id}, name: {course.name}\")"
+    },
+    {
+      "line": 165,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summary computed: count={count}, class_avg={course.class_average():.2f}, pass_rate={(passed / count if count else 0.0):.2f}\")"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Applying curve to course {course} with curve value {curve}\")"
+    },
+    {
+      "line": 182,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering merge_remote_benchmarks with target={target}\")"
+    },
+    {
+      "line": 183,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merging complete for target {target}. Summary: {summary}')"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merging complete for target {target} with {len(merged)} entries from remote {remote}.')"
+    },
+    {
+      "line": 193,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_study with course={course} for {days} days\")"
+    },
+    {
+      "line": 205,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 228,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

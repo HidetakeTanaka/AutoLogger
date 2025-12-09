@@ -1,0 +1,897 @@
+{
+  "file": "scripts\\script68.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_long",
+      "class_name": "WorkoutSession",
+      "code": "def is_long(self, threshold: int = 45) -> bool:",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_long",
+      "class_name": "WorkoutSession",
+      "code": "return False",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_long",
+      "class_name": "WorkoutSession",
+      "code": "return self.duration_min >= threshold",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches",
+      "class_name": "WorkoutSession",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches",
+      "class_name": "WorkoutSession",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "matches",
+      "class_name": "WorkoutSession",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches",
+      "class_name": "WorkoutSession",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "WorkoutSession",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "WorkoutSession",
+      "code": "return {'session_id': self.session_id, 'user_id': self.user_id, 'start': self.start.isoformat(), 'duration_min': self.duration_min, 'calories': self.calories, 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 46,
+      "end_line": 46,
+      "function": "from_dict",
+      "class_name": "WorkoutSession",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"WorkoutSession\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "start",
+        "start_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 53,
+      "end_line": 53,
+      "function": "from_dict",
+      "class_name": "WorkoutSession",
+      "code": "return cls(session_id=str(raw.get('session_id', '')), user_id=str(raw.get('user_id', '')), start=start, duration_min=int(raw.get('duration_min', 0)), calories=float(raw.get('calories', 0.0)), tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "start",
+        "start_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 62,
+      "end_line": 62,
+      "function": "from_dict",
+      "class_name": "WorkoutSession",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "start",
+        "start_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 62,
+      "end_line": 62,
+      "function": "from_dict",
+      "class_name": "WorkoutSession",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "start",
+        "start_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "add_session",
+      "class_name": "UserProfile",
+      "code": "def add_session(self, session: WorkoutSession) -> None:",
+      "vars_in_scope": [
+        "self",
+        "session"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 75,
+      "end_line": 75,
+      "function": "add_session",
+      "class_name": "UserProfile",
+      "code": "return",
+      "vars_in_scope": [
+        "self",
+        "session"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 80,
+      "end_line": 80,
+      "function": "total_minutes",
+      "class_name": "UserProfile",
+      "code": "def total_minutes(self) -> int:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 80,
+      "end_line": 80,
+      "function": "total_minutes",
+      "class_name": "UserProfile",
+      "code": "return sum((s.duration_min for s in self.sessions))",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 83,
+      "end_line": 83,
+      "function": "weekly_progress",
+      "class_name": "UserProfile",
+      "code": "def weekly_progress(self, ref: Optional[datetime] = None) -> float:",
+      "vars_in_scope": [
+        "minutes",
+        "ref",
+        "self",
+        "week_start"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 89,
+      "end_line": 89,
+      "function": "weekly_progress",
+      "class_name": "UserProfile",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "minutes",
+        "ref",
+        "self",
+        "week_start"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 90,
+      "end_line": 90,
+      "function": "weekly_progress",
+      "class_name": "UserProfile",
+      "code": "return min(1.0, minutes / self.goal_minutes_per_week)",
+      "vars_in_scope": [
+        "minutes",
+        "ref",
+        "self",
+        "week_start"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 93,
+      "end_line": 93,
+      "function": "to_dict",
+      "class_name": "UserProfile",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 93,
+      "end_line": 93,
+      "function": "to_dict",
+      "class_name": "UserProfile",
+      "code": "return {'user_id': self.user_id, 'name': self.name, 'goal_minutes_per_week': self.goal_minutes_per_week, 'updated_at': self.updated_at.isoformat(), 'sessions': [s.to_dict() for s in self.sessions]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 103,
+      "end_line": 103,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"UserProfile\":",
+      "vars_in_scope": [
+        "cls",
+        "profile",
+        "raw",
+        "s",
+        "updated",
+        "updated_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 111,
+      "end_line": 111,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "profile",
+        "raw",
+        "s",
+        "updated",
+        "updated_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 122,
+      "end_line": 122,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "return profile",
+      "vars_in_scope": [
+        "cls",
+        "profile",
+        "raw",
+        "s",
+        "updated",
+        "updated_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 127,
+      "end_line": 127,
+      "function": "__init__",
+      "class_name": "AnalyticsClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 131,
+      "end_line": 131,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "def _url(self, user_id: str) -> str:",
+      "vars_in_scope": [
+        "self",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 131,
+      "end_line": 131,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "return f'{self.base_url}/benchmarks/{user_id}.json'",
+      "vars_in_scope": [
+        "self",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 134,
+      "end_line": 134,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "def fetch_benchmarks(self, user_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 136,
+      "end_line": 136,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 141,
+      "end_line": 141,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return json.loads(data.decode('utf-8'))",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 143,
+      "end_line": 143,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 143,
+      "end_line": 143,
+      "function": "fetch_benchmarks",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 146,
+      "end_line": 146,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "def push_summary(self, user_id: str, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 147,
+      "end_line": 147,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 158,
+      "end_line": 158,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 160,
+      "end_line": 160,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "push_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 164,
+      "end_line": 164,
+      "function": "load_profile",
+      "class_name": null,
+      "code": "def load_profile(path: Path) -> UserProfile:",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 167,
+      "end_line": 167,
+      "function": "load_profile",
+      "class_name": null,
+      "code": "return UserProfile.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 169,
+      "end_line": 169,
+      "function": "load_profile",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 169,
+      "end_line": 169,
+      "function": "load_profile",
+      "class_name": null,
+      "code": "return UserProfile(user_id='local', name='Local User')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 173,
+      "end_line": 173,
+      "function": "save_profile",
+      "class_name": null,
+      "code": "def save_profile(path: Path, profile: UserProfile) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "profile",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 180,
+      "end_line": 180,
+      "function": "save_profile",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "profile",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 184,
+      "end_line": 184,
+      "function": "save_profile",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "profile",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 188,
+      "end_line": 188,
+      "function": "summarize_profile",
+      "class_name": null,
+      "code": "def summarize_profile(profile: UserProfile) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "long_sessions",
+        "profile"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 189,
+      "end_line": 189,
+      "function": "summarize_profile",
+      "class_name": null,
+      "code": "return {'user_id': profile.user_id, 'name': profile.name, 'session_count': 0, 'total_minutes': 0, 'weekly_progress': 0.0}",
+      "vars_in_scope": [
+        "long_sessions",
+        "profile"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 197,
+      "end_line": 197,
+      "function": "summarize_profile",
+      "class_name": null,
+      "code": "return {'user_id': profile.user_id, 'name': profile.name, 'session_count': len(profile.sessions), 'total_minutes': profile.total_minutes(), 'weekly_progress': profile.weekly_progress(), 'long_sessions': long_sessions}",
+      "vars_in_scope": [
+        "long_sessions",
+        "profile"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 208,
+      "end_line": 208,
+      "function": "simulate_week",
+      "class_name": null,
+      "code": "def simulate_week(profile: UserProfile, days: int = 7) -> None:",
+      "vars_in_scope": [
+        "calories",
+        "days",
+        "duration",
+        "profile",
+        "session",
+        "start"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 228,
+      "end_line": 228,
+      "function": "merge_benchmarks",
+      "class_name": null,
+      "code": "def merge_benchmarks(",
+      "vars_in_scope": [
+        "benchmarks",
+        "result",
+        "summary",
+        "target"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 229,
+      "end_line": 229,
+      "function": "merge_benchmarks",
+      "class_name": null,
+      "code": "return summary",
+      "vars_in_scope": [
+        "benchmarks",
+        "result",
+        "summary",
+        "target"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 237,
+      "end_line": 237,
+      "function": "merge_benchmarks",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "benchmarks",
+        "result",
+        "summary",
+        "target"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 241,
+      "end_line": 241,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "merged",
+        "profile",
+        "profile_path",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 257,
+      "end_line": 257,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "merged",
+        "profile",
+        "profile_path",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 257,
+      "end_line": 257,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "merged",
+        "profile",
+        "profile_path",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 260,
+      "end_line": 260,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "merged",
+        "profile",
+        "profile_path",
+        "remote",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}
