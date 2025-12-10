@@ -1,0 +1,78 @@
+{
+  "file": "script31.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 32,
+      "level": "WARNING",
+      "message": "Random log at line 32 in score_ratio",
+      "kind": "return",
+      "function": "score_ratio"
+    },
+    {
+      "line": 33,
+      "level": "INFO",
+      "message": "Random log at line 33 in score_ratio",
+      "kind": "return",
+      "function": "score_ratio"
+    },
+    {
+      "line": 45,
+      "level": "ERROR",
+      "message": "Random log at line 45 in ensure_data_dir",
+      "kind": "entry",
+      "function": "ensure_data_dir"
+    },
+    {
+      "line": 49,
+      "level": "DEBUG",
+      "message": "Random log at line 49 in generate_sample_attempts",
+      "kind": "entry",
+      "function": "generate_sample_attempts"
+    },
+    {
+      "line": 76,
+      "level": "DEBUG",
+      "message": "Random log at line 76 in load_attempts",
+      "kind": "entry",
+      "function": "load_attempts"
+    },
+    {
+      "line": 112,
+      "level": "DEBUG",
+      "message": "Random log at line 112 in summarize_user",
+      "kind": "return",
+      "function": "summarize_user"
+    },
+    {
+      "line": 128,
+      "level": "ERROR",
+      "message": "Random log at line 128 in find_suspicious_users",
+      "kind": "entry",
+      "function": "find_suspicious_users"
+    },
+    {
+      "line": 137,
+      "level": "WARNING",
+      "message": "Random log at line 137 in interactive_menu",
+      "kind": "entry",
+      "function": "interactive_menu"
+    },
+    {
+      "line": 144,
+      "level": "ERROR",
+      "message": "Random log at line 144 in interactive_menu",
+      "kind": "except",
+      "function": "interactive_menu"
+    },
+    {
+      "line": 145,
+      "level": "WARNING",
+      "message": "Random log at line 145 in interactive_menu",
+      "kind": "return",
+      "function": "interactive_menu"
+    }
+  ]
+}
