@@ -103,7 +103,8 @@ class LogCandidateVisitor(ast.NodeVisitor):
         self._func_stack.append(node)
 
         # 1: function entry: try to point to the first body line if present, else def line 
-        entry_line = node.body[0].lineno if node.body else node.lineno
+        # entry_line = node.body[0].lineno if node.body else node.lineno
+        entry_line = node.lineno
 
         # try to get the full signature from source
         sig = ast.get_source_segment(self.source, node) or f"def {node.name}(...)"
@@ -215,11 +216,3 @@ if __name__ == "__main__":
     
     print(f"✅ Parsed {src_path.name} -> {out_path.name}")
     print(f"Found {len(result['candidates'])} candidates in {src_path.name}")
-    
-
-
-
-
-
-    
-    

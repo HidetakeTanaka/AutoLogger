@@ -1,10 +1,10 @@
 {
-  "file": "scripts\\script31.py",
+  "file": "scripts/script31.py",
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 31,
-      "end_line": 31,
+      "line": 30,
+      "end_line": 30,
       "function": "score_ratio",
       "class_name": "QuizAttempt",
       "code": "def score_ratio(self) -> float:",
@@ -42,8 +42,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 36,
-      "end_line": 36,
+      "line": 35,
+      "end_line": 35,
       "function": "is_suspicious",
       "class_name": "QuizAttempt",
       "code": "def is_suspicious(self, fast_threshold: int = 60, high_ratio: float = 0.9) -> bool:",
@@ -93,8 +93,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 45,
-      "end_line": 45,
+      "line": 44,
+      "end_line": 44,
       "function": "ensure_data_dir",
       "class_name": null,
       "code": "def ensure_data_dir() -> None:",
@@ -104,8 +104,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 49,
-      "end_line": 49,
+      "line": 48,
+      "end_line": 48,
       "function": "generate_sample_attempts",
       "class_name": null,
       "code": "def generate_sample_attempts(num_users: int = 10) -> None:",
@@ -123,8 +123,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 76,
-      "end_line": 76,
+      "line": 75,
+      "end_line": 75,
       "function": "load_attempts",
       "class_name": null,
       "code": "def load_attempts(path: Path) -> List[QuizAttempt]:",
@@ -177,8 +177,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 104,
-      "end_line": 104,
+      "line": 103,
+      "end_line": 103,
       "function": "group_by_user",
       "class_name": null,
       "code": "def group_by_user(attempts: List[QuizAttempt]) -> Dict[str, List[QuizAttempt]]:",
@@ -205,8 +205,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 111,
-      "end_line": 111,
+      "line": 110,
+      "end_line": 110,
       "function": "summarize_user",
       "class_name": null,
       "code": "def summarize_user(attempts: List[QuizAttempt]) -> Dict[str, object]:",
@@ -259,8 +259,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 128,
-      "end_line": 128,
+      "line": 127,
+      "end_line": 127,
       "function": "find_suspicious_users",
       "class_name": null,
       "code": "def find_suspicious_users(grouped: Dict[str, List[QuizAttempt]]) -> List[str]:",
@@ -289,8 +289,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 137,
-      "end_line": 137,
+      "line": 136,
+      "end_line": 136,
       "function": "interactive_menu",
       "class_name": null,
       "code": "def interactive_menu() -> None:",
@@ -365,8 +365,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 182,
-      "end_line": 182,
+      "line": 181,
+      "end_line": 181,
       "function": "main",
       "class_name": null,
       "code": "def main() -> None:",
