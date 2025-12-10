@@ -1,0 +1,127 @@
+{
+  "file": "script80.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 33,
+      "level": "ERROR",
+      "message": "Random log at line 33 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Random log at line 33 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 43,
+      "level": "DEBUG",
+      "message": "Random log at line 43 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Random log at line 67 in average_score",
+      "kind": "return",
+      "function": "average_score"
+    },
+    {
+      "line": 71,
+      "level": "ERROR",
+      "message": "Random log at line 71 in filter_by_tag",
+      "kind": "entry",
+      "function": "filter_by_tag"
+    },
+    {
+      "line": 74,
+      "level": "WARNING",
+      "message": "Random log at line 74 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 74,
+      "level": "ERROR",
+      "message": "Random log at line 74 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 81,
+      "level": "WARNING",
+      "message": "Random log at line 81 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 123,
+      "level": "INFO",
+      "message": "Random log at line 123 in send_summary",
+      "kind": "except",
+      "function": "send_summary"
+    },
+    {
+      "line": 145,
+      "level": "WARNING",
+      "message": "Random log at line 145 in save_survey",
+      "kind": "except",
+      "function": "save_survey"
+    },
+    {
+      "line": 145,
+      "level": "WARNING",
+      "message": "Random log at line 145 in save_survey",
+      "kind": "return",
+      "function": "save_survey"
+    },
+    {
+      "line": 157,
+      "level": "INFO",
+      "message": "Random log at line 157 in compute_tag_scores",
+      "kind": "return",
+      "function": "compute_tag_scores"
+    },
+    {
+      "line": 163,
+      "level": "ERROR",
+      "message": "Random log at line 163 in detect_outliers",
+      "kind": "return",
+      "function": "detect_outliers"
+    },
+    {
+      "line": 238,
+      "level": "DEBUG",
+      "message": "Random log at line 238 in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 245,
+      "level": "WARNING",
+      "message": "Random log at line 245 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

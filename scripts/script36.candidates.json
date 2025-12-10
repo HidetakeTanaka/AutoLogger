@@ -1,0 +1,840 @@
+{
+  "file": "scripts/script36.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 18,
+      "end_line": 18,
+      "function": "can_withdraw",
+      "class_name": "Account",
+      "code": "def can_withdraw(self, amount: float) -> bool:",
+      "vars_in_scope": [
+        "amount",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 19,
+      "end_line": 19,
+      "function": "can_withdraw",
+      "class_name": "Account",
+      "code": "return False",
+      "vars_in_scope": [
+        "amount",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 20,
+      "end_line": 20,
+      "function": "can_withdraw",
+      "class_name": "Account",
+      "code": "return self.balance >= amount",
+      "vars_in_scope": [
+        "amount",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 23,
+      "end_line": 23,
+      "function": "withdraw",
+      "class_name": "Account",
+      "code": "def withdraw(self, amount: float) -> bool:",
+      "vars_in_scope": [
+        "amount",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "withdraw",
+      "class_name": "Account",
+      "code": "return False",
+      "vars_in_scope": [
+        "amount",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "withdraw",
+      "class_name": "Account",
+      "code": "return True",
+      "vars_in_scope": [
+        "amount",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 29,
+      "end_line": 29,
+      "function": "deposit",
+      "class_name": "Account",
+      "code": "def deposit(self, amount: float) -> bool:",
+      "vars_in_scope": [
+        "amount",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "deposit",
+      "class_name": "Account",
+      "code": "return False",
+      "vars_in_scope": [
+        "amount",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "deposit",
+      "class_name": "Account",
+      "code": "return True",
+      "vars_in_scope": [
+        "amount",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "Account",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "Account",
+      "code": "return {'account_id': self.account_id, 'owner': self.owner, 'currency': self.currency, 'balance': self.balance}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 52,
+      "end_line": 52,
+      "function": "is_debit",
+      "class_name": "Transaction",
+      "code": "def is_debit(self) -> bool:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 52,
+      "end_line": 52,
+      "function": "is_debit",
+      "class_name": "Transaction",
+      "code": "return self.amount < 0",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 55,
+      "end_line": 55,
+      "function": "to_dict",
+      "class_name": "Transaction",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 55,
+      "end_line": 55,
+      "function": "to_dict",
+      "class_name": "Transaction",
+      "code": "return {'tx_id': self.tx_id, 'account_id': self.account_id, 'amount': self.amount, 'kind': self.kind, 'created_at': self.created_at.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 66,
+      "end_line": 66,
+      "function": "__init__",
+      "class_name": "AccountStore",
+      "code": "def __init__(self, path: Path) -> None:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 70,
+      "end_line": 70,
+      "function": "load",
+      "class_name": "AccountStore",
+      "code": "def load(self) -> None:",
+      "vars_in_scope": [
+        "accounts",
+        "aid",
+        "balance",
+        "currency",
+        "data",
+        "owner",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 72,
+      "end_line": 72,
+      "function": "load",
+      "class_name": "AccountStore",
+      "code": "return",
+      "vars_in_scope": [
+        "accounts",
+        "aid",
+        "balance",
+        "currency",
+        "data",
+        "owner",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 77,
+      "end_line": 77,
+      "function": "load",
+      "class_name": "AccountStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "accounts",
+        "aid",
+        "balance",
+        "currency",
+        "data",
+        "owner",
+        "self"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 78,
+      "end_line": 78,
+      "function": "load",
+      "class_name": "AccountStore",
+      "code": "return",
+      "vars_in_scope": [
+        "accounts",
+        "aid",
+        "balance",
+        "currency",
+        "data",
+        "owner",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 87,
+      "end_line": 87,
+      "function": "load",
+      "class_name": "AccountStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "accounts",
+        "aid",
+        "balance",
+        "currency",
+        "data",
+        "owner",
+        "self"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 92,
+      "end_line": 92,
+      "function": "save",
+      "class_name": "AccountStore",
+      "code": "def save(self) -> None:",
+      "vars_in_scope": [
+        "payload",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 98,
+      "end_line": 98,
+      "function": "get",
+      "class_name": "AccountStore",
+      "code": "def get(self, account_id: str) -> Optional[Account]:",
+      "vars_in_scope": [
+        "account_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 98,
+      "end_line": 98,
+      "function": "get",
+      "class_name": "AccountStore",
+      "code": "return self._accounts.get(account_id)",
+      "vars_in_scope": [
+        "account_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 101,
+      "end_line": 101,
+      "function": "all",
+      "class_name": "AccountStore",
+      "code": "def all(self) -> List[Account]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 101,
+      "end_line": 101,
+      "function": "all",
+      "class_name": "AccountStore",
+      "code": "return list(self._accounts.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 106,
+      "end_line": 106,
+      "function": "__init__",
+      "class_name": "TransactionStore",
+      "code": "def __init__(self, path: Path) -> None:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 109,
+      "end_line": 109,
+      "function": "load",
+      "class_name": "TransactionStore",
+      "code": "def load(self) -> List[Transaction]:",
+      "vars_in_scope": [
+        "account_id",
+        "amount",
+        "created",
+        "data",
+        "kind",
+        "self",
+        "tx_id",
+        "txs"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 110,
+      "end_line": 110,
+      "function": "load",
+      "class_name": "TransactionStore",
+      "code": "return []",
+      "vars_in_scope": [
+        "account_id",
+        "amount",
+        "created",
+        "data",
+        "kind",
+        "self",
+        "tx_id",
+        "txs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 115,
+      "end_line": 115,
+      "function": "load",
+      "class_name": "TransactionStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "account_id",
+        "amount",
+        "created",
+        "data",
+        "kind",
+        "self",
+        "tx_id",
+        "txs"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "load",
+      "class_name": "TransactionStore",
+      "code": "return []",
+      "vars_in_scope": [
+        "account_id",
+        "amount",
+        "created",
+        "data",
+        "kind",
+        "self",
+        "tx_id",
+        "txs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 125,
+      "end_line": 125,
+      "function": "load",
+      "class_name": "TransactionStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "account_id",
+        "amount",
+        "created",
+        "data",
+        "kind",
+        "self",
+        "tx_id",
+        "txs"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 127,
+      "end_line": 127,
+      "function": "load",
+      "class_name": "TransactionStore",
+      "code": "return txs",
+      "vars_in_scope": [
+        "account_id",
+        "amount",
+        "created",
+        "data",
+        "kind",
+        "self",
+        "tx_id",
+        "txs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 130,
+      "end_line": 130,
+      "function": "save",
+      "class_name": "TransactionStore",
+      "code": "def save(self, txs: List[Transaction]) -> None:",
+      "vars_in_scope": [
+        "payload",
+        "self",
+        "txs"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 137,
+      "end_line": 137,
+      "function": "apply_transactions",
+      "class_name": null,
+      "code": "def apply_transactions(accounts: AccountStore, txs: List[Transaction]) -> Tuple[int, int]:",
+      "vars_in_scope": [
+        "acc",
+        "accounts",
+        "applied",
+        "rejected",
+        "txs"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 154,
+      "end_line": 154,
+      "function": "apply_transactions",
+      "class_name": null,
+      "code": "return (applied, rejected)",
+      "vars_in_scope": [
+        "acc",
+        "accounts",
+        "applied",
+        "rejected",
+        "txs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 158,
+      "end_line": 158,
+      "function": "summarize_accounts",
+      "class_name": null,
+      "code": "def summarize_accounts(accounts: List[Account]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "accounts",
+        "avg",
+        "balances",
+        "total"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 159,
+      "end_line": 159,
+      "function": "summarize_accounts",
+      "class_name": null,
+      "code": "return {'count': 0, 'total_balance': 0.0, 'avg_balance': 0.0}",
+      "vars_in_scope": [
+        "accounts",
+        "avg",
+        "balances",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 163,
+      "end_line": 163,
+      "function": "summarize_accounts",
+      "class_name": null,
+      "code": "return {'count': len(accounts), 'total_balance': total, 'avg_balance': avg}",
+      "vars_in_scope": [
+        "accounts",
+        "avg",
+        "balances",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 167,
+      "end_line": 167,
+      "function": "find_suspicious_transactions",
+      "class_name": null,
+      "code": "def find_suspicious_transactions(txs: List[Transaction], hours: int = 24, amount_threshold: float = 10000.0) -> List[Transaction]:",
+      "vars_in_scope": [
+        "amount_threshold",
+        "hours",
+        "now",
+        "suspicious",
+        "txs"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 168,
+      "end_line": 168,
+      "function": "find_suspicious_transactions",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "amount_threshold",
+        "hours",
+        "now",
+        "suspicious",
+        "txs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 174,
+      "end_line": 174,
+      "function": "find_suspicious_transactions",
+      "class_name": null,
+      "code": "return suspicious",
+      "vars_in_scope": [
+        "amount_threshold",
+        "hours",
+        "now",
+        "suspicious",
+        "txs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 178,
+      "end_line": 178,
+      "function": "export_summary",
+      "class_name": null,
+      "code": "def export_summary(path: Path, summary: Dict[str, Any]) -> None:",
+      "vars_in_scope": [
+        "path",
+        "summary"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 184,
+      "end_line": 184,
+      "function": "export_suspicious",
+      "class_name": null,
+      "code": "def export_suspicious(path: Path, txs: List[Transaction]) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "txs"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 191,
+      "end_line": 191,
+      "function": "load_config",
+      "class_name": null,
+      "code": "def load_config(path: Path) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 192,
+      "end_line": 192,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 195,
+      "end_line": 195,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return json.load(f)",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 197,
+      "end_line": 197,
+      "function": "load_config",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 197,
+      "end_line": 197,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 201,
+      "end_line": 201,
+      "function": "main",
+      "class_name": null,
+      "code": "def main() -> int:",
+      "vars_in_scope": [
+        "accounts",
+        "accounts_path",
+        "base",
+        "cfg",
+        "config_path",
+        "hours",
+        "summary",
+        "summary_path",
+        "suspicious",
+        "suspicious_path",
+        "threshold",
+        "tx_store",
+        "txs",
+        "txs_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 215,
+      "end_line": 215,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "accounts",
+        "accounts_path",
+        "base",
+        "cfg",
+        "config_path",
+        "hours",
+        "summary",
+        "summary_path",
+        "suspicious",
+        "suspicious_path",
+        "threshold",
+        "tx_store",
+        "txs",
+        "txs_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 231,
+      "end_line": 231,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "accounts",
+        "accounts_path",
+        "base",
+        "cfg",
+        "config_path",
+        "hours",
+        "summary",
+        "summary_path",
+        "suspicious",
+        "suspicious_path",
+        "threshold",
+        "tx_store",
+        "txs",
+        "txs_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

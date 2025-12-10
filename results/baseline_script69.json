@@ -1,0 +1,412 @@
+{
+  "file": "script69.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 26,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 39,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 47,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 47,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 59,
+      "level": "DEBUG",
+      "message": "Entering add_order",
+      "kind": "entry",
+      "function": "add_order"
+    },
+    {
+      "line": 60,
+      "level": "INFO",
+      "message": "Exiting add_order",
+      "kind": "return",
+      "function": "add_order"
+    },
+    {
+      "line": 64,
+      "level": "DEBUG",
+      "message": "Entering lifetime_value",
+      "kind": "entry",
+      "function": "lifetime_value"
+    },
+    {
+      "line": 64,
+      "level": "INFO",
+      "message": "Exiting lifetime_value",
+      "kind": "return",
+      "function": "lifetime_value"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Entering matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 69,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 70,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 73,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 73,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 83,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 87,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 98,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 103,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 107,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 107,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 110,
+      "level": "DEBUG",
+      "message": "Entering fetch_benchmarks",
+      "kind": "entry",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 111,
+      "level": "INFO",
+      "message": "Exiting fetch_benchmarks",
+      "kind": "return",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 117,
+      "level": "INFO",
+      "message": "Exiting fetch_benchmarks",
+      "kind": "return",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 119,
+      "level": "ERROR",
+      "message": "Exception in fetch_benchmarks",
+      "kind": "except",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 119,
+      "level": "INFO",
+      "message": "Exiting fetch_benchmarks",
+      "kind": "return",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 122,
+      "level": "DEBUG",
+      "message": "Entering push_summary",
+      "kind": "entry",
+      "function": "push_summary"
+    },
+    {
+      "line": 123,
+      "level": "INFO",
+      "message": "Exiting push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 130,
+      "level": "INFO",
+      "message": "Exiting push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 132,
+      "level": "ERROR",
+      "message": "Exception in push_summary",
+      "kind": "except",
+      "function": "push_summary"
+    },
+    {
+      "line": 132,
+      "level": "INFO",
+      "message": "Exiting push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 136,
+      "level": "DEBUG",
+      "message": "Entering load_customers",
+      "kind": "entry",
+      "function": "load_customers"
+    },
+    {
+      "line": 142,
+      "level": "INFO",
+      "message": "Exiting load_customers",
+      "kind": "return",
+      "function": "load_customers"
+    },
+    {
+      "line": 144,
+      "level": "ERROR",
+      "message": "Exception in load_customers",
+      "kind": "except",
+      "function": "load_customers"
+    },
+    {
+      "line": 144,
+      "level": "INFO",
+      "message": "Exiting load_customers",
+      "kind": "return",
+      "function": "load_customers"
+    },
+    {
+      "line": 146,
+      "level": "ERROR",
+      "message": "Exception in load_customers",
+      "kind": "except",
+      "function": "load_customers"
+    },
+    {
+      "line": 146,
+      "level": "INFO",
+      "message": "Exiting load_customers",
+      "kind": "return",
+      "function": "load_customers"
+    },
+    {
+      "line": 150,
+      "level": "DEBUG",
+      "message": "Entering save_customers",
+      "kind": "entry",
+      "function": "save_customers"
+    },
+    {
+      "line": 156,
+      "level": "ERROR",
+      "message": "Exception in save_customers",
+      "kind": "except",
+      "function": "save_customers"
+    },
+    {
+      "line": 160,
+      "level": "ERROR",
+      "message": "Exception in save_customers",
+      "kind": "except",
+      "function": "save_customers"
+    },
+    {
+      "line": 164,
+      "level": "DEBUG",
+      "message": "Entering compute_kpis",
+      "kind": "entry",
+      "function": "compute_kpis"
+    },
+    {
+      "line": 165,
+      "level": "INFO",
+      "message": "Exiting compute_kpis",
+      "kind": "return",
+      "function": "compute_kpis"
+    },
+    {
+      "line": 168,
+      "level": "INFO",
+      "message": "Exiting compute_kpis",
+      "kind": "return",
+      "function": "compute_kpis"
+    },
+    {
+      "line": 176,
+      "level": "DEBUG",
+      "message": "Entering simulate_orders",
+      "kind": "entry",
+      "function": "simulate_orders"
+    },
+    {
+      "line": 178,
+      "level": "INFO",
+      "message": "Exiting simulate_orders",
+      "kind": "return",
+      "function": "simulate_orders"
+    },
+    {
+      "line": 195,
+      "level": "INFO",
+      "message": "Exiting simulate_orders",
+      "kind": "return",
+      "function": "simulate_orders"
+    },
+    {
+      "line": 199,
+      "level": "DEBUG",
+      "message": "Entering apply_discounts",
+      "kind": "entry",
+      "function": "apply_discounts"
+    },
+    {
+      "line": 205,
+      "level": "INFO",
+      "message": "Exiting apply_discounts",
+      "kind": "return",
+      "function": "apply_discounts"
+    },
+    {
+      "line": 209,
+      "level": "DEBUG",
+      "message": "Entering merge_remote_benchmarks",
+      "kind": "entry",
+      "function": "merge_remote_benchmarks"
+    },
+    {
+      "line": 210,
+      "level": "INFO",
+      "message": "Exiting merge_remote_benchmarks",
+      "kind": "return",
+      "function": "merge_remote_benchmarks"
+    },
+    {
+      "line": 217,
+      "level": "INFO",
+      "message": "Exiting merge_remote_benchmarks",
+      "kind": "return",
+      "function": "merge_remote_benchmarks"
+    },
+    {
+      "line": 221,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 244,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 250,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 250,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 251,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

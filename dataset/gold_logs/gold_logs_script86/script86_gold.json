@@ -1,0 +1,299 @@
+{
+  "file": "script86.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.is_low_stock"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning low stock evaluation from Product.is_low_stock"
+    },
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.matches"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag/name match result from Product.matches"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.to_dict"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized product from Product.to_dict"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.from_dict"
+    },
+    {
+      "line": 59,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse product in Product.from_dict"
+    },
+    {
+      "line": 59,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from Product.from_dict"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.add_product"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.search"
+    },
+    {
+      "line": 71,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning search results from Inventory.search"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.total_value"
+    },
+    {
+      "line": 74,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning total inventory value from Inventory.total_value"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.low_stock"
+    },
+    {
+      "line": 77,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning low-stock products from Inventory.low_stock"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.to_dict"
+    },
+    {
+      "line": 80,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized inventory from Inventory.to_dict"
+    },
+    {
+      "line": 87,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.from_dict"
+    },
+    {
+      "line": 92,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Inventory instance from Inventory.from_dict"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PricingClient.__init__"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PricingClient._url"
+    },
+    {
+      "line": 101,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL from PricingClient._url"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PricingClient.fetch_tax_rate"
+    },
+    {
+      "line": 115,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch tax rate in PricingClient.fetch_tax_rate"
+    },
+    {
+      "line": 115,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from PricingClient.fetch_tax_rate"
+    },
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_inventory"
+    },
+    {
+      "line": 124,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load inventory in load_inventory"
+    },
+    {
+      "line": 124,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback Inventory in load_inventory"
+    },
+    {
+      "line": 126,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load inventory in load_inventory"
+    },
+    {
+      "line": 126,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback Inventory in load_inventory"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_inventory"
+    },
+    {
+      "line": 136,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save inventory in save_inventory"
+    },
+    {
+      "line": 140,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save inventory in save_inventory"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering apply_markdown"
+    },
+    {
+      "line": 150,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning affected count from apply_markdown"
+    },
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_daily_projection"
+    },
+    {
+      "line": 155,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0.0 from compute_daily_projection"
+    },
+    {
+      "line": 162,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed projection from compute_daily_projection"
+    },
+    {
+      "line": 166,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_sales"
+    },
+    {
+      "line": 167,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 from simulate_sales"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning sold count from simulate_sales"
+    },
+    {
+      "line": 181,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_inventory"
+    },
+    {
+      "line": 183,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning inventory summary without tax from summarize_inventory"
+    },
+    {
+      "line": 190,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning inventory summary with tax from summarize_inventory"
+    },
+    {
+      "line": 199,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 226,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 226,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 1 from main"
+    },
+    {
+      "line": 229,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 from main"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "file": "script18.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 11,
+      "level": "WARNING",
+      "message": "Random log at line 11 in update_quantity",
+      "kind": "entry",
+      "function": "update_quantity"
+    },
+    {
+      "line": 14,
+      "level": "INFO",
+      "message": "Random log at line 14 in update_price",
+      "kind": "entry",
+      "function": "update_price"
+    },
+    {
+      "line": 25,
+      "level": "ERROR",
+      "message": "Random log at line 25 in add_product",
+      "kind": "entry",
+      "function": "add_product"
+    },
+    {
+      "line": 28,
+      "level": "DEBUG",
+      "message": "Random log at line 28 in remove_product",
+      "kind": "entry",
+      "function": "remove_product"
+    },
+    {
+      "line": 31,
+      "level": "DEBUG",
+      "message": "Random log at line 31 in remove_product",
+      "kind": "return",
+      "function": "remove_product"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Random log at line 44 in read_json",
+      "kind": "entry",
+      "function": "read_json"
+    },
+    {
+      "line": 48,
+      "level": "ERROR",
+      "message": "Random log at line 48 in read_json",
+      "kind": "except",
+      "function": "read_json"
+    },
+    {
+      "line": 53,
+      "level": "WARNING",
+      "message": "Random log at line 53 in write_json",
+      "kind": "entry",
+      "function": "write_json"
+    },
+    {
+      "line": 57,
+      "level": "ERROR",
+      "message": "Random log at line 57 in write_json",
+      "kind": "except",
+      "function": "write_json"
+    },
+    {
+      "line": 61,
+      "level": "WARNING",
+      "message": "Random log at line 61 in create_product",
+      "kind": "entry",
+      "function": "create_product"
+    }
+  ]
+}

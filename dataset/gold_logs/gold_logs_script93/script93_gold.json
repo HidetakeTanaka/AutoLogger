@@ -1,0 +1,417 @@
+{
+  "file": "script93.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Event.is_recent"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning non-recent status from Event.is_recent"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent status from Event.is_recent"
+    },
+
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Event.matches_type"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning type match result from Event.matches_type"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning type match result from Event.matches_type"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning type match result from Event.matches_type"
+    },
+
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Event.to_dict"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized event from Event.to_dict"
+    },
+
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Event.from_dict"
+    },
+    {
+      "line": 56,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse event in Event.from_dict"
+    },
+    {
+      "line": 56,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from Event.from_dict"
+    },
+
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.prefers"
+    },
+    {
+      "line": 68,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning preference match result from UserProfile.prefers"
+    },
+    {
+      "line": 69,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning preference match result from UserProfile.prefers"
+    },
+
+      {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.needs_refresh"
+    },
+    {
+      "line": 73,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning refresh-needed evaluation from UserProfile.needs_refresh"
+    },
+
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.to_dict"
+    },
+    {
+      "line": 76,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized user profile from UserProfile.to_dict"
+    },
+
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.from_dict"
+    },
+    {
+      "line": 95,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse user profile in UserProfile.from_dict"
+    },
+    {
+      "line": 95,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from UserProfile.from_dict"
+    },
+
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TimelineState.add_event"
+    },
+
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TimelineState.recent_events"
+    },
+    {
+      "line": 108,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent events from TimelineState.recent_events"
+    },
+
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TimelineState.to_dict"
+    },
+    {
+      "line": 111,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized timeline state from TimelineState.to_dict"
+    },
+
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TimelineState.from_dict"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning TimelineState instance from TimelineState.from_dict"
+    },
+
+    {
+      "line": 134,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.__init__"
+    },
+
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient._url"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty URL from AnalyticsClient._url"
+    },
+    {
+      "line": 140,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL from AnalyticsClient._url"
+    },
+
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.fetch_score"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from AnalyticsClient.fetch_score"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed score from AnalyticsClient.fetch_score"
+    },
+    {
+      "line": 154,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch score in AnalyticsClient.fetch_score"
+    },
+    {
+      "line": 154,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from AnalyticsClient.fetch_score"
+    },
+
+    {
+      "line": 157,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.push_summary"
+    },
+    {
+      "line": 159,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from AnalyticsClient.push_summary"
+    },
+    {
+      "line": 164,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning push result from AnalyticsClient.push_summary"
+    },
+    {
+      "line": 166,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to push summary in AnalyticsClient.push_summary"
+    },
+    {
+      "line": 166,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from AnalyticsClient.push_summary"
+    },
+
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_state"
+    },
+    {
+      "line": 171,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback TimelineState in load_state"
+    },
+    {
+      "line": 175,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning TimelineState.from_dict result in load_state"
+    },
+    {
+      "line": 177,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load timeline state in load_state"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback TimelineState in load_state"
+    },
+
+    {
+      "line": 181,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_state"
+    },
+    {
+      "line": 188,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save timeline state in save_state"
+    },
+    {
+      "line": 188,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from save_state"
+    },
+
+    {
+      "line": 192,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_engagement"
+    },
+    {
+      "line": 193,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty engagement metrics from compute_engagement"
+    },
+    {
+      "line": 199,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning engagement metrics from compute_engagement"
+    },
+
+    {
+      "line": 203,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering detect_bursts"
+    },
+    {
+      "line": 204,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty burst list from detect_bursts"
+    },
+    {
+      "line": 216,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning detected bursts from detect_bursts"
+    },
+
+    {
+      "line": 220,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_events"
+    },
+    {
+      "line": 230,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created event count from simulate_events"
+    },
+
+    {
+      "line": 234,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_state"
+    },
+    {
+      "line": 236,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summarized timeline state from summarize_state"
+    },
+
+    {
+      "line": 246,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 266,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 266,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 1 from main"
+    },
+    {
+      "line": 267,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 from main"
+    }
+  ]
+}

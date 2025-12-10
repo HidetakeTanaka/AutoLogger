@@ -1,0 +1,1065 @@
+{
+  "file": "scripts\\script96.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "NewsItem",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "NewsItem",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 25,
+      "end_line": 25,
+      "function": "is_recent",
+      "class_name": "NewsItem",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 28,
+      "end_line": 28,
+      "function": "matches_category",
+      "class_name": "NewsItem",
+      "code": "def matches_category(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches_category",
+      "class_name": "NewsItem",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches_category",
+      "class_name": "NewsItem",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "matches_category",
+      "class_name": "NewsItem",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 36,
+      "end_line": 36,
+      "function": "to_dict",
+      "class_name": "NewsItem",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 36,
+      "end_line": 36,
+      "function": "to_dict",
+      "class_name": "NewsItem",
+      "code": "return {'item_id': self.item_id, 'title': self.title, 'category': self.category, 'sentiment': self.sentiment, 'published_at': self.published_at.isoformat(), 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 47,
+      "end_line": 47,
+      "function": "from_dict",
+      "class_name": "NewsItem",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"NewsItem\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 54,
+      "end_line": 54,
+      "function": "from_dict",
+      "class_name": "NewsItem",
+      "code": "return cls(item_id=str(raw.get('item_id', '')), title=str(raw.get('title', '')), category=str(raw.get('category', '')), sentiment=float(raw.get('sentiment', 0.0)), published_at=ts, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 63,
+      "end_line": 63,
+      "function": "from_dict",
+      "class_name": "NewsItem",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 63,
+      "end_line": 63,
+      "function": "from_dict",
+      "class_name": "NewsItem",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "prefers",
+      "class_name": "UserPrefs",
+      "code": "def prefers(self, category: str) -> bool:",
+      "vars_in_scope": [
+        "category",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 75,
+      "end_line": 75,
+      "function": "prefers",
+      "class_name": "UserPrefs",
+      "code": "return True",
+      "vars_in_scope": [
+        "category",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 76,
+      "end_line": 76,
+      "function": "prefers",
+      "class_name": "UserPrefs",
+      "code": "return category.lower() in (c.lower() for c in self.preferred_categories)",
+      "vars_in_scope": [
+        "category",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 79,
+      "end_line": 79,
+      "function": "needs_refresh",
+      "class_name": "UserPrefs",
+      "code": "def needs_refresh(self, days: int = 7) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 80,
+      "end_line": 80,
+      "function": "needs_refresh",
+      "class_name": "UserPrefs",
+      "code": "return self.updated_at < cutoff",
+      "vars_in_scope": [
+        "cutoff",
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 83,
+      "end_line": 83,
+      "function": "to_dict",
+      "class_name": "UserPrefs",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 83,
+      "end_line": 83,
+      "function": "to_dict",
+      "class_name": "UserPrefs",
+      "code": "return {'user_id': self.user_id, 'preferred_categories': list(self.preferred_categories), 'min_sentiment': self.min_sentiment, 'updated_at': self.updated_at.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 92,
+      "end_line": 92,
+      "function": "from_dict",
+      "class_name": "UserPrefs",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"UserPrefs\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 99,
+      "end_line": 99,
+      "function": "from_dict",
+      "class_name": "UserPrefs",
+      "code": "return cls(user_id=str(raw.get('user_id', '')), preferred_categories=list(raw.get('preferred_categories', [])), min_sentiment=float(raw.get('min_sentiment', 0.0)), updated_at=ts)",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 106,
+      "end_line": 106,
+      "function": "from_dict",
+      "class_name": "UserPrefs",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 106,
+      "end_line": 106,
+      "function": "from_dict",
+      "class_name": "UserPrefs",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 116,
+      "end_line": 116,
+      "function": "add_item",
+      "class_name": "FeedState",
+      "code": "def add_item(self, item: NewsItem) -> None:",
+      "vars_in_scope": [
+        "item",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 119,
+      "end_line": 119,
+      "function": "recent_items",
+      "class_name": "FeedState",
+      "code": "def recent_items(self, hours: int = 24) -> List[NewsItem]:",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 119,
+      "end_line": 119,
+      "function": "recent_items",
+      "class_name": "FeedState",
+      "code": "return [i for i in self.items if i.is_recent(hours)]",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 122,
+      "end_line": 122,
+      "function": "to_dict",
+      "class_name": "FeedState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 122,
+      "end_line": 122,
+      "function": "to_dict",
+      "class_name": "FeedState",
+      "code": "return {'user_id': self.user_id, 'prefs': self.prefs.to_dict() if self.prefs else None, 'items': [i.to_dict() for i in self.items]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 130,
+      "end_line": 130,
+      "function": "from_dict",
+      "class_name": "FeedState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"FeedState\":",
+      "vars_in_scope": [
+        "cls",
+        "item",
+        "p_raw",
+        "prefs",
+        "raw",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 140,
+      "end_line": 140,
+      "function": "from_dict",
+      "class_name": "FeedState",
+      "code": "return state",
+      "vars_in_scope": [
+        "cls",
+        "item",
+        "p_raw",
+        "prefs",
+        "raw",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 145,
+      "end_line": 145,
+      "function": "__init__",
+      "class_name": "RecommendationClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 149,
+      "end_line": 149,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 150,
+      "end_line": 150,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "return ''",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 151,
+      "end_line": 151,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 154,
+      "end_line": 154,
+      "function": "fetch_remote_prefs",
+      "class_name": "RecommendationClient",
+      "code": "def fetch_remote_prefs(self, user_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 156,
+      "end_line": 156,
+      "function": "fetch_remote_prefs",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 163,
+      "end_line": 163,
+      "function": "fetch_remote_prefs",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 164,
+      "end_line": 164,
+      "function": "fetch_remote_prefs",
+      "class_name": "RecommendationClient",
+      "code": "return parsed",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 166,
+      "end_line": 166,
+      "function": "fetch_remote_prefs",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 166,
+      "end_line": 166,
+      "function": "fetch_remote_prefs",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 170,
+      "end_line": 170,
+      "function": "load_state",
+      "class_name": null,
+      "code": "def load_state(path: Path) -> FeedState:",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 173,
+      "end_line": 173,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return FeedState.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 175,
+      "end_line": 175,
+      "function": "load_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return FeedState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 177,
+      "end_line": 177,
+      "function": "load_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 177,
+      "end_line": 177,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return FeedState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 181,
+      "end_line": 181,
+      "function": "save_state",
+      "class_name": null,
+      "code": "def save_state(path: Path, state: FeedState) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 187,
+      "end_line": 187,
+      "function": "save_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 187,
+      "end_line": 187,
+      "function": "save_state",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 191,
+      "end_line": 191,
+      "function": "compute_category_stats",
+      "class_name": null,
+      "code": "def compute_category_stats(state: FeedState) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "avg",
+        "cat",
+        "counts",
+        "scores",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 198,
+      "end_line": 198,
+      "function": "compute_category_stats",
+      "class_name": null,
+      "code": "return {'counts': {}, 'avg_sentiment': {}}",
+      "vars_in_scope": [
+        "avg",
+        "cat",
+        "counts",
+        "scores",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 200,
+      "end_line": 200,
+      "function": "compute_category_stats",
+      "class_name": null,
+      "code": "return {'counts': counts, 'avg_sentiment': avg}",
+      "vars_in_scope": [
+        "avg",
+        "cat",
+        "counts",
+        "scores",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 204,
+      "end_line": 204,
+      "function": "apply_remote_prefs",
+      "class_name": null,
+      "code": "def apply_remote_prefs(state: FeedState, client: RecommendationClient) -> Optional[UserPrefs]:",
+      "vars_in_scope": [
+        "client",
+        "prefs",
+        "remote",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 206,
+      "end_line": 206,
+      "function": "apply_remote_prefs",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "client",
+        "prefs",
+        "remote",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 209,
+      "end_line": 209,
+      "function": "apply_remote_prefs",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "client",
+        "prefs",
+        "remote",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 211,
+      "end_line": 211,
+      "function": "apply_remote_prefs",
+      "class_name": null,
+      "code": "return prefs",
+      "vars_in_scope": [
+        "client",
+        "prefs",
+        "remote",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 215,
+      "end_line": 215,
+      "function": "simulate_items",
+      "class_name": null,
+      "code": "def simulate_items(state: FeedState, days: int = 3) -> int:",
+      "vars_in_scope": [
+        "cat",
+        "categories",
+        "created",
+        "day_base",
+        "days",
+        "item",
+        "now",
+        "state",
+        "ts"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 216,
+      "end_line": 216,
+      "function": "simulate_items",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "cat",
+        "categories",
+        "created",
+        "day_base",
+        "days",
+        "item",
+        "now",
+        "state",
+        "ts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 235,
+      "end_line": 235,
+      "function": "simulate_items",
+      "class_name": null,
+      "code": "return created",
+      "vars_in_scope": [
+        "cat",
+        "categories",
+        "created",
+        "day_base",
+        "days",
+        "item",
+        "now",
+        "state",
+        "ts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 239,
+      "end_line": 239,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "def summarize_state(state: FeedState, today: Optional[date] = None) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "prefs",
+        "recent",
+        "state",
+        "stats",
+        "today"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 243,
+      "end_line": 243,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "return {'user_id': state.user_id, 'today': today.isoformat(), 'total_items': len(state.items), 'recent_items': len(recent), 'prefs': prefs, 'category_stats': stats}",
+      "vars_in_scope": [
+        "prefs",
+        "recent",
+        "state",
+        "stats",
+        "today"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 254,
+      "end_line": 254,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 268,
+      "end_line": 268,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 268,
+      "end_line": 268,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 270,
+      "end_line": 270,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

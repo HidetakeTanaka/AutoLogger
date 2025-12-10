@@ -1,0 +1,179 @@
+{
+  "file": "script25.py",
+  "logs": [
+    {
+      "line": 9,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering __init__ method in Employee class."
+    },
+    {
+      "line": 15,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering update_salary method in Employee class."
+    },
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering get_employee_info method in Employee class."
+    },
+    {
+      "line": 18,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning employee info for: {self.name}"
+    },
+    {
+      "line": 23,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering __init__ method in Department class."
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering add_employee method in Department class."
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering remove_employee method in Department class."
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Employee removed successfully"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Employee not found for removal"
+    },
+    {
+      "line": 37,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering get_department_info method in Department class."
+    },
+    {
+      "line": 37,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning department info for: {self.name}"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering read_json method in FileManager class."
+    },
+    {
+      "line": 45,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Successfully read data from file: {file_path}"
+    },
+    {
+      "line": 47,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error reading file: {file_path}"
+    },
+    {
+      "line": 47,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list due to file read error"
+    },
+    {
+      "line": 51,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering write_json method in FileManager class."
+    },
+    {
+      "line": 55,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error writing to file: {file_path}"
+    },
+    {
+      "line": 61,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_data method in APIClient class."
+    },
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Successfully fetched data from API: {url}"
+    },
+    {
+      "line": 66,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error fetching data from API: {url}"
+    },
+    {
+      "line": 66,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list due to API fetch error"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_departments function"
+    },
+    {
+      "line": 78,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning loaded departments from file: {file_path}"
+    },
+    {
+      "line": 82,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_departments function"
+    },
+    {
+      "line": 87,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering create_employee function"
+    },
+    {
+      "line": 87,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created employee: {name}"
+    },
+    {
+      "line": 91,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_external_data function"
+    },
+    {
+      "line": 91,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fetched API data from: {url}"
+    },
+    {
+      "line": 95,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main function"
+    }
+  ]
+}

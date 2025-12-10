@@ -1,0 +1,113 @@
+{
+  "file": "script89.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 22,
+      "level": "WARNING",
+      "message": "Random log at line 22 in is_large",
+      "kind": "return",
+      "function": "is_large"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Random log at line 25 in matches_category",
+      "kind": "entry",
+      "function": "matches_category"
+    },
+    {
+      "line": 33,
+      "level": "ERROR",
+      "message": "Random log at line 33 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Random log at line 33 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Random log at line 44 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 69,
+      "level": "DEBUG",
+      "message": "Random log at line 69 in category_total",
+      "kind": "return",
+      "function": "category_total"
+    },
+    {
+      "line": 72,
+      "level": "ERROR",
+      "message": "Random log at line 72 in monthly_total",
+      "kind": "return",
+      "function": "monthly_total"
+    },
+    {
+      "line": 79,
+      "level": "WARNING",
+      "message": "Random log at line 79 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 87,
+      "level": "ERROR",
+      "message": "Random log at line 87 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 95,
+      "level": "WARNING",
+      "message": "Random log at line 95 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 133,
+      "level": "INFO",
+      "message": "Random log at line 133 in push_summary",
+      "kind": "except",
+      "function": "push_summary"
+    },
+    {
+      "line": 155,
+      "level": "WARNING",
+      "message": "Random log at line 155 in save_state",
+      "kind": "except",
+      "function": "save_state"
+    },
+    {
+      "line": 155,
+      "level": "WARNING",
+      "message": "Random log at line 155 in save_state",
+      "kind": "return",
+      "function": "save_state"
+    },
+    {
+      "line": 165,
+      "level": "INFO",
+      "message": "Random log at line 165 in compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
+    },
+    {
+      "line": 187,
+      "level": "ERROR",
+      "message": "Random log at line 187 in simulate_month",
+      "kind": "return",
+      "function": "simulate_month"
+    }
+  ]
+}

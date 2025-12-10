@@ -1,0 +1,185 @@
+{
+  "file": "script68.py",
+  "logs": [
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches() with query='{query}'\")"
+    },
+    {
+      "line": 46,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering WorkoutSession.from_dict with raw data: {raw}')"
+    },
+    {
+      "line": 53,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Creating WorkoutSession from dict with session_id={raw.get(\"session_id\", \"\")}, user_id={raw.get(\"user_id\", \"\")}, start={start}, duration_min={raw.get(\"duration_min\", 0)}, calories={raw.get(\"calories\", 0.0)}, tags={raw.get(\"tags\", [])}')"
+    },
+    {
+      "line": 62,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create WorkoutSession from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_session with session id: {session.id}\")"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering total_minutes for user {self.user_id}\")"
+    },
+    {
+      "line": 83,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering weekly_progress with ref={ref}\")"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 111,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create UserProfile from dict', exc_info=True)"
+    },
+    {
+      "line": 127,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing AnalyticsClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 131,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with user_id={user_id}\")"
+    },
+    {
+      "line": 131,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning URL for user_id {user_id}: {self.base_url}/benchmarks/{user_id}.json')"
+    },
+    {
+      "line": 134,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_benchmarks with user_id={user_id}\")"
+    },
+    {
+      "line": 143,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch benchmarks for user_id={user_id} from url={url}', exc_info=True)"
+    },
+    {
+      "line": 146,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_summary for user_id={user_id} with summary keys={list(summary.keys())}\")"
+    },
+    {
+      "line": 158,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Push summary response status: {resp.status}, success: {200 <= resp.status < 300}')"
+    },
+    {
+      "line": 160,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary for user_id={user_id} to {url} with body={body}', exc_info=True)"
+    },
+    {
+      "line": 164,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_profile with path: {path}\")"
+    },
+    {
+      "line": 169,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load profile from {path} with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_profile with path={path} and profile={profile}\")"
+    },
+    {
+      "line": 180,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save profile to {path} with payload {payload} and tmp {tmp}', exc_info=True)"
+    },
+    {
+      "line": 184,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save profile to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_profile for user: {profile.user_id}\")"
+    },
+    {
+      "line": 197,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summarizing profile for user_id={profile.user_id}: sessions={len(profile.sessions)}, total_minutes={profile.total_minutes()}, weekly_progress={profile.weekly_progress()}, long_sessions={long_sessions}\")"
+    },
+    {
+      "line": 208,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_week for profile={profile} with days={days}\")"
+    },
+    {
+      "line": 228,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering merge_benchmarks with {len(benchmarks)} benchmarks, target={target}\")"
+    },
+    {
+      "line": 229,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merging benchmarks completed for target {target} with result: {result}')"
+    },
+    {
+      "line": 237,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merging benchmarks completed for target {target} with {len(benchmarks)} benchmarks. Result summary: {summary}')"
+    },
+    {
+      "line": 241,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 257,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

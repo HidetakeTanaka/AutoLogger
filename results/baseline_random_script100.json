@@ -1,0 +1,141 @@
+{
+  "file": "script100.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 21,
+      "level": "WARNING",
+      "message": "Random log at line 21 in is_active",
+      "kind": "return",
+      "function": "is_active"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in is_active",
+      "kind": "return",
+      "function": "is_active"
+    },
+    {
+      "line": 31,
+      "level": "ERROR",
+      "message": "Random log at line 31 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 41,
+      "level": "DEBUG",
+      "message": "Random log at line 41 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Random log at line 44 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Random log at line 70 in matches_topics",
+      "kind": "entry",
+      "function": "matches_topics"
+    },
+    {
+      "line": 74,
+      "level": "ERROR",
+      "message": "Random log at line 74 in matches_topics",
+      "kind": "return",
+      "function": "matches_topics"
+    },
+    {
+      "line": 78,
+      "level": "WARNING",
+      "message": "Random log at line 78 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 78,
+      "level": "ERROR",
+      "message": "Random log at line 78 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 88,
+      "level": "WARNING",
+      "message": "Random log at line 88 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 138,
+      "level": "INFO",
+      "message": "Random log at line 138 in _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 161,
+      "level": "WARNING",
+      "message": "Random log at line 161 in load_profiles",
+      "kind": "return",
+      "function": "load_profiles"
+    },
+    {
+      "line": 166,
+      "level": "WARNING",
+      "message": "Random log at line 166 in load_profiles",
+      "kind": "return",
+      "function": "load_profiles"
+    },
+    {
+      "line": 174,
+      "level": "INFO",
+      "message": "Random log at line 174 in load_profiles",
+      "kind": "return",
+      "function": "load_profiles"
+    },
+    {
+      "line": 184,
+      "level": "ERROR",
+      "message": "Random log at line 184 in save_profiles",
+      "kind": "except",
+      "function": "save_profiles"
+    },
+    {
+      "line": 213,
+      "level": "DEBUG",
+      "message": "Random log at line 213 in write_summary",
+      "kind": "except",
+      "function": "write_summary"
+    },
+    {
+      "line": 219,
+      "level": "WARNING",
+      "message": "Random log at line 219 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 224,
+      "level": "ERROR",
+      "message": "Random log at line 224 in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 252,
+      "level": "INFO",
+      "message": "Random log at line 252 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

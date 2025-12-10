@@ -5,13 +5,13 @@
       "line": 2,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(\"Entering foo with x=%r, y=%r\", x, y)"
+      "message": "logging.debug(f\"Entering foo with x={x}, y={y}\")"
     },
     {
       "line": 4,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(\"foo returning result=%r for inputs x=%r, y=%r\", result, x, y)"
+      "message": "logging.info('foo returning result', extra={'result': result, 'x': x, 'y': y})"
     }
   ]
 }

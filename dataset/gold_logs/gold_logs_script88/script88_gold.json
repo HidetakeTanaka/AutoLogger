@@ -1,0 +1,341 @@
+{
+  "file": "script88.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.is_recent"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from SensorReading.is_recent"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from SensorReading.is_recent"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.matches_tag"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result from SensorReading.matches_tag"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.to_dict"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized sensor reading from SensorReading.to_dict"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.from_dict"
+    },
+    {
+      "line": 56,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse sensor reading in SensorReading.from_dict"
+    },
+    {
+      "line": 56,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from SensorReading.from_dict"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceStatus.is_stale"
+    },
+    {
+      "line": 68,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning stale status from DeviceStatus.is_stale"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceStatus.to_dict"
+    },
+    {
+      "line": 71,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized device status from DeviceStatus.to_dict"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceStatus.from_dict"
+    },
+    {
+      "line": 90,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse device status in DeviceStatus.from_dict"
+    },
+    {
+      "line": 90,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from DeviceStatus.from_dict"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MonitoringState.add_reading"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MonitoringState.recent_readings"
+    },
+    {
+      "line": 103,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent readings from MonitoringState.recent_readings"
+    },
+    {
+      "line": 106,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MonitoringState.filter_metric"
+    },
+    {
+      "line": 106,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning metric-filtered readings from MonitoringState.filter_metric"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MonitoringState.to_dict"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized monitoring state from MonitoringState.to_dict"
+    },
+    {
+      "line": 117,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MonitoringState.from_dict"
+    },
+    {
+      "line": 126,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning MonitoringState instance from MonitoringState.from_dict"
+    },
+    {
+      "line": 131,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AlertClient.__init__"
+    },
+    {
+      "line": 135,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AlertClient._url"
+    },
+    {
+      "line": 135,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL from AlertClient._url"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AlertClient.push_alerts"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from AlertClient.push_alerts"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning API push status from AlertClient.push_alerts"
+    },
+    {
+      "line": 147,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to push alerts in AlertClient.push_alerts"
+    },
+    {
+      "line": 147,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from AlertClient.push_alerts"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_state"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback MonitoringState in load_state"
+    },
+    {
+      "line": 156,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning MonitoringState.from_dict result in load_state"
+    },
+    {
+      "line": 158,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load monitoring state in load_state"
+    },
+    {
+      "line": 158,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback MonitoringState in load_state"
+    },
+    {
+      "line": 162,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_state"
+    },
+    {
+      "line": 168,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save monitoring state in save_state"
+    },
+    {
+      "line": 168,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from save_state"
+    },
+    {
+      "line": 172,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_stats"
+    },
+    {
+      "line": 173,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning zero stats from compute_stats"
+    },
+    {
+      "line": 184,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed monitoring statistics from compute_stats"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_alerts"
+    },
+    {
+      "line": 199,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered alerts from filter_alerts"
+    },
+    {
+      "line": 203,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_readings"
+    },
+    {
+      "line": 204,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 from simulate_readings"
+    },
+    {
+      "line": 223,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created simulated readings from simulate_readings"
+    },
+    {
+      "line": 227,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_state"
+    },
+    {
+      "line": 230,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summarized monitoring state from summarize_state"
+    },
+    {
+      "line": 241,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 272,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 272,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 1 from main"
+    },
+    {
+      "line": 273,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 from main"
+    }
+  ]
+}

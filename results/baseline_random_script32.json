@@ -1,0 +1,99 @@
+{
+  "file": "script32.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Random log at line 26 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 46,
+      "level": "ERROR",
+      "message": "Random log at line 46 in update_country",
+      "kind": "entry",
+      "function": "update_country"
+    },
+    {
+      "line": 49,
+      "level": "DEBUG",
+      "message": "Random log at line 49 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 49,
+      "level": "DEBUG",
+      "message": "Random log at line 49 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 78,
+      "level": "DEBUG",
+      "message": "Random log at line 78 in load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 84,
+      "level": "ERROR",
+      "message": "Random log at line 84 in load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 105,
+      "level": "WARNING",
+      "message": "Random log at line 105 in get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 105,
+      "level": "ERROR",
+      "message": "Random log at line 105 in get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 108,
+      "level": "WARNING",
+      "message": "Random log at line 108 in upsert",
+      "kind": "entry",
+      "function": "upsert"
+    },
+    {
+      "line": 163,
+      "level": "INFO",
+      "message": "Random log at line 163 in write_events",
+      "kind": "entry",
+      "function": "write_events"
+    },
+    {
+      "line": 204,
+      "level": "WARNING",
+      "message": "Random log at line 204 in load_or_create_users",
+      "kind": "entry",
+      "function": "load_or_create_users"
+    },
+    {
+      "line": 216,
+      "level": "WARNING",
+      "message": "Random log at line 216 in load_or_create_users",
+      "kind": "return",
+      "function": "load_or_create_users"
+    }
+  ]
+}

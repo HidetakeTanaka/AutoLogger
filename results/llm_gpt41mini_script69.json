@@ -1,0 +1,197 @@
+{
+  "file": "script69.py",
+  "logs": [
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering Order.from_dict with raw data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 47,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Order from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 59,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_order with order id: {order.id}\")"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches() with query='{query}' for Customer id={self.id}\")"
+    },
+    {
+      "line": 87,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Error occurred while creating Customer from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing AnalyticsClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered fetch_benchmarks method in AnalyticsClient')"
+    },
+    {
+      "line": 119,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch benchmarks from {url} with request {req}', exc_info=True)"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_summary with summary keys: {list(summary.keys())}\")"
+    },
+    {
+      "line": 130,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Push summary response status: {resp.status}, success: {200 <= resp.status < 300}')"
+    },
+    {
+      "line": 132,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary to {url} with body {body}')"
+    },
+    {
+      "line": 136,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_customers with path: {path}\")"
+    },
+    {
+      "line": 142,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded customers from {path}, total records: {len(result)}')"
+    },
+    {
+      "line": 144,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load customers from {path} with data: {data}', exc_info=True)"
+    },
+    {
+      "line": 146,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load customers from {path} with data: {data}')"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_customers with path={path} and {len(customers)} customers\")"
+    },
+    {
+      "line": 156,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save customers to {path} with payload {payload} and tmp {tmp}', exc_info=True)"
+    },
+    {
+      "line": 160,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save customers to {path} with payload {payload}')"
+    },
+    {
+      "line": 164,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_kpis with {len(customers)} customers\")"
+    },
+    {
+      "line": 168,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Returning KPIs: count={len(customers)}, avg_ltv={sum(ltvs) / len(ltvs):.2f}, active={active}\")"
+    },
+    {
+      "line": 176,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_orders with {len(customers)} customers for {days} days\")"
+    },
+    {
+      "line": 178,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation completed for {day} days with total orders: {len(history)}')"
+    },
+    {
+      "line": 195,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation completed for {days} days with {len(customers)} customers. Total orders recorded: {len(history)}')"
+    },
+    {
+      "line": 199,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"apply_discounts called with {len(customers)} customers, threshold={threshold}, pct={pct}\")"
+    },
+    {
+      "line": 205,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'apply_discounts completed: {len(updated)} customers updated with pct={pct} and threshold={threshold}')"
+    },
+    {
+      "line": 209,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering merge_remote_benchmarks with summary keys: {list(summary.keys())} and remote keys: {list(remote.keys()) if remote else None}\")"
+    },
+    {
+      "line": 210,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('Returning summary with %d entries from merge_remote_benchmarks', len(summary))"
+    },
+    {
+      "line": 217,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merging complete for remote {remote}, result summary: {summary}')"
+    },
+    {
+      "line": 221,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 244,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    },
+    {
+      "line": 250,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

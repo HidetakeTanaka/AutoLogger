@@ -1,0 +1,425 @@
+{
+  "file": "script41.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.is_recent"
+    },
+    {
+      "line": 22,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Book.is_recent returning recency check result based on publication year and threshold"
+    },
+    {
+      "line": 25,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.matches_query"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Book.matches_query returning False because book does not match query"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Book.matches_query returning True because query matched title or author"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Book.matches_query returning tag-based match result"
+    },
+    {
+      "line": 33,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.to_dict"
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Book.to_dict returning serialized book data"
+    },
+    {
+      "line": 52,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Member.can_borrow"
+    },
+    {
+      "line": 53,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Member.can_borrow returning False because borrow limit has been reached or member is inactive"
+    },
+    {
+      "line": 54,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Member.can_borrow returning True if borrowed books are below limit"
+    },
+    {
+      "line": 57,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Member.borrow"
+    },
+    {
+      "line": 58,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Member.borrow returning False because member is not allowed to borrow more books"
+    },
+    {
+      "line": 60,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Member.borrow returning False because book_id is already borrowed or invalid"
+    },
+    {
+      "line": 62,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Member.borrow returning True after successfully borrowing book"
+    },
+    {
+      "line": 65,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Member.return_book"
+    },
+    {
+      "line": 66,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Member.return_book returning False because book_id is not in borrowed list"
+    },
+    {
+      "line": 68,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Member.return_book returning True after successfully returning book"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Member.to_dict"
+    },
+    {
+      "line": 71,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Member.to_dict returning serialized member data"
+    },
+    {
+      "line": 82,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing LibraryStore with books and members paths"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryStore.load_books"
+    },
+    {
+      "line": 101,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "LibraryStore.load_books failed to read or parse books data"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryStore.load_members"
+    },
+    {
+      "line": 118,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "LibraryStore.load_members failed to read or parse members data"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryStore.save_books"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryStore.save_members"
+    },
+    {
+      "line": 134,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryStore.get_book"
+    },
+    {
+      "line": 134,
+      "kind": "return",
+      "level": "INFO",
+      "message": "LibraryStore.get_book returning book looked up by id or None"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryStore.get_member"
+    },
+    {
+      "line": 137,
+      "kind": "return",
+      "level": "INFO",
+      "message": "LibraryStore.get_member returning member looked up by id or None"
+    },
+    {
+      "line": 140,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryStore.all_books"
+    },
+    {
+      "line": 140,
+      "kind": "return",
+      "level": "INFO",
+      "message": "LibraryStore.all_books returning list of all books"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryStore.all_members"
+    },
+    {
+      "line": 143,
+      "kind": "return",
+      "level": "INFO",
+      "message": "LibraryStore.all_members returning list of all members"
+    },
+    {
+      "line": 148,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing RemoteCatalogClient with base URL and timeout"
+    },
+    {
+      "line": 152,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RemoteCatalogClient._url"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RemoteCatalogClient._url returning full book metadata URL"
+    },
+    {
+      "line": 155,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RemoteCatalogClient.fetch_metadata"
+    },
+    {
+      "line": 161,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "RemoteCatalogClient.fetch_metadata request failed or timed out"
+    },
+    {
+      "line": 161,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RemoteCatalogClient.fetch_metadata returning None after request failure"
+    },
+    {
+      "line": 163,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RemoteCatalogClient.fetch_metadata returning parsed JSON metadata"
+    },
+    {
+      "line": 165,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "RemoteCatalogClient.fetch_metadata failed to decode or parse response body"
+    },
+    {
+      "line": 165,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RemoteCatalogClient.fetch_metadata returning None after parse error"
+    },
+    {
+      "line": 169,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_json_safely"
+    },
+    {
+      "line": 170,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_json_safely returning empty dict as default for missing or unreadable file"
+    },
+    {
+      "line": 173,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_json_safely returning parsed JSON content"
+    },
+    {
+      "line": 175,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_json_safely failed to read or parse JSON file"
+    },
+    {
+      "line": 175,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_json_safely returning empty dict after failure"
+    },
+    {
+      "line": 179,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering search_books"
+    },
+    {
+      "line": 180,
+      "kind": "return",
+      "level": "INFO",
+      "message": "search_books returning empty list because query is empty or whitespace"
+    },
+    {
+      "line": 183,
+      "kind": "return",
+      "level": "INFO",
+      "message": "search_books returning empty list because no books matched query"
+    },
+    {
+      "line": 185,
+      "kind": "return",
+      "level": "INFO",
+      "message": "search_books returning limited list of matching books"
+    },
+    {
+      "line": 189,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering borrow_book"
+    },
+    {
+      "line": 191,
+      "kind": "return",
+      "level": "INFO",
+      "message": "borrow_book returning False because member or book could not be found"
+    },
+    {
+      "line": 194,
+      "kind": "return",
+      "level": "INFO",
+      "message": "borrow_book returning False because book is not available for borrowing"
+    },
+    {
+      "line": 196,
+      "kind": "return",
+      "level": "INFO",
+      "message": "borrow_book returning False because member.borrow operation failed"
+    },
+    {
+      "line": 198,
+      "kind": "return",
+      "level": "INFO",
+      "message": "borrow_book returning True after successfully borrowing book and updating store"
+    },
+    {
+      "line": 202,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering return_book"
+    },
+    {
+      "line": 205,
+      "kind": "return",
+      "level": "INFO",
+      "message": "return_book returning False because member or book could not be found"
+    },
+    {
+      "line": 207,
+      "kind": "return",
+      "level": "INFO",
+      "message": "return_book returning False because member.return_book operation failed"
+    },
+    {
+      "line": 209,
+      "kind": "return",
+      "level": "INFO",
+      "message": "return_book returning True after successfully returning book and updating store"
+    },
+    {
+      "line": 213,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering sync_remote_metadata"
+    },
+    {
+      "line": 230,
+      "kind": "return",
+      "level": "INFO",
+      "message": "sync_remote_metadata returning count of books updated with remote metadata"
+    },
+    {
+      "line": 234,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering export_summary"
+    },
+    {
+      "line": 252,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering purge_inactive_members"
+    },
+    {
+      "line": 258,
+      "kind": "return",
+      "level": "INFO",
+      "message": "purge_inactive_members returning number of members removed based on inactivity cutoff"
+    },
+    {
+      "line": 262,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 272,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 due to configuration or data loading failure"
+    },
+    {
+      "line": 285,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successfully running library workflow"
+    }
+  ]
+}

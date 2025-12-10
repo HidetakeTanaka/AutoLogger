@@ -1,0 +1,275 @@
+{
+  "file": "script77.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.is_overdue"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning default result in Task.is_overdue"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning overdue check result in Task.is_overdue"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.matches"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning match result in Task.matches"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.to_dict"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized task in Task.to_dict"
+    },
+    {
+      "line": 46,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.from_dict"
+    },
+    {
+      "line": 51,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Task instance in Task.from_dict"
+    },
+    {
+      "line": 60,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse task fields in Task.from_dict"
+    },
+    {
+      "line": 60,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from Task.from_dict after failure"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskBoard.add_task"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskBoard.complete_task"
+    },
+    {
+      "line": 78,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning completion status in TaskBoard.complete_task"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskBoard.search"
+    },
+    {
+      "line": 81,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning search results in TaskBoard.search"
+    },
+    {
+      "line": 84,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskBoard.overdue_tasks"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning overdue task list in TaskBoard.overdue_tasks"
+    },
+    {
+      "line": 87,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskBoard.to_dict"
+    },
+    {
+      "line": 87,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized TaskBoard in TaskBoard.to_dict"
+    },
+    {
+      "line": 91,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskBoard.from_dict"
+    },
+    {
+      "line": 96,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning TaskBoard instance in TaskBoard.from_dict"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SuggestionClient.__init__"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SuggestionClient._url"
+    },
+    {
+      "line": 105,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning suggestions URL in SuggestionClient._url"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SuggestionClient.fetch_suggestions"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed suggestions in SuggestionClient.fetch_suggestions"
+    },
+    {
+      "line": 120,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch suggestions in SuggestionClient.fetch_suggestions"
+    },
+    {
+      "line": 120,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None after failure in SuggestionClient.fetch_suggestions"
+    },
+    {
+      "line": 124,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_board"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning TaskBoard loaded from file"
+    },
+    {
+      "line": 131,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load board in load_board"
+    },
+    {
+      "line": 131,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning default TaskBoard from load_board"
+    },
+    {
+      "line": 135,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_board"
+    },
+    {
+      "line": 143,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save board in save_board"
+    },
+    {
+      "line": 143,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Aborting save_board after failure"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_stats"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed statistics in compute_stats"
+    },
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_progress"
+    },
+    {
+      "line": 168,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning simulated progress history"
+    },
+    {
+      "line": 172,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering apply_suggestions"
+    },
+    {
+      "line": 186,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning number of applied suggestions"
+    },
+    {
+      "line": 190,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 221,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected failure in main"
+    },
+    {
+      "line": 222,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code from main"
+    }
+  ]
+}

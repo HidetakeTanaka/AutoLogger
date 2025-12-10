@@ -1,0 +1,161 @@
+{
+  "file": "script29.py",
+  "logs": [
+    {
+      "line": 9,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing DataAnalyzer with data"
+    },
+    {
+      "line": 12,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataAnalyzer.filter_by_value"
+    },
+    {
+      "line": 13,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Filtered data by threshold in DataAnalyzer.filter_by_value"
+    },
+    {
+      "line": 16,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataAnalyzer.group_by_category"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning data grouped by category in DataAnalyzer.group_by_category"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataAnalyzer.calculate_average"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "No data for category in DataAnalyzer.calculate_average"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning average value for category in DataAnalyzer.calculate_average"
+    },
+    {
+      "line": 37,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.read_json"
+    },
+    {
+      "line": 40,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning JSON data from FileManager.read_json"
+    },
+    {
+      "line": 42,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read JSON file in FileManager.read_json"
+    },
+    {
+      "line": 42,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from FileManager.read_json after failure"
+    },
+    {
+      "line": 48,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.write_json"
+    },
+    {
+      "line": 53,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write JSON file in FileManager.write_json"
+    },
+    {
+      "line": 59,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering APIHandler.fetch_data"
+    },
+    {
+      "line": 63,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed API response in APIHandler.fetch_data"
+    },
+    {
+      "line": 65,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch data in APIHandler.fetch_data"
+    },
+    {
+      "line": 65,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from APIHandler.fetch_data after failure"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering process_and_save_data"
+    },
+    {
+      "line": 72,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Finished processing and saving data in process_and_save_data"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering analyze_category_data"
+    },
+    {
+      "line": 88,
+      "kind": "return",
+      "level": "INFO",
+      "message": "No data found for category in analyze_category_data"
+    },
+    {
+      "line": 91,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning average value for category in analyze_category_data"
+    },
+    {
+      "line": 95,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering get_data_from_url"
+    },
+    {
+      "line": 96,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning data fetched from URL in get_data_from_url"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    }
+  ]
+}

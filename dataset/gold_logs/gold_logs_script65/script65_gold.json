@@ -1,0 +1,102 @@
+{
+  "file": "script65.py",
+  "logs": [
+    {
+      "line": 52,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.from_dict"
+    },
+    {
+      "line": 67,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse product in Product.from_dict"
+    },
+    {
+      "line": 115,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PricingClient.fetch_price"
+    },
+    {
+      "line": 123,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Received price from remote service in PricingClient.fetch_price"
+    },
+    {
+      "line": 125,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching price in PricingClient.fetch_price"
+    },
+    {
+      "line": 129,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_inventory"
+    },
+    {
+      "line": 133,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load inventory, using empty local inventory in load_inventory"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_inventory"
+    },
+    {
+      "line": 143,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while writing fleet file in save_inventory"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_summary"
+    },
+    {
+      "line": 156,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning non-empty summary result from compute_summary"
+    },
+    {
+      "line": 164,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering update_prices"
+    },
+    {
+      "line": 171,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning updated count from update_prices"
+    },
+    {
+      "line": 199,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 217,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write summary file, exiting with error in main"
+    },
+    {
+      "line": 218,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Completed successfully, exiting with code 0 in main"
+    }
+  ]
+}
+

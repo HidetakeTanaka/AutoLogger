@@ -1,0 +1,134 @@
+{
+  "file": "script91.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 27,
+      "level": "WARNING",
+      "message": "Random log at line 27 in is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 28,
+      "level": "INFO",
+      "message": "Random log at line 28 in is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 37,
+      "level": "ERROR",
+      "message": "Random log at line 37 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 37,
+      "level": "DEBUG",
+      "message": "Random log at line 37 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 49,
+      "level": "DEBUG",
+      "message": "Random log at line 49 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 76,
+      "level": "DEBUG",
+      "message": "Random log at line 76 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 85,
+      "level": "ERROR",
+      "message": "Random log at line 85 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 94,
+      "level": "WARNING",
+      "message": "Random log at line 94 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 94,
+      "level": "ERROR",
+      "message": "Random log at line 94 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 104,
+      "level": "WARNING",
+      "message": "Random log at line 104 in add_task",
+      "kind": "entry",
+      "function": "add_task"
+    },
+    {
+      "line": 150,
+      "level": "INFO",
+      "message": "Random log at line 150 in fetch_suggestions",
+      "kind": "return",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 164,
+      "level": "WARNING",
+      "message": "Random log at line 164 in load_state",
+      "kind": "except",
+      "function": "load_state"
+    },
+    {
+      "line": 164,
+      "level": "WARNING",
+      "message": "Random log at line 164 in load_state",
+      "kind": "return",
+      "function": "load_state"
+    },
+    {
+      "line": 174,
+      "level": "INFO",
+      "message": "Random log at line 174 in save_state",
+      "kind": "return",
+      "function": "save_state"
+    },
+    {
+      "line": 179,
+      "level": "ERROR",
+      "message": "Random log at line 179 in compute_daily_plan",
+      "kind": "return",
+      "function": "compute_daily_plan"
+    },
+    {
+      "line": 223,
+      "level": "DEBUG",
+      "message": "Random log at line 223 in apply_suggestions",
+      "kind": "return",
+      "function": "apply_suggestions"
+    },
+    {
+      "line": 262,
+      "level": "WARNING",
+      "message": "Random log at line 262 in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 262,
+      "level": "ERROR",
+      "message": "Random log at line 262 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

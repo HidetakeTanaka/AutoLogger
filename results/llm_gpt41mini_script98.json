@@ -1,0 +1,209 @@
+{
+  "file": "script98.py",
+  "logs": [
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_stale with days={days}\")"
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering update_status with status={status}\")"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 61,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Task from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_task with task: {task}\")"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering find_task with task_id={task_id}\")"
+    },
+    {
+      "line": 86,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Completion ratio calculated: {closed} closed tasks out of {len(self.tasks)} total tasks.')"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 105,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Project from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering ProjectStore.load with project: {self}\")"
+    },
+    {
+      "line": 125,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load project from raw data: {raw}')"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save method of ProjectStore with payload: {payload}\")"
+    },
+    {
+      "line": 134,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to save project with payload: %s', payload, exc_info=True)"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_or_create with project_id={project_id}, name={name}\")"
+    },
+    {
+      "line": 152,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing SyncClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_remote_tasks with project_id={project_id}\")"
+    },
+    {
+      "line": 171,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched {len(data)} tasks from remote for project {project_id}, returning {sum(isinstance(d, dict) for d in data)} valid dict entries')"
+    },
+    {
+      "line": 173,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch remote tasks for project {project_id} from {url}: {text}')"
+    },
+    {
+      "line": 176,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_update with task id: {task.id}\")"
+    },
+    {
+      "line": 186,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push update to {url} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 190,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered load_store with path_str={path_str}\")"
+    },
+    {
+      "line": 192,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully loaded store from {path_str}')"
+    },
+    {
+      "line": 196,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_store with store: {store}\")"
+    },
+    {
+      "line": 200,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_tasks with status={status}, min_priority={min_priority}, number of tasks={len(list(tasks))}\")"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'filter_tasks returning {len(selected)} tasks with min_priority={min_priority} and status={status}')"
+    },
+    {
+      "line": 212,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_projects with {len(projects)} projects\")"
+    },
+    {
+      "line": 216,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Summarized {len(items)} projects with average completion {avg:.2f}')"
+    },
+    {
+      "line": 220,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered sync_project with project_id={project_id}\")"
+    },
+    {
+      "line": 233,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Sync completed for project_id={project_id}, added {len(added)} items.')"
+    },
+    {
+      "line": 237,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering read_config with path={path}\")"
+    },
+    {
+      "line": 246,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to read config from {path} with content: {text}')"
+    },
+    {
+      "line": 250,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with config_path={config_path}\")"
+    },
+    {
+      "line": 267,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "file": "script41.py",
+  "logs": [
+    {
+      "line": 52,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering can_borrow with limit={limit} for member_id={self.id}\")"
+    },
+    {
+      "line": 54,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Member {self} can borrow check: {len(self.borrowed_ids)} borrowed, limit {limit}')"
+    },
+    {
+      "line": 57,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Member.borrow called with book_id={book_id}, limit={limit}\")"
+    },
+    {
+      "line": 65,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering return_book with book_id={book_id}\")"
+    },
+    {
+      "line": 82,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Initializing LibraryStore with books_path={books_path} and members_path={members_path}')"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered load_books method in LibraryStore')"
+    },
+    {
+      "line": 101,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load book data for book {b}: {data}', exc_info=True)"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered load_members method of LibraryStore')"
+    },
+    {
+      "line": 118,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load member data: {m}', exc_info=True)"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered save_books method with payload: %s', payload)"
+    },
+    {
+      "line": 134,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_book with book_id={book_id}\")"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_member with member_id={member_id}\")"
+    },
+    {
+      "line": 140,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered all_books method of LibraryStore')"
+    },
+    {
+      "line": 148,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing RemoteCatalogClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 152,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with book_id={book_id}\")"
+    },
+    {
+      "line": 155,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_metadata with book_id={book_id}\")"
+    },
+    {
+      "line": 161,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch metadata for book_id {book_id} from {url}')"
+    },
+    {
+      "line": 163,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully fetched and decoded metadata for book_id={book_id} from url={url}')"
+    },
+    {
+      "line": 165,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch metadata for book_id {book_id} from {url}')"
+    },
+    {
+      "line": 169,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_json_safely with path: {path}\")"
+    },
+    {
+      "line": 175,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load JSON from {path}', exc_info=True)"
+    },
+    {
+      "line": 179,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered search_books with query='{query}', limit={limit}, number of books={len(books)}\")"
+    },
+    {
+      "line": 185,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Search for query \"{query}\" returned {len(matches[:limit])} results (limit {limit})')"
+    },
+    {
+      "line": 189,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering borrow_book with member_id={member_id}, book_id={book_id}\")"
+    },
+    {
+      "line": 194,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Borrowing failed: book_id={book_id}, member_id={member_id}')"
+    },
+    {
+      "line": 198,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Member {member_id} successfully borrowed book {book_id} from store {store}.')"
+    },
+    {
+      "line": 202,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering return_book with member_id={member_id}, book_id={book_id}\")"
+    },
+    {
+      "line": 205,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning False for book_id={book_id}, member_id={member_id} in return_book function')"
+    },
+    {
+      "line": 209,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Book {book_id} successfully returned by member {member_id} at store {store}')"
+    },
+    {
+      "line": 213,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering sync_remote_metadata with limit={limit}\")"
+    },
+    {
+      "line": 234,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered export_summary with path={path} and store={store}\")"
+    },
+    {
+      "line": 252,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering purge_inactive_members with older_than_days={older_than_days}\")"
+    },
+    {
+      "line": 258,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Removed {removed} inactive members older than {older_than_days} days as of cutoff {cutoff}.')"
+    },
+    {
+      "line": 262,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"
+    }
+  ]
+}

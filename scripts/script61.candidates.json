@@ -1,0 +1,819 @@
+{
+  "file": "scripts\\script61.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 20,
+      "end_line": 20,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 22,
+      "end_line": 22,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 25,
+      "end_line": 25,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 28,
+      "end_line": 28,
+      "function": "to_dict",
+      "class_name": "Product",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 28,
+      "end_line": 28,
+      "function": "to_dict",
+      "class_name": "Product",
+      "code": "return {'product_id': self.product_id, 'name': self.name, 'price': self.price, 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 37,
+      "end_line": 37,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Product\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 38,
+      "end_line": 38,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "return cls(product_id=str(raw.get('product_id', '')), name=str(raw.get('name', '')), price=float(raw.get('price', 0.0)), tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 45,
+      "end_line": 45,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 45,
+      "end_line": 45,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 54,
+      "end_line": 54,
+      "function": "line_total",
+      "class_name": "CartItem",
+      "code": "def line_total(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 54,
+      "end_line": 54,
+      "function": "line_total",
+      "class_name": "CartItem",
+      "code": "return self.product.price * self.quantity",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 59,
+      "end_line": 59,
+      "function": "__init__",
+      "class_name": "Cart",
+      "code": "def __init__(self, cart_id: str) -> None:",
+      "vars_in_scope": [
+        "cart_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 64,
+      "end_line": 64,
+      "function": "add",
+      "class_name": "Cart",
+      "code": "def add(self, product: Product, quantity: int = 1) -> None:",
+      "vars_in_scope": [
+        "product",
+        "quantity",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 70,
+      "end_line": 70,
+      "function": "remove",
+      "class_name": "Cart",
+      "code": "def remove(self, product_id: str) -> None:",
+      "vars_in_scope": [
+        "product_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "total",
+      "class_name": "Cart",
+      "code": "def total(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 74,
+      "end_line": 74,
+      "function": "total",
+      "class_name": "Cart",
+      "code": "return sum((item.line_total() for item in self.items.values()))",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 77,
+      "end_line": 77,
+      "function": "to_dict",
+      "class_name": "Cart",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 77,
+      "end_line": 77,
+      "function": "to_dict",
+      "class_name": "Cart",
+      "code": "return {'cart_id': self.cart_id, 'created_at': self.created_at.isoformat(), 'items': [{'product': it.product.to_dict(), 'quantity': it.quantity} for it in self.items.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 91,
+      "end_line": 91,
+      "function": "from_dict",
+      "class_name": "Cart",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Cart\":",
+      "vars_in_scope": [
+        "cart",
+        "cls",
+        "items_raw",
+        "p_raw",
+        "product",
+        "qty",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 100,
+      "end_line": 100,
+      "function": "from_dict",
+      "class_name": "Cart",
+      "code": "return cart",
+      "vars_in_scope": [
+        "cart",
+        "cls",
+        "items_raw",
+        "p_raw",
+        "product",
+        "qty",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 105,
+      "end_line": 105,
+      "function": "__init__",
+      "class_name": "PricingClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 109,
+      "end_line": 109,
+      "function": "_url",
+      "class_name": "PricingClient",
+      "code": "def _url(self, product_id: str) -> str:",
+      "vars_in_scope": [
+        "product_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "_url",
+      "class_name": "PricingClient",
+      "code": "return f'{self.base_url}/pricing/{product_id}.json'",
+      "vars_in_scope": [
+        "product_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 112,
+      "end_line": 112,
+      "function": "fetch_price",
+      "class_name": "PricingClient",
+      "code": "def fetch_price(self, product_id: str) -> Optional[float]:",
+      "vars_in_scope": [
+        "data",
+        "product_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 113,
+      "end_line": 113,
+      "function": "fetch_price",
+      "class_name": "PricingClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "product_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 119,
+      "end_line": 119,
+      "function": "fetch_price",
+      "class_name": "PricingClient",
+      "code": "return float(data.get('price'))",
+      "vars_in_scope": [
+        "data",
+        "product_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch_price",
+      "class_name": "PricingClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "product_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch_price",
+      "class_name": "PricingClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "product_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 125,
+      "end_line": 125,
+      "function": "load_cart",
+      "class_name": null,
+      "code": "def load_cart(path: Path) -> Cart:",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 127,
+      "end_line": 127,
+      "function": "load_cart",
+      "class_name": null,
+      "code": "return Cart.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 129,
+      "end_line": 129,
+      "function": "load_cart",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 129,
+      "end_line": 129,
+      "function": "load_cart",
+      "class_name": null,
+      "code": "return Cart(cart_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 133,
+      "end_line": 133,
+      "function": "save_cart",
+      "class_name": null,
+      "code": "def save_cart(path: Path, cart: Cart) -> None:",
+      "vars_in_scope": [
+        "cart",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 139,
+      "end_line": 139,
+      "function": "save_cart",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "cart",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 143,
+      "end_line": 143,
+      "function": "save_cart",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "cart",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 147,
+      "end_line": 147,
+      "function": "apply_discounts",
+      "class_name": null,
+      "code": "def apply_discounts(cart: Cart, now: Optional[datetime] = None) -> float:",
+      "vars_in_scope": [
+        "cart",
+        "now",
+        "total"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 151,
+      "end_line": 151,
+      "function": "apply_discounts",
+      "class_name": null,
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "cart",
+        "now",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 153,
+      "end_line": 153,
+      "function": "apply_discounts",
+      "class_name": null,
+      "code": "return total * 0.9",
+      "vars_in_scope": [
+        "cart",
+        "now",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 155,
+      "end_line": 155,
+      "function": "apply_discounts",
+      "class_name": null,
+      "code": "return total * 0.95",
+      "vars_in_scope": [
+        "cart",
+        "now",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 156,
+      "end_line": 156,
+      "function": "apply_discounts",
+      "class_name": null,
+      "code": "return total",
+      "vars_in_scope": [
+        "cart",
+        "now",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 160,
+      "end_line": 160,
+      "function": "pick_best_deal",
+      "class_name": null,
+      "code": "def pick_best_deal(carts: List[Cart]) -> Optional[Cart]:",
+      "vars_in_scope": [
+        "best",
+        "best_value",
+        "carts",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 161,
+      "end_line": 161,
+      "function": "pick_best_deal",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "best",
+        "best_value",
+        "carts",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 169,
+      "end_line": 169,
+      "function": "pick_best_deal",
+      "class_name": null,
+      "code": "return best",
+      "vars_in_scope": [
+        "best",
+        "best_value",
+        "carts",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 173,
+      "end_line": 173,
+      "function": "update_prices_from_remote",
+      "class_name": null,
+      "code": "def update_prices_from_remote(cart: Cart, client: PricingClient) -> int:",
+      "vars_in_scope": [
+        "cart",
+        "client",
+        "new_price",
+        "updated"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 181,
+      "end_line": 181,
+      "function": "update_prices_from_remote",
+      "class_name": null,
+      "code": "return updated",
+      "vars_in_scope": [
+        "cart",
+        "client",
+        "new_price",
+        "updated"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 185,
+      "end_line": 185,
+      "function": "simulate_cart",
+      "class_name": null,
+      "code": "def simulate_cart(cart: Cart, steps: int = 3) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "action",
+        "cart",
+        "history",
+        "product_id",
+        "steps"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 205,
+      "end_line": 205,
+      "function": "simulate_cart",
+      "class_name": null,
+      "code": "return history",
+      "vars_in_scope": [
+        "action",
+        "cart",
+        "history",
+        "product_id",
+        "steps"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 209,
+      "end_line": 209,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "cart",
+        "cart_path",
+        "client",
+        "data_dir",
+        "sample",
+        "summary",
+        "summary_path",
+        "total_after",
+        "total_before"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 236,
+      "end_line": 236,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "cart",
+        "cart_path",
+        "client",
+        "data_dir",
+        "sample",
+        "summary",
+        "summary_path",
+        "total_after",
+        "total_before"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 236,
+      "end_line": 236,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "cart",
+        "cart_path",
+        "client",
+        "data_dir",
+        "sample",
+        "summary",
+        "summary_path",
+        "total_after",
+        "total_before"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 237,
+      "end_line": 237,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "cart",
+        "cart_path",
+        "client",
+        "data_dir",
+        "sample",
+        "summary",
+        "summary_path",
+        "total_after",
+        "total_before"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

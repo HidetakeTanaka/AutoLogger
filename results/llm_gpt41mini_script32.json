@@ -1,0 +1,137 @@
+{
+  "file": "script32.py",
+  "logs": [
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with now={now} and minutes={minutes}\")"
+    },
+    {
+      "line": 43,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"User is_active check: active={self.properties.get('active', True)}\")"
+    },
+    {
+      "line": 46,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering update_country with country={country}\")"
+    },
+    {
+      "line": 64,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches: user={user}, number of events={len(events)}\")"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing UserStore with path: {path}\")"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering UserStore.load method to load user data for {len(users)} users.\")"
+    },
+    {
+      "line": 83,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load user data for uid={uid}, name={name}, country={country}', exc_info=True)"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering UserStore.get with user_id={user_id}\")"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering upsert method with user: {user}\")"
+    },
+    {
+      "line": 116,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing EventStore with path: {path}\")"
+    },
+    {
+      "line": 125,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to load events from data: %s', data, exc_info=True)"
+    },
+    {
+      "line": 131,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to load events from data: %s', data, exc_info=True)"
+    },
+    {
+      "line": 140,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded {len(events)} events from store')"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering generate_random_events with count={count} for {len(users)} users\")"
+    },
+    {
+      "line": 163,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering write_events with path={path} and {len(events)} events\")"
+    },
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_recent_events with {len(events)} events and minutes={minutes}\")"
+    },
+    {
+      "line": 175,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered build_segments function')"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entered assign_segments with {len(events)} events, {len(mapping)} mappings, {len(segments)} segments, and {len(users)} users')"
+    },
+    {
+      "line": 197,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered export_segments with path={path} and mapping keys={list(mapping.keys())}\")"
+    },
+    {
+      "line": 204,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_or_create_users with path: {path}\")"
+    },
+    {
+      "line": 216,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning store with {len(store)} users loaded or created from {path}')"
+    },
+    {
+      "line": 220,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"
+    }
+  ]
+}

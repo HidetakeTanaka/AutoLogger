@@ -1,0 +1,173 @@
+{
+  "file": "script79.py",
+  "logs": [
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches method with query: {query}\")"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_long with threshold={threshold} for book titled '{self.title}'\")"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering from_dict with raw data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 62,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Book from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_book with book: {book}\")"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering mark_read with book_id={book_id}\")"
+    },
+    {
+      "line": 82,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Book with ID {book_id} marked as read successfully.')"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering search with query: '{query}'\")"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering recommendations_local with max_items={max_items}\")"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'RecommendationClient initialized with base_url={base_url} and timeout={timeout}')"
+    },
+    {
+      "line": 116,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with topic: {topic}\")"
+    },
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_recommendations with topic: {topic}\")"
+    },
+    {
+      "line": 127,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch recommendations for topic {topic} from {url}', exc_info=True)"
+    },
+    {
+      "line": 132,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'No recommendations found for topic: {topic}, returning None')"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched {len(items)} recommendations for topic \"{topic}\" from {url}')"
+    },
+    {
+      "line": 135,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch recommendations for topic {topic} from {url}', exc_info=True)"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_library with path: {path}\")"
+    },
+    {
+      "line": 144,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded library state from {path} with data: {raw}')"
+    },
+    {
+      "line": 146,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load library from path: {path}')"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_library with path={path} and library={library}\")"
+    },
+    {
+      "line": 156,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save library to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 169,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_reading with days={days} and initial read_total={read_total}\")"
+    },
+    {
+      "line": 180,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation complete for {day} days in {library}: total reads = {read_total}')"
+    },
+    {
+      "line": 184,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered pick_random_book with unread_only={unread_only} in library={library}\")"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Randomly selected book from {len(candidates)} candidates with unread_only={unread_only}')"
+    },
+    {
+      "line": 193,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 220,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

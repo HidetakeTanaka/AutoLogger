@@ -1,0 +1,78 @@
+{
+  "file": "script59.py",
+  "logs": [
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.from_dict"
+    },
+    {
+      "line": 69,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse raw data in Sensor.from_dict"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricsClient.fetch"
+    },
+    {
+      "line": 121,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error during HTTP request in MetricsClient.fetch"
+    },
+    {
+      "line": 124,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricsClient.push"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Request completed successfully in MetricsClient.push"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_network"
+    },
+    {
+      "line": 143,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read network file in load_network"
+    },
+    {
+      "line": 170,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Computed aggregate values in aggregate_metrics"
+    },
+    {
+      "line": 193,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Merged remote metrics into local network in sync_remote_metrics"
+    },
+    {
+      "line": 206,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 224,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled error in metrics pipeline in main"
+    }
+  ]
+}
+

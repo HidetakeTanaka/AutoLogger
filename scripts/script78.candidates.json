@@ -1,0 +1,1018 @@
+{
+  "file": "scripts\\script78.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "Article",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "Article",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 25,
+      "end_line": 25,
+      "function": "is_recent",
+      "class_name": "Article",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 28,
+      "end_line": 28,
+      "function": "matches",
+      "class_name": "Article",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches",
+      "class_name": "Article",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches",
+      "class_name": "Article",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "matches",
+      "class_name": "Article",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 36,
+      "end_line": 36,
+      "function": "mark_read",
+      "class_name": "Article",
+      "code": "def mark_read(self) -> None:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 39,
+      "end_line": 39,
+      "function": "to_dict",
+      "class_name": "Article",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 39,
+      "end_line": 39,
+      "function": "to_dict",
+      "class_name": "Article",
+      "code": "return {'article_id': self.article_id, 'title': self.title, 'url': self.url, 'published_at': self.published_at.isoformat(), 'tags': self.tags, 'read': self.read}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 50,
+      "end_line": 50,
+      "function": "from_dict",
+      "class_name": "Article",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Article\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 53,
+      "end_line": 53,
+      "function": "from_dict",
+      "class_name": "Article",
+      "code": "return cls(article_id=str(raw.get('article_id', '')), title=str(raw.get('title', '')), url=str(raw.get('url', '')), published_at=ts, tags=list(raw.get('tags', [])), read=bool(raw.get('read', False)))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 62,
+      "end_line": 62,
+      "function": "from_dict",
+      "class_name": "Article",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 62,
+      "end_line": 62,
+      "function": "from_dict",
+      "class_name": "Article",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "add_article",
+      "class_name": "FeedState",
+      "code": "def add_article(self, article: Article) -> None:",
+      "vars_in_scope": [
+        "article",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 73,
+      "end_line": 73,
+      "function": "add_article",
+      "class_name": "FeedState",
+      "code": "return",
+      "vars_in_scope": [
+        "article",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 77,
+      "end_line": 77,
+      "function": "unread",
+      "class_name": "FeedState",
+      "code": "def unread(self) -> List[Article]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 77,
+      "end_line": 77,
+      "function": "unread",
+      "class_name": "FeedState",
+      "code": "return [a for a in self.articles if not a.read]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 80,
+      "end_line": 80,
+      "function": "to_dict",
+      "class_name": "FeedState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 80,
+      "end_line": 80,
+      "function": "to_dict",
+      "class_name": "FeedState",
+      "code": "return {'feed_id': self.feed_id, 'name': self.name, 'articles': [a.to_dict() for a in self.articles]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 88,
+      "end_line": 88,
+      "function": "from_dict",
+      "class_name": "FeedState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"FeedState\":",
+      "vars_in_scope": [
+        "art",
+        "cls",
+        "feed",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 93,
+      "end_line": 93,
+      "function": "from_dict",
+      "class_name": "FeedState",
+      "code": "return feed",
+      "vars_in_scope": [
+        "art",
+        "cls",
+        "feed",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 98,
+      "end_line": 98,
+      "function": "__init__",
+      "class_name": "NewsClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 102,
+      "end_line": 102,
+      "function": "_url",
+      "class_name": "NewsClient",
+      "code": "def _url(self, topic: str) -> str:",
+      "vars_in_scope": [
+        "self",
+        "topic"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 102,
+      "end_line": 102,
+      "function": "_url",
+      "class_name": "NewsClient",
+      "code": "return f'{self.base_url}/search?q={topic}'",
+      "vars_in_scope": [
+        "self",
+        "topic"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 105,
+      "end_line": 105,
+      "function": "fetch_feed",
+      "class_name": "NewsClient",
+      "code": "def fetch_feed(self, topic: str) -> Optional[List[Dict[str, Any]]]:",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 106,
+      "end_line": 106,
+      "function": "fetch_feed",
+      "class_name": "NewsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 113,
+      "end_line": 113,
+      "function": "fetch_feed",
+      "class_name": "NewsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 113,
+      "end_line": 113,
+      "function": "fetch_feed",
+      "class_name": "NewsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 115,
+      "end_line": 115,
+      "function": "fetch_feed",
+      "class_name": "NewsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "fetch_feed",
+      "class_name": "NewsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 119,
+      "end_line": 119,
+      "function": "fetch_feed",
+      "class_name": "NewsClient",
+      "code": "return items if isinstance(items, list) else None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch_feed",
+      "class_name": "NewsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "fetch_feed",
+      "class_name": "NewsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 125,
+      "end_line": 125,
+      "function": "load_feeds",
+      "class_name": null,
+      "code": "def load_feeds(path: Path) -> List[FeedState]:",
+      "vars_in_scope": [
+        "feeds",
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 126,
+      "end_line": 126,
+      "function": "load_feeds",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "feeds",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 131,
+      "end_line": 131,
+      "function": "load_feeds",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "feeds",
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 131,
+      "end_line": 131,
+      "function": "load_feeds",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "feeds",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 133,
+      "end_line": 133,
+      "function": "load_feeds",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "feeds",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 138,
+      "end_line": 138,
+      "function": "load_feeds",
+      "class_name": null,
+      "code": "return feeds",
+      "vars_in_scope": [
+        "feeds",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 142,
+      "end_line": 142,
+      "function": "save_feeds",
+      "class_name": null,
+      "code": "def save_feeds(path: Path, feeds: List[FeedState]) -> None:",
+      "vars_in_scope": [
+        "feeds",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 150,
+      "end_line": 150,
+      "function": "save_feeds",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "feeds",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 154,
+      "end_line": 154,
+      "function": "save_feeds",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "feeds",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 163,
+      "end_line": 163,
+      "function": "merge_feed",
+      "class_name": null,
+      "code": "def merge_feed(",
+      "vars_in_scope": [
+        "aid",
+        "art",
+        "feed",
+        "feed_id",
+        "feeds",
+        "index",
+        "items",
+        "name",
+        "tags",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 168,
+      "end_line": 168,
+      "function": "merge_feed",
+      "class_name": null,
+      "code": "return feed",
+      "vars_in_scope": [
+        "aid",
+        "art",
+        "feed",
+        "feed_id",
+        "feeds",
+        "index",
+        "items",
+        "name",
+        "tags",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 180,
+      "end_line": 180,
+      "function": "merge_feed",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "aid",
+        "art",
+        "feed",
+        "feed_id",
+        "feeds",
+        "index",
+        "items",
+        "name",
+        "tags",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 189,
+      "end_line": 189,
+      "function": "merge_feed",
+      "class_name": null,
+      "code": "return feed",
+      "vars_in_scope": [
+        "aid",
+        "art",
+        "feed",
+        "feed_id",
+        "feeds",
+        "index",
+        "items",
+        "name",
+        "tags",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 193,
+      "end_line": 193,
+      "function": "summarize_feeds",
+      "class_name": null,
+      "code": "def summarize_feeds(feeds: List[FeedState]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "feeds",
+        "recent",
+        "total_articles",
+        "total_unread"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 201,
+      "end_line": 201,
+      "function": "summarize_feeds",
+      "class_name": null,
+      "code": "return {'feeds': len(feeds), 'articles': total_articles, 'unread': total_unread, 'recent_24h': recent}",
+      "vars_in_scope": [
+        "feeds",
+        "recent",
+        "total_articles",
+        "total_unread"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 210,
+      "end_line": 210,
+      "function": "simulate_reading",
+      "class_name": null,
+      "code": "def simulate_reading(feeds: List[FeedState], max_items: int = 5) -> int:",
+      "vars_in_scope": [
+        "feeds",
+        "i",
+        "max_items",
+        "read_count",
+        "unread"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 212,
+      "end_line": 212,
+      "function": "simulate_reading",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "feeds",
+        "i",
+        "max_items",
+        "read_count",
+        "unread"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 220,
+      "end_line": 220,
+      "function": "simulate_reading",
+      "class_name": null,
+      "code": "return read_count",
+      "vars_in_scope": [
+        "feeds",
+        "i",
+        "max_items",
+        "read_count",
+        "unread"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 224,
+      "end_line": 224,
+      "function": "find_trending_tags",
+      "class_name": null,
+      "code": "def find_trending_tags(feeds: List[FeedState], min_count: int = 2) -> List[str]:",
+      "vars_in_scope": [
+        "counts",
+        "feeds",
+        "key",
+        "min_count",
+        "tags"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 231,
+      "end_line": 231,
+      "function": "find_trending_tags",
+      "class_name": null,
+      "code": "return sorted(tags)",
+      "vars_in_scope": [
+        "counts",
+        "feeds",
+        "key",
+        "min_count",
+        "tags"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 235,
+      "end_line": 235,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "feeds",
+        "items",
+        "store_path",
+        "summary",
+        "summary_path",
+        "topics"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 256,
+      "end_line": 256,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "feeds",
+        "items",
+        "store_path",
+        "summary",
+        "summary_path",
+        "topics"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 256,
+      "end_line": 256,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "feeds",
+        "items",
+        "store_path",
+        "summary",
+        "summary_path",
+        "topics"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 258,
+      "end_line": 258,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "feeds",
+        "items",
+        "store_path",
+        "summary",
+        "summary_path",
+        "topics"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 258,
+      "end_line": 258,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "feeds",
+        "items",
+        "store_path",
+        "summary",
+        "summary_path",
+        "topics"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 259,
+      "end_line": 259,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "feeds",
+        "items",
+        "store_path",
+        "summary",
+        "summary_path",
+        "topics"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

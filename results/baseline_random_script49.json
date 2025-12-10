@@ -1,0 +1,113 @@
+{
+  "file": "script49.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 32,
+      "level": "ERROR",
+      "message": "Random log at line 32 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 32,
+      "level": "DEBUG",
+      "message": "Random log at line 32 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 43,
+      "level": "DEBUG",
+      "message": "Random log at line 43 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 69,
+      "level": "DEBUG",
+      "message": "Random log at line 69 in add_transaction",
+      "kind": "return",
+      "function": "add_transaction"
+    },
+    {
+      "line": 73,
+      "level": "ERROR",
+      "message": "Random log at line 73 in balance",
+      "kind": "return",
+      "function": "balance"
+    },
+    {
+      "line": 77,
+      "level": "WARNING",
+      "message": "Random log at line 77 in recent_spending",
+      "kind": "return",
+      "function": "recent_spending"
+    },
+    {
+      "line": 80,
+      "level": "ERROR",
+      "message": "Random log at line 80 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 80,
+      "level": "WARNING",
+      "message": "Random log at line 80 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 119,
+      "level": "INFO",
+      "message": "Random log at line 119 in load_transactions",
+      "kind": "return",
+      "function": "load_transactions"
+    },
+    {
+      "line": 156,
+      "level": "WARNING",
+      "message": "Random log at line 156 in summarize_account",
+      "kind": "entry",
+      "function": "summarize_account"
+    },
+    {
+      "line": 160,
+      "level": "WARNING",
+      "message": "Random log at line 160 in summarize_account",
+      "kind": "return",
+      "function": "summarize_account"
+    },
+    {
+      "line": 181,
+      "level": "INFO",
+      "message": "Random log at line 181 in detect_overspend",
+      "kind": "return",
+      "function": "detect_overspend"
+    },
+    {
+      "line": 189,
+      "level": "ERROR",
+      "message": "Random log at line 189 in filter_large_transactions",
+      "kind": "return",
+      "function": "filter_large_transactions"
+    }
+  ]
+}

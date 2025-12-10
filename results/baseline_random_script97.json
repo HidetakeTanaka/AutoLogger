@@ -1,0 +1,134 @@
+{
+  "file": "script97.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 21,
+      "level": "WARNING",
+      "message": "Random log at line 21 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 22,
+      "level": "INFO",
+      "message": "Random log at line 22 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 30,
+      "level": "ERROR",
+      "message": "Random log at line 30 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 30,
+      "level": "DEBUG",
+      "message": "Random log at line 30 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 39,
+      "level": "DEBUG",
+      "message": "Random log at line 39 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 73,
+      "level": "DEBUG",
+      "message": "Random log at line 73 in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 82,
+      "level": "ERROR",
+      "message": "Random log at line 82 in save",
+      "kind": "except",
+      "function": "save"
+    },
+    {
+      "line": 85,
+      "level": "WARNING",
+      "message": "Random log at line 85 in add_record",
+      "kind": "entry",
+      "function": "add_record"
+    },
+    {
+      "line": 88,
+      "level": "ERROR",
+      "message": "Random log at line 88 in iter_recent",
+      "kind": "entry",
+      "function": "iter_recent"
+    },
+    {
+      "line": 88,
+      "level": "WARNING",
+      "message": "Random log at line 88 in iter_recent",
+      "kind": "return",
+      "function": "iter_recent"
+    },
+    {
+      "line": 118,
+      "level": "INFO",
+      "message": "Random log at line 118 in get_json",
+      "kind": "return",
+      "function": "get_json"
+    },
+    {
+      "line": 140,
+      "level": "WARNING",
+      "message": "Random log at line 140 in filter_by_tag",
+      "kind": "return",
+      "function": "filter_by_tag"
+    },
+    {
+      "line": 144,
+      "level": "WARNING",
+      "message": "Random log at line 144 in compute_summary",
+      "kind": "entry",
+      "function": "compute_summary"
+    },
+    {
+      "line": 153,
+      "level": "INFO",
+      "message": "Random log at line 153 in read_local_config",
+      "kind": "entry",
+      "function": "read_local_config"
+    },
+    {
+      "line": 159,
+      "level": "ERROR",
+      "message": "Random log at line 159 in read_local_config",
+      "kind": "return",
+      "function": "read_local_config"
+    },
+    {
+      "line": 177,
+      "level": "DEBUG",
+      "message": "Random log at line 177 in sync_remote_data",
+      "kind": "return",
+      "function": "sync_remote_data"
+    },
+    {
+      "line": 207,
+      "level": "WARNING",
+      "message": "Random log at line 207 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 209,
+      "level": "ERROR",
+      "message": "Random log at line 209 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

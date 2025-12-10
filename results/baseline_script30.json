@@ -1,0 +1,160 @@
+{
+  "file": "script30.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 9,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 12,
+      "level": "DEBUG",
+      "message": "Entering filter_data",
+      "kind": "entry",
+      "function": "filter_data"
+    },
+    {
+      "line": 13,
+      "level": "INFO",
+      "message": "Exiting filter_data",
+      "kind": "return",
+      "function": "filter_data"
+    },
+    {
+      "line": 16,
+      "level": "DEBUG",
+      "message": "Entering aggregate_data",
+      "kind": "entry",
+      "function": "aggregate_data"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Exiting aggregate_data",
+      "kind": "return",
+      "function": "aggregate_data"
+    },
+    {
+      "line": 24,
+      "level": "DEBUG",
+      "message": "Entering transform_data",
+      "kind": "entry",
+      "function": "transform_data"
+    },
+    {
+      "line": 27,
+      "level": "INFO",
+      "message": "Exiting transform_data",
+      "kind": "return",
+      "function": "transform_data"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Entering read_file",
+      "kind": "entry",
+      "function": "read_file"
+    },
+    {
+      "line": 36,
+      "level": "INFO",
+      "message": "Exiting read_file",
+      "kind": "return",
+      "function": "read_file"
+    },
+    {
+      "line": 38,
+      "level": "ERROR",
+      "message": "Exception in read_file",
+      "kind": "except",
+      "function": "read_file"
+    },
+    {
+      "line": 39,
+      "level": "INFO",
+      "message": "Exiting read_file",
+      "kind": "return",
+      "function": "read_file"
+    },
+    {
+      "line": 41,
+      "level": "ERROR",
+      "message": "Exception in read_file",
+      "kind": "except",
+      "function": "read_file"
+    },
+    {
+      "line": 42,
+      "level": "INFO",
+      "message": "Exiting read_file",
+      "kind": "return",
+      "function": "read_file"
+    },
+    {
+      "line": 46,
+      "level": "DEBUG",
+      "message": "Entering write_file",
+      "kind": "entry",
+      "function": "write_file"
+    },
+    {
+      "line": 51,
+      "level": "ERROR",
+      "message": "Exception in write_file",
+      "kind": "except",
+      "function": "write_file"
+    },
+    {
+      "line": 57,
+      "level": "DEBUG",
+      "message": "Entering fetch_data",
+      "kind": "entry",
+      "function": "fetch_data"
+    },
+    {
+      "line": 61,
+      "level": "INFO",
+      "message": "Exiting fetch_data",
+      "kind": "return",
+      "function": "fetch_data"
+    },
+    {
+      "line": 63,
+      "level": "ERROR",
+      "message": "Exception in fetch_data",
+      "kind": "except",
+      "function": "fetch_data"
+    },
+    {
+      "line": 64,
+      "level": "INFO",
+      "message": "Exiting fetch_data",
+      "kind": "return",
+      "function": "fetch_data"
+    },
+    {
+      "line": 68,
+      "level": "DEBUG",
+      "message": "Entering process_and_save_data",
+      "kind": "entry",
+      "function": "process_and_save_data"
+    },
+    {
+      "line": 72,
+      "level": "INFO",
+      "message": "Exiting process_and_save_data",
+      "kind": "return",
+      "function": "process_and_save_data"
+    },
+    {
+      "line": 88,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    }
+  ]
+}

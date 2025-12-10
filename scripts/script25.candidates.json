@@ -1,0 +1,420 @@
+{
+  "file": "scripts\\script25.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 9,
+      "end_line": 9,
+      "function": "__init__",
+      "class_name": "Employee",
+      "code": "def __init__(self, name: str, position: str, salary: float, department: str) -> None:",
+      "vars_in_scope": [
+        "department",
+        "name",
+        "position",
+        "salary",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 15,
+      "end_line": 15,
+      "function": "update_salary",
+      "class_name": "Employee",
+      "code": "def update_salary(self, salary: float) -> None:",
+      "vars_in_scope": [
+        "salary",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 18,
+      "end_line": 18,
+      "function": "get_employee_info",
+      "class_name": "Employee",
+      "code": "def get_employee_info(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 18,
+      "end_line": 18,
+      "function": "get_employee_info",
+      "class_name": "Employee",
+      "code": "return {'name': self.name, 'position': self.position, 'salary': self.salary, 'department': self.department}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 23,
+      "end_line": 23,
+      "function": "__init__",
+      "class_name": "Department",
+      "code": "def __init__(self, name: str) -> None:",
+      "vars_in_scope": [
+        "name",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 27,
+      "end_line": 27,
+      "function": "add_employee",
+      "class_name": "Department",
+      "code": "def add_employee(self, employee: Employee) -> None:",
+      "vars_in_scope": [
+        "employee",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 30,
+      "end_line": 30,
+      "function": "remove_employee",
+      "class_name": "Department",
+      "code": "def remove_employee(self, name: str) -> bool:",
+      "vars_in_scope": [
+        "name",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "remove_employee",
+      "class_name": "Department",
+      "code": "return True",
+      "vars_in_scope": [
+        "name",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 34,
+      "end_line": 34,
+      "function": "remove_employee",
+      "class_name": "Department",
+      "code": "return False",
+      "vars_in_scope": [
+        "name",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 37,
+      "end_line": 37,
+      "function": "get_department_info",
+      "class_name": "Department",
+      "code": "def get_department_info(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 37,
+      "end_line": 37,
+      "function": "get_department_info",
+      "class_name": "Department",
+      "code": "return {'name': self.name, 'employees': [emp.get_employee_info() for emp in self.employees]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 43,
+      "end_line": 43,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "def read_json(file_path: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 45,
+      "end_line": 45,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return json.load(file)",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 47,
+      "end_line": 47,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 47,
+      "end_line": 47,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return []",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 51,
+      "end_line": 51,
+      "function": "write_json",
+      "class_name": "FileManager",
+      "code": "def write_json(file_path: str, data: List[Dict[str, Any]]) -> None:",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 55,
+      "end_line": 55,
+      "function": "write_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 61,
+      "end_line": 61,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "def fetch_data(url: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 64,
+      "end_line": 64,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "return response.json()",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 66,
+      "end_line": 66,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 66,
+      "end_line": 66,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 70,
+      "end_line": 70,
+      "function": "load_departments",
+      "class_name": null,
+      "code": "def load_departments(file_path: str) -> List[Department]:",
+      "vars_in_scope": [
+        "department",
+        "department_data",
+        "departments",
+        "employee",
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 78,
+      "end_line": 78,
+      "function": "load_departments",
+      "class_name": null,
+      "code": "return departments",
+      "vars_in_scope": [
+        "department",
+        "department_data",
+        "departments",
+        "employee",
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 82,
+      "end_line": 82,
+      "function": "save_departments",
+      "class_name": null,
+      "code": "def save_departments(departments: List[Department], file_path: str) -> None:",
+      "vars_in_scope": [
+        "department_data",
+        "departments",
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 87,
+      "end_line": 87,
+      "function": "create_employee",
+      "class_name": null,
+      "code": "def create_employee(name: str, position: str, salary: float, department: str) -> Employee:",
+      "vars_in_scope": [
+        "department",
+        "name",
+        "position",
+        "salary"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 87,
+      "end_line": 87,
+      "function": "create_employee",
+      "class_name": null,
+      "code": "return Employee(name, position, salary, department)",
+      "vars_in_scope": [
+        "department",
+        "name",
+        "position",
+        "salary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 91,
+      "end_line": 91,
+      "function": "fetch_external_data",
+      "class_name": null,
+      "code": "def fetch_external_data(url: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 91,
+      "end_line": 91,
+      "function": "fetch_external_data",
+      "class_name": null,
+      "code": "return APIClient.fetch_data(url)",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 95,
+      "end_line": 95,
+      "function": "main",
+      "class_name": null,
+      "code": "def main() -> None:",
+      "vars_in_scope": [
+        "api_data",
+        "api_url",
+        "departments",
+        "input_file",
+        "it_department",
+        "new_employee",
+        "output_file"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    }
+  ]
+}

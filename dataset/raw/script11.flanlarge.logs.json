@@ -1,0 +1,194 @@
+{
+  "file": "script11.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 6,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+    },
+    {
+      "candidate_id": 1,
+      "lineno": 12,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function update_quantity')"
+    },
+    {
+      "candidate_id": 2,
+      "lineno": 15,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function update_price')"
+    },
+    {
+      "candidate_id": 3,
+      "lineno": 18,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function get_product_info')"
+    },
+    {
+      "candidate_id": 4,
+      "lineno": 18,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_product_info')"
+    },
+    {
+      "candidate_id": 5,
+      "lineno": 23,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+    },
+    {
+      "candidate_id": 6,
+      "lineno": 26,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function add_product')"
+    },
+    {
+      "candidate_id": 7,
+      "lineno": 29,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function remove_product')"
+    },
+    {
+      "candidate_id": 8,
+      "lineno": 32,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function remove_product')"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 33,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function remove_product')"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 36,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function get_inventory_value')"
+    },
+    {
+      "candidate_id": 11,
+      "lineno": 36,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_inventory_value')"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 39,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function get_products_by_category')"
+    },
+    {
+      "candidate_id": 13,
+      "lineno": 39,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_products_by_category')"
+    },
+    {
+      "candidate_id": 14,
+      "lineno": 45,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 47,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
+    },
+    {
+      "candidate_id": 16,
+      "lineno": 49,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
+    },
+    {
+      "candidate_id": 17,
+      "lineno": 50,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function read_json')"
+    },
+    {
+      "candidate_id": 18,
+      "lineno": 54,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function write_json')"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 58,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function write_json')"
+    },
+    {
+      "candidate_id": 20,
+      "lineno": 62,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function create_product')"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 62,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function create_product')"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 66,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function create_inventory')"
+    },
+    {
+      "candidate_id": 23,
+      "lineno": 66,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function create_inventory')"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 72,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function fetch_data')"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 73,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_data')"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 78,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function main')"
+    }
+  ]
+}

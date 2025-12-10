@@ -1,0 +1,95 @@
+{
+  "file": "script19.py",
+  "logs": [
+    {
+      "line": 5,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.__init__"
+    },
+    {
+      "line": 12,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.update_quantity"
+    },
+    {
+      "line": 14,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.update_price"
+    },
+    {
+      "line": 17,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.get_product_info"
+    },
+    {
+      "line": 18,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product info: %s"
+    },
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.__init__"
+    },
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.add_product"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.remove_product"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product removed successfully"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product not found"
+    },
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.get_inventory_value"
+    },
+    {
+      "line": 37,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.get_products_by_category"
+    },
+    {
+      "line": 42,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered FileManager.read_json"
+    },
+    {
+      "line": 46,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning data from JSON file"
+    },
+    {
+      "line": 50,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered FileManager.write_json"
+    }
+  ]
+}

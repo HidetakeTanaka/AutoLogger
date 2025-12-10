@@ -1,0 +1,305 @@
+{
+  "file": "script99.py",
+  "logs": [
+    {
+      "line": 17,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.is_recent"
+    },
+    {
+      "line": 19,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recency flag in SensorReading.is_recent"
+    },
+    {
+      "line": 23,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.to_dict"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized reading in SensorReading.to_dict"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.from_dict"
+    },
+    {
+      "line": 32,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse reading in SensorReading.from_dict"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed SensorReading instance in SensorReading.from_dict"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.add_reading"
+    },
+    {
+      "line": 47,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.recent_average"
+    },
+    {
+      "line": 49,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning zero average in DeviceState.recent_average"
+    },
+    {
+      "line": 53,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.is_online"
+    },
+    {
+      "line": 57,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning online flag in DeviceState.is_online"
+    },
+    {
+      "line": 60,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.to_dict"
+    },
+    {
+      "line": 60,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized device state in DeviceState.to_dict"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DeviceState.from_dict"
+    },
+    {
+      "line": 84,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse device data in DeviceState.from_dict"
+    },
+    {
+      "line": 77,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed DeviceState instance in DeviceState.from_dict"
+    },
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Fleet.get_or_create"
+    },
+    {
+      "line": 94,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning existing DeviceState in Fleet.get_or_create"
+    },
+    {
+      "line": 97,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning new DeviceState in Fleet.get_or_create"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Fleet.online_devices"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of online devices in Fleet.online_devices"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Fleet.to_dict"
+    },
+    {
+      "line": 103,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized fleet in Fleet.to_dict"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Fleet.from_dict"
+    },
+    {
+      "line": 112,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Fleet instance in Fleet.from_dict"
+    },
+    {
+      "line": 117,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiGateway.__init__"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiGateway._url"
+    },
+    {
+      "line": 123,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL in ApiGateway._url"
+    },
+    {
+      "line": 126,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiGateway.fetch_device_snapshot"
+    },
+    {
+      "line": 140,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch device snapshot in ApiGateway.fetch_device_snapshot"
+    },
+    {
+      "line": 138,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning device snapshot in ApiGateway.fetch_device_snapshot"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_fleet"
+    },
+    {
+      "line": 151,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning loaded Fleet in load_fleet"
+    },
+    {
+      "line": 153,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load fleet in load_fleet"
+    },
+    {
+      "line": 157,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_fleet"
+    },
+    {
+      "line": 163,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save fleet in save_fleet"
+    },
+    {
+      "line": 167,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_fleet_stats"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fleet statistics in compute_fleet_stats"
+    },
+    {
+      "line": 185,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering read_config"
+    },
+    {
+      "line": 194,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read configuration in read_config"
+    },
+    {
+      "line": 192,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning configuration in read_config"
+    },
+    {
+      "line": 198,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering refresh_from_remote"
+    },
+    {
+      "line": 210,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Remote refresh failed in refresh_from_remote"
+    },
+    {
+      "line": 212,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning update count in refresh_from_remote"
+    },
+    {
+      "line": 216,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering write_report"
+    },
+    {
+      "line": 222,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write report in write_report"
+    },
+    {
+      "line": 220,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning report write success flag in write_report"
+    },
+    {
+      "line": 226,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 251,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code in main"
+    }
+  ]
+}

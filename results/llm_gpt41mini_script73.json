@@ -1,0 +1,191 @@
+{
+  "file": "script73.py",
+  "logs": [
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with hours={hours} for transaction {self}\")"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 45,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Transaction from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_transaction with transaction id: {tx.id}\")"
+    },
+    {
+      "line": 60,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_transactions with hours={hours} for user {self}\")"
+    },
+    {
+      "line": 67,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Spending totals by category calculated: {totals}')"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 88,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'UserAccount created from dict: {acc}')"
+    },
+    {
+      "line": 93,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing AnalyticsClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with user_id={user_id}\")"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_benchmarks with user_id={user_id}\")"
+    },
+    {
+      "line": 109,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch benchmarks for user_id={user_id} from url={url}', exc_info=True)"
+    },
+    {
+      "line": 111,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch benchmarks for user_id={user_id} from url={url}', exc_info=True)"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_summary with user_id={user_id} and summary keys={list(summary.keys())}\")"
+    },
+    {
+      "line": 124,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary for user_id={user_id} to {url} with body={body}', exc_info=True)"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_account with path: {path}\")"
+    },
+    {
+      "line": 133,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load account from {path} with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_account with path={path} and account={account}\")"
+    },
+    {
+      "line": 143,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save account {account} to {path} with payload {payload} and tmp {tmp}', exc_info=True)"
+    },
+    {
+      "line": 143,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully saved account {account} to {path}')"
+    },
+    {
+      "line": 147,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save account to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_kpis for account_id={account.id}\")"
+    },
+    {
+      "line": 158,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Computed KPIs for account {account}: tx_count={len(txs)}, avg_amount={avg}, spend_30d={spend_30d}')"
+    },
+    {
+      "line": 162,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_day for account {account.id} with count {count}\")"
+    },
+    {
+      "line": 179,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering merge_benchmarks with kpis keys: {list(kpis.keys())} and remote keys: {list(remote.keys()) if remote else None}\")"
+    },
+    {
+      "line": 180,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merging complete. Total KPIs merged: {len(kpis)}')"
+    },
+    {
+      "line": 185,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merging benchmarks completed with {len(merged)} entries; remote={remote}')"
+    },
+    {
+      "line": 189,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_categories for account_id={account.id}\")"
+    },
+    {
+      "line": 197,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Summarized categories with {len(result)} entries, max_spend={max_spend}, total share={share:.2f}')"
+    },
+    {
+      "line": 201,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 227,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function for account %s at path %s', account, account_path, exc_info=True)"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "file": "script2.py",
+  "logs": [
+    {
+      "line": 7,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.__init__"
+    },
+    {
+      "line": 19,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product info from Product.get_product_info"
+    },
+    {
+      "line": 23,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.__init__"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning inventory value from Inventory.get_inventory_value"
+    },
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.read_json"
+    },
+    {
+      "line": 52,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.write_json"
+    },
+    {
+      "line": 59,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering create_product function"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main function"
+    },
+    {
+      "line": 73,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Exception occurred during fetch_data"
+    },
+    {
+      "line": 52,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Exception occurred during write_json"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "file": "script58.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches method with query: {query}\")"
+    },
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering {cls.__name__}.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 48,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Product from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 59,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering total_value method of Order with id={getattr(self, 'id', 'unknown')}\")"
+    },
+    {
+      "line": 62,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with days={days} for Order id={self.id}\")"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Creating Order from dict with order_id={raw.get(\"order_id\", \"\")} and status={raw.get(\"status\", \"pending\")}')"
+    },
+    {
+      "line": 91,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Order from dict', exc_info=True)"
+    },
+    {
+      "line": 96,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Initializing OrderBook with book_id={book_id}')"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add method with order: {order}\")"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get method with order_id={order_id}\")"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering search_by_product with query='{query}'\")"
+    },
+    {
+      "line": 126,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 136,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing ApiClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_orders with book_id={book_id}\")"
+    },
+    {
+      "line": 150,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch orders for book_id {book_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 153,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered push_summary with book_id={book_id} and summary keys={list(summary.keys())}\")"
+    },
+    {
+      "line": 160,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary for book_id {book_id} to {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 164,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_order_book with path: {path}\")"
+    },
+    {
+      "line": 168,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load order book from {path}')"
+    },
+    {
+      "line": 170,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load order book from {path}')"
+    },
+    {
+      "line": 174,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_order_book with path={path} and book with {len(book.entries)} entries\")"
+    },
+    {
+      "line": 180,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save order book to {path} with payload {payload}')"
+    },
+    {
+      "line": 184,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save order book to {path} with payload {payload}')"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_orders with OrderBook containing {len(book.orders)} orders\")"
+    },
+    {
+      "line": 194,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summary of orders: count={count}, open_count={open_count}, total_value={total_value}\")"
+    },
+    {
+      "line": 198,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_large_orders with threshold={threshold} and order book size={len(book.orders)}\")"
+    },
+    {
+      "line": 202,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Filtered orders with threshold {threshold}: {len(result)} orders returned from book with {len(book)} entries')"
+    },
+    {
+      "line": 206,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering merge_remote_orders with book={book} and remote_data keys={list(remote_data.keys()) if remote_data else None}\")"
+    },
+    {
+      "line": 214,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merge completed: {added} orders added from remote {remote}')"
+    },
+    {
+      "line": 218,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered simulate_processing with steps={steps} and book={book}\")"
+    },
+    {
+      "line": 230,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 248,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

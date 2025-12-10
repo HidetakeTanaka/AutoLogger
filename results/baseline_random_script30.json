@@ -1,0 +1,78 @@
+{
+  "file": "script30.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 12,
+      "level": "WARNING",
+      "message": "Random log at line 12 in filter_data",
+      "kind": "entry",
+      "function": "filter_data"
+    },
+    {
+      "line": 13,
+      "level": "INFO",
+      "message": "Random log at line 13 in filter_data",
+      "kind": "return",
+      "function": "filter_data"
+    },
+    {
+      "line": 27,
+      "level": "ERROR",
+      "message": "Random log at line 27 in transform_data",
+      "kind": "return",
+      "function": "transform_data"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Random log at line 33 in read_file",
+      "kind": "entry",
+      "function": "read_file"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Random log at line 36 in read_file",
+      "kind": "return",
+      "function": "read_file"
+    },
+    {
+      "line": 51,
+      "level": "DEBUG",
+      "message": "Random log at line 51 in write_file",
+      "kind": "except",
+      "function": "write_file"
+    },
+    {
+      "line": 61,
+      "level": "ERROR",
+      "message": "Random log at line 61 in fetch_data",
+      "kind": "return",
+      "function": "fetch_data"
+    },
+    {
+      "line": 64,
+      "level": "WARNING",
+      "message": "Random log at line 64 in fetch_data",
+      "kind": "return",
+      "function": "fetch_data"
+    },
+    {
+      "line": 68,
+      "level": "ERROR",
+      "message": "Random log at line 68 in process_and_save_data",
+      "kind": "entry",
+      "function": "process_and_save_data"
+    },
+    {
+      "line": 72,
+      "level": "WARNING",
+      "message": "Random log at line 72 in process_and_save_data",
+      "kind": "return",
+      "function": "process_and_save_data"
+    }
+  ]
+}

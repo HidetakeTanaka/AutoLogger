@@ -1,0 +1,134 @@
+{
+  "file": "script70.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_long",
+      "kind": "return",
+      "function": "is_long"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in is_long",
+      "kind": "return",
+      "function": "is_long"
+    },
+    {
+      "line": 32,
+      "level": "ERROR",
+      "message": "Random log at line 32 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in mark_done",
+      "kind": "entry",
+      "function": "mark_done"
+    },
+    {
+      "line": 38,
+      "level": "DEBUG",
+      "message": "Random log at line 38 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 75,
+      "level": "DEBUG",
+      "message": "Random log at line 75 in add_task",
+      "kind": "entry",
+      "function": "add_task"
+    },
+    {
+      "line": 80,
+      "level": "ERROR",
+      "message": "Random log at line 80 in get_task",
+      "kind": "return",
+      "function": "get_task"
+    },
+    {
+      "line": 84,
+      "level": "WARNING",
+      "message": "Random log at line 84 in completed_tasks",
+      "kind": "entry",
+      "function": "completed_tasks"
+    },
+    {
+      "line": 84,
+      "level": "ERROR",
+      "message": "Random log at line 84 in completed_tasks",
+      "kind": "return",
+      "function": "completed_tasks"
+    },
+    {
+      "line": 87,
+      "level": "WARNING",
+      "message": "Random log at line 87 in active_tasks",
+      "kind": "entry",
+      "function": "active_tasks"
+    },
+    {
+      "line": 128,
+      "level": "INFO",
+      "message": "Random log at line 128 in fetch_suggestions",
+      "kind": "return",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 150,
+      "level": "WARNING",
+      "message": "Random log at line 150 in load_project",
+      "kind": "except",
+      "function": "load_project"
+    },
+    {
+      "line": 150,
+      "level": "WARNING",
+      "message": "Random log at line 150 in load_project",
+      "kind": "return",
+      "function": "load_project"
+    },
+    {
+      "line": 164,
+      "level": "INFO",
+      "message": "Random log at line 164 in save_project",
+      "kind": "except",
+      "function": "save_project"
+    },
+    {
+      "line": 170,
+      "level": "ERROR",
+      "message": "Random log at line 170 in compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
+    },
+    {
+      "line": 226,
+      "level": "DEBUG",
+      "message": "Random log at line 226 in merge_remote_suggestions",
+      "kind": "return",
+      "function": "merge_remote_suggestions"
+    },
+    {
+      "line": 252,
+      "level": "WARNING",
+      "message": "Random log at line 252 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 253,
+      "level": "ERROR",
+      "message": "Random log at line 253 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

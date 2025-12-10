@@ -1,0 +1,113 @@
+{
+  "file": "script86.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 21,
+      "level": "WARNING",
+      "message": "Random log at line 21 in is_low_stock",
+      "kind": "return",
+      "function": "is_low_stock"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 32,
+      "level": "ERROR",
+      "message": "Random log at line 32 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 32,
+      "level": "DEBUG",
+      "message": "Random log at line 32 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 43,
+      "level": "DEBUG",
+      "message": "Random log at line 43 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 71,
+      "level": "DEBUG",
+      "message": "Random log at line 71 in search",
+      "kind": "return",
+      "function": "search"
+    },
+    {
+      "line": 74,
+      "level": "ERROR",
+      "message": "Random log at line 74 in total_value",
+      "kind": "return",
+      "function": "total_value"
+    },
+    {
+      "line": 77,
+      "level": "WARNING",
+      "message": "Random log at line 77 in low_stock",
+      "kind": "return",
+      "function": "low_stock"
+    },
+    {
+      "line": 80,
+      "level": "ERROR",
+      "message": "Random log at line 80 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 80,
+      "level": "WARNING",
+      "message": "Random log at line 80 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 124,
+      "level": "INFO",
+      "message": "Random log at line 124 in load_inventory",
+      "kind": "except",
+      "function": "load_inventory"
+    },
+    {
+      "line": 150,
+      "level": "WARNING",
+      "message": "Random log at line 150 in apply_markdown",
+      "kind": "return",
+      "function": "apply_markdown"
+    },
+    {
+      "line": 154,
+      "level": "WARNING",
+      "message": "Random log at line 154 in compute_daily_projection",
+      "kind": "entry",
+      "function": "compute_daily_projection"
+    },
+    {
+      "line": 166,
+      "level": "INFO",
+      "message": "Random log at line 166 in simulate_sales",
+      "kind": "entry",
+      "function": "simulate_sales"
+    },
+    {
+      "line": 177,
+      "level": "ERROR",
+      "message": "Random log at line 177 in simulate_sales",
+      "kind": "return",
+      "function": "simulate_sales"
+    }
+  ]
+}

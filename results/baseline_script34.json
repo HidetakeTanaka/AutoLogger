@@ -1,0 +1,307 @@
+{
+  "file": "script34.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 18,
+      "level": "DEBUG",
+      "message": "Entering is_temperature",
+      "kind": "entry",
+      "function": "is_temperature"
+    },
+    {
+      "line": 18,
+      "level": "INFO",
+      "message": "Exiting is_temperature",
+      "kind": "return",
+      "function": "is_temperature"
+    },
+    {
+      "line": 21,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Entering exceeds",
+      "kind": "entry",
+      "function": "exceeds"
+    },
+    {
+      "line": 36,
+      "level": "INFO",
+      "message": "Exiting exceeds",
+      "kind": "return",
+      "function": "exceeds"
+    },
+    {
+      "line": 39,
+      "level": "DEBUG",
+      "message": "Entering to_tuple",
+      "kind": "entry",
+      "function": "to_tuple"
+    },
+    {
+      "line": 39,
+      "level": "INFO",
+      "message": "Exiting to_tuple",
+      "kind": "return",
+      "function": "to_tuple"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 48,
+      "level": "DEBUG",
+      "message": "Entering load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 50,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 55,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 56,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 65,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Entering get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 70,
+      "level": "INFO",
+      "message": "Exiting get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 73,
+      "level": "DEBUG",
+      "message": "Entering all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 73,
+      "level": "INFO",
+      "message": "Exiting all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 77,
+      "level": "DEBUG",
+      "message": "Entering load_readings_csv",
+      "kind": "entry",
+      "function": "load_readings_csv"
+    },
+    {
+      "line": 79,
+      "level": "INFO",
+      "message": "Exiting load_readings_csv",
+      "kind": "return",
+      "function": "load_readings_csv"
+    },
+    {
+      "line": 89,
+      "level": "ERROR",
+      "message": "Exception in load_readings_csv",
+      "kind": "except",
+      "function": "load_readings_csv"
+    },
+    {
+      "line": 92,
+      "level": "ERROR",
+      "message": "Exception in load_readings_csv",
+      "kind": "except",
+      "function": "load_readings_csv"
+    },
+    {
+      "line": 92,
+      "level": "INFO",
+      "message": "Exiting load_readings_csv",
+      "kind": "return",
+      "function": "load_readings_csv"
+    },
+    {
+      "line": 93,
+      "level": "INFO",
+      "message": "Exiting load_readings_csv",
+      "kind": "return",
+      "function": "load_readings_csv"
+    },
+    {
+      "line": 97,
+      "level": "DEBUG",
+      "message": "Entering group_by_sensor",
+      "kind": "entry",
+      "function": "group_by_sensor"
+    },
+    {
+      "line": 100,
+      "level": "INFO",
+      "message": "Exiting group_by_sensor",
+      "kind": "return",
+      "function": "group_by_sensor"
+    },
+    {
+      "line": 104,
+      "level": "DEBUG",
+      "message": "Entering compute_statistics",
+      "kind": "entry",
+      "function": "compute_statistics"
+    },
+    {
+      "line": 105,
+      "level": "INFO",
+      "message": "Exiting compute_statistics",
+      "kind": "return",
+      "function": "compute_statistics"
+    },
+    {
+      "line": 109,
+      "level": "INFO",
+      "message": "Exiting compute_statistics",
+      "kind": "return",
+      "function": "compute_statistics"
+    },
+    {
+      "line": 113,
+      "level": "DEBUG",
+      "message": "Entering find_alarms",
+      "kind": "entry",
+      "function": "find_alarms"
+    },
+    {
+      "line": 129,
+      "level": "INFO",
+      "message": "Exiting find_alarms",
+      "kind": "return",
+      "function": "find_alarms"
+    },
+    {
+      "line": 133,
+      "level": "DEBUG",
+      "message": "Entering export_alarms",
+      "kind": "entry",
+      "function": "export_alarms"
+    },
+    {
+      "line": 139,
+      "level": "DEBUG",
+      "message": "Entering export_stats",
+      "kind": "entry",
+      "function": "export_stats"
+    },
+    {
+      "line": 145,
+      "level": "DEBUG",
+      "message": "Entering load_config",
+      "kind": "entry",
+      "function": "load_config"
+    },
+    {
+      "line": 146,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 149,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 151,
+      "level": "ERROR",
+      "message": "Exception in load_config",
+      "kind": "except",
+      "function": "load_config"
+    },
+    {
+      "line": 151,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 155,
+      "level": "DEBUG",
+      "message": "Entering summarize_sensors",
+      "kind": "entry",
+      "function": "summarize_sensors"
+    },
+    {
+      "line": 166,
+      "level": "INFO",
+      "message": "Exiting summarize_sensors",
+      "kind": "return",
+      "function": "summarize_sensors"
+    },
+    {
+      "line": 170,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 194,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 195,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

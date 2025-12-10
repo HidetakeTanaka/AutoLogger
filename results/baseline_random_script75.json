@@ -1,0 +1,113 @@
+{
+  "file": "script75.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 22,
+      "level": "WARNING",
+      "message": "Random log at line 22 in is_in_stock",
+      "kind": "return",
+      "function": "is_in_stock"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Random log at line 25 in matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 33,
+      "level": "ERROR",
+      "message": "Random log at line 33 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Random log at line 33 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Random log at line 44 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 77,
+      "level": "DEBUG",
+      "message": "Random log at line 77 in total_items",
+      "kind": "entry",
+      "function": "total_items"
+    },
+    {
+      "line": 80,
+      "level": "ERROR",
+      "message": "Random log at line 80 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 85,
+      "level": "WARNING",
+      "message": "Random log at line 85 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 89,
+      "level": "ERROR",
+      "message": "Random log at line 89 in _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 89,
+      "level": "WARNING",
+      "message": "Random log at line 89 in _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 126,
+      "level": "INFO",
+      "message": "Random log at line 126 in save_products",
+      "kind": "entry",
+      "function": "save_products"
+    },
+    {
+      "line": 159,
+      "level": "WARNING",
+      "message": "Random log at line 159 in simulate_cart",
+      "kind": "entry",
+      "function": "simulate_cart"
+    },
+    {
+      "line": 162,
+      "level": "WARNING",
+      "message": "Random log at line 162 in simulate_cart",
+      "kind": "return",
+      "function": "simulate_cart"
+    },
+    {
+      "line": 174,
+      "level": "INFO",
+      "message": "Random log at line 174 in convert_total",
+      "kind": "return",
+      "function": "convert_total"
+    },
+    {
+      "line": 179,
+      "level": "ERROR",
+      "message": "Random log at line 179 in main",
+      "kind": "entry",
+      "function": "main"
+    }
+  ]
+}

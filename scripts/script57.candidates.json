@@ -1,0 +1,1036 @@
+{
+  "file": "scripts\\script57.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_active",
+      "class_name": "UserProfile",
+      "code": "def is_active(self, days: int = 7) -> bool:",
+      "vars_in_scope": [
+        "days",
+        "self",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_active",
+      "class_name": "UserProfile",
+      "code": "return False",
+      "vars_in_scope": [
+        "days",
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "is_active",
+      "class_name": "UserProfile",
+      "code": "return self.last_active >= threshold",
+      "vars_in_scope": [
+        "days",
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 29,
+      "end_line": 29,
+      "function": "update_activity",
+      "class_name": "UserProfile",
+      "code": "def update_activity(self) -> None:",
+      "vars_in_scope": [
+        "now",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "update_activity",
+      "class_name": "UserProfile",
+      "code": "return",
+      "vars_in_scope": [
+        "now",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 36,
+      "end_line": 36,
+      "function": "matches",
+      "class_name": "UserProfile",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 38,
+      "end_line": 38,
+      "function": "matches",
+      "class_name": "UserProfile",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 40,
+      "end_line": 40,
+      "function": "matches",
+      "class_name": "UserProfile",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 41,
+      "end_line": 41,
+      "function": "matches",
+      "class_name": "UserProfile",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 44,
+      "end_line": 44,
+      "function": "to_dict",
+      "class_name": "UserProfile",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 44,
+      "end_line": 44,
+      "function": "to_dict",
+      "class_name": "UserProfile",
+      "code": "return {'user_id': self.user_id, 'name': self.name, 'created_at': self.created_at.isoformat(), 'last_active': self.last_active.isoformat(), 'is_premium': self.is_premium, 'score': self.score, 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[UserProfile]:",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "last",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 60,
+      "end_line": 60,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "last",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 60,
+      "end_line": 60,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "last",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 61,
+      "end_line": 61,
+      "function": "from_dict",
+      "class_name": "UserProfile",
+      "code": "return cls(user_id=str(raw.get('user_id', '')), name=str(raw.get('name', '')), created_at=created, last_active=last, is_premium=bool(raw.get('is_premium', False)), score=float(raw.get('score', 0.0)), tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "last",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "__init__",
+      "class_name": "UserDirectory",
+      "code": "def __init__(self, directory_id: str) -> None:",
+      "vars_in_scope": [
+        "directory_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 78,
+      "end_line": 78,
+      "function": "add",
+      "class_name": "UserDirectory",
+      "code": "def add(self, user: UserProfile) -> None:",
+      "vars_in_scope": [
+        "self",
+        "user"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 81,
+      "end_line": 81,
+      "function": "get",
+      "class_name": "UserDirectory",
+      "code": "def get(self, user_id: str) -> Optional[UserProfile]:",
+      "vars_in_scope": [
+        "self",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 81,
+      "end_line": 81,
+      "function": "get",
+      "class_name": "UserDirectory",
+      "code": "return self._users.get(user_id)",
+      "vars_in_scope": [
+        "self",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 84,
+      "end_line": 84,
+      "function": "all",
+      "class_name": "UserDirectory",
+      "code": "def all(self) -> List[UserProfile]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "all",
+      "class_name": "UserDirectory",
+      "code": "return list(self._users.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 87,
+      "end_line": 87,
+      "function": "search",
+      "class_name": "UserDirectory",
+      "code": "def search(self, query: str = \"\") -> List[UserProfile]:",
+      "vars_in_scope": [
+        "query",
+        "self",
+        "users"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 88,
+      "end_line": 88,
+      "function": "search",
+      "class_name": "UserDirectory",
+      "code": "return sorted(users, key=lambda u: u.name.lower())",
+      "vars_in_scope": [
+        "query",
+        "self",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 91,
+      "end_line": 91,
+      "function": "active_users",
+      "class_name": "UserDirectory",
+      "code": "def active_users(self, days: int = 7) -> List[UserProfile]:",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 91,
+      "end_line": 91,
+      "function": "active_users",
+      "class_name": "UserDirectory",
+      "code": "return [u for u in self._users.values() if u.is_active(days)]",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 94,
+      "end_line": 94,
+      "function": "to_dict",
+      "class_name": "UserDirectory",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 94,
+      "end_line": 94,
+      "function": "to_dict",
+      "class_name": "UserDirectory",
+      "code": "return {'directory_id': self.directory_id, 'users': [u.to_dict() for u in self._users.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 101,
+      "end_line": 101,
+      "function": "from_dict",
+      "class_name": "UserDirectory",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> UserDirectory:",
+      "vars_in_scope": [
+        "cls",
+        "d",
+        "raw",
+        "user"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 106,
+      "end_line": 106,
+      "function": "from_dict",
+      "class_name": "UserDirectory",
+      "code": "return d",
+      "vars_in_scope": [
+        "cls",
+        "d",
+        "raw",
+        "user"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 111,
+      "end_line": 111,
+      "function": "__init__",
+      "class_name": "RemoteClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 115,
+      "end_line": 115,
+      "function": "_url",
+      "class_name": "RemoteClient",
+      "code": "def _url(self, directory_id: str) -> str:",
+      "vars_in_scope": [
+        "directory_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "_url",
+      "class_name": "RemoteClient",
+      "code": "return f'{self.base_url}/directories/{directory_id}.json'",
+      "vars_in_scope": [
+        "directory_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 118,
+      "end_line": 118,
+      "function": "fetch",
+      "class_name": "RemoteClient",
+      "code": "def fetch(self, directory_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "body",
+        "directory_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 123,
+      "end_line": 123,
+      "function": "fetch",
+      "class_name": "RemoteClient",
+      "code": "return json.loads(body.decode('utf-8'))",
+      "vars_in_scope": [
+        "body",
+        "directory_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 125,
+      "end_line": 125,
+      "function": "fetch",
+      "class_name": "RemoteClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "directory_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 125,
+      "end_line": 125,
+      "function": "fetch",
+      "class_name": "RemoteClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "directory_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 128,
+      "end_line": 128,
+      "function": "push",
+      "class_name": "RemoteClient",
+      "code": "def push(self, directory_id: str, payload: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "data",
+        "directory_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 133,
+      "end_line": 133,
+      "function": "push",
+      "class_name": "RemoteClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "data",
+        "directory_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 135,
+      "end_line": 135,
+      "function": "push",
+      "class_name": "RemoteClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "directory_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 135,
+      "end_line": 135,
+      "function": "push",
+      "class_name": "RemoteClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "data",
+        "directory_id",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 139,
+      "end_line": 139,
+      "function": "load_directory",
+      "class_name": null,
+      "code": "def load_directory(path: Path) -> UserDirectory:",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 141,
+      "end_line": 141,
+      "function": "load_directory",
+      "class_name": null,
+      "code": "return UserDirectory.from_dict(data)",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 143,
+      "end_line": 143,
+      "function": "load_directory",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 143,
+      "end_line": 143,
+      "function": "load_directory",
+      "class_name": null,
+      "code": "return UserDirectory(directory_id='local')",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 145,
+      "end_line": 145,
+      "function": "load_directory",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 145,
+      "end_line": 145,
+      "function": "load_directory",
+      "class_name": null,
+      "code": "return UserDirectory(directory_id='local')",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 149,
+      "end_line": 149,
+      "function": "save_directory",
+      "class_name": null,
+      "code": "def save_directory(path: Path, directory: UserDirectory) -> None:",
+      "vars_in_scope": [
+        "directory",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 155,
+      "end_line": 155,
+      "function": "save_directory",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "directory",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 159,
+      "end_line": 159,
+      "function": "save_directory",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "directory",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 163,
+      "end_line": 163,
+      "function": "calculate_statistics",
+      "class_name": null,
+      "code": "def calculate_statistics(directory: UserDirectory) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "active",
+        "avg_score",
+        "directory",
+        "premium",
+        "ratio",
+        "users"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 165,
+      "end_line": 165,
+      "function": "calculate_statistics",
+      "class_name": null,
+      "code": "return {'count': 0, 'active': 0, 'avg_score': 0.0, 'premium_ratio': 0.0}",
+      "vars_in_scope": [
+        "active",
+        "avg_score",
+        "directory",
+        "premium",
+        "ratio",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 170,
+      "end_line": 170,
+      "function": "calculate_statistics",
+      "class_name": null,
+      "code": "return {'count': len(users), 'active': len(active), 'avg_score': avg_score, 'premium_ratio': ratio}",
+      "vars_in_scope": [
+        "active",
+        "avg_score",
+        "directory",
+        "premium",
+        "ratio",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 179,
+      "end_line": 179,
+      "function": "choose_random_user",
+      "class_name": null,
+      "code": "def choose_random_user(directory: UserDirectory, active_only: bool = False) -> Optional[UserProfile]:",
+      "vars_in_scope": [
+        "active_only",
+        "candidates",
+        "directory"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 181,
+      "end_line": 181,
+      "function": "choose_random_user",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "active_only",
+        "candidates",
+        "directory"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 182,
+      "end_line": 182,
+      "function": "choose_random_user",
+      "class_name": null,
+      "code": "return random.choice(candidates)",
+      "vars_in_scope": [
+        "active_only",
+        "candidates",
+        "directory"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 186,
+      "end_line": 186,
+      "function": "promote_inactive_users",
+      "class_name": null,
+      "code": "def promote_inactive_users(directory: UserDirectory, days: int = 30) -> int:",
+      "vars_in_scope": [
+        "changed",
+        "days",
+        "directory"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 191,
+      "end_line": 191,
+      "function": "promote_inactive_users",
+      "class_name": null,
+      "code": "return changed",
+      "vars_in_scope": [
+        "changed",
+        "days",
+        "directory"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 195,
+      "end_line": 195,
+      "function": "sync_remote",
+      "class_name": null,
+      "code": "def sync_remote(directory: UserDirectory, client: RemoteClient) -> int:",
+      "vars_in_scope": [
+        "client",
+        "directory",
+        "local",
+        "remote",
+        "remote_data",
+        "updates"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 197,
+      "end_line": 197,
+      "function": "sync_remote",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "client",
+        "directory",
+        "local",
+        "remote",
+        "remote_data",
+        "updates"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 205,
+      "end_line": 205,
+      "function": "sync_remote",
+      "class_name": null,
+      "code": "return updates",
+      "vars_in_scope": [
+        "client",
+        "directory",
+        "local",
+        "remote",
+        "remote_data",
+        "updates"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 209,
+      "end_line": 209,
+      "function": "simulate_activity",
+      "class_name": null,
+      "code": "def simulate_activity(directory: UserDirectory, steps: int = 5) -> None:",
+      "vars_in_scope": [
+        "directory",
+        "step",
+        "steps",
+        "users"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 213,
+      "end_line": 213,
+      "function": "simulate_activity",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "directory",
+        "step",
+        "steps",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 221,
+      "end_line": 221,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "directory",
+        "path",
+        "report_path",
+        "stats"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 238,
+      "end_line": 238,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "directory",
+        "path",
+        "report_path",
+        "stats"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 238,
+      "end_line": 238,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "directory",
+        "path",
+        "report_path",
+        "stats"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 241,
+      "end_line": 241,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "directory",
+        "path",
+        "report_path",
+        "stats"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

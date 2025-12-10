@@ -1,0 +1,96 @@
+{
+  "file": "script62.py",
+  "logs": [
+    {
+      "line": 53,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.from_dict"
+    },
+    {
+      "line": 67,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to create Task from dict"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.from_dict"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HttpClient.fetch_project"
+    },
+    {
+      "line": 128,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning project payload from HttpClient.fetch_project"
+    },
+    {
+      "line": 130,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching project from remote"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HttpClient.push_project"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Successfully pushed project summary"
+    },
+    {
+      "line": 147,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while pushing project summary"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_project"
+    },
+    {
+      "line": 165,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to persist project to disk"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed project summary"
+    },
+    {
+      "line": 208,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 230,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled error in main"
+    },
+    {
+      "line": 236,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Exiting with error in main"
+    }
+  ]
+}
+

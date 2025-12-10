@@ -1,0 +1,95 @@
+{
+  "file": "script51.py",
+  "logs": [
+    {
+      "line": 16,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Reading.is_recent with hours={hours}"
+    },
+    {
+      "line": 38,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Reading.from_dict called"
+    },
+    {
+      "line": 48,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to build Reading from dict; returning None"
+    },
+    {
+      "line": 61,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Sensor.recent called with hours={hours}"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Fetching remote sensor data for id={sensor_id}"
+    },
+    {
+      "line": 102,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Fetched and decoded remote payload for sensor_id={sensor_id}"
+    },
+    {
+      "line": 104,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching remote sensor data for id={sensor_id}"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Loading sensors from {path}"
+    },
+    {
+      "line": 112,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Failed to load sensors from {path}; returning empty dict"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Loaded {len(result)} sensors from {path}"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Saving {len(sensors)} sensors to {path}"
+    },
+    {
+      "line": 129,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while writing sensors file to {path}"
+    },
+    {
+      "line": 155,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "main started with data_dir={data_dir}, base_url={base_url}"
+    },
+    {
+      "line": 175,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main; returning status 1"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main completed successfully with status 0"
+    }
+  ]
+}

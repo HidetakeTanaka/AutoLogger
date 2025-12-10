@@ -1,0 +1,167 @@
+{
+  "file": "script20.py",
+  "logs": [
+    {
+      "line": 6,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.__init__ with name: %s, price: %f, quantity: %d, category: %s"
+    },
+    {
+      "line": 12,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.update_quantity with quantity: %d"
+    },
+    {
+      "line": 14,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.update_price with price: %f"
+    },
+    {
+      "line": 17,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.get_product_info"
+    },
+    {
+      "line": 18,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product information from get_product_info method"
+    },
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.__init__"
+    },
+    {
+      "line": 25,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.add_product with product: %s"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.remove_product with name: %s"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product removed successfully"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product not found"
+    },
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.get_inventory_value"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning inventory value from get_inventory_value method"
+    },
+    {
+      "line": 38,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.get_products_by_category with category: %s"
+    },
+    {
+      "line": 39,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning products by category from get_products_by_category method"
+    },
+    {
+      "line": 42,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered FileManager.read_json with file_path: %s"
+    },
+    {
+      "line": 46,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning data from read_json method"
+    },
+    {
+      "line": 48,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "Error reading JSON file in read_json method"
+    },
+    {
+      "line": 49,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from read_json method due to error"
+    },
+    {
+      "line": 53,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered FileManager.write_json with file_path: %s"
+    },
+    {
+      "line": 61,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "Error writing JSON file in write_json method"
+    },
+    {
+      "line": 64,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered create_product with name: %s, price: %f, quantity: %d, category: %s"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered create_inventory"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered fetch_data with url: %s"
+    },
+    {
+      "line": 74,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning data fetched from API"
+    },
+    {
+      "line": 76,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "Error fetching data from %s"
+    },
+    {
+      "line": 77,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty data due to error while fetching API data"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered main function"
+    }
+  ]
+}

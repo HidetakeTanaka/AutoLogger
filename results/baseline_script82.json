@@ -1,0 +1,349 @@
+{
+  "file": "script82.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 23,
+      "level": "DEBUG",
+      "message": "Entering is_income",
+      "kind": "entry",
+      "function": "is_income"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_income",
+      "kind": "return",
+      "function": "is_income"
+    },
+    {
+      "line": 26,
+      "level": "DEBUG",
+      "message": "Entering matches_category",
+      "kind": "entry",
+      "function": "matches_category"
+    },
+    {
+      "line": 28,
+      "level": "INFO",
+      "message": "Exiting matches_category",
+      "kind": "return",
+      "function": "matches_category"
+    },
+    {
+      "line": 30,
+      "level": "INFO",
+      "message": "Exiting matches_category",
+      "kind": "return",
+      "function": "matches_category"
+    },
+    {
+      "line": 31,
+      "level": "INFO",
+      "message": "Exiting matches_category",
+      "kind": "return",
+      "function": "matches_category"
+    },
+    {
+      "line": 34,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 34,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 48,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 57,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 57,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Entering add_transaction",
+      "kind": "entry",
+      "function": "add_transaction"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Entering balance",
+      "kind": "entry",
+      "function": "balance"
+    },
+    {
+      "line": 75,
+      "level": "INFO",
+      "message": "Exiting balance",
+      "kind": "return",
+      "function": "balance"
+    },
+    {
+      "line": 78,
+      "level": "DEBUG",
+      "message": "Entering by_category",
+      "kind": "entry",
+      "function": "by_category"
+    },
+    {
+      "line": 81,
+      "level": "INFO",
+      "message": "Exiting by_category",
+      "kind": "return",
+      "function": "by_category"
+    },
+    {
+      "line": 84,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 84,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 92,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 100,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 105,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 109,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 109,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 112,
+      "level": "DEBUG",
+      "message": "Entering fetch_rates",
+      "kind": "entry",
+      "function": "fetch_rates"
+    },
+    {
+      "line": 113,
+      "level": "INFO",
+      "message": "Exiting fetch_rates",
+      "kind": "return",
+      "function": "fetch_rates"
+    },
+    {
+      "line": 121,
+      "level": "INFO",
+      "message": "Exiting fetch_rates",
+      "kind": "return",
+      "function": "fetch_rates"
+    },
+    {
+      "line": 123,
+      "level": "ERROR",
+      "message": "Exception in fetch_rates",
+      "kind": "except",
+      "function": "fetch_rates"
+    },
+    {
+      "line": 123,
+      "level": "INFO",
+      "message": "Exiting fetch_rates",
+      "kind": "return",
+      "function": "fetch_rates"
+    },
+    {
+      "line": 127,
+      "level": "DEBUG",
+      "message": "Entering load_budget",
+      "kind": "entry",
+      "function": "load_budget"
+    },
+    {
+      "line": 128,
+      "level": "INFO",
+      "message": "Exiting load_budget",
+      "kind": "return",
+      "function": "load_budget"
+    },
+    {
+      "line": 132,
+      "level": "INFO",
+      "message": "Exiting load_budget",
+      "kind": "return",
+      "function": "load_budget"
+    },
+    {
+      "line": 134,
+      "level": "ERROR",
+      "message": "Exception in load_budget",
+      "kind": "except",
+      "function": "load_budget"
+    },
+    {
+      "line": 134,
+      "level": "INFO",
+      "message": "Exiting load_budget",
+      "kind": "return",
+      "function": "load_budget"
+    },
+    {
+      "line": 138,
+      "level": "DEBUG",
+      "message": "Entering save_budget",
+      "kind": "entry",
+      "function": "save_budget"
+    },
+    {
+      "line": 145,
+      "level": "ERROR",
+      "message": "Exception in save_budget",
+      "kind": "except",
+      "function": "save_budget"
+    },
+    {
+      "line": 145,
+      "level": "INFO",
+      "message": "Exiting save_budget",
+      "kind": "return",
+      "function": "save_budget"
+    },
+    {
+      "line": 151,
+      "level": "DEBUG",
+      "message": "Entering compute_monthly_summary",
+      "kind": "entry",
+      "function": "compute_monthly_summary"
+    },
+    {
+      "line": 155,
+      "level": "INFO",
+      "message": "Exiting compute_monthly_summary",
+      "kind": "return",
+      "function": "compute_monthly_summary"
+    },
+    {
+      "line": 164,
+      "level": "INFO",
+      "message": "Exiting compute_monthly_summary",
+      "kind": "return",
+      "function": "compute_monthly_summary"
+    },
+    {
+      "line": 176,
+      "level": "DEBUG",
+      "message": "Entering apply_exchange_rates",
+      "kind": "entry",
+      "function": "apply_exchange_rates"
+    },
+    {
+      "line": 177,
+      "level": "INFO",
+      "message": "Exiting apply_exchange_rates",
+      "kind": "return",
+      "function": "apply_exchange_rates"
+    },
+    {
+      "line": 196,
+      "level": "INFO",
+      "message": "Exiting apply_exchange_rates",
+      "kind": "return",
+      "function": "apply_exchange_rates"
+    },
+    {
+      "line": 200,
+      "level": "DEBUG",
+      "message": "Entering simulate_spending",
+      "kind": "entry",
+      "function": "simulate_spending"
+    },
+    {
+      "line": 217,
+      "level": "INFO",
+      "message": "Exiting simulate_spending",
+      "kind": "return",
+      "function": "simulate_spending"
+    },
+    {
+      "line": 221,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 238,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 238,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 239,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

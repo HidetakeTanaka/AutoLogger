@@ -1,0 +1,161 @@
+{
+  "file": "script95.py",
+  "logs": [
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_category with query='{query}'\")"
+    },
+    {
+      "line": 47,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering {cls.__name__}.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 59,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Product from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering needs_refresh with days={days} for CustomerPrefs id={self.id}\")"
+    },
+    {
+      "line": 83,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering {cls.__name__}.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 93,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse timestamp from raw data: {ts_raw}', exc_info=True)"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_product with product: {product}\")"
+    },
+    {
+      "line": 119,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'filter_for_customer returning {len(results)} results for InventoryState')"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering InventoryState.from_dict with raw keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 145,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing PricingClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 149,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_remote_price with product_id={product_id}\")"
+    },
+    {
+      "line": 163,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched remote price for product_id={product_id}: {value}')"
+    },
+    {
+      "line": 165,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch remote price for product_id {product_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 169,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_inventory with path: {path}\")"
+    },
+    {
+      "line": 174,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load inventory from {path}', exc_info=True)"
+    },
+    {
+      "line": 176,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load inventory from {path}')"
+    },
+    {
+      "line": 180,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_inventory with path={path} and state={state}\")"
+    },
+    {
+      "line": 187,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save inventory to {path} with state {state} and payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 191,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_category_stats with state: {state}\")"
+    },
+    {
+      "line": 202,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering suggest_bundle with budget={budget} and state={state}\")"
+    },
+    {
+      "line": 216,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_purchases with sessions={sessions} and initial state={state}\")"
+    },
+    {
+      "line": 226,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation complete: {len(purchases)} purchases generated over {sessions} sessions with basket size {basket_size}.')"
+    },
+    {
+      "line": 230,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_inventory with state={state} and client={'provided' if client else 'None'}\")"
+    },
+    {
+      "line": 248,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 272,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

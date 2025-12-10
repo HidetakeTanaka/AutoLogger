@@ -1,0 +1,149 @@
+{
+  "file": "script34.py",
+  "logs": [
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering exceeds with threshold={threshold}\")"
+    },
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing SensorStore with path: {path}\")"
+    },
+    {
+      "line": 48,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entering SensorStore.load method')"
+    },
+    {
+      "line": 55,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load sensor data for sensor ID {sid} at location {loc}', exc_info=True)"
+    },
+    {
+      "line": 65,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load sensor data for sensor ID {sid} at location {loc}', exc_info=True)"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get method with sensor_id={sensor_id}\")"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_readings_csv with path: {path}\")"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning {len(readings)} readings from CSV file {path}')"
+    },
+    {
+      "line": 89,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to process reading with sid={sid}, ts={ts}, value={value} from file {path}', exc_info=True)"
+    },
+    {
+      "line": 92,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load reading from CSV at path {path} for sid {sid} with timestamp {ts} and value {value}', exc_info=True)"
+    },
+    {
+      "line": 92,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning {len(readings)} readings from CSV file {path}')"
+    },
+    {
+      "line": 93,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning {len(readings)} readings loaded from {path}')"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering group_by_sensor with {len(readings)} readings\")"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_statistics with values: {values}\")"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Computed statistics - min: {mn}, max: {mx}, avg: {avg}')"
+    },
+    {
+      "line": 113,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered find_alarms with {len(grouped)} groups and sensor store: {store}\")"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning alarms list with {len(alarms)} items for sensor {sensor}')"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered export_alarms with path={path} and {len(alarms)} alarms\")"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering export_stats with path={path} and stats keys={list(stats.keys())}\")"
+    },
+    {
+      "line": 145,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_config with path: {path}\")"
+    },
+    {
+      "line": 151,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
+    },
+    {
+      "line": 155,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_sensors with {len(grouped)} sensor groups and store: {store}\")"
+    },
+    {
+      "line": 166,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Summary prepared for sensor {sensor} with {len(values)} values and {len(grouped)} groups.')"
+    },
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered main function')"
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "file": "script98.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.is_open"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning open-status flag from Task.is_open"
+    },
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.is_stale"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning staleness flag in Task.is_stale"
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.update_status"
+    },
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.to_dict"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized dict in Task.to_dict"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.from_dict"
+    },
+    {
+      "line": 61,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse task data in Task.from_dict"
+    },
+    {
+      "line": 52,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed Task instance in Task.from_dict"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.add_task"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.open_tasks"
+    },
+    {
+      "line": 74,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of open tasks in Project.open_tasks"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.find_task"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning located task in Project.find_task"
+    },
+    {
+      "line": 83,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.completion_ratio"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning zero completion ratio in Project.completion_ratio"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.to_dict"
+    },
+    {
+      "line": 89,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized project in Project.to_dict"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.from_dict"
+    },
+    {
+      "line": 105,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse project data in Project.from_dict"
+    },
+    {
+      "line": 103,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed Project instance in Project.from_dict"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProjectStore.load"
+    },
+    {
+      "line": 125,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load project store in ProjectStore.load"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProjectStore.save"
+    },
+    {
+      "line": 134,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save project store in ProjectStore.save"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProjectStore.get_or_create"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning existing project in ProjectStore.get_or_create"
+    },
+    {
+      "line": 142,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning newly created project in ProjectStore.get_or_create"
+    },
+    {
+      "line": 145,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProjectStore.all_tasks"
+    },
+    {
+      "line": 152,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.__init__"
+    },
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient._url"
+    },
+    {
+      "line": 157,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty URL in SyncClient._url"
+    },
+    {
+      "line": 158,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL in SyncClient._url"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.fetch_remote_tasks"
+    },
+    {
+      "line": 173,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch remote tasks in SyncClient.fetch_remote_tasks"
+    },
+    {
+      "line": 171,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered remote tasks in SyncClient.fetch_remote_tasks"
+    },
+    {
+      "line": 176,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.push_update"
+    },
+    {
+      "line": 186,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to push task update in SyncClient.push_update"
+    },
+    {
+      "line": 184,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning success flag in SyncClient.push_update"
+    },
+    {
+      "line": 190,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_store"
+    },
+    {
+      "line": 192,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning loaded store in load_store"
+    },
+    {
+      "line": 196,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_store"
+    },
+    {
+      "line": 200,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_tasks"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered tasks in filter_tasks"
+    },
+    {
+      "line": 212,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_projects"
+    },
+    {
+      "line": 216,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning project summary in summarize_projects"
+    },
+    {
+      "line": 220,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering sync_project"
+    },
+    {
+      "line": 233,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning sync count in sync_project"
+    },
+    {
+      "line": 237,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering read_config"
+    },
+    {
+      "line": 246,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read configuration in read_config"
+    },
+    {
+      "line": 244,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning configuration in read_config"
+    },
+    {
+      "line": 250,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 267,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 271,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code in main"
+    }
+  ]
+}

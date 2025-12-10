@@ -1,0 +1,119 @@
+{
+  "file": "script53.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering is_recent"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering to_dict for Product"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.from_dict"
+    },
+    {
+      "line": 56,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to execute Product.from_dict"
+    },
+    {
+      "line": 65,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering add_product"
+    },
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering total_value"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.from_dict"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PricingClient.__init__"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering _url"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_remote_prices"
+    },
+    {
+      "line": 117,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch remote prices"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_inventory"
+    },
+    {
+      "line": 129,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load inventory"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_inventory"
+    },
+    {
+      "line": 146,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering apply_price_updates"
+    },
+    {
+      "line": 159,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_inventory"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering pick_random_product"
+    },
+    {
+      "line": 185,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 204,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    }
+  ]
+}

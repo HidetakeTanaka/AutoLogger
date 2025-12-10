@@ -1,0 +1,161 @@
+{
+  "file": "script24.py",
+  "logs": [
+    {
+      "line": 9,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering __init__ method in Student class."
+    },
+    {
+      "line": 15,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering update_grade method in Student class."
+    },
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering get_student_info method in Student class."
+    },
+    {
+      "line": 18,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning student info for: {self.name}"
+    },
+    {
+      "line": 23,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering __init__ method in School class."
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering add_student method in School class."
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering remove_student method in School class."
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Student removed successfully"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Student not found for removal"
+    },
+    {
+      "line": 37,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering get_school_info method in School class."
+    },
+    {
+      "line": 37,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning school info for: {self.name}"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering read_json method in FileManager class."
+    },
+    {
+      "line": 45,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Successfully read data from file: {file_path}"
+    },
+    {
+      "line": 47,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error reading file: {file_path}"
+    },
+    {
+      "line": 47,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list due to file read error"
+    },
+    {
+      "line": 51,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering write_json method in FileManager class."
+    },
+    {
+      "line": 55,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error writing to file: {file_path}"
+    },
+    {
+      "line": 57,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering create_product function."
+    },
+    {
+      "line": 57,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created product from create_product function."
+    },
+    {
+      "line": 60,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering create_inventory function."
+    },
+    {
+      "line": 60,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created inventory from create_inventory function."
+    },
+    {
+      "line": 63,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_data function."
+    },
+    {
+      "line": 65,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fetched data from fetch_data function."
+    },
+    {
+      "line": 67,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error occurred while fetching data"
+    },
+    {
+      "line": 67,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from fetch_data function due to exception"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main function."
+    }
+  ]
+}

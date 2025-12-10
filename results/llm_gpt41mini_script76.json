@@ -1,0 +1,191 @@
+{
+  "file": "script76.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Habit.matches with query='{query}'\")"
+    },
+    {
+      "line": 48,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Creating Habit instance from dict with habit_id={raw.get(\"habit_id\", \"\")}, name={raw.get(\"name\", \"\")}, target_per_day={raw.get(\"target_per_day\", 1)}')"
+    },
+    {
+      "line": 57,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Habit from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering from_dict with raw data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 84,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create HabitEntry from dict: {d_raw}', exc_info=True)"
+    },
+    {
+      "line": 94,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_habit with habit: {habit}\")"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_entry with entry: {entry}\")"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering filter_habits with query='{query}'\")"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering from_dict with raw data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'HabitBook created from dict with {len(book.habits)} habits and {len(book.entries)} entries')"
+    },
+    {
+      "line": 126,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Initializing AdviceClient with base_url={base_url} and timeout={timeout}')"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered fetch_advice method')"
+    },
+    {
+      "line": 139,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch advice from {url} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 144,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched advice text: {text}')"
+    },
+    {
+      "line": 146,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch advice from {url} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 146,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('fetch_advice returning None due to missing or invalid data')"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_book with path: {path}\")"
+    },
+    {
+      "line": 155,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded HabitBook from {path} with data: {raw}')"
+    },
+    {
+      "line": 157,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load book from path: {path}')"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_book with path={path} and book={book}\")"
+    },
+    {
+      "line": 168,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save book {book} at {path} with payload {payload} and tmp {tmp}', exc_info=True)"
+    },
+    {
+      "line": 172,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save book at {path} with payload {payload}')"
+    },
+    {
+      "line": 176,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_daily_totals for day {day.isoformat()}\")"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Daily totals computed for {target_date}: {totals}')"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_streaks with habit_id={habit_id}, days={days}\")"
+    },
+    {
+      "line": 203,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_book with book: {book}\")"
+    },
+    {
+      "line": 207,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summary prepared with {len(book.habits)} habits, {len(book.entries)} entries, top streak: {top_streak}\")"
+    },
+    {
+      "line": 215,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_day with intensity={intensity} for date={today}\")"
+    },
+    {
+      "line": 228,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered ensure_sample_habits with book: {book}\")"
+    },
+    {
+      "line": 240,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 256,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

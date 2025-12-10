@@ -1,0 +1,90 @@
+{
+  "file": "script57.py",
+  "logs": [
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.from_dict"
+    },
+    {
+      "line": 60,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse user data in UserProfile.from_dict"
+    },
+    {
+      "line": 118,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RemoteClient.fetch"
+    },
+    {
+      "line": 125,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch remote data for directory_id=%s in RemoteClient.fetch"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RemoteClient.push"
+    },
+    {
+      "line": 135,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to push payload for directory_id=%s in RemoteClient.push"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_directory"
+    },
+    {
+      "line": 143,
+      "kind": "exception",
+      "level": "WARNING",
+      "message": "Failed to load directory from %s, using local fallback in load_directory"
+    },
+    {
+      "line": 149,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_directory"
+    },
+    {
+      "line": 155,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write directory file %s in save_directory"
+    },
+    {
+      "line": 170,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning task list summary from calculate_statistics"
+    },
+    {
+      "line": 195,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering sync_remote"
+    },
+    {
+      "line": 221,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Starting user directory run in main"
+    },
+    {
+      "line": 238,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed while writing users_report.json in main"
+    }
+  ]
+}
+

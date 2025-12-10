@@ -1,0 +1,412 @@
+{
+  "file": "script81.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 24,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 27,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 30,
+      "level": "DEBUG",
+      "message": "Entering matches_kind",
+      "kind": "entry",
+      "function": "matches_kind"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting matches_kind",
+      "kind": "return",
+      "function": "matches_kind"
+    },
+    {
+      "line": 34,
+      "level": "INFO",
+      "message": "Exiting matches_kind",
+      "kind": "return",
+      "function": "matches_kind"
+    },
+    {
+      "line": 35,
+      "level": "INFO",
+      "message": "Exiting matches_kind",
+      "kind": "return",
+      "function": "matches_kind"
+    },
+    {
+      "line": 38,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 38,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 50,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 53,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 63,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 63,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 72,
+      "level": "DEBUG",
+      "message": "Entering add_workout",
+      "kind": "entry",
+      "function": "add_workout"
+    },
+    {
+      "line": 73,
+      "level": "INFO",
+      "message": "Exiting add_workout",
+      "kind": "return",
+      "function": "add_workout"
+    },
+    {
+      "line": 77,
+      "level": "DEBUG",
+      "message": "Entering filter_by_kind",
+      "kind": "entry",
+      "function": "filter_by_kind"
+    },
+    {
+      "line": 77,
+      "level": "INFO",
+      "message": "Exiting filter_by_kind",
+      "kind": "return",
+      "function": "filter_by_kind"
+    },
+    {
+      "line": 80,
+      "level": "DEBUG",
+      "message": "Entering recent_workouts",
+      "kind": "entry",
+      "function": "recent_workouts"
+    },
+    {
+      "line": 80,
+      "level": "INFO",
+      "message": "Exiting recent_workouts",
+      "kind": "return",
+      "function": "recent_workouts"
+    },
+    {
+      "line": 83,
+      "level": "DEBUG",
+      "message": "Entering total_calories",
+      "kind": "entry",
+      "function": "total_calories"
+    },
+    {
+      "line": 84,
+      "level": "INFO",
+      "message": "Exiting total_calories",
+      "kind": "return",
+      "function": "total_calories"
+    },
+    {
+      "line": 85,
+      "level": "INFO",
+      "message": "Exiting total_calories",
+      "kind": "return",
+      "function": "total_calories"
+    },
+    {
+      "line": 90,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 90,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 97,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 102,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 107,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 111,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 111,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 114,
+      "level": "DEBUG",
+      "message": "Entering fetch_suggestions",
+      "kind": "entry",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 115,
+      "level": "INFO",
+      "message": "Exiting fetch_suggestions",
+      "kind": "return",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 124,
+      "level": "INFO",
+      "message": "Exiting fetch_suggestions",
+      "kind": "return",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 125,
+      "level": "INFO",
+      "message": "Exiting fetch_suggestions",
+      "kind": "return",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 127,
+      "level": "ERROR",
+      "message": "Exception in fetch_suggestions",
+      "kind": "except",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 127,
+      "level": "INFO",
+      "message": "Exiting fetch_suggestions",
+      "kind": "return",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 131,
+      "level": "DEBUG",
+      "message": "Entering load_log",
+      "kind": "entry",
+      "function": "load_log"
+    },
+    {
+      "line": 132,
+      "level": "INFO",
+      "message": "Exiting load_log",
+      "kind": "return",
+      "function": "load_log"
+    },
+    {
+      "line": 136,
+      "level": "INFO",
+      "message": "Exiting load_log",
+      "kind": "return",
+      "function": "load_log"
+    },
+    {
+      "line": 138,
+      "level": "ERROR",
+      "message": "Exception in load_log",
+      "kind": "except",
+      "function": "load_log"
+    },
+    {
+      "line": 138,
+      "level": "INFO",
+      "message": "Exiting load_log",
+      "kind": "return",
+      "function": "load_log"
+    },
+    {
+      "line": 142,
+      "level": "DEBUG",
+      "message": "Entering save_log",
+      "kind": "entry",
+      "function": "save_log"
+    },
+    {
+      "line": 148,
+      "level": "ERROR",
+      "message": "Exception in save_log",
+      "kind": "except",
+      "function": "save_log"
+    },
+    {
+      "line": 152,
+      "level": "ERROR",
+      "message": "Exception in save_log",
+      "kind": "except",
+      "function": "save_log"
+    },
+    {
+      "line": 156,
+      "level": "DEBUG",
+      "message": "Entering compute_daily_summary",
+      "kind": "entry",
+      "function": "compute_daily_summary"
+    },
+    {
+      "line": 158,
+      "level": "INFO",
+      "message": "Exiting compute_daily_summary",
+      "kind": "return",
+      "function": "compute_daily_summary"
+    },
+    {
+      "line": 161,
+      "level": "INFO",
+      "message": "Exiting compute_daily_summary",
+      "kind": "return",
+      "function": "compute_daily_summary"
+    },
+    {
+      "line": 170,
+      "level": "DEBUG",
+      "message": "Entering simulate_day",
+      "kind": "entry",
+      "function": "simulate_day"
+    },
+    {
+      "line": 171,
+      "level": "INFO",
+      "message": "Exiting simulate_day",
+      "kind": "return",
+      "function": "simulate_day"
+    },
+    {
+      "line": 188,
+      "level": "INFO",
+      "message": "Exiting simulate_day",
+      "kind": "return",
+      "function": "simulate_day"
+    },
+    {
+      "line": 192,
+      "level": "DEBUG",
+      "message": "Entering merge_remote_recs",
+      "kind": "entry",
+      "function": "merge_remote_recs"
+    },
+    {
+      "line": 193,
+      "level": "INFO",
+      "message": "Exiting merge_remote_recs",
+      "kind": "return",
+      "function": "merge_remote_recs"
+    },
+    {
+      "line": 204,
+      "level": "INFO",
+      "message": "Exiting merge_remote_recs",
+      "kind": "return",
+      "function": "merge_remote_recs"
+    },
+    {
+      "line": 208,
+      "level": "DEBUG",
+      "message": "Entering summarize",
+      "kind": "entry",
+      "function": "summarize"
+    },
+    {
+      "line": 209,
+      "level": "INFO",
+      "message": "Exiting summarize",
+      "kind": "return",
+      "function": "summarize"
+    },
+    {
+      "line": 219,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 250,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 250,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 252,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

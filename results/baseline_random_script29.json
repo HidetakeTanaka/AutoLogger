@@ -1,0 +1,78 @@
+{
+  "file": "script29.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 12,
+      "level": "WARNING",
+      "message": "Random log at line 12 in filter_by_value",
+      "kind": "entry",
+      "function": "filter_by_value"
+    },
+    {
+      "line": 13,
+      "level": "INFO",
+      "message": "Random log at line 13 in filter_by_value",
+      "kind": "return",
+      "function": "filter_by_value"
+    },
+    {
+      "line": 29,
+      "level": "ERROR",
+      "message": "Random log at line 29 in calculate_average",
+      "kind": "return",
+      "function": "calculate_average"
+    },
+    {
+      "line": 31,
+      "level": "DEBUG",
+      "message": "Random log at line 31 in calculate_average",
+      "kind": "return",
+      "function": "calculate_average"
+    },
+    {
+      "line": 37,
+      "level": "DEBUG",
+      "message": "Random log at line 37 in read_json",
+      "kind": "entry",
+      "function": "read_json"
+    },
+    {
+      "line": 48,
+      "level": "DEBUG",
+      "message": "Random log at line 48 in write_json",
+      "kind": "entry",
+      "function": "write_json"
+    },
+    {
+      "line": 59,
+      "level": "ERROR",
+      "message": "Random log at line 59 in fetch_data",
+      "kind": "entry",
+      "function": "fetch_data"
+    },
+    {
+      "line": 65,
+      "level": "WARNING",
+      "message": "Random log at line 65 in fetch_data",
+      "kind": "except",
+      "function": "fetch_data"
+    },
+    {
+      "line": 65,
+      "level": "ERROR",
+      "message": "Random log at line 65 in fetch_data",
+      "kind": "return",
+      "function": "fetch_data"
+    },
+    {
+      "line": 69,
+      "level": "WARNING",
+      "message": "Random log at line 69 in process_and_save_data",
+      "kind": "entry",
+      "function": "process_and_save_data"
+    }
+  ]
+}

@@ -1,0 +1,904 @@
+{
+  "file": "scripts\\script89.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_large",
+      "class_name": "Transaction",
+      "code": "def is_large(self, threshold: float = 500.0) -> bool:",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_large",
+      "class_name": "Transaction",
+      "code": "return abs(self.amount) >= threshold",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 25,
+      "end_line": 25,
+      "function": "matches_category",
+      "class_name": "Transaction",
+      "code": "def matches_category(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches_category",
+      "class_name": "Transaction",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches_category",
+      "class_name": "Transaction",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches_category",
+      "class_name": "Transaction",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 33,
+      "end_line": 33,
+      "function": "to_dict",
+      "class_name": "Transaction",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "to_dict",
+      "class_name": "Transaction",
+      "code": "return {'tx_id': self.tx_id, 'amount': self.amount, 'currency': self.currency, 'category': self.category, 'occurred_at': self.occurred_at.isoformat(), 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 44,
+      "end_line": 44,
+      "function": "from_dict",
+      "class_name": "Transaction",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Transaction\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 47,
+      "end_line": 47,
+      "function": "from_dict",
+      "class_name": "Transaction",
+      "code": "return cls(tx_id=str(raw.get('tx_id', '')), amount=float(raw.get('amount', 0.0)), currency=str(raw.get('currency', 'USD')), category=str(raw.get('category', 'other')), occurred_at=ts, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "Transaction",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 56,
+      "end_line": 56,
+      "function": "from_dict",
+      "class_name": "Transaction",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 66,
+      "end_line": 66,
+      "function": "add_transaction",
+      "class_name": "BudgetState",
+      "code": "def add_transaction(self, tx: Transaction) -> None:",
+      "vars_in_scope": [
+        "self",
+        "tx"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 69,
+      "end_line": 69,
+      "function": "category_total",
+      "class_name": "BudgetState",
+      "code": "def category_total(self, category: str) -> float:",
+      "vars_in_scope": [
+        "category",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 69,
+      "end_line": 69,
+      "function": "category_total",
+      "class_name": "BudgetState",
+      "code": "return sum((t.amount for t in self.transactions if t.category == category))",
+      "vars_in_scope": [
+        "category",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "monthly_total",
+      "class_name": "BudgetState",
+      "code": "def monthly_total(self, year: int, month: int) -> float:",
+      "vars_in_scope": [
+        "month",
+        "self",
+        "year"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 72,
+      "end_line": 72,
+      "function": "monthly_total",
+      "class_name": "BudgetState",
+      "code": "return sum((t.amount for t in self.transactions if t.occurred_at.year == year and t.occurred_at.month == month))",
+      "vars_in_scope": [
+        "month",
+        "self",
+        "year"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 79,
+      "end_line": 79,
+      "function": "to_dict",
+      "class_name": "BudgetState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 79,
+      "end_line": 79,
+      "function": "to_dict",
+      "class_name": "BudgetState",
+      "code": "return {'user_id': self.user_id, 'base_currency': self.base_currency, 'transactions': [t.to_dict() for t in self.transactions]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 87,
+      "end_line": 87,
+      "function": "from_dict",
+      "class_name": "BudgetState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"BudgetState\":",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "state",
+        "tx"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 95,
+      "end_line": 95,
+      "function": "from_dict",
+      "class_name": "BudgetState",
+      "code": "return state",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "state",
+        "tx"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 100,
+      "end_line": 100,
+      "function": "__init__",
+      "class_name": "BudgetClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 104,
+      "end_line": 104,
+      "function": "_url",
+      "class_name": "BudgetClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 105,
+      "end_line": 105,
+      "function": "_url",
+      "class_name": "BudgetClient",
+      "code": "return ''",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 106,
+      "end_line": 106,
+      "function": "_url",
+      "class_name": "BudgetClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 109,
+      "end_line": 109,
+      "function": "fetch_exchange_rate",
+      "class_name": "BudgetClient",
+      "code": "def fetch_exchange_rate(self, currency: str) -> Optional[float]:",
+      "vars_in_scope": [
+        "currency",
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "fetch_exchange_rate",
+      "class_name": "BudgetClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "currency",
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 118,
+      "end_line": 118,
+      "function": "fetch_exchange_rate",
+      "class_name": "BudgetClient",
+      "code": "return float(value) if value is not None else None",
+      "vars_in_scope": [
+        "currency",
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 120,
+      "end_line": 120,
+      "function": "fetch_exchange_rate",
+      "class_name": "BudgetClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "currency",
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "value"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 120,
+      "end_line": 120,
+      "function": "fetch_exchange_rate",
+      "class_name": "BudgetClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "currency",
+        "data",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 123,
+      "end_line": 123,
+      "function": "push_summary",
+      "class_name": "BudgetClient",
+      "code": "def push_summary(self, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 125,
+      "end_line": 125,
+      "function": "push_summary",
+      "class_name": "BudgetClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 131,
+      "end_line": 131,
+      "function": "push_summary",
+      "class_name": "BudgetClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 133,
+      "end_line": 133,
+      "function": "push_summary",
+      "class_name": "BudgetClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 133,
+      "end_line": 133,
+      "function": "push_summary",
+      "class_name": "BudgetClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 137,
+      "end_line": 137,
+      "function": "load_state",
+      "class_name": null,
+      "code": "def load_state(path: Path) -> BudgetState:",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 138,
+      "end_line": 138,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return BudgetState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 142,
+      "end_line": 142,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return BudgetState.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 144,
+      "end_line": 144,
+      "function": "load_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 144,
+      "end_line": 144,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return BudgetState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 148,
+      "end_line": 148,
+      "function": "save_state",
+      "class_name": null,
+      "code": "def save_state(path: Path, state: BudgetState) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 155,
+      "end_line": 155,
+      "function": "save_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 155,
+      "end_line": 155,
+      "function": "save_state",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 159,
+      "end_line": 159,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "def compute_stats(state: BudgetState) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "by_cat",
+        "state",
+        "total"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': 0, 'total': 0.0, 'by_category': {}}",
+      "vars_in_scope": [
+        "by_cat",
+        "state",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 165,
+      "end_line": 165,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': len(state.transactions), 'total': total, 'by_category': by_cat}",
+      "vars_in_scope": [
+        "by_cat",
+        "state",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 169,
+      "end_line": 169,
+      "function": "simulate_month",
+      "class_name": null,
+      "code": "def simulate_month(state: BudgetState, days: int = 30) -> int:",
+      "vars_in_scope": [
+        "amt",
+        "cat",
+        "cats",
+        "created",
+        "d",
+        "days",
+        "state",
+        "today",
+        "tx"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 187,
+      "end_line": 187,
+      "function": "simulate_month",
+      "class_name": null,
+      "code": "return created",
+      "vars_in_scope": [
+        "amt",
+        "cat",
+        "cats",
+        "created",
+        "d",
+        "days",
+        "state",
+        "today",
+        "tx"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 191,
+      "end_line": 191,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "def summarize_state(state: BudgetState, rate: Optional[float]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "converted_total",
+        "large",
+        "rate",
+        "state",
+        "stats"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 198,
+      "end_line": 198,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "return {'user_id': state.user_id, 'base_currency': state.base_currency, 'count': stats['count'], 'total': stats['total'], 'converted_total': converted_total, 'large_transactions': large}",
+      "vars_in_scope": [
+        "converted_total",
+        "large",
+        "rate",
+        "state",
+        "stats"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 209,
+      "end_line": 209,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "fx_rate",
+        "ok",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 221,
+      "end_line": 221,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "fx_rate",
+        "ok",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 221,
+      "end_line": 221,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "fx_rate",
+        "ok",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 225,
+      "end_line": 225,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "fx_rate",
+        "ok",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 226,
+      "end_line": 226,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "fx_rate",
+        "ok",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

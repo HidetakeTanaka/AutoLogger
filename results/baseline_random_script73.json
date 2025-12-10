@@ -1,0 +1,120 @@
+{
+  "file": "script73.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 22,
+      "level": "WARNING",
+      "message": "Random log at line 22 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 38,
+      "level": "ERROR",
+      "message": "Random log at line 38 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Random log at line 45 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Random log at line 45 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Random log at line 70 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 79,
+      "level": "ERROR",
+      "message": "Random log at line 79 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 93,
+      "level": "WARNING",
+      "message": "Random log at line 93 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 97,
+      "level": "ERROR",
+      "message": "Random log at line 97 in _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 97,
+      "level": "WARNING",
+      "message": "Random log at line 97 in _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 128,
+      "level": "INFO",
+      "message": "Random log at line 128 in load_account",
+      "kind": "entry",
+      "function": "load_account"
+    },
+    {
+      "line": 147,
+      "level": "WARNING",
+      "message": "Random log at line 147 in save_account",
+      "kind": "return",
+      "function": "save_account"
+    },
+    {
+      "line": 151,
+      "level": "WARNING",
+      "message": "Random log at line 151 in compute_kpis",
+      "kind": "entry",
+      "function": "compute_kpis"
+    },
+    {
+      "line": 162,
+      "level": "INFO",
+      "message": "Random log at line 162 in simulate_day",
+      "kind": "entry",
+      "function": "simulate_day"
+    },
+    {
+      "line": 180,
+      "level": "ERROR",
+      "message": "Random log at line 180 in merge_benchmarks",
+      "kind": "return",
+      "function": "merge_benchmarks"
+    },
+    {
+      "line": 228,
+      "level": "DEBUG",
+      "message": "Random log at line 228 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

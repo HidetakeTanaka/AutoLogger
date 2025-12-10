@@ -1,0 +1,1183 @@
+{
+  "file": "scripts\\script98.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_open",
+      "class_name": "Task",
+      "code": "def is_open(self) -> bool:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_open",
+      "class_name": "Task",
+      "code": "return self.status.lower() in {'todo', 'in_progress', 'blocked'}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_stale",
+      "class_name": "Task",
+      "code": "def is_stale(self, days: int = 7) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "is_stale",
+      "class_name": "Task",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "is_stale",
+      "class_name": "Task",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 30,
+      "end_line": 30,
+      "function": "update_status",
+      "class_name": "Task",
+      "code": "def update_status(self, status: str) -> None:",
+      "vars_in_scope": [
+        "self",
+        "status"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 34,
+      "end_line": 34,
+      "function": "to_dict",
+      "class_name": "Task",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 34,
+      "end_line": 34,
+      "function": "to_dict",
+      "class_name": "Task",
+      "code": "return {'task_id': self.task_id, 'name': self.name, 'status': self.status, 'priority': self.priority, 'updated_at': self.updated_at.isoformat(), 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 45,
+      "end_line": 45,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Task\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 52,
+      "end_line": 52,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "return cls(task_id=str(raw.get('task_id', '')), name=str(raw.get('name', '')), status=str(raw.get('status', 'todo')), priority=int(raw.get('priority', 0)), updated_at=ts, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 61,
+      "end_line": 61,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 61,
+      "end_line": 61,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 71,
+      "end_line": 71,
+      "function": "add_task",
+      "class_name": "Project",
+      "code": "def add_task(self, task: Task) -> None:",
+      "vars_in_scope": [
+        "self",
+        "task"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "open_tasks",
+      "class_name": "Project",
+      "code": "def open_tasks(self) -> List[Task]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 74,
+      "end_line": 74,
+      "function": "open_tasks",
+      "class_name": "Project",
+      "code": "return [t for t in self.tasks if t.is_open()]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 77,
+      "end_line": 77,
+      "function": "find_task",
+      "class_name": "Project",
+      "code": "def find_task(self, task_id: str) -> Optional[Task]:",
+      "vars_in_scope": [
+        "self",
+        "task_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 79,
+      "end_line": 79,
+      "function": "find_task",
+      "class_name": "Project",
+      "code": "return t",
+      "vars_in_scope": [
+        "self",
+        "task_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 80,
+      "end_line": 80,
+      "function": "find_task",
+      "class_name": "Project",
+      "code": "return None",
+      "vars_in_scope": [
+        "self",
+        "task_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 83,
+      "end_line": 83,
+      "function": "completion_ratio",
+      "class_name": "Project",
+      "code": "def completion_ratio(self) -> float:",
+      "vars_in_scope": [
+        "closed",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "completion_ratio",
+      "class_name": "Project",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "closed",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 86,
+      "end_line": 86,
+      "function": "completion_ratio",
+      "class_name": "Project",
+      "code": "return closed / len(self.tasks)",
+      "vars_in_scope": [
+        "closed",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 89,
+      "end_line": 89,
+      "function": "to_dict",
+      "class_name": "Project",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 89,
+      "end_line": 89,
+      "function": "to_dict",
+      "class_name": "Project",
+      "code": "return {'project_id': self.project_id, 'name': self.name, 'tasks': [t.to_dict() for t in self.tasks]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 97,
+      "end_line": 97,
+      "function": "from_dict",
+      "class_name": "Project",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Project\"]:",
+      "vars_in_scope": [
+        "cls",
+        "proj",
+        "raw",
+        "t"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 103,
+      "end_line": 103,
+      "function": "from_dict",
+      "class_name": "Project",
+      "code": "return proj",
+      "vars_in_scope": [
+        "cls",
+        "proj",
+        "raw",
+        "t"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 105,
+      "end_line": 105,
+      "function": "from_dict",
+      "class_name": "Project",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "proj",
+        "raw",
+        "t"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 105,
+      "end_line": 105,
+      "function": "from_dict",
+      "class_name": "Project",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "proj",
+        "raw",
+        "t"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 114,
+      "end_line": 114,
+      "function": "load",
+      "class_name": "ProjectStore",
+      "code": "def load(self) -> None:",
+      "vars_in_scope": [
+        "proj",
+        "raw",
+        "self",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "load",
+      "class_name": "ProjectStore",
+      "code": "return",
+      "vars_in_scope": [
+        "proj",
+        "raw",
+        "self",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 125,
+      "end_line": 125,
+      "function": "load",
+      "class_name": "ProjectStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "proj",
+        "raw",
+        "self",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 128,
+      "end_line": 128,
+      "function": "save",
+      "class_name": "ProjectStore",
+      "code": "def save(self) -> None:",
+      "vars_in_scope": [
+        "payload",
+        "self",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 134,
+      "end_line": 134,
+      "function": "save",
+      "class_name": "ProjectStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "payload",
+        "self",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 134,
+      "end_line": 134,
+      "function": "save",
+      "class_name": "ProjectStore",
+      "code": "return",
+      "vars_in_scope": [
+        "payload",
+        "self",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 137,
+      "end_line": 137,
+      "function": "get_or_create",
+      "class_name": "ProjectStore",
+      "code": "def get_or_create(self, project_id: str, name: str) -> Project:",
+      "vars_in_scope": [
+        "name",
+        "proj",
+        "project_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "get_or_create",
+      "class_name": "ProjectStore",
+      "code": "return p",
+      "vars_in_scope": [
+        "name",
+        "proj",
+        "project_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 142,
+      "end_line": 142,
+      "function": "get_or_create",
+      "class_name": "ProjectStore",
+      "code": "return proj",
+      "vars_in_scope": [
+        "name",
+        "proj",
+        "project_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 145,
+      "end_line": 145,
+      "function": "all_tasks",
+      "class_name": "ProjectStore",
+      "code": "def all_tasks(self) -> Iterable[Task]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 152,
+      "end_line": 152,
+      "function": "__init__",
+      "class_name": "SyncClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 156,
+      "end_line": 156,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 157,
+      "end_line": 157,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "return ''",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 158,
+      "end_line": 158,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 161,
+      "end_line": 161,
+      "function": "fetch_remote_tasks",
+      "class_name": "SyncClient",
+      "code": "def fetch_remote_tasks(self, project_id: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 163,
+      "end_line": 163,
+      "function": "fetch_remote_tasks",
+      "class_name": "SyncClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 170,
+      "end_line": 170,
+      "function": "fetch_remote_tasks",
+      "class_name": "SyncClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 171,
+      "end_line": 171,
+      "function": "fetch_remote_tasks",
+      "class_name": "SyncClient",
+      "code": "return [d for d in data if isinstance(d, dict)]",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 173,
+      "end_line": 173,
+      "function": "fetch_remote_tasks",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 173,
+      "end_line": 173,
+      "function": "fetch_remote_tasks",
+      "class_name": "SyncClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "project_id",
+        "req",
+        "self",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 176,
+      "end_line": 176,
+      "function": "push_update",
+      "class_name": "SyncClient",
+      "code": "def push_update(self, task: Task) -> bool:",
+      "vars_in_scope": [
+        "payload",
+        "req",
+        "self",
+        "task",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 178,
+      "end_line": 178,
+      "function": "push_update",
+      "class_name": "SyncClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "payload",
+        "req",
+        "self",
+        "task",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 184,
+      "end_line": 184,
+      "function": "push_update",
+      "class_name": "SyncClient",
+      "code": "return 200 <= resp.getcode() < 300",
+      "vars_in_scope": [
+        "payload",
+        "req",
+        "self",
+        "task",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 186,
+      "end_line": 186,
+      "function": "push_update",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "payload",
+        "req",
+        "self",
+        "task",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 186,
+      "end_line": 186,
+      "function": "push_update",
+      "class_name": "SyncClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "payload",
+        "req",
+        "self",
+        "task",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 190,
+      "end_line": 190,
+      "function": "load_store",
+      "class_name": null,
+      "code": "def load_store(path_str: str) -> ProjectStore:",
+      "vars_in_scope": [
+        "path_str",
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 192,
+      "end_line": 192,
+      "function": "load_store",
+      "class_name": null,
+      "code": "return store",
+      "vars_in_scope": [
+        "path_str",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 196,
+      "end_line": 196,
+      "function": "save_store",
+      "class_name": null,
+      "code": "def save_store(store: ProjectStore) -> None:",
+      "vars_in_scope": [
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 200,
+      "end_line": 200,
+      "function": "filter_tasks",
+      "class_name": null,
+      "code": "def filter_tasks(tasks: Iterable[Task], status: Optional[str] = None, min_priority: int = 0) -> List[Task]:",
+      "vars_in_scope": [
+        "min_priority",
+        "selected",
+        "status",
+        "tasks"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 208,
+      "end_line": 208,
+      "function": "filter_tasks",
+      "class_name": null,
+      "code": "return selected",
+      "vars_in_scope": [
+        "min_priority",
+        "selected",
+        "status",
+        "tasks"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 212,
+      "end_line": 212,
+      "function": "summarize_projects",
+      "class_name": null,
+      "code": "def summarize_projects(projects: Iterable[Project]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "avg",
+        "items",
+        "projects"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 214,
+      "end_line": 214,
+      "function": "summarize_projects",
+      "class_name": null,
+      "code": "return {'count': 0, 'avg_completion': 0.0}",
+      "vars_in_scope": [
+        "avg",
+        "items",
+        "projects"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 216,
+      "end_line": 216,
+      "function": "summarize_projects",
+      "class_name": null,
+      "code": "return {'count': len(items), 'avg_completion': avg}",
+      "vars_in_scope": [
+        "avg",
+        "items",
+        "projects"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 220,
+      "end_line": 220,
+      "function": "sync_project",
+      "class_name": null,
+      "code": "def sync_project(store: ProjectStore, client: SyncClient, project_id: str) -> int:",
+      "vars_in_scope": [
+        "added",
+        "client",
+        "proj",
+        "project_id",
+        "remote",
+        "store",
+        "task"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 222,
+      "end_line": 222,
+      "function": "sync_project",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "added",
+        "client",
+        "proj",
+        "project_id",
+        "remote",
+        "store",
+        "task"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 233,
+      "end_line": 233,
+      "function": "sync_project",
+      "class_name": null,
+      "code": "return added",
+      "vars_in_scope": [
+        "added",
+        "client",
+        "proj",
+        "project_id",
+        "remote",
+        "store",
+        "task"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 237,
+      "end_line": 237,
+      "function": "read_config",
+      "class_name": null,
+      "code": "def read_config(path: Path) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 238,
+      "end_line": 238,
+      "function": "read_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 243,
+      "end_line": 243,
+      "function": "read_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 244,
+      "end_line": 244,
+      "function": "read_config",
+      "class_name": null,
+      "code": "return cfg",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 246,
+      "end_line": 246,
+      "function": "read_config",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 246,
+      "end_line": 246,
+      "function": "read_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "cfg",
+        "path",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 250,
+      "end_line": 250,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(config_path: str = \"task_config.json\") -> int:",
+      "vars_in_scope": [
+        "added",
+        "base_url",
+        "cfg",
+        "cfg_file",
+        "client",
+        "config_path",
+        "open_tasks",
+        "project_id",
+        "report_path",
+        "store",
+        "store_path",
+        "summary"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 267,
+      "end_line": 267,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "added",
+        "base_url",
+        "cfg",
+        "cfg_file",
+        "client",
+        "config_path",
+        "open_tasks",
+        "project_id",
+        "report_path",
+        "store",
+        "store_path",
+        "summary"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 267,
+      "end_line": 267,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "added",
+        "base_url",
+        "cfg",
+        "cfg_file",
+        "client",
+        "config_path",
+        "open_tasks",
+        "project_id",
+        "report_path",
+        "store",
+        "store_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 270,
+      "end_line": 270,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "added",
+        "base_url",
+        "cfg",
+        "cfg_file",
+        "client",
+        "config_path",
+        "open_tasks",
+        "project_id",
+        "report_path",
+        "store",
+        "store_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 271,
+      "end_line": 271,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "added",
+        "base_url",
+        "cfg",
+        "cfg_file",
+        "client",
+        "config_path",
+        "open_tasks",
+        "project_id",
+        "report_path",
+        "store",
+        "store_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

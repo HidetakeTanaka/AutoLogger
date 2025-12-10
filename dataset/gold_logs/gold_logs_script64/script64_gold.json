@@ -1,0 +1,96 @@
+{
+  "file": "script64.py",
+  "logs": [
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_fleet_snapshot"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fleet snapshot from fetch_fleet_snapshot"
+    },
+    {
+      "line": 111,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching fleet snapshot"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering push_aggregates"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Successfully pushed aggregates to remote"
+    },
+    {
+      "line": 123,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while pushing aggregates to remote"
+    },
+    {
+      "line": 127,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_fleet"
+    },
+    {
+      "line": 131,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load fleet, using fallback"
+    },
+    {
+      "line": 135,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_fleet"
+    },
+    {
+      "line": 141,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while writing fleet file"
+    },
+    {
+      "line": 149,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_fleet_statistics"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed fleet statistics"
+    },
+    {
+      "line": 193,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_remote_snapshot"
+    },
+    {
+      "line": 211,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 230,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled error in main"
+    }
+  ]
+}
+

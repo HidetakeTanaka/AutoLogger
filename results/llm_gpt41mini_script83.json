@@ -1,0 +1,179 @@
+{
+  "file": "script83.py",
+  "logs": [
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_tag with query='{query}'\")"
+    },
+    {
+      "line": 47,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 59,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create StudentSession from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches with query='{query}'\")"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 100,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create CourseInfo from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_session with session id: {session.id}\")"
+    },
+    {
+      "line": 113,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered total_minutes with course_id={course_id}\")"
+    },
+    {
+      "line": 118,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_sessions with hours={hours}\")"
+    },
+    {
+      "line": 129,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing RecommendationClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with topic={topic}\")"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_recommendations with topic: {topic}\")"
+    },
+    {
+      "line": 161,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning {len(items)} recommendation items for topic \"{topic}\" from URL: {url}')"
+    },
+    {
+      "line": 163,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch recommendations for topic {topic} from {url}', exc_info=True)"
+    },
+    {
+      "line": 167,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_store with path: {path}\")"
+    },
+    {
+      "line": 170,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully loaded ProgressStore from {path}')"
+    },
+    {
+      "line": 172,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load store from path: {path}', exc_info=True)"
+    },
+    {
+      "line": 174,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load store from path: {path}', exc_info=True)"
+    },
+    {
+      "line": 178,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_store with path={path} and store={store}\")"
+    },
+    {
+      "line": 184,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save store to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 184,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Store saved successfully to {path} with payload size {len(payload) if payload else 0}')"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_course_totals with store: {store}\")"
+    },
+    {
+      "line": 191,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Computed totals for store {store}: {totals}')"
+    },
+    {
+      "line": 195,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering apply_recommendations with store={store} and {len(recs) if recs else 0} recommendations\")"
+    },
+    {
+      "line": 219,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_study with days={days} and store={store}\")"
+    },
+    {
+      "line": 236,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation completed for cid={cid} with {len(created)} items created.')"
+    },
+    {
+      "line": 255,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 269,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

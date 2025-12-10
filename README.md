@@ -1,173 +1,253 @@
-# AutoLogger
-Automatic log generation system combining Python AST analysis and LLM-based reasoning (HSRW Software Engineering Project in WS2025/26).
+# AutoLogger – AI-Assisted Automatic Logging for Python
 
+AutoLogger is an AI-assisted system that automatically generates and inserts Python logging statements into source code.
+It combines AST-based program analysis, LLM reasoning, and baseline heuristic methods to produce high-quality logging suggestions and evaluate them against human-annotated gold standard logs.
 
-
-## Structure
-# Part B — LLM Integration Engineer
-## AutoLogger Project
-
-### Role
-This module is responsible for integrating Large Language Models (LLMs) into the AutoLogger
-pipeline. The goal of this component is to automatically generate meaningful Python logging
-statements at locations identified by the parser.
-
-This part focuses on:
-- LLM API integration
-- Prompt engineering
-- Handling multiple LLM providers
-- Safe fallbacks if API calls fail
-- Producing standardized logging output in JSON format
+Inspired by UniLog (ICSE 2024), this project is developed as part of the Software Engineering course at HSRW (WS2025/26).
 
 ---
 
-## Objective
 
-The goal of this module is to:
-1. Read candidate log locations from `.candidates.json` files.
-2. Construct prompts for Large Language Models.
-3. Generate Python logging statements (using OpenAI GPT or Flan-T5).
-4. Extract valid `logging.*(...)` statements from LLM output.
-5. Output a structured `.logs.json` file for evaluation.
+## Features
+- Python **AST-based analysis** to extract candidate logging locations
+- **Heuristic baseline** and **Random baseline** implementations
+- **Multiple LLM backends:**
+  - OpenAI GPT-4.1-mini
+  - OpenAI GPT-5.1
+  - Google Flan-T5 (base / large)
+- **Unified evaluation pipeline with:**
+  - True Positives (TP)
+  - False Positives (FP)
+  - False Negatives (FN)
+  - Precision, Recall, F1-score
+  - (Optional) Position accuracy metrics
 
----
 
-## File Description
-
-### `autologger.py`
-
-This script:
-- Reads parser output JSON
-- Builds prompts for each candidate
-- Calls an LLM backend (OpenAI GPT or Flan-T5)
-- Extracts valid Python logging statements
-- Writes the final predictions to a `.logs.json` output file
 
 ---
 
-## Supported LLM Providers
+# 1. Installation
 
-The implementation currently supports two LLM backends:
+## 1.1. Clone the Repository
+```bash
+git clone https://github.com/<your-username>/AutoLogger.git
+cd AutoLogger
 
-### 1. OpenAI Chat Models
-Examples:
-- `gpt-4.1`
-- `gpt-4.1-mini`
-- `gpt-5.1` (if available)
+```
 
-Uses OpenAI’s Chat Completion API.
 
-### 2. Flan-T5 (via HuggingFace Inference API)
-Examples:
-- `google/flan-t5-large`
-- `google/flan-t5-base`
 
-Uses HuggingFace’s cloud-hosted inference API.
+## 1.2. Create and Activate a Virtual Environment
+```bash
+python3 -m venv venv
+source venv/bin/activate     # macOS/Linux
+venv\Scripts\activate        # Windows
 
-### Design Highlights
+```
 
-Modular backend selection (--provider)
-Robust fallback to prevent failure on quota/timeouts
-Single-line logging extraction enforcement
-Provider-agnostic architecture for future expansion
-Compatible with baseline and evaluation modules
 
-### Future Improvements
 
-Add Claude, Gemini, and Mistral as optional providers.
-Improve prompt tuning to utilise variables better.
-Add caching for repeated prompts.
-Support structured logging formats (JSON logs).
+## 1.3. Install Dependencies
+```bash
+pip install -r requirements.txt
 
-Author
-Role: LLM Integration Engineer
-Contribution: Design, development and integration of LLM backend for AutoLogger.
+```
+
+
+
+## 1.4. Configure API Keys (we use OpenAI for GPT and HuggingFace for Flan-T5)
+```bash
+export OPENAI_API_KEY="your_key_here"
+export HUGGINGFACE_API_KEY="your_key_here"
+
+```
+
+
 
 ---
 
-## Setup Instructions
-
-### Step 1 — Install Python dependencies
+# 2. Project Structure
 
 ```bash
-pip install openai requests
+AutoLogger/
+  ├── baselines/
+  │     ├── baseline_heuristic.py
+  │     ├── baseline_random.py
+  │     └── results_*.json
+  ├── parser/
+  │     └── ast_parser.py
+  ├── llm/
+  │     ├── llm_openai.py
+  │     ├── llm_flan.py
+  │     └── llm_utils.py
+  ├── dataset/
+  │     ├── raw/                 # LLM output candidates
+  │     └── gold/                # Human-annotated gold labels
+  ├── results/
+  ├── scripts/
+  │     ├── run_eval_sample1.sh
+  │     ├── run_eval_sample2.sh
+  │     └── scriptXX.py
+  └── README.md
 
-### Step 2
-Set API keys
-For OpenAI:
+```
 
-Windows:
+---
 
-set OPENAI_API_KEY=your_openai_key
-
-
-Mac/Linux:
-
-export OPENAI_API_KEY=your_openai_key
-
-For Flan-T5:
-
-Windows:
-
-set HUGGINGFACE_API_KEY=your_huggingface_key
-
-
-Mac/Linux:
-
-export HUGGINGFACE_API_KEY=your_huggingface_key
-
-### Step 3
-How to Run
-
-How to Run
-Using OpenAI GPT:
-python autologger.py sample1.candidates.json --provider openai --model gpt-4.1-mini
-
-Using Flan-T5:
-python autologger.py sample1.candidates.json --provider flan --model google/flan-t5-large
+# 3. Running Demo Evaluations
+AutoLogger includes two demo scripts (sample1.py and sample2.py) to verify the full
+pipeline.
 
 
-Output file:
+## 3.1. Run Sample 1
+```bash
+cd scripts
+./run_eval_sample1.sh
 
-sample1.logs.json
+```
 
-### Output Example
 
-Output Format
+This will run the following proceduces...:
+* Heuristic baseline
+* Random baseline
+* LLM (GPT-4.1-mini)
+* LLM (GPT-5.1)
+* LLM (Flan-T5 base)
+* LLM (Flan-T5 large)
 
-The output format is:
+Outputs will be stored in:
 
-{
-  "file": "dataset/raw/sample1.py",
-  "logs": [
-    {
-      "candidate_id": 0,
-      "lineno": 2,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.debug('Entering foo with x=%s, y=%s', x, y)"
-    }
-  ]
-}
+```bash
+baselines/
+dataset/raw/
+results/
 
-### Error Handling
-
-If:
-
-API keys are missing
-
-API quota is exhausted
-
-Provider is unreachable
-
-The system falls back to a simple heuristic log:
-
-logging.info("AutoLogger: reached candidate in function foo")
-
-This ensures the system never crashes and always produces output.
+```
 
 
 
+## 3.2. Run Sample 2
+```bash
+./run_eval_sample2.sh
 
+```
+---
 
+# 4. Understanding Evaluation Metrics
+Each evaluation produces the following values:
 
+**True Positives (TP):**<br>
+The model inserted a log statement at a location that is also annotated in the gold labels.
+
+**False Positives (FP):** <br>
+The model inserted a log in a location that is not in the gold labels.
+
+**False Negatives (FN)**: <br>
+The model missed a gold-label location.
+
+### Precision
+```ini
+Precision = TP / (TP + FP)
+```
+### Recall
+```ini
+Recall = TP / (TP + FN)
+```
+### F1-Score
+```ini
+F1 = 2 * (Precision * Recall) / (Precision + Recall)
+```
+
+All metrics are printed automatically in the console after each model/baseline finishes!
+
+---
+
+# 5. Output Files
+
+## 5.1. Baseline outputs
+```bash
+baselines/results_heuristic.json
+baselines/results_random.json
+
+```
+
+## 5.2. LLM raw predictions
+```bash
+dataset/raw/<filename>.candidates.logs.json
+
+```
+
+## 5.3. LLM converted predictions
+```bash
+results/llm_<model>_<script>.json
+
+```
+
+## 5.4. Final evaluation summaries
+Printed in terminal and stored inside results/.
+<br>
+
+---
+
+## 6. Extending the Evaluation to Larger Datasets
+1. Place new Python source files inside:
+
+```bash
+dataset/source/
+```
+
+2. Create corresponding gold-label log files in:
+
+```bash
+dataset/gold/
+```
+
+3. Run the full evaluation:
+```bash
+./scripts/run_eval_dataset.sh
+```
+<br>
+
+# 7. Troubleshooting
+Q1. If no API key found like this below?: 
+```bash
+openai.error.AuthenticationError: No API key provided.
+
+```
+
+A1. Add your API key:
+```bash
+export OPENAI_API_KEY="your_key_here"
+```
+<br>
+Q2. If HuggingFace model not available?<br>
+A2. Install additional packages:
+
+```bash
+pip install transformers accelerate
+```
+<br>
+Q3. If UTF-8 encoding issues on Windows? <br>
+A3. Use this code below:
+
+```bash
+export PYTHONUTF8=1
+```
+
+---
+
+# 8. Authors
+Developed by Group 7 (Software Engineering WS2025/26, HSRW):
+
+A: AST Parser Developer: Hidetake Tanaka(34254)
+
+B: LLM Integration: Khushi
+
+C: Baseline Implementations: Mithila
+
+D: Dataset & Integration Testing: Zarin
+
+---
+
+# 9. License
+MIT License.

@@ -1,0 +1,134 @@
+{
+  "file": "script55.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 24,
+      "level": "WARNING",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Random log at line 25 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 34,
+      "level": "ERROR",
+      "message": "Random log at line 34 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 38,
+      "level": "DEBUG",
+      "message": "Random log at line 38 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 66,
+      "level": "DEBUG",
+      "message": "Random log at line 66 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 74,
+      "level": "ERROR",
+      "message": "Random log at line 74 in get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 77,
+      "level": "WARNING",
+      "message": "Random log at line 77 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 77,
+      "level": "ERROR",
+      "message": "Random log at line 77 in all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 80,
+      "level": "WARNING",
+      "message": "Random log at line 80 in search",
+      "kind": "entry",
+      "function": "search"
+    },
+    {
+      "line": 119,
+      "level": "INFO",
+      "message": "Random log at line 119 in fetch_remote",
+      "kind": "except",
+      "function": "fetch_remote"
+    },
+    {
+      "line": 133,
+      "level": "WARNING",
+      "message": "Random log at line 133 in save_library",
+      "kind": "entry",
+      "function": "save_library"
+    },
+    {
+      "line": 139,
+      "level": "WARNING",
+      "message": "Random log at line 139 in save_library",
+      "kind": "except",
+      "function": "save_library"
+    },
+    {
+      "line": 149,
+      "level": "INFO",
+      "message": "Random log at line 149 in summarize_library",
+      "kind": "return",
+      "function": "summarize_library"
+    },
+    {
+      "line": 160,
+      "level": "ERROR",
+      "message": "Random log at line 160 in filter_books",
+      "kind": "entry",
+      "function": "filter_books"
+    },
+    {
+      "line": 190,
+      "level": "DEBUG",
+      "message": "Random log at line 190 in merge_remote_library",
+      "kind": "return",
+      "function": "merge_remote_library"
+    },
+    {
+      "line": 209,
+      "level": "WARNING",
+      "message": "Random log at line 209 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 212,
+      "level": "ERROR",
+      "message": "Random log at line 212 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}
