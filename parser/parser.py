@@ -153,7 +153,8 @@ class LogCandidateVisitor(ast.NodeVisitor):
 
     def visit_ExceptHandler(self, node: ast.ExceptHandler):
         # 3: choose a sensible insertion line: first stmt inside expect if present; else the except line
-        line = node.body[0].lineno if getattr(node, "body", None) else node.lineno
+        #line = node.body[0].lineno if getattr(node, "body", None) else node.lineno
+        line = node.lineno
 
         if self.current_function is not None:
             vars_in_scope = get_vars_in_scope(self.current_function)
@@ -162,14 +163,14 @@ class LogCandidateVisitor(ast.NodeVisitor):
             
         self.candidates.append(
             LoggingCandidate(
-                kind =          "except",
+                kind =          "exception_handler_entry",
                 line =          line,
                 end_line =      line,
                 function =      self.current_function_name,
                 class_name =    self.current_class_name,
                 code =          "except ...",
                 vars_in_scope = vars_in_scope,
-                why =           "inside except",
+                why =           "exception handler enry",
                 severity_hint = "ERROR",
             )
         )

@@ -140,9 +140,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 99,
-      "end_line": 99,
+      "kind": "exception_handler_entry",
+      "line": 97,
+      "end_line": 97,
       "function": "load_attempts",
       "class_name": null,
       "code": "except ...",
@@ -154,7 +154,7 @@
         "raw",
         "score"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
@@ -307,9 +307,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 144,
-      "end_line": 144,
+      "kind": "exception_handler_entry",
+      "line": 143,
+      "end_line": 143,
       "function": "interactive_menu",
       "class_name": null,
       "code": "except ...",
@@ -322,7 +322,7 @@
         "summary",
         "suspects"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
@@ -345,9 +345,9 @@
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 171,
-      "end_line": 171,
+      "kind": "exception_handler_entry",
+      "line": 170,
+      "end_line": 170,
       "function": "interactive_menu",
       "class_name": null,
       "code": "except ...",
@@ -360,7 +360,7 @@
         "summary",
         "suspects"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
