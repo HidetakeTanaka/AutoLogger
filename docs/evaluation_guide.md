@@ -393,7 +393,7 @@ Copy-Item scripts/script31.candidates.json baselines/parser_output.json
 macOS/Linux:
 
 ```bash
-python3 baselines/baseline_heuristic.py
+python3 baselines/baseline_heuristic2.py
 cp baselines/results_heuristic.json results/baseline_script31.json
 
 python3 eval/eval_positions.py \
@@ -404,7 +404,7 @@ python3 eval/eval_positions.py \
 Windows:
 
 ```powershell
-python baselines/baseline_heuristic.py
+python baselines/baseline_heuristic2.py
 Copy-Item baselines/results_heuristic.json results/baseline_script31.json
 
 python eval/eval_positions.py `
@@ -421,7 +421,7 @@ Steps 1–4 are identical to Section I.
 ### macOS/Linux:
 
 ```bash
-python3 baselines/baseline_random.py
+python3 baselines/baseline_random2.py
 cp baselines/results_random.json results/baseline_random_script31.json
 
 python3 eval/eval_positions.py \
@@ -432,7 +432,7 @@ python3 eval/eval_positions.py \
 ### Windows:
 
 ```powershell
-python baselines/baseline_random.py
+python baselines/baseline_random2.py
 Copy-Item baselines/results_random.json results/baseline_random_script31.json
 
 python eval/eval_positions.py `
