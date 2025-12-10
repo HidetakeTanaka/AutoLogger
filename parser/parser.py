@@ -136,14 +136,14 @@ class LogCandidateVisitor(ast.NodeVisitor):
         
         self.candidates.append(
             LoggingCandidate(
-                kind =          "before_return",
+                kind =          "return_stmt",
                 line =          node.lineno,
                 end_line =      node.lineno,
                 function =      self.current_function_name,
                 class_name =    self.current_class_name,
                 code =          _safe_unparse(node),
                 vars_in_scope = vars_in_scope,
-                why =           "before return",
+                why =           "return statement",
                 severity_hint = "INFO",
             )
         )

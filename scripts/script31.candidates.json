@@ -15,7 +15,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 32,
       "end_line": 32,
       "function": "score_ratio",
@@ -24,11 +24,11 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 33,
       "end_line": 33,
       "function": "score_ratio",
@@ -37,7 +37,7 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
@@ -58,7 +58,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 38,
       "end_line": 38,
       "function": "is_suspicious",
@@ -71,11 +71,11 @@
         "very_fast",
         "very_high"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 41,
       "end_line": 41,
       "function": "is_suspicious",
@@ -88,7 +88,7 @@
         "very_fast",
         "very_high"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
@@ -158,7 +158,7 @@
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 100,
       "end_line": 100,
       "function": "load_attempts",
@@ -172,7 +172,7 @@
         "raw",
         "score"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
@@ -190,7 +190,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 107,
       "end_line": 107,
       "function": "group_by_user",
@@ -200,7 +200,7 @@
         "attempts",
         "grouped"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
@@ -222,7 +222,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 112,
       "end_line": 112,
       "function": "summarize_user",
@@ -236,11 +236,11 @@
         "ratios",
         "suspicious"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 118,
       "end_line": 118,
       "function": "summarize_user",
@@ -254,7 +254,7 @@
         "ratios",
         "suspicious"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
@@ -273,7 +273,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 133,
       "end_line": 133,
       "function": "find_suspicious_users",
@@ -284,7 +284,7 @@
         "summary",
         "suspects"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
@@ -326,7 +326,7 @@
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 145,
       "end_line": 145,
       "function": "interactive_menu",
@@ -341,7 +341,7 @@
         "summary",
         "suspects"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
