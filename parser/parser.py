@@ -133,16 +133,12 @@ class LogCandidateVisitor(ast.NodeVisitor):
             vars_in_scope = get_vars_in_scope(self.current_function)
         else:
             vars_in_scope = []
-
-        # Handle “one line before return” as a candidate position
-        before_line = max(1, node.lineno - 1) # lineno starts from 1; protect lineno so it does not drop below 1
-
         
         self.candidates.append(
             LoggingCandidate(
                 kind =          "before_return",
-                line =          before_line,
-                end_line =      before_line,
+                line =          node.lineno,
+                end_line =      node.lineno,
                 function =      self.current_function_name,
                 class_name =    self.current_class_name,
                 code =          _safe_unparse(node),
