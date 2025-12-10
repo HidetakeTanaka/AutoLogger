@@ -1,0 +1,155 @@
+{
+  "file": "script27.py",
+  "logs": [
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Customer.get_customer_info"
+    },
+    {
+      "line": 18,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning customer info dict from Customer.get_customer_info"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Order.get_order_summary"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning order summary dict from Order.get_order_summary"
+    },
+    {
+      "line": 38,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.read_json"
+    },
+    {
+      "line": 40,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed JSON data from FileManager.read_json"
+    },
+    {
+      "line": 42,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read JSON file in FileManager.read_json"
+    },
+    {
+      "line": 42,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from FileManager.read_json after error"
+    },
+    {
+      "line": 46,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.write_json"
+    },
+    {
+      "line": 50,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write JSON file in FileManager.write_json"
+    },
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering APIClient.fetch_data"
+    },
+    {
+      "line": 59,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed response data from APIClient.fetch_data"
+    },
+    {
+      "line": 61,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch API data in APIClient.fetch_data"
+    },
+    {
+      "line": 61,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from APIClient.fetch_data after error"
+    },
+    {
+      "line": 65,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_customers"
+    },
+    {
+      "line": 70,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning loaded customers list from load_customers"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_customers"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering create_order"
+    },
+    {
+      "line": 81,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created Order from create_order"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering update_customer_email"
+    },
+    {
+      "line": 88,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning success flag from update_customer_email"
+    },
+    {
+      "line": 89,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning failure flag from update_customer_email"
+    },
+    {
+      "line": 93,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_api_data"
+    },
+    {
+      "line": 93,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning API data from fetch_api_data"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    }
+  ]
+}

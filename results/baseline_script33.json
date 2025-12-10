@@ -1,0 +1,335 @@
+{
+  "file": "script33.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 19,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 19,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 29,
+      "level": "DEBUG",
+      "message": "Entering is_error",
+      "kind": "entry",
+      "function": "is_error"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting is_error",
+      "kind": "return",
+      "function": "is_error"
+    },
+    {
+      "line": 32,
+      "level": "DEBUG",
+      "message": "Entering is_slow",
+      "kind": "entry",
+      "function": "is_slow"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting is_slow",
+      "kind": "return",
+      "function": "is_slow"
+    },
+    {
+      "line": 37,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 40,
+      "level": "DEBUG",
+      "message": "Entering measure",
+      "kind": "entry",
+      "function": "measure"
+    },
+    {
+      "line": 46,
+      "level": "ERROR",
+      "message": "Exception in measure",
+      "kind": "except",
+      "function": "measure"
+    },
+    {
+      "line": 46,
+      "level": "INFO",
+      "message": "Exiting measure",
+      "kind": "return",
+      "function": "measure"
+    },
+    {
+      "line": 48,
+      "level": "ERROR",
+      "message": "Exception in measure",
+      "kind": "except",
+      "function": "measure"
+    },
+    {
+      "line": 48,
+      "level": "INFO",
+      "message": "Exiting measure",
+      "kind": "return",
+      "function": "measure"
+    },
+    {
+      "line": 49,
+      "level": "INFO",
+      "message": "Exiting measure",
+      "kind": "return",
+      "function": "measure"
+    },
+    {
+      "line": 54,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 57,
+      "level": "DEBUG",
+      "message": "Entering save",
+      "kind": "entry",
+      "function": "save"
+    },
+    {
+      "line": 70,
+      "level": "DEBUG",
+      "message": "Entering load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 71,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 76,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 76,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 84,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 86,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 90,
+      "level": "DEBUG",
+      "message": "Entering read_endpoints",
+      "kind": "entry",
+      "function": "read_endpoints"
+    },
+    {
+      "line": 91,
+      "level": "INFO",
+      "message": "Exiting read_endpoints",
+      "kind": "return",
+      "function": "read_endpoints"
+    },
+    {
+      "line": 96,
+      "level": "ERROR",
+      "message": "Exception in read_endpoints",
+      "kind": "except",
+      "function": "read_endpoints"
+    },
+    {
+      "line": 96,
+      "level": "INFO",
+      "message": "Exiting read_endpoints",
+      "kind": "return",
+      "function": "read_endpoints"
+    },
+    {
+      "line": 104,
+      "level": "ERROR",
+      "message": "Exception in read_endpoints",
+      "kind": "except",
+      "function": "read_endpoints"
+    },
+    {
+      "line": 106,
+      "level": "INFO",
+      "message": "Exiting read_endpoints",
+      "kind": "return",
+      "function": "read_endpoints"
+    },
+    {
+      "line": 110,
+      "level": "DEBUG",
+      "message": "Entering group_by_endpoint",
+      "kind": "entry",
+      "function": "group_by_endpoint"
+    },
+    {
+      "line": 113,
+      "level": "INFO",
+      "message": "Exiting group_by_endpoint",
+      "kind": "return",
+      "function": "group_by_endpoint"
+    },
+    {
+      "line": 117,
+      "level": "DEBUG",
+      "message": "Entering compute_endpoint_stats",
+      "kind": "entry",
+      "function": "compute_endpoint_stats"
+    },
+    {
+      "line": 118,
+      "level": "INFO",
+      "message": "Exiting compute_endpoint_stats",
+      "kind": "return",
+      "function": "compute_endpoint_stats"
+    },
+    {
+      "line": 122,
+      "level": "INFO",
+      "message": "Exiting compute_endpoint_stats",
+      "kind": "return",
+      "function": "compute_endpoint_stats"
+    },
+    {
+      "line": 130,
+      "level": "DEBUG",
+      "message": "Entering compute_overall_stats",
+      "kind": "entry",
+      "function": "compute_overall_stats"
+    },
+    {
+      "line": 131,
+      "level": "INFO",
+      "message": "Exiting compute_overall_stats",
+      "kind": "return",
+      "function": "compute_overall_stats"
+    },
+    {
+      "line": 134,
+      "level": "INFO",
+      "message": "Exiting compute_overall_stats",
+      "kind": "return",
+      "function": "compute_overall_stats"
+    },
+    {
+      "line": 138,
+      "level": "DEBUG",
+      "message": "Entering export_report",
+      "kind": "entry",
+      "function": "export_report"
+    },
+    {
+      "line": 153,
+      "level": "DEBUG",
+      "message": "Entering filter_failed",
+      "kind": "entry",
+      "function": "filter_failed"
+    },
+    {
+      "line": 153,
+      "level": "INFO",
+      "message": "Exiting filter_failed",
+      "kind": "return",
+      "function": "filter_failed"
+    },
+    {
+      "line": 157,
+      "level": "DEBUG",
+      "message": "Entering measure_all",
+      "kind": "entry",
+      "function": "measure_all"
+    },
+    {
+      "line": 161,
+      "level": "INFO",
+      "message": "Exiting measure_all",
+      "kind": "return",
+      "function": "measure_all"
+    },
+    {
+      "line": 165,
+      "level": "DEBUG",
+      "message": "Entering retry_failed",
+      "kind": "entry",
+      "function": "retry_failed"
+    },
+    {
+      "line": 166,
+      "level": "INFO",
+      "message": "Exiting retry_failed",
+      "kind": "return",
+      "function": "retry_failed"
+    },
+    {
+      "line": 175,
+      "level": "INFO",
+      "message": "Exiting retry_failed",
+      "kind": "return",
+      "function": "retry_failed"
+    },
+    {
+      "line": 179,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 182,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 200,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 201,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "file": "script87.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering WorkoutSession.is_recent"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from WorkoutSession.is_recent"
+    },
+    {
+      "line": 25,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from WorkoutSession.is_recent"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering WorkoutSession.matches_tag"
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result from WorkoutSession.matches_tag"
+    },
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering WorkoutSession.to_dict"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized workout session from WorkoutSession.to_dict"
+    },
+    {
+      "line": 47,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering WorkoutSession.from_dict"
+    },
+    {
+      "line": 59,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse workout session in WorkoutSession.from_dict"
+    },
+    {
+      "line": 59,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from WorkoutSession.from_dict"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.needs_update"
+    },
+    {
+      "line": 72,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning profile update evaluation from UserProfile.needs_update"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.to_dict"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized profile from UserProfile.to_dict"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.from_dict"
+    },
+    {
+      "line": 95,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse user profile in UserProfile.from_dict"
+    },
+    {
+      "line": 95,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from UserProfile.from_dict"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FitnessState.add_session"
+    },
+    {
+      "line": 106,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from FitnessState.add_session"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FitnessState.total_calories"
+    },
+    {
+      "line": 111,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0.0 from FitnessState.total_calories"
+    },
+    {
+      "line": 113,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning total calories from FitnessState.total_calories"
+    },
+    {
+      "line": 114,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered calories from FitnessState.total_calories"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FitnessState.recent_sessions"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent sessions from FitnessState.recent_sessions"
+    },
+    {
+      "line": 124,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FitnessState.to_dict"
+    },
+    {
+      "line": 124,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized fitness state from FitnessState.to_dict"
+    },
+    {
+      "line": 132,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FitnessState.from_dict"
+    },
+    {
+      "line": 142,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning FitnessState instance from FitnessState.from_dict"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.__init__"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient._url"
+    },
+    {
+      "line": 151,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL from RecommendationClient._url"
+    },
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.fetch_plan"
+    },
+    {
+      "line": 162,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch plan in RecommendationClient.fetch_plan"
+    },
+    {
+      "line": 162,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from RecommendationClient.fetch_plan"
+    },
+    {
+      "line": 166,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch plan in RecommendationClient.fetch_plan"
+    },
+    {
+      "line": 166,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from RecommendationClient.fetch_plan"
+    },
+    {
+      "line": 168,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from RecommendationClient.fetch_plan"
+    },
+    {
+      "line": 169,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed plan from RecommendationClient.fetch_plan"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_state"
+    },
+    {
+      "line": 178,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load fitness state in load_state"
+    },
+    {
+      "line": 178,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback FitnessState in load_state"
+    },
+    {
+      "line": 180,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load fitness state in load_state"
+    },
+    {
+      "line": 180,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback FitnessState in load_state"
+    },
+    {
+      "line": 184,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_state"
+    },
+    {
+      "line": 190,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save fitness state in save_state"
+    },
+    {
+      "line": 190,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from save_state"
+    },
+    {
+      "line": 194,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_daily_stats"
+    },
+    {
+      "line": 199,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning daily stats without goal data from compute_daily_stats"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning daily stats with goal evaluation from compute_daily_stats"
+    },
+    {
+      "line": 218,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering apply_recommendation"
+    },
+    {
+      "line": 219,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 from apply_recommendation"
+    },
+    {
+      "line": 241,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created recommendation sessions from apply_recommendation"
+    },
+    {
+      "line": 245,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_workouts"
+    },
+    {
+      "line": 263,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created simulated workouts from simulate_workouts"
+    },
+    {
+      "line": 267,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_state"
+    },
+    {
+      "line": 275,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summarized fitness state from summarize_state"
+    },
+    {
+      "line": 284,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summarized fitness state from summarize_state"
+    },
+    {
+      "line": 288,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 310,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 310,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 1 from main"
+    },
+    {
+      "line": 311,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 from main"
+    }
+  ]
+}

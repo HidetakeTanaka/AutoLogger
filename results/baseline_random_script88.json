@@ -1,0 +1,134 @@
+{
+  "file": "script88.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 32,
+      "level": "ERROR",
+      "message": "Random log at line 32 in matches_tag",
+      "kind": "return",
+      "function": "matches_tag"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 68,
+      "level": "DEBUG",
+      "message": "Random log at line 68 in is_stale",
+      "kind": "return",
+      "function": "is_stale"
+    },
+    {
+      "line": 71,
+      "level": "ERROR",
+      "message": "Random log at line 71 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 83,
+      "level": "WARNING",
+      "message": "Random log at line 83 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 90,
+      "level": "ERROR",
+      "message": "Random log at line 90 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 90,
+      "level": "WARNING",
+      "message": "Random log at line 90 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 138,
+      "level": "INFO",
+      "message": "Random log at line 138 in push_alerts",
+      "kind": "entry",
+      "function": "push_alerts"
+    },
+    {
+      "line": 158,
+      "level": "WARNING",
+      "message": "Random log at line 158 in load_state",
+      "kind": "except",
+      "function": "load_state"
+    },
+    {
+      "line": 158,
+      "level": "WARNING",
+      "message": "Random log at line 158 in load_state",
+      "kind": "return",
+      "function": "load_state"
+    },
+    {
+      "line": 168,
+      "level": "INFO",
+      "message": "Random log at line 168 in save_state",
+      "kind": "return",
+      "function": "save_state"
+    },
+    {
+      "line": 173,
+      "level": "ERROR",
+      "message": "Random log at line 173 in compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
+    },
+    {
+      "line": 230,
+      "level": "DEBUG",
+      "message": "Random log at line 230 in summarize_state",
+      "kind": "return",
+      "function": "summarize_state"
+    },
+    {
+      "line": 272,
+      "level": "WARNING",
+      "message": "Random log at line 272 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 273,
+      "level": "ERROR",
+      "message": "Random log at line 273 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

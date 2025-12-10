@@ -1,0 +1,1051 @@
+{
+  "file": "scripts\\script83.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "StudentSession",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "StudentSession",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 25,
+      "end_line": 25,
+      "function": "is_recent",
+      "class_name": "StudentSession",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 28,
+      "end_line": 28,
+      "function": "matches_tag",
+      "class_name": "StudentSession",
+      "code": "def matches_tag(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches_tag",
+      "class_name": "StudentSession",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches_tag",
+      "class_name": "StudentSession",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "matches_tag",
+      "class_name": "StudentSession",
+      "code": "return False",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 36,
+      "end_line": 36,
+      "function": "to_dict",
+      "class_name": "StudentSession",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 36,
+      "end_line": 36,
+      "function": "to_dict",
+      "class_name": "StudentSession",
+      "code": "return {'student_id': self.student_id, 'course_id': self.course_id, 'started_at': self.started_at.isoformat(), 'duration_min': self.duration_min, 'completed': self.completed, 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 47,
+      "end_line": 47,
+      "function": "from_dict",
+      "class_name": "StudentSession",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"StudentSession\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 50,
+      "end_line": 50,
+      "function": "from_dict",
+      "class_name": "StudentSession",
+      "code": "return cls(student_id=str(raw.get('student_id', '')), course_id=str(raw.get('course_id', '')), started_at=ts, duration_min=int(raw.get('duration_min', 0)), completed=bool(raw.get('completed', False)), tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 59,
+      "end_line": 59,
+      "function": "from_dict",
+      "class_name": "StudentSession",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 59,
+      "end_line": 59,
+      "function": "from_dict",
+      "class_name": "StudentSession",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 71,
+      "end_line": 71,
+      "function": "matches",
+      "class_name": "CourseInfo",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 73,
+      "end_line": 73,
+      "function": "matches",
+      "class_name": "CourseInfo",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 75,
+      "end_line": 75,
+      "function": "matches",
+      "class_name": "CourseInfo",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 76,
+      "end_line": 76,
+      "function": "matches",
+      "class_name": "CourseInfo",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 79,
+      "end_line": 79,
+      "function": "to_dict",
+      "class_name": "CourseInfo",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 79,
+      "end_line": 79,
+      "function": "to_dict",
+      "class_name": "CourseInfo",
+      "code": "return {'course_id': self.course_id, 'title': self.title, 'level': self.level, 'tags': self.tags, 'last_updated': self.last_updated.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 89,
+      "end_line": 89,
+      "function": "from_dict",
+      "class_name": "CourseInfo",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"CourseInfo\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 92,
+      "end_line": 92,
+      "function": "from_dict",
+      "class_name": "CourseInfo",
+      "code": "return cls(course_id=str(raw.get('course_id', '')), title=str(raw.get('title', '')), level=str(raw.get('level', '')), tags=list(raw.get('tags', [])), last_updated=ts)",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 100,
+      "end_line": 100,
+      "function": "from_dict",
+      "class_name": "CourseInfo",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 100,
+      "end_line": 100,
+      "function": "from_dict",
+      "class_name": "CourseInfo",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 110,
+      "end_line": 110,
+      "function": "add_session",
+      "class_name": "ProgressStore",
+      "code": "def add_session(self, session: StudentSession) -> None:",
+      "vars_in_scope": [
+        "self",
+        "session"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 113,
+      "end_line": 113,
+      "function": "total_minutes",
+      "class_name": "ProgressStore",
+      "code": "def total_minutes(self, course_id: Optional[str] = None) -> int:",
+      "vars_in_scope": [
+        "course_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 114,
+      "end_line": 114,
+      "function": "total_minutes",
+      "class_name": "ProgressStore",
+      "code": "return sum((s.duration_min for s in self.sessions))",
+      "vars_in_scope": [
+        "course_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "total_minutes",
+      "class_name": "ProgressStore",
+      "code": "return sum((s.duration_min for s in self.sessions if s.course_id == course_id))",
+      "vars_in_scope": [
+        "course_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 118,
+      "end_line": 118,
+      "function": "recent_sessions",
+      "class_name": "ProgressStore",
+      "code": "def recent_sessions(self, hours: int = 24) -> List[StudentSession]:",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 118,
+      "end_line": 118,
+      "function": "recent_sessions",
+      "class_name": "ProgressStore",
+      "code": "return [s for s in self.sessions if s.is_recent(hours)]",
+      "vars_in_scope": [
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 121,
+      "end_line": 121,
+      "function": "to_dict",
+      "class_name": "ProgressStore",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "to_dict",
+      "class_name": "ProgressStore",
+      "code": "return {'user_id': self.user_id, 'sessions': [s.to_dict() for s in self.sessions], 'courses': [c.to_dict() for c in self.courses.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 129,
+      "end_line": 129,
+      "function": "from_dict",
+      "class_name": "ProgressStore",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"ProgressStore\":",
+      "vars_in_scope": [
+        "c",
+        "cls",
+        "raw",
+        "s",
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 138,
+      "end_line": 138,
+      "function": "from_dict",
+      "class_name": "ProgressStore",
+      "code": "return store",
+      "vars_in_scope": [
+        "c",
+        "cls",
+        "raw",
+        "s",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 143,
+      "end_line": 143,
+      "function": "__init__",
+      "class_name": "RecommendationClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 147,
+      "end_line": 147,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "def _url(self, topic: str) -> str:",
+      "vars_in_scope": [
+        "self",
+        "topic"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 147,
+      "end_line": 147,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "return f'{self.base_url}/courses?topic={topic}'",
+      "vars_in_scope": [
+        "self",
+        "topic"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 150,
+      "end_line": 150,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "def fetch_recommendations(self, topic: str) -> Optional[List[Dict[str, Any]]]:",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 151,
+      "end_line": 151,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 161,
+      "end_line": 161,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "return items",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 163,
+      "end_line": 163,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 163,
+      "end_line": 163,
+      "function": "fetch_recommendations",
+      "class_name": "RecommendationClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "topic",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 167,
+      "end_line": 167,
+      "function": "load_store",
+      "class_name": null,
+      "code": "def load_store(path: Path) -> ProgressStore:",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 170,
+      "end_line": 170,
+      "function": "load_store",
+      "class_name": null,
+      "code": "return ProgressStore.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 172,
+      "end_line": 172,
+      "function": "load_store",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 172,
+      "end_line": 172,
+      "function": "load_store",
+      "class_name": null,
+      "code": "return ProgressStore(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 174,
+      "end_line": 174,
+      "function": "load_store",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 174,
+      "end_line": 174,
+      "function": "load_store",
+      "class_name": null,
+      "code": "return ProgressStore(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 178,
+      "end_line": 178,
+      "function": "save_store",
+      "class_name": null,
+      "code": "def save_store(path: Path, store: ProgressStore) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "store",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 184,
+      "end_line": 184,
+      "function": "save_store",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "store",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 184,
+      "end_line": 184,
+      "function": "save_store",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "store",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 188,
+      "end_line": 188,
+      "function": "compute_course_totals",
+      "class_name": null,
+      "code": "def compute_course_totals(store: ProgressStore) -> Dict[str, int]:",
+      "vars_in_scope": [
+        "store",
+        "totals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 191,
+      "end_line": 191,
+      "function": "compute_course_totals",
+      "class_name": null,
+      "code": "return totals",
+      "vars_in_scope": [
+        "store",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 195,
+      "end_line": 195,
+      "function": "apply_recommendations",
+      "class_name": null,
+      "code": "def apply_recommendations(store: ProgressStore, recs: Optional[List[Dict[str, Any]]]) -> int:",
+      "vars_in_scope": [
+        "added",
+        "cid",
+        "info",
+        "recs",
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 196,
+      "end_line": 196,
+      "function": "apply_recommendations",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "added",
+        "cid",
+        "info",
+        "recs",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 215,
+      "end_line": 215,
+      "function": "apply_recommendations",
+      "class_name": null,
+      "code": "return added",
+      "vars_in_scope": [
+        "added",
+        "cid",
+        "info",
+        "recs",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 219,
+      "end_line": 219,
+      "function": "simulate_study",
+      "class_name": null,
+      "code": "def simulate_study(store: ProgressStore, days: int = 3) -> int:",
+      "vars_in_scope": [
+        "cid",
+        "course_ids",
+        "created",
+        "days",
+        "sess",
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 220,
+      "end_line": 220,
+      "function": "simulate_study",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "cid",
+        "course_ids",
+        "created",
+        "days",
+        "sess",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 236,
+      "end_line": 236,
+      "function": "simulate_study",
+      "class_name": null,
+      "code": "return created",
+      "vars_in_scope": [
+        "cid",
+        "course_ids",
+        "created",
+        "days",
+        "sess",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 240,
+      "end_line": 240,
+      "function": "summarize",
+      "class_name": null,
+      "code": "def summarize(store: ProgressStore) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "most_course",
+        "store",
+        "totals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 242,
+      "end_line": 242,
+      "function": "summarize",
+      "class_name": null,
+      "code": "return {'user_id': store.user_id, 'courses': 0, 'sessions': 0, 'minutes': 0}",
+      "vars_in_scope": [
+        "most_course",
+        "store",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 244,
+      "end_line": 244,
+      "function": "summarize",
+      "class_name": null,
+      "code": "return {'user_id': store.user_id, 'courses': len(store.courses), 'sessions': len(store.sessions), 'minutes': sum(totals.values()), 'top_course': most_course, 'top_course_minutes': totals[most_course]}",
+      "vars_in_scope": [
+        "most_course",
+        "store",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 255,
+      "end_line": 255,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "recs",
+        "store",
+        "store_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 269,
+      "end_line": 269,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "recs",
+        "store",
+        "store_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 269,
+      "end_line": 269,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "recs",
+        "store",
+        "store_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 270,
+      "end_line": 270,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "recs",
+        "store",
+        "store_path",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

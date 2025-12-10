@@ -1,0 +1,141 @@
+{
+  "file": "script57.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 24,
+      "level": "WARNING",
+      "message": "Random log at line 24 in is_active",
+      "kind": "return",
+      "function": "is_active"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Random log at line 26 in is_active",
+      "kind": "return",
+      "function": "is_active"
+    },
+    {
+      "line": 38,
+      "level": "ERROR",
+      "message": "Random log at line 38 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 40,
+      "level": "DEBUG",
+      "message": "Random log at line 40 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 41,
+      "level": "DEBUG",
+      "message": "Random log at line 41 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 61,
+      "level": "DEBUG",
+      "message": "Random log at line 61 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 78,
+      "level": "ERROR",
+      "message": "Random log at line 78 in add",
+      "kind": "entry",
+      "function": "add"
+    },
+    {
+      "line": 81,
+      "level": "WARNING",
+      "message": "Random log at line 81 in get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 84,
+      "level": "ERROR",
+      "message": "Random log at line 84 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 84,
+      "level": "WARNING",
+      "message": "Random log at line 84 in all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 123,
+      "level": "INFO",
+      "message": "Random log at line 123 in fetch",
+      "kind": "return",
+      "function": "fetch"
+    },
+    {
+      "line": 141,
+      "level": "WARNING",
+      "message": "Random log at line 141 in load_directory",
+      "kind": "return",
+      "function": "load_directory"
+    },
+    {
+      "line": 143,
+      "level": "WARNING",
+      "message": "Random log at line 143 in load_directory",
+      "kind": "except",
+      "function": "load_directory"
+    },
+    {
+      "line": 145,
+      "level": "INFO",
+      "message": "Random log at line 145 in load_directory",
+      "kind": "return",
+      "function": "load_directory"
+    },
+    {
+      "line": 155,
+      "level": "ERROR",
+      "message": "Random log at line 155 in save_directory",
+      "kind": "except",
+      "function": "save_directory"
+    },
+    {
+      "line": 186,
+      "level": "DEBUG",
+      "message": "Random log at line 186 in promote_inactive_users",
+      "kind": "entry",
+      "function": "promote_inactive_users"
+    },
+    {
+      "line": 197,
+      "level": "WARNING",
+      "message": "Random log at line 197 in sync_remote",
+      "kind": "return",
+      "function": "sync_remote"
+    },
+    {
+      "line": 205,
+      "level": "ERROR",
+      "message": "Random log at line 205 in sync_remote",
+      "kind": "return",
+      "function": "sync_remote"
+    },
+    {
+      "line": 238,
+      "level": "INFO",
+      "message": "Random log at line 238 in main",
+      "kind": "except",
+      "function": "main"
+    }
+  ]
+}

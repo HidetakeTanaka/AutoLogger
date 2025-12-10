@@ -1,0 +1,197 @@
+{
+  "file": "script78.py",
+  "logs": [
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches() with query='{query}'\")"
+    },
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering to_dict method of Article with id={getattr(self, 'id', 'unknown')}\")"
+    },
+    {
+      "line": 50,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 62,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Article from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_article with article id={article.id}\")"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering FeedState.from_dict with raw data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 93,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning FeedState from_dict with feed: {feed}')"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing NewsClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with topic: {topic}\")"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_feed with topic: {topic}\")"
+    },
+    {
+      "line": 113,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch feed for topic {topic} from URL {url}', exc_info=True)"
+    },
+    {
+      "line": 115,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch feed for topic {topic} from URL {url}', exc_info=True)"
+    },
+    {
+      "line": 115,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'No feed found for topic: {topic} at URL: {url}')"
+    },
+    {
+      "line": 119,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched {len(items) if isinstance(items, list) else 0} items from {url} for topic \"{topic}\"')"
+    },
+    {
+      "line": 121,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch or parse feed for topic {topic} from URL {url}', exc_info=True)"
+    },
+    {
+      "line": 125,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_feeds with path: {path}\")"
+    },
+    {
+      "line": 131,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load feeds from path: {path}', exc_info=True)"
+    },
+    {
+      "line": 138,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded {len(feeds)} feeds from {path}')"
+    },
+    {
+      "line": 142,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_feeds with path={path} and {len(feeds)} feeds\")"
+    },
+    {
+      "line": 150,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save feeds to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 154,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save feeds to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 163,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered merge_feed with feed_id={feed_id}, name={name}, items_count={len(items)}\")"
+    },
+    {
+      "line": 180,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Error merging feed {feed_id} with aid {aid} and name {name}', exc_info=True)"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning feed with id {feed_id} containing {len(feed)} items')"
+    },
+    {
+      "line": 193,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_feeds with {len(feeds)} feeds\")"
+    },
+    {
+      "line": 201,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summary generated: {len(feeds)} feeds, {total_articles} articles, {total_unread} unread, {recent} recent in last 24h\")"
+    },
+    {
+      "line": 210,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_reading with {len(feeds)} feeds and max_items={max_items}\")"
+    },
+    {
+      "line": 220,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation complete: read_count={read_count}, unread={unread}, max_items={max_items}, feeds_processed={i}')"
+    },
+    {
+      "line": 224,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered find_trending_tags with {len(feeds)} feeds and min_count={min_count}\")"
+    },
+    {
+      "line": 235,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 256,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    },
+    {
+      "line": 258,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "file": "script72.py",
+  "logs": [
+    {
+      "line": 94,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HealthClient.check with URL %s"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning latency_ms=%s from HealthClient.check"
+    },
+    {
+      "line": 102,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch URL %s in HealthClient.check due to URLError"
+    },
+    {
+      "line": 105,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in HealthClient.check for URL %s"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_statuses from %s"
+    },
+    {
+      "line": 115,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Loaded %d records from load_statuses"
+    },
+    {
+      "line": 117,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load statuses from %s"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_statuses to %s"
+    },
+    {
+      "line": 127,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while writing temporary file for save_statuses"
+    },
+    {
+      "line": 131,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to finalize save_statuses cleanup"
+    },
+    {
+      "line": 149,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering detect_incidents for %d services"
+    },
+    {
+      "line": 156,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Found %d incidents in detect_incidents"
+    },
+    {
+      "line": 180,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main with data_dir=%s and run_live=%s"
+    },
+    {
+      "line": 207,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed while writing summary in main"
+    },
+    {
+      "line": 210,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Main completed successfully"
+    }
+  ]
+}
+

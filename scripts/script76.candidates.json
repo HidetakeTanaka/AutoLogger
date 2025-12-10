@@ -1,0 +1,904 @@
+{
+  "file": "scripts\\script76.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "matches",
+      "class_name": "Habit",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "matches",
+      "class_name": "Habit",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "matches",
+      "class_name": "Habit",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches",
+      "class_name": "Habit",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 30,
+      "end_line": 30,
+      "function": "to_dict",
+      "class_name": "Habit",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "to_dict",
+      "class_name": "Habit",
+      "code": "return {'habit_id': self.habit_id, 'name': self.name, 'target_per_day': self.target_per_day, 'unit': self.unit, 'tags': self.tags, 'created_at': self.created_at.isoformat()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 41,
+      "end_line": 41,
+      "function": "from_dict",
+      "class_name": "Habit",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Habit\"]:",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 48,
+      "end_line": 48,
+      "function": "from_dict",
+      "class_name": "Habit",
+      "code": "return cls(habit_id=str(raw.get('habit_id', '')), name=str(raw.get('name', '')), target_per_day=int(raw.get('target_per_day', 1)), unit=str(raw.get('unit', 'reps')), tags=list(raw.get('tags', [])), created_at=created)",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 57,
+      "end_line": 57,
+      "function": "from_dict",
+      "class_name": "Habit",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 57,
+      "end_line": 57,
+      "function": "from_dict",
+      "class_name": "Habit",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "created_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 67,
+      "end_line": 67,
+      "function": "to_dict",
+      "class_name": "HabitEntry",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "to_dict",
+      "class_name": "HabitEntry",
+      "code": "return {'habit_id': self.habit_id, 'date': self.date.date().isoformat(), 'amount': self.amount}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 75,
+      "end_line": 75,
+      "function": "from_dict",
+      "class_name": "HabitEntry",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"HabitEntry\"]:",
+      "vars_in_scope": [
+        "cls",
+        "d_raw",
+        "d_val",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 78,
+      "end_line": 78,
+      "function": "from_dict",
+      "class_name": "HabitEntry",
+      "code": "return cls(habit_id=str(raw.get('habit_id', '')), date=d_val, amount=int(raw.get('amount', 0)))",
+      "vars_in_scope": [
+        "cls",
+        "d_raw",
+        "d_val",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 84,
+      "end_line": 84,
+      "function": "from_dict",
+      "class_name": "HabitEntry",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "d_raw",
+        "d_val",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "from_dict",
+      "class_name": "HabitEntry",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "d_raw",
+        "d_val",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 94,
+      "end_line": 94,
+      "function": "add_habit",
+      "class_name": "HabitBook",
+      "code": "def add_habit(self, habit: Habit) -> None:",
+      "vars_in_scope": [
+        "habit",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 97,
+      "end_line": 97,
+      "function": "add_entry",
+      "class_name": "HabitBook",
+      "code": "def add_entry(self, entry: HabitEntry) -> None:",
+      "vars_in_scope": [
+        "entry",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 101,
+      "end_line": 101,
+      "function": "filter_habits",
+      "class_name": "HabitBook",
+      "code": "def filter_habits(self, query: str = \"\") -> List[Habit]:",
+      "vars_in_scope": [
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 101,
+      "end_line": 101,
+      "function": "filter_habits",
+      "class_name": "HabitBook",
+      "code": "return [h for h in self.habits.values() if h.matches(query)]",
+      "vars_in_scope": [
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 104,
+      "end_line": 104,
+      "function": "to_dict",
+      "class_name": "HabitBook",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 104,
+      "end_line": 104,
+      "function": "to_dict",
+      "class_name": "HabitBook",
+      "code": "return {'user_id': self.user_id, 'habits': [h.to_dict() for h in self.habits.values()], 'entries': [e.to_dict() for e in self.entries]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 112,
+      "end_line": 112,
+      "function": "from_dict",
+      "class_name": "HabitBook",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"HabitBook\":",
+      "vars_in_scope": [
+        "book",
+        "cls",
+        "entry",
+        "habit",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "from_dict",
+      "class_name": "HabitBook",
+      "code": "return book",
+      "vars_in_scope": [
+        "book",
+        "cls",
+        "entry",
+        "habit",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 126,
+      "end_line": 126,
+      "function": "__init__",
+      "class_name": "AdviceClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 130,
+      "end_line": 130,
+      "function": "_url",
+      "class_name": "AdviceClient",
+      "code": "def _url(self) -> str:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 130,
+      "end_line": 130,
+      "function": "_url",
+      "class_name": "AdviceClient",
+      "code": "return f'{self.base_url}/advice'",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 133,
+      "end_line": 133,
+      "function": "fetch_advice",
+      "class_name": "AdviceClient",
+      "code": "def fetch_advice(self) -> Optional[str]:",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "slip",
+        "text",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 139,
+      "end_line": 139,
+      "function": "fetch_advice",
+      "class_name": "AdviceClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "slip",
+        "text",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "fetch_advice",
+      "class_name": "AdviceClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "slip",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 144,
+      "end_line": 144,
+      "function": "fetch_advice",
+      "class_name": "AdviceClient",
+      "code": "return str(text) if text else None",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "slip",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 146,
+      "end_line": 146,
+      "function": "fetch_advice",
+      "class_name": "AdviceClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "slip",
+        "text",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 146,
+      "end_line": 146,
+      "function": "fetch_advice",
+      "class_name": "AdviceClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "slip",
+        "text",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 150,
+      "end_line": 150,
+      "function": "load_book",
+      "class_name": null,
+      "code": "def load_book(path: Path) -> HabitBook:",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 151,
+      "end_line": 151,
+      "function": "load_book",
+      "class_name": null,
+      "code": "return HabitBook(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 155,
+      "end_line": 155,
+      "function": "load_book",
+      "class_name": null,
+      "code": "return HabitBook.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 157,
+      "end_line": 157,
+      "function": "load_book",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 157,
+      "end_line": 157,
+      "function": "load_book",
+      "class_name": null,
+      "code": "return HabitBook(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 161,
+      "end_line": 161,
+      "function": "save_book",
+      "class_name": null,
+      "code": "def save_book(path: Path, book: HabitBook) -> None:",
+      "vars_in_scope": [
+        "book",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 168,
+      "end_line": 168,
+      "function": "save_book",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "book",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 172,
+      "end_line": 172,
+      "function": "save_book",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "book",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 176,
+      "end_line": 176,
+      "function": "compute_daily_totals",
+      "class_name": null,
+      "code": "def compute_daily_totals(book: HabitBook, day: datetime) -> Dict[str, int]:",
+      "vars_in_scope": [
+        "book",
+        "day",
+        "target_date",
+        "totals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 182,
+      "end_line": 182,
+      "function": "compute_daily_totals",
+      "class_name": null,
+      "code": "return totals",
+      "vars_in_scope": [
+        "book",
+        "day",
+        "target_date",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 186,
+      "end_line": 186,
+      "function": "compute_streaks",
+      "class_name": null,
+      "code": "def compute_streaks(book: HabitBook, habit_id: str, days: int = 7) -> int:",
+      "vars_in_scope": [
+        "book",
+        "d",
+        "day_idx",
+        "days",
+        "habit_id",
+        "streak",
+        "today",
+        "totals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 187,
+      "end_line": 187,
+      "function": "compute_streaks",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "book",
+        "d",
+        "day_idx",
+        "days",
+        "habit_id",
+        "streak",
+        "today",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 199,
+      "end_line": 199,
+      "function": "compute_streaks",
+      "class_name": null,
+      "code": "return streak",
+      "vars_in_scope": [
+        "book",
+        "d",
+        "day_idx",
+        "days",
+        "habit_id",
+        "streak",
+        "today",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 203,
+      "end_line": 203,
+      "function": "summarize_book",
+      "class_name": null,
+      "code": "def summarize_book(book: HabitBook) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "book",
+        "streaks",
+        "top_streak"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 204,
+      "end_line": 204,
+      "function": "summarize_book",
+      "class_name": null,
+      "code": "return {'habit_count': 0, 'entries': 0, 'top_streak': 0}",
+      "vars_in_scope": [
+        "book",
+        "streaks",
+        "top_streak"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 207,
+      "end_line": 207,
+      "function": "summarize_book",
+      "class_name": null,
+      "code": "return {'habit_count': len(book.habits), 'entries': len(book.entries), 'top_streak': top_streak}",
+      "vars_in_scope": [
+        "book",
+        "streaks",
+        "top_streak"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 215,
+      "end_line": 215,
+      "function": "simulate_day",
+      "class_name": null,
+      "code": "def simulate_day(book: HabitBook, intensity: float = 0.7) -> None:",
+      "vars_in_scope": [
+        "amount",
+        "baseline",
+        "book",
+        "intensity",
+        "today"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 228,
+      "end_line": 228,
+      "function": "ensure_sample_habits",
+      "class_name": null,
+      "code": "def ensure_sample_habits(book: HabitBook) -> None:",
+      "vars_in_scope": [
+        "book",
+        "samples"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 229,
+      "end_line": 229,
+      "function": "ensure_sample_habits",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "book",
+        "samples"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 240,
+      "end_line": 240,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "advice",
+        "base",
+        "base_url",
+        "book",
+        "book_path",
+        "client",
+        "data_dir",
+        "stats",
+        "summary",
+        "summary_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 256,
+      "end_line": 256,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "advice",
+        "base",
+        "base_url",
+        "book",
+        "book_path",
+        "client",
+        "data_dir",
+        "stats",
+        "summary",
+        "summary_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 256,
+      "end_line": 256,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "advice",
+        "base",
+        "base_url",
+        "book",
+        "book_path",
+        "client",
+        "data_dir",
+        "stats",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 257,
+      "end_line": 257,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "advice",
+        "base",
+        "base_url",
+        "book",
+        "book_path",
+        "client",
+        "data_dir",
+        "stats",
+        "summary",
+        "summary_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

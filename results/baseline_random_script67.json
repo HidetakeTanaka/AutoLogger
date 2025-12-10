@@ -1,0 +1,113 @@
+{
+  "file": "script67.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Random log at line 26 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 47,
+      "level": "ERROR",
+      "message": "Random log at line 47 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 47,
+      "level": "DEBUG",
+      "message": "Random log at line 47 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 57,
+      "level": "DEBUG",
+      "message": "Random log at line 57 in touch",
+      "kind": "entry",
+      "function": "touch"
+    },
+    {
+      "line": 75,
+      "level": "DEBUG",
+      "message": "Random log at line 75 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 80,
+      "level": "ERROR",
+      "message": "Random log at line 80 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 93,
+      "level": "WARNING",
+      "message": "Random log at line 93 in _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 93,
+      "level": "ERROR",
+      "message": "Random log at line 93 in _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 96,
+      "level": "WARNING",
+      "message": "Random log at line 96 in fetch_recommendations",
+      "kind": "entry",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 133,
+      "level": "INFO",
+      "message": "Random log at line 133 in save_user",
+      "kind": "except",
+      "function": "save_user"
+    },
+    {
+      "line": 164,
+      "level": "WARNING",
+      "message": "Random log at line 164 in compute_preferences",
+      "kind": "return",
+      "function": "compute_preferences"
+    },
+    {
+      "line": 170,
+      "level": "WARNING",
+      "message": "Random log at line 170 in simulate_session",
+      "kind": "entry",
+      "function": "simulate_session"
+    },
+    {
+      "line": 183,
+      "level": "INFO",
+      "message": "Random log at line 183 in main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 226,
+      "level": "ERROR",
+      "message": "Random log at line 226 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

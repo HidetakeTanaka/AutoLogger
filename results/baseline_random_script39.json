@@ -1,0 +1,120 @@
+{
+  "file": "script39.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 22,
+      "level": "WARNING",
+      "message": "Random log at line 22 in is_valid",
+      "kind": "return",
+      "function": "is_valid"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Random log at line 23 in is_valid",
+      "kind": "return",
+      "function": "is_valid"
+    },
+    {
+      "line": 45,
+      "level": "ERROR",
+      "message": "Random log at line 45 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 48,
+      "level": "DEBUG",
+      "message": "Random log at line 48 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 48,
+      "level": "DEBUG",
+      "message": "Random log at line 48 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 80,
+      "level": "DEBUG",
+      "message": "Random log at line 80 in load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 87,
+      "level": "ERROR",
+      "message": "Random log at line 87 in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 99,
+      "level": "WARNING",
+      "message": "Random log at line 99 in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 104,
+      "level": "ERROR",
+      "message": "Random log at line 104 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 104,
+      "level": "WARNING",
+      "message": "Random log at line 104 in all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 152,
+      "level": "INFO",
+      "message": "Random log at line 152 in get_json",
+      "kind": "except",
+      "function": "get_json"
+    },
+    {
+      "line": 179,
+      "level": "WARNING",
+      "message": "Random log at line 179 in load_users",
+      "kind": "entry",
+      "function": "load_users"
+    },
+    {
+      "line": 180,
+      "level": "WARNING",
+      "message": "Random log at line 180 in load_users",
+      "kind": "return",
+      "function": "load_users"
+    },
+    {
+      "line": 196,
+      "level": "INFO",
+      "message": "Random log at line 196 in load_users",
+      "kind": "except",
+      "function": "load_users"
+    },
+    {
+      "line": 201,
+      "level": "ERROR",
+      "message": "Random log at line 201 in fetch_remote_products",
+      "kind": "entry",
+      "function": "fetch_remote_products"
+    },
+    {
+      "line": 244,
+      "level": "DEBUG",
+      "message": "Random log at line 244 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

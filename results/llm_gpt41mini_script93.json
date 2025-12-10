@@ -1,0 +1,203 @@
+{
+  "file": "script93.py",
+  "logs": [
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_type with query='{query}'\")"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 56,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Event from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"UserProfile.prefers called with kind={kind}\")"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering needs_refresh with days={days} for user {self}\")"
+    },
+    {
+      "line": 73,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'UserProfile needs_refresh check: updated_at={self.updated_at}, cutoff={cutoff}, result={self.updated_at < cutoff}')"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering UserProfile.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 95,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse timestamp from raw data: {ts_raw}', exc_info=True)"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_event with event: {event}\")"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_events with minutes={minutes}\")"
+    },
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 134,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing AnalyticsClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_score with user_id={user_id}\")"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched score for user_id={user_id}: {score}')"
+    },
+    {
+      "line": 154,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch score for user_id={user_id} from url={url}', exc_info=True)"
+    },
+    {
+      "line": 154,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'fetch_score returning None for user_id={user_id} from url={url}')"
+    },
+    {
+      "line": 157,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_summary with summary keys: {list(summary.keys())}\")"
+    },
+    {
+      "line": 164,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Push summary response status: {resp.status}, success: {200 <= resp.status < 300}')"
+    },
+    {
+      "line": 166,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary to {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_state with path: {path}\")"
+    },
+    {
+      "line": 177,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load state from {path}')"
+    },
+    {
+      "line": 181,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_state with path={path} and state={state}\")"
+    },
+    {
+      "line": 188,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save state to {path} with payload {payload}')"
+    },
+    {
+      "line": 192,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_engagement with state: {state}\")"
+    },
+    {
+      "line": 199,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Returning engagement metrics: count={len(state.events)}, avg_value={sum(all_vals) / len(all_vals):.2f}, by_kind keys={list(avg_by_kind.keys())}\")"
+    },
+    {
+      "line": 203,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered detect_bursts with window_minutes={window_minutes}\")"
+    },
+    {
+      "line": 220,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"simulate_events called with count={count}, initial state={state}\")"
+    },
+    {
+      "line": 230,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation completed with {created} events created out of {count} processed.')"
+    },
+    {
+      "line": 234,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_state with state={state} and score={score}\")"
+    },
+    {
+      "line": 236,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summarizing state for user_id={state.user_id}, profile_name={state.profile.name if state.profile else None}, score={score}, engagement={engagement}, burst_count={len(bursts)}\")"
+    },
+    {
+      "line": 246,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 266,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

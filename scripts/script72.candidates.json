@@ -1,0 +1,778 @@
+{
+  "file": "scripts\\script72.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_recent",
+      "class_name": "MetricSample",
+      "code": "def is_recent(self, minutes: int = 5) -> bool:",
+      "vars_in_scope": [
+        "minutes",
+        "ref",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_recent",
+      "class_name": "MetricSample",
+      "code": "return False",
+      "vars_in_scope": [
+        "minutes",
+        "ref",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "MetricSample",
+      "code": "return True",
+      "vars_in_scope": [
+        "minutes",
+        "ref",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 27,
+      "end_line": 27,
+      "function": "to_dict",
+      "class_name": "MetricSample",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "to_dict",
+      "class_name": "MetricSample",
+      "code": "return {'timestamp': self.timestamp.isoformat(), 'latency_ms': self.latency_ms, 'ok': self.ok}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "from_dict",
+      "class_name": "MetricSample",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"MetricSample\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 38,
+      "end_line": 38,
+      "function": "from_dict",
+      "class_name": "MetricSample",
+      "code": "return cls(timestamp=ts, latency_ms=float(raw.get('latency_ms', 0.0)), ok=bool(raw.get('ok', False)))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 44,
+      "end_line": 44,
+      "function": "from_dict",
+      "class_name": "MetricSample",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 44,
+      "end_line": 44,
+      "function": "from_dict",
+      "class_name": "MetricSample",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 54,
+      "end_line": 54,
+      "function": "add_sample",
+      "class_name": "ServiceStatus",
+      "code": "def add_sample(self, sample: MetricSample) -> None:",
+      "vars_in_scope": [
+        "sample",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 57,
+      "end_line": 57,
+      "function": "recent_samples",
+      "class_name": "ServiceStatus",
+      "code": "def recent_samples(self, minutes: int = 5) -> List[MetricSample]:",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 57,
+      "end_line": 57,
+      "function": "recent_samples",
+      "class_name": "ServiceStatus",
+      "code": "return [s for s in self.samples if s.is_recent(minutes)]",
+      "vars_in_scope": [
+        "minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 60,
+      "end_line": 60,
+      "function": "availability",
+      "class_name": "ServiceStatus",
+      "code": "def availability(self, minutes: int = 60) -> float:",
+      "vars_in_scope": [
+        "minutes",
+        "oks",
+        "recents",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 62,
+      "end_line": 62,
+      "function": "availability",
+      "class_name": "ServiceStatus",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "minutes",
+        "oks",
+        "recents",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 64,
+      "end_line": 64,
+      "function": "availability",
+      "class_name": "ServiceStatus",
+      "code": "return oks / len(recents)",
+      "vars_in_scope": [
+        "minutes",
+        "oks",
+        "recents",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 67,
+      "end_line": 67,
+      "function": "avg_latency",
+      "class_name": "ServiceStatus",
+      "code": "def avg_latency(self, minutes: int = 60) -> float:",
+      "vars_in_scope": [
+        "minutes",
+        "recents",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 69,
+      "end_line": 69,
+      "function": "avg_latency",
+      "class_name": "ServiceStatus",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "minutes",
+        "recents",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 70,
+      "end_line": 70,
+      "function": "avg_latency",
+      "class_name": "ServiceStatus",
+      "code": "return sum((s.latency_ms for s in recents)) / len(recents)",
+      "vars_in_scope": [
+        "minutes",
+        "recents",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 73,
+      "end_line": 73,
+      "function": "to_dict",
+      "class_name": "ServiceStatus",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 73,
+      "end_line": 73,
+      "function": "to_dict",
+      "class_name": "ServiceStatus",
+      "code": "return {'service_id': self.service_id, 'url': self.url, 'samples': [s.to_dict() for s in self.samples]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 81,
+      "end_line": 81,
+      "function": "from_dict",
+      "class_name": "ServiceStatus",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"ServiceStatus\":",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "s",
+        "svc"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 86,
+      "end_line": 86,
+      "function": "from_dict",
+      "class_name": "ServiceStatus",
+      "code": "return svc",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "s",
+        "svc"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 91,
+      "end_line": 91,
+      "function": "__init__",
+      "class_name": "HealthClient",
+      "code": "def __init__(self, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 94,
+      "end_line": 94,
+      "function": "check",
+      "class_name": "HealthClient",
+      "code": "def check(self, url: str) -> MetricSample:",
+      "vars_in_scope": [
+        "_",
+        "latency",
+        "req",
+        "self",
+        "start",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 100,
+      "end_line": 100,
+      "function": "check",
+      "class_name": "HealthClient",
+      "code": "return MetricSample(datetime.utcnow(), latency, True)",
+      "vars_in_scope": [
+        "_",
+        "latency",
+        "req",
+        "self",
+        "start",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 102,
+      "end_line": 102,
+      "function": "check",
+      "class_name": "HealthClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "_",
+        "latency",
+        "req",
+        "self",
+        "start",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 103,
+      "end_line": 103,
+      "function": "check",
+      "class_name": "HealthClient",
+      "code": "return MetricSample(datetime.utcnow(), latency, False)",
+      "vars_in_scope": [
+        "_",
+        "latency",
+        "req",
+        "self",
+        "start",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 105,
+      "end_line": 105,
+      "function": "check",
+      "class_name": "HealthClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "_",
+        "latency",
+        "req",
+        "self",
+        "start",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 106,
+      "end_line": 106,
+      "function": "check",
+      "class_name": "HealthClient",
+      "code": "return MetricSample(datetime.utcnow(), latency, False)",
+      "vars_in_scope": [
+        "_",
+        "latency",
+        "req",
+        "self",
+        "start",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 110,
+      "end_line": 110,
+      "function": "load_statuses",
+      "class_name": null,
+      "code": "def load_statuses(path: Path) -> List[ServiceStatus]:",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "load_statuses",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "load_statuses",
+      "class_name": null,
+      "code": "return [ServiceStatus.from_dict(r) for r in raw]",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 117,
+      "end_line": 117,
+      "function": "load_statuses",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 117,
+      "end_line": 117,
+      "function": "load_statuses",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "data",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 121,
+      "end_line": 121,
+      "function": "save_statuses",
+      "class_name": null,
+      "code": "def save_statuses(path: Path, statuses: List[ServiceStatus]) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "statuses",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 127,
+      "end_line": 127,
+      "function": "save_statuses",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "statuses",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 131,
+      "end_line": 131,
+      "function": "save_statuses",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "statuses",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 135,
+      "end_line": 135,
+      "function": "summarize_statuses",
+      "class_name": null,
+      "code": "def summarize_statuses(statuses: List[ServiceStatus]) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "result",
+        "statuses"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 145,
+      "end_line": 145,
+      "function": "summarize_statuses",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "result",
+        "statuses"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 149,
+      "end_line": 149,
+      "function": "detect_incidents",
+      "class_name": null,
+      "code": "def detect_incidents(statuses: List[ServiceStatus], avail_threshold: float = 0.95) -> List[str]:",
+      "vars_in_scope": [
+        "avail",
+        "avail_threshold",
+        "incidents",
+        "statuses"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 156,
+      "end_line": 156,
+      "function": "detect_incidents",
+      "class_name": null,
+      "code": "return incidents",
+      "vars_in_scope": [
+        "avail",
+        "avail_threshold",
+        "incidents",
+        "statuses"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 160,
+      "end_line": 160,
+      "function": "simulate_checks",
+      "class_name": null,
+      "code": "def simulate_checks(statuses: List[ServiceStatus], rounds: int = 3) -> None:",
+      "vars_in_scope": [
+        "latency",
+        "now",
+        "ok",
+        "rounds",
+        "sample",
+        "statuses"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 172,
+      "end_line": 172,
+      "function": "ensure_services",
+      "class_name": null,
+      "code": "def ensure_services(statuses: List[ServiceStatus], targets: Dict[str, str]) -> List[ServiceStatus]:",
+      "vars_in_scope": [
+        "index",
+        "statuses",
+        "targets"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 176,
+      "end_line": 176,
+      "function": "ensure_services",
+      "class_name": null,
+      "code": "return list(index.values())",
+      "vars_in_scope": [
+        "index",
+        "statuses",
+        "targets"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 180,
+      "end_line": 180,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", run_live: bool = False) -> int:",
+      "vars_in_scope": [
+        "base",
+        "client",
+        "data_dir",
+        "incidents",
+        "output_path",
+        "run_live",
+        "sample",
+        "statuses",
+        "store_path",
+        "summary",
+        "targets"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 207,
+      "end_line": 207,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "client",
+        "data_dir",
+        "incidents",
+        "output_path",
+        "run_live",
+        "sample",
+        "statuses",
+        "store_path",
+        "summary",
+        "targets"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 207,
+      "end_line": 207,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "client",
+        "data_dir",
+        "incidents",
+        "output_path",
+        "run_live",
+        "sample",
+        "statuses",
+        "store_path",
+        "summary",
+        "targets"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 210,
+      "end_line": 210,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "client",
+        "data_dir",
+        "incidents",
+        "output_path",
+        "run_live",
+        "sample",
+        "statuses",
+        "store_path",
+        "summary",
+        "targets"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "file": "script97.py",
+  "logs": [
+    {
+      "line": 19,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataRecord.is_recent"
+    },
+    {
+      "line": 22,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recency flag in DataRecord.is_recent"
+    },
+    {
+      "line": 25,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataRecord.score"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed score in DataRecord.score"
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataRecord.to_dict"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning dict representation in DataRecord.to_dict"
+    },
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataRecord.from_dict"
+    },
+    {
+      "line": 53,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse DataRecord in DataRecord.from_dict"
+    },
+    {
+      "line": 53,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from DataRecord.from_dict after failure"
+    },
+    {
+      "line": 62,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataStore.load"
+    },
+    {
+      "line": 63,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Finished DataStore.load"
+    },
+    {
+      "line": 73,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load records in DataStore.load"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataStore.save"
+    },
+    {
+      "line": 82,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save records in DataStore.save"
+    },
+    {
+      "line": 82,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Aborting DataStore.save after failure"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataStore.add_record"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataStore.iter_recent"
+    },
+    {
+      "line": 88,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent records generator in DataStore.iter_recent"
+    },
+    {
+      "line": 91,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering DataStore.average_value"
+    },
+    {
+      "line": 93,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed average in DataStore.average_value"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiClient.__init__"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiClient._url"
+    },
+    {
+      "line": 104,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning resolved URL in ApiClient._url"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiClient.get_json"
+    },
+    {
+      "line": 118,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch JSON in ApiClient.get_json"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from ApiClient.get_json after failure"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiClient.fetch_remote_records"
+    },
+    {
+      "line": 124,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered remote records in ApiClient.fetch_remote_records"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering parse_records"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed DataRecord list in parse_records"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_by_tag"
+    },
+    {
+      "line": 140,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag-filtered records in filter_by_tag"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_summary"
+    },
+    {
+      "line": 149,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summary data in compute_summary"
+    },
+    {
+      "line": 153,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering read_local_config"
+    },
+    {
+      "line": 162,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read config in read_local_config"
+    },
+    {
+      "line": 162,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty config from read_local_config after failure"
+    },
+    {
+      "line": 166,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering write_report"
+    },
+    {
+      "line": 171,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write report in write_report"
+    },
+    {
+      "line": 171,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Aborting write_report after failure"
+    },
+    {
+      "line": 175,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering sync_remote_data"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning count of new records in sync_remote_data"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 207,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 from main"
+    },
+    {
+      "line": 209,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 1 from main"
+    }
+  ]
+}

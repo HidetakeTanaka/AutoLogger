@@ -1,0 +1,167 @@
+{
+  "file": "script16.py",
+  "logs": [
+    {
+      "line": 7,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.__init__"
+    },
+    {
+      "line": 13,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.update_quantity"
+    },
+    {
+      "line": 16,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.update_price"
+    },
+    {
+      "line": 19,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.get_product_info"
+    },
+    {
+      "line": 19,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product info from Product.get_product_info"
+    },
+    {
+      "line": 29,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.__init__"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.add_product"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.remove_product"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from Inventory.remove_product after successful removal"
+    },
+    {
+      "line": 39,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from Inventory.remove_product when product is not found"
+    },
+    {
+      "line": 42,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.get_inventory_value"
+    },
+    {
+      "line": 42,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning inventory value from Inventory.get_inventory_value"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.get_products_by_category"
+    },
+    {
+      "line": 45,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning products by category from Inventory.get_products_by_category"
+    },
+    {
+      "line": 51,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.read_json"
+    },
+    {
+      "line": 53,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning data from FileManager.read_json"
+    },
+    {
+      "line": 55,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error occurred in FileManager.read_json"
+    },
+    {
+      "line": 59,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.write_json"
+    },
+    {
+      "line": 61,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error occurred in FileManager.write_json"
+    },
+    {
+      "line": 64,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering create_product"
+    },
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Product object from create_product"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering create_inventory"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_data"
+    },
+    {
+      "line": 72,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning data from fetch_data"
+    },
+    {
+      "line": 74,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error occurred in fetch_data"
+    },
+    {
+      "line": 74,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from fetch_data due to error"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    }
+  ]
+}

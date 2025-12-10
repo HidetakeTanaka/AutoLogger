@@ -1,0 +1,341 @@
+{
+  "file": "script76.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Habit.matches"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning match result in Habit.matches"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning match evaluation in Habit.matches"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result in Habit.matches"
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Habit.to_dict"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Habit in Habit.to_dict"
+    },
+    {
+      "line": 41,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Habit.from_dict"
+    },
+    {
+      "line": 48,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Habit instance in Habit.from_dict"
+    },
+    {
+      "line": 57,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Habit in Habit.from_dict"
+    },
+    {
+      "line": 57,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from Habit.from_dict"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HabitEntry.to_dict"
+    },
+    {
+      "line": 67,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized HabitEntry in HabitEntry.to_dict"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HabitEntry.from_dict"
+    },
+    {
+      "line": 78,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning HabitEntry instance in HabitEntry.from_dict"
+    },
+    {
+      "line": 84,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse HabitEntry in HabitEntry.from_dict"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from HabitEntry.from_dict"
+    },
+    {
+      "line": 94,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HabitBook.add_habit"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HabitBook.add_entry"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HabitBook.filter_habits"
+    },
+    {
+      "line": 101,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered habits in HabitBook.filter_habits"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HabitBook.to_dict"
+    },
+    {
+      "line": 104,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized HabitBook in HabitBook.to_dict"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HabitBook.from_dict"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning HabitBook instance in HabitBook.from_dict"
+    },
+    {
+      "line": 126,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AdviceClient.__init__"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AdviceClient._url"
+    },
+    {
+      "line": 130,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning URL in AdviceClient._url"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AdviceClient.fetch_advice"
+    },
+    {
+      "line": 139,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch advice in AdviceClient.fetch_advice"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from AdviceClient.fetch_advice"
+    },
+    {
+      "line": 144,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed advice text in AdviceClient.fetch_advice"
+    },
+    {
+      "line": 146,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in AdviceClient.fetch_advice"
+    },
+    {
+      "line": 146,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None after failure in AdviceClient.fetch_advice"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_book"
+    },
+    {
+      "line": 151,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning default HabitBook in load_book"
+    },
+    {
+      "line": 155,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning HabitBook loaded from file"
+    },
+    {
+      "line": 157,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load HabitBook in load_book"
+    },
+    {
+      "line": 157,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback HabitBook in load_book"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_book"
+    },
+    {
+      "line": 168,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write HabitBook file in save_book"
+    },
+    {
+      "line": 172,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in save_book"
+    },
+    {
+      "line": 176,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_daily_totals"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning daily totals in compute_daily_totals"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_streaks"
+    },
+    {
+      "line": 187,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning default streak in compute_streaks"
+    },
+    {
+      "line": 199,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed streak in compute_streaks"
+    },
+    {
+      "line": 203,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_book"
+    },
+    {
+      "line": 204,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning initial summary in summarize_book"
+    },
+    {
+      "line": 207,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summary in summarize_book"
+    },
+    {
+      "line": 215,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_day"
+    },
+    {
+      "line": 228,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ensure_sample_habits"
+    },
+    {
+      "line": 229,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from ensure_sample_habits"
+    },
+    {
+      "line": 240,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 256,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 256,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning error code from main"
+    },
+    {
+      "line": 257,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning success code from main"
+    }
+  ]
+}

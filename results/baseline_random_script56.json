@@ -1,0 +1,141 @@
+{
+  "file": "script56.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 24,
+      "level": "WARNING",
+      "message": "Random log at line 24 in is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Random log at line 26 in is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 35,
+      "level": "ERROR",
+      "message": "Random log at line 35 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Random log at line 36 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 39,
+      "level": "DEBUG",
+      "message": "Random log at line 39 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 71,
+      "level": "DEBUG",
+      "message": "Random log at line 71 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 79,
+      "level": "ERROR",
+      "message": "Random log at line 79 in get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 82,
+      "level": "WARNING",
+      "message": "Random log at line 82 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 82,
+      "level": "ERROR",
+      "message": "Random log at line 82 in all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 85,
+      "level": "WARNING",
+      "message": "Random log at line 85 in search",
+      "kind": "entry",
+      "function": "search"
+    },
+    {
+      "line": 124,
+      "level": "INFO",
+      "message": "Random log at line 124 in fetch_remote",
+      "kind": "except",
+      "function": "fetch_remote"
+    },
+    {
+      "line": 142,
+      "level": "WARNING",
+      "message": "Random log at line 142 in load_task_list",
+      "kind": "except",
+      "function": "load_task_list"
+    },
+    {
+      "line": 142,
+      "level": "WARNING",
+      "message": "Random log at line 142 in load_task_list",
+      "kind": "return",
+      "function": "load_task_list"
+    },
+    {
+      "line": 148,
+      "level": "INFO",
+      "message": "Random log at line 148 in save_task_list",
+      "kind": "entry",
+      "function": "save_task_list"
+    },
+    {
+      "line": 158,
+      "level": "ERROR",
+      "message": "Random log at line 158 in save_task_list",
+      "kind": "except",
+      "function": "save_task_list"
+    },
+    {
+      "line": 193,
+      "level": "DEBUG",
+      "message": "Random log at line 193 in pick_next_task",
+      "kind": "return",
+      "function": "pick_next_task"
+    },
+    {
+      "line": 201,
+      "level": "WARNING",
+      "message": "Random log at line 201 in simulate_progress",
+      "kind": "entry",
+      "function": "simulate_progress"
+    },
+    {
+      "line": 217,
+      "level": "ERROR",
+      "message": "Random log at line 217 in simulate_progress",
+      "kind": "return",
+      "function": "simulate_progress"
+    },
+    {
+      "line": 233,
+      "level": "INFO",
+      "message": "Random log at line 233 in main",
+      "kind": "entry",
+      "function": "main"
+    }
+  ]
+}

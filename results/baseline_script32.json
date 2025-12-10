@@ -1,0 +1,321 @@
+{
+  "file": "script32.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 20,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 26,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 43,
+      "level": "DEBUG",
+      "message": "Entering is_active",
+      "kind": "entry",
+      "function": "is_active"
+    },
+    {
+      "line": 43,
+      "level": "INFO",
+      "message": "Exiting is_active",
+      "kind": "return",
+      "function": "is_active"
+    },
+    {
+      "line": 46,
+      "level": "DEBUG",
+      "message": "Entering update_country",
+      "kind": "entry",
+      "function": "update_country"
+    },
+    {
+      "line": 49,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 49,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 64,
+      "level": "DEBUG",
+      "message": "Entering matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 65,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 67,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 72,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 76,
+      "level": "DEBUG",
+      "message": "Entering load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 78,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 83,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 84,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 97,
+      "level": "DEBUG",
+      "message": "Entering save",
+      "kind": "entry",
+      "function": "save"
+    },
+    {
+      "line": 105,
+      "level": "DEBUG",
+      "message": "Entering get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 105,
+      "level": "INFO",
+      "message": "Exiting get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 108,
+      "level": "DEBUG",
+      "message": "Entering upsert",
+      "kind": "entry",
+      "function": "upsert"
+    },
+    {
+      "line": 111,
+      "level": "DEBUG",
+      "message": "Entering all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 111,
+      "level": "INFO",
+      "message": "Exiting all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 116,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 119,
+      "level": "DEBUG",
+      "message": "Entering load",
+      "kind": "entry",
+      "function": "load"
+    },
+    {
+      "line": 120,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 125,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 125,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 131,
+      "level": "ERROR",
+      "message": "Exception in load",
+      "kind": "except",
+      "function": "load"
+    },
+    {
+      "line": 140,
+      "level": "INFO",
+      "message": "Exiting load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 144,
+      "level": "DEBUG",
+      "message": "Entering generate_random_events",
+      "kind": "entry",
+      "function": "generate_random_events"
+    },
+    {
+      "line": 145,
+      "level": "INFO",
+      "message": "Exiting generate_random_events",
+      "kind": "return",
+      "function": "generate_random_events"
+    },
+    {
+      "line": 159,
+      "level": "INFO",
+      "message": "Exiting generate_random_events",
+      "kind": "return",
+      "function": "generate_random_events"
+    },
+    {
+      "line": 163,
+      "level": "DEBUG",
+      "message": "Entering write_events",
+      "kind": "entry",
+      "function": "write_events"
+    },
+    {
+      "line": 170,
+      "level": "DEBUG",
+      "message": "Entering filter_recent_events",
+      "kind": "entry",
+      "function": "filter_recent_events"
+    },
+    {
+      "line": 171,
+      "level": "INFO",
+      "message": "Exiting filter_recent_events",
+      "kind": "return",
+      "function": "filter_recent_events"
+    },
+    {
+      "line": 175,
+      "level": "DEBUG",
+      "message": "Entering build_segments",
+      "kind": "entry",
+      "function": "build_segments"
+    },
+    {
+      "line": 175,
+      "level": "INFO",
+      "message": "Exiting build_segments",
+      "kind": "return",
+      "function": "build_segments"
+    },
+    {
+      "line": 186,
+      "level": "DEBUG",
+      "message": "Entering assign_segments",
+      "kind": "entry",
+      "function": "assign_segments"
+    },
+    {
+      "line": 193,
+      "level": "INFO",
+      "message": "Exiting assign_segments",
+      "kind": "return",
+      "function": "assign_segments"
+    },
+    {
+      "line": 197,
+      "level": "DEBUG",
+      "message": "Entering export_segments",
+      "kind": "entry",
+      "function": "export_segments"
+    },
+    {
+      "line": 204,
+      "level": "DEBUG",
+      "message": "Entering load_or_create_users",
+      "kind": "entry",
+      "function": "load_or_create_users"
+    },
+    {
+      "line": 216,
+      "level": "INFO",
+      "message": "Exiting load_or_create_users",
+      "kind": "return",
+      "function": "load_or_create_users"
+    },
+    {
+      "line": 220,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 241,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

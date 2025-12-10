@@ -1,0 +1,155 @@
+{
+  "file": "script99.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 19,
+      "level": "WARNING",
+      "message": "Random log at line 19 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 20,
+      "level": "INFO",
+      "message": "Random log at line 20 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 30,
+      "level": "ERROR",
+      "message": "Random log at line 30 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 32,
+      "level": "DEBUG",
+      "message": "Random log at line 32 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 32,
+      "level": "DEBUG",
+      "message": "Random log at line 32 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 54,
+      "level": "DEBUG",
+      "message": "Random log at line 54 in is_online",
+      "kind": "return",
+      "function": "is_online"
+    },
+    {
+      "line": 57,
+      "level": "ERROR",
+      "message": "Random log at line 57 in is_online",
+      "kind": "return",
+      "function": "is_online"
+    },
+    {
+      "line": 60,
+      "level": "WARNING",
+      "message": "Random log at line 60 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 69,
+      "level": "ERROR",
+      "message": "Random log at line 69 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 77,
+      "level": "WARNING",
+      "message": "Random log at line 77 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 121,
+      "level": "INFO",
+      "message": "Random log at line 121 in _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 140,
+      "level": "WARNING",
+      "message": "Random log at line 140 in fetch_device_snapshot",
+      "kind": "except",
+      "function": "fetch_device_snapshot"
+    },
+    {
+      "line": 140,
+      "level": "WARNING",
+      "message": "Random log at line 140 in fetch_device_snapshot",
+      "kind": "return",
+      "function": "fetch_device_snapshot"
+    },
+    {
+      "line": 150,
+      "level": "INFO",
+      "message": "Random log at line 150 in load_fleet",
+      "kind": "return",
+      "function": "load_fleet"
+    },
+    {
+      "line": 153,
+      "level": "ERROR",
+      "message": "Random log at line 153 in load_fleet",
+      "kind": "except",
+      "function": "load_fleet"
+    },
+    {
+      "line": 177,
+      "level": "DEBUG",
+      "message": "Random log at line 177 in compute_fleet_stats",
+      "kind": "return",
+      "function": "compute_fleet_stats"
+    },
+    {
+      "line": 191,
+      "level": "WARNING",
+      "message": "Random log at line 191 in read_config",
+      "kind": "return",
+      "function": "read_config"
+    },
+    {
+      "line": 192,
+      "level": "ERROR",
+      "message": "Random log at line 192 in read_config",
+      "kind": "return",
+      "function": "read_config"
+    },
+    {
+      "line": 210,
+      "level": "INFO",
+      "message": "Random log at line 210 in refresh_from_remote",
+      "kind": "except",
+      "function": "refresh_from_remote"
+    },
+    {
+      "line": 250,
+      "level": "ERROR",
+      "message": "Random log at line 250 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 251,
+      "level": "DEBUG",
+      "message": "Random log at line 251 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

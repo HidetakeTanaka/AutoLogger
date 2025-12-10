@@ -1,0 +1,1006 @@
+{
+  "file": "scripts\\script84.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_overdue",
+      "class_name": "Task",
+      "code": "def is_overdue(self, ref: Optional[datetime] = None) -> bool:",
+      "vars_in_scope": [
+        "ref",
+        "ref_time",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "is_overdue",
+      "class_name": "Task",
+      "code": "return False",
+      "vars_in_scope": [
+        "ref",
+        "ref_time",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "is_overdue",
+      "class_name": "Task",
+      "code": "return self.due < ref_time",
+      "vars_in_scope": [
+        "ref",
+        "ref_time",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches",
+      "class_name": "Task",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches",
+      "class_name": "Task",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 34,
+      "end_line": 34,
+      "function": "matches",
+      "class_name": "Task",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "matches",
+      "class_name": "Task",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 38,
+      "end_line": 38,
+      "function": "to_dict",
+      "class_name": "Task",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 38,
+      "end_line": 38,
+      "function": "to_dict",
+      "class_name": "Task",
+      "code": "return {'task_id': self.task_id, 'title': self.title, 'due': self.due.isoformat(), 'priority': self.priority, 'tags': list(self.tags), 'completed': self.completed}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 49,
+      "end_line": 49,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Task\"]:",
+      "vars_in_scope": [
+        "cls",
+        "due",
+        "due_raw",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 52,
+      "end_line": 52,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "return cls(task_id=str(raw.get('task_id', '')), title=str(raw.get('title', '')), due=due, priority=int(raw.get('priority', 3)), tags=list(raw.get('tags', [])), completed=bool(raw.get('completed', False)))",
+      "vars_in_scope": [
+        "cls",
+        "due",
+        "due_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 61,
+      "end_line": 61,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "due",
+        "due_raw",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 61,
+      "end_line": 61,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "due",
+        "due_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 70,
+      "end_line": 70,
+      "function": "add_task",
+      "class_name": "PlannerState",
+      "code": "def add_task(self, task: Task) -> None:",
+      "vars_in_scope": [
+        "self",
+        "task"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 73,
+      "end_line": 73,
+      "function": "mark_done",
+      "class_name": "PlannerState",
+      "code": "def mark_done(self, task_id: str) -> bool:",
+      "vars_in_scope": [
+        "self",
+        "task",
+        "task_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 75,
+      "end_line": 75,
+      "function": "mark_done",
+      "class_name": "PlannerState",
+      "code": "return False",
+      "vars_in_scope": [
+        "self",
+        "task",
+        "task_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 77,
+      "end_line": 77,
+      "function": "mark_done",
+      "class_name": "PlannerState",
+      "code": "return False",
+      "vars_in_scope": [
+        "self",
+        "task",
+        "task_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 79,
+      "end_line": 79,
+      "function": "mark_done",
+      "class_name": "PlannerState",
+      "code": "return True",
+      "vars_in_scope": [
+        "self",
+        "task",
+        "task_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 82,
+      "end_line": 82,
+      "function": "query_tasks",
+      "class_name": "PlannerState",
+      "code": "def query_tasks(self, query: str = \"\") -> List[Task]:",
+      "vars_in_scope": [
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 82,
+      "end_line": 82,
+      "function": "query_tasks",
+      "class_name": "PlannerState",
+      "code": "return [t for t in self.tasks.values() if t.matches(query)]",
+      "vars_in_scope": [
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 85,
+      "end_line": 85,
+      "function": "upcoming",
+      "class_name": "PlannerState",
+      "code": "def upcoming(self, days: int = 1) -> List[Task]:",
+      "vars_in_scope": [
+        "days",
+        "limit",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 86,
+      "end_line": 86,
+      "function": "upcoming",
+      "class_name": "PlannerState",
+      "code": "return [t for t in self.tasks.values() if not t.completed and t.due <= limit]",
+      "vars_in_scope": [
+        "days",
+        "limit",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 89,
+      "end_line": 89,
+      "function": "to_dict",
+      "class_name": "PlannerState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 89,
+      "end_line": 89,
+      "function": "to_dict",
+      "class_name": "PlannerState",
+      "code": "return {'user_id': self.user_id, 'tasks': [t.to_dict() for t in self.tasks.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 93,
+      "end_line": 93,
+      "function": "from_dict",
+      "class_name": "PlannerState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"PlannerState\":",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "state",
+        "task"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 98,
+      "end_line": 98,
+      "function": "from_dict",
+      "class_name": "PlannerState",
+      "code": "return state",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "state",
+        "task"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 103,
+      "end_line": 103,
+      "function": "__init__",
+      "class_name": "SyncClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 107,
+      "end_line": 107,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 107,
+      "end_line": 107,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 110,
+      "end_line": 110,
+      "function": "pull_remote",
+      "class_name": "SyncClient",
+      "code": "def pull_remote(self, user_id: str) -> Optional[List[Dict[str, Any]]]:",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "pull_remote",
+      "class_name": "SyncClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 120,
+      "end_line": 120,
+      "function": "pull_remote",
+      "class_name": "SyncClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "pull_remote",
+      "class_name": "SyncClient",
+      "code": "return items",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 123,
+      "end_line": 123,
+      "function": "pull_remote",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 123,
+      "end_line": 123,
+      "function": "pull_remote",
+      "class_name": "SyncClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "items",
+        "parsed",
+        "req",
+        "self",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 126,
+      "end_line": 126,
+      "function": "push_summary",
+      "class_name": "SyncClient",
+      "code": "def push_summary(self, user_id: str, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 127,
+      "end_line": 127,
+      "function": "push_summary",
+      "class_name": "SyncClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 133,
+      "end_line": 133,
+      "function": "push_summary",
+      "class_name": "SyncClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 135,
+      "end_line": 135,
+      "function": "push_summary",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 135,
+      "end_line": 135,
+      "function": "push_summary",
+      "class_name": "SyncClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 139,
+      "end_line": 139,
+      "function": "load_state",
+      "class_name": null,
+      "code": "def load_state(path: Path) -> PlannerState:",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 140,
+      "end_line": 140,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return PlannerState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 144,
+      "end_line": 144,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return PlannerState.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 146,
+      "end_line": 146,
+      "function": "load_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 146,
+      "end_line": 146,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return PlannerState(user_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 150,
+      "end_line": 150,
+      "function": "save_state",
+      "class_name": null,
+      "code": "def save_state(path: Path, state: PlannerState) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 156,
+      "end_line": 156,
+      "function": "save_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 156,
+      "end_line": 156,
+      "function": "save_state",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 160,
+      "end_line": 160,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "def compute_stats(state: PlannerState) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "completed",
+        "overdue",
+        "state",
+        "tasks"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 162,
+      "end_line": 162,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': 0, 'completed': 0, 'overdue': 0}",
+      "vars_in_scope": [
+        "completed",
+        "overdue",
+        "state",
+        "tasks"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 165,
+      "end_line": 165,
+      "function": "compute_stats",
+      "class_name": null,
+      "code": "return {'count': len(tasks), 'completed': completed, 'overdue': overdue, 'completion_rate': completed / len(tasks)}",
+      "vars_in_scope": [
+        "completed",
+        "overdue",
+        "state",
+        "tasks"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 174,
+      "end_line": 174,
+      "function": "simulate_day",
+      "class_name": null,
+      "code": "def simulate_day(state: PlannerState, max_new: int = 3) -> int:",
+      "vars_in_scope": [
+        "created",
+        "due",
+        "max_new",
+        "state",
+        "task",
+        "tid"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 187,
+      "end_line": 187,
+      "function": "simulate_day",
+      "class_name": null,
+      "code": "return created",
+      "vars_in_scope": [
+        "created",
+        "due",
+        "max_new",
+        "state",
+        "task",
+        "tid"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 191,
+      "end_line": 191,
+      "function": "filter_urgent",
+      "class_name": null,
+      "code": "def filter_urgent(state: PlannerState, hours: int = 6) -> List[Task]:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "state",
+        "urgent"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 194,
+      "end_line": 194,
+      "function": "filter_urgent",
+      "class_name": null,
+      "code": "return urgent",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "state",
+        "urgent"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 198,
+      "end_line": 198,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "def summarize_state(state: PlannerState, remote_rate: Optional[float] = None) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "relation",
+        "remote_rate",
+        "state",
+        "stats",
+        "urgent"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 208,
+      "end_line": 208,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "return {'user_id': state.user_id, 'stats': stats, 'urgent_count': len(urgent), 'remote_relation': relation}",
+      "vars_in_scope": [
+        "relation",
+        "remote_rate",
+        "state",
+        "stats",
+        "urgent"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 217,
+      "end_line": 217,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "remote_completed",
+        "remote_data",
+        "remote_rate",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "task"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 241,
+      "end_line": 241,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "remote_completed",
+        "remote_data",
+        "remote_rate",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "task"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 241,
+      "end_line": 241,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "remote_completed",
+        "remote_data",
+        "remote_rate",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "task"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 242,
+      "end_line": 242,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "remote_completed",
+        "remote_data",
+        "remote_rate",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "task"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

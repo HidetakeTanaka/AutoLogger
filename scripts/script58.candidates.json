@@ -1,0 +1,1069 @@
+{
+  "file": "scripts\\script58.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 25,
+      "end_line": 25,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 29,
+      "end_line": 29,
+      "function": "to_dict",
+      "class_name": "Product",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "to_dict",
+      "class_name": "Product",
+      "code": "return {'product_id': self.product_id, 'name': self.name, 'category': self.category, 'price': self.price, 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 39,
+      "end_line": 39,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[Product]:",
+      "vars_in_scope": [
+        "cls",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 40,
+      "end_line": 40,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "return cls(product_id=str(raw.get('product_id', '')), name=str(raw.get('name', '')), category=str(raw.get('category', '')), price=float(raw.get('price', 0.0)), tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 48,
+      "end_line": 48,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 48,
+      "end_line": 48,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 59,
+      "end_line": 59,
+      "function": "total_value",
+      "class_name": "Order",
+      "code": "def total_value(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 59,
+      "end_line": 59,
+      "function": "total_value",
+      "class_name": "Order",
+      "code": "return sum((p.price for p in self.items))",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 62,
+      "end_line": 62,
+      "function": "is_recent",
+      "class_name": "Order",
+      "code": "def is_recent(self, days: int = 7) -> bool:",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 63,
+      "end_line": 63,
+      "function": "is_recent",
+      "class_name": "Order",
+      "code": "return False",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 64,
+      "end_line": 64,
+      "function": "is_recent",
+      "class_name": "Order",
+      "code": "return self.created_at >= datetime.utcnow() - timedelta(days=days)",
+      "vars_in_scope": [
+        "days",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 67,
+      "end_line": 67,
+      "function": "to_dict",
+      "class_name": "Order",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "to_dict",
+      "class_name": "Order",
+      "code": "return {'order_id': self.order_id, 'created_at': self.created_at.isoformat(), 'status': self.status, 'items': [p.to_dict() for p in self.items]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 76,
+      "end_line": 76,
+      "function": "from_dict",
+      "class_name": "Order",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[Order]:",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "items",
+        "items_raw",
+        "p",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "from_dict",
+      "class_name": "Order",
+      "code": "return cls(order_id=str(raw.get('order_id', '')), created_at=created, items=items, status=str(raw.get('status', 'pending')))",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "items",
+        "items_raw",
+        "p",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 91,
+      "end_line": 91,
+      "function": "from_dict",
+      "class_name": "Order",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "items",
+        "items_raw",
+        "p",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 91,
+      "end_line": 91,
+      "function": "from_dict",
+      "class_name": "Order",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "created",
+        "items",
+        "items_raw",
+        "p",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 96,
+      "end_line": 96,
+      "function": "__init__",
+      "class_name": "OrderBook",
+      "code": "def __init__(self, book_id: str) -> None:",
+      "vars_in_scope": [
+        "book_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 100,
+      "end_line": 100,
+      "function": "add",
+      "class_name": "OrderBook",
+      "code": "def add(self, order: Order) -> None:",
+      "vars_in_scope": [
+        "order",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 103,
+      "end_line": 103,
+      "function": "get",
+      "class_name": "OrderBook",
+      "code": "def get(self, order_id: str) -> Optional[Order]:",
+      "vars_in_scope": [
+        "order_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 103,
+      "end_line": 103,
+      "function": "get",
+      "class_name": "OrderBook",
+      "code": "return self._orders.get(order_id)",
+      "vars_in_scope": [
+        "order_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 106,
+      "end_line": 106,
+      "function": "all",
+      "class_name": "OrderBook",
+      "code": "def all(self) -> List[Order]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 106,
+      "end_line": 106,
+      "function": "all",
+      "class_name": "OrderBook",
+      "code": "return list(self._orders.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 109,
+      "end_line": 109,
+      "function": "open_orders",
+      "class_name": "OrderBook",
+      "code": "def open_orders(self) -> List[Order]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "open_orders",
+      "class_name": "OrderBook",
+      "code": "return [o for o in self._orders.values() if o.status != 'completed']",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 112,
+      "end_line": 112,
+      "function": "search_by_product",
+      "class_name": "OrderBook",
+      "code": "def search_by_product(self, query: str) -> List[Order]:",
+      "vars_in_scope": [
+        "query",
+        "result",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 116,
+      "end_line": 116,
+      "function": "search_by_product",
+      "class_name": "OrderBook",
+      "code": "return sorted(result, key=lambda o: o.created_at)",
+      "vars_in_scope": [
+        "query",
+        "result",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 119,
+      "end_line": 119,
+      "function": "to_dict",
+      "class_name": "OrderBook",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 119,
+      "end_line": 119,
+      "function": "to_dict",
+      "class_name": "OrderBook",
+      "code": "return {'book_id': self.book_id, 'orders': [o.to_dict() for o in self._orders.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 126,
+      "end_line": 126,
+      "function": "from_dict",
+      "class_name": "OrderBook",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> OrderBook:",
+      "vars_in_scope": [
+        "cls",
+        "o",
+        "ob",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 131,
+      "end_line": 131,
+      "function": "from_dict",
+      "class_name": "OrderBook",
+      "code": "return ob",
+      "vars_in_scope": [
+        "cls",
+        "o",
+        "ob",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 136,
+      "end_line": 136,
+      "function": "__init__",
+      "class_name": "ApiClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 140,
+      "end_line": 140,
+      "function": "_url",
+      "class_name": "ApiClient",
+      "code": "def _url(self, book_id: str) -> str:",
+      "vars_in_scope": [
+        "book_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 140,
+      "end_line": 140,
+      "function": "_url",
+      "class_name": "ApiClient",
+      "code": "return f'{self.base_url}/orders/{book_id}.json'",
+      "vars_in_scope": [
+        "book_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 143,
+      "end_line": 143,
+      "function": "fetch_orders",
+      "class_name": "ApiClient",
+      "code": "def fetch_orders(self, book_id: str) -> Optional[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "book_id",
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 148,
+      "end_line": 148,
+      "function": "fetch_orders",
+      "class_name": "ApiClient",
+      "code": "return json.loads(data.decode('utf-8'))",
+      "vars_in_scope": [
+        "book_id",
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 150,
+      "end_line": 150,
+      "function": "fetch_orders",
+      "class_name": "ApiClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "book_id",
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 150,
+      "end_line": 150,
+      "function": "fetch_orders",
+      "class_name": "ApiClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "book_id",
+        "data",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 153,
+      "end_line": 153,
+      "function": "push_summary",
+      "class_name": "ApiClient",
+      "code": "def push_summary(self, book_id: str, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "book_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 158,
+      "end_line": 158,
+      "function": "push_summary",
+      "class_name": "ApiClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "book_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 160,
+      "end_line": 160,
+      "function": "push_summary",
+      "class_name": "ApiClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "book_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "push_summary",
+      "class_name": "ApiClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "book_id",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 164,
+      "end_line": 164,
+      "function": "load_order_book",
+      "class_name": null,
+      "code": "def load_order_book(path: Path) -> OrderBook:",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 166,
+      "end_line": 166,
+      "function": "load_order_book",
+      "class_name": null,
+      "code": "return OrderBook.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 168,
+      "end_line": 168,
+      "function": "load_order_book",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 168,
+      "end_line": 168,
+      "function": "load_order_book",
+      "class_name": null,
+      "code": "return OrderBook(book_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 170,
+      "end_line": 170,
+      "function": "load_order_book",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 170,
+      "end_line": 170,
+      "function": "load_order_book",
+      "class_name": null,
+      "code": "return OrderBook(book_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 174,
+      "end_line": 174,
+      "function": "save_order_book",
+      "class_name": null,
+      "code": "def save_order_book(path: Path, book: OrderBook) -> None:",
+      "vars_in_scope": [
+        "book",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 180,
+      "end_line": 180,
+      "function": "save_order_book",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "book",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 184,
+      "end_line": 184,
+      "function": "save_order_book",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "book",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 188,
+      "end_line": 188,
+      "function": "summarize_orders",
+      "class_name": null,
+      "code": "def summarize_orders(book: OrderBook) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "book",
+        "count",
+        "open_count",
+        "orders",
+        "total_value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 190,
+      "end_line": 190,
+      "function": "summarize_orders",
+      "class_name": null,
+      "code": "return {'count': 0, 'open': 0, 'total_value': 0.0}",
+      "vars_in_scope": [
+        "book",
+        "count",
+        "open_count",
+        "orders",
+        "total_value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 194,
+      "end_line": 194,
+      "function": "summarize_orders",
+      "class_name": null,
+      "code": "return {'count': count, 'open': open_count, 'total_value': total_value}",
+      "vars_in_scope": [
+        "book",
+        "count",
+        "open_count",
+        "orders",
+        "total_value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 198,
+      "end_line": 198,
+      "function": "filter_large_orders",
+      "class_name": null,
+      "code": "def filter_large_orders(book: OrderBook, threshold: float = 100.0) -> List[Order]:",
+      "vars_in_scope": [
+        "book",
+        "result",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 202,
+      "end_line": 202,
+      "function": "filter_large_orders",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "book",
+        "result",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 206,
+      "end_line": 206,
+      "function": "merge_remote_orders",
+      "class_name": null,
+      "code": "def merge_remote_orders(book: OrderBook, remote_data: Optional[Dict[str, Any]]) -> int:",
+      "vars_in_scope": [
+        "added",
+        "book",
+        "remote",
+        "remote_data"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 207,
+      "end_line": 207,
+      "function": "merge_remote_orders",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "added",
+        "book",
+        "remote",
+        "remote_data"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 214,
+      "end_line": 214,
+      "function": "merge_remote_orders",
+      "class_name": null,
+      "code": "return added",
+      "vars_in_scope": [
+        "added",
+        "book",
+        "remote",
+        "remote_data"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 218,
+      "end_line": 218,
+      "function": "simulate_processing",
+      "class_name": null,
+      "code": "def simulate_processing(book: OrderBook, steps: int = 3) -> None:",
+      "vars_in_scope": [
+        "book",
+        "open_orders",
+        "step",
+        "steps"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 222,
+      "end_line": 222,
+      "function": "simulate_processing",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "book",
+        "open_orders",
+        "step",
+        "steps"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 230,
+      "end_line": 230,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "book",
+        "book_path",
+        "client",
+        "data_dir",
+        "remote",
+        "report_path",
+        "summary"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 248,
+      "end_line": 248,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "book",
+        "book_path",
+        "client",
+        "data_dir",
+        "remote",
+        "report_path",
+        "summary"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 248,
+      "end_line": 248,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "book",
+        "book_path",
+        "client",
+        "data_dir",
+        "remote",
+        "report_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 251,
+      "end_line": 251,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "book",
+        "book_path",
+        "client",
+        "data_dir",
+        "remote",
+        "report_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

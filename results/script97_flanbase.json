@@ -1,0 +1,365 @@
+{
+  "file": "script97.py",
+  "logs": [
+    {
+      "line": 19,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function is_recent')"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function is_recent')"
+    },
+    {
+      "line": 22,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function is_recent')"
+    },
+    {
+      "line": 25,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function score')"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function score')"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function score')"
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
+    },
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "line": 46,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "line": 53,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "line": 53,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "line": 62,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function load')"
+    },
+    {
+      "line": 63,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function load')"
+    },
+    {
+      "line": 73,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function load')"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function save')"
+    },
+    {
+      "line": 82,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function save')"
+    },
+    {
+      "line": 82,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function save')"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function add_record')"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function iter_recent')"
+    },
+    {
+      "line": 88,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function iter_recent')"
+    },
+    {
+      "line": 91,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function average_value')"
+    },
+    {
+      "line": 92,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function average_value')"
+    },
+    {
+      "line": 93,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function average_value')"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function _url')"
+    },
+    {
+      "line": 103,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function _url')"
+    },
+    {
+      "line": 104,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function _url')"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function get_json')"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_json')"
+    },
+    {
+      "line": 115,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_json')"
+    },
+    {
+      "line": 116,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_json')"
+    },
+    {
+      "line": 118,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function get_json')"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function get_json')"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote_records')"
+    },
+    {
+      "line": 123,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote_records')"
+    },
+    {
+      "line": 124,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote_records')"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function parse_records')"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function parse_records')"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function filter_by_tag')"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function filter_by_tag')"
+    },
+    {
+      "line": 140,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function filter_by_tag')"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function compute_summary')"
+    },
+    {
+      "line": 146,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function compute_summary')"
+    },
+    {
+      "line": 149,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function compute_summary')"
+    },
+    {
+      "line": 153,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function read_local_config')"
+    },
+    {
+      "line": 154,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function read_local_config')"
+    },
+    {
+      "line": 159,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function read_local_config')"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function read_local_config')"
+    },
+    {
+      "line": 162,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function read_local_config')"
+    },
+    {
+      "line": 162,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function read_local_config')"
+    },
+    {
+      "line": 166,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function write_report')"
+    },
+    {
+      "line": 171,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function write_report')"
+    },
+    {
+      "line": 171,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function write_report')"
+    },
+    {
+      "line": 175,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function sync_remote_data')"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function sync_remote_data')"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function sync_remote_data')"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function main')"
+    },
+    {
+      "line": 207,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function main')"
+    },
+    {
+      "line": 209,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function main')"
+    }
+  ]
+}

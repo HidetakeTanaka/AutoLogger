@@ -1,0 +1,102 @@
+{
+  "file": "script66.py",
+  "logs": [
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Reading.from_dict"
+    },
+    {
+      "line": 46,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to deserialize student in Reading.from_dict"
+    },
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Station.add_reading"
+    },
+    {
+      "line": 62,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Station.latest"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Station.average_temperature"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering WeatherClient.fetch_station_data"
+    },
+    {
+      "line": 110,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching station data in WeatherClient.fetch_station_data"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_station"
+    },
+    {
+      "line": 119,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load station, using fallback station"
+    },
+    {
+      "line": 123,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_station"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_station"
+    },
+    {
+      "line": 153,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_remote"
+    },
+    {
+      "line": 166,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_station"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 203,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Exiting main with error"
+    },
+    {
+      "line": 218,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Completed successfully, exiting with code 0 in main"
+    }
+  ]
+}
+

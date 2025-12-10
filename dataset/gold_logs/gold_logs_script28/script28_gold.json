@@ -1,0 +1,167 @@
+{
+  "file": "script28.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.get_product_info"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product info dict from Product.get_product_info"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.remove_product"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning success flag from Inventory.remove_product"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning failure flag from Inventory.remove_product"
+    },
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.get_inventory_value"
+    },
+    {
+      "line": 39,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning inventory total value from Inventory.get_inventory_value"
+    },
+    {
+      "line": 42,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.filter_by_category"
+    },
+    {
+      "line": 42,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered products list from Inventory.filter_by_category"
+    },
+    {
+      "line": 48,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.read_json"
+    },
+    {
+      "line": 50,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed JSON data from FileManager.read_json"
+    },
+    {
+      "line": 52,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read JSON file in FileManager.read_json"
+    },
+    {
+      "line": 52,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from FileManager.read_json after error"
+    },
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.write_json"
+    },
+    {
+      "line": 60,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write JSON file in FileManager.write_json"
+    },
+    {
+      "line": 66,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering APIClient.fetch_data"
+    },
+    {
+      "line": 69,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed response data from APIClient.fetch_data"
+    },
+    {
+      "line": 71,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch API data in APIClient.fetch_data"
+    },
+    {
+      "line": 71,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from APIClient.fetch_data after error"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_inventory"
+    },
+    {
+      "line": 80,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning loaded Inventory from load_inventory"
+    },
+    {
+      "line": 84,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_inventory"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering process_inventory"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering update_product_prices"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_api_data"
+    },
+    {
+      "line": 104,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning API data from fetch_api_data"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    }
+  ]
+}

@@ -11,7 +11,7 @@
       "line": 4,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Returning result: {result} for inputs x={x}, y={y}\")"
+      "message": "logging.info(f'Returning result: {result}')"
     }
   ]
 }

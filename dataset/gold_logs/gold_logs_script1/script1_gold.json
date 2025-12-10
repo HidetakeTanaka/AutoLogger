@@ -1,0 +1,95 @@
+{
+  "file": "script1.py",
+  "logs": [
+    {
+      "line": 6,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.__init__"
+    },
+    {
+      "line": 12,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.update_quantity"
+    },
+    {
+      "line": 16,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.update_price"
+    },
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.get_product_info"
+    },
+    {
+      "line": 20,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product info from Product.get_product_info"
+    },
+    {
+      "line": 25,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.__init__"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.add_product"
+    },
+    {
+      "line": 31,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.remove_product"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Removing product successfully in Inventory.remove_product"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product not found in Inventory.remove_product"
+    },
+    {
+      "line": 38,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.get_inventory_value"
+    },
+    {
+      "line": 39,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning inventory value in Inventory.get_inventory_value"
+    },
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.read_json"
+    },
+    {
+      "line": 46,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning JSON data from FileManager.read_json"
+    },
+    {
+      "line": 51,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error reading JSON data in FileManager.read_json"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "file": "script53.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with days={days} for product id={self.id}\")"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches() with query='{query}' for product {self}\")"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 56,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Product from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 65,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_product with product: {product}\")"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering find method with query: {query}\")"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_products with days={days}\")"
+    },
+    {
+      "line": 78,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Total inventory value calculated: {sum(p.price for p in self.products)}')"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Inventory.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing PricingClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with sku={sku}\")"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_remote_prices with SKUs: {list(skus)}\")"
+    },
+    {
+      "line": 117,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch remote prices from {url} for SKUs {skus}', exc_info=True)"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched remote prices for SKUs: {skus}, result count: {len(result)}')"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_inventory with path: {path}\")"
+    },
+    {
+      "line": 127,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded inventory from {path} with {len(data)} items')"
+    },
+    {
+      "line": 129,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load inventory from {path} with data: {data}', exc_info=True)"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_inventory with path={path} and inventory items count={len(inv.items)}\")"
+    },
+    {
+      "line": 141,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save inventory to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 146,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting apply_price_updates for inventory with {len(prices)} price entries.\")"
+    },
+    {
+      "line": 155,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Price updates applied: {updated} items updated at {now}')"
+    },
+    {
+      "line": 159,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_inventory with inventory containing {len(inv.items)} items\")"
+    },
+    {
+      "line": 164,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summarized inventory for store {inv.store_id}: total={total}, avg_price={avg_price}, recent={recent}\")"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered pick_random_product with cheap_only={cheap_only}, inventory size={len(inv.products)}\")"
+    },
+    {
+      "line": 181,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Selected random product from {len(candidates)} candidates\")"
+    },
+    {
+      "line": 185,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 204,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

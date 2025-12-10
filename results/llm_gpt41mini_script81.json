@@ -1,0 +1,167 @@
+{
+  "file": "script81.py",
+  "logs": [
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with hours={hours}\")"
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_kind with query='{query}'\")"
+    },
+    {
+      "line": 50,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Workout.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 63,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Workout from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_workout with workout: {workout}\")"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_by_kind with query='{query}'\")"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_workouts with hours={hours}\")"
+    },
+    {
+      "line": 83,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering total_calories with day={day}\")"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'RecommendationClient initialized with base_url={base_url} and timeout={timeout}')"
+    },
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with kind={kind}\")"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_suggestions with kind={kind}\")"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning {len(items)} items from fetch_suggestions with kind={kind}')"
+    },
+    {
+      "line": 127,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Error fetching suggestions from {url} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 131,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_log with path: {path}\")"
+    },
+    {
+      "line": 138,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load log from {path} with data: {data}')"
+    },
+    {
+      "line": 142,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_log with path={path} and log={log}\")"
+    },
+    {
+      "line": 148,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save log to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 152,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save log to {path} with payload {payload}')"
+    },
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting compute_daily_summary for day: {day} with log id: {id(log)}\")"
+    },
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_day with target_calories={target_calories}\")"
+    },
+    {
+      "line": 188,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation day complete: added={added}, base={base}, target_calories={target_calories}, total={total}, w={w}')"
+    },
+    {
+      "line": 192,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered merge_remote_recs with {len(recs) if recs else 0} records to merge into log id {log.id}\")"
+    },
+    {
+      "line": 204,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merge completed with {len(added)} records added.')"
+    },
+    {
+      "line": 208,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize function with log: {log}\")"
+    },
+    {
+      "line": 219,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 250,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

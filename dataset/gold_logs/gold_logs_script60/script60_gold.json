@@ -1,0 +1,90 @@
+{
+  "file": "script60.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.is_recent"
+    },
+    {
+      "line": 50,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning article instance from Article.from_dict"
+    },
+    {
+      "line": 59,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse data in Article.from_dict"
+    },
+    {
+      "line": 113,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HttpClient.fetch_feed"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning response body from HttpClient.fetch_feed"
+    },
+    {
+      "line": 120,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error in HttpClient.fetch_feed"
+    },
+    {
+      "line": 124,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_feed"
+    },
+    {
+      "line": 126,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning loaded feed from load_feed"
+    },
+    {
+      "line": 128,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load feed in load_feed"
+    },
+    {
+      "line": 148,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_feed"
+    },
+    {
+      "line": 153,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning aggregated statistics from summarize_feed"
+    },
+    {
+      "line": 197,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 213,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled error in metrics pipeline in main"
+    },
+    {
+      "line": 216,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Completed successfully with code 0 in main"
+    }
+  ]
+}
+

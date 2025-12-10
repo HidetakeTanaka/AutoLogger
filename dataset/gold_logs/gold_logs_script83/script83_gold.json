@@ -1,0 +1,299 @@
+{
+  "file": "script83.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering StudentSession.is_recent"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from StudentSession.is_recent"
+    },
+    {
+      "line": 25,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from StudentSession.is_recent"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering StudentSession.matches_tag"
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result from StudentSession.matches_tag"
+    },
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering StudentSession.to_dict"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized student session from StudentSession.to_dict"
+    },
+    {
+      "line": 47,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering StudentSession.from_dict"
+    },
+    {
+      "line": 59,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse student session in StudentSession.from_dict"
+    },
+    {
+      "line": 59,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from StudentSession.from_dict"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering CourseInfo.matches"
+    },
+    {
+      "line": 76,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning match result from CourseInfo.matches"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering CourseInfo.to_dict"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized course info from CourseInfo.to_dict"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering CourseInfo.from_dict"
+    },
+    {
+      "line": 100,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse course info in CourseInfo.from_dict"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from CourseInfo.from_dict"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProgressStore.add_session"
+    },
+    {
+      "line": 113,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProgressStore.total_minutes"
+    },
+    {
+      "line": 115,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning total minutes from ProgressStore.total_minutes"
+    },
+    {
+      "line": 118,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProgressStore.recent_sessions"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered recent sessions from ProgressStore.recent_sessions"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProgressStore.to_dict"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized progress store from ProgressStore.to_dict"
+    },
+    {
+      "line": 129,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProgressStore.from_dict"
+    },
+    {
+      "line": 138,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning ProgressStore instance from ProgressStore.from_dict"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.__init__"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient._url"
+    },
+    {
+      "line": 147,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL from RecommendationClient._url"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.fetch_recommendations"
+    },
+    {
+      "line": 163,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch recommendations in RecommendationClient.fetch_recommendations"
+    },
+    {
+      "line": 161,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fetched recommendation items from RecommendationClient.fetch_recommendations"
+    },
+    {
+      "line": 167,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_store"
+    },
+    {
+      "line": 174,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load store in load_store"
+    },
+    {
+      "line": 174,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback ProgressStore in load_store"
+    },
+    {
+      "line": 178,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_store"
+    },
+    {
+      "line": 184,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save store in save_store"
+    },
+    {
+      "line": 184,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Aborting save_store after failure"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_course_totals"
+    },
+    {
+      "line": 191,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning course totals from compute_course_totals"
+    },
+    {
+      "line": 195,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering apply_recommendations"
+    },
+    {
+      "line": 215,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning number of added recommended courses from apply_recommendations"
+    },
+    {
+      "line": 219,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_study"
+    },
+    {
+      "line": 236,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created study sessions from simulate_study"
+    },
+    {
+      "line": 240,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize"
+    },
+    {
+      "line": 244,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summary from summarize"
+    },
+    {
+      "line": 255,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 269,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 270,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code from main"
+    }
+  ]
+}

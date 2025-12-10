@@ -1,0 +1,209 @@
+{
+  "file": "script56.py",
+  "logs": [
+    {
+      "line": 29,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches with query: {query}\")"
+    },
+    {
+      "line": 51,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 66,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse dates in from_dict with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing TaskList with list_id={list_id}, name={name}\")"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add method with task: {task}\")"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering TaskList.get with task_id={task_id}\")"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Retrieved task with ID {task_id}')"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering search with query='{query}' in TaskList\")"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered TaskList.open_tasks method')"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing SyncClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with list_id={list_id}\")"
+    },
+    {
+      "line": 117,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_remote with list_id={list_id} and url={url}\")"
+    },
+    {
+      "line": 124,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch remote list {list_id} from {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 127,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_update with list_id={list_id} and payload keys={list(payload.keys())}\")"
+    },
+    {
+      "line": 134,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push update for list_id {list_id} to {url} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_task_list with path: {path}\")"
+    },
+    {
+      "line": 142,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load task list from {path} with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 144,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load task list from {path} with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 148,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_task_list with path={path} and task list of size={len(tl.tasks)}\")"
+    },
+    {
+      "line": 154,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save task list to {path}', exc_info=True)"
+    },
+    {
+      "line": 158,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save task list to {path}', exc_info=True)"
+    },
+    {
+      "line": 162,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_task_list with TaskList containing {len(tl.tasks)} tasks\")"
+    },
+    {
+      "line": 167,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Task summary: total={len(tasks)}, open={len(open_tasks)}, overdue={overdue}\")"
+    },
+    {
+      "line": 176,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_tasks with max_effort={max_effort}, only_open={only_open}, tag={tag}, tl={tl}\")"
+    },
+    {
+      "line": 185,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'filter_tasks returning {len(results)} results with max_effort={max_effort}, only_open={only_open}, tag={tag}')"
+    },
+    {
+      "line": 189,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered pick_next_task with prefer_short={prefer_short}, total tasks in list={len(tl)}\")"
+    },
+    {
+      "line": 196,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Picking next task from candidates: {candidates}')"
+    },
+    {
+      "line": 201,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered simulate_progress with TaskList of size {len(tl)} and days={days}\")"
+    },
+    {
+      "line": 217,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation complete after {len(history)} steps, total days simulated: {days}')"
+    },
+    {
+      "line": 221,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered merge_remote_tasks with local tasks count: {len(local)} and remote_data keys: {list(remote_data.keys()) if remote_data else 'None'}\")"
+    },
+    {
+      "line": 229,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merge completed with {len(added)} tasks added from remote data.')"
+    },
+    {
+      "line": 233,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir} and base_url={base_url}\")"
+    },
+    {
+      "line": 248,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

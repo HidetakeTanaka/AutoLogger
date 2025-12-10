@@ -1,0 +1,167 @@
+{
+  "file": "script80.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with hours={hours}\")"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_tag with tag={tag}\")"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering {cls.__name__}.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 54,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Response from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 63,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_response with response: {resp}\")"
+    },
+    {
+      "line": 66,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entering average_score method of SurveyState')"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering filter_by_tag with tag={tag}\")"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 91,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing AnalyticsClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 95,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_benchmark with survey_id={survey_id}\")"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched benchmark value: {value} for survey_id: {survey_id} from URL: {url}')"
+    },
+    {
+      "line": 109,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch benchmark for survey_id {survey_id} from {url} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'fetch_benchmark returning None for survey_id={survey_id} and url={url}')"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering send_summary with summary keys: {list(summary.keys())}\")"
+    },
+    {
+      "line": 123,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to send summary to {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 127,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_survey with path: {path}\")"
+    },
+    {
+      "line": 134,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load survey from {path}')"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_survey with path={path} and survey={survey}\")"
+    },
+    {
+      "line": 145,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save survey to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 149,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_tag_scores with state: {state}\")"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered detect_outliers with std_limit={std_limit}\")"
+    },
+    {
+      "line": 175,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered simulate_responses with users={len(users)}, questions={len(questions)}, days={days}\")"
+    },
+    {
+      "line": 192,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_state with state={state}, benchmark={benchmark}, tag_scores keys={list(tag_scores.keys())}\")"
+    },
+    {
+      "line": 204,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summarizing state for survey_id={state.survey_id}: average={avg}, outlier_count={len(outliers)}, response_count={len(state.responses)}\")"
+    },
+    {
+      "line": 215,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir} and base_url={base_url}\")"
+    },
+    {
+      "line": 238,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

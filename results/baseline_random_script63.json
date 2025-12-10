@@ -1,0 +1,134 @@
+{
+  "file": "script63.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 21,
+      "level": "WARNING",
+      "message": "Random log at line 21 in average",
+      "kind": "return",
+      "function": "average"
+    },
+    {
+      "line": 22,
+      "level": "INFO",
+      "message": "Random log at line 22 in average",
+      "kind": "return",
+      "function": "average"
+    },
+    {
+      "line": 31,
+      "level": "ERROR",
+      "message": "Random log at line 31 in matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Random log at line 33 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 62,
+      "level": "DEBUG",
+      "message": "Random log at line 62 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 67,
+      "level": "ERROR",
+      "message": "Random log at line 67 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 75,
+      "level": "WARNING",
+      "message": "Random log at line 75 in get_student",
+      "kind": "entry",
+      "function": "get_student"
+    },
+    {
+      "line": 75,
+      "level": "ERROR",
+      "message": "Random log at line 75 in get_student",
+      "kind": "return",
+      "function": "get_student"
+    },
+    {
+      "line": 78,
+      "level": "WARNING",
+      "message": "Random log at line 78 in all_students",
+      "kind": "entry",
+      "function": "all_students"
+    },
+    {
+      "line": 113,
+      "level": "INFO",
+      "message": "Random log at line 113 in fetch_benchmarks",
+      "kind": "return",
+      "function": "fetch_benchmarks"
+    },
+    {
+      "line": 134,
+      "level": "WARNING",
+      "message": "Random log at line 134 in push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 138,
+      "level": "WARNING",
+      "message": "Random log at line 138 in load_course",
+      "kind": "entry",
+      "function": "load_course"
+    },
+    {
+      "line": 143,
+      "level": "INFO",
+      "message": "Random log at line 143 in load_course",
+      "kind": "return",
+      "function": "load_course"
+    },
+    {
+      "line": 155,
+      "level": "ERROR",
+      "message": "Random log at line 155 in save_course",
+      "kind": "except",
+      "function": "save_course"
+    },
+    {
+      "line": 193,
+      "level": "DEBUG",
+      "message": "Random log at line 193 in simulate_study",
+      "kind": "entry",
+      "function": "simulate_study"
+    },
+    {
+      "line": 228,
+      "level": "WARNING",
+      "message": "Random log at line 228 in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 228,
+      "level": "ERROR",
+      "message": "Random log at line 228 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

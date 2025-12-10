@@ -1,0 +1,458 @@
+{
+  "file": "scripts/script28.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 9,
+      "end_line": 9,
+      "function": "__init__",
+      "class_name": "Product",
+      "code": "def __init__(self, name: str, category: str, price: float, stock: int) -> None:",
+      "vars_in_scope": [
+        "category",
+        "name",
+        "price",
+        "self",
+        "stock"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 15,
+      "end_line": 15,
+      "function": "update_stock",
+      "class_name": "Product",
+      "code": "def update_stock(self, quantity: int) -> None:",
+      "vars_in_scope": [
+        "quantity",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 18,
+      "end_line": 18,
+      "function": "update_price",
+      "class_name": "Product",
+      "code": "def update_price(self, new_price: float) -> None:",
+      "vars_in_scope": [
+        "new_price",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "get_product_info",
+      "class_name": "Product",
+      "code": "def get_product_info(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 21,
+      "end_line": 21,
+      "function": "get_product_info",
+      "class_name": "Product",
+      "code": "return {'name': self.name, 'category': self.category, 'price': self.price, 'stock': self.stock}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 26,
+      "end_line": 26,
+      "function": "__init__",
+      "class_name": "Inventory",
+      "code": "def __init__(self) -> None:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 29,
+      "end_line": 29,
+      "function": "add_product",
+      "class_name": "Inventory",
+      "code": "def add_product(self, product: Product) -> None:",
+      "vars_in_scope": [
+        "product",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 32,
+      "end_line": 32,
+      "function": "remove_product",
+      "class_name": "Inventory",
+      "code": "def remove_product(self, product_name: str) -> bool:",
+      "vars_in_scope": [
+        "product_name",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "remove_product",
+      "class_name": "Inventory",
+      "code": "return True",
+      "vars_in_scope": [
+        "product_name",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 36,
+      "end_line": 36,
+      "function": "remove_product",
+      "class_name": "Inventory",
+      "code": "return False",
+      "vars_in_scope": [
+        "product_name",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 39,
+      "end_line": 39,
+      "function": "get_inventory_value",
+      "class_name": "Inventory",
+      "code": "def get_inventory_value(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 39,
+      "end_line": 39,
+      "function": "get_inventory_value",
+      "class_name": "Inventory",
+      "code": "return sum((product.price * product.stock for product in self.products))",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 42,
+      "end_line": 42,
+      "function": "filter_by_category",
+      "class_name": "Inventory",
+      "code": "def filter_by_category(self, category: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "category",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 42,
+      "end_line": 42,
+      "function": "filter_by_category",
+      "class_name": "Inventory",
+      "code": "return [product.get_product_info() for product in self.products if product.category == category]",
+      "vars_in_scope": [
+        "category",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 48,
+      "end_line": 48,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "def read_json(file_path: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 50,
+      "end_line": 50,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return json.load(file)",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 52,
+      "end_line": 52,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 52,
+      "end_line": 52,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return []",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 56,
+      "end_line": 56,
+      "function": "write_json",
+      "class_name": "FileManager",
+      "code": "def write_json(file_path: str, data: List[Dict[str, Any]]) -> None:",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 60,
+      "end_line": 60,
+      "function": "write_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 66,
+      "end_line": 66,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "def fetch_data(url: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 69,
+      "end_line": 69,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "return response.json()",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 71,
+      "end_line": 71,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 71,
+      "end_line": 71,
+      "function": "fetch_data",
+      "class_name": "APIClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "response",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 75,
+      "end_line": 75,
+      "function": "load_inventory",
+      "class_name": null,
+      "code": "def load_inventory(file_path: str) -> Inventory:",
+      "vars_in_scope": [
+        "file_path",
+        "inventory",
+        "product",
+        "product_data"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 80,
+      "end_line": 80,
+      "function": "load_inventory",
+      "class_name": null,
+      "code": "return inventory",
+      "vars_in_scope": [
+        "file_path",
+        "inventory",
+        "product",
+        "product_data"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 84,
+      "end_line": 84,
+      "function": "save_inventory",
+      "class_name": null,
+      "code": "def save_inventory(inventory: Inventory, file_path: str) -> None:",
+      "vars_in_scope": [
+        "file_path",
+        "inventory",
+        "product_data"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 89,
+      "end_line": 89,
+      "function": "process_inventory",
+      "class_name": null,
+      "code": "def process_inventory(input_file: str, output_file: str, category: str) -> None:",
+      "vars_in_scope": [
+        "category",
+        "filtered_products",
+        "input_file",
+        "inventory",
+        "output_file",
+        "total_value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 98,
+      "end_line": 98,
+      "function": "update_product_prices",
+      "class_name": null,
+      "code": "def update_product_prices(inventory: Inventory, price_increase_percentage: float) -> None:",
+      "vars_in_scope": [
+        "inventory",
+        "new_price",
+        "price_increase_percentage"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 104,
+      "end_line": 104,
+      "function": "fetch_api_data",
+      "class_name": null,
+      "code": "def fetch_api_data(url: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 104,
+      "end_line": 104,
+      "function": "fetch_api_data",
+      "class_name": null,
+      "code": "return APIClient.fetch_data(url)",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 108,
+      "end_line": 108,
+      "function": "main",
+      "class_name": null,
+      "code": "def main() -> None:",
+      "vars_in_scope": [
+        "api_data",
+        "api_url",
+        "category",
+        "input_file",
+        "output_file"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    }
+  ]
+}

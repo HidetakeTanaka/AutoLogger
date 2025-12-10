@@ -1,0 +1,203 @@
+{
+  "file": "script87.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with hours={hours}\")"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_tag with query='{query}'\")"
+    },
+    {
+      "line": 47,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering WorkoutSession.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 59,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create WorkoutSession from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering needs_update with ref_hours={ref_hours} for user {self}\")"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 95,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create UserProfile from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_session with session: {session}\")"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering total_calories with day={day}\")"
+    },
+    {
+      "line": 113,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Total calories for day {self.day}: {sum(s.calories for s in self.sessions)}')"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_sessions with hours={hours}\")"
+    },
+    {
+      "line": 132,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'RecommendationClient initialized with base_url={base_url} and timeout={timeout}')"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_plan with user_id={user_id}\")"
+    },
+    {
+      "line": 162,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch plan for user_id={user_id} from url={url}', exc_info=True)"
+    },
+    {
+      "line": 166,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch plan for user_id {user_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_state with path: {path}\")"
+    },
+    {
+      "line": 178,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load state from {path}')"
+    },
+    {
+      "line": 180,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load state from {path}')"
+    },
+    {
+      "line": 184,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_state with path={path} and state={state}\")"
+    },
+    {
+      "line": 190,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save state to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 190,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'State saved successfully to {path}')"
+    },
+    {
+      "line": 194,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_daily_stats with day={day}\")"
+    },
+    {
+      "line": 199,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Computed daily stats for {day.isoformat()}: calories={total}, goal={goal}, met_goal={met}, recent_sessions_count={len(recent)}\")"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Daily stats computed for {day.isoformat()}: calories={total}, goal={goal}, met_goal={met}, recent_sessions_count={len(recent)}\")"
+    },
+    {
+      "line": 218,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering apply_recommendation with state={state} and plan={plan}\")"
+    },
+    {
+      "line": 241,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Recommendation applied, created: {created}')"
+    },
+    {
+      "line": 245,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_workouts with days={days} and initial state={state}\")"
+    },
+    {
+      "line": 263,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulated workouts created: {created} for {days} days with {sessions_today} sessions today.')"
+    },
+    {
+      "line": 267,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_state with state={state}, remote_goal={remote_goal}\")"
+    },
+    {
+      "line": 288,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 310,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

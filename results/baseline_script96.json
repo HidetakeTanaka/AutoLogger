@@ -1,0 +1,468 @@
+{
+  "file": "script96.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 28,
+      "level": "DEBUG",
+      "message": "Entering matches_category",
+      "kind": "entry",
+      "function": "matches_category"
+    },
+    {
+      "line": 30,
+      "level": "INFO",
+      "message": "Exiting matches_category",
+      "kind": "return",
+      "function": "matches_category"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting matches_category",
+      "kind": "return",
+      "function": "matches_category"
+    },
+    {
+      "line": 33,
+      "level": "INFO",
+      "message": "Exiting matches_category",
+      "kind": "return",
+      "function": "matches_category"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 36,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 47,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 54,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 63,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 63,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 74,
+      "level": "DEBUG",
+      "message": "Entering prefers",
+      "kind": "entry",
+      "function": "prefers"
+    },
+    {
+      "line": 75,
+      "level": "INFO",
+      "message": "Exiting prefers",
+      "kind": "return",
+      "function": "prefers"
+    },
+    {
+      "line": 76,
+      "level": "INFO",
+      "message": "Exiting prefers",
+      "kind": "return",
+      "function": "prefers"
+    },
+    {
+      "line": 79,
+      "level": "DEBUG",
+      "message": "Entering needs_refresh",
+      "kind": "entry",
+      "function": "needs_refresh"
+    },
+    {
+      "line": 80,
+      "level": "INFO",
+      "message": "Exiting needs_refresh",
+      "kind": "return",
+      "function": "needs_refresh"
+    },
+    {
+      "line": 83,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 83,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 92,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 99,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 106,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 106,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 116,
+      "level": "DEBUG",
+      "message": "Entering add_item",
+      "kind": "entry",
+      "function": "add_item"
+    },
+    {
+      "line": 119,
+      "level": "DEBUG",
+      "message": "Entering recent_items",
+      "kind": "entry",
+      "function": "recent_items"
+    },
+    {
+      "line": 119,
+      "level": "INFO",
+      "message": "Exiting recent_items",
+      "kind": "return",
+      "function": "recent_items"
+    },
+    {
+      "line": 122,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 122,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 130,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 140,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 145,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 149,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 150,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 151,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 154,
+      "level": "DEBUG",
+      "message": "Entering fetch_remote_prefs",
+      "kind": "entry",
+      "function": "fetch_remote_prefs"
+    },
+    {
+      "line": 156,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_prefs",
+      "kind": "return",
+      "function": "fetch_remote_prefs"
+    },
+    {
+      "line": 163,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_prefs",
+      "kind": "return",
+      "function": "fetch_remote_prefs"
+    },
+    {
+      "line": 164,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_prefs",
+      "kind": "return",
+      "function": "fetch_remote_prefs"
+    },
+    {
+      "line": 166,
+      "level": "ERROR",
+      "message": "Exception in fetch_remote_prefs",
+      "kind": "except",
+      "function": "fetch_remote_prefs"
+    },
+    {
+      "line": 166,
+      "level": "INFO",
+      "message": "Exiting fetch_remote_prefs",
+      "kind": "return",
+      "function": "fetch_remote_prefs"
+    },
+    {
+      "line": 170,
+      "level": "DEBUG",
+      "message": "Entering load_state",
+      "kind": "entry",
+      "function": "load_state"
+    },
+    {
+      "line": 173,
+      "level": "INFO",
+      "message": "Exiting load_state",
+      "kind": "return",
+      "function": "load_state"
+    },
+    {
+      "line": 175,
+      "level": "ERROR",
+      "message": "Exception in load_state",
+      "kind": "except",
+      "function": "load_state"
+    },
+    {
+      "line": 175,
+      "level": "INFO",
+      "message": "Exiting load_state",
+      "kind": "return",
+      "function": "load_state"
+    },
+    {
+      "line": 177,
+      "level": "ERROR",
+      "message": "Exception in load_state",
+      "kind": "except",
+      "function": "load_state"
+    },
+    {
+      "line": 177,
+      "level": "INFO",
+      "message": "Exiting load_state",
+      "kind": "return",
+      "function": "load_state"
+    },
+    {
+      "line": 181,
+      "level": "DEBUG",
+      "message": "Entering save_state",
+      "kind": "entry",
+      "function": "save_state"
+    },
+    {
+      "line": 187,
+      "level": "ERROR",
+      "message": "Exception in save_state",
+      "kind": "except",
+      "function": "save_state"
+    },
+    {
+      "line": 187,
+      "level": "INFO",
+      "message": "Exiting save_state",
+      "kind": "return",
+      "function": "save_state"
+    },
+    {
+      "line": 191,
+      "level": "DEBUG",
+      "message": "Entering compute_category_stats",
+      "kind": "entry",
+      "function": "compute_category_stats"
+    },
+    {
+      "line": 198,
+      "level": "INFO",
+      "message": "Exiting compute_category_stats",
+      "kind": "return",
+      "function": "compute_category_stats"
+    },
+    {
+      "line": 200,
+      "level": "INFO",
+      "message": "Exiting compute_category_stats",
+      "kind": "return",
+      "function": "compute_category_stats"
+    },
+    {
+      "line": 204,
+      "level": "DEBUG",
+      "message": "Entering apply_remote_prefs",
+      "kind": "entry",
+      "function": "apply_remote_prefs"
+    },
+    {
+      "line": 206,
+      "level": "INFO",
+      "message": "Exiting apply_remote_prefs",
+      "kind": "return",
+      "function": "apply_remote_prefs"
+    },
+    {
+      "line": 209,
+      "level": "INFO",
+      "message": "Exiting apply_remote_prefs",
+      "kind": "return",
+      "function": "apply_remote_prefs"
+    },
+    {
+      "line": 211,
+      "level": "INFO",
+      "message": "Exiting apply_remote_prefs",
+      "kind": "return",
+      "function": "apply_remote_prefs"
+    },
+    {
+      "line": 215,
+      "level": "DEBUG",
+      "message": "Entering simulate_items",
+      "kind": "entry",
+      "function": "simulate_items"
+    },
+    {
+      "line": 216,
+      "level": "INFO",
+      "message": "Exiting simulate_items",
+      "kind": "return",
+      "function": "simulate_items"
+    },
+    {
+      "line": 235,
+      "level": "INFO",
+      "message": "Exiting simulate_items",
+      "kind": "return",
+      "function": "simulate_items"
+    },
+    {
+      "line": 239,
+      "level": "DEBUG",
+      "message": "Entering summarize_state",
+      "kind": "entry",
+      "function": "summarize_state"
+    },
+    {
+      "line": 243,
+      "level": "INFO",
+      "message": "Exiting summarize_state",
+      "kind": "return",
+      "function": "summarize_state"
+    },
+    {
+      "line": 254,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 268,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 268,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 270,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

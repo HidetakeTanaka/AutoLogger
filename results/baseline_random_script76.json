@@ -1,0 +1,120 @@
+{
+  "file": "script76.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 24,
+      "level": "WARNING",
+      "message": "Random log at line 24 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Random log at line 26 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 41,
+      "level": "ERROR",
+      "message": "Random log at line 41 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 48,
+      "level": "DEBUG",
+      "message": "Random log at line 48 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 57,
+      "level": "DEBUG",
+      "message": "Random log at line 57 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 84,
+      "level": "DEBUG",
+      "message": "Random log at line 84 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 94,
+      "level": "ERROR",
+      "message": "Random log at line 94 in add_habit",
+      "kind": "entry",
+      "function": "add_habit"
+    },
+    {
+      "line": 101,
+      "level": "WARNING",
+      "message": "Random log at line 101 in filter_habits",
+      "kind": "entry",
+      "function": "filter_habits"
+    },
+    {
+      "line": 101,
+      "level": "ERROR",
+      "message": "Random log at line 101 in filter_habits",
+      "kind": "return",
+      "function": "filter_habits"
+    },
+    {
+      "line": 104,
+      "level": "WARNING",
+      "message": "Random log at line 104 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 150,
+      "level": "INFO",
+      "message": "Random log at line 150 in load_book",
+      "kind": "entry",
+      "function": "load_book"
+    },
+    {
+      "line": 176,
+      "level": "WARNING",
+      "message": "Random log at line 176 in compute_daily_totals",
+      "kind": "entry",
+      "function": "compute_daily_totals"
+    },
+    {
+      "line": 182,
+      "level": "WARNING",
+      "message": "Random log at line 182 in compute_daily_totals",
+      "kind": "return",
+      "function": "compute_daily_totals"
+    },
+    {
+      "line": 199,
+      "level": "INFO",
+      "message": "Random log at line 199 in compute_streaks",
+      "kind": "return",
+      "function": "compute_streaks"
+    },
+    {
+      "line": 204,
+      "level": "ERROR",
+      "message": "Random log at line 204 in summarize_book",
+      "kind": "return",
+      "function": "summarize_book"
+    },
+    {
+      "line": 257,
+      "level": "DEBUG",
+      "message": "Random log at line 257 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

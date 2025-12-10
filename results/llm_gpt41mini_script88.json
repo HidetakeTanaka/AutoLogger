@@ -1,0 +1,173 @@
+{
+  "file": "script88.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with minutes={minutes}\")"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_tag with query='{query}'\")"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 56,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse timestamp from raw data: {ts_raw}', exc_info=True)"
+    },
+    {
+      "line": 68,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'DeviceStatus is_stale check: last_seen={self.last_seen}, cutoff={cutoff}, result={self.last_seen < cutoff}')"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 90,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse DeviceStatus from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_reading with reading: {reading}\")"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering recent_readings with minutes={minutes}\")"
+    },
+    {
+      "line": 106,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering filter_metric with metric={metric}\")"
+    },
+    {
+      "line": 117,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 131,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing AlertClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_alerts with {len(alerts)} alerts\")"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Push alerts response status: {resp.status}, success: {200 <= resp.status < 300}')"
+    },
+    {
+      "line": 147,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push alerts to {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_state with path: {path}\")"
+    },
+    {
+      "line": 158,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load state from {path}')"
+    },
+    {
+      "line": 162,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_state with path={path} and state={state}\")"
+    },
+    {
+      "line": 168,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save state to {path} with payload {payload} and state {state}', exc_info=True)"
+    },
+    {
+      "line": 172,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered compute_stats with state: %s', state)"
+    },
+    {
+      "line": 184,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Computed stats: count={len(state.readings)}, avg={avg}, metrics={list(by_metric.keys())}\")"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_alerts with metric={metric}, limit={limit}, state={state}\")"
+    },
+    {
+      "line": 203,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered simulate_readings with count={count} and state={state}\")"
+    },
+    {
+      "line": 223,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Simulation complete: created {created} readings for {count} devices.')"
+    },
+    {
+      "line": 227,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_state with state: {state}\")"
+    },
+    {
+      "line": 230,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summarizing state for site_id={state.site_id}: devices={len(state.devices)}, online_devices={online}, stale_devices={stale}, reading_count={stats['count']}, avg_value={stats['avg']}\")"
+    },
+    {
+      "line": 241,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 272,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

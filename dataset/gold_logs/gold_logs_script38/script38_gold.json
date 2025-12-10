@@ -1,0 +1,323 @@
+{
+  "file": "script38.py",
+  "logs": [
+    {
+      "line": 19,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.is_valid"
+    },
+    {
+      "line": 20,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.is_valid returning False for invalid or unsupported reading"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.is_valid returning based on allowed unit set"
+    },
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorReading.to_dict"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SensorReading.to_dict returning serialized sensor reading"
+    },
+    {
+      "line": 40,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Device.add_reading"
+    },
+    {
+      "line": 41,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Device.add_reading finished processing reading"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Device.latest_value"
+    },
+    {
+      "line": 46,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Device.latest_value returning None because there are no readings"
+    },
+    {
+      "line": 47,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Device.latest_value returning most recent SensorReading"
+    },
+    {
+      "line": 50,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Device.to_dict"
+    },
+    {
+      "line": 50,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Device.to_dict returning serialized device with readings"
+    },
+    {
+      "line": 63,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Fleet.get_or_create"
+    },
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Fleet.get_or_create returning existing device from fleet"
+    },
+    {
+      "line": 67,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Fleet.get_or_create created new device and returning it"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Fleet.all_readings"
+    },
+    {
+      "line": 73,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Fleet.all_readings returning flattened list of readings from all devices"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Fleet.to_dict"
+    },
+    {
+      "line": 76,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Fleet.to_dict returning serialized fleet payload"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_config"
+    },
+    {
+      "line": 81,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning empty configuration as default"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning configuration loaded from JSON file"
+    },
+    {
+      "line": 86,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load configuration in load_config, falling back to empty config"
+    },
+    {
+      "line": 86,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning empty configuration after failure"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_remote_readings"
+    },
+    {
+      "line": 97,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Network error while fetching remote readings"
+    },
+    {
+      "line": 98,
+      "kind": "return",
+      "level": "INFO",
+      "message": "fetch_remote_readings returning empty list after exhausting retries"
+    },
+    {
+      "line": 105,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to decode or normalize remote readings"
+    },
+    {
+      "line": 105,
+      "kind": "return",
+      "level": "INFO",
+      "message": "fetch_remote_readings returning empty list after decode/normalize error"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "fetch_remote_readings returning normalized remote readings"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering read_local_cache"
+    },
+    {
+      "line": 115,
+      "kind": "return",
+      "level": "INFO",
+      "message": "read_local_cache returning empty list when cache is missing or disabled"
+    },
+    {
+      "line": 120,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to read local cache file in read_local_cache"
+    },
+    {
+      "line": 120,
+      "kind": "return",
+      "level": "INFO",
+      "message": "read_local_cache returning empty list after cache read failure"
+    },
+    {
+      "line": 124,
+      "kind": "return",
+      "level": "INFO",
+      "message": "read_local_cache returning normalized cached rows"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering normalize_row"
+    },
+    {
+      "line": 136,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while normalizing row to SensorReading"
+    },
+    {
+      "line": 136,
+      "kind": "return",
+      "level": "INFO",
+      "message": "normalize_row returning None after exception"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "INFO",
+      "message": "normalize_row returning None for invalid or incomplete row data"
+    },
+    {
+      "line": 140,
+      "kind": "return",
+      "level": "INFO",
+      "message": "normalize_row returning normalized SensorReading"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ingest_readings"
+    },
+    {
+      "line": 155,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_statistics"
+    },
+    {
+      "line": 156,
+      "kind": "return",
+      "level": "INFO",
+      "message": "compute_statistics returning zero statistics for empty readings list"
+    },
+    {
+      "line": 162,
+      "kind": "return",
+      "level": "INFO",
+      "message": "compute_statistics returning count, min, max and average for readings"
+    },
+    {
+      "line": 171,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering group_by_unit"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "group_by_unit returning per-unit aggregated statistics"
+    },
+    {
+      "line": 181,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_report"
+    },
+    {
+      "line": 192,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering select_recent"
+    },
+    {
+      "line": 193,
+      "kind": "return",
+      "level": "INFO",
+      "message": "select_recent returning empty list when there are no readings"
+    },
+    {
+      "line": 195,
+      "kind": "return",
+      "level": "INFO",
+      "message": "select_recent returning readings newer than threshold"
+    },
+    {
+      "line": 199,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 216,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 after configuration or I/O failure"
+    },
+    {
+      "line": 226,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successful processing"
+    }
+  ]
+}

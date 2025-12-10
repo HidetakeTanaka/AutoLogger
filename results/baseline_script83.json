@@ -1,0 +1,468 @@
+{
+  "file": "script83.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 22,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 28,
+      "level": "DEBUG",
+      "message": "Entering matches_tag",
+      "kind": "entry",
+      "function": "matches_tag"
+    },
+    {
+      "line": 30,
+      "level": "INFO",
+      "message": "Exiting matches_tag",
+      "kind": "return",
+      "function": "matches_tag"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting matches_tag",
+      "kind": "return",
+      "function": "matches_tag"
+    },
+    {
+      "line": 33,
+      "level": "INFO",
+      "message": "Exiting matches_tag",
+      "kind": "return",
+      "function": "matches_tag"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 36,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 47,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 50,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 59,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 59,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 71,
+      "level": "DEBUG",
+      "message": "Entering matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 73,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 75,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 76,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 79,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 79,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 89,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 92,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 100,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 100,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 110,
+      "level": "DEBUG",
+      "message": "Entering add_session",
+      "kind": "entry",
+      "function": "add_session"
+    },
+    {
+      "line": 113,
+      "level": "DEBUG",
+      "message": "Entering total_minutes",
+      "kind": "entry",
+      "function": "total_minutes"
+    },
+    {
+      "line": 114,
+      "level": "INFO",
+      "message": "Exiting total_minutes",
+      "kind": "return",
+      "function": "total_minutes"
+    },
+    {
+      "line": 115,
+      "level": "INFO",
+      "message": "Exiting total_minutes",
+      "kind": "return",
+      "function": "total_minutes"
+    },
+    {
+      "line": 118,
+      "level": "DEBUG",
+      "message": "Entering recent_sessions",
+      "kind": "entry",
+      "function": "recent_sessions"
+    },
+    {
+      "line": 118,
+      "level": "INFO",
+      "message": "Exiting recent_sessions",
+      "kind": "return",
+      "function": "recent_sessions"
+    },
+    {
+      "line": 121,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 121,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 129,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 138,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 143,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 147,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 147,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 150,
+      "level": "DEBUG",
+      "message": "Entering fetch_recommendations",
+      "kind": "entry",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 151,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 160,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 161,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 163,
+      "level": "ERROR",
+      "message": "Exception in fetch_recommendations",
+      "kind": "except",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 163,
+      "level": "INFO",
+      "message": "Exiting fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 167,
+      "level": "DEBUG",
+      "message": "Entering load_store",
+      "kind": "entry",
+      "function": "load_store"
+    },
+    {
+      "line": 170,
+      "level": "INFO",
+      "message": "Exiting load_store",
+      "kind": "return",
+      "function": "load_store"
+    },
+    {
+      "line": 172,
+      "level": "ERROR",
+      "message": "Exception in load_store",
+      "kind": "except",
+      "function": "load_store"
+    },
+    {
+      "line": 172,
+      "level": "INFO",
+      "message": "Exiting load_store",
+      "kind": "return",
+      "function": "load_store"
+    },
+    {
+      "line": 174,
+      "level": "ERROR",
+      "message": "Exception in load_store",
+      "kind": "except",
+      "function": "load_store"
+    },
+    {
+      "line": 174,
+      "level": "INFO",
+      "message": "Exiting load_store",
+      "kind": "return",
+      "function": "load_store"
+    },
+    {
+      "line": 178,
+      "level": "DEBUG",
+      "message": "Entering save_store",
+      "kind": "entry",
+      "function": "save_store"
+    },
+    {
+      "line": 184,
+      "level": "ERROR",
+      "message": "Exception in save_store",
+      "kind": "except",
+      "function": "save_store"
+    },
+    {
+      "line": 184,
+      "level": "INFO",
+      "message": "Exiting save_store",
+      "kind": "return",
+      "function": "save_store"
+    },
+    {
+      "line": 188,
+      "level": "DEBUG",
+      "message": "Entering compute_course_totals",
+      "kind": "entry",
+      "function": "compute_course_totals"
+    },
+    {
+      "line": 191,
+      "level": "INFO",
+      "message": "Exiting compute_course_totals",
+      "kind": "return",
+      "function": "compute_course_totals"
+    },
+    {
+      "line": 195,
+      "level": "DEBUG",
+      "message": "Entering apply_recommendations",
+      "kind": "entry",
+      "function": "apply_recommendations"
+    },
+    {
+      "line": 196,
+      "level": "INFO",
+      "message": "Exiting apply_recommendations",
+      "kind": "return",
+      "function": "apply_recommendations"
+    },
+    {
+      "line": 215,
+      "level": "INFO",
+      "message": "Exiting apply_recommendations",
+      "kind": "return",
+      "function": "apply_recommendations"
+    },
+    {
+      "line": 219,
+      "level": "DEBUG",
+      "message": "Entering simulate_study",
+      "kind": "entry",
+      "function": "simulate_study"
+    },
+    {
+      "line": 220,
+      "level": "INFO",
+      "message": "Exiting simulate_study",
+      "kind": "return",
+      "function": "simulate_study"
+    },
+    {
+      "line": 236,
+      "level": "INFO",
+      "message": "Exiting simulate_study",
+      "kind": "return",
+      "function": "simulate_study"
+    },
+    {
+      "line": 240,
+      "level": "DEBUG",
+      "message": "Entering summarize",
+      "kind": "entry",
+      "function": "summarize"
+    },
+    {
+      "line": 242,
+      "level": "INFO",
+      "message": "Exiting summarize",
+      "kind": "return",
+      "function": "summarize"
+    },
+    {
+      "line": 244,
+      "level": "INFO",
+      "message": "Exiting summarize",
+      "kind": "return",
+      "function": "summarize"
+    },
+    {
+      "line": 255,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 269,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 269,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 270,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

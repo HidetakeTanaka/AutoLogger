@@ -1,0 +1,403 @@
+{
+  "file": "script50.py",
+  "logs": [
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing Note instance with id, title, and tags"
+    },
+    {
+      "line": 25,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Note.is_recent"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.is_recent returning False because note is not within recent window"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.is_recent returning result based on created timestamp and days window"
+    },
+
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Note.matches_query"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.matches_query returning True due to match in title"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.matches_query returning True due to match in content"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.matches_query returning True due to match in note id or metadata"
+    },
+    {
+      "line": 37,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.matches_query returning True due to match in tags"
+    },
+
+    {
+      "line": 40,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Note.to_dict"
+    },
+    {
+      "line": 40,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.to_dict returning serialized note dictionary"
+    },
+
+    {
+      "line": 50,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Note.from_dict"
+    },
+    {
+      "line": 57,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.from_dict created Note instance from raw dictionary"
+    },
+    {
+      "line": 65,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Note.from_dict failed to parse raw note payload"
+    },
+    {
+      "line": 65,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Note.from_dict returning None after parse error"
+    },
+
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing Notebook with id and owner"
+    },
+
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Notebook.add to add or replace a note"
+    },
+
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Notebook.get"
+    },
+    {
+      "line": 78,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Notebook.get returning note for given id or None if missing"
+    },
+
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Notebook.all"
+    },
+    {
+      "line": 81,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Notebook.all returning list of all notes"
+    },
+
+    {
+      "line": 84,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Notebook.search with query and recent_days filter"
+    },
+    {
+      "line": 91,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Notebook.search returning filtered notes matching query and recency"
+    },
+
+    {
+      "line": 94,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Notebook.to_dict"
+    },
+    {
+      "line": 94,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Notebook.to_dict returning serialized notebook with notes"
+    },
+
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Notebook.from_dict"
+    },
+    {
+      "line": 110,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Notebook.from_dict returning reconstructed Notebook from raw data"
+    },
+
+    {
+      "line": 115,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing SyncClient with base URL and timeout"
+    },
+
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient._url"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient._url returning composed sync endpoint URL"
+    },
+
+    {
+      "line": 124,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.fetch_remote_notebook"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.fetch_remote_notebook returning None because base URL or notebook_id is not configured"
+    },
+    {
+      "line": 131,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "SyncClient.fetch_remote_notebook encountered network or HTTP error"
+    },
+    {
+      "line": 131,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.fetch_remote_notebook returning None after request error"
+    },
+    {
+      "line": 133,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "SyncClient.fetch_remote_notebook failed to decode or parse response body"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.fetch_remote_notebook returning None after parse error"
+    },
+    {
+      "line": 135,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.fetch_remote_notebook returning decoded remote notebook payload"
+    },
+    {
+      "line": 137,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "SyncClient.fetch_remote_notebook encountered unexpected error while processing response"
+    },
+    {
+      "line": 137,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.fetch_remote_notebook returning None after unexpected error"
+    },
+
+    {
+      "line": 140,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.push_notebook"
+    },
+    {
+      "line": 141,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.push_notebook returning False because request could not be initiated"
+    },
+    {
+      "line": 150,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "SyncClient.push_notebook encountered error while sending or reading response"
+    },
+    {
+      "line": 150,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.push_notebook returning False after error"
+    },
+    {
+      "line": 151,
+      "kind": "return",
+      "level": "INFO",
+      "message": "SyncClient.push_notebook returning success flag based on HTTP status code"
+    },
+
+    {
+      "line": 155,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_notebook"
+    },
+    {
+      "line": 156,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_notebook returning empty local Notebook as default"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_notebook returning Notebook loaded from JSON file"
+    },
+    {
+      "line": 162,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_notebook failed to read or parse notebook file"
+    },
+    {
+      "line": 162,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_notebook returning default local Notebook after error"
+    },
+
+    {
+      "line": 166,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_notebook"
+    },
+    {
+      "line": 173,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "save_notebook encountered error while writing notebook to temporary file"
+    },
+    {
+      "line": 177,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "save_notebook encountered error while moving notebook file into place"
+    },
+
+    {
+      "line": 181,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_tags"
+    },
+    {
+      "line": 190,
+      "kind": "return",
+      "level": "INFO",
+      "message": "summarize_tags returning per-tag note counts"
+    },
+
+    {
+      "line": 194,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_notebooks"
+    },
+    {
+      "line": 200,
+      "kind": "return",
+      "level": "INFO",
+      "message": "merge_notebooks returning merged Notebook combining local and remote notes"
+    },
+
+    {
+      "line": 204,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering pick_random_note"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "pick_random_note returning None because no candidate notes are available"
+    },
+    {
+      "line": 210,
+      "kind": "return",
+      "level": "INFO",
+      "message": "pick_random_note returning randomly chosen note from candidates"
+    },
+
+    {
+      "line": 214,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main for notebook sync and reporting workflow"
+    },
+    {
+      "line": 251,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 due to configuration or sync error"
+    },
+    {
+      "line": 253,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successfully syncing and saving notebook"
+    },
+    {
+      "line": 254,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after writing report and finishing workflow"
+    }
+  ]
+}

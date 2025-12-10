@@ -1,0 +1,179 @@
+{
+  "file": "script71.py",
+  "logs": [
+    {
+      "line": 31,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches method with query: {query}\")"
+    },
+    {
+      "line": 51,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 64,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Book from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_book with book: {book}\")"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_book with book_id={book_id}\")"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Retrieving book with ID: {book_id}')"
+    },
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering search with query='{query}'\")"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered finished_books method of UserLibrary')"
+    },
+    {
+      "line": 91,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Entering from_dict with raw data keys: {list(raw.keys())}')"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing RecommendationClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with user_id={user_id}\")"
+    },
+    {
+      "line": 104,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning recommendation URL for user_id={user_id}: {self.base_url}/users/{user_id}/recommendations.json')"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_recommendations with user_id={user_id}\")"
+    },
+    {
+      "line": 117,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning parsed recommendations for user_id={user_id} with {len(parsed)} items')"
+    },
+    {
+      "line": 119,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch recommendations for user_id={user_id} from url={url}', exc_info=True)"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_library with path: {path}\")"
+    },
+    {
+      "line": 127,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load library from path: {path}')"
+    },
+    {
+      "line": 129,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load library from path: {path}')"
+    },
+    {
+      "line": 132,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_library with path={path} and library={lib}\")"
+    },
+    {
+      "line": 140,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save library at {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 144,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save library at {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_stats with library containing {len(lib.books)} books\")"
+    },
+    {
+      "line": 152,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Computed stats: count={len(books)}, finished={finished}, avg_progress={avg}\")"
+    },
+    {
+      "line": 155,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_reading with {sessions} sessions on library {lib}\")"
+    },
+    {
+      "line": 178,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering apply_recommendations with {len(recs) if recs else 0} recommendations and library {lib}\")"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Recommendations applied: {added} for book {book}')"
+    },
+    {
+      "line": 192,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 209,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    },
+    {
+      "line": 211,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

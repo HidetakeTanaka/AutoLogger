@@ -1,0 +1,1065 @@
+{
+  "file": "scripts\\script85.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_recent",
+      "class_name": "Review",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_recent",
+      "class_name": "Review",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "Review",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches_tag",
+      "class_name": "Review",
+      "code": "def matches_tag(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches_tag",
+      "class_name": "Review",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "matches_tag",
+      "class_name": "Review",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches_tag",
+      "class_name": "Review",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "Review",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_dict",
+      "class_name": "Review",
+      "code": "return {'user_id': self.user_id, 'book_id': self.book_id, 'rating': self.rating, 'created_at': self.created_at.isoformat(), 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 45,
+      "end_line": 45,
+      "function": "from_dict",
+      "class_name": "Review",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Review\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 52,
+      "end_line": 52,
+      "function": "from_dict",
+      "class_name": "Review",
+      "code": "return cls(user_id=str(raw.get('user_id', '')), book_id=str(raw.get('book_id', '')), rating=float(raw.get('rating', 0.0)), created_at=ts, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 60,
+      "end_line": 60,
+      "function": "from_dict",
+      "class_name": "Review",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 60,
+      "end_line": 60,
+      "function": "from_dict",
+      "class_name": "Review",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 69,
+      "end_line": 69,
+      "function": "add_review",
+      "class_name": "LibraryState",
+      "code": "def add_review(self, review: Review) -> None:",
+      "vars_in_scope": [
+        "review",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "average_rating",
+      "class_name": "LibraryState",
+      "code": "def average_rating(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 73,
+      "end_line": 73,
+      "function": "average_rating",
+      "class_name": "LibraryState",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 74,
+      "end_line": 74,
+      "function": "average_rating",
+      "class_name": "LibraryState",
+      "code": "return sum((r.rating for r in self.reviews)) / len(self.reviews)",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 77,
+      "end_line": 77,
+      "function": "filter_by_tag",
+      "class_name": "LibraryState",
+      "code": "def filter_by_tag(self, tag: str) -> List[Review]:",
+      "vars_in_scope": [
+        "self",
+        "tag"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 77,
+      "end_line": 77,
+      "function": "filter_by_tag",
+      "class_name": "LibraryState",
+      "code": "return [r for r in self.reviews if r.matches_tag(tag)]",
+      "vars_in_scope": [
+        "self",
+        "tag"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 80,
+      "end_line": 80,
+      "function": "to_dict",
+      "class_name": "LibraryState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 80,
+      "end_line": 80,
+      "function": "to_dict",
+      "class_name": "LibraryState",
+      "code": "return {'library_id': self.library_id, 'reviews': [r.to_dict() for r in self.reviews]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 87,
+      "end_line": 87,
+      "function": "from_dict",
+      "class_name": "LibraryState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"LibraryState\":",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "rev",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 92,
+      "end_line": 92,
+      "function": "from_dict",
+      "class_name": "LibraryState",
+      "code": "return state",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "rev",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 97,
+      "end_line": 97,
+      "function": "__init__",
+      "class_name": "ApiClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 101,
+      "end_line": 101,
+      "function": "_url",
+      "class_name": "ApiClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 101,
+      "end_line": 101,
+      "function": "_url",
+      "class_name": "ApiClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 104,
+      "end_line": 104,
+      "function": "fetch_global_average",
+      "class_name": "ApiClient",
+      "code": "def fetch_global_average(self) -> Optional[float]:",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "url",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 105,
+      "end_line": 105,
+      "function": "fetch_global_average",
+      "class_name": "ApiClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "url",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 113,
+      "end_line": 113,
+      "function": "fetch_global_average",
+      "class_name": "ApiClient",
+      "code": "return float(value) if value is not None else None",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "url",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 115,
+      "end_line": 115,
+      "function": "fetch_global_average",
+      "class_name": "ApiClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "url",
+        "value"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "fetch_global_average",
+      "class_name": "ApiClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "url",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 118,
+      "end_line": 118,
+      "function": "send_summary",
+      "class_name": "ApiClient",
+      "code": "def send_summary(self, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 119,
+      "end_line": 119,
+      "function": "send_summary",
+      "class_name": "ApiClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 130,
+      "end_line": 130,
+      "function": "send_summary",
+      "class_name": "ApiClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 132,
+      "end_line": 132,
+      "function": "send_summary",
+      "class_name": "ApiClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 132,
+      "end_line": 132,
+      "function": "send_summary",
+      "class_name": "ApiClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 134,
+      "end_line": 134,
+      "function": "send_summary",
+      "class_name": "ApiClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 134,
+      "end_line": 134,
+      "function": "send_summary",
+      "class_name": "ApiClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 138,
+      "end_line": 138,
+      "function": "load_state",
+      "class_name": null,
+      "code": "def load_state(path: Path) -> LibraryState:",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return LibraryState(library_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 143,
+      "end_line": 143,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return LibraryState.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 145,
+      "end_line": 145,
+      "function": "load_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 145,
+      "end_line": 145,
+      "function": "load_state",
+      "class_name": null,
+      "code": "return LibraryState(library_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 149,
+      "end_line": 149,
+      "function": "save_state",
+      "class_name": null,
+      "code": "def save_state(path: Path, state: LibraryState) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 156,
+      "end_line": 156,
+      "function": "save_state",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 156,
+      "end_line": 156,
+      "function": "save_state",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "state",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 160,
+      "end_line": 160,
+      "function": "compute_tag_stats",
+      "class_name": null,
+      "code": "def compute_tag_stats(state: LibraryState) -> Dict[str, float]:",
+      "vars_in_scope": [
+        "counts",
+        "state",
+        "totals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 167,
+      "end_line": 167,
+      "function": "compute_tag_stats",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "counts",
+        "state",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 168,
+      "end_line": 168,
+      "function": "compute_tag_stats",
+      "class_name": null,
+      "code": "return {k: totals[k] / counts[k] for k in totals}",
+      "vars_in_scope": [
+        "counts",
+        "state",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 172,
+      "end_line": 172,
+      "function": "detect_outliers",
+      "class_name": null,
+      "code": "def detect_outliers(state: LibraryState, std_limit: float = 2.0) -> List[Review]:",
+      "vars_in_scope": [
+        "avg",
+        "ratings",
+        "state",
+        "std",
+        "std_limit",
+        "var"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 174,
+      "end_line": 174,
+      "function": "detect_outliers",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "avg",
+        "ratings",
+        "state",
+        "std",
+        "std_limit",
+        "var"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 179,
+      "end_line": 179,
+      "function": "detect_outliers",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "avg",
+        "ratings",
+        "state",
+        "std",
+        "std_limit",
+        "var"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 180,
+      "end_line": 180,
+      "function": "detect_outliers",
+      "class_name": null,
+      "code": "return [r for r in state.reviews if abs(r.rating - avg) > std_limit * std]",
+      "vars_in_scope": [
+        "avg",
+        "ratings",
+        "state",
+        "std",
+        "std_limit",
+        "var"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 186,
+      "end_line": 186,
+      "function": "simulate_reviews",
+      "class_name": null,
+      "code": "def simulate_reviews(",
+      "vars_in_scope": [
+        "b",
+        "books",
+        "created",
+        "rating",
+        "state",
+        "tags",
+        "total",
+        "ts",
+        "u",
+        "users"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 188,
+      "end_line": 188,
+      "function": "simulate_reviews",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "b",
+        "books",
+        "created",
+        "rating",
+        "state",
+        "tags",
+        "total",
+        "ts",
+        "u",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 197,
+      "end_line": 197,
+      "function": "simulate_reviews",
+      "class_name": null,
+      "code": "return created",
+      "vars_in_scope": [
+        "b",
+        "books",
+        "created",
+        "rating",
+        "state",
+        "tags",
+        "total",
+        "ts",
+        "u",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 201,
+      "end_line": 201,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "def summarize_state(state: LibraryState, global_avg: Optional[float]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "avg",
+        "global_avg",
+        "outliers",
+        "relation",
+        "state",
+        "tag_stats"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 212,
+      "end_line": 212,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "return {'library_id': state.library_id, 'average': avg, 'tag_stats': tag_stats, 'outlier_count': len(outliers), 'relation_to_global': relation, 'review_count': len(state.reviews)}",
+      "vars_in_scope": [
+        "avg",
+        "global_avg",
+        "outliers",
+        "relation",
+        "state",
+        "tag_stats"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 223,
+      "end_line": 223,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "global_avg",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 239,
+      "end_line": 239,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "global_avg",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 239,
+      "end_line": 239,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "global_avg",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 242,
+      "end_line": 242,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "global_avg",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 244,
+      "end_line": 244,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "global_avg",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 244,
+      "end_line": 244,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "global_avg",
+        "state",
+        "state_path",
+        "summary",
+        "summary_path",
+        "summary_payload"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

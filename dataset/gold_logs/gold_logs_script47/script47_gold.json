@@ -1,0 +1,371 @@
+{
+  "file": "script47.py",
+  "logs": [
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.is_discountable"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.is_discountable returning False because product does not meet any discount conditions"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.is_discountable returning True based on time-based discount rules"
+    },
+    {
+      "line": 25,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.is_discountable returning True based on product activity or inventory criteria"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.is_discountable returning True because product is tagged as promo"
+    },
+    {
+      "line": 29,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.matches_query"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.matches_query returning True based on product name match"
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.matches_query returning True based on product identifier or metadata match"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.matches_query returning True based on additional searchable fields"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.matches_query returning True because query matches at least one tag"
+    },
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.to_dict"
+    },
+    {
+      "line": 39,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.to_dict returning serialized product dictionary"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.from_dict"
+    },
+    {
+      "line": 52,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.from_dict returning None because raw payload is missing required fields or is invalid"
+    },
+    {
+      "line": 57,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.from_dict created Product instance from raw dictionary"
+    },
+    {
+      "line": 59,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Product.from_dict failed to parse product payload"
+    },
+    {
+      "line": 59,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product.from_dict returning None after parse error"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering CartItem.subtotal"
+    },
+    {
+      "line": 69,
+      "kind": "return",
+      "level": "INFO",
+      "message": "CartItem.subtotal returning 0.0 because quantity or price is not valid"
+    },
+    {
+      "line": 70,
+      "kind": "return",
+      "level": "INFO",
+      "message": "CartItem.subtotal returning product base price multiplied by quantity"
+    },
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Cart.add"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Cart.add returning early because quantity is not positive or product is inactive"
+    },
+    {
+      "line": 83,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Cart.add added product to cart or updated existing cart item quantity"
+    },
+    {
+      "line": 87,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Cart.total_quantity"
+    },
+    {
+      "line": 87,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Cart.total_quantity returning sum of quantities for all items in cart"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Cart.total_price"
+    },
+    {
+      "line": 90,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Cart.total_price returning sum of subtotals for all items in cart"
+    },
+    {
+      "line": 93,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Cart.to_dict"
+    },
+    {
+      "line": 93,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Cart.to_dict returning serialized cart with items and quantities"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing PricingClient with base URL and timeout"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PricingClient._url"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "PricingClient._url returning full price endpoint URL for product"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PricingClient.fetch_price"
+    },
+    {
+      "line": 116,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "PricingClient.fetch_price encountered an exception while performing HTTP request"
+    },
+    {
+      "line": 116,
+      "kind": "return",
+      "level": "INFO",
+      "message": "PricingClient.fetch_price returning None after request failure"
+    },
+    {
+      "line": 120,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "PricingClient.fetch_price encountered an exception while parsing response JSON"
+    },
+    {
+      "line": 120,
+      "kind": "return",
+      "level": "INFO",
+      "message": "PricingClient.fetch_price returning None after JSON parse error"
+    },
+    {
+      "line": 123,
+      "kind": "return",
+      "level": "INFO",
+      "message": "PricingClient.fetch_price returning None because price field is missing or invalid"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "INFO",
+      "message": "PricingClient.fetch_price returning parsed float price from response"
+    },
+    {
+      "line": 127,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "PricingClient.fetch_price failed to convert response value to float"
+    },
+    {
+      "line": 127,
+      "kind": "return",
+      "level": "INFO",
+      "message": "PricingClient.fetch_price returning None after conversion error"
+    },
+    {
+      "line": 131,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_products"
+    },
+    {
+      "line": 132,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_products returning empty product mapping because file does not exist or is empty"
+    },
+    {
+      "line": 137,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_products failed to load or parse products file"
+    },
+    {
+      "line": 137,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_products returning empty product mapping after exception"
+    },
+    {
+      "line": 143,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_products returning mapping of product IDs to Product instances"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_cart"
+    },
+    {
+      "line": 153,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "save_cart encountered an exception while writing cart to temporary file"
+    },
+    {
+      "line": 157,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "save_cart encountered an exception while moving temporary file into place"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering apply_discounts"
+    },
+    {
+      "line": 173,
+      "kind": "return",
+      "level": "INFO",
+      "message": "apply_discounts returning mapping of product IDs to discount rates"
+    },
+    {
+      "line": 177,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_cart_total"
+    },
+    {
+      "line": 184,
+      "kind": "return",
+      "level": "INFO",
+      "message": "compute_cart_total returning total cart price after applying discounts"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering sync_remote_prices"
+    },
+    {
+      "line": 198,
+      "kind": "return",
+      "level": "INFO",
+      "message": "sync_remote_prices returning number of products whose prices were updated from remote service"
+    },
+    {
+      "line": 202,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_cart"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "summarize_cart returning item count, totals before and after discounts, and savings rate"
+    },
+    {
+      "line": 217,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main for cart pricing workflow"
+    },
+    {
+      "line": 222,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 due to configuration, data load, or client initialization error"
+    },
+    {
+      "line": 237,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 because remote price synchronization or discount calculation failed"
+    },
+    {
+      "line": 238,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successfully computing cart summary and persisting results"
+    }
+  ]
+}

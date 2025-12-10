@@ -1,0 +1,931 @@
+{
+  "file": "scripts/script42.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_long",
+      "class_name": "Activity",
+      "code": "def is_long(self, threshold: int = 90) -> bool:",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_long",
+      "class_name": "Activity",
+      "code": "return self.duration_minutes >= threshold",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 24,
+      "end_line": 24,
+      "function": "matches_mood",
+      "class_name": "Activity",
+      "code": "def matches_mood(self, mood: str) -> bool:",
+      "vars_in_scope": [
+        "mood",
+        "q",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "matches_mood",
+      "class_name": "Activity",
+      "code": "return True",
+      "vars_in_scope": [
+        "mood",
+        "q",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 28,
+      "end_line": 28,
+      "function": "matches_mood",
+      "class_name": "Activity",
+      "code": "return True",
+      "vars_in_scope": [
+        "mood",
+        "q",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches_mood",
+      "class_name": "Activity",
+      "code": "return any((q in tag.lower() for tag in self.tags))",
+      "vars_in_scope": [
+        "mood",
+        "q",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 32,
+      "end_line": 32,
+      "function": "to_dict",
+      "class_name": "Activity",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "to_dict",
+      "class_name": "Activity",
+      "code": "return {'activity_id': self.activity_id, 'name': self.name, 'duration_minutes': self.duration_minutes, 'indoor': self.indoor, 'tags': list(self.tags), 'rating': self.rating}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 43,
+      "end_line": 43,
+      "function": "from_dict",
+      "class_name": "Activity",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Activity\":",
+      "vars_in_scope": [
+        "cls",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 43,
+      "end_line": 43,
+      "function": "from_dict",
+      "class_name": "Activity",
+      "code": "return cls(activity_id=str(raw.get('activity_id', '')), name=str(raw.get('name', '')), duration_minutes=int(raw.get('duration_minutes', 0)), indoor=bool(raw.get('indoor', False)), tags=list(raw.get('tags', [])), rating=float(raw.get('rating', 0.0)))",
+      "vars_in_scope": [
+        "cls",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 59,
+      "end_line": 59,
+      "function": "add_activity",
+      "class_name": "Schedule",
+      "code": "def add_activity(self, activity: Activity) -> None:",
+      "vars_in_scope": [
+        "activity",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 62,
+      "end_line": 62,
+      "function": "total_duration",
+      "class_name": "Schedule",
+      "code": "def total_duration(self) -> int:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 62,
+      "end_line": 62,
+      "function": "total_duration",
+      "class_name": "Schedule",
+      "code": "return sum((a.duration_minutes for a in self.activities))",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 65,
+      "end_line": 65,
+      "function": "to_dict",
+      "class_name": "Schedule",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 65,
+      "end_line": 65,
+      "function": "to_dict",
+      "class_name": "Schedule",
+      "code": "return {'date': self.date.isoformat(), 'activities': [a.to_dict() for a in self.activities]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 69,
+      "end_line": 69,
+      "function": "from_dict",
+      "class_name": "Schedule",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Schedule\":",
+      "vars_in_scope": [
+        "acts",
+        "cls",
+        "date_raw",
+        "dt",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 73,
+      "end_line": 73,
+      "function": "from_dict",
+      "class_name": "Schedule",
+      "code": "except ...",
+      "vars_in_scope": [
+        "acts",
+        "cls",
+        "date_raw",
+        "dt",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 75,
+      "end_line": 75,
+      "function": "from_dict",
+      "class_name": "Schedule",
+      "code": "return cls(date=dt, activities=acts)",
+      "vars_in_scope": [
+        "acts",
+        "cls",
+        "date_raw",
+        "dt",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 80,
+      "end_line": 80,
+      "function": "__init__",
+      "class_name": "RecommendationClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 4) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 84,
+      "end_line": 84,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "def _url(self, mood: str) -> str:",
+      "vars_in_scope": [
+        "mood",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "_url",
+      "class_name": "RecommendationClient",
+      "code": "return f'{self.base_url}/suggestions?mood={mood}'",
+      "vars_in_scope": [
+        "mood",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 87,
+      "end_line": 87,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "def fetch_suggestions(self, mood: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "mood",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 92,
+      "end_line": 92,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "mood",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 95,
+      "end_line": 95,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "mood",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 95,
+      "end_line": 95,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "mood",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 97,
+      "end_line": 97,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "mood",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 97,
+      "end_line": 97,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "mood",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 101,
+      "end_line": 101,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "mood",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 101,
+      "end_line": 101,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "mood",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 103,
+      "end_line": 103,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "return [dict(it) for it in items if isinstance(it, dict)]",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "mood",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 107,
+      "end_line": 107,
+      "function": "load_activities",
+      "class_name": null,
+      "code": "def load_activities(path: Path) -> List[Activity]:",
+      "vars_in_scope": [
+        "act",
+        "data",
+        "path",
+        "result",
+        "rows"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 108,
+      "end_line": 108,
+      "function": "load_activities",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "act",
+        "data",
+        "path",
+        "result",
+        "rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 113,
+      "end_line": 113,
+      "function": "load_activities",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "act",
+        "data",
+        "path",
+        "result",
+        "rows"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 113,
+      "end_line": 113,
+      "function": "load_activities",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "act",
+        "data",
+        "path",
+        "result",
+        "rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 122,
+      "end_line": 122,
+      "function": "load_activities",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "act",
+        "data",
+        "path",
+        "result",
+        "rows"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 124,
+      "end_line": 124,
+      "function": "load_activities",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "act",
+        "data",
+        "path",
+        "result",
+        "rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 128,
+      "end_line": 128,
+      "function": "save_schedule",
+      "class_name": null,
+      "code": "def save_schedule(path: Path, schedule: Schedule) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "schedule",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 141,
+      "end_line": 141,
+      "function": "pick_activities",
+      "class_name": null,
+      "code": "def pick_activities(",
+      "vars_in_scope": [
+        "activities",
+        "chosen",
+        "max_minutes",
+        "min_minutes",
+        "pool",
+        "total"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 143,
+      "end_line": 143,
+      "function": "pick_activities",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "activities",
+        "chosen",
+        "max_minutes",
+        "min_minutes",
+        "pool",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 153,
+      "end_line": 153,
+      "function": "pick_activities",
+      "class_name": null,
+      "code": "return chosen",
+      "vars_in_scope": [
+        "activities",
+        "chosen",
+        "max_minutes",
+        "min_minutes",
+        "pool",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 154,
+      "end_line": 154,
+      "function": "pick_activities",
+      "class_name": null,
+      "code": "return chosen",
+      "vars_in_scope": [
+        "activities",
+        "chosen",
+        "max_minutes",
+        "min_minutes",
+        "pool",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 158,
+      "end_line": 158,
+      "function": "summarize",
+      "class_name": null,
+      "code": "def summarize(activities: Iterable[Activity]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "activities",
+        "acts",
+        "indoor",
+        "total"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "summarize",
+      "class_name": null,
+      "code": "return {'count': 0, 'avg_duration': 0.0, 'indoor_share': 0.0}",
+      "vars_in_scope": [
+        "activities",
+        "acts",
+        "indoor",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 163,
+      "end_line": 163,
+      "function": "summarize",
+      "class_name": null,
+      "code": "return {'count': len(acts), 'avg_duration': total / len(acts), 'indoor_share': indoor / len(acts)}",
+      "vars_in_scope": [
+        "activities",
+        "acts",
+        "indoor",
+        "total"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 171,
+      "end_line": 171,
+      "function": "load_config",
+      "class_name": null,
+      "code": "def load_config(path: Path) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 172,
+      "end_line": 172,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return json.load(f)",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 177,
+      "end_line": 177,
+      "function": "load_config",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 177,
+      "end_line": 177,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 181,
+      "end_line": 181,
+      "function": "ensure_sample_data",
+      "class_name": null,
+      "code": "def ensure_sample_data(base: Path) -> None:",
+      "vars_in_scope": [
+        "activities_path",
+        "base",
+        "sample"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 183,
+      "end_line": 183,
+      "function": "ensure_sample_data",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "activities_path",
+        "base",
+        "sample"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 210,
+      "end_line": 210,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(base_dir: str = \"data\", mood: str = \"\") -> int:",
+      "vars_in_scope": [
+        "activities",
+        "base",
+        "base_dir",
+        "cfg",
+        "chosen",
+        "client",
+        "info",
+        "max_minutes",
+        "min_minutes",
+        "mood",
+        "remote",
+        "sched"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 219,
+      "end_line": 219,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "activities",
+        "base",
+        "base_dir",
+        "cfg",
+        "chosen",
+        "client",
+        "info",
+        "max_minutes",
+        "min_minutes",
+        "mood",
+        "remote",
+        "sched"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 227,
+      "end_line": 227,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "activities",
+        "base",
+        "base_dir",
+        "cfg",
+        "chosen",
+        "client",
+        "info",
+        "max_minutes",
+        "min_minutes",
+        "mood",
+        "remote",
+        "sched"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 233,
+      "end_line": 233,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "activities",
+        "base",
+        "base_dir",
+        "cfg",
+        "chosen",
+        "client",
+        "info",
+        "max_minutes",
+        "min_minutes",
+        "mood",
+        "remote",
+        "sched"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 234,
+      "end_line": 234,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "activities",
+        "base",
+        "base_dir",
+        "cfg",
+        "chosen",
+        "client",
+        "info",
+        "max_minutes",
+        "min_minutes",
+        "mood",
+        "remote",
+        "sched"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

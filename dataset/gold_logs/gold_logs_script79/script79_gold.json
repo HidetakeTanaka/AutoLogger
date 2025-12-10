@@ -1,0 +1,257 @@
+{
+  "file": "script79.py",
+  "logs": [
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.matches"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning match result from Book.matches"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.is_long"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning long-book flag from Book.is_long"
+    },
+    {
+      "line": 37,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.to_dict"
+    },
+    {
+      "line": 37,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized book dictionary from Book.to_dict"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.from_dict"
+    },
+    {
+      "line": 62,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse book data in Book.from_dict"
+    },
+    {
+      "line": 62,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from Book.from_dict after parse failure"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryState.add_book"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryState.mark_read"
+    },
+    {
+      "line": 82,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning read-status update result from LibraryState.mark_read"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryState.search"
+    },
+    {
+      "line": 85,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning search results from LibraryState.search"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryState.recommendations_local"
+    },
+    {
+      "line": 92,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning local recommendations from LibraryState.recommendations_local"
+    },
+    {
+      "line": 95,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryState.to_dict"
+    },
+    {
+      "line": 95,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized library dictionary from LibraryState.to_dict"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryState.from_dict"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning LibraryState instance from LibraryState.from_dict"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.__init__"
+    },
+    {
+      "line": 116,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient._url"
+    },
+    {
+      "line": 116,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL from RecommendationClient._url"
+    },
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RecommendationClient.fetch_recommendations"
+    },
+    {
+      "line": 127,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch recommendations in RecommendationClient.fetch_recommendations"
+    },
+    {
+      "line": 135,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in RecommendationClient.fetch_recommendations"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fetched recommendation items from RecommendationClient.fetch_recommendations"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_library"
+    },
+    {
+      "line": 146,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load library data in load_library"
+    },
+    {
+      "line": 146,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback library state in load_library"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_library"
+    },
+    {
+      "line": 156,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save library in save_library"
+    },
+    {
+      "line": 156,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Aborting save_library after failure"
+    },
+    {
+      "line": 160,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_library"
+    },
+    {
+      "line": 165,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning library summary from summarize_library"
+    },
+    {
+      "line": 169,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_reading"
+    },
+    {
+      "line": 180,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning simulated read count from simulate_reading"
+    },
+    {
+      "line": 184,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering pick_random_book"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning selected random book from pick_random_book"
+    },
+    {
+      "line": 193,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 220,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 221,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code from main"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "file": "script72.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with minutes={minutes} for MetricSample id={self.id}\")"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering {cls.__name__}.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Creating MetricSample from dict with timestamp={ts}, latency_ms={raw.get(\"latency_ms\", 0.0)}, ok={raw.get(\"ok\", False)}')"
+    },
+    {
+      "line": 44,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create MetricSample from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 54,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_sample with sample: {sample}\")"
+    },
+    {
+      "line": 57,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_samples with minutes={minutes}\")"
+    },
+    {
+      "line": 60,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering availability with minutes={minutes}\")"
+    },
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Availability calculated: oks={oks}, total={len(recents)}, availability={oks / len(recents):.2f}')"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering avg_latency with minutes={minutes}\")"
+    },
+    {
+      "line": 70,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Calculated average latency over {len(recents)} records in the last {minutes} minutes: {sum((s.latency_ms for s in recents)) / len(recents):.2f} ms')"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data: {raw}\")"
+    },
+    {
+      "line": 91,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing HealthClient with timeout={timeout}\")"
+    },
+    {
+      "line": 94,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering check method with url: {url}\")"
+    },
+    {
+      "line": 102,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'HealthClient check failed for URL {url} after {latency:.2f}s')"
+    },
+    {
+      "line": 105,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Exception occurred during health check for URL {url} after {latency:.2f} seconds', exc_info=True)"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_statuses with path: {path}\")"
+    },
+    {
+      "line": 115,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Loaded {len(raw)} service statuses from {path}')"
+    },
+    {
+      "line": 117,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load statuses from {path} with data: {data}')"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_statuses with path={path} and {len(statuses)} statuses\")"
+    },
+    {
+      "line": 127,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save statuses to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 131,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save statuses to {path} with payload {payload}')"
+    },
+    {
+      "line": 135,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_statuses with {len(statuses)} statuses\")"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Summarize_statuses result: {result}')"
+    },
+    {
+      "line": 149,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered detect_incidents with {len(statuses)} statuses and availability threshold {avail_threshold}\")"
+    },
+    {
+      "line": 156,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning {len(incidents)} detected incidents with availability {avail} and threshold {avail_threshold}')"
+    },
+    {
+      "line": 160,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_checks with {len(statuses)} statuses and {rounds} rounds\")"
+    },
+    {
+      "line": 172,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered ensure_services with {len(statuses)} statuses and {len(targets)} targets\")"
+    },
+    {
+      "line": 180,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir} and run_live={run_live}\")"
+    },
+    {
+      "line": 207,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

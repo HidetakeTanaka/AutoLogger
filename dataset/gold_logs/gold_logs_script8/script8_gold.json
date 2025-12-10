@@ -1,0 +1,137 @@
+{
+  "file": "script8.py",
+  "logs": [
+    {
+      "line": 7,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.__init__"
+    },
+    {
+      "line": 19,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product info from Product.get_product_info"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.__init__"
+    },
+    {
+      "line": 31,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.add_product"
+    },
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.remove_product"
+    },
+    {
+      "line": 37,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Removing product from inventory: successful"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product not found in inventory"
+    },
+    {
+      "line": 46,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.read_json"
+    },
+    {
+      "line": 49,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Successfully read JSON file in FileManager.read_json"
+    },
+    {
+      "line": 51,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error reading JSON file in FileManager.read_json"
+    },
+    {
+      "line": 52,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from FileManager.read_json due to error"
+    },
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering FileManager.write_json"
+    },
+    {
+      "line": 59,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error writing to JSON file in FileManager.write_json"
+    },
+    {
+      "line": 64,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering create_product"
+    },
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning new Product instance from create_product"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering create_inventory"
+    },
+    {
+      "line": 68,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning new Inventory instance from create_inventory"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_data"
+    },
+    {
+      "line": 74,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fetched data from API in fetch_data"
+    },
+    {
+      "line": 76,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error fetching data from API in fetch_data"
+    },
+    {
+      "line": 77,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list due to fetch error in fetch_data"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "file": "script62.py",
+  "logs": [
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering mark_done method of Task with id={getattr(self, 'id', 'unknown')}\")"
+    },
+    {
+      "line": 33,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches method with query: {query}\")"
+    },
+    {
+      "line": 53,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Task.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 67,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Task from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_task with task: {task}\")"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get_task with task_id={task_id}\")"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing ApiClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 118,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with project_id={project_id}\")"
+    },
+    {
+      "line": 121,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_project with project_id={project_id}\")"
+    },
+    {
+      "line": 128,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Fetched project data for project_id={project_id} from URL {url}')"
+    },
+    {
+      "line": 130,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch project with ID {project_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_summary with project_id={project_id} and summary keys={list(summary.keys())}\")"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Push summary response status: {resp.status} for project_id: {project_id}')"
+    },
+    {
+      "line": 147,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary for project {project_id} to {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_project with path: {path}\")"
+    },
+    {
+      "line": 155,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load project from {path} with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 159,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered save_project with path={path} and project={project}\")"
+    },
+    {
+      "line": 165,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save project at {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 169,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save project at {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_project for project: {project.name}\")"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summary prepared with {len(tasks)} tasks, completed ratio {project.completed_ratio():.2f}, overdue {overdue}\")"
+    },
+    {
+      "line": 185,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering merge_remote with project={project} and remote_raw={remote_raw}\")"
+    },
+    {
+      "line": 193,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merge remote completed for project {project} with remote {remote}. Added: {added}')"
+    },
+    {
+      "line": 197,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_progress for project {project} with {steps} steps\")"
+    },
+    {
+      "line": 208,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 230,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

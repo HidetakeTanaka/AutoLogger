@@ -1,0 +1,185 @@
+{
+  "file": "script84.py",
+  "logs": [
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_overdue with ref={ref}\")"
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches with query={query!r}\")"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data: {raw}\")"
+    },
+    {
+      "line": 61,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to parse due date from raw data: {due_raw}', exc_info=True)"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_task with task: {task}\")"
+    },
+    {
+      "line": 73,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering mark_done with task_id={task_id}\")"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Task {task_id} marked as done successfully.')"
+    },
+    {
+      "line": 82,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering query_tasks with query='{query}'\")"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering upcoming with days={days}\")"
+    },
+    {
+      "line": 93,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 98,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Created PlannerState from dict for task {task}')"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing SyncClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering pull_remote with user_id={user_id}\")"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Pulled {len(items)} items from remote for user {user_id} at {url}')"
+    },
+    {
+      "line": 123,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to pull remote data from {url} for user {user_id}', exc_info=True)"
+    },
+    {
+      "line": 126,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_summary with user_id={user_id} and summary keys={list(summary.keys())}\")"
+    },
+    {
+      "line": 135,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push summary for user_id={user_id} to {url} with body={body}', exc_info=True)"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_state with path: {path}\")"
+    },
+    {
+      "line": 146,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load state from {path}')"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_state with path={path} and state={state}\")"
+    },
+    {
+      "line": 156,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save state to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 160,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering compute_stats with state: {state}\")"
+    },
+    {
+      "line": 174,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_day with max_new={max_new} and state={state}\")"
+    },
+    {
+      "line": 191,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_urgent with hours={hours} and state={state}\")"
+    },
+    {
+      "line": 194,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning urgent items filtered by cutoff {cutoff}, hours {hours}, state {state}: {urgent}')"
+    },
+    {
+      "line": 198,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_state with state={state} and remote_rate={remote_rate}\")"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summarize state for user_id={state.user_id}: stats={stats}, urgent_count={len(urgent)}, remote_relation={relation}\")"
+    },
+    {
+      "line": 217,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 241,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

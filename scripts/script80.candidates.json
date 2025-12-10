@@ -1,0 +1,974 @@
+{
+  "file": "scripts\\script80.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_recent",
+      "class_name": "Response",
+      "code": "def is_recent(self, hours: int = 24) -> bool:",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_recent",
+      "class_name": "Response",
+      "code": "return False",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "is_recent",
+      "class_name": "Response",
+      "code": "return True",
+      "vars_in_scope": [
+        "cutoff",
+        "hours",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches_tag",
+      "class_name": "Response",
+      "code": "def matches_tag(self, tag: str) -> bool:",
+      "vars_in_scope": [
+        "self",
+        "t",
+        "tag"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "matches_tag",
+      "class_name": "Response",
+      "code": "return True",
+      "vars_in_scope": [
+        "self",
+        "t",
+        "tag"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches_tag",
+      "class_name": "Response",
+      "code": "return any((t in x.lower() for x in self.tags))",
+      "vars_in_scope": [
+        "self",
+        "t",
+        "tag"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 33,
+      "end_line": 33,
+      "function": "to_dict",
+      "class_name": "Response",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 33,
+      "end_line": 33,
+      "function": "to_dict",
+      "class_name": "Response",
+      "code": "return {'user_id': self.user_id, 'question_id': self.question_id, 'score': self.score, 'submitted_at': self.submitted_at.isoformat(), 'tags': self.tags}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 43,
+      "end_line": 43,
+      "function": "from_dict",
+      "class_name": "Response",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Response\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 46,
+      "end_line": 46,
+      "function": "from_dict",
+      "class_name": "Response",
+      "code": "return cls(user_id=str(raw.get('user_id', '')), question_id=str(raw.get('question_id', '')), score=float(raw.get('score', 0.0)), submitted_at=ts, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 54,
+      "end_line": 54,
+      "function": "from_dict",
+      "class_name": "Response",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 54,
+      "end_line": 54,
+      "function": "from_dict",
+      "class_name": "Response",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts",
+        "ts_raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 63,
+      "end_line": 63,
+      "function": "add_response",
+      "class_name": "SurveyState",
+      "code": "def add_response(self, resp: Response) -> None:",
+      "vars_in_scope": [
+        "resp",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 66,
+      "end_line": 66,
+      "function": "average_score",
+      "class_name": "SurveyState",
+      "code": "def average_score(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "average_score",
+      "class_name": "SurveyState",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 68,
+      "end_line": 68,
+      "function": "average_score",
+      "class_name": "SurveyState",
+      "code": "return sum((r.score for r in self.responses)) / len(self.responses)",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 71,
+      "end_line": 71,
+      "function": "filter_by_tag",
+      "class_name": "SurveyState",
+      "code": "def filter_by_tag(self, tag: str) -> List[Response]:",
+      "vars_in_scope": [
+        "self",
+        "tag"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 71,
+      "end_line": 71,
+      "function": "filter_by_tag",
+      "class_name": "SurveyState",
+      "code": "return [r for r in self.responses if r.matches_tag(tag)]",
+      "vars_in_scope": [
+        "self",
+        "tag"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "to_dict",
+      "class_name": "SurveyState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 74,
+      "end_line": 74,
+      "function": "to_dict",
+      "class_name": "SurveyState",
+      "code": "return {'survey_id': self.survey_id, 'responses': [r.to_dict() for r in self.responses]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 81,
+      "end_line": 81,
+      "function": "from_dict",
+      "class_name": "SurveyState",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"SurveyState\":",
+      "vars_in_scope": [
+        "cls",
+        "r",
+        "raw",
+        "state"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 86,
+      "end_line": 86,
+      "function": "from_dict",
+      "class_name": "SurveyState",
+      "code": "return state",
+      "vars_in_scope": [
+        "cls",
+        "r",
+        "raw",
+        "state"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 91,
+      "end_line": 91,
+      "function": "__init__",
+      "class_name": "AnalyticsClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 95,
+      "end_line": 95,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 95,
+      "end_line": 95,
+      "function": "_url",
+      "class_name": "AnalyticsClient",
+      "code": "return f\"{self.base_url}/{path.lstrip('/')}\"",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 98,
+      "end_line": 98,
+      "function": "fetch_benchmark",
+      "class_name": "AnalyticsClient",
+      "code": "def fetch_benchmark(self, survey_id: str) -> Optional[float]:",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "survey_id",
+        "url",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 99,
+      "end_line": 99,
+      "function": "fetch_benchmark",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "survey_id",
+        "url",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 107,
+      "end_line": 107,
+      "function": "fetch_benchmark",
+      "class_name": "AnalyticsClient",
+      "code": "return float(value) if value is not None else None",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "survey_id",
+        "url",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 109,
+      "end_line": 109,
+      "function": "fetch_benchmark",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "survey_id",
+        "url",
+        "value"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "fetch_benchmark",
+      "class_name": "AnalyticsClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "data",
+        "payload",
+        "req",
+        "self",
+        "survey_id",
+        "url",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 112,
+      "end_line": 112,
+      "function": "send_summary",
+      "class_name": "AnalyticsClient",
+      "code": "def send_summary(self, summary: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 113,
+      "end_line": 113,
+      "function": "send_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 121,
+      "end_line": 121,
+      "function": "send_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return 200 <= resp.status < 300",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 123,
+      "end_line": 123,
+      "function": "send_summary",
+      "class_name": "AnalyticsClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 123,
+      "end_line": 123,
+      "function": "send_summary",
+      "class_name": "AnalyticsClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "req",
+        "self",
+        "summary",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 127,
+      "end_line": 127,
+      "function": "load_survey",
+      "class_name": null,
+      "code": "def load_survey(path: Path) -> SurveyState:",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 128,
+      "end_line": 128,
+      "function": "load_survey",
+      "class_name": null,
+      "code": "return SurveyState(survey_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 132,
+      "end_line": 132,
+      "function": "load_survey",
+      "class_name": null,
+      "code": "return SurveyState.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 134,
+      "end_line": 134,
+      "function": "load_survey",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 134,
+      "end_line": 134,
+      "function": "load_survey",
+      "class_name": null,
+      "code": "return SurveyState(survey_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 138,
+      "end_line": 138,
+      "function": "save_survey",
+      "class_name": null,
+      "code": "def save_survey(path: Path, survey: SurveyState) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "survey",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 145,
+      "end_line": 145,
+      "function": "save_survey",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "survey",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 145,
+      "end_line": 145,
+      "function": "save_survey",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "survey",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 149,
+      "end_line": 149,
+      "function": "compute_tag_scores",
+      "class_name": null,
+      "code": "def compute_tag_scores(state: SurveyState) -> Dict[str, float]:",
+      "vars_in_scope": [
+        "counts",
+        "state",
+        "totals"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 156,
+      "end_line": 156,
+      "function": "compute_tag_scores",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "counts",
+        "state",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 157,
+      "end_line": 157,
+      "function": "compute_tag_scores",
+      "class_name": null,
+      "code": "return {k: totals[k] / counts[k] for k in totals}",
+      "vars_in_scope": [
+        "counts",
+        "state",
+        "totals"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 161,
+      "end_line": 161,
+      "function": "detect_outliers",
+      "class_name": null,
+      "code": "def detect_outliers(state: SurveyState, std_limit: float = 2.0) -> List[Response]:",
+      "vars_in_scope": [
+        "avg",
+        "scores",
+        "state",
+        "std",
+        "std_limit",
+        "var"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 163,
+      "end_line": 163,
+      "function": "detect_outliers",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "avg",
+        "scores",
+        "state",
+        "std",
+        "std_limit",
+        "var"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 168,
+      "end_line": 168,
+      "function": "detect_outliers",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "avg",
+        "scores",
+        "state",
+        "std",
+        "std_limit",
+        "var"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 169,
+      "end_line": 169,
+      "function": "detect_outliers",
+      "class_name": null,
+      "code": "return [r for r in state.responses if abs(r.score - avg) > std_limit * std]",
+      "vars_in_scope": [
+        "avg",
+        "scores",
+        "state",
+        "std",
+        "std_limit",
+        "var"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 175,
+      "end_line": 175,
+      "function": "simulate_responses",
+      "class_name": null,
+      "code": "def simulate_responses(",
+      "vars_in_scope": [
+        "created",
+        "days",
+        "q",
+        "questions",
+        "score",
+        "state",
+        "tags",
+        "total",
+        "ts",
+        "u",
+        "users"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 176,
+      "end_line": 176,
+      "function": "simulate_responses",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "created",
+        "days",
+        "q",
+        "questions",
+        "score",
+        "state",
+        "tags",
+        "total",
+        "ts",
+        "u",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 192,
+      "end_line": 192,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "def summarize_state(",
+      "vars_in_scope": [
+        "avg",
+        "benchmark",
+        "comparison",
+        "outliers",
+        "state",
+        "tag_scores"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 204,
+      "end_line": 204,
+      "function": "summarize_state",
+      "class_name": null,
+      "code": "return {'survey_id': state.survey_id, 'average': avg, 'tag_scores': tag_scores, 'outlier_count': len(outliers), 'benchmark_relation': comparison, 'response_count': len(state.responses)}",
+      "vars_in_scope": [
+        "avg",
+        "benchmark",
+        "comparison",
+        "outliers",
+        "state",
+        "tag_scores"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 215,
+      "end_line": 215,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "benchmark",
+        "client",
+        "data_dir",
+        "sent",
+        "state",
+        "summary",
+        "summary_path",
+        "survey_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 238,
+      "end_line": 238,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "benchmark",
+        "client",
+        "data_dir",
+        "sent",
+        "state",
+        "summary",
+        "summary_path",
+        "survey_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 238,
+      "end_line": 238,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "benchmark",
+        "client",
+        "data_dir",
+        "sent",
+        "state",
+        "summary",
+        "summary_path",
+        "survey_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 243,
+      "end_line": 243,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "benchmark",
+        "client",
+        "data_dir",
+        "sent",
+        "state",
+        "summary",
+        "summary_path",
+        "survey_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 245,
+      "end_line": 245,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "benchmark",
+        "client",
+        "data_dir",
+        "sent",
+        "state",
+        "summary",
+        "summary_path",
+        "survey_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

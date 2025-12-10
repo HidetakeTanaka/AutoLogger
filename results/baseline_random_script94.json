@@ -1,0 +1,113 @@
+{
+  "file": "script94.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 18,
+      "level": "WARNING",
+      "message": "Random log at line 18 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Random log at line 21 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 42,
+      "level": "ERROR",
+      "message": "Random log at line 42 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 42,
+      "level": "DEBUG",
+      "message": "Random log at line 42 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 53,
+      "level": "DEBUG",
+      "message": "Random log at line 53 in add_reading",
+      "kind": "entry",
+      "function": "add_reading"
+    },
+    {
+      "line": 68,
+      "level": "DEBUG",
+      "message": "Random log at line 68 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 81,
+      "level": "ERROR",
+      "message": "Random log at line 81 in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 96,
+      "level": "WARNING",
+      "message": "Random log at line 96 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 99,
+      "level": "ERROR",
+      "message": "Random log at line 99 in _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 99,
+      "level": "WARNING",
+      "message": "Random log at line 99 in _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 137,
+      "level": "INFO",
+      "message": "Random log at line 137 in load_state",
+      "kind": "return",
+      "function": "load_state"
+    },
+    {
+      "line": 163,
+      "level": "WARNING",
+      "message": "Random log at line 163 in compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
+    },
+    {
+      "line": 167,
+      "level": "WARNING",
+      "message": "Random log at line 167 in simulate_readings",
+      "kind": "entry",
+      "function": "simulate_readings"
+    },
+    {
+      "line": 189,
+      "level": "INFO",
+      "message": "Random log at line 189 in summarize_state",
+      "kind": "return",
+      "function": "summarize_state"
+    },
+    {
+      "line": 214,
+      "level": "ERROR",
+      "message": "Random log at line 214 in main",
+      "kind": "except",
+      "function": "main"
+    }
+  ]
+}

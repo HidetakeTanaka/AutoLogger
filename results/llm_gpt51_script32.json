@@ -1,0 +1,41 @@
+{
+  "file": "script32.py",
+  "logs": [
+    {
+      "line": 83,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(\"Failed to load user in UserStore.load\", exc_info=True, extra={\"uid\": uid, \"name\": name, \"country\": country})"
+    },
+    {
+      "line": 159,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(\"Generated %d random events for %d users\", len(result), len(users))"
+    },
+    {
+      "line": 163,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(\"write_events called for path=%s with %d events\", path, len(events))"
+    },
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(\"Entering filter_recent_events with %d events, window=%d minutes, now=%s\", len(events), minutes, now)"
+    },
+    {
+      "line": 197,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(\"Exporting segments to %s with %d mapping entries\", path, len(mapping))"
+    },
+    {
+      "line": 220,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(\"Entering main with base_dir=%s\", base_dir)"
+    }
+  ]
+}

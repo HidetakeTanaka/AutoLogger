@@ -1,0 +1,713 @@
+{
+  "file": "scripts/script32.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 20,
+      "end_line": 20,
+      "function": "is_recent",
+      "class_name": "Event",
+      "code": "def is_recent(self, now: Optional[datetime] = None, minutes: int = 60) -> bool:",
+      "vars_in_scope": [
+        "delta",
+        "minutes",
+        "now",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_recent",
+      "class_name": "Event",
+      "code": "return delta <= timedelta(minutes=minutes)",
+      "vars_in_scope": [
+        "delta",
+        "minutes",
+        "now",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 26,
+      "end_line": 26,
+      "function": "to_dict",
+      "class_name": "Event",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 26,
+      "end_line": 26,
+      "function": "to_dict",
+      "class_name": "Event",
+      "code": "return {'event_id': self.event_id, 'user_id': self.user_id, 'event_type': self.event_type, 'created_at': self.created_at.isoformat(), 'metadata': self.metadata}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 43,
+      "end_line": 43,
+      "function": "is_active",
+      "class_name": "User",
+      "code": "def is_active(self) -> bool:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 43,
+      "end_line": 43,
+      "function": "is_active",
+      "class_name": "User",
+      "code": "return bool(self.properties.get('active', True))",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 46,
+      "end_line": 46,
+      "function": "update_country",
+      "class_name": "User",
+      "code": "def update_country(self, country: str) -> None:",
+      "vars_in_scope": [
+        "country",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 49,
+      "end_line": 49,
+      "function": "to_dict",
+      "class_name": "User",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 49,
+      "end_line": 49,
+      "function": "to_dict",
+      "class_name": "User",
+      "code": "return {'user_id': self.user_id, 'name': self.name, 'country': self.country, 'properties': self.properties}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 64,
+      "end_line": 64,
+      "function": "matches",
+      "class_name": "Segment",
+      "code": "def matches(self, user: User, events: List[Event]) -> bool:",
+      "vars_in_scope": [
+        "count",
+        "events",
+        "self",
+        "user"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 65,
+      "end_line": 65,
+      "function": "matches",
+      "class_name": "Segment",
+      "code": "return False",
+      "vars_in_scope": [
+        "count",
+        "events",
+        "self",
+        "user"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "matches",
+      "class_name": "Segment",
+      "code": "return count >= self.min_events",
+      "vars_in_scope": [
+        "count",
+        "events",
+        "self",
+        "user"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "__init__",
+      "class_name": "UserStore",
+      "code": "def __init__(self, path: Path) -> None:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 76,
+      "end_line": 76,
+      "function": "load",
+      "class_name": "UserStore",
+      "code": "def load(self) -> None:",
+      "vars_in_scope": [
+        "country",
+        "data",
+        "name",
+        "props",
+        "self",
+        "uid",
+        "users"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 78,
+      "end_line": 78,
+      "function": "load",
+      "class_name": "UserStore",
+      "code": "return",
+      "vars_in_scope": [
+        "country",
+        "data",
+        "name",
+        "props",
+        "self",
+        "uid",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 83,
+      "end_line": 83,
+      "function": "load",
+      "class_name": "UserStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "country",
+        "data",
+        "name",
+        "props",
+        "self",
+        "uid",
+        "users"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "load",
+      "class_name": "UserStore",
+      "code": "return",
+      "vars_in_scope": [
+        "country",
+        "data",
+        "name",
+        "props",
+        "self",
+        "uid",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 97,
+      "end_line": 97,
+      "function": "save",
+      "class_name": "UserStore",
+      "code": "def save(self) -> None:",
+      "vars_in_scope": [
+        "payload",
+        "self",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 105,
+      "end_line": 105,
+      "function": "get",
+      "class_name": "UserStore",
+      "code": "def get(self, user_id: str) -> Optional[User]:",
+      "vars_in_scope": [
+        "self",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 105,
+      "end_line": 105,
+      "function": "get",
+      "class_name": "UserStore",
+      "code": "return self._users.get(user_id)",
+      "vars_in_scope": [
+        "self",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 108,
+      "end_line": 108,
+      "function": "upsert",
+      "class_name": "UserStore",
+      "code": "def upsert(self, user: User) -> None:",
+      "vars_in_scope": [
+        "self",
+        "user"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 111,
+      "end_line": 111,
+      "function": "all",
+      "class_name": "UserStore",
+      "code": "def all(self) -> List[User]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "all",
+      "class_name": "UserStore",
+      "code": "return list(self._users.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 116,
+      "end_line": 116,
+      "function": "__init__",
+      "class_name": "EventStore",
+      "code": "def __init__(self, path: Path) -> None:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 119,
+      "end_line": 119,
+      "function": "load",
+      "class_name": "EventStore",
+      "code": "def load(self) -> List[Event]:",
+      "vars_in_scope": [
+        "created",
+        "data",
+        "events",
+        "evt",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 120,
+      "end_line": 120,
+      "function": "load",
+      "class_name": "EventStore",
+      "code": "return []",
+      "vars_in_scope": [
+        "created",
+        "data",
+        "events",
+        "evt",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 125,
+      "end_line": 125,
+      "function": "load",
+      "class_name": "EventStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "created",
+        "data",
+        "events",
+        "evt",
+        "self"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 125,
+      "end_line": 125,
+      "function": "load",
+      "class_name": "EventStore",
+      "code": "return []",
+      "vars_in_scope": [
+        "created",
+        "data",
+        "events",
+        "evt",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 131,
+      "end_line": 131,
+      "function": "load",
+      "class_name": "EventStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "created",
+        "data",
+        "events",
+        "evt",
+        "self"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 140,
+      "end_line": 140,
+      "function": "load",
+      "class_name": "EventStore",
+      "code": "return events",
+      "vars_in_scope": [
+        "created",
+        "data",
+        "events",
+        "evt",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 144,
+      "end_line": 144,
+      "function": "generate_random_events",
+      "class_name": null,
+      "code": "def generate_random_events(users: List[User], count: int = 50) -> List[Event]:",
+      "vars_in_scope": [
+        "count",
+        "created",
+        "evt",
+        "now",
+        "result",
+        "user",
+        "users"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 145,
+      "end_line": 145,
+      "function": "generate_random_events",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "count",
+        "created",
+        "evt",
+        "now",
+        "result",
+        "user",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 159,
+      "end_line": 159,
+      "function": "generate_random_events",
+      "class_name": null,
+      "code": "return result",
+      "vars_in_scope": [
+        "count",
+        "created",
+        "evt",
+        "now",
+        "result",
+        "user",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 163,
+      "end_line": 163,
+      "function": "write_events",
+      "class_name": null,
+      "code": "def write_events(path: Path, events: List[Event]) -> None:",
+      "vars_in_scope": [
+        "events",
+        "path",
+        "payload"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 170,
+      "end_line": 170,
+      "function": "filter_recent_events",
+      "class_name": null,
+      "code": "def filter_recent_events(events: List[Event], minutes: int = 60) -> List[Event]:",
+      "vars_in_scope": [
+        "events",
+        "minutes",
+        "now"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 171,
+      "end_line": 171,
+      "function": "filter_recent_events",
+      "class_name": null,
+      "code": "return [e for e in events if e.is_recent(now, minutes=minutes)]",
+      "vars_in_scope": [
+        "events",
+        "minutes",
+        "now"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 175,
+      "end_line": 175,
+      "function": "build_segments",
+      "class_name": null,
+      "code": "def build_segments() -> List[Segment]:",
+      "vars_in_scope": [],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "build_segments",
+      "class_name": null,
+      "code": "return [Segment(name='EU-active', countries=['DE', 'FR', 'ES'], min_events=2), Segment(name='Global-heavy', countries=[], min_events=5)]",
+      "vars_in_scope": [],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 186,
+      "end_line": 186,
+      "function": "assign_segments",
+      "class_name": null,
+      "code": "def assign_segments(",
+      "vars_in_scope": [
+        "events",
+        "mapping",
+        "segments",
+        "users"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 193,
+      "end_line": 193,
+      "function": "assign_segments",
+      "class_name": null,
+      "code": "return mapping",
+      "vars_in_scope": [
+        "events",
+        "mapping",
+        "segments",
+        "users"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 197,
+      "end_line": 197,
+      "function": "export_segments",
+      "class_name": null,
+      "code": "def export_segments(path: Path, mapping: Dict[str, List[str]]) -> None:",
+      "vars_in_scope": [
+        "mapping",
+        "path",
+        "payload"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 204,
+      "end_line": 204,
+      "function": "load_or_create_users",
+      "class_name": null,
+      "code": "def load_or_create_users(path: Path) -> UserStore:",
+      "vars_in_scope": [
+        "path",
+        "store",
+        "user"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 216,
+      "end_line": 216,
+      "function": "load_or_create_users",
+      "class_name": null,
+      "code": "return store",
+      "vars_in_scope": [
+        "path",
+        "store",
+        "user"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 220,
+      "end_line": 220,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(base_dir: str = \"data\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "event_store",
+        "events",
+        "events_path",
+        "mapping",
+        "recent",
+        "segments",
+        "segments_path",
+        "store",
+        "users_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 241,
+      "end_line": 241,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "event_store",
+        "events",
+        "events_path",
+        "mapping",
+        "recent",
+        "segments",
+        "segments_path",
+        "store",
+        "users_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

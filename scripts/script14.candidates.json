@@ -1,0 +1,402 @@
+{
+  "file": "scripts\\script14.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 6,
+      "end_line": 6,
+      "function": "__init__",
+      "class_name": "Product",
+      "code": "def __init__(self, name: str, price: float, quantity: int, category: str) -> None:",
+      "vars_in_scope": [
+        "category",
+        "name",
+        "price",
+        "quantity",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 12,
+      "end_line": 12,
+      "function": "update_quantity",
+      "class_name": "Product",
+      "code": "def update_quantity(self, quantity: int) -> None:",
+      "vars_in_scope": [
+        "quantity",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 15,
+      "end_line": 15,
+      "function": "update_price",
+      "class_name": "Product",
+      "code": "def update_price(self, price: float) -> None:",
+      "vars_in_scope": [
+        "price",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 18,
+      "end_line": 18,
+      "function": "get_product_info",
+      "class_name": "Product",
+      "code": "def get_product_info(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 18,
+      "end_line": 18,
+      "function": "get_product_info",
+      "class_name": "Product",
+      "code": "return {'name': self.name, 'price': self.price, 'quantity': self.quantity, 'category': self.category}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "__init__",
+      "class_name": "Inventory",
+      "code": "def __init__(self) -> None:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 25,
+      "end_line": 25,
+      "function": "add_product",
+      "class_name": "Inventory",
+      "code": "def add_product(self, product: Product) -> None:",
+      "vars_in_scope": [
+        "product",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 28,
+      "end_line": 28,
+      "function": "remove_product",
+      "class_name": "Inventory",
+      "code": "def remove_product(self, name: str) -> bool:",
+      "vars_in_scope": [
+        "name",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "remove_product",
+      "class_name": "Inventory",
+      "code": "return True",
+      "vars_in_scope": [
+        "name",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "remove_product",
+      "class_name": "Inventory",
+      "code": "return False",
+      "vars_in_scope": [
+        "name",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "get_inventory_value",
+      "class_name": "Inventory",
+      "code": "def get_inventory_value(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "get_inventory_value",
+      "class_name": "Inventory",
+      "code": "return sum((product.price * product.quantity for product in self.products))",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 38,
+      "end_line": 38,
+      "function": "get_products_by_category",
+      "class_name": "Inventory",
+      "code": "def get_products_by_category(self, category: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "category",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 38,
+      "end_line": 38,
+      "function": "get_products_by_category",
+      "class_name": "Inventory",
+      "code": "return [product.get_product_info() for product in self.products if product.category == category]",
+      "vars_in_scope": [
+        "category",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 43,
+      "end_line": 43,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "def read_json(file_path: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 45,
+      "end_line": 45,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return json.load(file)",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 47,
+      "end_line": 47,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 48,
+      "end_line": 48,
+      "function": "read_json",
+      "class_name": "FileManager",
+      "code": "return []",
+      "vars_in_scope": [
+        "file_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 52,
+      "end_line": 52,
+      "function": "write_json",
+      "class_name": "FileManager",
+      "code": "def write_json(file_path: str, data: List[Dict[str, Any]]) -> None:",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 56,
+      "end_line": 56,
+      "function": "write_json",
+      "class_name": "FileManager",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "file_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 59,
+      "end_line": 59,
+      "function": "create_product",
+      "class_name": null,
+      "code": "def create_product(name: str, price: float, quantity: int, category: str) -> Product:",
+      "vars_in_scope": [
+        "category",
+        "name",
+        "price",
+        "quantity"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 59,
+      "end_line": 59,
+      "function": "create_product",
+      "class_name": null,
+      "code": "return Product(name, price, quantity, category)",
+      "vars_in_scope": [
+        "category",
+        "name",
+        "price",
+        "quantity"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 62,
+      "end_line": 62,
+      "function": "create_inventory",
+      "class_name": null,
+      "code": "def create_inventory() -> Inventory:",
+      "vars_in_scope": [],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 62,
+      "end_line": 62,
+      "function": "create_inventory",
+      "class_name": null,
+      "code": "return Inventory()",
+      "vars_in_scope": [],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 65,
+      "end_line": 65,
+      "function": "fetch_data",
+      "class_name": null,
+      "code": "def fetch_data(url: str) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "fetch_data",
+      "class_name": null,
+      "code": "return [{'product_name': 'Laptop', 'price': 1000, 'quantity': 10, 'category': 'Electronics'}]",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 69,
+      "end_line": 69,
+      "function": "fetch_data",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 70,
+      "end_line": 70,
+      "function": "fetch_data",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 73,
+      "end_line": 73,
+      "function": "main",
+      "class_name": null,
+      "code": "def main() -> None:",
+      "vars_in_scope": [
+        "inventory",
+        "product",
+        "products_data",
+        "products_info",
+        "total_inventory_value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    }
+  ]
+}

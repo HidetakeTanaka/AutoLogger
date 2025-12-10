@@ -1,0 +1,89 @@
+{
+  "file": "script31.py",
+  "logs": [
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering QuizAttempt.is_suspicious"
+    },
+    {
+      "line": 41,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning suspicious flag in QuizAttempt.is_suspicious"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_attempts"
+    },
+    {
+      "line": 99,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse an attempt entry in load_attempts"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed attempts from load_attempts"
+    },
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_user"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning user summary in summarize_user"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering find_suspicious_users"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of suspicious users"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering interactive_menu"
+    },
+    {
+      "line": 144,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load attempts in interactive_menu"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Aborting interactive_menu after load failure"
+    },
+    {
+      "line": 171,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in interactive_menu loop"
+    },
+    {
+      "line": 182,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    }
+  ]
+}

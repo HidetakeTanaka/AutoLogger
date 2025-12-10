@@ -1,0 +1,96 @@
+{
+  "file": "script68.py",
+  "logs": [
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering WorkoutSession.is_long"
+    },
+    {
+      "line": 62,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to deserialize WorkoutSession in WorkoutSession.from_dict"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.from_dict"
+    },
+    {
+      "line": 134,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.fetch_benchmarks"
+    },
+    {
+      "line": 143,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching benchmarks in AnalyticsClient.fetch_benchmarks"
+    },
+    {
+      "line": 146,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.push_summary"
+    },
+    {
+      "line": 160,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while pushing summary in AnalyticsClient.push_summary"
+    },
+    {
+      "line": 164,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_profile"
+    },
+    {
+      "line": 169,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load profile, using fallback profile"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_profile"
+    },
+    {
+      "line": 180,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write profile file in save_profile"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "Computing profile summary in summarize_profile"
+    },
+    {
+      "line": 228,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_benchmarks"
+    },
+    {
+      "line": 241,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 257,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to execute main"
+    }
+  ]
+}
+

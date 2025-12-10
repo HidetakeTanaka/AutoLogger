@@ -1,0 +1,467 @@
+{
+  "file": "script96.py",
+  "logs": [
+    {
+      "candidate_id": 0,
+      "lineno": 22,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function is_recent')"
+    },
+    {
+      "candidate_id": 1,
+      "lineno": 24,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function is_recent')"
+    },
+    {
+      "candidate_id": 2,
+      "lineno": 25,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function is_recent')"
+    },
+    {
+      "candidate_id": 3,
+      "lineno": 28,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function matches_category')"
+    },
+    {
+      "candidate_id": 4,
+      "lineno": 30,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function matches_category')"
+    },
+    {
+      "candidate_id": 5,
+      "lineno": 32,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function matches_category')"
+    },
+    {
+      "candidate_id": 6,
+      "lineno": 33,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function matches_category')"
+    },
+    {
+      "candidate_id": 7,
+      "lineno": 36,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
+    },
+    {
+      "candidate_id": 8,
+      "lineno": 36,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 47,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "candidate_id": 10,
+      "lineno": 54,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "candidate_id": 11,
+      "lineno": 63,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "candidate_id": 12,
+      "lineno": 63,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "candidate_id": 13,
+      "lineno": 74,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function prefers')"
+    },
+    {
+      "candidate_id": 14,
+      "lineno": 75,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function prefers')"
+    },
+    {
+      "candidate_id": 15,
+      "lineno": 76,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function prefers')"
+    },
+    {
+      "candidate_id": 16,
+      "lineno": 79,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function needs_refresh')"
+    },
+    {
+      "candidate_id": 17,
+      "lineno": 80,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function needs_refresh')"
+    },
+    {
+      "candidate_id": 18,
+      "lineno": 83,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 83,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
+    },
+    {
+      "candidate_id": 20,
+      "lineno": 92,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 99,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "candidate_id": 22,
+      "lineno": 106,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "candidate_id": 23,
+      "lineno": 106,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 116,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function add_item')"
+    },
+    {
+      "candidate_id": 25,
+      "lineno": 119,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function recent_items')"
+    },
+    {
+      "candidate_id": 26,
+      "lineno": 119,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function recent_items')"
+    },
+    {
+      "candidate_id": 27,
+      "lineno": 122,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
+    },
+    {
+      "candidate_id": 28,
+      "lineno": 122,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
+    },
+    {
+      "candidate_id": 29,
+      "lineno": 130,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 140,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+    },
+    {
+      "candidate_id": 31,
+      "lineno": 145,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 149,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function _url')"
+    },
+    {
+      "candidate_id": 33,
+      "lineno": 150,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function _url')"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 151,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function _url')"
+    },
+    {
+      "candidate_id": 35,
+      "lineno": 154,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote_prefs')"
+    },
+    {
+      "candidate_id": 36,
+      "lineno": 156,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote_prefs')"
+    },
+    {
+      "candidate_id": 37,
+      "lineno": 163,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote_prefs')"
+    },
+    {
+      "candidate_id": 38,
+      "lineno": 164,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote_prefs')"
+    },
+    {
+      "candidate_id": 39,
+      "lineno": 166,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote_prefs')"
+    },
+    {
+      "candidate_id": 40,
+      "lineno": 166,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote_prefs')"
+    },
+    {
+      "candidate_id": 41,
+      "lineno": 170,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function load_state')"
+    },
+    {
+      "candidate_id": 42,
+      "lineno": 173,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function load_state')"
+    },
+    {
+      "candidate_id": 43,
+      "lineno": 175,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function load_state')"
+    },
+    {
+      "candidate_id": 44,
+      "lineno": 175,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function load_state')"
+    },
+    {
+      "candidate_id": 45,
+      "lineno": 177,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function load_state')"
+    },
+    {
+      "candidate_id": 46,
+      "lineno": 177,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function load_state')"
+    },
+    {
+      "candidate_id": 47,
+      "lineno": 181,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function save_state')"
+    },
+    {
+      "candidate_id": 48,
+      "lineno": 187,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function save_state')"
+    },
+    {
+      "candidate_id": 49,
+      "lineno": 187,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function save_state')"
+    },
+    {
+      "candidate_id": 50,
+      "lineno": 191,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function compute_category_stats')"
+    },
+    {
+      "candidate_id": 51,
+      "lineno": 198,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function compute_category_stats')"
+    },
+    {
+      "candidate_id": 52,
+      "lineno": 200,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function compute_category_stats')"
+    },
+    {
+      "candidate_id": 53,
+      "lineno": 204,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function apply_remote_prefs')"
+    },
+    {
+      "candidate_id": 54,
+      "lineno": 206,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function apply_remote_prefs')"
+    },
+    {
+      "candidate_id": 55,
+      "lineno": 209,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function apply_remote_prefs')"
+    },
+    {
+      "candidate_id": 56,
+      "lineno": 211,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function apply_remote_prefs')"
+    },
+    {
+      "candidate_id": 57,
+      "lineno": 215,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function simulate_items')"
+    },
+    {
+      "candidate_id": 58,
+      "lineno": 216,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function simulate_items')"
+    },
+    {
+      "candidate_id": 59,
+      "lineno": 235,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function simulate_items')"
+    },
+    {
+      "candidate_id": 60,
+      "lineno": 239,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function summarize_state')"
+    },
+    {
+      "candidate_id": 61,
+      "lineno": 243,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function summarize_state')"
+    },
+    {
+      "candidate_id": 62,
+      "lineno": 254,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function main')"
+    },
+    {
+      "candidate_id": 63,
+      "lineno": 268,
+      "col_offset": 0,
+      "kind": "except",
+      "log_code": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function main')"
+    },
+    {
+      "candidate_id": 64,
+      "lineno": 268,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function main')"
+    },
+    {
+      "candidate_id": 65,
+      "lineno": 270,
+      "col_offset": 0,
+      "kind": "before_return",
+      "log_code": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function main')"
+    }
+  ]
+}

@@ -1,0 +1,866 @@
+{
+  "file": "scripts/script43.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_recent",
+      "class_name": "Note",
+      "code": "def is_recent(self, days: int = 7) -> bool:",
+      "vars_in_scope": [
+        "days",
+        "now",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "Note",
+      "code": "return self.created_at >= now - timedelta(days=days)",
+      "vars_in_scope": [
+        "days",
+        "now",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 25,
+      "end_line": 25,
+      "function": "matches_query",
+      "class_name": "Note",
+      "code": "def matches_query(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self",
+        "text"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "matches_query",
+      "class_name": "Note",
+      "code": "return False",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 30,
+      "end_line": 30,
+      "function": "matches_query",
+      "class_name": "Note",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "matches_query",
+      "class_name": "Note",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self",
+        "text"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 34,
+      "end_line": 34,
+      "function": "to_dict",
+      "class_name": "Note",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 34,
+      "end_line": 34,
+      "function": "to_dict",
+      "class_name": "Note",
+      "code": "return {'note_id': self.note_id, 'title': self.title, 'body': self.body, 'created_at': self.created_at.isoformat(), 'tags': list(self.tags), 'archived': self.archived}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 45,
+      "end_line": 45,
+      "function": "from_dict",
+      "class_name": "Note",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Note\":",
+      "vars_in_scope": [
+        "cls",
+        "created_at",
+        "created_raw",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 50,
+      "end_line": 50,
+      "function": "from_dict",
+      "class_name": "Note",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "created_at",
+        "created_raw",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 53,
+      "end_line": 53,
+      "function": "from_dict",
+      "class_name": "Note",
+      "code": "return cls(note_id=str(raw.get('note_id', '')), title=str(raw.get('title', '')), body=str(raw.get('body', '')), created_at=created_at, tags=list(raw.get('tags', [])), archived=bool(raw.get('archived', False)))",
+      "vars_in_scope": [
+        "cls",
+        "created_at",
+        "created_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 68,
+      "end_line": 68,
+      "function": "add",
+      "class_name": "Notebook",
+      "code": "def add(self, note: Note) -> None:",
+      "vars_in_scope": [
+        "note",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 71,
+      "end_line": 71,
+      "function": "get",
+      "class_name": "Notebook",
+      "code": "def get(self, note_id: str) -> Optional[Note]:",
+      "vars_in_scope": [
+        "note_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 71,
+      "end_line": 71,
+      "function": "get",
+      "class_name": "Notebook",
+      "code": "return self.notes.get(note_id)",
+      "vars_in_scope": [
+        "note_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "all",
+      "class_name": "Notebook",
+      "code": "def all(self) -> List[Note]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 74,
+      "end_line": 74,
+      "function": "all",
+      "class_name": "Notebook",
+      "code": "return list(self.notes.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 77,
+      "end_line": 77,
+      "function": "active_notes",
+      "class_name": "Notebook",
+      "code": "def active_notes(self) -> List[Note]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 77,
+      "end_line": 77,
+      "function": "active_notes",
+      "class_name": "Notebook",
+      "code": "return [n for n in self.notes.values() if not n.archived]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 82,
+      "end_line": 82,
+      "function": "__init__",
+      "class_name": "SyncClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 86,
+      "end_line": 86,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 88,
+      "end_line": 88,
+      "function": "_url",
+      "class_name": "SyncClient",
+      "code": "return self.base_url + path",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 91,
+      "end_line": 91,
+      "function": "fetch_notes",
+      "class_name": "SyncClient",
+      "code": "def fetch_notes(self) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 97,
+      "end_line": 97,
+      "function": "fetch_notes",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 97,
+      "end_line": 97,
+      "function": "fetch_notes",
+      "class_name": "SyncClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 101,
+      "end_line": 101,
+      "function": "fetch_notes",
+      "class_name": "SyncClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 101,
+      "end_line": 101,
+      "function": "fetch_notes",
+      "class_name": "SyncClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 104,
+      "end_line": 104,
+      "function": "fetch_notes",
+      "class_name": "SyncClient",
+      "code": "return []",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 105,
+      "end_line": 105,
+      "function": "fetch_notes",
+      "class_name": "SyncClient",
+      "code": "return [dict(it) for it in items if isinstance(it, dict)]",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 109,
+      "end_line": 109,
+      "function": "load_notes",
+      "class_name": null,
+      "code": "def load_notes(path: Path) -> Notebook:",
+      "vars_in_scope": [
+        "data",
+        "nb",
+        "note",
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "load_notes",
+      "class_name": null,
+      "code": "return nb",
+      "vars_in_scope": [
+        "data",
+        "nb",
+        "note",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 116,
+      "end_line": 116,
+      "function": "load_notes",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "nb",
+        "note",
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 116,
+      "end_line": 116,
+      "function": "load_notes",
+      "class_name": null,
+      "code": "return nb",
+      "vars_in_scope": [
+        "data",
+        "nb",
+        "note",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 122,
+      "end_line": 122,
+      "function": "load_notes",
+      "class_name": null,
+      "code": "return nb",
+      "vars_in_scope": [
+        "data",
+        "nb",
+        "note",
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 126,
+      "end_line": 126,
+      "function": "save_notes",
+      "class_name": null,
+      "code": "def save_notes(path: Path, notebook: Notebook) -> None:",
+      "vars_in_scope": [
+        "notebook",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 133,
+      "end_line": 133,
+      "function": "filter_notes_by_tag",
+      "class_name": null,
+      "code": "def filter_notes_by_tag(notes: Iterable[Note], tag: str) -> List[Note]:",
+      "vars_in_scope": [
+        "key",
+        "notes",
+        "tag"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 135,
+      "end_line": 135,
+      "function": "filter_notes_by_tag",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "key",
+        "notes",
+        "tag"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 136,
+      "end_line": 136,
+      "function": "filter_notes_by_tag",
+      "class_name": null,
+      "code": "return [n for n in notes if any((key == t.lower() for t in n.tags))]",
+      "vars_in_scope": [
+        "key",
+        "notes",
+        "tag"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 140,
+      "end_line": 140,
+      "function": "search_notes",
+      "class_name": null,
+      "code": "def search_notes(notes: Iterable[Note], query: str) -> List[Note]:",
+      "vars_in_scope": [
+        "matches",
+        "notes",
+        "query"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 142,
+      "end_line": 142,
+      "function": "search_notes",
+      "class_name": null,
+      "code": "return matches",
+      "vars_in_scope": [
+        "matches",
+        "notes",
+        "query"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 146,
+      "end_line": 146,
+      "function": "merge_remote_notes",
+      "class_name": null,
+      "code": "def merge_remote_notes(notebook: Notebook, remote_rows: List[Dict[str, Any]]) -> int:",
+      "vars_in_scope": [
+        "merged",
+        "nid",
+        "note",
+        "notebook",
+        "remote_rows"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 158,
+      "end_line": 158,
+      "function": "merge_remote_notes",
+      "class_name": null,
+      "code": "return merged",
+      "vars_in_scope": [
+        "merged",
+        "nid",
+        "note",
+        "notebook",
+        "remote_rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 162,
+      "end_line": 162,
+      "function": "summarize_by_tag",
+      "class_name": null,
+      "code": "def summarize_by_tag(notes: Iterable[Note]) -> Dict[str, int]:",
+      "vars_in_scope": [
+        "counts",
+        "key",
+        "notes"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 169,
+      "end_line": 169,
+      "function": "summarize_by_tag",
+      "class_name": null,
+      "code": "return counts",
+      "vars_in_scope": [
+        "counts",
+        "key",
+        "notes"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 173,
+      "end_line": 173,
+      "function": "choose_note_to_review",
+      "class_name": null,
+      "code": "def choose_note_to_review(notes: Iterable[Note]) -> Optional[Note]:",
+      "vars_in_scope": [
+        "candidates",
+        "idx",
+        "notes"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 175,
+      "end_line": 175,
+      "function": "choose_note_to_review",
+      "class_name": null,
+      "code": "return None",
+      "vars_in_scope": [
+        "candidates",
+        "idx",
+        "notes"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 181,
+      "end_line": 181,
+      "function": "choose_note_to_review",
+      "class_name": null,
+      "code": "return candidates[idx]",
+      "vars_in_scope": [
+        "candidates",
+        "idx",
+        "notes"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 182,
+      "end_line": 182,
+      "function": "choose_note_to_review",
+      "class_name": null,
+      "code": "return candidates[0]",
+      "vars_in_scope": [
+        "candidates",
+        "idx",
+        "notes"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 186,
+      "end_line": 186,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(base_dir: str = \"data\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "cfg",
+        "cfg_path",
+        "client",
+        "notebook",
+        "notes_path",
+        "raw",
+        "rec",
+        "remote_url",
+        "rows",
+        "summary",
+        "summary_path",
+        "tag_counts"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 196,
+      "end_line": 196,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "cfg",
+        "cfg_path",
+        "client",
+        "notebook",
+        "notes_path",
+        "raw",
+        "rec",
+        "remote_url",
+        "rows",
+        "summary",
+        "summary_path",
+        "tag_counts"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 215,
+      "end_line": 215,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "cfg",
+        "cfg_path",
+        "client",
+        "notebook",
+        "notes_path",
+        "raw",
+        "rec",
+        "remote_url",
+        "rows",
+        "summary",
+        "summary_path",
+        "tag_counts"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 215,
+      "end_line": 215,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "cfg",
+        "cfg_path",
+        "client",
+        "notebook",
+        "notes_path",
+        "raw",
+        "rec",
+        "remote_url",
+        "rows",
+        "summary",
+        "summary_path",
+        "tag_counts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 216,
+      "end_line": 216,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_dir",
+        "cfg",
+        "cfg_path",
+        "client",
+        "notebook",
+        "notes_path",
+        "raw",
+        "rec",
+        "remote_url",
+        "rows",
+        "summary",
+        "summary_path",
+        "tag_counts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

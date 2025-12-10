@@ -1,0 +1,896 @@
+{
+  "file": "scripts\\script65.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_low_stock",
+      "class_name": "Product",
+      "code": "def is_low_stock(self, threshold: int = 5) -> bool:",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_low_stock",
+      "class_name": "Product",
+      "code": "return self.stock <= threshold",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 26,
+      "end_line": 26,
+      "function": "age_hours",
+      "class_name": "Product",
+      "code": "def age_hours(self, ref: Optional[datetime] = None) -> float:",
+      "vars_in_scope": [
+        "delta",
+        "ref",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "age_hours",
+      "class_name": "Product",
+      "code": "return delta.total_seconds() / 3600.0",
+      "vars_in_scope": [
+        "delta",
+        "ref",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 32,
+      "end_line": 32,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "def matches(self, query: str) -> bool:",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 34,
+      "end_line": 34,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 36,
+      "end_line": 36,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "return True",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 37,
+      "end_line": 37,
+      "function": "matches",
+      "class_name": "Product",
+      "code": "return any((q in t.lower() for t in self.tags))",
+      "vars_in_scope": [
+        "q",
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 40,
+      "end_line": 40,
+      "function": "to_dict",
+      "class_name": "Product",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 40,
+      "end_line": 40,
+      "function": "to_dict",
+      "class_name": "Product",
+      "code": "return {'product_id': self.product_id, 'name': self.name, 'category': self.category, 'price': self.price, 'stock': self.stock, 'updated_at': self.updated_at.isoformat(), 'tags': list(self.tags)}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 52,
+      "end_line": 52,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Product\"]:",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts_raw",
+        "updated_at"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 57,
+      "end_line": 57,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "return cls(product_id=str(raw.get('product_id', '')), name=str(raw.get('name', '')), category=str(raw.get('category', '')), price=float(raw.get('price', 0.0)), stock=int(raw.get('stock', 0)), updated_at=updated_at, tags=list(raw.get('tags', [])))",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts_raw",
+        "updated_at"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 67,
+      "end_line": 67,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts_raw",
+        "updated_at"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 67,
+      "end_line": 67,
+      "function": "from_dict",
+      "class_name": "Product",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "raw",
+        "ts_raw",
+        "updated_at"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "__init__",
+      "class_name": "Inventory",
+      "code": "def __init__(self, inventory_id: str) -> None:",
+      "vars_in_scope": [
+        "inventory_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 76,
+      "end_line": 76,
+      "function": "add",
+      "class_name": "Inventory",
+      "code": "def add(self, product: Product) -> None:",
+      "vars_in_scope": [
+        "product",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 79,
+      "end_line": 79,
+      "function": "get",
+      "class_name": "Inventory",
+      "code": "def get(self, product_id: str) -> Optional[Product]:",
+      "vars_in_scope": [
+        "product_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 79,
+      "end_line": 79,
+      "function": "get",
+      "class_name": "Inventory",
+      "code": "return self._products.get(product_id)",
+      "vars_in_scope": [
+        "product_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 82,
+      "end_line": 82,
+      "function": "all",
+      "class_name": "Inventory",
+      "code": "def all(self) -> List[Product]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 82,
+      "end_line": 82,
+      "function": "all",
+      "class_name": "Inventory",
+      "code": "return list(self._products.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 85,
+      "end_line": 85,
+      "function": "search",
+      "class_name": "Inventory",
+      "code": "def search(self, query: str = \"\") -> List[Product]:",
+      "vars_in_scope": [
+        "query",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 85,
+      "end_line": 85,
+      "function": "search",
+      "class_name": "Inventory",
+      "code": "return [p for p in self._products.values() if p.matches(query)]",
+      "vars_in_scope": [
+        "query",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 88,
+      "end_line": 88,
+      "function": "low_stock",
+      "class_name": "Inventory",
+      "code": "def low_stock(self, threshold: int = 5) -> List[Product]:",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 88,
+      "end_line": 88,
+      "function": "low_stock",
+      "class_name": "Inventory",
+      "code": "return [p for p in self._products.values() if p.is_low_stock(threshold)]",
+      "vars_in_scope": [
+        "self",
+        "threshold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 91,
+      "end_line": 91,
+      "function": "to_dict",
+      "class_name": "Inventory",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 91,
+      "end_line": 91,
+      "function": "to_dict",
+      "class_name": "Inventory",
+      "code": "return {'inventory_id': self.inventory_id, 'products': [p.to_dict() for p in self._products.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 98,
+      "end_line": 98,
+      "function": "from_dict",
+      "class_name": "Inventory",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Inventory\":",
+      "vars_in_scope": [
+        "cls",
+        "inv",
+        "p",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 103,
+      "end_line": 103,
+      "function": "from_dict",
+      "class_name": "Inventory",
+      "code": "return inv",
+      "vars_in_scope": [
+        "cls",
+        "inv",
+        "p",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 108,
+      "end_line": 108,
+      "function": "__init__",
+      "class_name": "PricingClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 112,
+      "end_line": 112,
+      "function": "_url",
+      "class_name": "PricingClient",
+      "code": "def _url(self, product_id: str) -> str:",
+      "vars_in_scope": [
+        "product_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 112,
+      "end_line": 112,
+      "function": "_url",
+      "class_name": "PricingClient",
+      "code": "return f'{self.base_url}/pricing/{product_id}.json'",
+      "vars_in_scope": [
+        "product_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 115,
+      "end_line": 115,
+      "function": "fetch_price",
+      "class_name": "PricingClient",
+      "code": "def fetch_price(self, product_id: str) -> Optional[float]:",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "product_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 122,
+      "end_line": 122,
+      "function": "fetch_price",
+      "class_name": "PricingClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "product_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 123,
+      "end_line": 123,
+      "function": "fetch_price",
+      "class_name": "PricingClient",
+      "code": "return float(data['price'])",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "product_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 125,
+      "end_line": 125,
+      "function": "fetch_price",
+      "class_name": "PricingClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "product_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 125,
+      "end_line": 125,
+      "function": "fetch_price",
+      "class_name": "PricingClient",
+      "code": "return None",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "product_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 129,
+      "end_line": 129,
+      "function": "load_inventory",
+      "class_name": null,
+      "code": "def load_inventory(path: Path) -> Inventory:",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 131,
+      "end_line": 131,
+      "function": "load_inventory",
+      "class_name": null,
+      "code": "return Inventory.from_dict(raw)",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 133,
+      "end_line": 133,
+      "function": "load_inventory",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 133,
+      "end_line": 133,
+      "function": "load_inventory",
+      "class_name": null,
+      "code": "return Inventory(inventory_id='local')",
+      "vars_in_scope": [
+        "path",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 137,
+      "end_line": 137,
+      "function": "save_inventory",
+      "class_name": null,
+      "code": "def save_inventory(path: Path, inv: Inventory) -> None:",
+      "vars_in_scope": [
+        "inv",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 143,
+      "end_line": 143,
+      "function": "save_inventory",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "inv",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "except",
+      "line": 147,
+      "end_line": 147,
+      "function": "save_inventory",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "inv",
+        "path",
+        "payload",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 151,
+      "end_line": 151,
+      "function": "compute_summary",
+      "class_name": null,
+      "code": "def compute_summary(inv: Inventory) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "inv",
+        "low",
+        "products",
+        "total_price"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 153,
+      "end_line": 153,
+      "function": "compute_summary",
+      "class_name": null,
+      "code": "return {'count': 0, 'avg_price': 0.0, 'low_stock': 0}",
+      "vars_in_scope": [
+        "inv",
+        "low",
+        "products",
+        "total_price"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 156,
+      "end_line": 156,
+      "function": "compute_summary",
+      "class_name": null,
+      "code": "return {'count': len(products), 'avg_price': total_price / len(products), 'low_stock': low}",
+      "vars_in_scope": [
+        "inv",
+        "low",
+        "products",
+        "total_price"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 164,
+      "end_line": 164,
+      "function": "update_prices",
+      "class_name": null,
+      "code": "def update_prices(inv: Inventory, client: PricingClient) -> int:",
+      "vars_in_scope": [
+        "client",
+        "inv",
+        "new_price",
+        "updated"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 171,
+      "end_line": 171,
+      "function": "update_prices",
+      "class_name": null,
+      "code": "return updated",
+      "vars_in_scope": [
+        "client",
+        "inv",
+        "new_price",
+        "updated"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 175,
+      "end_line": 175,
+      "function": "simulate_sales",
+      "class_name": null,
+      "code": "def simulate_sales(inv: Inventory, rounds: int = 3) -> List[Dict[str, Any]]:",
+      "vars_in_scope": [
+        "history",
+        "inv",
+        "p",
+        "products",
+        "rounds",
+        "sold"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 178,
+      "end_line": 178,
+      "function": "simulate_sales",
+      "class_name": null,
+      "code": "return history",
+      "vars_in_scope": [
+        "history",
+        "inv",
+        "p",
+        "products",
+        "rounds",
+        "sold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 185,
+      "end_line": 185,
+      "function": "simulate_sales",
+      "class_name": null,
+      "code": "return history",
+      "vars_in_scope": [
+        "history",
+        "inv",
+        "p",
+        "products",
+        "rounds",
+        "sold"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 189,
+      "end_line": 189,
+      "function": "restock_low",
+      "class_name": null,
+      "code": "def restock_low(inv: Inventory, min_stock: int = 5, target_stock: int = 10) -> int:",
+      "vars_in_scope": [
+        "count",
+        "inv",
+        "min_stock",
+        "target_stock"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 195,
+      "end_line": 195,
+      "function": "restock_low",
+      "class_name": null,
+      "code": "return count",
+      "vars_in_scope": [
+        "count",
+        "inv",
+        "min_stock",
+        "target_stock"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 199,
+      "end_line": 199,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "inv",
+        "inv_path",
+        "summary",
+        "summary_path",
+        "updated"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 217,
+      "end_line": 217,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "inv",
+        "inv_path",
+        "summary",
+        "summary_path",
+        "updated"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 217,
+      "end_line": 217,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "inv",
+        "inv_path",
+        "summary",
+        "summary_path",
+        "updated"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 218,
+      "end_line": 218,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "base",
+        "base_url",
+        "client",
+        "data_dir",
+        "inv",
+        "inv_path",
+        "summary",
+        "summary_path",
+        "updated"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

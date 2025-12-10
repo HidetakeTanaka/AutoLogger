@@ -1,0 +1,185 @@
+{
+  "file": "script59.py",
+  "logs": [
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with minutes={minutes}\")"
+    },
+    {
+      "line": 31,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_sample with value={value}\")"
+    },
+    {
+      "line": 41,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_values with minutes={minutes}\")"
+    },
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 69,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Sensor from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add method with sensor: {sensor}\")"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get method with sensor_id={sensor_id}\")"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 102,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully created SensorNetwork from dict with {len(net.sensors)} sensors.')"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing MetricsClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with network_id={network_id}\")"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch method with network_id={network_id}\")"
+    },
+    {
+      "line": 121,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch metrics for network_id {network_id} from {url} with request {req}', exc_info=True)"
+    },
+    {
+      "line": 124,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push method with network_id={network_id} and payload keys={list(payload.keys())}\")"
+    },
+    {
+      "line": 131,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to push metrics to {url} for network {network_id} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 135,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_network with path: {path}\")"
+    },
+    {
+      "line": 139,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load network from path: {path}')"
+    },
+    {
+      "line": 141,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load network from path: {path}')"
+    },
+    {
+      "line": 141,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('Returning local SensorNetwork instance from load_network')"
+    },
+    {
+      "line": 145,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_network with path={path} and network id={id(net)}\")"
+    },
+    {
+      "line": 151,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save network to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 155,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save network to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 159,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering aggregate_metrics with SensorNetwork containing {len(net.sensors)} sensors\")"
+    },
+    {
+      "line": 170,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Aggregated metrics: sensor_count={len(sensors)}, avg_value={avg}')"
+    },
+    {
+      "line": 174,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering detect_anomalies with threshold={threshold} on network {net}\")"
+    },
+    {
+      "line": 184,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering sync_remote_metrics with SensorNetwork: {net} and MetricsClient: {client}\")"
+    },
+    {
+      "line": 193,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Sync complete, total metrics added: {added}')"
+    },
+    {
+      "line": 197,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_network with {rounds} rounds on network {net}\")"
+    },
+    {
+      "line": 206,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 224,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

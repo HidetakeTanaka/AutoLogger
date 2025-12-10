@@ -1,0 +1,391 @@
+{
+  "file": "script86.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 21,
+      "level": "DEBUG",
+      "message": "Entering is_low_stock",
+      "kind": "entry",
+      "function": "is_low_stock"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Exiting is_low_stock",
+      "kind": "return",
+      "function": "is_low_stock"
+    },
+    {
+      "line": 24,
+      "level": "DEBUG",
+      "message": "Entering matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 26,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 28,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 32,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 43,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 50,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 59,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "except",
+      "function": "from_dict"
+    },
+    {
+      "line": 59,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 68,
+      "level": "DEBUG",
+      "message": "Entering add_product",
+      "kind": "entry",
+      "function": "add_product"
+    },
+    {
+      "line": 71,
+      "level": "DEBUG",
+      "message": "Entering search",
+      "kind": "entry",
+      "function": "search"
+    },
+    {
+      "line": 71,
+      "level": "INFO",
+      "message": "Exiting search",
+      "kind": "return",
+      "function": "search"
+    },
+    {
+      "line": 74,
+      "level": "DEBUG",
+      "message": "Entering total_value",
+      "kind": "entry",
+      "function": "total_value"
+    },
+    {
+      "line": 74,
+      "level": "INFO",
+      "message": "Exiting total_value",
+      "kind": "return",
+      "function": "total_value"
+    },
+    {
+      "line": 77,
+      "level": "DEBUG",
+      "message": "Entering low_stock",
+      "kind": "entry",
+      "function": "low_stock"
+    },
+    {
+      "line": 77,
+      "level": "INFO",
+      "message": "Exiting low_stock",
+      "kind": "return",
+      "function": "low_stock"
+    },
+    {
+      "line": 80,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 80,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 87,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 92,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 97,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 101,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 101,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 104,
+      "level": "DEBUG",
+      "message": "Entering fetch_tax_rate",
+      "kind": "entry",
+      "function": "fetch_tax_rate"
+    },
+    {
+      "line": 105,
+      "level": "INFO",
+      "message": "Exiting fetch_tax_rate",
+      "kind": "return",
+      "function": "fetch_tax_rate"
+    },
+    {
+      "line": 113,
+      "level": "INFO",
+      "message": "Exiting fetch_tax_rate",
+      "kind": "return",
+      "function": "fetch_tax_rate"
+    },
+    {
+      "line": 115,
+      "level": "ERROR",
+      "message": "Exception in fetch_tax_rate",
+      "kind": "except",
+      "function": "fetch_tax_rate"
+    },
+    {
+      "line": 115,
+      "level": "INFO",
+      "message": "Exiting fetch_tax_rate",
+      "kind": "return",
+      "function": "fetch_tax_rate"
+    },
+    {
+      "line": 119,
+      "level": "DEBUG",
+      "message": "Entering load_inventory",
+      "kind": "entry",
+      "function": "load_inventory"
+    },
+    {
+      "line": 122,
+      "level": "INFO",
+      "message": "Exiting load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 124,
+      "level": "ERROR",
+      "message": "Exception in load_inventory",
+      "kind": "except",
+      "function": "load_inventory"
+    },
+    {
+      "line": 124,
+      "level": "INFO",
+      "message": "Exiting load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 126,
+      "level": "ERROR",
+      "message": "Exception in load_inventory",
+      "kind": "except",
+      "function": "load_inventory"
+    },
+    {
+      "line": 126,
+      "level": "INFO",
+      "message": "Exiting load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 130,
+      "level": "DEBUG",
+      "message": "Entering save_inventory",
+      "kind": "entry",
+      "function": "save_inventory"
+    },
+    {
+      "line": 136,
+      "level": "ERROR",
+      "message": "Exception in save_inventory",
+      "kind": "except",
+      "function": "save_inventory"
+    },
+    {
+      "line": 140,
+      "level": "ERROR",
+      "message": "Exception in save_inventory",
+      "kind": "except",
+      "function": "save_inventory"
+    },
+    {
+      "line": 144,
+      "level": "DEBUG",
+      "message": "Entering apply_markdown",
+      "kind": "entry",
+      "function": "apply_markdown"
+    },
+    {
+      "line": 150,
+      "level": "INFO",
+      "message": "Exiting apply_markdown",
+      "kind": "return",
+      "function": "apply_markdown"
+    },
+    {
+      "line": 154,
+      "level": "DEBUG",
+      "message": "Entering compute_daily_projection",
+      "kind": "entry",
+      "function": "compute_daily_projection"
+    },
+    {
+      "line": 155,
+      "level": "INFO",
+      "message": "Exiting compute_daily_projection",
+      "kind": "return",
+      "function": "compute_daily_projection"
+    },
+    {
+      "line": 162,
+      "level": "INFO",
+      "message": "Exiting compute_daily_projection",
+      "kind": "return",
+      "function": "compute_daily_projection"
+    },
+    {
+      "line": 166,
+      "level": "DEBUG",
+      "message": "Entering simulate_sales",
+      "kind": "entry",
+      "function": "simulate_sales"
+    },
+    {
+      "line": 167,
+      "level": "INFO",
+      "message": "Exiting simulate_sales",
+      "kind": "return",
+      "function": "simulate_sales"
+    },
+    {
+      "line": 177,
+      "level": "INFO",
+      "message": "Exiting simulate_sales",
+      "kind": "return",
+      "function": "simulate_sales"
+    },
+    {
+      "line": 181,
+      "level": "DEBUG",
+      "message": "Entering summarize_inventory",
+      "kind": "entry",
+      "function": "summarize_inventory"
+    },
+    {
+      "line": 183,
+      "level": "INFO",
+      "message": "Exiting summarize_inventory",
+      "kind": "return",
+      "function": "summarize_inventory"
+    },
+    {
+      "line": 190,
+      "level": "INFO",
+      "message": "Exiting summarize_inventory",
+      "kind": "return",
+      "function": "summarize_inventory"
+    },
+    {
+      "line": 199,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 226,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 226,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 229,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

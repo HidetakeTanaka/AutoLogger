@@ -1,0 +1,227 @@
+{
+  "file": "script44.py",
+  "logs": [
+    {
+      "line": 17,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.is_overdue"
+    },
+    {
+      "line": 20,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Task.is_overdue returning False because task has no due date or now is not set"
+    },
+    {
+      "line": 21,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Task.is_overdue returning comparison result between due datetime and now"
+    },
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.to_dict"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Task.to_dict returning serialized task payload"
+    },
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.from_dict"
+    },
+    {
+      "line": 38,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Task.from_dict failed to parse due datetime from raw mapping"
+    },
+    {
+      "line": 39,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Task.from_dict created Task instance from raw mapping"
+    },
+    {
+      "line": 53,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing empty Board"
+    },
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Board.add"
+    },
+    {
+      "line": 59,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Board.get"
+    },
+    {
+      "line": 59,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Board.get returning task for given ID or None"
+    },
+    {
+      "line": 62,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Board.all"
+    },
+    {
+      "line": 62,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Board.all returning list of all tasks"
+    },
+    {
+      "line": 65,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Board.pending"
+    },
+    {
+      "line": 65,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Board.pending returning list of incomplete tasks"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Board.to_dict"
+    },
+    {
+      "line": 68,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Board.to_dict returning serialized board state"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_board"
+    },
+    {
+      "line": 74,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_board returning board loaded from file"
+    },
+    {
+      "line": 79,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "load_board failed to read or parse tasks file"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_board returning partially populated board after failure"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_board returning board after processing all task rows"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_board"
+    },
+    {
+      "line": 94,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "save_board failed while writing board file; leaving existing data untouched"
+    },
+    {
+      "line": 94,
+      "kind": "return",
+      "level": "INFO",
+      "message": "save_board returning after handling save error"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_overdue"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "filter_overdue returning list of overdue tasks"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_summary"
+    },
+    {
+      "line": 106,
+      "kind": "return",
+      "level": "INFO",
+      "message": "compute_summary returning empty summary for no tasks"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "compute_summary returning counts for total, completed, and overdue tasks"
+    },
+    {
+      "line": 113,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main for task board CLI"
+    },
+    {
+      "line": 117,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "main encountered error while loading tasks or initializing board"
+    },
+    {
+      "line": 117,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 after early initialization failure"
+    },
+    {
+      "line": 150,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "main encountered error while computing summary or writing report"
+    },
+    {
+      "line": 150,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 after report generation failure"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 after successfully processing tasks and report"
+    }
+  ]
+}

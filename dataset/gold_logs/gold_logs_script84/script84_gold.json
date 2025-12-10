@@ -1,0 +1,287 @@
+{
+  "file": "script84.py",
+  "logs": [
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.is_overdue"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from Task.is_overdue"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning overdue comparison result from Task.is_overdue"
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.matches"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning match result from Task.matches"
+    },
+    {
+      "line": 38,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.to_dict"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized task from Task.to_dict"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.from_dict"
+    },
+    {
+      "line": 61,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse task in Task.from_dict"
+    },
+    {
+      "line": 61,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None from Task.from_dict"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PlannerState.add_task"
+    },
+    {
+      "line": 73,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PlannerState.mark_done"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning result from PlannerState.mark_done"
+    },
+    {
+      "line": 82,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PlannerState.query_tasks"
+    },
+    {
+      "line": 82,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered tasks from PlannerState.query_tasks"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PlannerState.upcoming"
+    },
+    {
+      "line": 86,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning upcoming tasks from PlannerState.upcoming"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PlannerState.to_dict"
+    },
+    {
+      "line": 89,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized planner state from PlannerState.to_dict"
+    },
+    {
+      "line": 93,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PlannerState.from_dict"
+    },
+    {
+      "line": 98,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning PlannerState instance from PlannerState.from_dict"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.__init__"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient._url"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning constructed URL from SyncClient._url"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.pull_remote"
+    },
+    {
+      "line": 123,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to pull remote tasks in SyncClient.pull_remote"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning remote task items from SyncClient.pull_remote"
+    },
+    {
+      "line": 126,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.push_summary"
+    },
+    {
+      "line": 135,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to push summary in SyncClient.push_summary"
+    },
+    {
+      "line": 135,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False from SyncClient.push_summary"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_state"
+    },
+    {
+      "line": 146,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load state in load_state"
+    },
+    {
+      "line": 146,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fallback PlannerState from load_state"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_state"
+    },
+    {
+      "line": 156,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to save state in save_state"
+    },
+    {
+      "line": 156,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Aborting save_state after failure"
+    },
+    {
+      "line": 160,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_stats"
+    },
+    {
+      "line": 165,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning statistics from compute_stats"
+    },
+    {
+      "line": 174,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_day"
+    },
+    {
+      "line": 187,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning created task count from simulate_day"
+    },
+    {
+      "line": 191,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_urgent"
+    },
+    {
+      "line": 194,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning urgent tasks from filter_urgent"
+    },
+    {
+      "line": 198,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_state"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summarized planner state from summarize_state"
+    },
+    {
+      "line": 217,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 241,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unexpected error in main"
+    },
+    {
+      "line": 242,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning exit code from main"
+    }
+  ]
+}

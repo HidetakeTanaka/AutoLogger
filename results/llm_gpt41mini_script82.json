@@ -1,0 +1,161 @@
+{
+  "file": "script82.py",
+  "logs": [
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Transaction is_income check: amount={self.amount}, result={self.amount > 0}')"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_category with query='{query}'\")"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 57,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Transaction from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_transaction with transaction id={tx.id} amount={tx.amount}\")"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering balance method with currency={currency}\")"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Balance calculated: {total} {currency}')"
+    },
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering BudgetState.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'BudgetState created from dict with tx={tx}')"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing RateClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with base={base}\")"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_rates with base currency: {base}\")"
+    },
+    {
+      "line": 123,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch rates from {url} with request {req}', exc_info=True)"
+    },
+    {
+      "line": 127,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_budget with path: {path}\")"
+    },
+    {
+      "line": 134,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load budget from {path}')"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_budget with path={path} and budget={budget}\")"
+    },
+    {
+      "line": 145,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save budget to {path} with payload {payload} and temp data {tmp}', exc_info=True)"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Budget saved successfully to {path} with payload size {len(payload)} bytes.')"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_monthly_summary for {month}/{year} with budget={budget}, income={income}, expense={expense}, selected={selected}\")"
+    },
+    {
+      "line": 164,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Monthly summary computed for {year}-{month}: count={len(selected)}, income={income}, expense={expense}')"
+    },
+    {
+      "line": 176,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering apply_exchange_rates with budget={budget}, target={target}\")"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning budget after applying exchange rates: {budget}')"
+    },
+    {
+      "line": 196,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Conversion completed with factor {factor}. Result: {converted}')"
+    },
+    {
+      "line": 200,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_spending with daily_limit={daily_limit}, days={days}, initial budget={budget}\")"
+    },
+    {
+      "line": 221,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 238,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

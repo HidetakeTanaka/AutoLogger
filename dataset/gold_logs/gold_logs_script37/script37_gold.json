@@ -1,0 +1,395 @@
+{
+  "file": "script37.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.is_overdue"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Task.is_overdue returning False (no due date or not applicable)"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Task.is_overdue returning overdue status based on due_date and status"
+    },
+    {
+      "line": 29,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.is_open"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Task.is_open returning open status based on current task status"
+    },
+    {
+      "line": 32,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.to_dict"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Task.to_dict returning serialized task data"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.from_dict"
+    },
+    {
+      "line": 49,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse due_date in Task.from_dict"
+    },
+    {
+      "line": 52,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Task.from_dict returning Task instance from raw data"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.add_task"
+    },
+    {
+      "line": 72,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.remove_task"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Project.remove_task removed task and returning True"
+    },
+    {
+      "line": 76,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Project.remove_task did not find task and returning False"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.to_dict"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Project.to_dict returning serialized project with tasks"
+    },
+    {
+      "line": 87,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.from_dict"
+    },
+    {
+      "line": 89,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Project.from_dict returning Project instance from raw data"
+    },
+    {
+      "line": 98,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing ProjectStore with path"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProjectStore.load"
+    },
+    {
+      "line": 104,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ProjectStore.load finished loading projects"
+    },
+    {
+      "line": 109,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load projects in ProjectStore.load"
+    },
+    {
+      "line": 110,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ProjectStore.load returning early after failure"
+    },
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProjectStore.save"
+    },
+    {
+      "line": 127,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProjectStore.get"
+    },
+    {
+      "line": 127,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ProjectStore.get returning project by id or None"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProjectStore.upsert"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ProjectStore.all"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ProjectStore.all returning list of all projects"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Initializing RemoteClient with base_url and timeout"
+    },
+    {
+      "line": 142,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RemoteClient._url"
+    },
+    {
+      "line": 144,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RemoteClient._url returning full URL for path"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RemoteClient.fetch_tasks"
+    },
+    {
+      "line": 153,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Network or HTTP error in RemoteClient.fetch_tasks"
+    },
+    {
+      "line": 153,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RemoteClient.fetch_tasks returning empty list after network error"
+    },
+    {
+      "line": 157,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to decode remote response in RemoteClient.fetch_tasks"
+    },
+    {
+      "line": 157,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RemoteClient.fetch_tasks returning empty list after decode error"
+    },
+    {
+      "line": 158,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RemoteClient.fetch_tasks returning tasks from remote response"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RemoteClient.push_project"
+    },
+    {
+      "line": 167,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RemoteClient.push_project returning success status based on HTTP response"
+    },
+    {
+      "line": 169,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to push project in RemoteClient.push_project"
+    },
+    {
+      "line": 169,
+      "kind": "return",
+      "level": "INFO",
+      "message": "RemoteClient.push_project returning False after failure"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_overdue"
+    },
+    {
+      "line": 174,
+      "kind": "return",
+      "level": "INFO",
+      "message": "filter_overdue returning list of overdue tasks"
+    },
+    {
+      "line": 178,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_by_tag"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "filter_by_tag returning tasks matching tag"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering sort_by_priority"
+    },
+    {
+      "line": 186,
+      "kind": "return",
+      "level": "INFO",
+      "message": "sort_by_priority returning tasks sorted by priority and title"
+    },
+    {
+      "line": 190,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_tasks"
+    },
+    {
+      "line": 200,
+      "kind": "return",
+      "level": "INFO",
+      "message": "summarize_tasks returning counts for total, open and overdue tasks"
+    },
+    {
+      "line": 204,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_config"
+    },
+    {
+      "line": 205,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning empty config when path is not provided or invalid"
+    },
+    {
+      "line": 208,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning configuration loaded from JSON file"
+    },
+    {
+      "line": 210,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load configuration in load_config"
+    },
+    {
+      "line": 210,
+      "kind": "return",
+      "level": "INFO",
+      "message": "load_config returning empty config after failure"
+    },
+    {
+      "line": 214,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ensure_demo_project"
+    },
+    {
+      "line": 215,
+      "kind": "return",
+      "level": "INFO",
+      "message": "ensure_demo_project returning after optionally creating demo project"
+    },
+    {
+      "line": 234,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering sync_if_enabled"
+    },
+    {
+      "line": 235,
+      "kind": "return",
+      "level": "INFO",
+      "message": "sync_if_enabled returning because remote sync is disabled in config"
+    },
+    {
+      "line": 241,
+      "kind": "return",
+      "level": "INFO",
+      "message": "sync_if_enabled returning after fetching remote tasks"
+    },
+    {
+      "line": 244,
+      "kind": "return",
+      "level": "INFO",
+      "message": "sync_if_enabled returning after pushing local project to remote"
+    },
+    {
+      "line": 251,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering export_summary"
+    },
+    {
+      "line": 257,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 281,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 1 after failure"
+    },
+    {
+      "line": 282,
+      "kind": "return",
+      "level": "INFO",
+      "message": "main returning exit code 0 on success"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "file": "script63.py",
+  "logs": [
+    {
+      "line": 48,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Student.from_dict"
+    },
+    {
+      "line": 62,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to deserialize student in Student.from_dict"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.fetch_benchmarks"
+    },
+    {
+      "line": 119,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning decoded benchmark payload from AnalyticsClient.fetch_benchmarks"
+    },
+    {
+      "line": 121,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching benchmarks in AnalyticsClient.fetch_benchmarks"
+    },
+    {
+      "line": 124,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering AnalyticsClient.push_summary"
+    },
+    {
+      "line": 132,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Successfully pushed project summary in AnalyticsClient.push_summary"
+    },
+    {
+      "line": 134,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to push summary in AnalyticsClient.push_summary"
+    },
+    {
+      "line": 138,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_course"
+    },
+    {
+      "line": 143,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error reading or parsing course file in load_course"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_course"
+    },
+    {
+      "line": 155,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to persist course file in save_course"
+    },
+    {
+      "line": 165,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed project summary from summarize_course"
+    },
+    {
+      "line": 205,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 228,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main"
+    }
+  ]
+}
+

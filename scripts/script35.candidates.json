@@ -1,0 +1,657 @@
+{
+  "file": "scripts/script35.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 18,
+      "end_line": 18,
+      "function": "popularity_score",
+      "class_name": "Article",
+      "code": "def popularity_score(self) -> float:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 19,
+      "end_line": 19,
+      "function": "popularity_score",
+      "class_name": "Article",
+      "code": "return float(self.likes)",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 20,
+      "end_line": 20,
+      "function": "popularity_score",
+      "class_name": "Article",
+      "code": "return self.likes / self.views * 100.0",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 23,
+      "end_line": 23,
+      "function": "to_dict",
+      "class_name": "Article",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "to_dict",
+      "class_name": "Article",
+      "code": "return {'article_id': self.article_id, 'title': self.title, 'category': self.category, 'views': self.views, 'likes': self.likes}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 41,
+      "end_line": 41,
+      "function": "__init__",
+      "class_name": "ArticleStore",
+      "code": "def __init__(self, path: Path) -> None:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 45,
+      "end_line": 45,
+      "function": "load",
+      "class_name": "ArticleStore",
+      "code": "def load(self) -> None:",
+      "vars_in_scope": [
+        "aid",
+        "arts",
+        "cat",
+        "data",
+        "likes",
+        "self",
+        "title",
+        "views"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 47,
+      "end_line": 47,
+      "function": "load",
+      "class_name": "ArticleStore",
+      "code": "return",
+      "vars_in_scope": [
+        "aid",
+        "arts",
+        "cat",
+        "data",
+        "likes",
+        "self",
+        "title",
+        "views"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 52,
+      "end_line": 52,
+      "function": "load",
+      "class_name": "ArticleStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "aid",
+        "arts",
+        "cat",
+        "data",
+        "likes",
+        "self",
+        "title",
+        "views"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 53,
+      "end_line": 53,
+      "function": "load",
+      "class_name": "ArticleStore",
+      "code": "return",
+      "vars_in_scope": [
+        "aid",
+        "arts",
+        "cat",
+        "data",
+        "likes",
+        "self",
+        "title",
+        "views"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 63,
+      "end_line": 63,
+      "function": "load",
+      "class_name": "ArticleStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "aid",
+        "arts",
+        "cat",
+        "data",
+        "likes",
+        "self",
+        "title",
+        "views"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "func_entry",
+      "line": 68,
+      "end_line": 68,
+      "function": "save",
+      "class_name": "ArticleStore",
+      "code": "def save(self) -> None:",
+      "vars_in_scope": [
+        "payload",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "get",
+      "class_name": "ArticleStore",
+      "code": "def get(self, article_id: str) -> Optional[Article]:",
+      "vars_in_scope": [
+        "article_id",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 74,
+      "end_line": 74,
+      "function": "get",
+      "class_name": "ArticleStore",
+      "code": "return self._articles.get(article_id)",
+      "vars_in_scope": [
+        "article_id",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 77,
+      "end_line": 77,
+      "function": "all",
+      "class_name": "ArticleStore",
+      "code": "def all(self) -> List[Article]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 77,
+      "end_line": 77,
+      "function": "all",
+      "class_name": "ArticleStore",
+      "code": "return list(self._articles.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 82,
+      "end_line": 82,
+      "function": "__init__",
+      "class_name": "UserHistoryStore",
+      "code": "def __init__(self, path: Path) -> None:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 85,
+      "end_line": 85,
+      "function": "load",
+      "class_name": "UserHistoryStore",
+      "code": "def load(self) -> Dict[str, List[str]]:",
+      "vars_in_scope": [
+        "data",
+        "ids",
+        "result",
+        "self",
+        "uid"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 86,
+      "end_line": 86,
+      "function": "load",
+      "class_name": "UserHistoryStore",
+      "code": "return {}",
+      "vars_in_scope": [
+        "data",
+        "ids",
+        "result",
+        "self",
+        "uid"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 91,
+      "end_line": 91,
+      "function": "load",
+      "class_name": "UserHistoryStore",
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "ids",
+        "result",
+        "self",
+        "uid"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 91,
+      "end_line": 91,
+      "function": "load",
+      "class_name": "UserHistoryStore",
+      "code": "return {}",
+      "vars_in_scope": [
+        "data",
+        "ids",
+        "result",
+        "self",
+        "uid"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 99,
+      "end_line": 99,
+      "function": "load",
+      "class_name": "UserHistoryStore",
+      "code": "return result",
+      "vars_in_scope": [
+        "data",
+        "ids",
+        "result",
+        "self",
+        "uid"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 103,
+      "end_line": 103,
+      "function": "sort_articles_by_popularity",
+      "class_name": null,
+      "code": "def sort_articles_by_popularity(articles: Iterable[Article]) -> List[Article]:",
+      "vars_in_scope": [
+        "articles"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 103,
+      "end_line": 103,
+      "function": "sort_articles_by_popularity",
+      "class_name": null,
+      "code": "return sorted(articles, key=lambda a: a.popularity_score(), reverse=True)",
+      "vars_in_scope": [
+        "articles"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 112,
+      "end_line": 112,
+      "function": "build_recommendations_for_user",
+      "class_name": null,
+      "code": "def build_recommendations_for_user(",
+      "vars_in_scope": [
+        "articles",
+        "candidates",
+        "history",
+        "limit",
+        "ranked",
+        "recs",
+        "user_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 117,
+      "end_line": 117,
+      "function": "build_recommendations_for_user",
+      "class_name": null,
+      "code": "return recs",
+      "vars_in_scope": [
+        "articles",
+        "candidates",
+        "history",
+        "limit",
+        "ranked",
+        "recs",
+        "user_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 125,
+      "end_line": 125,
+      "function": "build_recommendations",
+      "class_name": null,
+      "code": "def build_recommendations(",
+      "vars_in_scope": [
+        "all_recs",
+        "articles",
+        "histories",
+        "limit",
+        "recs"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 129,
+      "end_line": 129,
+      "function": "build_recommendations",
+      "class_name": null,
+      "code": "return all_recs",
+      "vars_in_scope": [
+        "all_recs",
+        "articles",
+        "histories",
+        "limit",
+        "recs"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 133,
+      "end_line": 133,
+      "function": "export_recommendations",
+      "class_name": null,
+      "code": "def export_recommendations(path: Path, recs: List[Recommendation]) -> None:",
+      "vars_in_scope": [
+        "path",
+        "payload",
+        "recs"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 143,
+      "end_line": 143,
+      "function": "compute_category_stats",
+      "class_name": null,
+      "code": "def compute_category_stats(articles: List[Article]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "articles",
+        "cat",
+        "entry",
+        "likes",
+        "stats",
+        "views"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 157,
+      "end_line": 157,
+      "function": "compute_category_stats",
+      "class_name": null,
+      "code": "return stats",
+      "vars_in_scope": [
+        "articles",
+        "cat",
+        "entry",
+        "likes",
+        "stats",
+        "views"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 161,
+      "end_line": 161,
+      "function": "export_category_stats",
+      "class_name": null,
+      "code": "def export_category_stats(path: Path, stats: Dict[str, Any]) -> None:",
+      "vars_in_scope": [
+        "path",
+        "stats"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 167,
+      "end_line": 167,
+      "function": "load_config",
+      "class_name": null,
+      "code": "def load_config(path: Path) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 168,
+      "end_line": 168,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 171,
+      "end_line": 171,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return json.load(f)",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 173,
+      "end_line": 173,
+      "function": "load_config",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 173,
+      "end_line": 173,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 177,
+      "end_line": 177,
+      "function": "main",
+      "class_name": null,
+      "code": "def main() -> int:",
+      "vars_in_scope": [
+        "_",
+        "articles",
+        "articles_path",
+        "base",
+        "cfg",
+        "config_path",
+        "histories",
+        "history_path",
+        "history_store",
+        "recs",
+        "recs_path",
+        "stats",
+        "stats_path",
+        "store"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 187,
+      "end_line": 187,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "_",
+        "articles",
+        "articles_path",
+        "base",
+        "cfg",
+        "config_path",
+        "histories",
+        "history_path",
+        "history_store",
+        "recs",
+        "recs_path",
+        "stats",
+        "stats_path",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 203,
+      "end_line": 203,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "_",
+        "articles",
+        "articles_path",
+        "base",
+        "cfg",
+        "config_path",
+        "histories",
+        "history_path",
+        "history_store",
+        "recs",
+        "recs_path",
+        "stats",
+        "stats_path",
+        "store"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

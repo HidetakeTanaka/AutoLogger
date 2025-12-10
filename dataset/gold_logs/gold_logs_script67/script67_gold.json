@@ -1,0 +1,84 @@
+{
+  "file": "script67.py",
+  "logs": [
+    {
+      "line": 96,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_recommendations"
+    },
+    {
+      "line": 102,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Network error in fetch_recommendations"
+    },
+    {
+      "line": 106,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed recommendations from fetch_recommendations"
+    },
+    {
+      "line": 109,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Decode error in fetch_recommendations"
+    },
+    {
+      "line": 113,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_user"
+    },
+    {
+      "line": 118,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to load user from disk"
+    },
+    {
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Falling back to anonymous user"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_user"
+    },
+    {
+      "line": 129,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write temporary user file"
+    },
+    {
+      "line": 133,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to finalize user file save"
+    },
+    {
+      "line": 183,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main for script67"
+    },
+    {
+      "line": 226,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled error in main"
+    },
+    {
+      "line": 227,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Completed successfully, exiting with code 0 in main"
+    }
+  ]
+}
+

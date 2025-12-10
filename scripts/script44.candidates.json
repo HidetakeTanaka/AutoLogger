@@ -1,0 +1,623 @@
+{
+  "file": "scripts/script44.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 17,
+      "end_line": 17,
+      "function": "is_overdue",
+      "class_name": "Task",
+      "code": "def is_overdue(self, now: Optional[datetime] = None) -> bool:",
+      "vars_in_scope": [
+        "now",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 20,
+      "end_line": 20,
+      "function": "is_overdue",
+      "class_name": "Task",
+      "code": "return False",
+      "vars_in_scope": [
+        "now",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 21,
+      "end_line": 21,
+      "function": "is_overdue",
+      "class_name": "Task",
+      "code": "return self.due < now",
+      "vars_in_scope": [
+        "now",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 24,
+      "end_line": 24,
+      "function": "to_dict",
+      "class_name": "Task",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 24,
+      "end_line": 24,
+      "function": "to_dict",
+      "class_name": "Task",
+      "code": "return {'task_id': self.task_id, 'title': self.title, 'owner': self.owner, 'due': self.due.isoformat(), 'completed': self.completed}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 34,
+      "end_line": 34,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Task\":",
+      "vars_in_scope": [
+        "cls",
+        "due",
+        "due_raw",
+        "raw"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 38,
+      "end_line": 38,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "due",
+        "due_raw",
+        "raw"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 39,
+      "end_line": 39,
+      "function": "from_dict",
+      "class_name": "Task",
+      "code": "return cls(task_id=str(raw.get('task_id', '')), title=str(raw.get('title', '')), owner=str(raw.get('owner', '')), due=due, completed=bool(raw.get('completed', False)))",
+      "vars_in_scope": [
+        "cls",
+        "due",
+        "due_raw",
+        "raw"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 53,
+      "end_line": 53,
+      "function": "__init__",
+      "class_name": "Board",
+      "code": "def __init__(self) -> None:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 56,
+      "end_line": 56,
+      "function": "add",
+      "class_name": "Board",
+      "code": "def add(self, task: Task) -> None:",
+      "vars_in_scope": [
+        "self",
+        "task"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 59,
+      "end_line": 59,
+      "function": "get",
+      "class_name": "Board",
+      "code": "def get(self, task_id: str) -> Optional[Task]:",
+      "vars_in_scope": [
+        "self",
+        "task_id"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 59,
+      "end_line": 59,
+      "function": "get",
+      "class_name": "Board",
+      "code": "return self.tasks.get(task_id)",
+      "vars_in_scope": [
+        "self",
+        "task_id"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 62,
+      "end_line": 62,
+      "function": "all",
+      "class_name": "Board",
+      "code": "def all(self) -> List[Task]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 62,
+      "end_line": 62,
+      "function": "all",
+      "class_name": "Board",
+      "code": "return list(self.tasks.values())",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 65,
+      "end_line": 65,
+      "function": "pending",
+      "class_name": "Board",
+      "code": "def pending(self) -> List[Task]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 65,
+      "end_line": 65,
+      "function": "pending",
+      "class_name": "Board",
+      "code": "return [t for t in self.tasks.values() if not t.completed]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 68,
+      "end_line": 68,
+      "function": "to_dict",
+      "class_name": "Board",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 68,
+      "end_line": 68,
+      "function": "to_dict",
+      "class_name": "Board",
+      "code": "return {'tasks': [t.to_dict() for t in self.tasks.values()]}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 72,
+      "end_line": 72,
+      "function": "load_board",
+      "class_name": null,
+      "code": "def load_board(path: Path) -> Board:",
+      "vars_in_scope": [
+        "board",
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 74,
+      "end_line": 74,
+      "function": "load_board",
+      "class_name": null,
+      "code": "return board",
+      "vars_in_scope": [
+        "board",
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 79,
+      "end_line": 79,
+      "function": "load_board",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "board",
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 79,
+      "end_line": 79,
+      "function": "load_board",
+      "class_name": null,
+      "code": "return board",
+      "vars_in_scope": [
+        "board",
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 84,
+      "end_line": 84,
+      "function": "load_board",
+      "class_name": null,
+      "code": "return board",
+      "vars_in_scope": [
+        "board",
+        "data",
+        "path",
+        "rows"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 88,
+      "end_line": 88,
+      "function": "save_board",
+      "class_name": null,
+      "code": "def save_board(path: Path, board: Board) -> None:",
+      "vars_in_scope": [
+        "board",
+        "path",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 94,
+      "end_line": 94,
+      "function": "save_board",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "board",
+        "path",
+        "tmp"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 94,
+      "end_line": 94,
+      "function": "save_board",
+      "class_name": null,
+      "code": "return",
+      "vars_in_scope": [
+        "board",
+        "path",
+        "tmp"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 98,
+      "end_line": 98,
+      "function": "filter_overdue",
+      "class_name": null,
+      "code": "def filter_overdue(tasks: Iterable[Task], now: Optional[datetime] = None) -> List[Task]:",
+      "vars_in_scope": [
+        "now",
+        "tasks"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 100,
+      "end_line": 100,
+      "function": "filter_overdue",
+      "class_name": null,
+      "code": "return [t for t in tasks if t.is_overdue(now)]",
+      "vars_in_scope": [
+        "now",
+        "tasks"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 104,
+      "end_line": 104,
+      "function": "compute_summary",
+      "class_name": null,
+      "code": "def compute_summary(tasks: Iterable[Task]) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "completed",
+        "items",
+        "overdue",
+        "tasks"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 106,
+      "end_line": 106,
+      "function": "compute_summary",
+      "class_name": null,
+      "code": "return {'count': 0, 'completed': 0, 'overdue': 0}",
+      "vars_in_scope": [
+        "completed",
+        "items",
+        "overdue",
+        "tasks"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "compute_summary",
+      "class_name": null,
+      "code": "return {'count': len(items), 'completed': completed, 'overdue': overdue}",
+      "vars_in_scope": [
+        "completed",
+        "items",
+        "overdue",
+        "tasks"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 113,
+      "end_line": 113,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(base_dir: str = \"data\") -> int:",
+      "vars_in_scope": [
+        "all_tasks",
+        "base",
+        "base_dir",
+        "board",
+        "focus",
+        "idx",
+        "now",
+        "ordered",
+        "overdue",
+        "overdue_pending",
+        "pending",
+        "report",
+        "report_path",
+        "sample",
+        "summary",
+        "tasks_path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 117,
+      "end_line": 117,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "all_tasks",
+        "base",
+        "base_dir",
+        "board",
+        "focus",
+        "idx",
+        "now",
+        "ordered",
+        "overdue",
+        "overdue_pending",
+        "pending",
+        "report",
+        "report_path",
+        "sample",
+        "summary",
+        "tasks_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 117,
+      "end_line": 117,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "all_tasks",
+        "base",
+        "base_dir",
+        "board",
+        "focus",
+        "idx",
+        "now",
+        "ordered",
+        "overdue",
+        "overdue_pending",
+        "pending",
+        "report",
+        "report_path",
+        "sample",
+        "summary",
+        "tasks_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 150,
+      "end_line": 150,
+      "function": "main",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "all_tasks",
+        "base",
+        "base_dir",
+        "board",
+        "focus",
+        "idx",
+        "now",
+        "ordered",
+        "overdue",
+        "overdue_pending",
+        "pending",
+        "report",
+        "report_path",
+        "sample",
+        "summary",
+        "tasks_path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 150,
+      "end_line": 150,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "all_tasks",
+        "base",
+        "base_dir",
+        "board",
+        "focus",
+        "idx",
+        "now",
+        "ordered",
+        "overdue",
+        "overdue_pending",
+        "pending",
+        "report",
+        "report_path",
+        "sample",
+        "summary",
+        "tasks_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "all_tasks",
+        "base",
+        "base_dir",
+        "board",
+        "focus",
+        "idx",
+        "now",
+        "ordered",
+        "overdue",
+        "overdue_pending",
+        "pending",
+        "report",
+        "report_path",
+        "sample",
+        "summary",
+        "tasks_path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

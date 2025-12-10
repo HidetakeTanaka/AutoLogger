@@ -1,0 +1,134 @@
+{
+  "file": "script78.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 24,
+      "level": "WARNING",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Random log at line 25 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 33,
+      "level": "ERROR",
+      "message": "Random log at line 33 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 36,
+      "level": "DEBUG",
+      "message": "Random log at line 36 in mark_read",
+      "kind": "entry",
+      "function": "mark_read"
+    },
+    {
+      "line": 39,
+      "level": "DEBUG",
+      "message": "Random log at line 39 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 72,
+      "level": "DEBUG",
+      "message": "Random log at line 72 in add_article",
+      "kind": "entry",
+      "function": "add_article"
+    },
+    {
+      "line": 77,
+      "level": "ERROR",
+      "message": "Random log at line 77 in unread",
+      "kind": "entry",
+      "function": "unread"
+    },
+    {
+      "line": 80,
+      "level": "WARNING",
+      "message": "Random log at line 80 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 80,
+      "level": "ERROR",
+      "message": "Random log at line 80 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 88,
+      "level": "WARNING",
+      "message": "Random log at line 88 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 121,
+      "level": "INFO",
+      "message": "Random log at line 121 in fetch_feed",
+      "kind": "return",
+      "function": "fetch_feed"
+    },
+    {
+      "line": 150,
+      "level": "WARNING",
+      "message": "Random log at line 150 in save_feeds",
+      "kind": "except",
+      "function": "save_feeds"
+    },
+    {
+      "line": 154,
+      "level": "WARNING",
+      "message": "Random log at line 154 in save_feeds",
+      "kind": "except",
+      "function": "save_feeds"
+    },
+    {
+      "line": 180,
+      "level": "INFO",
+      "message": "Random log at line 180 in merge_feed",
+      "kind": "except",
+      "function": "merge_feed"
+    },
+    {
+      "line": 193,
+      "level": "ERROR",
+      "message": "Random log at line 193 in summarize_feeds",
+      "kind": "entry",
+      "function": "summarize_feeds"
+    },
+    {
+      "line": 256,
+      "level": "DEBUG",
+      "message": "Random log at line 256 in main",
+      "kind": "except",
+      "function": "main"
+    },
+    {
+      "line": 258,
+      "level": "WARNING",
+      "message": "Random log at line 258 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 259,
+      "level": "ERROR",
+      "message": "Random log at line 259 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

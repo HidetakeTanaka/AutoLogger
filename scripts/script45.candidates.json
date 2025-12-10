@@ -1,0 +1,911 @@
+{
+  "file": "scripts/script45.py",
+  "candidates": [
+    {
+      "kind": "func_entry",
+      "line": 22,
+      "end_line": 22,
+      "function": "is_recent",
+      "class_name": "SensorReading",
+      "code": "def is_recent(self, hours: int = 1) -> bool:",
+      "vars_in_scope": [
+        "hours",
+        "now",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 23,
+      "end_line": 23,
+      "function": "is_recent",
+      "class_name": "SensorReading",
+      "code": "return self.ts >= now - timedelta(hours=hours)",
+      "vars_in_scope": [
+        "hours",
+        "now",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 26,
+      "end_line": 26,
+      "function": "is_anomalous",
+      "class_name": "SensorReading",
+      "code": "def is_anomalous(self, min_val: float = 0.0, max_val: float = 100.0) -> bool:",
+      "vars_in_scope": [
+        "max_val",
+        "min_val",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 27,
+      "end_line": 27,
+      "function": "is_anomalous",
+      "class_name": "SensorReading",
+      "code": "return True",
+      "vars_in_scope": [
+        "max_val",
+        "min_val",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 29,
+      "end_line": 29,
+      "function": "is_anomalous",
+      "class_name": "SensorReading",
+      "code": "return True",
+      "vars_in_scope": [
+        "max_val",
+        "min_val",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 31,
+      "end_line": 31,
+      "function": "is_anomalous",
+      "class_name": "SensorReading",
+      "code": "return True",
+      "vars_in_scope": [
+        "max_val",
+        "min_val",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 32,
+      "end_line": 32,
+      "function": "is_anomalous",
+      "class_name": "SensorReading",
+      "code": "return False",
+      "vars_in_scope": [
+        "max_val",
+        "min_val",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_row",
+      "class_name": "SensorReading",
+      "code": "def to_row(self) -> List[str]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 35,
+      "end_line": 35,
+      "function": "to_row",
+      "class_name": "SensorReading",
+      "code": "return [self.device_id, self.ts.isoformat(), str(self.value), self.status]",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 44,
+      "end_line": 44,
+      "function": "from_row",
+      "class_name": "SensorReading",
+      "code": "def from_row(cls, row: Dict[str, str]) -> Optional[\"SensorReading\"]:",
+      "vars_in_scope": [
+        "cls",
+        "device_id",
+        "row",
+        "status",
+        "ts",
+        "value"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 50,
+      "end_line": 50,
+      "function": "from_row",
+      "class_name": "SensorReading",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "device_id",
+        "row",
+        "status",
+        "ts",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 51,
+      "end_line": 51,
+      "function": "from_row",
+      "class_name": "SensorReading",
+      "code": "return cls(device_id=device_id, ts=ts, value=value, status=status)",
+      "vars_in_scope": [
+        "cls",
+        "device_id",
+        "row",
+        "status",
+        "ts",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 53,
+      "end_line": 53,
+      "function": "from_row",
+      "class_name": "SensorReading",
+      "code": "except ...",
+      "vars_in_scope": [
+        "cls",
+        "device_id",
+        "row",
+        "status",
+        "ts",
+        "value"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 53,
+      "end_line": 53,
+      "function": "from_row",
+      "class_name": "SensorReading",
+      "code": "return None",
+      "vars_in_scope": [
+        "cls",
+        "device_id",
+        "row",
+        "status",
+        "ts",
+        "value"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 64,
+      "end_line": 64,
+      "function": "update",
+      "class_name": "DeviceState",
+      "code": "def update(self, reading: SensorReading) -> None:",
+      "vars_in_scope": [
+        "reading",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 69,
+      "end_line": 69,
+      "function": "average_value",
+      "class_name": "DeviceState",
+      "code": "def average_value(self) -> Optional[float]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 70,
+      "end_line": 70,
+      "function": "average_value",
+      "class_name": "DeviceState",
+      "code": "return None",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 71,
+      "end_line": 71,
+      "function": "average_value",
+      "class_name": "DeviceState",
+      "code": "return sum(self.values) / len(self.values)",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 74,
+      "end_line": 74,
+      "function": "is_stale",
+      "class_name": "DeviceState",
+      "code": "def is_stale(self, max_age_minutes: int = 10) -> bool:",
+      "vars_in_scope": [
+        "max_age_minutes",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 75,
+      "end_line": 75,
+      "function": "is_stale",
+      "class_name": "DeviceState",
+      "code": "return True",
+      "vars_in_scope": [
+        "max_age_minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 76,
+      "end_line": 76,
+      "function": "is_stale",
+      "class_name": "DeviceState",
+      "code": "return self.last_seen < datetime.utcnow() - timedelta(minutes=max_age_minutes)",
+      "vars_in_scope": [
+        "max_age_minutes",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 79,
+      "end_line": 79,
+      "function": "to_dict",
+      "class_name": "DeviceState",
+      "code": "def to_dict(self) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 79,
+      "end_line": 79,
+      "function": "to_dict",
+      "class_name": "DeviceState",
+      "code": "return {'device_id': self.device_id, 'last_seen': self.last_seen.isoformat() if self.last_seen else None, 'average': self.average_value(), 'count': len(self.values), 'stale': self.is_stale()}",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 90,
+      "end_line": 90,
+      "function": "__init__",
+      "class_name": "TelemetryClient",
+      "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
+      "vars_in_scope": [
+        "base_url",
+        "self",
+        "timeout"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 94,
+      "end_line": 94,
+      "function": "_url",
+      "class_name": "TelemetryClient",
+      "code": "def _url(self, path: str) -> str:",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 96,
+      "end_line": 96,
+      "function": "_url",
+      "class_name": "TelemetryClient",
+      "code": "return self.base_url + path",
+      "vars_in_scope": [
+        "path",
+        "self"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 99,
+      "end_line": 99,
+      "function": "fetch_remote_config",
+      "class_name": "TelemetryClient",
+      "code": "def fetch_remote_config(self, device_id: str) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 100,
+      "end_line": 100,
+      "function": "fetch_remote_config",
+      "class_name": "TelemetryClient",
+      "code": "return {}",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 108,
+      "end_line": 108,
+      "function": "fetch_remote_config",
+      "class_name": "TelemetryClient",
+      "code": "return {}",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 109,
+      "end_line": 109,
+      "function": "fetch_remote_config",
+      "class_name": "TelemetryClient",
+      "code": "return data",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 111,
+      "end_line": 111,
+      "function": "fetch_remote_config",
+      "class_name": "TelemetryClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 111,
+      "end_line": 111,
+      "function": "fetch_remote_config",
+      "class_name": "TelemetryClient",
+      "code": "return {}",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "device_id",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 114,
+      "end_line": 114,
+      "function": "push_aggregate",
+      "class_name": "TelemetryClient",
+      "code": "def push_aggregate(self, payload: Dict[str, Any]) -> bool:",
+      "vars_in_scope": [
+        "body",
+        "code",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 115,
+      "end_line": 115,
+      "function": "push_aggregate",
+      "class_name": "TelemetryClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "code",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 122,
+      "end_line": 122,
+      "function": "push_aggregate",
+      "class_name": "TelemetryClient",
+      "code": "return 200 <= code < 300",
+      "vars_in_scope": [
+        "body",
+        "code",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 124,
+      "end_line": 124,
+      "function": "push_aggregate",
+      "class_name": "TelemetryClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "code",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 124,
+      "end_line": 124,
+      "function": "push_aggregate",
+      "class_name": "TelemetryClient",
+      "code": "return False",
+      "vars_in_scope": [
+        "body",
+        "code",
+        "payload",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 128,
+      "end_line": 128,
+      "function": "parse_csv",
+      "class_name": null,
+      "code": "def parse_csv(path: Path) -> List[SensorReading]:",
+      "vars_in_scope": [
+        "path",
+        "reader",
+        "reading",
+        "readings"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "except",
+      "line": 138,
+      "end_line": 138,
+      "function": "parse_csv",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "path",
+        "reader",
+        "reading",
+        "readings"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 138,
+      "end_line": 138,
+      "function": "parse_csv",
+      "class_name": null,
+      "code": "return []",
+      "vars_in_scope": [
+        "path",
+        "reader",
+        "reading",
+        "readings"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 139,
+      "end_line": 139,
+      "function": "parse_csv",
+      "class_name": null,
+      "code": "return readings",
+      "vars_in_scope": [
+        "path",
+        "reader",
+        "reading",
+        "readings"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 143,
+      "end_line": 143,
+      "function": "aggregate_by_device",
+      "class_name": null,
+      "code": "def aggregate_by_device(readings: Iterable[SensorReading]) -> Dict[str, DeviceState]:",
+      "vars_in_scope": [
+        "devices",
+        "readings"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 148,
+      "end_line": 148,
+      "function": "aggregate_by_device",
+      "class_name": null,
+      "code": "return devices",
+      "vars_in_scope": [
+        "devices",
+        "readings"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 156,
+      "end_line": 156,
+      "function": "detect_anomalies",
+      "class_name": null,
+      "code": "def detect_anomalies(",
+      "vars_in_scope": [
+        "anomalies",
+        "max_val",
+        "min_val",
+        "readings"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 160,
+      "end_line": 160,
+      "function": "detect_anomalies",
+      "class_name": null,
+      "code": "return anomalies",
+      "vars_in_scope": [
+        "anomalies",
+        "max_val",
+        "min_val",
+        "readings"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 168,
+      "end_line": 168,
+      "function": "save_report",
+      "class_name": null,
+      "code": "def save_report(",
+      "vars_in_scope": [
+        "anomalies",
+        "devices",
+        "path",
+        "report",
+        "tmp"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "func_entry",
+      "line": 181,
+      "end_line": 181,
+      "function": "load_config",
+      "class_name": null,
+      "code": "def load_config(path: Path) -> Dict[str, Any]:",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 185,
+      "end_line": 185,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 186,
+      "end_line": 186,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return data",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "except",
+      "line": 188,
+      "end_line": 188,
+      "function": "load_config",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "inside except",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "before_return",
+      "line": 188,
+      "end_line": 188,
+      "function": "load_config",
+      "class_name": null,
+      "code": "return {}",
+      "vars_in_scope": [
+        "data",
+        "path"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 192,
+      "end_line": 192,
+      "function": "summarize_anomalies",
+      "class_name": null,
+      "code": "def summarize_anomalies(anomalies: Iterable[SensorReading]) -> Dict[str, int]:",
+      "vars_in_scope": [
+        "anomalies",
+        "counts"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 195,
+      "end_line": 195,
+      "function": "summarize_anomalies",
+      "class_name": null,
+      "code": "return counts",
+      "vars_in_scope": [
+        "anomalies",
+        "counts"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 199,
+      "end_line": 199,
+      "function": "main",
+      "class_name": null,
+      "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
+      "vars_in_scope": [
+        "anomalies",
+        "base",
+        "base_url",
+        "cfg",
+        "cfg_path",
+        "client",
+        "csv_path",
+        "data_dir",
+        "devices",
+        "max_val",
+        "min_val",
+        "payload",
+        "readings",
+        "recent",
+        "report_path",
+        "summary"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "before_return",
+      "line": 208,
+      "end_line": 208,
+      "function": "main",
+      "class_name": null,
+      "code": "return 1",
+      "vars_in_scope": [
+        "anomalies",
+        "base",
+        "base_url",
+        "cfg",
+        "cfg_path",
+        "client",
+        "csv_path",
+        "data_dir",
+        "devices",
+        "max_val",
+        "min_val",
+        "payload",
+        "readings",
+        "recent",
+        "report_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "before_return",
+      "line": 217,
+      "end_line": 217,
+      "function": "main",
+      "class_name": null,
+      "code": "return 0",
+      "vars_in_scope": [
+        "anomalies",
+        "base",
+        "base_url",
+        "cfg",
+        "cfg_path",
+        "client",
+        "csv_path",
+        "data_dir",
+        "devices",
+        "max_val",
+        "min_val",
+        "payload",
+        "readings",
+        "recent",
+        "report_path",
+        "summary"
+      ],
+      "why": "before return",
+      "severity_hint": "INFO"
+    }
+  ]
+}

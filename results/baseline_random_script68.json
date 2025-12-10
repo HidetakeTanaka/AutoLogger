@@ -1,0 +1,120 @@
+{
+  "file": "script68.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_long",
+      "kind": "return",
+      "function": "is_long"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in is_long",
+      "kind": "return",
+      "function": "is_long"
+    },
+    {
+      "line": 32,
+      "level": "ERROR",
+      "message": "Random log at line 32 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 75,
+      "level": "DEBUG",
+      "message": "Random log at line 75 in add_session",
+      "kind": "return",
+      "function": "add_session"
+    },
+    {
+      "line": 80,
+      "level": "ERROR",
+      "message": "Random log at line 80 in total_minutes",
+      "kind": "return",
+      "function": "total_minutes"
+    },
+    {
+      "line": 89,
+      "level": "WARNING",
+      "message": "Random log at line 89 in weekly_progress",
+      "kind": "return",
+      "function": "weekly_progress"
+    },
+    {
+      "line": 90,
+      "level": "ERROR",
+      "message": "Random log at line 90 in weekly_progress",
+      "kind": "return",
+      "function": "weekly_progress"
+    },
+    {
+      "line": 93,
+      "level": "WARNING",
+      "message": "Random log at line 93 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 146,
+      "level": "INFO",
+      "message": "Random log at line 146 in push_summary",
+      "kind": "entry",
+      "function": "push_summary"
+    },
+    {
+      "line": 169,
+      "level": "WARNING",
+      "message": "Random log at line 169 in load_profile",
+      "kind": "return",
+      "function": "load_profile"
+    },
+    {
+      "line": 173,
+      "level": "WARNING",
+      "message": "Random log at line 173 in save_profile",
+      "kind": "entry",
+      "function": "save_profile"
+    },
+    {
+      "line": 188,
+      "level": "INFO",
+      "message": "Random log at line 188 in summarize_profile",
+      "kind": "entry",
+      "function": "summarize_profile"
+    },
+    {
+      "line": 197,
+      "level": "ERROR",
+      "message": "Random log at line 197 in summarize_profile",
+      "kind": "return",
+      "function": "summarize_profile"
+    },
+    {
+      "line": 260,
+      "level": "DEBUG",
+      "message": "Random log at line 260 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

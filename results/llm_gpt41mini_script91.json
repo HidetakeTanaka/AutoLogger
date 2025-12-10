@@ -1,0 +1,161 @@
+{
+  "file": "script91.py",
+  "logs": [
+    {
+      "line": 31,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_tag with query='{query}'\")"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 61,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Task from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering UserSettings.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 94,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create UserSettings from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_task with task: {task}\")"
+    },
+    {
+      "line": 118,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 132,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing SuggestionClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 136,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 141,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_suggestions with user_id={user_id}\")"
+    },
+    {
+      "line": 151,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully fetched and parsed suggestions for user_id={user_id} from url={url}')"
+    },
+    {
+      "line": 153,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch suggestions for user_id={user_id} from url={url}', exc_info=True)"
+    },
+    {
+      "line": 157,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_state with path: {path}\")"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Successfully loaded planner state from {path}')"
+    },
+    {
+      "line": 162,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load state from {path}')"
+    },
+    {
+      "line": 164,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load state from {path}')"
+    },
+    {
+      "line": 168,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_state with path={path} and state={state}\")"
+    },
+    {
+      "line": 174,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save state to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 178,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_daily_plan with for_date={for_date} and state={state}\")"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Computed daily plan for {for_date}: selected={selected}, remaining={remaining}, capacity={capacity}, state={state}')"
+    },
+    {
+      "line": 193,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting simulate_day with state: {state}\")"
+    },
+    {
+      "line": 205,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_state with state: {state}\")"
+    },
+    {
+      "line": 212,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summary for user {state.user_id}: total_tasks={total}, pending_tasks={pending}, overdue_tasks={overdue}, tags={topics}\")"
+    },
+    {
+      "line": 222,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered apply_suggestions with state={state} and suggestions count={len(suggestions) if suggestions else 0}\")"
+    },
+    {
+      "line": 244,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 262,
+      "kind": "except",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

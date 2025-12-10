@@ -1,0 +1,65 @@
+{
+  "file": "script71.py",
+  "logs": [
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering fetch_recommendations"
+    },
+    {
+      "line": 117,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning parsed recommendations from fetch_recommendations"
+    },
+    {
+      "line": 119,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to fetch recommendations in fetch_recommendations"
+    },
+    {
+      "line": 122,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_library"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Loaded library from file in load_library"
+    },
+    {
+      "line": 140,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to write temp file in save_library"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering compute_stats"
+    },
+    {
+      "line": 192,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 209,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Exiting main with failure due to inner error"
+    },
+    {
+      "line": 212,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Main completed successfully"
+    }
+  ]
+}

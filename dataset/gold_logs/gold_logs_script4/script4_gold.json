@@ -1,0 +1,179 @@
+{
+  "file": "script4.py",
+  "logs": [
+    {
+      "line": 6,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.__init__"
+    },
+    {
+      "line": 12,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.update_quantity"
+    },
+    {
+      "line": 15,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.update_price"
+    },
+    {
+      "line": 18,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Product.get_product_info"
+    },
+    {
+      "line": 18,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning product information from Product.get_product_info"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.__init__"
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.add_product"
+    },
+    {
+      "line": 33,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.remove_product"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product removed successfully in Inventory.remove_product"
+    },
+    {
+      "line": 37,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Product not found in Inventory.remove_product"
+    },
+    {
+      "line": 40,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.get_inventory_value"
+    },
+    {
+      "line": 40,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning inventory value from Inventory.get_inventory_value"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered Inventory.get_products_by_category"
+    },
+    {
+      "line": 43,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered products by category from Inventory.get_products_by_category"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered FileManager.read_json"
+    },
+    {
+      "line": 50,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning data from FileManager.read_json"
+    },
+    {
+      "line": 52,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error reading JSON file in FileManager.read_json"
+    },
+    {
+      "line": 52,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from FileManager.read_json due to error"
+    },
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered FileManager.write_json"
+    },
+    {
+      "line": 60,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error writing JSON file in FileManager.write_json"
+    },
+    {
+      "line": 63,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered create_product function"
+    },
+    {
+      "line": 63,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning newly created product from create_product function"
+    },
+    {
+      "line": 66,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered create_inventory function"
+    },
+    {
+      "line": 66,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning newly created inventory from create_inventory function"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered fetch_data function"
+    },
+    {
+      "line": 72,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning fetched data from fetch_data function"
+    },
+    {
+      "line": 74,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error fetching data from URL in fetch_data function"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list from fetch_data function due to error"
+    },
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entered main function"
+    }
+  ]
+}
