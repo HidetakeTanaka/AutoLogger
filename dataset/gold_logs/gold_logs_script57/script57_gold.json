@@ -2,89 +2,403 @@
   "file": "script57.py",
   "logs": [
     {
-      "line": 56,
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.is_active"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False for activity check in UserProfile.is_active"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning activity flag in UserProfile.is_active"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.update_activity"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from UserProfile.update_activity"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.matches"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from primary match in UserProfile.matches"
+    },
+    {
+      "line": 40,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from secondary match in UserProfile.matches"
+    },
+    {
+      "line": 41,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result in UserProfile.matches"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserProfile.to_dict"
+    },
+    {
+      "line": 44,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized UserProfile dict in UserProfile.to_dict"
+    },
+    {
+      "line": 55,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering UserProfile.from_dict"
     },
     {
-      "line": 60,
+      "line": 59,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to parse user data in UserProfile.from_dict"
+      "message": "Failed to parse UserProfile from dict in UserProfile.from_dict"
     },
     {
-      "line": 118,
+      "line": 60,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from UserProfile.from_dict after parse failure"
+    },
+    {
+      "line": 61,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning UserProfile instance from UserProfile.from_dict"
+    },
+    {
+      "line": 73,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserDirectory.__init__"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserDirectory.add"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserDirectory.get"
+    },
+    {
+      "line": 81,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning user from UserDirectory.get"
+    },
+    {
+      "line": 83,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserDirectory.all"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of all users in UserDirectory.all"
+    },
+    {
+      "line": 86,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserDirectory.search"
+    },
+    {
+      "line": 88,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning sorted search results in UserDirectory.search"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserDirectory.active_users"
+    },
+    {
+      "line": 91,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning active users list in UserDirectory.active_users"
+    },
+    {
+      "line": 93,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserDirectory.to_dict"
+    },
+    {
+      "line": 94,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized UserDirectory dict in UserDirectory.to_dict"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering UserDirectory.from_dict"
+    },
+    {
+      "line": 106,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning UserDirectory instance from UserDirectory.from_dict"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RemoteClient.__init__"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering RemoteClient._url"
+    },
+    {
+      "line": 115,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning directory URL in RemoteClient._url"
+    },
+    {
+      "line": 117,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering RemoteClient.fetch"
     },
     {
-      "line": 125,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to fetch remote data for directory_id=%s in RemoteClient.fetch"
+      "line": 123,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning decoded remote directory payload in RemoteClient.fetch"
     },
     {
-      "line": 128,
+      "line": 124,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching remote directory in RemoteClient.fetch"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from RemoteClient.fetch after error"
+    },
+    {
+      "line": 127,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering RemoteClient.push"
     },
     {
-      "line": 135,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to push payload for directory_id=%s in RemoteClient.push"
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning push success flag in RemoteClient.push"
     },
     {
-      "line": 139,
+      "line": 134,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while pushing directory update in RemoteClient.push"
+    },
+    {
+      "line": 135,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning False from RemoteClient.push after error"
+    },
+    {
+      "line": 138,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_directory"
     },
     {
-      "line": 143,
-      "kind": "exception",
-      "level": "WARNING",
-      "message": "Failed to load directory from %s, using local fallback in load_directory"
+      "line": 141,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning UserDirectory loaded from data in load_directory"
     },
     {
-      "line": 149,
+      "line": 142,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while loading directory from disk in load_directory"
+    },
+    {
+      "line": 143,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning local fallback UserDirectory in load_directory after load error"
+    },
+    {
+      "line": 144,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while creating fallback directory in load_directory"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning second fallback UserDirectory in load_directory after error"
+    },
+    {
+      "line": 148,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering save_directory"
     },
     {
-      "line": 155,
+      "line": 154,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to write directory file %s in save_directory"
+      "message": "Error while writing temporary directory file in save_directory"
+    },
+    {
+      "line": 158,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while replacing directory file in save_directory"
+    },
+    {
+      "line": 162,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering calculate_statistics"
+    },
+    {
+      "line": 165,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty statistics summary in calculate_statistics"
     },
     {
       "line": 170,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning task list summary from calculate_statistics"
+      "message": "Returning computed statistics summary in calculate_statistics"
     },
     {
-      "line": 195,
+      "line": 178,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering choose_random_user"
+    },
+    {
+      "line": 181,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None (no candidate users) in choose_random_user"
+    },
+    {
+      "line": 182,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random user choice in choose_random_user"
+    },
+    {
+      "line": 185,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering promote_inactive_users"
+    },
+    {
+      "line": 191,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning count of promoted inactive users in promote_inactive_users"
+    },
+    {
+      "line": 194,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering sync_remote"
     },
     {
-      "line": 221,
-      "kind": "entry",
+      "line": 197,
+      "kind": "return",
       "level": "INFO",
-      "message": "Starting user directory run in main"
+      "message": "Returning 0 (no remote updates applied) in sync_remote"
+    },
+    {
+      "line": 205,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning count of applied remote updates in sync_remote"
+    },
+    {
+      "line": 208,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_activity"
+    },
+    {
+      "line": 213,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from simulate_activity after simulating user activity"
+    },
+    {
+      "line": 220,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 237,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main"
     },
     {
       "line": 238,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed while writing users_report.json in main"
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 1 from main due to error"
+    },
+    {
+      "line": 241,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 0 from main"
     }
   ]
 }
+
+
 

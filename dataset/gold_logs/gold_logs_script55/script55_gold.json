@@ -2,19 +2,193 @@
   "file": "script55.py",
   "logs": [
     {
-      "line": 49,
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.is_recent"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False for recency check in Book.is_recent"
+    },
+    {
+      "line": 25,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recency flag in Book.is_recent"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.matches"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from primary match in Book.matches"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from secondary match in Book.matches"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from tertiary match in Book.matches"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result in Book.matches"
+    },
+    {
+      "line": 37,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Book.to_dict"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Book dict in Book.to_dict"
+    },
+    {
+      "line": 48,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Book.from_dict"
     },
     {
-      "line": 61,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to parse book data in Book.from_dict"
+      "line": 52,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Book instance from Book.from_dict"
     },
     {
-      "line": 112,
+      "line": 60,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Book from dict in Book.from_dict"
+    },
+    {
+      "line": 61,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Book.from_dict after parse failure"
+    },
+    {
+      "line": 65,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Library.__init__"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Library.add"
+    },
+    {
+      "line": 73,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Library.get"
+    },
+    {
+      "line": 74,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning book from Library.get"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Library.all"
+    },
+    {
+      "line": 77,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of all books in Library.all"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Library.search"
+    },
+    {
+      "line": 81,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning sorted search results in Library.search"
+    },
+    {
+      "line": 83,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Library.recent"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent books list in Library.recent"
+    },
+    {
+      "line": 86,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Library.to_dict"
+    },
+    {
+      "line": 87,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Library dict in Library.to_dict"
+    },
+    {
+      "line": 94,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Library.from_dict"
+    },
+    {
+      "line": 100,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Library instance from Library.from_dict"
+    },
+    {
+      "line": 104,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryClient.__init__"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering LibraryClient._url"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning library URL in LibraryClient._url"
+    },
+    {
+      "line": 111,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering LibraryClient.fetch_remote"
@@ -23,74 +197,171 @@
       "line": 117,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning parsed response from LibraryClient.fetch_remote"
+      "message": "Returning decoded remote library payload in LibraryClient.fetch_remote"
+    },
+    {
+      "line": 118,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching remote library in LibraryClient.fetch_remote"
     },
     {
       "line": 119,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to fetch remote library in LibraryClient.fetch_remote"
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from LibraryClient.fetch_remote after error"
     },
     {
-      "line": 123,
+      "line": 122,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_library"
     },
     {
-      "line": 127,
-      "kind": "exception",
-      "level": "WARNING",
-      "message": "Failed to load library, returning empty local library in load_library"
+      "line": 125,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Library loaded from data in load_library"
     },
     {
-      "line": 133,
+      "line": 126,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while loading library from disk in load_library"
+    },
+    {
+      "line": 127,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning default local Library from load_library after error"
+    },
+    {
+      "line": 128,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while creating fallback library in load_library"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning fallback local Library from load_library after second error"
+    },
+    {
+      "line": 132,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering save_library"
     },
     {
-      "line": 139,
+      "line": 138,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to write temporary file in save_library"
+      "message": "Error while writing temporary library file in save_library"
+    },
+    {
+      "line": 142,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while replacing library file in save_library"
+    },
+    {
+      "line": 146,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_library"
+    },
+    {
+      "line": 149,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty library summary in summarize_library"
     },
     {
       "line": 152,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning library summary from summarize_library"
+      "message": "Returning computed library summary in summarize_library"
     },
     {
-      "line": 182,
+      "line": 159,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_books"
+    },
+    {
+      "line": 167,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered books list in filter_books"
+    },
+    {
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering pick_random_book"
+    },
+    {
+      "line": 173,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None (no books available) in pick_random_book"
+    },
+    {
+      "line": 177,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random recent book in pick_random_book"
+    },
+    {
+      "line": 178,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random book choice in pick_random_book"
+    },
+    {
+      "line": 181,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering merge_remote_library"
     },
     {
+      "line": 183,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 (no remote data merged) in merge_remote_library"
+    },
+    {
       "line": 190,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning merged library from merge_remote_library"
+      "message": "Returning count of merged remote books in merge_remote_library"
     },
     {
-      "line": 194,
+      "line": 193,
       "kind": "entry",
-      "level": "INFO",
-      "message": "Starting library processing in main"
+      "level": "DEBUG",
+      "message": "Entering main"
     },
     {
-      "line": 209,
+      "line": 208,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to write summary report in main"
+      "message": "Unhandled exception in main"
     },
     {
       "line": 209,
       "kind": "return",
-      "level": "ERROR",
-      "message": "Exiting with status 1 in main"
+      "level": "INFO",
+      "message": "Returning status 1 from main due to error"
+    },
+    {
+      "line": 212,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 0 from main"
     }
   ]
 }
+
 

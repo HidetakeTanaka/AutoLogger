@@ -1,1 +1,336 @@
+{
+  "file": "script52.py",
+  "logs": [
+    {
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.is_overdue"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False (not overdue) in Task.is_overdue"
+    },
+    {
+      "line": 27,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning overdue flag in Task.is_overdue"
+    },
+    {
+      "line": 29,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.matches_query"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from primary match in Task.matches_query"
+    },
+    {
+      "line": 34,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from secondary match in Task.matches_query"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result in Task.matches_query"
+    },
+    {
+      "line": 37,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.to_dict"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Task dict in Task.to_dict"
+    },
+    {
+      "line": 48,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.from_dict"
+    },
+    {
+      "line": 54,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Task.from_dict for invalid due value"
+    },
+    {
+      "line": 55,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Task instance from Task.from_dict"
+    },
+    {
+      "line": 63,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Task from dict in Task.from_dict"
+    },
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Task.from_dict after parse failure"
+    },
+    {
+      "line": 73,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.add_task"
+    },
+    {
+      "line": 76,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.active_tasks"
+    },
+    {
+      "line": 77,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of active tasks in Project.active_tasks"
+    },
+    {
+      "line": 79,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.overdue_tasks"
+    },
+    {
+      "line": 80,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of overdue tasks in Project.overdue_tasks"
+    },
+    {
+      "line": 82,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.to_dict"
+    },
+    {
+      "line": 83,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Project dict in Project.to_dict"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Project.from_dict"
+    },
+    {
+      "line": 101,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Project instance from Project.from_dict"
+    },
+    {
+      "line": 102,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Project from dict in Project.from_dict"
+    },
+    {
+      "line": 103,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Project.from_dict after parse failure"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PlannerClient.__init__"
+    },
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PlannerClient._url"
+    },
+    {
+      "line": 112,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning composed URL in PlannerClient._url"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PlannerClient.fetch_remote_tasks"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of remote task dicts in PlannerClient.fetch_remote_tasks"
+    },
+    {
+      "line": 123,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty list (no valid task dicts) in PlannerClient.fetch_remote_tasks"
+    },
+    {
+      "line": 124,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching remote tasks in PlannerClient.fetch_remote_tasks"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning empty list from PlannerClient.fetch_remote_tasks after error"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering load_project"
+    },
+    {
+      "line": 138,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning default local Project with one task in load_project"
+    },
+    {
+      "line": 144,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty local Project in load_project"
+    },
+    {
+      "line": 145,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning loaded Project from load_project"
+    },
+    {
+      "line": 146,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while loading project from disk in load_project"
+    },
+    {
+      "line": 147,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning fallback local Project in load_project after error"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_project"
+    },
+    {
+      "line": 157,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while writing temporary project file in save_project"
+    },
+    {
+      "line": 161,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while replacing project file in save_project"
+    },
+    {
+      "line": 165,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_remote_tasks"
+    },
+    {
+      "line": 181,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning count of tasks added in merge_remote_tasks"
+    },
+    {
+      "line": 184,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering choose_next_task"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None (no suitable next task) in choose_next_task"
+    },
+    {
+      "line": 192,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random urgent task in choose_next_task"
+    },
+    {
+      "line": 193,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random candidate task in choose_next_task"
+    },
+    {
+      "line": 196,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_project"
+    },
+    {
+      "line": 201,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty project summary in summarize_project"
+    },
+    {
+      "line": 202,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed project summary in summarize_project"
+    },
+    {
+      "line": 210,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 236,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main"
+    },
+    {
+      "line": 237,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 1 from main due to error"
+    },
+    {
+      "line": 240,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 0 from main"
+    }
+  ]
+}
 
