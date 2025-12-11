@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 18,
+      "line": 17,
       "level": "DEBUG",
       "message": "Entering can_withdraw",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "can_withdraw"
     },
     {
-      "line": 23,
+      "line": 22,
       "level": "DEBUG",
       "message": "Entering withdraw",
       "kind": "entry",
@@ -45,7 +45,7 @@
       "function": "withdraw"
     },
     {
-      "line": 29,
+      "line": 28,
       "level": "DEBUG",
       "message": "Entering deposit",
       "kind": "entry",
@@ -66,7 +66,7 @@
       "function": "deposit"
     },
     {
-      "line": 35,
+      "line": 34,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -80,7 +80,7 @@
       "function": "to_dict"
     },
     {
-      "line": 52,
+      "line": 51,
       "level": "DEBUG",
       "message": "Entering is_debit",
       "kind": "entry",
@@ -94,7 +94,7 @@
       "function": "is_debit"
     },
     {
-      "line": 55,
+      "line": 54,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -108,14 +108,14 @@
       "function": "to_dict"
     },
     {
-      "line": 66,
+      "line": 65,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 70,
+      "line": 69,
       "level": "DEBUG",
       "message": "Entering load",
       "kind": "entry",
@@ -129,10 +129,10 @@
       "function": "load"
     },
     {
-      "line": 77,
+      "line": 76,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -143,21 +143,21 @@
       "function": "load"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
-      "line": 92,
+      "line": 91,
       "level": "DEBUG",
       "message": "Entering save",
       "kind": "entry",
       "function": "save"
     },
     {
-      "line": 98,
+      "line": 97,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -171,7 +171,7 @@
       "function": "get"
     },
     {
-      "line": 101,
+      "line": 100,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -185,14 +185,14 @@
       "function": "all"
     },
     {
-      "line": 106,
+      "line": 105,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 109,
+      "line": 108,
       "level": "DEBUG",
       "message": "Entering load",
       "kind": "entry",
@@ -206,10 +206,10 @@
       "function": "load"
     },
     {
-      "line": 115,
+      "line": 114,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -220,10 +220,10 @@
       "function": "load"
     },
     {
-      "line": 125,
+      "line": 124,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -234,14 +234,14 @@
       "function": "load"
     },
     {
-      "line": 130,
+      "line": 129,
       "level": "DEBUG",
       "message": "Entering save",
       "kind": "entry",
       "function": "save"
     },
     {
-      "line": 137,
+      "line": 136,
       "level": "DEBUG",
       "message": "Entering apply_transactions",
       "kind": "entry",
@@ -255,7 +255,7 @@
       "function": "apply_transactions"
     },
     {
-      "line": 158,
+      "line": 157,
       "level": "DEBUG",
       "message": "Entering summarize_accounts",
       "kind": "entry",
@@ -276,7 +276,7 @@
       "function": "summarize_accounts"
     },
     {
-      "line": 167,
+      "line": 166,
       "level": "DEBUG",
       "message": "Entering find_suspicious_transactions",
       "kind": "entry",
@@ -297,21 +297,21 @@
       "function": "find_suspicious_transactions"
     },
     {
-      "line": 178,
+      "line": 177,
       "level": "DEBUG",
       "message": "Entering export_summary",
       "kind": "entry",
       "function": "export_summary"
     },
     {
-      "line": 184,
+      "line": 183,
       "level": "DEBUG",
       "message": "Entering export_suspicious",
       "kind": "entry",
       "function": "export_suspicious"
     },
     {
-      "line": 191,
+      "line": 190,
       "level": "DEBUG",
       "message": "Entering load_config",
       "kind": "entry",
@@ -332,10 +332,10 @@
       "function": "load_config"
     },
     {
-      "line": 197,
+      "line": 196,
       "level": "ERROR",
       "message": "Exception in load_config",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_config"
     },
     {
@@ -346,7 +346,7 @@
       "function": "load_config"
     },
     {
-      "line": 201,
+      "line": 200,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

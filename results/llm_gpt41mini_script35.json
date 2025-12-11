@@ -2,85 +2,61 @@
   "file": "script35.py",
   "logs": [
     {
-      "line": 41,
+      "line": 40,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing ArticleStore with path: {path}\")"
     },
     {
-      "line": 45,
+      "line": 44,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load method of ArticleStore\")"
     },
     {
-      "line": 47,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Loaded article with aid={aid}, title=\"{title}\", views={views}, likes={likes}, category=\"{cat}\"')"
-    },
-    {
-      "line": 52,
-      "kind": "except",
+      "line": 51,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load article with aid={aid}, title={title}')"
+      "message": "logging.error(f'Failed to load article with aid={aid}, title={title}', exc_info=True)"
     },
     {
-      "line": 53,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Loaded article {aid} titled \"{title}\" with {views} views and {likes} likes in category \"{cat}\"')"
-    },
-    {
-      "line": 63,
-      "kind": "except",
+      "line": 62,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load article with aid={aid}, title={title}')"
+      "message": "logging.error(f'Failed to load article with aid={aid}, title={title}', exc_info=True)"
     },
     {
-      "line": 74,
+      "line": 73,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering get method with article_id={article_id}\")"
     },
     {
-      "line": 77,
+      "line": 81,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('Entering ArticleStore.all method')"
+      "message": "logging.debug(f'Initializing UserHistoryStore with path: {path}')"
     },
     {
-      "line": 82,
+      "line": 84,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Initializing UserHistoryStore with path: {path}\")"
+      "message": "logging.debug(f\"Entering load method for user {self.uid}\")"
     },
     {
-      "line": 85,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering load method for user ID: {self.uid}\")"
-    },
-    {
-      "line": 91,
-      "kind": "except",
+      "line": 90,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load user history for uid={uid}', exc_info=True)"
     },
     {
-      "line": 99,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Loaded user history for uid={uid} with {len(result)} entries')"
-    },
-    {
-      "line": 103,
+      "line": 102,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered sort_articles_by_popularity with {len(articles) if hasattr(articles, '__len__') else 'unknown number of'} articles\")"
+      "message": "logging.debug(f\"Entered sort_articles_by_popularity with {len(articles)} articles\")"
     },
     {
-      "line": 112,
+      "line": 106,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered build_recommendations_for_user for user_id={user_id} with limit={limit}\")"
@@ -92,7 +68,7 @@
       "message": "logging.info(f'Returning {len(recs)} recommendations for user {user_id}')"
     },
     {
-      "line": 125,
+      "line": 120,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered build_recommendations with limit={limit}, number of articles={len(articles)}, number of histories={len(histories)}\")"
@@ -104,37 +80,37 @@
       "message": "logging.info(f'Returning {len(all_recs)} recommendations from build_recommendations')"
     },
     {
-      "line": 133,
+      "line": 132,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering export_recommendations with path={path} and {len(recs)} recommendations\")"
     },
     {
-      "line": 143,
+      "line": 142,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f'Starting compute_category_stats with {len(articles)} articles')"
+      "message": "logging.debug(f'Entered compute_category_stats with {len(articles)} articles')"
     },
     {
-      "line": 161,
+      "line": 160,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering export_category_stats with path={path} and stats keys={list(stats.keys())}\")"
     },
     {
-      "line": 167,
+      "line": 166,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_config with path: {path}\")"
     },
     {
-      "line": 173,
-      "kind": "except",
+      "line": 172,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
     },
     {
-      "line": 177,
+      "line": 176,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('Entered main function')"

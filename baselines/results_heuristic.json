@@ -1,166 +1,425 @@
 {
-  "file": "script31.py",
+  "file": "script40.py",
   "baseline_type": "heuristic",
   "logs": [
     {
+      "line": 18,
+      "level": "DEBUG",
+      "message": "Entering is_in_stock",
+      "kind": "entry",
+      "function": "is_in_stock"
+    },
+    {
+      "line": 20,
+      "level": "INFO",
+      "message": "Exiting is_in_stock",
+      "kind": "return",
+      "function": "is_in_stock"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Exiting is_in_stock",
+      "kind": "return",
+      "function": "is_in_stock"
+    },
+    {
+      "line": 23,
+      "level": "DEBUG",
+      "message": "Entering reserve",
+      "kind": "entry",
+      "function": "reserve"
+    },
+    {
+      "line": 25,
+      "level": "INFO",
+      "message": "Exiting reserve",
+      "kind": "return",
+      "function": "reserve"
+    },
+    {
+      "line": 27,
+      "level": "INFO",
+      "message": "Exiting reserve",
+      "kind": "return",
+      "function": "reserve"
+    },
+    {
+      "line": 29,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
       "line": 30,
-      "level": "DEBUG",
-      "message": "Entering score_ratio",
-      "kind": "entry",
-      "function": "score_ratio"
-    },
-    {
-      "line": 32,
       "level": "INFO",
-      "message": "Exiting score_ratio",
+      "message": "Exiting to_dict",
       "kind": "return",
-      "function": "score_ratio"
-    },
-    {
-      "line": 33,
-      "level": "INFO",
-      "message": "Exiting score_ratio",
-      "kind": "return",
-      "function": "score_ratio"
-    },
-    {
-      "line": 35,
-      "level": "DEBUG",
-      "message": "Entering is_suspicious",
-      "kind": "entry",
-      "function": "is_suspicious"
-    },
-    {
-      "line": 38,
-      "level": "INFO",
-      "message": "Exiting is_suspicious",
-      "kind": "return",
-      "function": "is_suspicious"
-    },
-    {
-      "line": 41,
-      "level": "INFO",
-      "message": "Exiting is_suspicious",
-      "kind": "return",
-      "function": "is_suspicious"
+      "function": "to_dict"
     },
     {
       "line": 44,
       "level": "DEBUG",
-      "message": "Entering ensure_data_dir",
+      "message": "Entering total",
       "kind": "entry",
-      "function": "ensure_data_dir"
+      "function": "total"
     },
     {
-      "line": 48,
+      "line": 46,
+      "level": "INFO",
+      "message": "Exiting total",
+      "kind": "return",
+      "function": "total"
+    },
+    {
+      "line": 47,
+      "level": "INFO",
+      "message": "Exiting total",
+      "kind": "return",
+      "function": "total"
+    },
+    {
+      "line": 58,
       "level": "DEBUG",
-      "message": "Entering generate_sample_attempts",
+      "message": "Entering total_amount",
       "kind": "entry",
-      "function": "generate_sample_attempts"
+      "function": "total_amount"
+    },
+    {
+      "line": 65,
+      "level": "INFO",
+      "message": "Exiting total_amount",
+      "kind": "return",
+      "function": "total_amount"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Entering is_open",
+      "kind": "entry",
+      "function": "is_open"
+    },
+    {
+      "line": 68,
+      "level": "INFO",
+      "message": "Exiting is_open",
+      "kind": "return",
+      "function": "is_open"
     },
     {
       "line": 75,
       "level": "DEBUG",
-      "message": "Entering load_attempts",
+      "message": "Entering add_item",
       "kind": "entry",
-      "function": "load_attempts"
+      "function": "add_item"
+    },
+    {
+      "line": 78,
+      "level": "DEBUG",
+      "message": "Entering get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 79,
+      "level": "INFO",
+      "message": "Exiting get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 81,
+      "level": "DEBUG",
+      "message": "Entering all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 82,
+      "level": "INFO",
+      "message": "Exiting all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 84,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 85,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 89,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 92,
+      "level": "DEBUG",
+      "message": "Entering can_fulfil",
+      "kind": "entry",
+      "function": "can_fulfil"
+    },
+    {
+      "line": 96,
+      "level": "INFO",
+      "message": "Exiting can_fulfil",
+      "kind": "return",
+      "function": "can_fulfil"
     },
     {
       "line": 97,
-      "level": "ERROR",
-      "message": "Exception in load_attempts",
-      "kind": "exception",
-      "function": "load_attempts"
-    },
-    {
-      "line": 100,
       "level": "INFO",
-      "message": "Exiting load_attempts",
+      "message": "Exiting can_fulfil",
       "kind": "return",
-      "function": "load_attempts"
+      "function": "can_fulfil"
     },
     {
-      "line": 103,
+      "line": 99,
       "level": "DEBUG",
-      "message": "Entering group_by_user",
+      "message": "Entering apply_order",
       "kind": "entry",
-      "function": "group_by_user"
+      "function": "apply_order"
     },
     {
-      "line": 107,
+      "line": 101,
       "level": "INFO",
-      "message": "Exiting group_by_user",
+      "message": "Exiting apply_order",
       "kind": "return",
-      "function": "group_by_user"
+      "function": "apply_order"
     },
     {
-      "line": 110,
-      "level": "DEBUG",
-      "message": "Entering summarize_user",
-      "kind": "entry",
-      "function": "summarize_user"
+      "line": 104,
+      "level": "INFO",
+      "message": "Exiting apply_order",
+      "kind": "return",
+      "function": "apply_order"
+    },
+    {
+      "line": 109,
+      "level": "INFO",
+      "message": "Exiting apply_order",
+      "kind": "return",
+      "function": "apply_order"
     },
     {
       "line": 112,
       "level": "INFO",
-      "message": "Exiting summarize_user",
+      "message": "Exiting apply_order",
       "kind": "return",
-      "function": "summarize_user"
+      "function": "apply_order"
     },
     {
-      "line": 118,
+      "line": 114,
       "level": "INFO",
-      "message": "Exiting summarize_user",
+      "message": "Exiting apply_order",
       "kind": "return",
-      "function": "summarize_user"
+      "function": "apply_order"
     },
     {
-      "line": 127,
+      "line": 117,
       "level": "DEBUG",
-      "message": "Entering find_suspicious_users",
+      "message": "Entering load_inventory",
       "kind": "entry",
-      "function": "find_suspicious_users"
+      "function": "load_inventory"
     },
     {
-      "line": 133,
+      "line": 119,
       "level": "INFO",
-      "message": "Exiting find_suspicious_users",
+      "message": "Exiting load_inventory",
       "kind": "return",
-      "function": "find_suspicious_users"
+      "function": "load_inventory"
     },
     {
-      "line": 136,
+      "line": 123,
+      "level": "ERROR",
+      "message": "Exception in load_inventory",
+      "kind": "exception",
+      "function": "load_inventory"
+    },
+    {
+      "line": 124,
+      "level": "INFO",
+      "message": "Exiting load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 135,
+      "level": "ERROR",
+      "message": "Exception in load_inventory",
+      "kind": "exception",
+      "function": "load_inventory"
+    },
+    {
+      "line": 138,
+      "level": "INFO",
+      "message": "Exiting load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 141,
       "level": "DEBUG",
-      "message": "Entering interactive_menu",
+      "message": "Entering load_orders",
       "kind": "entry",
-      "function": "interactive_menu"
+      "function": "load_orders"
     },
     {
       "line": 143,
-      "level": "ERROR",
-      "message": "Exception in interactive_menu",
-      "kind": "exception",
-      "function": "interactive_menu"
-    },
-    {
-      "line": 145,
       "level": "INFO",
-      "message": "Exiting interactive_menu",
+      "message": "Exiting load_orders",
       "kind": "return",
-      "function": "interactive_menu"
+      "function": "load_orders"
     },
     {
-      "line": 170,
+      "line": 147,
       "level": "ERROR",
-      "message": "Exception in interactive_menu",
+      "message": "Exception in load_orders",
       "kind": "exception",
-      "function": "interactive_menu"
+      "function": "load_orders"
     },
     {
-      "line": 181,
+      "line": 148,
+      "level": "INFO",
+      "message": "Exiting load_orders",
+      "kind": "return",
+      "function": "load_orders"
+    },
+    {
+      "line": 160,
+      "level": "ERROR",
+      "message": "Exception in load_orders",
+      "kind": "exception",
+      "function": "load_orders"
+    },
+    {
+      "line": 163,
+      "level": "INFO",
+      "message": "Exiting load_orders",
+      "kind": "return",
+      "function": "load_orders"
+    },
+    {
+      "line": 166,
+      "level": "DEBUG",
+      "message": "Entering save_inventory",
+      "kind": "entry",
+      "function": "save_inventory"
+    },
+    {
+      "line": 172,
+      "level": "DEBUG",
+      "message": "Entering summarize_orders",
+      "kind": "entry",
+      "function": "summarize_orders"
+    },
+    {
+      "line": 185,
+      "level": "INFO",
+      "message": "Exiting summarize_orders",
+      "kind": "return",
+      "function": "summarize_orders"
+    },
+    {
+      "line": 188,
+      "level": "DEBUG",
+      "message": "Entering find_high_value_orders",
+      "kind": "entry",
+      "function": "find_high_value_orders"
+    },
+    {
+      "line": 194,
+      "level": "INFO",
+      "message": "Exiting find_high_value_orders",
+      "kind": "return",
+      "function": "find_high_value_orders"
+    },
+    {
+      "line": 197,
+      "level": "DEBUG",
+      "message": "Entering group_orders_by_customer",
+      "kind": "entry",
+      "function": "group_orders_by_customer"
+    },
+    {
+      "line": 201,
+      "level": "INFO",
+      "message": "Exiting group_orders_by_customer",
+      "kind": "return",
+      "function": "group_orders_by_customer"
+    },
+    {
+      "line": 204,
+      "level": "DEBUG",
+      "message": "Entering export_report",
+      "kind": "entry",
+      "function": "export_report"
+    },
+    {
+      "line": 214,
+      "level": "DEBUG",
+      "message": "Entering load_config",
+      "kind": "entry",
+      "function": "load_config"
+    },
+    {
+      "line": 216,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 219,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 220,
+      "level": "ERROR",
+      "message": "Exception in load_config",
+      "kind": "exception",
+      "function": "load_config"
+    },
+    {
+      "line": 221,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 224,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 234,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 260,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
       "function": "main"
     }
   ]

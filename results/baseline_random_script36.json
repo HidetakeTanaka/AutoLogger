@@ -19,9 +19,9 @@
       "function": "can_withdraw"
     },
     {
-      "line": 29,
+      "line": 28,
       "level": "ERROR",
-      "message": "Random log at line 29 in deposit",
+      "message": "Random log at line 28 in deposit",
       "kind": "entry",
       "function": "deposit"
     },
@@ -47,17 +47,17 @@
       "function": "to_dict"
     },
     {
-      "line": 70,
+      "line": 69,
       "level": "ERROR",
-      "message": "Random log at line 70 in load",
+      "message": "Random log at line 69 in load",
       "kind": "entry",
       "function": "load"
     },
     {
-      "line": 77,
+      "line": 76,
       "level": "WARNING",
-      "message": "Random log at line 77 in load",
-      "kind": "except",
+      "message": "Random log at line 76 in load",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -68,16 +68,16 @@
       "function": "load"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "WARNING",
-      "message": "Random log at line 87 in load",
-      "kind": "except",
+      "message": "Random log at line 86 in load",
+      "kind": "exception",
       "function": "load"
     },
     {
-      "line": 130,
+      "line": 129,
       "level": "INFO",
-      "message": "Random log at line 130 in save",
+      "message": "Random log at line 129 in save",
       "kind": "entry",
       "function": "save"
     },
@@ -89,9 +89,9 @@
       "function": "find_suspicious_transactions"
     },
     {
-      "line": 178,
+      "line": 177,
       "level": "WARNING",
-      "message": "Random log at line 178 in export_summary",
+      "message": "Random log at line 177 in export_summary",
       "kind": "entry",
       "function": "export_summary"
     },
@@ -103,10 +103,10 @@
       "function": "load_config"
     },
     {
-      "line": 197,
+      "line": 196,
       "level": "ERROR",
-      "message": "Random log at line 197 in load_config",
-      "kind": "except",
+      "message": "Random log at line 196 in load_config",
+      "kind": "exception",
       "function": "load_config"
     }
   ]

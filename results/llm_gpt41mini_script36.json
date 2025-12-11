@@ -2,115 +2,103 @@
   "file": "script36.py",
   "logs": [
     {
-      "line": 18,
+      "line": 17,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f'Entering can_withdraw with amount={amount}')"
     },
     {
-      "line": 23,
+      "line": 20,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Checking withdrawal possibility: balance={self.balance}, amount={amount}, can_withdraw={self.balance >= amount}')"
+    },
+    {
+      "line": 22,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering withdraw method with amount: {amount}\")"
+      "message": "logging.debug(f\"Entering withdraw method with amount={amount} for account id={self.id}\")"
     },
     {
       "line": 24,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Withdrawal of {amount} failed for account {self}. Insufficient funds or invalid amount.')"
+      "message": "logging.info(f'Withdrawal of {amount} failed for account {self}. Insufficient funds.')"
     },
     {
-      "line": 26,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Withdrawal of {amount} succeeded for account {self}.')"
-    },
-    {
-      "line": 29,
+      "line": 28,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering deposit method with amount: {amount}\")"
     },
     {
-      "line": 32,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Deposit successful: amount={amount}, new balance={self.balance}')"
-    },
-    {
-      "line": 52,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Transaction is_debit check: amount={self.amount}, result={self.amount < 0}')"
-    },
-    {
-      "line": 66,
+      "line": 65,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing AccountStore with path: {path}\")"
     },
     {
-      "line": 70,
+      "line": 69,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('Entering AccountStore.load method')"
+      "message": "logging.debug('Entering AccountStore.load method to load account data.')"
     },
     {
-      "line": 77,
-      "kind": "except",
+      "line": 76,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load account with ID {aid} and owner {owner}', exc_info=True)"
+      "message": "logging.error(f'Failed to load account with id {aid}', exc_info=True)"
     },
     {
-      "line": 87,
-      "kind": "except",
+      "line": 86,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load account {aid} with data {data}', exc_info=True)"
+      "message": "logging.error(f'Failed to load account with id {aid}', exc_info=True)"
     },
     {
-      "line": 92,
+      "line": 91,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save method of AccountStore with payload: {payload}\")"
     },
     {
-      "line": 98,
+      "line": 97,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering AccountStore.get with account_id={account_id}\")"
+      "message": "logging.debug(f\"Entering get method with account_id={account_id}\")"
     },
     {
-      "line": 106,
+      "line": 105,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing TransactionStore with path: {path}\")"
     },
     {
-      "line": 109,
+      "line": 108,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load method of TransactionStore for account_id={self.account_id}\")"
     },
     {
-      "line": 115,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to load transaction {tx_id} for account {account_id} with kind {kind} and amount {amount}', exc_info=True)"
-    },
-    {
-      "line": 125,
-      "kind": "except",
+      "line": 114,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load transaction {tx_id} for account {account_id}', exc_info=True)"
     },
     {
-      "line": 130,
+      "line": 124,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load transaction {tx_id} for account {account_id}', exc_info=True)"
+    },
+    {
+      "line": 129,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save method with {len(txs)} transactions\")"
     },
     {
-      "line": 137,
+      "line": 136,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Starting apply_transactions with {len(txs)} transactions\")"
@@ -119,10 +107,10 @@
       "line": 154,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'apply_transactions completed: {len(applied)} applied, {len(rejected)} rejected')"
+      "message": "logging.info(f'Transactions applied: {len(applied)}, rejected: {len(rejected)}')"
     },
     {
-      "line": 158,
+      "line": 157,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered summarize_accounts with {len(accounts)} accounts\")"
@@ -131,10 +119,10 @@
       "line": 163,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Summary computed: count={len(accounts)}, total_balance={total}, avg_balance={avg}')"
+      "message": "logging.info(f\"Returning summary with count={len(accounts)}, total_balance={total}, avg_balance={avg}\")"
     },
     {
-      "line": 167,
+      "line": 166,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered find_suspicious_transactions with {len(txs)} transactions, hours={hours}, amount_threshold={amount_threshold}\")"
@@ -146,37 +134,31 @@
       "message": "logging.info(f'Returning {len(suspicious)} suspicious transactions after filtering with amount_threshold={amount_threshold} and hours={hours}')"
     },
     {
-      "line": 178,
+      "line": 177,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering export_summary with path={path} and summary keys={list(summary.keys())}\")"
     },
     {
-      "line": 184,
+      "line": 183,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering export_suspicious with path={path} and {len(txs)} transactions\")"
     },
     {
-      "line": 191,
+      "line": 190,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_config with path: {path}\")"
     },
     {
-      "line": 195,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Configuration loaded successfully from {path}')"
-    },
-    {
-      "line": 197,
-      "kind": "except",
+      "line": 196,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
     },
     {
-      "line": 201,
+      "line": 200,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('Entered main function with config_path=%s and threshold=%s', config_path, threshold)"

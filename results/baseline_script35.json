@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 18,
+      "line": 17,
       "level": "DEBUG",
       "message": "Entering popularity_score",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "popularity_score"
     },
     {
-      "line": 23,
+      "line": 22,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -38,14 +38,14 @@
       "function": "to_dict"
     },
     {
-      "line": 41,
+      "line": 40,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 45,
+      "line": 44,
       "level": "DEBUG",
       "message": "Entering load",
       "kind": "entry",
@@ -59,10 +59,10 @@
       "function": "load"
     },
     {
-      "line": 52,
+      "line": 51,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -73,21 +73,21 @@
       "function": "load"
     },
     {
-      "line": 63,
+      "line": 62,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
-      "line": 68,
+      "line": 67,
       "level": "DEBUG",
       "message": "Entering save",
       "kind": "entry",
       "function": "save"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -101,7 +101,7 @@
       "function": "get"
     },
     {
-      "line": 77,
+      "line": 76,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -115,14 +115,14 @@
       "function": "all"
     },
     {
-      "line": 82,
+      "line": 81,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 85,
+      "line": 84,
       "level": "DEBUG",
       "message": "Entering load",
       "kind": "entry",
@@ -136,10 +136,10 @@
       "function": "load"
     },
     {
-      "line": 91,
+      "line": 90,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -157,7 +157,7 @@
       "function": "load"
     },
     {
-      "line": 103,
+      "line": 102,
       "level": "DEBUG",
       "message": "Entering sort_articles_by_popularity",
       "kind": "entry",
@@ -171,7 +171,7 @@
       "function": "sort_articles_by_popularity"
     },
     {
-      "line": 112,
+      "line": 106,
       "level": "DEBUG",
       "message": "Entering build_recommendations_for_user",
       "kind": "entry",
@@ -185,7 +185,7 @@
       "function": "build_recommendations_for_user"
     },
     {
-      "line": 125,
+      "line": 120,
       "level": "DEBUG",
       "message": "Entering build_recommendations",
       "kind": "entry",
@@ -199,14 +199,14 @@
       "function": "build_recommendations"
     },
     {
-      "line": 133,
+      "line": 132,
       "level": "DEBUG",
       "message": "Entering export_recommendations",
       "kind": "entry",
       "function": "export_recommendations"
     },
     {
-      "line": 143,
+      "line": 142,
       "level": "DEBUG",
       "message": "Entering compute_category_stats",
       "kind": "entry",
@@ -220,14 +220,14 @@
       "function": "compute_category_stats"
     },
     {
-      "line": 161,
+      "line": 160,
       "level": "DEBUG",
       "message": "Entering export_category_stats",
       "kind": "entry",
       "function": "export_category_stats"
     },
     {
-      "line": 167,
+      "line": 166,
       "level": "DEBUG",
       "message": "Entering load_config",
       "kind": "entry",
@@ -248,10 +248,10 @@
       "function": "load_config"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "ERROR",
       "message": "Exception in load_config",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_config"
     },
     {
@@ -262,7 +262,7 @@
       "function": "load_config"
     },
     {
-      "line": 177,
+      "line": 176,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

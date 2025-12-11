@@ -1,0 +1,131 @@
+{
+  "file": "script33.py",
+  "logs": [
+    {
+      "line": 36,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"HttpProbe.__init__ called with timeout={timeout}\")"
+    },
+    {
+      "line": 39,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering measure method with url: {url}\")"
+    },
+    {
+      "line": 45,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Exception occurred during HTTP probe for URL {url} with status {status}', exc_info=True)"
+    },
+    {
+      "line": 47,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Exception occurred during HTTP probe for URL {url}', exc_info=True)"
+    },
+    {
+      "line": 53,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing MetricStore with path: {path}\")"
+    },
+    {
+      "line": 56,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save method with {len(samples)} samples to store.\")"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load method of MetricStore with endpoint={self.endpoint}\")"
+    },
+    {
+      "line": 75,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load metric data from endpoint {endpoint} with code {code}', exc_info=True)"
+    },
+    {
+      "line": 83,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load metric data from endpoint {endpoint} with code {code}', exc_info=True)"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering read_endpoints with path: {path}\")"
+    },
+    {
+      "line": 95,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Error reading endpoint {name} at {path} with URL {url}', exc_info=True)"
+    },
+    {
+      "line": 103,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Error reading endpoint {name} at {url}', exc_info=True)"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered group_by_endpoint with {len(samples)} samples\")"
+    },
+    {
+      "line": 116,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_endpoint_stats with {len(samples)} samples\")"
+    },
+    {
+      "line": 129,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_overall_stats with {len(samples)} samples\")"
+    },
+    {
+      "line": 134,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Returning overall stats: total={len(samples)}, slow_count={slow}, error_count={error}\")"
+    },
+    {
+      "line": 137,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting export_report with path={path} and {len(samples)} samples\")"
+    },
+    {
+      "line": 152,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_failed with {len(samples)} samples\")"
+    },
+    {
+      "line": 156,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Starting measure_all with {len(endpoints)} endpoints and probe {probe}\")"
+    },
+    {
+      "line": 164,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering retry_failed with {len(failed)} failed samples and {len(endpoints)} endpoints using probe {probe}\")"
+    },
+    {
+      "line": 178,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with config_path={config_path}\")"
+    }
+  ]
+}

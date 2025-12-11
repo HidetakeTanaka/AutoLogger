@@ -1,78 +1,134 @@
 {
-  "file": "script31.py",
+  "file": "script40.py",
   "baseline_type": "random",
   "seed": 42,
   "probability": 0.3,
   "logs": [
     {
-      "line": 32,
+      "line": 20,
       "level": "WARNING",
-      "message": "Random log at line 32 in score_ratio",
+      "message": "Random log at line 20 in is_in_stock",
       "kind": "return",
-      "function": "score_ratio"
+      "function": "is_in_stock"
     },
     {
-      "line": 33,
+      "line": 21,
       "level": "INFO",
-      "message": "Random log at line 33 in score_ratio",
+      "message": "Random log at line 21 in is_in_stock",
       "kind": "return",
-      "function": "score_ratio"
+      "function": "is_in_stock"
+    },
+    {
+      "line": 29,
+      "level": "ERROR",
+      "message": "Random log at line 29 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 30,
+      "level": "DEBUG",
+      "message": "Random log at line 30 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
     },
     {
       "line": 44,
-      "level": "ERROR",
-      "message": "Random log at line 44 in ensure_data_dir",
+      "level": "DEBUG",
+      "message": "Random log at line 44 in total",
       "kind": "entry",
-      "function": "ensure_data_dir"
+      "function": "total"
     },
     {
-      "line": 48,
+      "line": 68,
       "level": "DEBUG",
-      "message": "Random log at line 48 in generate_sample_attempts",
-      "kind": "entry",
-      "function": "generate_sample_attempts"
-    },
-    {
-      "line": 75,
-      "level": "DEBUG",
-      "message": "Random log at line 75 in load_attempts",
-      "kind": "entry",
-      "function": "load_attempts"
-    },
-    {
-      "line": 112,
-      "level": "DEBUG",
-      "message": "Random log at line 112 in summarize_user",
+      "message": "Random log at line 68 in is_open",
       "kind": "return",
-      "function": "summarize_user"
+      "function": "is_open"
     },
     {
-      "line": 127,
+      "line": 78,
       "level": "ERROR",
-      "message": "Random log at line 127 in find_suspicious_users",
+      "message": "Random log at line 78 in get",
       "kind": "entry",
-      "function": "find_suspicious_users"
+      "function": "get"
     },
     {
-      "line": 136,
+      "line": 81,
       "level": "WARNING",
-      "message": "Random log at line 136 in interactive_menu",
+      "message": "Random log at line 81 in all",
       "kind": "entry",
-      "function": "interactive_menu"
+      "function": "all"
     },
     {
-      "line": 143,
+      "line": 82,
       "level": "ERROR",
-      "message": "Random log at line 143 in interactive_menu",
+      "message": "Random log at line 82 in all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 84,
+      "level": "WARNING",
+      "message": "Random log at line 84 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 119,
+      "level": "INFO",
+      "message": "Random log at line 119 in load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 148,
+      "level": "WARNING",
+      "message": "Random log at line 148 in load_orders",
+      "kind": "return",
+      "function": "load_orders"
+    },
+    {
+      "line": 160,
+      "level": "WARNING",
+      "message": "Random log at line 160 in load_orders",
       "kind": "exception",
-      "function": "interactive_menu"
+      "function": "load_orders"
     },
     {
-      "line": 145,
+      "line": 172,
+      "level": "INFO",
+      "message": "Random log at line 172 in summarize_orders",
+      "kind": "entry",
+      "function": "summarize_orders"
+    },
+    {
+      "line": 188,
+      "level": "ERROR",
+      "message": "Random log at line 188 in find_high_value_orders",
+      "kind": "entry",
+      "function": "find_high_value_orders"
+    },
+    {
+      "line": 220,
+      "level": "DEBUG",
+      "message": "Random log at line 220 in load_config",
+      "kind": "exception",
+      "function": "load_config"
+    },
+    {
+      "line": 234,
       "level": "WARNING",
-      "message": "Random log at line 145 in interactive_menu",
+      "message": "Random log at line 234 in main",
       "kind": "return",
-      "function": "interactive_menu"
+      "function": "main"
+    },
+    {
+      "line": 260,
+      "level": "ERROR",
+      "message": "Random log at line 260 in main",
+      "kind": "return",
+      "function": "main"
     }
   ]
 }

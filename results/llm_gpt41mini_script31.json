@@ -2,64 +2,64 @@
   "file": "script31.py",
   "logs": [
     {
+      "line": 30,
+      "kind": "entry",
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
       "line": 35,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering is_suspicious with fast_threshold={fast_threshold}, high_ratio={high_ratio}\")"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 44,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('Entered ensure_data_dir function')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 48,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entered generate_sample_attempts with num_users={num_users}\")"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 75,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering load_attempts with path: {path}\")"
-    },
-    {
-      "line": 97,
-      "kind": "event",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to load attempts from {path} after processing {len(attempts)} attempts, duration {duration}s, max_score {max_score}, last score {score}', exc_info=True)"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 103,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering group_by_user with {len(attempts)} attempts\")"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 110,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entered summarize_user with {len(attempts)} attempts\")"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 127,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f'Starting find_suspicious_users with {len(grouped)} user groups')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 136,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('Entered interactive_menu function')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "line": 181,
       "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('Entered main function')"
+      "level": "INFO",
+      "message": "logging.info('[GPT-5.1] Function entry logged')"
     }
   ]
 }

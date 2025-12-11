@@ -2,133 +2,127 @@
   "file": "script32.py",
   "logs": [
     {
-      "line": 20,
+      "line": 19,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering is_recent with now={now} and minutes={minutes}\")"
+      "message": "logging.debug(f\"Entering is_recent with now={now}, minutes={minutes}\")"
     },
     {
-      "line": 43,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f\"User is_active check: active={self.properties.get('active', True)}\")"
-    },
-    {
-      "line": 46,
+      "line": 45,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering update_country with country={country}\")"
     },
     {
-      "line": 64,
+      "line": 63,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering matches: user={user}, number of events={len(events)}\")"
     },
     {
-      "line": 72,
+      "line": 75,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Initializing UserStore with path: {path}\")"
+      "message": "logging.debug(f'Entering UserStore.load method to load user data')"
     },
     {
-      "line": 76,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering UserStore.load method to load user data for {len(users)} users.\")"
-    },
-    {
-      "line": 83,
-      "kind": "except",
+      "line": 82,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load user data for uid={uid}, name={name}, country={country}', exc_info=True)"
+      "message": "logging.error(f'Failed to load user with uid={uid}, name={name}, country={country}', exc_info=True)"
     },
     {
-      "line": 105,
+      "line": 96,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entering UserStore.save method with payload: %s', payload)"
+    },
+    {
+      "line": 104,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering UserStore.get with user_id={user_id}\")"
     },
     {
-      "line": 108,
+      "line": 107,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering upsert method with user: {user}\")"
     },
     {
-      "line": 116,
+      "line": 115,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing EventStore with path: {path}\")"
     },
     {
-      "line": 125,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error('Failed to load events from data: %s', data, exc_info=True)"
-    },
-    {
-      "line": 131,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error('Failed to load events from data: %s', data, exc_info=True)"
-    },
-    {
-      "line": 140,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Loaded {len(events)} events from store')"
-    },
-    {
-      "line": 144,
+      "line": 118,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering generate_random_events with count={count} for {len(users)} users\")"
+      "message": "logging.debug('Entering EventStore.load method')"
     },
     {
-      "line": 163,
+      "line": 124,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred while loading events', exc_info=True)"
+    },
+    {
+      "line": 130,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Failed to load events from data: %s', data, exc_info=True)"
+    },
+    {
+      "line": 143,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered generate_random_events with {len(users)} users and count={count}\")"
+    },
+    {
+      "line": 162,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering write_events with path={path} and {len(events)} events\")"
     },
     {
-      "line": 170,
+      "line": 169,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered filter_recent_events with {len(events)} events and minutes={minutes}\")"
     },
     {
-      "line": 175,
+      "line": 174,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('Entered build_segments function')"
     },
     {
-      "line": 186,
+      "line": 175,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info('Returning segments: %s', [{'name': 'EU-active', 'countries': ['DE', 'FR', 'ES'], 'min_events': 2}, {'name': 'Global-heavy', 'countries': [], 'min_events': 5}])"
+    },
+    {
+      "line": 181,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f'Entered assign_segments with {len(events)} events, {len(mapping)} mappings, {len(segments)} segments, and {len(users)} users')"
     },
     {
-      "line": 197,
+      "line": 196,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered export_segments with path={path} and mapping keys={list(mapping.keys())}\")"
+      "message": "logging.debug(f\"Entering export_segments with path={path} and mapping keys={list(mapping.keys())}\")"
     },
     {
-      "line": 204,
+      "line": 203,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_or_create_users with path: {path}\")"
     },
     {
-      "line": 216,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning store with {len(store)} users loaded or created from {path}')"
-    },
-    {
-      "line": 220,
+      "line": 219,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"

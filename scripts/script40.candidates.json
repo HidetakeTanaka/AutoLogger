@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 19,
-      "end_line": 19,
+      "line": 18,
+      "end_line": 18,
       "function": "is_in_stock",
       "class_name": "Item",
       "code": "def is_in_stock(self, quantity: int = 1) -> bool:",
@@ -16,7 +16,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 20,
       "end_line": 20,
       "function": "is_in_stock",
@@ -26,11 +26,11 @@
         "quantity",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 21,
       "end_line": 21,
       "function": "is_in_stock",
@@ -40,13 +40,13 @@
         "quantity",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 24,
-      "end_line": 24,
+      "line": 23,
+      "end_line": 23,
       "function": "reserve",
       "class_name": "Item",
       "code": "def reserve(self, quantity: int) -> bool:",
@@ -58,7 +58,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 25,
       "end_line": 25,
       "function": "reserve",
@@ -68,11 +68,11 @@
         "quantity",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 27,
       "end_line": 27,
       "function": "reserve",
@@ -82,13 +82,13 @@
         "quantity",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 30,
-      "end_line": 30,
+      "line": 29,
+      "end_line": 29,
       "function": "to_dict",
       "class_name": "Item",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -99,7 +99,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 30,
       "end_line": 30,
       "function": "to_dict",
@@ -108,13 +108,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 45,
-      "end_line": 45,
+      "line": 44,
+      "end_line": 44,
       "function": "total",
       "class_name": "OrderLine",
       "code": "def total(self, item: Item) -> float:",
@@ -126,7 +126,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 46,
       "end_line": 46,
       "function": "total",
@@ -136,11 +136,11 @@
         "item",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 47,
       "end_line": 47,
       "function": "total",
@@ -150,13 +150,13 @@
         "item",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 59,
-      "end_line": 59,
+      "line": 58,
+      "end_line": 58,
       "function": "total_amount",
       "class_name": "Order",
       "code": "def total_amount(self, items: Dict[str, Item]) -> float:",
@@ -170,7 +170,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 65,
       "end_line": 65,
       "function": "total_amount",
@@ -182,13 +182,13 @@
         "self",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 68,
-      "end_line": 68,
+      "line": 67,
+      "end_line": 67,
       "function": "is_open",
       "class_name": "Order",
       "code": "def is_open(self) -> bool:",
@@ -199,7 +199,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 68,
       "end_line": 68,
       "function": "is_open",
@@ -208,13 +208,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 76,
-      "end_line": 76,
+      "line": 75,
+      "end_line": 75,
       "function": "add_item",
       "class_name": "Inventory",
       "code": "def add_item(self, item: Item) -> None:",
@@ -227,8 +227,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 79,
-      "end_line": 79,
+      "line": 78,
+      "end_line": 78,
       "function": "get",
       "class_name": "Inventory",
       "code": "def get(self, item_id: str) -> Optional[Item]:",
@@ -240,7 +240,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 79,
       "end_line": 79,
       "function": "get",
@@ -250,13 +250,13 @@
         "item_id",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 82,
-      "end_line": 82,
+      "line": 81,
+      "end_line": 81,
       "function": "all",
       "class_name": "Inventory",
       "code": "def all(self) -> List[Item]:",
@@ -267,7 +267,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 82,
       "end_line": 82,
       "function": "all",
@@ -276,13 +276,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 85,
-      "end_line": 85,
+      "line": 84,
+      "end_line": 84,
       "function": "to_dict",
       "class_name": "Inventory",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -293,7 +293,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 85,
       "end_line": 85,
       "function": "to_dict",
@@ -302,13 +302,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 90,
-      "end_line": 90,
+      "line": 89,
+      "end_line": 89,
       "function": "__init__",
       "class_name": "OrderProcessor",
       "code": "def __init__(self, inventory: Inventory) -> None:",
@@ -321,8 +321,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 93,
-      "end_line": 93,
+      "line": 92,
+      "end_line": 92,
       "function": "can_fulfil",
       "class_name": "OrderProcessor",
       "code": "def can_fulfil(self, order: Order) -> bool:",
@@ -335,7 +335,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 96,
       "end_line": 96,
       "function": "can_fulfil",
@@ -346,11 +346,11 @@
         "order",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 97,
       "end_line": 97,
       "function": "can_fulfil",
@@ -361,13 +361,13 @@
         "order",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 100,
-      "end_line": 100,
+      "line": 99,
+      "end_line": 99,
       "function": "apply_order",
       "class_name": "OrderProcessor",
       "code": "def apply_order(self, order: Order) -> bool:",
@@ -380,7 +380,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 101,
       "end_line": 101,
       "function": "apply_order",
@@ -391,11 +391,11 @@
         "order",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 104,
       "end_line": 104,
       "function": "apply_order",
@@ -406,11 +406,11 @@
         "order",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 109,
       "end_line": 109,
       "function": "apply_order",
@@ -421,11 +421,11 @@
         "order",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 112,
       "end_line": 112,
       "function": "apply_order",
@@ -436,11 +436,11 @@
         "order",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 114,
       "end_line": 114,
       "function": "apply_order",
@@ -451,13 +451,13 @@
         "order",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 118,
-      "end_line": 118,
+      "line": 117,
+      "end_line": 117,
       "function": "load_inventory",
       "class_name": null,
       "code": "def load_inventory(path: Path) -> Inventory:",
@@ -471,7 +471,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 119,
       "end_line": 119,
       "function": "load_inventory",
@@ -483,13 +483,13 @@
         "item",
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 124,
-      "end_line": 124,
+      "kind": "exception_handler_entry",
+      "line": 123,
+      "end_line": 123,
       "function": "load_inventory",
       "class_name": null,
       "code": "except ...",
@@ -499,11 +499,11 @@
         "item",
         "path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 124,
       "end_line": 124,
       "function": "load_inventory",
@@ -515,13 +515,13 @@
         "item",
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 136,
-      "end_line": 136,
+      "kind": "exception_handler_entry",
+      "line": 135,
+      "end_line": 135,
       "function": "load_inventory",
       "class_name": null,
       "code": "except ...",
@@ -531,11 +531,11 @@
         "item",
         "path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 138,
       "end_line": 138,
       "function": "load_inventory",
@@ -547,13 +547,13 @@
         "item",
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 142,
-      "end_line": 142,
+      "line": 141,
+      "end_line": 141,
       "function": "load_orders",
       "class_name": null,
       "code": "def load_orders(path: Path) -> List[Order]:",
@@ -572,7 +572,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 143,
       "end_line": 143,
       "function": "load_orders",
@@ -589,13 +589,13 @@
         "quantity",
         "result"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 148,
-      "end_line": 148,
+      "kind": "exception_handler_entry",
+      "line": 147,
+      "end_line": 147,
       "function": "load_orders",
       "class_name": null,
       "code": "except ...",
@@ -610,11 +610,11 @@
         "quantity",
         "result"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 148,
       "end_line": 148,
       "function": "load_orders",
@@ -631,13 +631,13 @@
         "quantity",
         "result"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 161,
-      "end_line": 161,
+      "kind": "exception_handler_entry",
+      "line": 160,
+      "end_line": 160,
       "function": "load_orders",
       "class_name": null,
       "code": "except ...",
@@ -652,11 +652,11 @@
         "quantity",
         "result"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 163,
       "end_line": 163,
       "function": "load_orders",
@@ -673,13 +673,13 @@
         "quantity",
         "result"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 167,
-      "end_line": 167,
+      "line": 166,
+      "end_line": 166,
       "function": "save_inventory",
       "class_name": null,
       "code": "def save_inventory(path: Path, inventory: Inventory) -> None:",
@@ -692,8 +692,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 173,
-      "end_line": 173,
+      "line": 172,
+      "end_line": 172,
       "function": "summarize_orders",
       "class_name": null,
       "code": "def summarize_orders(orders: Iterable[Order], inventory: Inventory) -> Dict[str, Any]:",
@@ -706,7 +706,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 185,
       "end_line": 185,
       "function": "summarize_orders",
@@ -717,13 +717,13 @@
         "orders",
         "summary"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 189,
-      "end_line": 189,
+      "line": 188,
+      "end_line": 188,
       "function": "find_high_value_orders",
       "class_name": null,
       "code": "def find_high_value_orders(orders: Iterable[Order], inventory: Inventory, threshold: float) -> List[Tuple[str, float]]:",
@@ -738,7 +738,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 194,
       "end_line": 194,
       "function": "find_high_value_orders",
@@ -751,13 +751,13 @@
         "result",
         "threshold"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 198,
-      "end_line": 198,
+      "line": 197,
+      "end_line": 197,
       "function": "group_orders_by_customer",
       "class_name": null,
       "code": "def group_orders_by_customer(orders: Iterable[Order]) -> Dict[str, List[Order]]:",
@@ -769,7 +769,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 201,
       "end_line": 201,
       "function": "group_orders_by_customer",
@@ -779,13 +779,13 @@
         "grouped",
         "orders"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 205,
-      "end_line": 205,
+      "line": 204,
+      "end_line": 204,
       "function": "export_report",
       "class_name": null,
       "code": "def export_report(path: Path, summary: Dict[str, Any], high_value: List[Tuple[str, float]]) -> None:",
@@ -800,8 +800,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 215,
-      "end_line": 215,
+      "line": 214,
+      "end_line": 214,
       "function": "load_config",
       "class_name": null,
       "code": "def load_config(path: Path) -> Dict[str, Any]:",
@@ -812,7 +812,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 216,
       "end_line": 216,
       "function": "load_config",
@@ -821,11 +821,11 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 219,
       "end_line": 219,
       "function": "load_config",
@@ -834,24 +834,24 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 221,
-      "end_line": 221,
+      "kind": "exception_handler_entry",
+      "line": 220,
+      "end_line": 220,
       "function": "load_config",
       "class_name": null,
       "code": "except ...",
       "vars_in_scope": [
         "path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 221,
       "end_line": 221,
       "function": "load_config",
@@ -860,13 +860,13 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 225,
-      "end_line": 225,
+      "line": 224,
+      "end_line": 224,
       "function": "main",
       "class_name": null,
       "code": "def main(base_dir: str = \"data\") -> int:",
@@ -891,7 +891,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 234,
       "end_line": 234,
       "function": "main",
@@ -914,11 +914,11 @@
         "summary",
         "threshold"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 260,
       "end_line": 260,
       "function": "main",
@@ -941,7 +941,7 @@
         "summary",
         "threshold"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]
