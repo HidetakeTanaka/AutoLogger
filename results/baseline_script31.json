@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 31,
+      "line": 30,
       "level": "DEBUG",
       "message": "Entering score_ratio",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "score_ratio"
     },
     {
-      "line": 36,
+      "line": 35,
       "level": "DEBUG",
       "message": "Entering is_suspicious",
       "kind": "entry",
@@ -45,31 +45,31 @@
       "function": "is_suspicious"
     },
     {
-      "line": 45,
+      "line": 44,
       "level": "DEBUG",
       "message": "Entering ensure_data_dir",
       "kind": "entry",
       "function": "ensure_data_dir"
     },
     {
-      "line": 49,
+      "line": 48,
       "level": "DEBUG",
       "message": "Entering generate_sample_attempts",
       "kind": "entry",
       "function": "generate_sample_attempts"
     },
     {
-      "line": 76,
+      "line": 75,
       "level": "DEBUG",
       "message": "Entering load_attempts",
       "kind": "entry",
       "function": "load_attempts"
     },
     {
-      "line": 99,
+      "line": 97,
       "level": "ERROR",
       "message": "Exception in load_attempts",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_attempts"
     },
     {
@@ -80,7 +80,7 @@
       "function": "load_attempts"
     },
     {
-      "line": 104,
+      "line": 103,
       "level": "DEBUG",
       "message": "Entering group_by_user",
       "kind": "entry",
@@ -94,7 +94,7 @@
       "function": "group_by_user"
     },
     {
-      "line": 111,
+      "line": 110,
       "level": "DEBUG",
       "message": "Entering summarize_user",
       "kind": "entry",
@@ -115,7 +115,7 @@
       "function": "summarize_user"
     },
     {
-      "line": 128,
+      "line": 127,
       "level": "DEBUG",
       "message": "Entering find_suspicious_users",
       "kind": "entry",
@@ -129,17 +129,17 @@
       "function": "find_suspicious_users"
     },
     {
-      "line": 137,
+      "line": 136,
       "level": "DEBUG",
       "message": "Entering interactive_menu",
       "kind": "entry",
       "function": "interactive_menu"
     },
     {
-      "line": 144,
+      "line": 143,
       "level": "ERROR",
       "message": "Exception in interactive_menu",
-      "kind": "except",
+      "kind": "exception",
       "function": "interactive_menu"
     },
     {
@@ -150,14 +150,14 @@
       "function": "interactive_menu"
     },
     {
-      "line": 171,
+      "line": 170,
       "level": "ERROR",
       "message": "Exception in interactive_menu",
-      "kind": "except",
+      "kind": "exception",
       "function": "interactive_menu"
     },
     {
-      "line": 182,
+      "line": 181,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

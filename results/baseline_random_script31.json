@@ -19,23 +19,23 @@
       "function": "score_ratio"
     },
     {
-      "line": 45,
+      "line": 44,
       "level": "ERROR",
-      "message": "Random log at line 45 in ensure_data_dir",
+      "message": "Random log at line 44 in ensure_data_dir",
       "kind": "entry",
       "function": "ensure_data_dir"
     },
     {
-      "line": 49,
+      "line": 48,
       "level": "DEBUG",
-      "message": "Random log at line 49 in generate_sample_attempts",
+      "message": "Random log at line 48 in generate_sample_attempts",
       "kind": "entry",
       "function": "generate_sample_attempts"
     },
     {
-      "line": 76,
+      "line": 75,
       "level": "DEBUG",
-      "message": "Random log at line 76 in load_attempts",
+      "message": "Random log at line 75 in load_attempts",
       "kind": "entry",
       "function": "load_attempts"
     },
@@ -47,24 +47,24 @@
       "function": "summarize_user"
     },
     {
-      "line": 128,
+      "line": 127,
       "level": "ERROR",
-      "message": "Random log at line 128 in find_suspicious_users",
+      "message": "Random log at line 127 in find_suspicious_users",
       "kind": "entry",
       "function": "find_suspicious_users"
     },
     {
-      "line": 137,
+      "line": 136,
       "level": "WARNING",
-      "message": "Random log at line 137 in interactive_menu",
+      "message": "Random log at line 136 in interactive_menu",
       "kind": "entry",
       "function": "interactive_menu"
     },
     {
-      "line": 144,
+      "line": 143,
       "level": "ERROR",
-      "message": "Random log at line 144 in interactive_menu",
-      "kind": "except",
+      "message": "Random log at line 143 in interactive_menu",
+      "kind": "exception",
       "function": "interactive_menu"
     },
     {

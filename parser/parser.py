@@ -103,7 +103,8 @@ class LogCandidateVisitor(ast.NodeVisitor):
         self._func_stack.append(node)
 
         # 1: function entry: try to point to the first body line if present, else def line 
-        entry_line = node.body[0].lineno if node.body else node.lineno
+        # entry_line = node.body[0].lineno if node.body else node.lineno
+        entry_line = node.lineno
 
         # try to get the full signature from source
         sig = ast.get_source_segment(self.source, node) or f"def {node.name}(...)"
@@ -135,14 +136,14 @@ class LogCandidateVisitor(ast.NodeVisitor):
         
         self.candidates.append(
             LoggingCandidate(
-                kind =          "before_return",
+                kind =          "return_stmt",
                 line =          node.lineno,
                 end_line =      node.lineno,
                 function =      self.current_function_name,
                 class_name =    self.current_class_name,
                 code =          _safe_unparse(node),
                 vars_in_scope = vars_in_scope,
-                why =           "before return",
+                why =           "return statement",
                 severity_hint = "INFO",
             )
         )
@@ -152,7 +153,8 @@ class LogCandidateVisitor(ast.NodeVisitor):
 
     def visit_ExceptHandler(self, node: ast.ExceptHandler):
         # 3: choose a sensible insertion line: first stmt inside expect if present; else the except line
-        line = node.body[0].lineno if getattr(node, "body", None) else node.lineno
+        #line = node.body[0].lineno if getattr(node, "body", None) else node.lineno
+        line = node.lineno
 
         if self.current_function is not None:
             vars_in_scope = get_vars_in_scope(self.current_function)
@@ -161,14 +163,14 @@ class LogCandidateVisitor(ast.NodeVisitor):
             
         self.candidates.append(
             LoggingCandidate(
-                kind =          "except",
+                kind =          "exception_handler_entry",
                 line =          line,
                 end_line =      line,
                 function =      self.current_function_name,
                 class_name =    self.current_class_name,
                 code =          "except ...",
                 vars_in_scope = vars_in_scope,
-                why =           "inside except",
+                why =           "exception handler enry",
                 severity_hint = "ERROR",
             )
         )
@@ -215,11 +217,3 @@ if __name__ == "__main__":
     
     print(f"✅ Parsed {src_path.name} -> {out_path.name}")
     print(f"Found {len(result['candidates'])} candidates in {src_path.name}")
-    
-
-
-
-
-
-    
-    
