@@ -14,15 +14,25 @@ def infer_level_from_log_code(log_code: str) -> str:
     return m.group(1).upper()
 
 def map_kind(kind: str) -> str:
-    if kind == "func_entry":
+    # normalize to lower-case to be safe
+    k = (kind or "").lower()
+
+    # function entry
+    if k in  ("func_entry", "entry"):
         return "entry"
-    if kind == "before_return":
+    
+    # returns
+    if k in  ("before_return", "return_stmt", "return"):
         return "return"
-    # もともと except ならそのまま
-    if kind == "except":
-        return "except"
-    # その他はとりあえず event 扱い
-    return "event"
+    
+    # exceptions / handlers
+    if k in ("exception_handler_entry", "except", "exception"):
+        return "exception"
+
+    # default: treat as entry or generic event
+    # depending on your policy; here we pick "entry" to match gold schema
+    # return "entry" instead of return "event"
+    return "entry"
 
 def convert(llm_path: Path, out_path: Path):
     data = load_json(llm_path)

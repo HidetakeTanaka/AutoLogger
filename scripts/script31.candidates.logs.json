@@ -2,74 +2,88 @@
   "file": "script31.py",
   "logs": [
     {
-      "candidate_id": 0,
-      "lineno": 30,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
-    },
-    {
       "candidate_id": 3,
       "lineno": 35,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
-    },
-    {
-      "candidate_id": 6,
-      "lineno": 44,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering is_suspicious with fast_threshold={fast_threshold}, high_ratio={high_ratio}\")"
     },
     {
       "candidate_id": 7,
       "lineno": 48,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entered generate_sample_attempts with num_users={num_users}\")"
     },
     {
       "candidate_id": 8,
       "lineno": 75,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering load_attempts with path: {path}\")"
+    },
+    {
+      "candidate_id": 9,
+      "lineno": 97,
+      "col_offset": 0,
+      "kind": "exception_handler_entry",
+      "log_code": "logging.error(f'Failed to load attempts from {path} after processing {len(attempts)} attempts, duration {duration}s, max_score {max_score}, last score {score}', exc_info=True)"
     },
     {
       "candidate_id": 11,
       "lineno": 103,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entered group_by_user with {len(attempts)} attempts\")"
     },
     {
       "candidate_id": 13,
       "lineno": 110,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entered summarize_user with {len(attempts)} attempts\")"
     },
     {
       "candidate_id": 16,
       "lineno": 127,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entered find_suspicious_users with {len(grouped)} user groups\")"
+    },
+    {
+      "candidate_id": 17,
+      "lineno": 133,
+      "col_offset": 0,
+      "kind": "return_stmt",
+      "log_code": "logging.info(f'Returning suspects list with {len(suspects)} users')"
     },
     {
       "candidate_id": 18,
       "lineno": 136,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug('Entered interactive_menu function')"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 143,
+      "col_offset": 0,
+      "kind": "exception_handler_entry",
+      "log_code": "logging.error(f'Exception caught in interactive_menu after {attempts} attempts with choice={choice}', exc_info=True)"
+    },
+    {
+      "candidate_id": 21,
+      "lineno": 170,
+      "col_offset": 0,
+      "kind": "exception_handler_entry",
+      "log_code": "logging.error('Exception caught in interactive_menu with choice=%s, attempts=%d', choice, attempts, exc_info=True)"
     },
     {
       "candidate_id": 22,
       "lineno": 181,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug('Entered main function')"
     }
   ]
 }
