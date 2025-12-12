@@ -1,96 +1,359 @@
 {
-  "file": "script62.py",
-  "logs": [
-    {
-      "line": 53,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering Task.from_dict"
-    },
-    {
-      "line": 67,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to create Task from dict"
-    },
-    {
-      "line": 101,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering Project.from_dict"
-    },
-    {
-      "line": 121,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering HttpClient.fetch_project"
-    },
-    {
-      "line": 128,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Returning project payload from HttpClient.fetch_project"
-    },
-    {
-      "line": 130,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error while fetching project from remote"
-    },
-    {
-      "line": 133,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering HttpClient.push_project"
-    },
-    {
-      "line": 145,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Successfully pushed project summary"
-    },
-    {
-      "line": 147,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error while pushing project summary"
-    },
-    {
-      "line": 151,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering load_project"
-    },
-    {
-      "line": 165,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to persist project to disk"
-    },
-    {
-      "line": 177,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Returning computed project summary"
-    },
-    {
-      "line": 208,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering main"
-    },
-    {
-      "line": 230,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Unhandled error in main"
-    },
-    {
-      "line": 236,
-      "kind": "return",
-      "level": "WARNING",
-      "message": "Exiting with error in main"
-    }
-  ]
+"file": "script62.py",
+"logs": [
+{
+"line": 23,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Task.is_overdue"
+},
+{
+"line": 25,
+"kind": "return",
+"level": "INFO",
+"message": "Returning False in Task.is_overdue"
+},
+{
+"line": 27,
+"kind": "return",
+"level": "INFO",
+"message": "Returning whether Task.due_at is before ref in Task.is_overdue"
+},
+{
+"line": 29,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Task.mark_done"
+},
+{
+"line": 32,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Task.matches"
+},
+{
+"line": 35,
+"kind": "return",
+"level": "INFO",
+"message": "Returning True in Task.matches"
+},
+{
+"line": 37,
+"kind": "return",
+"level": "INFO",
+"message": "Returning True in Task.matches"
+},
+{
+"line": 38,
+"kind": "return",
+"level": "INFO",
+"message": "Returning whether any tag contains the query in Task.matches"
+},
+{
+"line": 40,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Task.to_dict"
+},
+{
+"line": 41,
+"kind": "return",
+"level": "INFO",
+"message": "Returning task dict in Task.to_dict"
+},
+{
+"line": 52,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Task.from_dict"
+},
+{
+"line": 57,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Task instance from Task.from_dict"
+},
+{
+"line": 66,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to parse Task from raw data in Task.from_dict"
+},
+{
+"line": 67,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from Task.from_dict"
+},
+{
+"line": 71,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Project.init"
+},
+{
+"line": 76,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Project.add_task"
+},
+{
+"line": 79,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Project.get_task"
+},
+{
+"line": 80,
+"kind": "return",
+"level": "INFO",
+"message": "Returning task from Project.get_task"
+},
+{
+"line": 82,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Project.pending_tasks"
+},
+{
+"line": 83,
+"kind": "return",
+"level": "INFO",
+"message": "Returning list of pending tasks from Project.pending_tasks"
+},
+{
+"line": 85,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Project.completed_ratio"
+},
+{
+"line": 88,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0.0 as completed ratio in Project.completed_ratio"
+},
+{
+"line": 90,
+"kind": "return",
+"level": "INFO",
+"message": "Returning computed completed ratio in Project.completed_ratio"
+},
+{
+"line": 92,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Project.to_dict"
+},
+{
+"line": 93,
+"kind": "return",
+"level": "INFO",
+"message": "Returning project dict in Project.to_dict"
+},
+{
+"line": 100,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Project.from_dict"
+},
+{
+"line": 109,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Project instance from Project.from_dict"
+},
+{
+"line": 113,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering ApiClient.init"
+},
+{
+"line": 117,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering ApiClient._url"
+},
+{
+"line": 118,
+"kind": "return",
+"level": "INFO",
+"message": "Returning project URL in ApiClient._url"
+},
+{
+"line": 120,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering ApiClient.fetch_project"
+},
+{
+"line": 122,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None (no data) from ApiClient.fetch_project"
+},
+{
+"line": 128,
+"kind": "return",
+"level": "INFO",
+"message": "Returning parsed project data from ApiClient.fetch_project"
+},
+{
+"line": 129,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to fetch or parse project data in ApiClient.fetch_project"
+},
+{
+"line": 130,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from ApiClient.fetch_project after error"
+},
+{
+"line": 132,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering ApiClient.push_summary"
+},
+{
+"line": 134,
+"kind": "return",
+"level": "INFO",
+"message": "Returning False in ApiClient.push_summary"
+},
+{
+"line": 145,
+"kind": "return",
+"level": "INFO",
+"message": "Returning whether push succeeded in ApiClient.push_summary"
+},
+{
+"line": 146,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to push summary to remote in ApiClient.push_summary"
+},
+{
+"line": 147,
+"kind": "return",
+"level": "INFO",
+"message": "Returning False from ApiClient.push_summary after error"
+},
+{
+"line": 150,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering load_project"
+},
+{
+"line": 153,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Project from load_project"
+},
+{
+"line": 154,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to load project from path in load_project"
+},
+{
+"line": 155,
+"kind": "return",
+"level": "INFO",
+"message": "Returning default local Project from load_project"
+},
+{
+"line": 158,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering save_project"
+},
+{
+"line": 164,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to write project to disk in save_project"
+},
+{
+"line": 168,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to finalize project save in save_project"
+},
+{
+"line": 172,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering summarize_project"
+},
+{
+"line": 175,
+"kind": "return",
+"level": "INFO",
+"message": "Returning empty summary in summarize_project"
+},
+{
+"line": 177,
+"kind": "return",
+"level": "INFO",
+"message": "Returning computed summary in summarize_project"
+},
+{
+"line": 184,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering merge_remote"
+},
+{
+"line": 186,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0 (no additions) from merge_remote"
+},
+{
+"line": 193,
+"kind": "return",
+"level": "INFO",
+"message": "Returning number of added tasks from merge_remote"
+},
+{
+"line": 196,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering simulate_progress"
+},
+{
+"line": 207,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering main"
+},
+{
+"line": 224,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 1 (error) from main"
+},
+{
+"line": 229,
+"kind": "exception",
+"level": "ERROR",
+"message": "Unexpected error in main"
+},
+{
+"line": 230,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 1 from main after error"
+},
+{
+"line": 232,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0 (success) from main"
 }
-
+]
+}

@@ -12,16 +12,16 @@
       "function": "is_temperature"
     },
     {
-      "line": 21,
+      "line": 20,
       "level": "INFO",
-      "message": "Random log at line 21 in to_dict",
+      "message": "Random log at line 20 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 39,
+      "line": 38,
       "level": "ERROR",
-      "message": "Random log at line 39 in to_tuple",
+      "message": "Random log at line 38 in to_tuple",
       "kind": "entry",
       "function": "to_tuple"
     },
@@ -33,30 +33,30 @@
       "function": "to_tuple"
     },
     {
-      "line": 44,
+      "line": 43,
       "level": "DEBUG",
-      "message": "Random log at line 44 in __init__",
+      "message": "Random log at line 43 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 70,
+      "line": 69,
       "level": "DEBUG",
-      "message": "Random log at line 70 in get",
+      "message": "Random log at line 69 in get",
       "kind": "entry",
       "function": "get"
     },
     {
-      "line": 73,
+      "line": 72,
       "level": "ERROR",
-      "message": "Random log at line 73 in all",
+      "message": "Random log at line 72 in all",
       "kind": "entry",
       "function": "all"
     },
     {
-      "line": 77,
+      "line": 76,
       "level": "WARNING",
-      "message": "Random log at line 77 in load_readings_csv",
+      "message": "Random log at line 76 in load_readings_csv",
       "kind": "entry",
       "function": "load_readings_csv"
     },
@@ -68,16 +68,16 @@
       "function": "load_readings_csv"
     },
     {
-      "line": 89,
+      "line": 88,
       "level": "WARNING",
-      "message": "Random log at line 89 in load_readings_csv",
-      "kind": "except",
+      "message": "Random log at line 88 in load_readings_csv",
+      "kind": "exception",
       "function": "load_readings_csv"
     },
     {
-      "line": 145,
+      "line": 144,
       "level": "INFO",
-      "message": "Random log at line 145 in load_config",
+      "message": "Random log at line 144 in load_config",
       "kind": "entry",
       "function": "load_config"
     },

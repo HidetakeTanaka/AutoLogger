@@ -1,84 +1,299 @@
 {
-  "file": "script67.py",
-  "logs": [
-    {
-      "line": 96,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering fetch_recommendations"
-    },
-    {
-      "line": 102,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Network error in fetch_recommendations"
-    },
-    {
-      "line": 106,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Returning parsed recommendations from fetch_recommendations"
-    },
-    {
-      "line": 109,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Decode error in fetch_recommendations"
-    },
-    {
-      "line": 113,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering load_user"
-    },
-    {
-      "line": 118,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to load user from disk"
-    },
-    {
-      "line": 118,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Falling back to anonymous user"
-    },
-    {
-      "line": 122,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering save_user"
-    },
-    {
-      "line": 129,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to write temporary user file"
-    },
-    {
-      "line": 133,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to finalize user file save"
-    },
-    {
-      "line": 183,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering main for script67"
-    },
-    {
-      "line": 226,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Unhandled error in main"
-    },
-    {
-      "line": 227,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Completed successfully, exiting with code 0 in main"
-    }
-  ]
+"file": "script67.py",
+"logs": [
+{
+"line": 21,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Article.is_recent"
+},
+{
+"line": 23,
+"kind": "return",
+"level": "INFO",
+"message": "Returning whether article is recent in Article.is_recent"
+},
+{
+"line": 25,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Article.to_dict"
+},
+{
+"line": 26,
+"kind": "return",
+"level": "INFO",
+"message": "Returning article dict in Article.to_dict"
+},
+{
+"line": 35,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Article.from_dict"
+},
+{
+"line": 39,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Article instance from Article.from_dict"
+},
+{
+"line": 46,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to parse Article from raw data in Article.from_dict"
+},
+{
+"line": 47,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from Article.from_dict"
+},
+{
+"line": 56,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering UserProfile.touch"
+},
+{
+"line": 59,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering UserProfile.update_interest"
+},
+{
+"line": 63,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering UserProfile.preferred_categories"
+},
+{
+"line": 64,
+"kind": "return",
+"level": "INFO",
+"message": "Returning preferred categories from UserProfile.preferred_categories"
+},
+{
+"line": 66,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering UserProfile.to_dict"
+},
+{
+"line": 67,
+"kind": "return",
+"level": "INFO",
+"message": "Returning user profile dict in UserProfile.to_dict"
+},
+{
+"line": 74,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering UserProfile.from_dict"
+},
+{
+"line": 78,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to parse UserProfile from raw data in UserProfile.from_dict"
+},
+{
+"line": 80,
+"kind": "return",
+"level": "INFO",
+"message": "Returning UserProfile instance from UserProfile.from_dict"
+},
+{
+"line": 88,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering RecommendationClient.init"
+},
+{
+"line": 92,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering RecommendationClient._url"
+},
+{
+"line": 93,
+"kind": "return",
+"level": "INFO",
+"message": "Returning recommendation URL in RecommendationClient._url"
+},
+{
+"line": 95,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering RecommendationClient.fetch_recommendations"
+},
+{
+"line": 101,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to fetch recommendations in RecommendationClient.fetch_recommendations"
+},
+{
+"line": 102,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from RecommendationClient.fetch_recommendations after error"
+},
+{
+"line": 106,
+"kind": "return",
+"level": "INFO",
+"message": "Returning parsed recommendations from RecommendationClient.fetch_recommendations"
+},
+{
+"line": 107,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None (no recommendations) from RecommendationClient.fetch_recommendations"
+},
+{
+"line": 108,
+"kind": "exception",
+"level": "ERROR",
+"message": "Unexpected error in RecommendationClient.fetch_recommendations"
+},
+{
+"line": 109,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from RecommendationClient.fetch_recommendations after exception"
+},
+{
+"line": 112,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering load_user"
+},
+{
+"line": 116,
+"kind": "return",
+"level": "INFO",
+"message": "Returning UserProfile from load_user"
+},
+{
+"line": 117,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to load user profile from path in load_user"
+},
+{
+"line": 118,
+"kind": "return",
+"level": "INFO",
+"message": "Returning default anonymous UserProfile from load_user"
+},
+{
+"line": 121,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering save_user"
+},
+{
+"line": 128,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to write user profile to disk in save_user"
+},
+{
+"line": 132,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to finalize saving user profile in save_user"
+},
+{
+"line": 136,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering normalize_scores"
+},
+{
+"line": 138,
+"kind": "return",
+"level": "INFO",
+"message": "Returning from normalize_scores (no-op)"
+},
+{
+"line": 144,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering enrich_with_preferences"
+},
+{
+"line": 148,
+"kind": "return",
+"level": "INFO",
+"message": "Returning empty list from enrich_with_preferences"
+},
+{
+"line": 154,
+"kind": "return",
+"level": "INFO",
+"message": "Returning ranked articles from enrich_with_preferences"
+},
+{
+"line": 157,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering compute_preferences"
+},
+{
+"line": 159,
+"kind": "return",
+"level": "INFO",
+"message": "Returning empty preferences from compute_preferences"
+},
+{
+"line": 164,
+"kind": "return",
+"level": "INFO",
+"message": "Returning normalized preferences from compute_preferences"
+},
+{
+"line": 167,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering simulate_session"
+},
+{
+"line": 172,
+"kind": "return",
+"level": "INFO",
+"message": "Returning clicked items from simulate_session"
+},
+{
+"line": 179,
+"kind": "return",
+"level": "INFO",
+"message": "Returning clicked items from simulate_session"
+},
+{
+"line": 182,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering main"
+},
+{
+"line": 225,
+"kind": "exception",
+"level": "ERROR",
+"message": "Unexpected error in main"
+},
+{
+"line": 226,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 1 (error) from main"
+},
+{
+"line": 227,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0 (success) from main"
 }
-
+]
+}

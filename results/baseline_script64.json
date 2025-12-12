@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -24,14 +24,14 @@
       "function": "is_recent"
     },
     {
-      "line": 28,
+      "line": 27,
       "level": "DEBUG",
       "message": "Entering update_metric",
       "kind": "entry",
       "function": "update_metric"
     },
     {
-      "line": 34,
+      "line": 33,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -45,7 +45,7 @@
       "function": "to_dict"
     },
     {
-      "line": 44,
+      "line": 43,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -59,10 +59,10 @@
       "function": "from_dict"
     },
     {
-      "line": 57,
+      "line": 56,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -73,21 +73,21 @@
       "function": "from_dict"
     },
     {
-      "line": 62,
+      "line": 61,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 66,
+      "line": 65,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 69,
+      "line": 68,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -101,7 +101,7 @@
       "function": "get"
     },
     {
-      "line": 72,
+      "line": 71,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -115,7 +115,7 @@
       "function": "all"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "DEBUG",
       "message": "Entering active_devices",
       "kind": "entry",
@@ -129,7 +129,7 @@
       "function": "active_devices"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -143,7 +143,7 @@
       "function": "to_dict"
     },
     {
-      "line": 85,
+      "line": 84,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -157,14 +157,14 @@
       "function": "from_dict"
     },
     {
-      "line": 95,
+      "line": 94,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 99,
+      "line": 98,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -178,7 +178,7 @@
       "function": "_url"
     },
     {
-      "line": 102,
+      "line": 101,
       "level": "DEBUG",
       "message": "Entering fetch_fleet_snapshot",
       "kind": "entry",
@@ -199,10 +199,10 @@
       "function": "fetch_fleet_snapshot"
     },
     {
-      "line": 111,
+      "line": 110,
       "level": "ERROR",
       "message": "Exception in fetch_fleet_snapshot",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_fleet_snapshot"
     },
     {
@@ -213,7 +213,7 @@
       "function": "fetch_fleet_snapshot"
     },
     {
-      "line": 114,
+      "line": 113,
       "level": "DEBUG",
       "message": "Entering push_aggregates",
       "kind": "entry",
@@ -234,10 +234,10 @@
       "function": "push_aggregates"
     },
     {
-      "line": 123,
+      "line": 122,
       "level": "ERROR",
       "message": "Exception in push_aggregates",
-      "kind": "except",
+      "kind": "exception",
       "function": "push_aggregates"
     },
     {
@@ -248,7 +248,7 @@
       "function": "push_aggregates"
     },
     {
-      "line": 127,
+      "line": 126,
       "level": "DEBUG",
       "message": "Entering load_fleet",
       "kind": "entry",
@@ -262,10 +262,10 @@
       "function": "load_fleet"
     },
     {
-      "line": 131,
+      "line": 130,
       "level": "ERROR",
       "message": "Exception in load_fleet",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_fleet"
     },
     {
@@ -276,28 +276,28 @@
       "function": "load_fleet"
     },
     {
-      "line": 135,
+      "line": 134,
       "level": "DEBUG",
       "message": "Entering save_fleet",
       "kind": "entry",
       "function": "save_fleet"
     },
     {
-      "line": 141,
+      "line": 140,
       "level": "ERROR",
       "message": "Exception in save_fleet",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_fleet"
     },
     {
-      "line": 145,
+      "line": 144,
       "level": "ERROR",
       "message": "Exception in save_fleet",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_fleet"
     },
     {
-      "line": 149,
+      "line": 148,
       "level": "DEBUG",
       "message": "Entering compute_stats",
       "kind": "entry",
@@ -318,7 +318,7 @@
       "function": "compute_stats"
     },
     {
-      "line": 164,
+      "line": 163,
       "level": "DEBUG",
       "message": "Entering detect_offline",
       "kind": "entry",
@@ -332,7 +332,7 @@
       "function": "detect_offline"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "DEBUG",
       "message": "Entering simulate_fleet",
       "kind": "entry",
@@ -346,7 +346,7 @@
       "function": "simulate_fleet"
     },
     {
-      "line": 193,
+      "line": 192,
       "level": "DEBUG",
       "message": "Entering merge_remote_snapshot",
       "kind": "entry",
@@ -367,17 +367,17 @@
       "function": "merge_remote_snapshot"
     },
     {
-      "line": 211,
+      "line": 210,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 230,
+      "line": 229,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

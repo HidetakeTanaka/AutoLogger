@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "level": "DEBUG",
       "message": "Entering is_overdue",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_overdue"
     },
     {
-      "line": 29,
+      "line": 28,
       "level": "DEBUG",
       "message": "Entering is_open",
       "kind": "entry",
@@ -38,7 +38,7 @@
       "function": "is_open"
     },
     {
-      "line": 32,
+      "line": 31,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -52,17 +52,17 @@
       "function": "to_dict"
     },
     {
-      "line": 43,
+      "line": 42,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
     {
-      "line": 49,
+      "line": 48,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -73,14 +73,14 @@
       "function": "from_dict"
     },
     {
-      "line": 69,
+      "line": 68,
       "level": "DEBUG",
       "message": "Entering add_task",
       "kind": "entry",
       "function": "add_task"
     },
     {
-      "line": 72,
+      "line": 71,
       "level": "DEBUG",
       "message": "Entering remove_task",
       "kind": "entry",
@@ -101,7 +101,7 @@
       "function": "remove_task"
     },
     {
-      "line": 79,
+      "line": 78,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -115,7 +115,7 @@
       "function": "to_dict"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -129,14 +129,14 @@
       "function": "from_dict"
     },
     {
-      "line": 98,
+      "line": 97,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 102,
+      "line": 101,
       "level": "DEBUG",
       "message": "Entering load",
       "kind": "entry",
@@ -150,10 +150,10 @@
       "function": "load"
     },
     {
-      "line": 109,
+      "line": 108,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -164,14 +164,14 @@
       "function": "load"
     },
     {
-      "line": 119,
+      "line": 118,
       "level": "DEBUG",
       "message": "Entering save",
       "kind": "entry",
       "function": "save"
     },
     {
-      "line": 127,
+      "line": 126,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -185,14 +185,14 @@
       "function": "get"
     },
     {
-      "line": 130,
+      "line": 129,
       "level": "DEBUG",
       "message": "Entering upsert",
       "kind": "entry",
       "function": "upsert"
     },
     {
-      "line": 133,
+      "line": 132,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -206,14 +206,14 @@
       "function": "all"
     },
     {
-      "line": 138,
+      "line": 137,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 142,
+      "line": 141,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -227,17 +227,17 @@
       "function": "_url"
     },
     {
-      "line": 147,
+      "line": 146,
       "level": "DEBUG",
       "message": "Entering fetch_tasks",
       "kind": "entry",
       "function": "fetch_tasks"
     },
     {
-      "line": 153,
+      "line": 152,
       "level": "ERROR",
       "message": "Exception in fetch_tasks",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_tasks"
     },
     {
@@ -248,10 +248,10 @@
       "function": "fetch_tasks"
     },
     {
-      "line": 157,
+      "line": 156,
       "level": "ERROR",
       "message": "Exception in fetch_tasks",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_tasks"
     },
     {
@@ -269,7 +269,7 @@
       "function": "fetch_tasks"
     },
     {
-      "line": 161,
+      "line": 160,
       "level": "DEBUG",
       "message": "Entering push_project",
       "kind": "entry",
@@ -283,10 +283,10 @@
       "function": "push_project"
     },
     {
-      "line": 169,
+      "line": 168,
       "level": "ERROR",
       "message": "Exception in push_project",
-      "kind": "except",
+      "kind": "exception",
       "function": "push_project"
     },
     {
@@ -297,7 +297,7 @@
       "function": "push_project"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "DEBUG",
       "message": "Entering filter_overdue",
       "kind": "entry",
@@ -311,7 +311,7 @@
       "function": "filter_overdue"
     },
     {
-      "line": 178,
+      "line": 177,
       "level": "DEBUG",
       "message": "Entering filter_by_tag",
       "kind": "entry",
@@ -325,7 +325,7 @@
       "function": "filter_by_tag"
     },
     {
-      "line": 186,
+      "line": 185,
       "level": "DEBUG",
       "message": "Entering sort_by_priority",
       "kind": "entry",
@@ -339,7 +339,7 @@
       "function": "sort_by_priority"
     },
     {
-      "line": 190,
+      "line": 189,
       "level": "DEBUG",
       "message": "Entering summarize_tasks",
       "kind": "entry",
@@ -353,7 +353,7 @@
       "function": "summarize_tasks"
     },
     {
-      "line": 204,
+      "line": 203,
       "level": "DEBUG",
       "message": "Entering load_config",
       "kind": "entry",
@@ -374,10 +374,10 @@
       "function": "load_config"
     },
     {
-      "line": 210,
+      "line": 209,
       "level": "ERROR",
       "message": "Exception in load_config",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_config"
     },
     {
@@ -388,7 +388,7 @@
       "function": "load_config"
     },
     {
-      "line": 214,
+      "line": 213,
       "level": "DEBUG",
       "message": "Entering ensure_demo_project",
       "kind": "entry",
@@ -402,7 +402,7 @@
       "function": "ensure_demo_project"
     },
     {
-      "line": 234,
+      "line": 233,
       "level": "DEBUG",
       "message": "Entering sync_if_enabled",
       "kind": "entry",
@@ -430,14 +430,14 @@
       "function": "sync_if_enabled"
     },
     {
-      "line": 251,
+      "line": 250,
       "level": "DEBUG",
       "message": "Entering export_summary",
       "kind": "entry",
       "function": "export_summary"
     },
     {
-      "line": 257,
+      "line": 256,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

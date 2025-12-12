@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 21,
+      "line": 20,
       "level": "DEBUG",
       "message": "Entering is_valid",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_valid"
     },
     {
-      "line": 26,
+      "line": 25,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -38,7 +38,7 @@
       "function": "to_dict"
     },
     {
-      "line": 44,
+      "line": 43,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -52,7 +52,7 @@
       "function": "is_recent"
     },
     {
-      "line": 48,
+      "line": 47,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -66,7 +66,7 @@
       "function": "to_dict"
     },
     {
-      "line": 64,
+      "line": 63,
       "level": "DEBUG",
       "message": "Entering is_adult",
       "kind": "entry",
@@ -80,7 +80,7 @@
       "function": "is_adult"
     },
     {
-      "line": 67,
+      "line": 66,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -94,14 +94,14 @@
       "function": "to_dict"
     },
     {
-      "line": 76,
+      "line": 75,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "DEBUG",
       "message": "Entering load",
       "kind": "entry",
@@ -115,10 +115,10 @@
       "function": "load"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -129,14 +129,14 @@
       "function": "load"
     },
     {
-      "line": 99,
+      "line": 98,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
-      "line": 104,
+      "line": 103,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -150,7 +150,7 @@
       "function": "all"
     },
     {
-      "line": 107,
+      "line": 106,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -164,14 +164,14 @@
       "function": "get"
     },
     {
-      "line": 112,
+      "line": 111,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 115,
+      "line": 114,
       "level": "DEBUG",
       "message": "Entering load",
       "kind": "entry",
@@ -185,10 +185,10 @@
       "function": "load"
     },
     {
-      "line": 121,
+      "line": 120,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -199,10 +199,10 @@
       "function": "load"
     },
     {
-      "line": 134,
+      "line": 133,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -213,14 +213,14 @@
       "function": "load"
     },
     {
-      "line": 141,
+      "line": 140,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 145,
+      "line": 144,
       "level": "DEBUG",
       "message": "Entering get_json",
       "kind": "entry",
@@ -234,10 +234,10 @@
       "function": "get_json"
     },
     {
-      "line": 152,
+      "line": 151,
       "level": "ERROR",
       "message": "Exception in get_json",
-      "kind": "except",
+      "kind": "exception",
       "function": "get_json"
     },
     {
@@ -248,7 +248,7 @@
       "function": "get_json"
     },
     {
-      "line": 156,
+      "line": 155,
       "level": "DEBUG",
       "message": "Entering filter_recent_reviews",
       "kind": "entry",
@@ -262,7 +262,7 @@
       "function": "filter_recent_reviews"
     },
     {
-      "line": 161,
+      "line": 160,
       "level": "DEBUG",
       "message": "Entering group_reviews_by_product",
       "kind": "entry",
@@ -276,7 +276,7 @@
       "function": "group_reviews_by_product"
     },
     {
-      "line": 168,
+      "line": 167,
       "level": "DEBUG",
       "message": "Entering compute_average_scores",
       "kind": "entry",
@@ -290,7 +290,7 @@
       "function": "compute_average_scores"
     },
     {
-      "line": 179,
+      "line": 178,
       "level": "DEBUG",
       "message": "Entering load_users",
       "kind": "entry",
@@ -304,10 +304,10 @@
       "function": "load_users"
     },
     {
-      "line": 185,
+      "line": 184,
       "level": "ERROR",
       "message": "Exception in load_users",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_users"
     },
     {
@@ -318,10 +318,10 @@
       "function": "load_users"
     },
     {
-      "line": 196,
+      "line": 195,
       "level": "ERROR",
       "message": "Exception in load_users",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_users"
     },
     {
@@ -332,7 +332,7 @@
       "function": "load_users"
     },
     {
-      "line": 201,
+      "line": 200,
       "level": "DEBUG",
       "message": "Entering fetch_remote_products",
       "kind": "entry",
@@ -353,7 +353,7 @@
       "function": "fetch_remote_products"
     },
     {
-      "line": 209,
+      "line": 208,
       "level": "DEBUG",
       "message": "Entering select_top_products",
       "kind": "entry",
@@ -374,14 +374,14 @@
       "function": "select_top_products"
     },
     {
-      "line": 216,
+      "line": 215,
       "level": "DEBUG",
       "message": "Entering write_report",
       "kind": "entry",
       "function": "write_report"
     },
     {
-      "line": 231,
+      "line": 230,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

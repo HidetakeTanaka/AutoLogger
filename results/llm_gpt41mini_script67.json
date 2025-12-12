@@ -2,43 +2,55 @@
   "file": "script67.py",
   "logs": [
     {
-      "line": 36,
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with hours={hours} for article id={self.id if hasattr(self, 'id') else 'unknown'}\")"
+    },
+    {
+      "line": 35,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 47,
-      "kind": "except",
+      "line": 46,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to create Article from dict: {raw}', exc_info=True)"
     },
     {
-      "line": 57,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering touch method of UserProfile for user_id={self.user_id}\")"
-    },
-    {
-      "line": 60,
+      "line": 59,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering update_interest with category={category}, delta={delta}\")"
     },
     {
-      "line": 75,
+      "line": 63,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering UserProfile.from_dict with raw data keys: {list(raw.keys())}\")"
+      "message": "logging.debug(f\"Entered preferred_categories with min_score={min_score}\")"
     },
     {
-      "line": 79,
-      "kind": "except",
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering {cls.__name__}.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 78,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to create UserProfile from dict: {raw}', exc_info=True)"
     },
     {
-      "line": 93,
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing RecommendationClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 92,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with user_id={user_id}\")"
@@ -47,107 +59,95 @@
       "line": 93,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Returning recommendation URL for user_id={user_id}: {self.base_url}/recommend/{user_id}.json')"
+      "message": "logging.info(f'Returning URL for user_id {user_id}: {self.base_url}/recommend/{user_id}.json')"
     },
     {
-      "line": 96,
+      "line": 95,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered fetch_recommendations with user_id={user_id}\")"
+      "message": "logging.debug(f\"Entering fetch_recommendations with user_id={user_id}\")"
     },
     {
-      "line": 102,
-      "kind": "except",
+      "line": 101,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to fetch recommendations for user_id={user_id} from url={url}', exc_info=True)"
     },
     {
-      "line": 106,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning parsed recommendations for user_id={user_id} from url={url}')"
-    },
-    {
-      "line": 109,
-      "kind": "except",
+      "line": 108,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch recommendations for user_id={user_id} from url={url}', exc_info=True)"
+      "message": "logging.error(f'Error fetching recommendations for user_id={user_id} from url={url}', exc_info=True)"
     },
     {
-      "line": 113,
+      "line": 112,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_user with path: {path}\")"
     },
     {
-      "line": 118,
-      "kind": "except",
+      "line": 117,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load user data from {path}')"
+      "message": "logging.error(f'Failed to load user data from {path}', exc_info=True)"
     },
     {
-      "line": 118,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('Returning anonymous user profile from load_user')"
-    },
-    {
-      "line": 122,
+      "line": 121,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering save_user with path={path} and user={user}\")"
+      "message": "logging.debug(f\"Entered save_user with path={path} and user={user}\")"
     },
     {
-      "line": 129,
-      "kind": "except",
+      "line": 128,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save user data for user {user} at path {path}', exc_info=True)"
+    },
+    {
+      "line": 132,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save user data to {path} for user {user}', exc_info=True)"
     },
     {
-      "line": 133,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to save user data for user {user} at path {path} with payload {payload}', exc_info=True)"
-    },
-    {
-      "line": 137,
+      "line": 136,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"normalize_scores called with {len(articles)} articles\")"
     },
     {
-      "line": 147,
+      "line": 144,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered enrich_with_preferences with {len(articles)} articles, bonus={bonus}, prefs keys={list(prefs.keys())}, profile id={getattr(profile, 'id', 'N/A')}\")"
+      "message": "logging.debug(f\"Entering enrich_with_preferences with {len(articles)} articles, bonus={bonus}, prefs keys={list(prefs.keys())}, profile keys={list(profile.keys())}\")"
     },
     {
-      "line": 158,
+      "line": 157,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered compute_preferences with history of length {len(history)}\")"
     },
     {
-      "line": 170,
+      "line": 167,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered simulate_session with profile={profile}, pool size={len(pool)}\")"
     },
     {
-      "line": 179,
+      "line": 172,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Simulation session ended with clicked={clicked}, chosen={chosen}, total clicks={clicks}')"
+      "message": "logging.info(f'Simulation session ended with clicked={clicked}')"
     },
     {
-      "line": 183,
+      "line": 182,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 226,
-      "kind": "except",
+      "line": 225,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }

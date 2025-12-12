@@ -2,7 +2,7 @@
   "file": "script40.py",
   "logs": [
     {
-      "line": 19,
+      "line": 18,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Item.is_in_stock"
@@ -11,16 +11,16 @@
       "line": 20,
       "kind": "return",
       "level": "INFO",
-      "message": "Item.is_in_stock returning False because item is considered unavailable"
+      "message": "Returning fixed False from Item.is_in_stock (placeholder implementation)"
     },
     {
       "line": 21,
       "kind": "return",
       "level": "INFO",
-      "message": "Item.is_in_stock returning stock check result for requested quantity"
+      "message": "Returning stock availability flag from Item.is_in_stock based on requested quantity"
     },
     {
-      "line": 24,
+      "line": 23,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Item.reserve"
@@ -29,16 +29,16 @@
       "line": 25,
       "kind": "return",
       "level": "INFO",
-      "message": "Item.reserve returning False because requested quantity cannot be reserved"
+      "message": "Returning False from Item.reserve (reservation failed or placeholder)"
     },
     {
       "line": 27,
       "kind": "return",
       "level": "INFO",
-      "message": "Item.reserve returning True after successfully reserving stock"
+      "message": "Returning True from Item.reserve (reservation succeeded)"
     },
     {
-      "line": 30,
+      "line": 29,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Item.to_dict"
@@ -47,10 +47,10 @@
       "line": 30,
       "kind": "return",
       "level": "INFO",
-      "message": "Item.to_dict returning serialized item data"
+      "message": "Serializing Item to dict in Item.to_dict"
     },
     {
-      "line": 45,
+      "line": 44,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering OrderLine.total"
@@ -59,16 +59,16 @@
       "line": 46,
       "kind": "return",
       "level": "INFO",
-      "message": "OrderLine.total returning 0.0 as fallback total"
+      "message": "Returning 0.0 from OrderLine.total (placeholder or empty line total)"
     },
     {
       "line": 47,
       "kind": "return",
       "level": "INFO",
-      "message": "OrderLine.total returning line total based on item price and quantity"
+      "message": "Returning computed line total from OrderLine.total"
     },
     {
-      "line": 59,
+      "line": 58,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Order.total_amount"
@@ -77,10 +77,10 @@
       "line": 65,
       "kind": "return",
       "level": "INFO",
-      "message": "Order.total_amount returning aggregated order total"
+      "message": "Returning total order amount from Order.total_amount"
     },
     {
-      "line": 68,
+      "line": 67,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Order.is_open"
@@ -89,16 +89,16 @@
       "line": 68,
       "kind": "return",
       "level": "INFO",
-      "message": "Order.is_open returning True for pending or processing status"
+      "message": "Returning open-status flag from Order.is_open"
     },
     {
-      "line": 76,
+      "line": 75,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Inventory.add_item"
     },
     {
-      "line": 79,
+      "line": 78,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Inventory.get"
@@ -107,10 +107,10 @@
       "line": 79,
       "kind": "return",
       "level": "INFO",
-      "message": "Inventory.get returning item looked up by item_id or None"
+      "message": "Returning Item from Inventory.get for given item_id (or None)"
     },
     {
-      "line": 82,
+      "line": 81,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Inventory.all"
@@ -119,10 +119,10 @@
       "line": 82,
       "kind": "return",
       "level": "INFO",
-      "message": "Inventory.all returning list of all items"
+      "message": "Returning list of all items from Inventory.all"
     },
     {
-      "line": 85,
+      "line": 84,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Inventory.to_dict"
@@ -131,16 +131,16 @@
       "line": 85,
       "kind": "return",
       "level": "INFO",
-      "message": "Inventory.to_dict returning serialized inventory data"
+      "message": "Serializing Inventory to dict in Inventory.to_dict"
     },
     {
-      "line": 90,
+      "line": 89,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Initializing OrderProcessor with inventory"
+      "message": "Entering OrderProcessor.__init__"
     },
     {
-      "line": 93,
+      "line": 92,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering OrderProcessor.can_fulfil"
@@ -149,16 +149,16 @@
       "line": 96,
       "kind": "return",
       "level": "INFO",
-      "message": "OrderProcessor.can_fulfil returning False because at least one line cannot be fulfilled"
+      "message": "Returning False from OrderProcessor.can_fulfil (cannot fulfil or placeholder)"
     },
     {
       "line": 97,
       "kind": "return",
       "level": "INFO",
-      "message": "OrderProcessor.can_fulfil returning True after validating all order lines"
+      "message": "Returning True from OrderProcessor.can_fulfil (all lines can be fulfilled)"
     },
     {
-      "line": 100,
+      "line": 99,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering OrderProcessor.apply_order"
@@ -167,34 +167,34 @@
       "line": 101,
       "kind": "return",
       "level": "INFO",
-      "message": "OrderProcessor.apply_order returning False because order cannot be fulfilled"
+      "message": "Returning False from OrderProcessor.apply_order (order not applied)"
     },
     {
       "line": 104,
       "kind": "return",
       "level": "INFO",
-      "message": "OrderProcessor.apply_order returning False due to missing inventory item"
+      "message": "Returning False from OrderProcessor.apply_order (stock check or reservation failed)"
     },
     {
       "line": 109,
       "kind": "return",
       "level": "INFO",
-      "message": "OrderProcessor.apply_order returning False because reservation failed for at least one line"
+      "message": "Returning False from OrderProcessor.apply_order (partial application or error)"
     },
     {
       "line": 112,
       "kind": "return",
       "level": "INFO",
-      "message": "OrderProcessor.apply_order returning False after failing to update order status"
+      "message": "Returning False from OrderProcessor.apply_order (final failure to apply order)"
     },
     {
       "line": 114,
       "kind": "return",
       "level": "INFO",
-      "message": "OrderProcessor.apply_order returning True after successfully reserving and applying order"
+      "message": "Returning True from OrderProcessor.apply_order (order applied successfully)"
     },
     {
-      "line": 118,
+      "line": 117,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_inventory"
@@ -203,34 +203,34 @@
       "line": 119,
       "kind": "return",
       "level": "INFO",
-      "message": "load_inventory returning empty Inventory as default"
+      "message": "Returning empty Inventory from load_inventory (no data loaded yet)"
     },
     {
-      "line": 124,
+      "line": 123,
       "kind": "exception",
       "level": "ERROR",
-      "message": "load_inventory failed to read or parse inventory file"
+      "message": "Exception while loading inventory in load_inventory"
     },
     {
       "line": 124,
       "kind": "return",
       "level": "INFO",
-      "message": "load_inventory returning empty Inventory after failure"
+      "message": "Returning empty Inventory from load_inventory after exception"
     },
     {
-      "line": 136,
+      "line": 135,
       "kind": "exception",
       "level": "ERROR",
-      "message": "load_inventory encountered error while building Inventory from data"
+      "message": "Unexpected exception while parsing inventory data in load_inventory"
     },
     {
       "line": 138,
       "kind": "return",
       "level": "INFO",
-      "message": "load_inventory returning populated Inventory instance"
+      "message": "Returning populated Inventory from load_inventory"
     },
     {
-      "line": 142,
+      "line": 141,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_orders"
@@ -239,40 +239,40 @@
       "line": 143,
       "kind": "return",
       "level": "INFO",
-      "message": "load_orders returning empty list as default"
+      "message": "Returning empty order list from load_orders (no data)"
     },
     {
-      "line": 148,
+      "line": 147,
       "kind": "exception",
       "level": "ERROR",
-      "message": "load_orders failed to read or parse orders file"
+      "message": "Exception while loading orders in load_orders"
     },
     {
       "line": 148,
       "kind": "return",
       "level": "INFO",
-      "message": "load_orders returning empty list after failure"
+      "message": "Returning empty order list from load_orders after exception"
     },
     {
-      "line": 161,
+      "line": 160,
       "kind": "exception",
       "level": "ERROR",
-      "message": "load_orders encountered error while constructing Order instances"
+      "message": "Unexpected exception while parsing orders in load_orders"
     },
     {
       "line": 163,
       "kind": "return",
       "level": "INFO",
-      "message": "load_orders returning list of successfully loaded orders"
+      "message": "Returning loaded orders from load_orders"
     },
     {
-      "line": 167,
+      "line": 166,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering save_inventory"
     },
     {
-      "line": 173,
+      "line": 172,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering summarize_orders"
@@ -281,10 +281,10 @@
       "line": 185,
       "kind": "return",
       "level": "INFO",
-      "message": "summarize_orders returning summary of orders and revenue"
+      "message": "Returning order summary from summarize_orders"
     },
     {
-      "line": 189,
+      "line": 188,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering find_high_value_orders"
@@ -293,10 +293,10 @@
       "line": 194,
       "kind": "return",
       "level": "INFO",
-      "message": "find_high_value_orders returning orders exceeding value threshold"
+      "message": "Returning list of high-value orders from find_high_value_orders"
     },
     {
-      "line": 198,
+      "line": 197,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering group_orders_by_customer"
@@ -305,16 +305,16 @@
       "line": 201,
       "kind": "return",
       "level": "INFO",
-      "message": "group_orders_by_customer returning mapping from customer_id to orders"
+      "message": "Returning orders grouped by customer_id from group_orders_by_customer"
     },
     {
-      "line": 205,
+      "line": 204,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering export_report"
     },
     {
-      "line": 215,
+      "line": 214,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_config"
@@ -323,28 +323,28 @@
       "line": 216,
       "kind": "return",
       "level": "INFO",
-      "message": "load_config returning empty configuration as default"
+      "message": "Returning empty config dict from load_config (no file yet)"
     },
     {
       "line": 219,
       "kind": "return",
       "level": "INFO",
-      "message": "load_config returning parsed JSON configuration"
+      "message": "Returning parsed config from load_config"
     },
     {
-      "line": 221,
+      "line": 220,
       "kind": "exception",
       "level": "ERROR",
-      "message": "load_config failed to read or parse configuration file"
+      "message": "Exception while loading config in load_config"
     },
     {
       "line": 221,
       "kind": "return",
       "level": "INFO",
-      "message": "load_config returning empty configuration after failure"
+      "message": "Returning empty config dict from load_config after exception"
     },
     {
-      "line": 225,
+      "line": 224,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering main"
@@ -353,13 +353,13 @@
       "line": 234,
       "kind": "return",
       "level": "INFO",
-      "message": "main returning exit code 1 due to missing configuration or data"
+      "message": "Returning error exit code 1 from main"
     },
     {
       "line": 260,
       "kind": "return",
       "level": "INFO",
-      "message": "main returning exit code 0 after successfully processing orders and exporting report"
+      "message": "Returning success exit code 0 from main"
     }
   ]
 }

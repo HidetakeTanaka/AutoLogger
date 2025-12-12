@@ -3,213 +3,143 @@
   "logs": [
     {
       "candidate_id": 0,
-      "lineno": 20,
+      "lineno": 19,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entering matches with query='{query}' for product {self}\")"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
+      "candidate_id": 4,
+      "lineno": 27,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 6,
-      "lineno": 37,
+      "lineno": 36,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "candidate_id": 8,
-      "lineno": 45,
+      "candidate_id": 10,
+      "lineno": 53,
       "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.error(f'Failed to create Product from dict: {raw}', exc_info=True)"
-    },
-    {
-      "candidate_id": 11,
-      "lineno": 54,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.info(f'Calculating line total for product {self.product.name}: price {self.product.price} * quantity {self.quantity} = {self.product.price * self.quantity}')"
+      "kind": "func_entry",
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 12,
-      "lineno": 59,
+      "lineno": 58,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f'Initializing Cart with cart_id={cart_id}')"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 13,
-      "lineno": 64,
+      "lineno": 63,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entering add method: product={product}, quantity={quantity}\")"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 14,
-      "lineno": 70,
+      "lineno": 69,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entering remove method with product_id={product_id}\")"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 15,
-      "lineno": 74,
+      "lineno": 73,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug('Entering Cart.total method')"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "candidate_id": 20,
-      "lineno": 100,
+      "candidate_id": 17,
+      "lineno": 76,
       "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.info(f'Created Cart from dict with {len(cart.items)} items')"
+      "kind": "func_entry",
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+    },
+    {
+      "candidate_id": 19,
+      "lineno": 90,
+      "col_offset": 0,
+      "kind": "func_entry",
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 21,
-      "lineno": 105,
+      "lineno": 104,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Initializing PricingClient with base_url={base_url} and timeout={timeout}\")"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 22,
-      "lineno": 109,
+      "lineno": 108,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entering _url with product_id={product_id}\")"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 24,
-      "lineno": 112,
+      "lineno": 111,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entering fetch_price with product_id={product_id}\")"
-    },
-    {
-      "candidate_id": 26,
-      "lineno": 119,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.info(f'Fetched price {data.get(\"price\")} for product {product_id} from {url}')"
-    },
-    {
-      "candidate_id": 27,
-      "lineno": 121,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.error(f'Failed to fetch price for product_id {product_id} from {url}', exc_info=True)"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 29,
-      "lineno": 125,
+      "lineno": 124,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entering load_cart with path: {path}\")"
-    },
-    {
-      "candidate_id": 31,
-      "lineno": 129,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.error(f'Failed to load cart from {path} with raw data: {raw}', exc_info=True)"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 33,
-      "lineno": 133,
+      "lineno": 132,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entered save_cart with path={path} and cart={cart}\")"
-    },
-    {
-      "candidate_id": 34,
-      "lineno": 139,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.error(f'Failed to save cart to {path} with payload {payload}')"
-    },
-    {
-      "candidate_id": 35,
-      "lineno": 143,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.error(f'Failed to save cart to {path} with payload {payload}')"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 36,
-      "lineno": 147,
+      "lineno": 146,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entering apply_discounts with cart containing {len(cart.items)} items and now={now}\")"
-    },
-    {
-      "candidate_id": 39,
-      "lineno": 155,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.info(f'Applying final discount, total after discount: {total * 0.95}')"
-    },
-    {
-      "candidate_id": 40,
-      "lineno": 156,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.info(f'Total after discounts applied: {total}')"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 41,
-      "lineno": 160,
+      "lineno": 159,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entering pick_best_deal with {len(carts)} carts\")"
-    },
-    {
-      "candidate_id": 42,
-      "lineno": 161,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.info('No suitable deal found, returning None')"
-    },
-    {
-      "candidate_id": 43,
-      "lineno": 169,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.info(f'Returning best deal with value: {best_value}')"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 44,
-      "lineno": 173,
+      "lineno": 172,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entered update_prices_from_remote with cart id={cart.id} and client={client}\")"
-    },
-    {
-      "candidate_id": 45,
-      "lineno": 181,
-      "col_offset": 0,
-      "kind": "before_return",
-      "log_code": "logging.info(f'update_prices_from_remote completed, updated={updated}')"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 46,
-      "lineno": 185,
+      "lineno": 184,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Starting simulate_cart with cart id={cart.id} for {steps} steps\")"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 48,
-      "lineno": 209,
+      "lineno": 208,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
-    },
-    {
-      "candidate_id": 49,
-      "lineno": 236,
-      "col_offset": 0,
-      "kind": "except",
-      "log_code": "logging.error('Exception occurred in main function', exc_info=True)"
+      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     }
   ]
 }

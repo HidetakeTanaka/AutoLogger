@@ -1,0 +1,106 @@
+{
+  "file": "script33.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 19,
+      "level": "WARNING",
+      "message": "Random log at line 19 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 28,
+      "level": "INFO",
+      "message": "Random log at line 28 in is_error",
+      "kind": "entry",
+      "function": "is_error"
+    },
+    {
+      "line": 36,
+      "level": "ERROR",
+      "message": "Random log at line 36 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 39,
+      "level": "DEBUG",
+      "message": "Random log at line 39 in measure",
+      "kind": "entry",
+      "function": "measure"
+    },
+    {
+      "line": 45,
+      "level": "DEBUG",
+      "message": "Random log at line 45 in measure",
+      "kind": "exception",
+      "function": "measure"
+    },
+    {
+      "line": 56,
+      "level": "DEBUG",
+      "message": "Random log at line 56 in save",
+      "kind": "entry",
+      "function": "save"
+    },
+    {
+      "line": 71,
+      "level": "ERROR",
+      "message": "Random log at line 71 in load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 76,
+      "level": "WARNING",
+      "message": "Random log at line 76 in load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 83,
+      "level": "ERROR",
+      "message": "Random log at line 83 in load",
+      "kind": "exception",
+      "function": "load"
+    },
+    {
+      "line": 86,
+      "level": "WARNING",
+      "message": "Random log at line 86 in load",
+      "kind": "return",
+      "function": "load"
+    },
+    {
+      "line": 131,
+      "level": "INFO",
+      "message": "Random log at line 131 in compute_overall_stats",
+      "kind": "return",
+      "function": "compute_overall_stats"
+    },
+    {
+      "line": 166,
+      "level": "WARNING",
+      "message": "Random log at line 166 in retry_failed",
+      "kind": "return",
+      "function": "retry_failed"
+    },
+    {
+      "line": 175,
+      "level": "WARNING",
+      "message": "Random log at line 175 in retry_failed",
+      "kind": "return",
+      "function": "retry_failed"
+    },
+    {
+      "line": 200,
+      "level": "INFO",
+      "message": "Random log at line 200 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

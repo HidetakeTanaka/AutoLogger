@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 31,
+      "line": 30,
       "level": "DEBUG",
       "message": "Entering score_ratio",
       "kind": "entry",
@@ -12,19 +12,19 @@
     {
       "line": 32,
       "level": "INFO",
-      "message": "Exiting score_ratio",
-      "kind": "return",
+      "message": "Event in score_ratio",
+      "kind": "return_stmt",
       "function": "score_ratio"
     },
     {
       "line": 33,
       "level": "INFO",
-      "message": "Exiting score_ratio",
-      "kind": "return",
+      "message": "Event in score_ratio",
+      "kind": "return_stmt",
       "function": "score_ratio"
     },
     {
-      "line": 36,
+      "line": 35,
       "level": "DEBUG",
       "message": "Entering is_suspicious",
       "kind": "entry",
@@ -33,54 +33,54 @@
     {
       "line": 38,
       "level": "INFO",
-      "message": "Exiting is_suspicious",
-      "kind": "return",
+      "message": "Event in is_suspicious",
+      "kind": "return_stmt",
       "function": "is_suspicious"
     },
     {
       "line": 41,
       "level": "INFO",
-      "message": "Exiting is_suspicious",
-      "kind": "return",
+      "message": "Event in is_suspicious",
+      "kind": "return_stmt",
       "function": "is_suspicious"
     },
     {
-      "line": 45,
+      "line": 44,
       "level": "DEBUG",
       "message": "Entering ensure_data_dir",
       "kind": "entry",
       "function": "ensure_data_dir"
     },
     {
-      "line": 49,
+      "line": 48,
       "level": "DEBUG",
       "message": "Entering generate_sample_attempts",
       "kind": "entry",
       "function": "generate_sample_attempts"
     },
     {
-      "line": 76,
+      "line": 75,
       "level": "DEBUG",
       "message": "Entering load_attempts",
       "kind": "entry",
       "function": "load_attempts"
     },
     {
-      "line": 99,
+      "line": 97,
       "level": "ERROR",
-      "message": "Exception in load_attempts",
-      "kind": "except",
+      "message": "Event in load_attempts",
+      "kind": "exception_handler_entry",
       "function": "load_attempts"
     },
     {
       "line": 100,
       "level": "INFO",
-      "message": "Exiting load_attempts",
-      "kind": "return",
+      "message": "Event in load_attempts",
+      "kind": "return_stmt",
       "function": "load_attempts"
     },
     {
-      "line": 104,
+      "line": 103,
       "level": "DEBUG",
       "message": "Entering group_by_user",
       "kind": "entry",
@@ -89,12 +89,12 @@
     {
       "line": 107,
       "level": "INFO",
-      "message": "Exiting group_by_user",
-      "kind": "return",
+      "message": "Event in group_by_user",
+      "kind": "return_stmt",
       "function": "group_by_user"
     },
     {
-      "line": 111,
+      "line": 110,
       "level": "DEBUG",
       "message": "Entering summarize_user",
       "kind": "entry",
@@ -103,19 +103,19 @@
     {
       "line": 112,
       "level": "INFO",
-      "message": "Exiting summarize_user",
-      "kind": "return",
+      "message": "Event in summarize_user",
+      "kind": "return_stmt",
       "function": "summarize_user"
     },
     {
       "line": 118,
       "level": "INFO",
-      "message": "Exiting summarize_user",
-      "kind": "return",
+      "message": "Event in summarize_user",
+      "kind": "return_stmt",
       "function": "summarize_user"
     },
     {
-      "line": 128,
+      "line": 127,
       "level": "DEBUG",
       "message": "Entering find_suspicious_users",
       "kind": "entry",
@@ -124,40 +124,40 @@
     {
       "line": 133,
       "level": "INFO",
-      "message": "Exiting find_suspicious_users",
-      "kind": "return",
+      "message": "Event in find_suspicious_users",
+      "kind": "return_stmt",
       "function": "find_suspicious_users"
     },
     {
-      "line": 137,
+      "line": 136,
       "level": "DEBUG",
       "message": "Entering interactive_menu",
       "kind": "entry",
       "function": "interactive_menu"
     },
     {
-      "line": 144,
+      "line": 143,
       "level": "ERROR",
-      "message": "Exception in interactive_menu",
-      "kind": "except",
+      "message": "Event in interactive_menu",
+      "kind": "exception_handler_entry",
       "function": "interactive_menu"
     },
     {
       "line": 145,
       "level": "INFO",
-      "message": "Exiting interactive_menu",
-      "kind": "return",
+      "message": "Event in interactive_menu",
+      "kind": "return_stmt",
       "function": "interactive_menu"
     },
     {
-      "line": 171,
+      "line": 170,
       "level": "ERROR",
-      "message": "Exception in interactive_menu",
-      "kind": "except",
+      "message": "Event in interactive_menu",
+      "kind": "exception_handler_entry",
       "function": "interactive_menu"
     },
     {
-      "line": 182,
+      "line": 181,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

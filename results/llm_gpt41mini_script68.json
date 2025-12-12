@@ -2,182 +2,140 @@
   "file": "script68.py",
   "logs": [
     {
-      "line": 27,
+      "line": 26,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering matches() with query='{query}'\")"
+      "message": "logging.debug(f\"Entering matches with query='{query}'\")"
     },
     {
-      "line": 46,
+      "line": 45,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f'Entering WorkoutSession.from_dict with raw data: {raw}')"
+      "message": "logging.debug(f\"Entering WorkoutSession.from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 53,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Creating WorkoutSession from dict with session_id={raw.get(\"session_id\", \"\")}, user_id={raw.get(\"user_id\", \"\")}, start={start}, duration_min={raw.get(\"duration_min\", 0)}, calories={raw.get(\"calories\", 0.0)}, tags={raw.get(\"tags\", [])}')"
-    },
-    {
-      "line": 62,
-      "kind": "except",
+      "line": 61,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to create WorkoutSession from dict: {raw}', exc_info=True)"
     },
     {
-      "line": 74,
+      "line": 73,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering add_session with session id: {session.id}\")"
+      "message": "logging.debug(f\"Entering add_session for user {self.user_id} with session {session.session_id}\")"
     },
     {
-      "line": 80,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering total_minutes for user {self.user_id}\")"
-    },
-    {
-      "line": 83,
+      "line": 82,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering weekly_progress with ref={ref}\")"
     },
     {
-      "line": 103,
+      "line": 102,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 111,
-      "kind": "except",
+      "line": 110,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('Failed to create UserProfile from dict', exc_info=True)"
+      "message": "logging.error('Exception occurred in UserProfile.from_dict while processing raw data: %s', raw, exc_info=True)"
     },
     {
-      "line": 127,
+      "line": 126,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing AnalyticsClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 131,
+      "line": 130,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with user_id={user_id}\")"
     },
     {
-      "line": 131,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning URL for user_id {user_id}: {self.base_url}/benchmarks/{user_id}.json')"
-    },
-    {
-      "line": 134,
+      "line": 133,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering fetch_benchmarks with user_id={user_id}\")"
     },
     {
-      "line": 143,
-      "kind": "except",
+      "line": 142,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch benchmarks for user_id={user_id} from url={url}', exc_info=True)"
+      "message": "logging.error(f'Exception occurred in fetch_benchmarks for user_id={user_id} at url={url}', exc_info=True)"
     },
     {
-      "line": 146,
+      "line": 145,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering push_summary for user_id={user_id} with summary keys={list(summary.keys())}\")"
     },
     {
-      "line": 158,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Push summary response status: {resp.status}, success: {200 <= resp.status < 300}')"
-    },
-    {
-      "line": 160,
-      "kind": "except",
+      "line": 159,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to push summary for user_id={user_id} to {url} with body={body}', exc_info=True)"
+      "message": "logging.error(f'Exception occurred in push_summary for user_id={user_id} with url={url}', exc_info=True)"
     },
     {
-      "line": 164,
+      "line": 163,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_profile with path: {path}\")"
     },
     {
-      "line": 169,
-      "kind": "except",
+      "line": 168,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load profile from {path} with raw data: {raw}', exc_info=True)"
+      "message": "logging.error(f'Failed to load profile from {path}', exc_info=True)"
     },
     {
-      "line": 173,
+      "line": 172,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save_profile with path={path} and profile={profile}\")"
     },
     {
-      "line": 180,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to save profile to {path} with payload {payload} and tmp {tmp}', exc_info=True)"
-    },
-    {
-      "line": 184,
-      "kind": "except",
+      "line": 179,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save profile to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 188,
+      "line": 183,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save profile to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 187,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering summarize_profile for user: {profile.user_id}\")"
+      "message": "logging.debug(f\"Entering summarize_profile with profile id: {profile.id}\")"
     },
     {
-      "line": 197,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f\"Summarizing profile for user_id={profile.user_id}: sessions={len(profile.sessions)}, total_minutes={profile.total_minutes()}, weekly_progress={profile.weekly_progress()}, long_sessions={long_sessions}\")"
-    },
-    {
-      "line": 208,
+      "line": 207,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Starting simulate_week for profile={profile} with days={days}\")"
+      "message": "logging.debug(f\"Starting simulate_week for profile {profile} over {days} days\")"
     },
     {
-      "line": 228,
+      "line": 225,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering merge_benchmarks with {len(benchmarks)} benchmarks, target={target}\")"
     },
     {
-      "line": 229,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Merging benchmarks completed for target {target} with result: {result}')"
-    },
-    {
-      "line": 237,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Merging benchmarks completed for target {target} with {len(benchmarks)} benchmarks. Result summary: {summary}')"
-    },
-    {
-      "line": 241,
+      "line": 240,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 257,
-      "kind": "except",
+      "line": 256,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }

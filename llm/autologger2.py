@@ -166,9 +166,16 @@ def build_user_prompt(candidate: Candidate) -> str:
 # ---------------------------------------------------------------------------
 
 def call_openai_chat(prompt: str, model: str) -> str:
-    """Call an OpenAI chat model (e.g., gpt-4.1, gpt-4.1-mini, gpt-5.1)."""
+    """Call an OpenAI chat model (e.g., gpt-4.1-mini, gpt-5.1).
+
+    If the OpenAI client or API key is not available, or if any error occurs
+    (e.g. insufficient_quota), this function returns a heuristic JSON decision
+    instead of raising an exception.
+    """
+    
     api_key = os.environ.get("OPENAI_API_KEY")
     if openai is None or not api_key:
+        # fall back to heuristic if OpenAI not available
         return heuristic_decision_json(prompt)
 
     client = openai.OpenAI(api_key=api_key)  # type: ignore[attr-defined]
@@ -186,8 +193,9 @@ def call_openai_chat(prompt: str, model: str) -> str:
         text = response.choices[0].message.content or ""
         return text.strip()
     except Exception:
-        # On any error, silently fall back to heuristic
+        # On any error (including insufficient_quota), fall back
         return heuristic_decision_json(prompt)
+
 
 
 def call_flan_t5_hf(prompt: str, model: str) -> str:
@@ -234,30 +242,18 @@ def call_flan_t5_hf(prompt: str, model: str) -> str:
 
 
 def call_llm(prompt: str, model: str, provider: str) -> str:
-    """Unified entry point with GPT-5.1 Simulation."""
+    """Unified entry point for all LLM providers.
+
+    Returns the raw text output from the model (expected to be JSON).
+    """
     provider = (provider or "openai").lower()
-    
-    # --- SIMULATION HACK FOR DIFFERENT NUMBERS ---
-    if model == "gpt-5.1":
-        # LOGIC: Log ONLY if it is a Function Entry.
-        # We look for "def " in the prompt's code snippet.
-        should_log = "def " in prompt
-        
-        # Create a log message
-        log_code = "logging.info('[GPT-5.1] Function entry logged')" if should_log else ""
-        
-        decision = {
-            "should_log": should_log,
-            "log_code": log_code
-        }
-        return json.dumps(decision)
-    # ---------------------------------------------
 
     if provider == "openai":
         return call_openai_chat(prompt, model=model)
     elif provider == "flan":
         return call_flan_t5_hf(prompt, model=model)
     else:
+        # Unknown provider → fallback
         return heuristic_decision_json(prompt)
 
 

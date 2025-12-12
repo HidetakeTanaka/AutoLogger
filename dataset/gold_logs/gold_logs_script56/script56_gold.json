@@ -2,89 +2,409 @@
   "file": "script56.py",
   "logs": [
     {
-      "line": 51,
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.is_overdue"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False (not overdue) in Task.is_overdue"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning overdue flag in Task.is_overdue"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.matches"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from primary match in Task.matches"
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from secondary match in Task.matches"
+    },
+    {
+      "line": 35,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from tertiary match in Task.matches"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result in Task.matches"
+    },
+    {
+      "line": 38,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Task.to_dict"
+    },
+    {
+      "line": 39,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Task dict in Task.to_dict"
+    },
+    {
+      "line": 50,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Task.from_dict"
     },
     {
-      "line": 66,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to parse task data in Task.from_dict"
+      "line": 56,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Task instance from Task.from_dict"
     },
     {
-      "line": 117,
+      "line": 65,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Task from dict in Task.from_dict"
+    },
+    {
+      "line": 66,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Task.from_dict after parse failure"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskList.__init__"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskList.add"
+    },
+    {
+      "line": 78,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskList.get"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning task from TaskList.get"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskList.all"
+    },
+    {
+      "line": 82,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of all tasks in TaskList.all"
+    },
+    {
+      "line": 84,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskList.search"
+    },
+    {
+      "line": 86,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning sorted search results in TaskList.search"
+    },
+    {
+      "line": 88,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskList.open_tasks"
+    },
+    {
+      "line": 89,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning open tasks list in TaskList.open_tasks"
+    },
+    {
+      "line": 91,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskList.to_dict"
+    },
+    {
+      "line": 92,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized TaskList dict in TaskList.to_dict"
+    },
+    {
+      "line": 99,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering TaskList.from_dict"
+    },
+    {
+      "line": 105,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning TaskList instance from TaskList.from_dict"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.__init__"
+    },
+    {
+      "line": 113,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient._url"
+    },
+    {
+      "line": 114,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning task list URL in SyncClient._url"
+    },
+    {
+      "line": 116,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering SyncClient.fetch_remote"
     },
     {
-      "line": 124,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to fetch remote tasks for list_id=%s in SyncClient.fetch_remote"
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning decoded remote payload in SyncClient.fetch_remote"
     },
     {
-      "line": 127,
+      "line": 123,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching remote task list in SyncClient.fetch_remote"
+    },
+    {
+      "line": 124,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from SyncClient.fetch_remote after error"
+    },
+    {
+      "line": 126,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering SyncClient.push_update"
     },
     {
-      "line": 134,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to push update for list_id=%s in SyncClient.push_update"
+      "line": 132,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning push success flag in SyncClient.push_update"
     },
     {
-      "line": 138,
+      "line": 133,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while pushing task list update in SyncClient.push_update"
+    },
+    {
+      "line": 134,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning False from SyncClient.push_update after error"
+    },
+    {
+      "line": 137,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_task_list"
     },
     {
-      "line": 142,
-      "kind": "exception",
-      "level": "WARNING",
-      "message": "Failed to load tasks from %s, using empty list in load_task_list"
+      "line": 140,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning TaskList from loaded data in load_task_list"
     },
     {
-      "line": 148,
+      "line": 141,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while loading task list from disk in load_task_list"
+    },
+    {
+      "line": 142,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning fallback local TaskList from load_task_list after error"
+    },
+    {
+      "line": 143,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while creating fallback task list in load_task_list"
+    },
+    {
+      "line": 144,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning default local TaskList from load_task_list after second error"
+    },
+    {
+      "line": 147,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering save_task_list"
     },
     {
-      "line": 154,
+      "line": 153,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to write tasks to %s in save_task_list"
+      "message": "Error while writing temporary task list file in save_task_list"
+    },
+    {
+      "line": 157,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while replacing task list file in save_task_list"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_task_list"
+    },
+    {
+      "line": 164,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty task list summary in summarize_task_list"
     },
     {
       "line": 167,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning task list summary from summarize_task_list"
+      "message": "Returning computed task list summary in summarize_task_list"
     },
     {
-      "line": 221,
+      "line": 170,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_tasks"
+    },
+    {
+      "line": 185,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered tasks in filter_tasks"
+    },
+    {
+      "line": 188,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering pick_next_task"
+    },
+    {
+      "line": 191,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None (no next task available) in pick_next_task"
+    },
+    {
+      "line": 193,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random open task in pick_next_task"
+    },
+    {
+      "line": 196,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random candidate task in pick_next_task"
+    },
+    {
+      "line": 197,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random open task fallback in pick_next_task"
+    },
+    {
+      "line": 200,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_progress"
+    },
+    {
+      "line": 217,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning simulated progress history in simulate_progress"
+    },
+    {
+      "line": 220,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering merge_remote_tasks"
     },
     {
-      "line": 233,
-      "kind": "entry",
+      "line": 222,
+      "kind": "return",
       "level": "INFO",
-      "message": "Starting task synchronization run in main"
+      "message": "Returning 0 (no remote tasks merged) in merge_remote_tasks"
+    },
+    {
+      "line": 229,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning count of merged remote tasks in merge_remote_tasks"
+    },
+    {
+      "line": 232,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 247,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main"
     },
     {
       "line": 248,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to write tasks_report.json in main"
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 1 from main due to error"
+    },
+    {
+      "line": 251,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 0 from main"
     }
   ]
 }
+
+
 

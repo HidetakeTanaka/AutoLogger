@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 20,
-      "end_line": 20,
+      "line": 19,
+      "end_line": 19,
       "function": "average",
       "class_name": "Student",
       "code": "def average(self) -> float:",
@@ -15,7 +15,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 21,
       "end_line": 21,
       "function": "average",
@@ -24,11 +24,11 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 22,
       "end_line": 22,
       "function": "average",
@@ -37,13 +37,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 25,
-      "end_line": 25,
+      "line": 24,
+      "end_line": 24,
       "function": "passed",
       "class_name": "Student",
       "code": "def passed(self, threshold: float = 50.0) -> bool:",
@@ -56,7 +56,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 27,
       "end_line": 27,
       "function": "passed",
@@ -67,11 +67,11 @@
         "self",
         "threshold"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 28,
       "end_line": 28,
       "function": "passed",
@@ -82,13 +82,13 @@
         "self",
         "threshold"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 31,
-      "end_line": 31,
+      "line": 30,
+      "end_line": 30,
       "function": "matches",
       "class_name": "Student",
       "code": "def matches(self, query: str) -> bool:",
@@ -101,7 +101,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 33,
       "end_line": 33,
       "function": "matches",
@@ -112,11 +112,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 35,
       "end_line": 35,
       "function": "matches",
@@ -127,11 +127,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 36,
       "end_line": 36,
       "function": "matches",
@@ -142,13 +142,13 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 39,
-      "end_line": 39,
+      "line": 38,
+      "end_line": 38,
       "function": "to_dict",
       "class_name": "Student",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -159,7 +159,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 39,
       "end_line": 39,
       "function": "to_dict",
@@ -168,13 +168,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 48,
-      "end_line": 48,
+      "line": 47,
+      "end_line": 47,
       "function": "from_dict",
       "class_name": "Student",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Student\"]:",
@@ -188,7 +188,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 55,
       "end_line": 55,
       "function": "from_dict",
@@ -200,13 +200,13 @@
         "enrolled_raw",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 62,
-      "end_line": 62,
+      "kind": "exception_handler_entry",
+      "line": 61,
+      "end_line": 61,
       "function": "from_dict",
       "class_name": "Student",
       "code": "except ...",
@@ -216,11 +216,11 @@
         "enrolled_raw",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 62,
       "end_line": 62,
       "function": "from_dict",
@@ -232,13 +232,13 @@
         "enrolled_raw",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 67,
-      "end_line": 67,
+      "line": 66,
+      "end_line": 66,
       "function": "__init__",
       "class_name": "Course",
       "code": "def __init__(self, course_id: str, title: str) -> None:",
@@ -252,8 +252,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 72,
-      "end_line": 72,
+      "line": 71,
+      "end_line": 71,
       "function": "add_student",
       "class_name": "Course",
       "code": "def add_student(self, student: Student) -> None:",
@@ -266,8 +266,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 75,
-      "end_line": 75,
+      "line": 74,
+      "end_line": 74,
       "function": "get_student",
       "class_name": "Course",
       "code": "def get_student(self, student_id: str) -> Optional[Student]:",
@@ -279,7 +279,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 75,
       "end_line": 75,
       "function": "get_student",
@@ -289,13 +289,13 @@
         "self",
         "student_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 78,
-      "end_line": 78,
+      "line": 77,
+      "end_line": 77,
       "function": "all_students",
       "class_name": "Course",
       "code": "def all_students(self) -> List[Student]:",
@@ -306,7 +306,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 78,
       "end_line": 78,
       "function": "all_students",
@@ -315,13 +315,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 81,
-      "end_line": 81,
+      "line": 80,
+      "end_line": 80,
       "function": "class_average",
       "class_name": "Course",
       "code": "def class_average(self) -> float:",
@@ -333,7 +333,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 83,
       "end_line": 83,
       "function": "class_average",
@@ -343,11 +343,11 @@
         "self",
         "students"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 84,
       "end_line": 84,
       "function": "class_average",
@@ -357,13 +357,13 @@
         "self",
         "students"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 87,
-      "end_line": 87,
+      "line": 86,
+      "end_line": 86,
       "function": "to_dict",
       "class_name": "Course",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -374,7 +374,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 87,
       "end_line": 87,
       "function": "to_dict",
@@ -383,13 +383,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 95,
-      "end_line": 95,
+      "line": 94,
+      "end_line": 94,
       "function": "from_dict",
       "class_name": "Course",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Course\":",
@@ -403,7 +403,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 100,
       "end_line": 100,
       "function": "from_dict",
@@ -415,13 +415,13 @@
         "raw",
         "student"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 105,
-      "end_line": 105,
+      "line": 104,
+      "end_line": 104,
       "function": "__init__",
       "class_name": "AnalyticsClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
@@ -435,8 +435,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 109,
-      "end_line": 109,
+      "line": 108,
+      "end_line": 108,
       "function": "_url",
       "class_name": "AnalyticsClient",
       "code": "def _url(self, course_id: str) -> str:",
@@ -448,7 +448,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 109,
       "end_line": 109,
       "function": "_url",
@@ -458,13 +458,13 @@
         "course_id",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 112,
-      "end_line": 112,
+      "line": 111,
+      "end_line": 111,
       "function": "fetch_benchmarks",
       "class_name": "AnalyticsClient",
       "code": "def fetch_benchmarks(self, course_id: str) -> Optional[Dict[str, Any]]:",
@@ -479,7 +479,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 113,
       "end_line": 113,
       "function": "fetch_benchmarks",
@@ -492,11 +492,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 119,
       "end_line": 119,
       "function": "fetch_benchmarks",
@@ -509,13 +509,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 121,
-      "end_line": 121,
+      "kind": "exception_handler_entry",
+      "line": 120,
+      "end_line": 120,
       "function": "fetch_benchmarks",
       "class_name": "AnalyticsClient",
       "code": "except ...",
@@ -526,11 +526,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 121,
       "end_line": 121,
       "function": "fetch_benchmarks",
@@ -543,13 +543,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 124,
-      "end_line": 124,
+      "line": 123,
+      "end_line": 123,
       "function": "push_summary",
       "class_name": "AnalyticsClient",
       "code": "def push_summary(self, course_id: str, summary: Dict[str, Any]) -> bool:",
@@ -565,7 +565,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 125,
       "end_line": 125,
       "function": "push_summary",
@@ -579,11 +579,11 @@
         "summary",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 132,
       "end_line": 132,
       "function": "push_summary",
@@ -597,13 +597,13 @@
         "summary",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 134,
-      "end_line": 134,
+      "kind": "exception_handler_entry",
+      "line": 133,
+      "end_line": 133,
       "function": "push_summary",
       "class_name": "AnalyticsClient",
       "code": "except ...",
@@ -615,11 +615,11 @@
         "summary",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 134,
       "end_line": 134,
       "function": "push_summary",
@@ -633,13 +633,13 @@
         "summary",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 138,
-      "end_line": 138,
+      "line": 137,
+      "end_line": 137,
       "function": "load_course",
       "class_name": null,
       "code": "def load_course(path: Path) -> Course:",
@@ -651,7 +651,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 141,
       "end_line": 141,
       "function": "load_course",
@@ -661,13 +661,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 143,
-      "end_line": 143,
+      "kind": "exception_handler_entry",
+      "line": 142,
+      "end_line": 142,
       "function": "load_course",
       "class_name": null,
       "code": "except ...",
@@ -675,11 +675,11 @@
         "path",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 143,
       "end_line": 143,
       "function": "load_course",
@@ -689,13 +689,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 147,
-      "end_line": 147,
+      "line": 146,
+      "end_line": 146,
       "function": "save_course",
       "class_name": null,
       "code": "def save_course(path: Path, course: Course) -> None:",
@@ -709,9 +709,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 155,
-      "end_line": 155,
+      "kind": "exception_handler_entry",
+      "line": 154,
+      "end_line": 154,
       "function": "save_course",
       "class_name": null,
       "code": "except ...",
@@ -721,13 +721,13 @@
         "payload",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 160,
-      "end_line": 160,
+      "line": 159,
+      "end_line": 159,
       "function": "summarize_course",
       "class_name": null,
       "code": "def summarize_course(course: Course) -> Dict[str, Any]:",
@@ -741,7 +741,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 162,
       "end_line": 162,
       "function": "summarize_course",
@@ -753,11 +753,11 @@
         "passed",
         "students"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 165,
       "end_line": 165,
       "function": "summarize_course",
@@ -769,13 +769,13 @@
         "passed",
         "students"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 173,
-      "end_line": 173,
+      "line": 172,
+      "end_line": 172,
       "function": "apply_curve",
       "class_name": null,
       "code": "def apply_curve(course: Course, curve: float = 5.0) -> None:",
@@ -789,8 +789,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 182,
-      "end_line": 182,
+      "line": 179,
+      "end_line": 179,
       "function": "merge_remote_benchmarks",
       "class_name": null,
       "code": "def merge_remote_benchmarks(",
@@ -804,7 +804,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 183,
       "end_line": 183,
       "function": "merge_remote_benchmarks",
@@ -816,11 +816,11 @@
         "summary",
         "target"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 189,
       "end_line": 189,
       "function": "merge_remote_benchmarks",
@@ -832,13 +832,13 @@
         "summary",
         "target"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 193,
-      "end_line": 193,
+      "line": 192,
+      "end_line": 192,
       "function": "simulate_study",
       "class_name": null,
       "code": "def simulate_study(course: Course, days: int = 3) -> None:",
@@ -856,8 +856,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 205,
-      "end_line": 205,
+      "line": 204,
+      "end_line": 204,
       "function": "main",
       "class_name": null,
       "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
@@ -877,7 +877,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 222,
       "end_line": 222,
       "function": "main",
@@ -895,13 +895,13 @@
         "summary",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 228,
-      "end_line": 228,
+      "kind": "exception_handler_entry",
+      "line": 227,
+      "end_line": 227,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -917,11 +917,11 @@
         "summary",
         "summary_path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 228,
       "end_line": 228,
       "function": "main",
@@ -939,11 +939,11 @@
         "summary",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 229,
       "end_line": 229,
       "function": "main",
@@ -961,7 +961,7 @@
         "summary",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

@@ -1,4 +1,7 @@
 """
+Note: It is not working! You cannot use this program.
+
+= = = = =
 eval_message_quality.py
 
 Evaluate the *content* quality of predicted log messages

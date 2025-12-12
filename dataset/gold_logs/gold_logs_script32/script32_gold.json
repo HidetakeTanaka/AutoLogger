@@ -2,10 +2,10 @@
   "file": "script32.py",
   "logs": [
     {
-      "line": 20,
+      "line": 19,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering Event.is_recent"
+      "message": "Entering is_recent"
     },
     {
       "line": 23,
@@ -14,175 +14,175 @@
       "message": "Returning recent flag from Event.is_recent"
     },
     {
-      "line": 26,
+      "line": 25,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering Event.to_dict"
+      "message": "Entering to_dict"
     },
     {
       "line": 26,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning dict representation from Event.to_dict"
+      "message": "Returning dict representation from to_dict"
+    },
+    {
+      "line": 42,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering is_active"
     },
     {
       "line": 43,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering User.is_active"
-    },
-    {
-      "line": 43,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning active flag from User.is_active"
+      "message": "Returning active flag from is_active"
     },
     {
-      "line": 46,
+      "line": 45,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering User.update_country"
+      "message": "Entering update_country"
     },
     {
-      "line": 49,
+      "line": 48,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering User.to_dict"
+      "message": "Entering to_dict"
     },
     {
       "line": 49,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning dict representation from User.to_dict"
+      "message": "Returning dict representation from to_dict"
     },
     {
-      "line": 64,
+      "line": 63,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering Segment.matches"
+      "message": "Entering matches"
     },
     {
       "line": 65,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning False from Segment.matches (no matching events)"
+      "message": "Returning False from matches (no matching events)"
     },
     {
       "line": 67,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning segment match result from Segment.matches"
+      "message": "Returning segment match result from matches"
     },
     {
-      "line": 72,
+      "line": 71,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering UserStore.**init**"
+      "message": "Entering __init__"
     },
     {
-      "line": 76,
+      "line": 75,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering UserStore.load"
+      "message": "Entering load"
     },
     {
       "line": 78,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning from UserStore.load"
+      "message": "Returning from load"
     },
     {
-      "line": 83,
+      "line": 82,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Error while loading users in UserStore.load"
+      "message": "Exception in load"
     },
     {
       "line": 84,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning from UserStore.load after error"
+      "message": "Returning from load after error"
     },
     {
-      "line": 97,
+      "line": 96,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering UserStore.save"
+      "message": "Entering save"
     },
     {
-      "line": 105,
+      "line": 104,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering UserStore.get"
+      "message": "Entering get"
     },
     {
       "line": 105,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning user from UserStore.get"
+      "message": "Returning from get"
     },
     {
-      "line": 108,
+      "line": 107,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering UserStore.upsert"
+      "message": "Entering upsert"
     },
     {
-      "line": 111,
+      "line": 110,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering UserStore.all"
+      "message": "Entering all"
     },
     {
       "line": 111,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning list of users from UserStore.all"
+      "message": "Returning list of users from all"
     },
     {
-      "line": 116,
+      "line": 115,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering EventStore.**init**"
+      "message": "Entering __init__"
     },
     {
-      "line": 119,
+      "line": 118,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering EventStore.load"
+      "message": "Entering load"
     },
     {
       "line": 120,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning empty event list from EventStore.load"
+      "message": "Returning empty event list from load"
     },
     {
-      "line": 125,
+      "line": 124,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Error while loading events in EventStore.load"
+      "message": "Exception in load"
     },
     {
       "line": 125,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning empty event list from EventStore.load after error"
+      "message": "Returning from load after error"
     },
     {
-      "line": 131,
+      "line": 130,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Error while parsing events in EventStore.load"
+      "message": "Exception in load"
     },
     {
       "line": 140,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning loaded events from EventStore.load"
+      "message": "Returning from load"
     },
     {
-      "line": 144,
+      "line": 143,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering generate_random_events"
@@ -191,22 +191,22 @@
       "line": 145,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning empty event list from generate_random_events"
+      "message": "Returning from generate_random_events"
     },
     {
       "line": 159,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning generated events from generate_random_events"
+      "message": "Returning from generate_random_events"
     },
     {
-      "line": 163,
+      "line": 162,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering write_events"
     },
     {
-      "line": 170,
+      "line": 169,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering filter_recent_events"
@@ -215,10 +215,10 @@
       "line": 171,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning filtered recent events from filter_recent_events"
+      "message": "Returning from filter_recent_events"
     },
     {
-      "line": 175,
+      "line": 174,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering build_segments"
@@ -227,10 +227,10 @@
       "line": 175,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning predefined segments from build_segments"
+      "message": "Returning from build_segments"
     },
     {
-      "line": 186,
+      "line": 181,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering assign_segments"
@@ -239,16 +239,16 @@
       "line": 193,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning user to segment mapping from assign_segments"
+      "message": "Returning from assign_segments"
     },
     {
-      "line": 197,
+      "line": 196,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering export_segments"
     },
     {
-      "line": 204,
+      "line": 203,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_or_create_users"
@@ -257,10 +257,10 @@
       "line": 216,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning user store from load_or_create_users"
+      "message": "Returning from load_or_create_users"
     },
     {
-      "line": 220,
+      "line": 219,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering main"
@@ -269,7 +269,7 @@
       "line": 241,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning exit code 0 from main"
+      "message": "Returning from main"
     }
   ]
 }

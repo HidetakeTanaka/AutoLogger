@@ -2,89 +2,420 @@
   "file": "script58.py",
   "logs": [
     {
-      "line": 39,
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.matches"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from name match in Product.matches"
+    },
+    {
+      "line": 25,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from category match in Product.matches"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result in Product.matches"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.to_dict"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Product dict in Product.to_dict"
+    },
+    {
+      "line": 38,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Product.from_dict"
     },
     {
-      "line": 48,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to parse product data in Product.from_dict"
+      "line": 40,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Product instance from Product.from_dict"
     },
     {
-      "line": 76,
+      "line": 47,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Product from dict in Product.from_dict"
+    },
+    {
+      "line": 48,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Product.from_dict after parse failure"
+    },
+    {
+      "line": 58,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Order.total_value"
+    },
+    {
+      "line": 59,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning total order value in Order.total_value"
+    },
+    {
+      "line": 61,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Order.is_recent"
+    },
+    {
+      "line": 63,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False (not recent) in Order.is_recent"
+    },
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recency flag in Order.is_recent"
+    },
+    {
+      "line": 66,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Order.to_dict"
+    },
+    {
+      "line": 67,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Order dict in Order.to_dict"
+    },
+    {
+      "line": 75,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Order.from_dict"
     },
     {
-      "line": 91,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to parse order data in Order.from_dict"
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Order instance from Order.from_dict"
     },
     {
-      "line": 143,
+      "line": 90,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Order from dict in Order.from_dict"
+    },
+    {
+      "line": 91,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Order.from_dict after parse failure"
+    },
+    {
+      "line": 95,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering OrderBook.__init__"
+    },
+    {
+      "line": 99,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering OrderBook.add"
+    },
+    {
+      "line": 102,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering OrderBook.get"
+    },
+    {
+      "line": 103,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning order from OrderBook.get"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering OrderBook.all"
+    },
+    {
+      "line": 106,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of all orders in OrderBook.all"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering OrderBook.open_orders"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning open orders list in OrderBook.open_orders"
+    },
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering OrderBook.search_by_product"
+    },
+    {
+      "line": 116,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning sorted search results in OrderBook.search_by_product"
+    },
+    {
+      "line": 118,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering OrderBook.to_dict"
+    },
+    {
+      "line": 119,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized OrderBook dict in OrderBook.to_dict"
+    },
+    {
+      "line": 125,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering OrderBook.from_dict"
+    },
+    {
+      "line": 131,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning OrderBook instance from OrderBook.from_dict"
+    },
+    {
+      "line": 135,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiClient.__init__"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ApiClient._url"
+    },
+    {
+      "line": 140,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning orders URL in ApiClient._url"
+    },
+    {
+      "line": 142,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ApiClient.fetch_orders"
     },
     {
-      "line": 150,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error while fetching orders for book_id=%s in ApiClient.fetch_orders"
+      "line": 148,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning decoded orders payload in ApiClient.fetch_orders"
     },
     {
-      "line": 153,
+      "line": 149,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching orders in ApiClient.fetch_orders"
+    },
+    {
+      "line": 150,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from ApiClient.fetch_orders after error"
+    },
+    {
+      "line": 152,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ApiClient.push_summary"
     },
     {
-      "line": 160,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to push summary for book_id=%s in ApiClient.push_summary"
+      "line": 158,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning push success flag in ApiClient.push_summary"
     },
     {
-      "line": 164,
+      "line": 159,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while pushing summary in ApiClient.push_summary"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning False from ApiClient.push_summary after error"
+    },
+    {
+      "line": 163,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_order_book"
     },
     {
-      "line": 168,
-      "kind": "exception",
-      "level": "WARNING",
-      "message": "Failed to load order book from %s, using local book in load_order_book"
+      "line": 166,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning OrderBook from loaded data in load_order_book"
     },
     {
-      "line": 174,
+      "line": 167,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while loading order book from disk in load_order_book"
+    },
+    {
+      "line": 168,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning local OrderBook(book_id='local') in load_order_book after load error"
+    },
+    {
+      "line": 169,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while creating fallback order book in load_order_book"
+    },
+    {
+      "line": 170,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning second fallback OrderBook(book_id='local') in load_order_book after error"
+    },
+    {
+      "line": 173,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering save_order_book"
     },
     {
+      "line": 179,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while writing temporary order book file in save_order_book"
+    },
+    {
+      "line": 183,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while replacing order book file in save_order_book"
+    },
+    {
+      "line": 187,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize_orders"
+    },
+    {
+      "line": 190,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty order summary in summarize_orders"
+    },
+    {
       "line": 194,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning order summary from summarize_orders"
+      "message": "Returning computed order summary in summarize_orders"
     },
     {
-      "line": 230,
+      "line": 197,
       "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering filter_large_orders"
+    },
+    {
+      "line": 202,
+      "kind": "return",
       "level": "INFO",
-      "message": "Starting order processing run in main"
+      "message": "Returning filtered large orders in filter_large_orders"
+    },
+    {
+      "line": 205,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_remote_orders"
+    },
+    {
+      "line": 207,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 (no remote orders merged) in merge_remote_orders"
+    },
+    {
+      "line": 214,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning count of merged remote orders in merge_remote_orders"
+    },
+    {
+      "line": 217,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_processing"
+    },
+    {
+      "line": 222,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from simulate_processing after processing orders"
+    },
+    {
+      "line": 229,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 247,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main"
     },
     {
       "line": 248,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed while writing orders_report.json in main"
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 1 from main due to error"
+    },
+    {
+      "line": 251,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 0 from main"
     }
   ]
 }
+
 

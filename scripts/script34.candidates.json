@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 18,
-      "end_line": 18,
+      "line": 17,
+      "end_line": 17,
       "function": "is_temperature",
       "class_name": "Sensor",
       "code": "def is_temperature(self) -> bool:",
@@ -15,7 +15,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 18,
       "end_line": 18,
       "function": "is_temperature",
@@ -24,13 +24,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 21,
-      "end_line": 21,
+      "line": 20,
+      "end_line": 20,
       "function": "to_dict",
       "class_name": "Sensor",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -41,7 +41,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 21,
       "end_line": 21,
       "function": "to_dict",
@@ -50,13 +50,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 36,
-      "end_line": 36,
+      "line": 35,
+      "end_line": 35,
       "function": "exceeds",
       "class_name": "Reading",
       "code": "def exceeds(self, threshold: float) -> bool:",
@@ -68,7 +68,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 36,
       "end_line": 36,
       "function": "exceeds",
@@ -78,13 +78,13 @@
         "self",
         "threshold"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 39,
-      "end_line": 39,
+      "line": 38,
+      "end_line": 38,
       "function": "to_tuple",
       "class_name": "Reading",
       "code": "def to_tuple(self) -> Tuple[str, float]:",
@@ -95,7 +95,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 39,
       "end_line": 39,
       "function": "to_tuple",
@@ -104,13 +104,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 44,
-      "end_line": 44,
+      "line": 43,
+      "end_line": 43,
       "function": "__init__",
       "class_name": "SensorStore",
       "code": "def __init__(self, path: Path) -> None:",
@@ -123,8 +123,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 48,
-      "end_line": 48,
+      "line": 47,
+      "end_line": 47,
       "function": "load",
       "class_name": "SensorStore",
       "code": "def load(self) -> None:",
@@ -141,7 +141,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 50,
       "end_line": 50,
       "function": "load",
@@ -156,13 +156,13 @@
         "thr",
         "unit"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 55,
-      "end_line": 55,
+      "kind": "exception_handler_entry",
+      "line": 54,
+      "end_line": 54,
       "function": "load",
       "class_name": "SensorStore",
       "code": "except ...",
@@ -175,11 +175,11 @@
         "thr",
         "unit"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 56,
       "end_line": 56,
       "function": "load",
@@ -194,13 +194,13 @@
         "thr",
         "unit"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 65,
-      "end_line": 65,
+      "kind": "exception_handler_entry",
+      "line": 64,
+      "end_line": 64,
       "function": "load",
       "class_name": "SensorStore",
       "code": "except ...",
@@ -213,13 +213,13 @@
         "thr",
         "unit"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 70,
-      "end_line": 70,
+      "line": 69,
+      "end_line": 69,
       "function": "get",
       "class_name": "SensorStore",
       "code": "def get(self, sensor_id: str) -> Optional[Sensor]:",
@@ -231,7 +231,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 70,
       "end_line": 70,
       "function": "get",
@@ -241,13 +241,13 @@
         "self",
         "sensor_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 73,
-      "end_line": 73,
+      "line": 72,
+      "end_line": 72,
       "function": "all",
       "class_name": "SensorStore",
       "code": "def all(self) -> List[Sensor]:",
@@ -258,7 +258,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 73,
       "end_line": 73,
       "function": "all",
@@ -267,13 +267,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 77,
-      "end_line": 77,
+      "line": 76,
+      "end_line": 76,
       "function": "load_readings_csv",
       "class_name": null,
       "code": "def load_readings_csv(path: Path) -> List[Reading]:",
@@ -289,7 +289,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 79,
       "end_line": 79,
       "function": "load_readings_csv",
@@ -303,13 +303,13 @@
         "ts",
         "value"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 89,
-      "end_line": 89,
+      "kind": "exception_handler_entry",
+      "line": 88,
+      "end_line": 88,
       "function": "load_readings_csv",
       "class_name": null,
       "code": "except ...",
@@ -321,13 +321,13 @@
         "ts",
         "value"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "except",
-      "line": 92,
-      "end_line": 92,
+      "kind": "exception_handler_entry",
+      "line": 91,
+      "end_line": 91,
       "function": "load_readings_csv",
       "class_name": null,
       "code": "except ...",
@@ -339,11 +339,11 @@
         "ts",
         "value"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 92,
       "end_line": 92,
       "function": "load_readings_csv",
@@ -357,11 +357,11 @@
         "ts",
         "value"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 93,
       "end_line": 93,
       "function": "load_readings_csv",
@@ -375,13 +375,13 @@
         "ts",
         "value"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 97,
-      "end_line": 97,
+      "line": 96,
+      "end_line": 96,
       "function": "group_by_sensor",
       "class_name": null,
       "code": "def group_by_sensor(readings: List[Reading]) -> Dict[str, List[Reading]]:",
@@ -393,7 +393,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 100,
       "end_line": 100,
       "function": "group_by_sensor",
@@ -403,13 +403,13 @@
         "grouped",
         "readings"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 104,
-      "end_line": 104,
+      "line": 103,
+      "end_line": 103,
       "function": "compute_statistics",
       "class_name": null,
       "code": "def compute_statistics(values: List[float]) -> Dict[str, float]:",
@@ -423,7 +423,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 105,
       "end_line": 105,
       "function": "compute_statistics",
@@ -435,11 +435,11 @@
         "mx",
         "values"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 109,
       "end_line": 109,
       "function": "compute_statistics",
@@ -451,13 +451,13 @@
         "mx",
         "values"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 113,
-      "end_line": 113,
+      "line": 112,
+      "end_line": 112,
       "function": "find_alarms",
       "class_name": null,
       "code": "def find_alarms(grouped: Dict[str, List[Reading]], store: SensorStore) -> List[Dict[str, Any]]:",
@@ -471,7 +471,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 129,
       "end_line": 129,
       "function": "find_alarms",
@@ -483,13 +483,13 @@
         "sensor",
         "store"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 133,
-      "end_line": 133,
+      "line": 132,
+      "end_line": 132,
       "function": "export_alarms",
       "class_name": null,
       "code": "def export_alarms(path: Path, alarms: List[Dict[str, Any]]) -> None:",
@@ -502,8 +502,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 139,
-      "end_line": 139,
+      "line": 138,
+      "end_line": 138,
       "function": "export_stats",
       "class_name": null,
       "code": "def export_stats(path: Path, stats: Dict[str, Any]) -> None:",
@@ -516,8 +516,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 145,
-      "end_line": 145,
+      "line": 144,
+      "end_line": 144,
       "function": "load_config",
       "class_name": null,
       "code": "def load_config(path: Path) -> Dict[str, Any]:",
@@ -528,7 +528,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 146,
       "end_line": 146,
       "function": "load_config",
@@ -537,11 +537,11 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 149,
       "end_line": 149,
       "function": "load_config",
@@ -550,24 +550,24 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 151,
-      "end_line": 151,
+      "kind": "exception_handler_entry",
+      "line": 150,
+      "end_line": 150,
       "function": "load_config",
       "class_name": null,
       "code": "except ...",
       "vars_in_scope": [
         "path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 151,
       "end_line": 151,
       "function": "load_config",
@@ -576,13 +576,13 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 155,
-      "end_line": 155,
+      "line": 154,
+      "end_line": 154,
       "function": "summarize_sensors",
       "class_name": null,
       "code": "def summarize_sensors(grouped: Dict[str, List[Reading]], store: SensorStore) -> Dict[str, Any]:",
@@ -597,7 +597,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 166,
       "end_line": 166,
       "function": "summarize_sensors",
@@ -610,13 +610,13 @@
         "summary",
         "values"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 170,
-      "end_line": 170,
+      "line": 169,
+      "end_line": 169,
       "function": "main",
       "class_name": null,
       "code": "def main() -> int:",
@@ -639,7 +639,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 194,
       "end_line": 194,
       "function": "main",
@@ -660,11 +660,11 @@
         "stats_path",
         "store"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 195,
       "end_line": 195,
       "function": "main",
@@ -685,7 +685,7 @@
         "stats_path",
         "store"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

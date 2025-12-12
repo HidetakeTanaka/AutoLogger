@@ -26,44 +26,44 @@
       "function": "to_dict"
     },
     {
-      "line": 43,
+      "line": 42,
       "level": "DEBUG",
-      "message": "Random log at line 43 in from_dict",
+      "message": "Random log at line 42 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
     {
-      "line": 49,
+      "line": 48,
       "level": "DEBUG",
-      "message": "Random log at line 49 in from_dict",
-      "kind": "except",
+      "message": "Random log at line 48 in from_dict",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
-      "line": 79,
+      "line": 78,
       "level": "DEBUG",
-      "message": "Random log at line 79 in to_dict",
+      "message": "Random log at line 78 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "ERROR",
-      "message": "Random log at line 87 in from_dict",
+      "message": "Random log at line 86 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
     {
-      "line": 98,
+      "line": 97,
       "level": "WARNING",
-      "message": "Random log at line 98 in __init__",
+      "message": "Random log at line 97 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 102,
+      "line": 101,
       "level": "ERROR",
-      "message": "Random log at line 102 in load",
+      "message": "Random log at line 101 in load",
       "kind": "entry",
       "function": "load"
     },
@@ -75,10 +75,10 @@
       "function": "load"
     },
     {
-      "line": 153,
+      "line": 152,
       "level": "INFO",
-      "message": "Random log at line 153 in fetch_tasks",
-      "kind": "except",
+      "message": "Random log at line 152 in fetch_tasks",
+      "kind": "exception",
       "function": "fetch_tasks"
     },
     {
@@ -89,9 +89,9 @@
       "function": "push_project"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "WARNING",
-      "message": "Random log at line 173 in filter_overdue",
+      "message": "Random log at line 172 in filter_overdue",
       "kind": "entry",
       "function": "filter_overdue"
     },
@@ -110,9 +110,9 @@
       "function": "sort_by_priority"
     },
     {
-      "line": 214,
+      "line": 213,
       "level": "DEBUG",
-      "message": "Random log at line 214 in ensure_demo_project",
+      "message": "Random log at line 213 in ensure_demo_project",
       "kind": "entry",
       "function": "ensure_demo_project"
     },

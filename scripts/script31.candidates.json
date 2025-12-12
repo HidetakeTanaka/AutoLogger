@@ -1,5 +1,5 @@
 {
-  "file": "scripts/script31.py",
+  "file": "scripts\\script31.py",
   "candidates": [
     {
       "kind": "func_entry",

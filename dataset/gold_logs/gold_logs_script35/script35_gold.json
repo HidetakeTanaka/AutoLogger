@@ -2,7 +2,7 @@
   "file": "script35.py",
   "logs": [
     {
-      "line": 18,
+      "line": 17,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Article.popularity_score"
@@ -11,16 +11,16 @@
       "line": 19,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning likes-based popularity score in Article.popularity_score"
+      "message": "Returning from Article.popularity_score"
     },
     {
       "line": 20,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning percentage popularity score in Article.popularity_score"
+      "message": "Returning from Article.popularity_score"
     },
     {
-      "line": 23,
+      "line": 22,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Article.to_dict"
@@ -32,13 +32,13 @@
       "message": "Returning dict representation from Article.to_dict"
     },
     {
-      "line": 41,
+      "line": 40,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering ArticleStore.**init**"
+      "message": "Entering ArticleStore.__init__"
     },
     {
-      "line": 45,
+      "line": 44,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ArticleStore.load"
@@ -50,10 +50,10 @@
       "message": "Returning from ArticleStore.load"
     },
     {
-      "line": 52,
+      "line": 51,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to load articles file in ArticleStore.load"
+      "message": "Exception in ArticleStore.load"
     },
     {
       "line": 53,
@@ -62,19 +62,19 @@
       "message": "Returning from ArticleStore.load after load failure"
     },
     {
-      "line": 63,
+      "line": 62,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to parse article data in ArticleStore.load"
+      "message": "Exception in ArticleStore.load"
     },
     {
-      "line": 68,
+      "line": 67,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ArticleStore.save"
     },
     {
-      "line": 74,
+      "line": 73,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ArticleStore.get"
@@ -86,7 +86,7 @@
       "message": "Returning article from ArticleStore.get"
     },
     {
-      "line": 77,
+      "line": 76,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ArticleStore.all"
@@ -98,13 +98,13 @@
       "message": "Returning list of articles from ArticleStore.all"
     },
     {
-      "line": 82,
+      "line": 81,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering UserHistoryStore.**init**"
+      "message": "Entering UserHistoryStore.__init__"
     },
     {
-      "line": 85,
+      "line": 84,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering UserHistoryStore.load"
@@ -116,25 +116,25 @@
       "message": "Returning empty history mapping from UserHistoryStore.load"
     },
     {
-      "line": 91,
+      "line": 90,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to load user history file in UserHistoryStore.load"
+      "message": "Exception in UserHistoryStore.load"
     },
     {
       "line": 91,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning empty history mapping from UserHistoryStore.load after error"
+      "message": "Returning from UserHistoryStore.load after error"
     },
     {
       "line": 99,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning parsed user history mapping from UserHistoryStore.load"
+      "message": "Returning from UserHistoryStore.load"
     },
     {
-      "line": 103,
+      "line": 102,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering sort_articles_by_popularity"
@@ -143,40 +143,40 @@
       "line": 103,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning articles sorted by popularity in sort_articles_by_popularity"
+      "message": "Returning from sort_articles_by_popularity"
     },
     {
-      "line": 112,
+      "line": 106,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering build_recommendations_for_user"
+      "message": "Entering in build_recommendations_for_user"
     },
     {
       "line": 117,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning recommendations for user in build_recommendations_for_user"
+      "message": "Returning from build_recommendations_for_user"
     },
     {
-      "line": 125,
+      "line": 120,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering build_recommendations"
+      "message": "Entering in build_recommendations"
     },
     {
       "line": 129,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning all user recommendations from build_recommendations"
+      "message": "Returning from build_recommendations"
     },
     {
-      "line": 133,
+      "line": 132,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering export_recommendations"
     },
     {
-      "line": 143,
+      "line": 142,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering compute_category_stats"
@@ -185,16 +185,16 @@
       "line": 157,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning category statistics from compute_category_stats"
+      "message": "Returning from compute_category_stats"
     },
     {
-      "line": 161,
+      "line": 160,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering export_category_stats"
     },
     {
-      "line": 167,
+      "line": 166,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_config"
@@ -212,10 +212,10 @@
       "message": "Returning loaded config from load_config"
     },
     {
-      "line": 173,
+      "line": 172,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to load config in load_config"
+      "message": "Exception in load_config"
     },
     {
       "line": 173,
@@ -224,7 +224,7 @@
       "message": "Returning empty config from load_config after error"
     },
     {
-      "line": 177,
+      "line": 176,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering main"

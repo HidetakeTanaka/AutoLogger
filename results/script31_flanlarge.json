@@ -2,7 +2,7 @@
   "file": "script31.py",
   "logs": [
     {
-      "line": 31,
+      "line": 30,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function score_ratio')"
@@ -20,7 +20,7 @@
       "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function score_ratio')"
     },
     {
-      "line": 36,
+      "line": 35,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function is_suspicious')"
@@ -38,26 +38,26 @@
       "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function is_suspicious')"
     },
     {
-      "line": 45,
+      "line": 44,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function ensure_data_dir')"
     },
     {
-      "line": 49,
+      "line": 48,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function generate_sample_attempts')"
     },
     {
-      "line": 76,
+      "line": 75,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function load_attempts')"
     },
     {
-      "line": 99,
-      "kind": "except",
+      "line": 97,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function load_attempts')"
     },
@@ -68,7 +68,7 @@
       "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function load_attempts')"
     },
     {
-      "line": 104,
+      "line": 103,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function group_by_user')"
@@ -80,7 +80,7 @@
       "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function group_by_user')"
     },
     {
-      "line": 111,
+      "line": 110,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function summarize_user')"
@@ -98,7 +98,7 @@
       "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function summarize_user')"
     },
     {
-      "line": 128,
+      "line": 127,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function find_suspicious_users')"
@@ -110,14 +110,14 @@
       "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function find_suspicious_users')"
     },
     {
-      "line": 137,
+      "line": 136,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function interactive_menu')"
     },
     {
-      "line": 144,
-      "kind": "except",
+      "line": 143,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function interactive_menu')"
     },
@@ -128,13 +128,13 @@
       "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function interactive_menu')"
     },
     {
-      "line": 171,
-      "kind": "except",
+      "line": 170,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function interactive_menu')"
     },
     {
-      "line": 182,
+      "line": 181,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function main')"

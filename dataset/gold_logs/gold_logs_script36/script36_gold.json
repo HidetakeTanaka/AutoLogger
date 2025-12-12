@@ -2,7 +2,7 @@
   "file": "script36.py",
   "logs": [
     {
-      "line": 18,
+      "line": 17,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Account.can_withdraw"
@@ -20,7 +20,7 @@
       "message": "Returning balance-based decision from Account.can_withdraw"
     },
     {
-      "line": 23,
+      "line": 22,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Account.withdraw"
@@ -38,7 +38,7 @@
       "message": "Returning successful withdrawal flag from Account.withdraw"
     },
     {
-      "line": 29,
+      "line": 28,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Account.deposit"
@@ -56,7 +56,7 @@
       "message": "Returning successful deposit flag from Account.deposit"
     },
     {
-      "line": 35,
+      "line": 34,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Account.to_dict"
@@ -68,7 +68,7 @@
       "message": "Returning dict representation from Account.to_dict"
     },
     {
-      "line": 52,
+      "line": 51,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Transaction.is_debit"
@@ -80,7 +80,7 @@
       "message": "Returning debit flag from Transaction.is_debit"
     },
     {
-      "line": 55,
+      "line": 54,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Transaction.to_dict"
@@ -92,13 +92,13 @@
       "message": "Returning dict representation from Transaction.to_dict"
     },
     {
-      "line": 66,
+      "line": 65,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering AccountStore.**init**"
+      "message": "Entering AccountStore.__init__"
     },
     {
-      "line": 70,
+      "line": 69,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering AccountStore.load"
@@ -110,10 +110,10 @@
       "message": "Returning from AccountStore.load after successful load"
     },
     {
-      "line": 77,
+      "line": 76,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to load accounts file in AccountStore.load"
+      "message": "Exception in AccountStore.load"
     },
     {
       "line": 78,
@@ -122,19 +122,19 @@
       "message": "Returning from AccountStore.load after load failure"
     },
     {
-      "line": 87,
+      "line": 86,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to parse accounts data in AccountStore.load"
+      "message": "Exception in AccountStore.load"
     },
     {
-      "line": 92,
+      "line": 91,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering AccountStore.save"
     },
     {
-      "line": 98,
+      "line": 97,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering AccountStore.get"
@@ -146,7 +146,7 @@
       "message": "Returning account from AccountStore.get"
     },
     {
-      "line": 101,
+      "line": 100,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering AccountStore.all"
@@ -158,13 +158,13 @@
       "message": "Returning list of accounts from AccountStore.all"
     },
     {
-      "line": 106,
+      "line": 105,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering TransactionStore.**init**"
+      "message": "Entering TransactionStore.__init__"
     },
     {
-      "line": 109,
+      "line": 108,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering TransactionStore.load"
@@ -176,10 +176,10 @@
       "message": "Returning empty transaction list from TransactionStore.load"
     },
     {
-      "line": 115,
+      "line": 114,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to load transactions file in TransactionStore.load"
+      "message": "Exception in TransactionStore.load"
     },
     {
       "line": 115,
@@ -188,25 +188,25 @@
       "message": "Returning empty transaction list from TransactionStore.load after load failure"
     },
     {
-      "line": 125,
+      "line": 124,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to parse transaction data in TransactionStore.load"
+      "message": "Exception in TransactionStore.load"
     },
     {
       "line": 127,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning loaded transactions from TransactionStore.load"
+      "message": "Returning from TransactionStore.load"
     },
     {
-      "line": 130,
+      "line": 129,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering TransactionStore.save"
     },
     {
-      "line": 137,
+      "line": 136,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering apply_transactions"
@@ -215,10 +215,10 @@
       "line": 154,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning counts of applied and rejected transactions from apply_transactions"
+      "message": "Returning from apply_transactions"
     },
     {
-      "line": 158,
+      "line": 157,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering summarize_accounts"
@@ -227,16 +227,16 @@
       "line": 159,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning default account summary for empty account list in summarize_accounts"
+      "message": "Returning from summarize_accounts"
     },
     {
       "line": 163,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning computed account summary in summarize_accounts"
+      "message": "Returning from summarize_accounts"
     },
     {
-      "line": 167,
+      "line": 166,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering find_suspicious_transactions"
@@ -245,7 +245,7 @@
       "line": 168,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning empty suspicious transaction list in find_suspicious_transactions"
+      "message": "Returning from find_suspicious_transactions"
     },
     {
       "line": 174,
@@ -254,19 +254,19 @@
       "message": "Returning suspicious transactions list in find_suspicious_transactions"
     },
     {
-      "line": 178,
+      "line": 177,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering export_summary"
     },
     {
-      "line": 184,
+      "line": 183,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering export_suspicious"
     },
     {
-      "line": 191,
+      "line": 190,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_config"
@@ -287,7 +287,7 @@
       "line": 197,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to load config in load_config"
+      "message": "Exception in load_config"
     },
     {
       "line": 197,
@@ -296,7 +296,7 @@
       "message": "Returning empty config from load_config after error"
     },
     {
-      "line": 201,
+      "line": 200,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering main"

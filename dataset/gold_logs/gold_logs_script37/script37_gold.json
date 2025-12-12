@@ -2,7 +2,7 @@
   "file": "script37.py",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Task.is_overdue"
@@ -11,16 +11,16 @@
       "line": 23,
       "kind": "return",
       "level": "INFO",
-      "message": "Task.is_overdue returning False (no due date or not applicable)"
+      "message": "Returning from Task.is_overdue"
     },
     {
       "line": 26,
       "kind": "return",
       "level": "INFO",
-      "message": "Task.is_overdue returning overdue status based on due_date and status"
+      "message": "Returning from Task.is_overdue"
     },
     {
-      "line": 29,
+      "line": 28,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Task.is_open"
@@ -29,10 +29,10 @@
       "line": 29,
       "kind": "return",
       "level": "INFO",
-      "message": "Task.is_open returning open status based on current task status"
+      "message": "Returning from Task.is_open"
     },
     {
-      "line": 32,
+      "line": 31,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Task.to_dict"
@@ -41,34 +41,34 @@
       "line": 32,
       "kind": "return",
       "level": "INFO",
-      "message": "Task.to_dict returning serialized task data"
+      "message": "Returning from Task.to_dict"
     },
     {
-      "line": 43,
+      "line": 42,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Task.from_dict"
     },
     {
-      "line": 49,
+      "line": 48,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to parse due_date in Task.from_dict"
+      "message": "Exception in Task.from_dict"
     },
     {
       "line": 52,
       "kind": "return",
       "level": "INFO",
-      "message": "Task.from_dict returning Task instance from raw data"
+      "message": "Returning from Task.from_dict"
     },
     {
-      "line": 69,
+      "line": 68,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Project.add_task"
     },
     {
-      "line": 72,
+      "line": 71,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Project.remove_task"
@@ -77,16 +77,16 @@
       "line": 75,
       "kind": "return",
       "level": "INFO",
-      "message": "Project.remove_task removed task and returning True"
+      "message": "Returning from Project.remove_task"
     },
     {
       "line": 76,
       "kind": "return",
       "level": "INFO",
-      "message": "Project.remove_task did not find task and returning False"
+      "message": "Returning from Project.remove_task"
     },
     {
-      "line": 79,
+      "line": 78,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Project.to_dict"
@@ -95,10 +95,10 @@
       "line": 79,
       "kind": "return",
       "level": "INFO",
-      "message": "Project.to_dict returning serialized project with tasks"
+      "message": "Returning from Project.to_dict"
     },
     {
-      "line": 87,
+      "line": 86,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Project.from_dict"
@@ -107,16 +107,16 @@
       "line": 89,
       "kind": "return",
       "level": "INFO",
-      "message": "Project.from_dict returning Project instance from raw data"
+      "message": "Returning from Project.from_dict"
     },
     {
-      "line": 98,
+      "line": 97,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Initializing ProjectStore with path"
+      "message": "Entering ProjectStore.__init__"
     },
     {
-      "line": 102,
+      "line": 101,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ProjectStore.load"
@@ -125,28 +125,28 @@
       "line": 104,
       "kind": "return",
       "level": "INFO",
-      "message": "ProjectStore.load finished loading projects"
+      "message": "Returning from ProjectStore.load"
     },
     {
-      "line": 109,
+      "line": 108,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to load projects in ProjectStore.load"
+      "message": "Excaption in ProjectStore.load"
     },
     {
       "line": 110,
       "kind": "return",
       "level": "INFO",
-      "message": "ProjectStore.load returning early after failure"
+      "message": "Returning from ProjectStore.load"
     },
     {
-      "line": 119,
+      "line": 118,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ProjectStore.save"
     },
     {
-      "line": 127,
+      "line": 126,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ProjectStore.get"
@@ -155,16 +155,16 @@
       "line": 127,
       "kind": "return",
       "level": "INFO",
-      "message": "ProjectStore.get returning project by id or None"
+      "message": "Returning from ProjectStore.get"
     },
     {
-      "line": 130,
+      "line": 129,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ProjectStore.upsert"
     },
     {
-      "line": 133,
+      "line": 132,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ProjectStore.all"
@@ -173,16 +173,16 @@
       "line": 133,
       "kind": "return",
       "level": "INFO",
-      "message": "ProjectStore.all returning list of all projects"
+      "message": "Returning from ProjectStore.all"
     },
     {
-      "line": 138,
+      "line": 137,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Initializing RemoteClient with base_url and timeout"
     },
     {
-      "line": 142,
+      "line": 141,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering RemoteClient._url"
@@ -191,46 +191,46 @@
       "line": 144,
       "kind": "return",
       "level": "INFO",
-      "message": "RemoteClient._url returning full URL for path"
+      "message": "Returning from RemoteClient._url"
     },
     {
-      "line": 147,
+      "line": 146,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering RemoteClient.fetch_tasks"
     },
     {
-      "line": 153,
+      "line": 152,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Network or HTTP error in RemoteClient.fetch_tasks"
+      "message": "Exception in RemoteClient.fetch_tasks"
     },
     {
       "line": 153,
       "kind": "return",
       "level": "INFO",
-      "message": "RemoteClient.fetch_tasks returning empty list after network error"
+      "message": "Returning from RemoteClient.fetch_tasks"
     },
     {
-      "line": 157,
+      "line": 156,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to decode remote response in RemoteClient.fetch_tasks"
+      "message": "Exception in RemoteClient.fetch_tasks"
     },
     {
       "line": 157,
       "kind": "return",
       "level": "INFO",
-      "message": "RemoteClient.fetch_tasks returning empty list after decode error"
+      "message": "Returning from RemoteClient.fetch_tasks"
     },
     {
       "line": 158,
       "kind": "return",
       "level": "INFO",
-      "message": "RemoteClient.fetch_tasks returning tasks from remote response"
+      "message": "Returning from RemoteClient.fetch_tasks"
     },
     {
-      "line": 161,
+      "line": 160,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering RemoteClient.push_project"
@@ -239,22 +239,22 @@
       "line": 167,
       "kind": "return",
       "level": "INFO",
-      "message": "RemoteClient.push_project returning success status based on HTTP response"
+      "message": "Returning from RemoteClient.push_project"
     },
     {
-      "line": 169,
+      "line": 168,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to push project in RemoteClient.push_project"
+      "message": "Exception in RemoteClient.push_project"
     },
     {
       "line": 169,
       "kind": "return",
       "level": "INFO",
-      "message": "RemoteClient.push_project returning False after failure"
+      "message": "Returning from RemoteClient.push_project"
     },
     {
-      "line": 173,
+      "line": 172,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering filter_overdue"
@@ -263,10 +263,10 @@
       "line": 174,
       "kind": "return",
       "level": "INFO",
-      "message": "filter_overdue returning list of overdue tasks"
+      "message": "Returning from filter_overdue"
     },
     {
-      "line": 178,
+      "line": 177,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering filter_by_tag"
@@ -275,10 +275,10 @@
       "line": 182,
       "kind": "return",
       "level": "INFO",
-      "message": "filter_by_tag returning tasks matching tag"
+      "message": "Returning from filter_by_tag"
     },
     {
-      "line": 186,
+      "line": 185,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering sort_by_priority"
@@ -287,10 +287,10 @@
       "line": 186,
       "kind": "return",
       "level": "INFO",
-      "message": "sort_by_priority returning tasks sorted by priority and title"
+      "message": "Returning from sort_by_priority"
     },
     {
-      "line": 190,
+      "line": 189,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering summarize_tasks"
@@ -299,10 +299,10 @@
       "line": 200,
       "kind": "return",
       "level": "INFO",
-      "message": "summarize_tasks returning counts for total, open and overdue tasks"
+      "message": "Returning from summarize_tasks"
     },
     {
-      "line": 204,
+      "line": 203,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_config"
@@ -311,28 +311,28 @@
       "line": 205,
       "kind": "return",
       "level": "INFO",
-      "message": "load_config returning empty config when path is not provided or invalid"
+      "message": "Returning from load_config"
     },
     {
       "line": 208,
       "kind": "return",
       "level": "INFO",
-      "message": "load_config returning configuration loaded from JSON file"
+      "message": "Returning from load_config"
     },
     {
-      "line": 210,
+      "line": 209,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to load configuration in load_config"
+      "message": "Exception in load_config"
     },
     {
       "line": 210,
       "kind": "return",
       "level": "INFO",
-      "message": "load_config returning empty config after failure"
+      "message": "Returning from load_config"
     },
     {
-      "line": 214,
+      "line": 213,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering ensure_demo_project"
@@ -341,10 +341,10 @@
       "line": 215,
       "kind": "return",
       "level": "INFO",
-      "message": "ensure_demo_project returning after optionally creating demo project"
+      "message": "Returning from ensure_demo_project"
     },
     {
-      "line": 234,
+      "line": 233,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering sync_if_enabled"
@@ -353,28 +353,28 @@
       "line": 235,
       "kind": "return",
       "level": "INFO",
-      "message": "sync_if_enabled returning because remote sync is disabled in config"
+      "message": "Returning from sync_if_enabled"
     },
     {
       "line": 241,
       "kind": "return",
       "level": "INFO",
-      "message": "sync_if_enabled returning after fetching remote tasks"
+      "message": "Returning from sync_if_enabled"
     },
     {
       "line": 244,
       "kind": "return",
       "level": "INFO",
-      "message": "sync_if_enabled returning after pushing local project to remote"
+      "message": "Returning from sync_if_enabled"
     },
     {
-      "line": 251,
+      "line": 250,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering export_summary"
     },
     {
-      "line": 257,
+      "line": 256,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering main"
@@ -383,13 +383,13 @@
       "line": 281,
       "kind": "return",
       "level": "INFO",
-      "message": "main returning exit code 1 after failure"
+      "message": "Returning from main"
     },
     {
       "line": 282,
       "kind": "return",
       "level": "INFO",
-      "message": "main returning exit code 0 on success"
+      "message": "Returning from main"
     }
   ]
 }

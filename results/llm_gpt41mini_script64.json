@@ -2,170 +2,176 @@
   "file": "script64.py",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering is_recent with minutes={minutes} for device {self}\")"
     },
     {
-      "line": 28,
+      "line": 27,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering update_metric with name={name}, value={value}\")"
     },
     {
-      "line": 34,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering to_dict method of Device instance with id: {getattr(self, 'id', 'unknown')}\")"
-    },
-    {
-      "line": 44,
+      "line": 43,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 57,
-      "kind": "except",
+      "line": 56,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to create Device from dict with raw data: {raw} and ts_raw: {ts_raw}', exc_info=True)"
+      "message": "logging.error(f'Failed to create Device from dict with raw data: {raw}, last_seen: {last_seen}, ts_raw: {ts_raw}', exc_info=True)"
     },
     {
-      "line": 62,
+      "line": 61,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f'Initializing Fleet with fleet_id={fleet_id}')"
     },
     {
-      "line": 66,
+      "line": 65,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering Fleet.add with device: {device}\")"
     },
     {
-      "line": 69,
+      "line": 68,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering Fleet.get with device_id={device_id}\")"
+      "message": "logging.debug(f'Entering Fleet.get with device_id={device_id}')"
     },
     {
-      "line": 85,
+      "line": 84,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering Fleet.from_dict with raw data keys: {list(raw.keys())}\")"
+      "message": "logging.debug(f'Entering Fleet.from_dict with raw data keys: {list(raw.keys())}')"
     },
     {
-      "line": 95,
+      "line": 94,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing TelemetryClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 99,
+      "line": 98,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with fleet_id={fleet_id}\")"
     },
     {
-      "line": 102,
+      "line": 101,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering fetch_fleet_snapshot with fleet_id={fleet_id}\")"
     },
     {
-      "line": 111,
-      "kind": "except",
+      "line": 110,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to fetch fleet snapshot for fleet_id {fleet_id} from {url}', exc_info=True)"
     },
     {
-      "line": 114,
+      "line": 111,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'fetch_fleet_snapshot returning None for fleet_id={fleet_id} at url={url}')"
+    },
+    {
+      "line": 113,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering push_aggregates with fleet_id={fleet_id} and payload keys={list(payload.keys())}\")"
+      "message": "logging.debug(f\"Entered push_aggregates with fleet_id={fleet_id} and payload keys={list(payload.keys())}\")"
     },
     {
-      "line": 123,
-      "kind": "except",
+      "line": 121,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Push aggregates response status: {resp.status}, success: {200 <= resp.status < 300}, fleet_id: {fleet_id}')"
+    },
+    {
+      "line": 122,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to push aggregates for fleet_id {fleet_id} to {url} with payload {payload}', exc_info=True)"
+      "message": "logging.error(f'Exception occurred while pushing aggregates for fleet_id {fleet_id} to {url}', exc_info=True)"
     },
     {
-      "line": 127,
+      "line": 126,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_fleet with path: {path}\")"
     },
     {
-      "line": 131,
-      "kind": "except",
+      "line": 130,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load fleet from {path} with data: {raw}', exc_info=True)"
+      "message": "logging.error(f'Failed to load fleet from {path}', exc_info=True)"
     },
     {
-      "line": 135,
+      "line": 134,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered save_fleet with path={path} and fleet={fleet}\")"
+      "message": "logging.debug(f\"Entering save_fleet with path={path} and fleet={fleet}\")"
     },
     {
-      "line": 141,
-      "kind": "except",
+      "line": 140,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save fleet to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 145,
-      "kind": "except",
+      "line": 144,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save fleet to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 149,
+      "line": 148,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered compute_stats with fleet: {fleet}\")"
+      "message": "logging.debug(f\"Entered compute_stats for fleet: {fleet}\")"
     },
     {
       "line": 160,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Computed stats: count={len(devices)}, online={online}, avg_metrics={avg_metrics}\")"
+      "message": "logging.info(f'Returning stats with count={len(devices)}, online={online}, avg_metrics={avg_metrics}')"
     },
     {
-      "line": 164,
+      "line": 163,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered detect_offline with fleet={fleet} and minutes={minutes}\")"
     },
     {
-      "line": 173,
+      "line": 165,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Detected offline devices: {[d.device_id for d in fleet.all() if not d.online or d.last_seen < ref]}')"
+    },
+    {
+      "line": 172,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Starting simulate_fleet with fleet={fleet} for {steps} steps\")"
     },
     {
-      "line": 193,
+      "line": 192,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering merge_remote_snapshot with fleet={fleet} and remote_raw keys={list(remote_raw.keys()) if remote_raw else None}\")"
     },
     {
-      "line": 207,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Merge completed: {added} items added to fleet from remote snapshot.')"
-    },
-    {
-      "line": 211,
+      "line": 210,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 230,
-      "kind": "except",
+      "line": 229,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }

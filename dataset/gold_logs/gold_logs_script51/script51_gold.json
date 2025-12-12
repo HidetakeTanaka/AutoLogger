@@ -2,94 +2,311 @@
   "file": "script51.py",
   "logs": [
     {
-      "line": 16,
+      "line": 9,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering Reading.is_recent with hours={hours}"
+      "message": "Entering Reading.__init__"
     },
     {
-      "line": 38,
+      "line": 15,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Reading.from_dict called"
+      "message": "Entering Reading.is_recent"
+    },
+    {
+      "line": 17,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False for recency check in Reading.is_recent"
+    },
+    {
+      "line": 18,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recency flag in Reading.is_recent"
+    },
+    {
+      "line": 20,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Reading.matches"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from early match in Reading.matches"
+    },
+    {
+      "line": 25,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from fallback match in Reading.matches"
+    },
+    {
+      "line": 26,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result in Reading.matches"
+    },
+    {
+      "line": 28,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Reading.to_dict"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Reading dict in Reading.to_dict"
+    },
+    {
+      "line": 37,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Reading.from_dict"
+    },
+    {
+      "line": 41,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Reading instance from Reading.from_dict"
+    },
+    {
+      "line": 47,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Reading from dict in Reading.from_dict"
     },
     {
       "line": 48,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to build Reading from dict; returning None"
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Reading.from_dict after parse failure"
+    },
+    {
+      "line": 52,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.__init__"
+    },
+    {
+      "line": 57,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.add_reading"
+    },
+    {
+      "line": 60,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.recent"
     },
     {
       "line": 61,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Sensor.recent called with hours={hours}"
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent readings list in Sensor.recent"
     },
     {
-      "line": 98,
+      "line": 63,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Fetching remote sensor data for id={sensor_id}"
+      "message": "Entering Sensor.filter_by_tag"
+    },
+    {
+      "line": 64,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning filtered readings in Sensor.filter_by_tag"
+    },
+    {
+      "line": 66,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.to_dict"
+    },
+    {
+      "line": 67,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Sensor dict in Sensor.to_dict"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.from_dict"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Sensor instance from Sensor.from_dict"
+    },
+    {
+      "line": 85,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Sensor from dict in Sensor.from_dict"
+    },
+    {
+      "line": 86,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Sensor.from_dict after parse failure"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.__init__"
+    },
+    {
+      "line": 94,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient._url"
+    },
+    {
+      "line": 95,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning sensor URL in SyncClient._url"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SyncClient.fetch_remote"
     },
     {
       "line": 102,
       "kind": "return",
       "level": "INFO",
-      "message": "Fetched and decoded remote payload for sensor_id={sensor_id}"
+      "message": "Returning decoded remote payload in SyncClient.fetch_remote"
+    },
+    {
+      "line": 103,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching remote sensor data in SyncClient.fetch_remote"
     },
     {
       "line": 104,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error while fetching remote sensor data for id={sensor_id}"
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from SyncClient.fetch_remote after error"
     },
     {
-      "line": 108,
+      "line": 107,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Loading sensors from {path}"
+      "message": "Entering load_sensors"
+    },
+    {
+      "line": 111,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while loading sensors in load_sensors"
     },
     {
       "line": 112,
       "kind": "return",
       "level": "WARNING",
-      "message": "Failed to load sensors from {path}; returning empty dict"
+      "message": "Failed to load sensors in load_sensors; returning empty dict"
     },
     {
       "line": 118,
       "kind": "return",
       "level": "INFO",
-      "message": "Loaded {len(result)} sensors from {path}"
+      "message": "Returning loaded sensors map from load_sensors"
     },
     {
-      "line": 122,
+      "line": 121,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Saving {len(sensors)} sensors to {path}"
+      "message": "Entering save_sensors"
     },
     {
-      "line": 129,
+      "line": 128,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Error while writing sensors file to {path}"
+      "message": "Error while saving sensors in save_sensors"
     },
     {
-      "line": 155,
+      "line": 133,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "main started with data_dir={data_dir}, base_url={base_url}"
+      "message": "Entering merge_sensor"
+    },
+    {
+      "line": 136,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning merged sensor in merge_sensor"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering summarize"
+    },
+    {
+      "line": 142,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty summary in summarize"
+    },
+    {
+      "line": 144,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning summary stats in summarize"
+    },
+    {
+      "line": 147,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering pick_random_recent"
+    },
+    {
+      "line": 150,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None (no recent readings) in pick_random_recent"
+    },
+    {
+      "line": 151,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random recent Reading in pick_random_recent"
+    },
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering main"
+    },
+    {
+      "line": 174,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Unhandled exception in main"
     },
     {
       "line": 175,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Unhandled exception in main; returning status 1"
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 1 from main due to error"
     },
     {
       "line": 177,
       "kind": "return",
       "level": "INFO",
-      "message": "main completed successfully with status 0"
+      "message": "Returning status 0 from main"
     }
   ]
 }
+

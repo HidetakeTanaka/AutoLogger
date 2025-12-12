@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 19,
+      "line": 18,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -17,7 +17,7 @@
       "function": "to_dict"
     },
     {
-      "line": 29,
+      "line": 28,
       "level": "DEBUG",
       "message": "Entering is_error",
       "kind": "entry",
@@ -31,7 +31,7 @@
       "function": "is_error"
     },
     {
-      "line": 32,
+      "line": 31,
       "level": "DEBUG",
       "message": "Entering is_slow",
       "kind": "entry",
@@ -45,24 +45,24 @@
       "function": "is_slow"
     },
     {
-      "line": 37,
+      "line": 36,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 40,
+      "line": 39,
       "level": "DEBUG",
       "message": "Entering measure",
       "kind": "entry",
       "function": "measure"
     },
     {
-      "line": 46,
+      "line": 45,
       "level": "ERROR",
       "message": "Exception in measure",
-      "kind": "except",
+      "kind": "exception",
       "function": "measure"
     },
     {
@@ -73,10 +73,10 @@
       "function": "measure"
     },
     {
-      "line": 48,
+      "line": 47,
       "level": "ERROR",
       "message": "Exception in measure",
-      "kind": "except",
+      "kind": "exception",
       "function": "measure"
     },
     {
@@ -94,21 +94,21 @@
       "function": "measure"
     },
     {
-      "line": 54,
+      "line": 53,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 57,
+      "line": 56,
       "level": "DEBUG",
       "message": "Entering save",
       "kind": "entry",
       "function": "save"
     },
     {
-      "line": 70,
+      "line": 69,
       "level": "DEBUG",
       "message": "Entering load",
       "kind": "entry",
@@ -122,10 +122,10 @@
       "function": "load"
     },
     {
-      "line": 76,
+      "line": 75,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -136,10 +136,10 @@
       "function": "load"
     },
     {
-      "line": 84,
+      "line": 83,
       "level": "ERROR",
       "message": "Exception in load",
-      "kind": "except",
+      "kind": "exception",
       "function": "load"
     },
     {
@@ -150,7 +150,7 @@
       "function": "load"
     },
     {
-      "line": 90,
+      "line": 89,
       "level": "DEBUG",
       "message": "Entering read_endpoints",
       "kind": "entry",
@@ -164,10 +164,10 @@
       "function": "read_endpoints"
     },
     {
-      "line": 96,
+      "line": 95,
       "level": "ERROR",
       "message": "Exception in read_endpoints",
-      "kind": "except",
+      "kind": "exception",
       "function": "read_endpoints"
     },
     {
@@ -178,10 +178,10 @@
       "function": "read_endpoints"
     },
     {
-      "line": 104,
+      "line": 103,
       "level": "ERROR",
       "message": "Exception in read_endpoints",
-      "kind": "except",
+      "kind": "exception",
       "function": "read_endpoints"
     },
     {
@@ -192,7 +192,7 @@
       "function": "read_endpoints"
     },
     {
-      "line": 110,
+      "line": 109,
       "level": "DEBUG",
       "message": "Entering group_by_endpoint",
       "kind": "entry",
@@ -206,7 +206,7 @@
       "function": "group_by_endpoint"
     },
     {
-      "line": 117,
+      "line": 116,
       "level": "DEBUG",
       "message": "Entering compute_endpoint_stats",
       "kind": "entry",
@@ -227,7 +227,7 @@
       "function": "compute_endpoint_stats"
     },
     {
-      "line": 130,
+      "line": 129,
       "level": "DEBUG",
       "message": "Entering compute_overall_stats",
       "kind": "entry",
@@ -248,14 +248,14 @@
       "function": "compute_overall_stats"
     },
     {
-      "line": 138,
+      "line": 137,
       "level": "DEBUG",
       "message": "Entering export_report",
       "kind": "entry",
       "function": "export_report"
     },
     {
-      "line": 153,
+      "line": 152,
       "level": "DEBUG",
       "message": "Entering filter_failed",
       "kind": "entry",
@@ -269,7 +269,7 @@
       "function": "filter_failed"
     },
     {
-      "line": 157,
+      "line": 156,
       "level": "DEBUG",
       "message": "Entering measure_all",
       "kind": "entry",
@@ -283,7 +283,7 @@
       "function": "measure_all"
     },
     {
-      "line": 165,
+      "line": 164,
       "level": "DEBUG",
       "message": "Entering retry_failed",
       "kind": "entry",
@@ -304,7 +304,7 @@
       "function": "retry_failed"
     },
     {
-      "line": 179,
+      "line": 178,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

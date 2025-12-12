@@ -2,118 +2,311 @@
   "file": "script53.py",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering is_recent"
+      "message": "Entering Product.is_recent"
+    },
+    {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False for recency check in Product.is_recent"
+    },
+    {
+      "line": 24,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recency flag in Product.is_recent"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.matches"
+    },
+    {
+      "line": 29,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from primary match in Product.matches"
+    },
+    {
+      "line": 31,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True from secondary match in Product.matches"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result in Product.matches"
+    },
+    {
+      "line": 34,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Product.to_dict"
     },
     {
       "line": 35,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering to_dict for Product"
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Product dict in Product.to_dict"
     },
     {
-      "line": 45,
+      "line": 44,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Product.from_dict"
     },
     {
-      "line": 56,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to execute Product.from_dict"
+      "line": 48,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Product instance from Product.from_dict"
     },
     {
-      "line": 65,
+      "line": 55,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Product from dict in Product.from_dict"
+    },
+    {
+      "line": 56,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Product.from_dict after parse failure"
+    },
+    {
+      "line": 64,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering add_product"
+      "message": "Entering Inventory.add_product"
+    },
+    {
+      "line": 68,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from Inventory.add_product"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.find"
+    },
+    {
+      "line": 72,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning matching products list in Inventory.find"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.recent_products"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent products list in Inventory.recent_products"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.total_value"
     },
     {
       "line": 78,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering total_value"
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning total inventory value in Inventory.total_value"
     },
     {
-      "line": 88,
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Inventory.to_dict"
+    },
+    {
+      "line": 81,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Inventory dict in Inventory.to_dict"
+    },
+    {
+      "line": 87,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Inventory.from_dict"
     },
     {
-      "line": 98,
+      "line": 93,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Inventory instance from Inventory.from_dict"
+    },
+    {
+      "line": 97,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering PricingClient.__init__"
     },
     {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering PricingClient._url"
+    },
+    {
       "line": 102,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering _url"
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning pricing URL in PricingClient._url"
     },
     {
-      "line": 105,
+      "line": 104,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering fetch_remote_prices"
+      "message": "Entering PricingClient.fetch_remote_prices"
     },
     {
-      "line": 117,
+      "line": 116,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to fetch remote prices"
+      "message": "Error while fetching remote prices in PricingClient.fetch_remote_prices"
     },
     {
-      "line": 122,
+      "line": 118,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning price map from PricingClient.fetch_remote_prices"
+    },
+    {
+      "line": 121,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_inventory"
     },
     {
-      "line": 129,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to load inventory"
+      "line": 123,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning default Inventory in load_inventory"
     },
     {
-      "line": 133,
+      "line": 127,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Inventory from loaded data in load_inventory"
+    },
+    {
+      "line": 128,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while loading inventory from disk in load_inventory"
+    },
+    {
+      "line": 129,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning fallback Inventory in load_inventory after error"
+    },
+    {
+      "line": 132,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering save_inventory"
     },
     {
-      "line": 146,
+      "line": 140,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while saving inventory to disk in save_inventory"
+    },
+    {
+      "line": 145,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering apply_price_updates"
     },
     {
-      "line": 159,
+      "line": 155,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning count of updated prices in apply_price_updates"
+    },
+    {
+      "line": 158,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering summarize_inventory"
     },
     {
-      "line": 173,
+      "line": 161,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty inventory summary in summarize_inventory"
+    },
+    {
+      "line": 164,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed inventory summary in summarize_inventory"
+    },
+    {
+      "line": 172,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering pick_random_product"
     },
     {
-      "line": 185,
+      "line": 174,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None (no products available) in pick_random_product"
+    },
+    {
+      "line": 180,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None (no candidates after filtering) in pick_random_product"
+    },
+    {
+      "line": 181,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random product choice in pick_random_product"
+    },
+    {
+      "line": 184,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering main"
     },
     {
-      "line": 204,
+      "line": 203,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Unexpected error in main"
+      "message": "Unhandled exception in main"
+    },
+    {
+      "line": 204,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 1 from main due to error"
+    },
+    {
+      "line": 207,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 0 from main"
     }
   ]
 }
+

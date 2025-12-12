@@ -26,23 +26,23 @@
       "function": "matches"
     },
     {
-      "line": 35,
+      "line": 34,
       "level": "DEBUG",
-      "message": "Random log at line 35 in mark_done",
+      "message": "Random log at line 34 in mark_done",
       "kind": "entry",
       "function": "mark_done"
     },
     {
-      "line": 38,
+      "line": 37,
       "level": "DEBUG",
-      "message": "Random log at line 38 in to_dict",
+      "message": "Random log at line 37 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "DEBUG",
-      "message": "Random log at line 75 in add_task",
+      "message": "Random log at line 74 in add_task",
       "kind": "entry",
       "function": "add_task"
     },
@@ -54,9 +54,9 @@
       "function": "get_task"
     },
     {
-      "line": 84,
+      "line": 83,
       "level": "WARNING",
-      "message": "Random log at line 84 in completed_tasks",
+      "message": "Random log at line 83 in completed_tasks",
       "kind": "entry",
       "function": "completed_tasks"
     },
@@ -68,9 +68,9 @@
       "function": "completed_tasks"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "WARNING",
-      "message": "Random log at line 87 in active_tasks",
+      "message": "Random log at line 86 in active_tasks",
       "kind": "entry",
       "function": "active_tasks"
     },
@@ -82,10 +82,10 @@
       "function": "fetch_suggestions"
     },
     {
-      "line": 150,
+      "line": 149,
       "level": "WARNING",
-      "message": "Random log at line 150 in load_project",
-      "kind": "except",
+      "message": "Random log at line 149 in load_project",
+      "kind": "exception",
       "function": "load_project"
     },
     {
@@ -96,10 +96,10 @@
       "function": "load_project"
     },
     {
-      "line": 164,
+      "line": 163,
       "level": "INFO",
-      "message": "Random log at line 164 in save_project",
-      "kind": "except",
+      "message": "Random log at line 163 in save_project",
+      "kind": "exception",
       "function": "save_project"
     },
     {

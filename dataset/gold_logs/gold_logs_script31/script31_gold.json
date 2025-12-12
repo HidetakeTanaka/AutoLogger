@@ -2,10 +2,34 @@
   "file": "script31.py",
   "logs": [
     {
-      "line": 36,
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering QuizAttempt.score_ratio"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0.0 as score ratio in QuizAttempt.score_ratio"
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning computed score ratio in QuizAttempt.score_ratio"
+    },
+    {
+      "line": 35,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering QuizAttempt.is_suspicious"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False (not suspicious) in QuizAttempt.is_suspicious"
     },
     {
       "line": 41,
@@ -14,13 +38,25 @@
       "message": "Returning suspicious flag in QuizAttempt.is_suspicious"
     },
     {
-      "line": 76,
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering ensure_data_dir"
+    },
+    {
+      "line": 48,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering generate_sample_attempts"
+    },
+    {
+      "line": 75,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_attempts"
     },
     {
-      "line": 99,
+      "line": 97,
       "kind": "exception",
       "level": "ERROR",
       "message": "Failed to parse an attempt entry in load_attempts"
@@ -32,10 +68,28 @@
       "message": "Returning parsed attempts from load_attempts"
     },
     {
-      "line": 111,
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering group_by_user"
+    },
+    {
+      "line": 107,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning grouped attempts by user in group_by_user"
+    },
+    {
+      "line": 110,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering summarize_user"
+    },
+    {
+      "line": 112,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Entering empty summary in summarize_user"
     },
     {
       "line": 118,
@@ -44,7 +98,7 @@
       "message": "Returning user summary in summarize_user"
     },
     {
-      "line": 128,
+      "line": 127,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering find_suspicious_users"
@@ -53,16 +107,16 @@
       "line": 133,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning list of suspicious users"
+      "message": "Returning list of suspicious user IDs in find_suspicious_users"
     },
     {
-      "line": 137,
+      "line": 136,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering interactive_menu"
     },
     {
-      "line": 144,
+      "line": 143,
       "kind": "exception",
       "level": "ERROR",
       "message": "Failed to load attempts in interactive_menu"
@@ -74,13 +128,13 @@
       "message": "Aborting interactive_menu after load failure"
     },
     {
-      "line": 171,
+      "line": 170,
       "kind": "exception",
       "level": "ERROR",
       "message": "Unexpected error in interactive_menu loop"
     },
     {
-      "line": 182,
+      "line": 181,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering main"

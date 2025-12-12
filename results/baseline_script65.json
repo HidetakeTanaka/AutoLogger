@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 23,
+      "line": 22,
       "level": "DEBUG",
       "message": "Entering is_low_stock",
       "kind": "entry",
@@ -17,7 +17,7 @@
       "function": "is_low_stock"
     },
     {
-      "line": 26,
+      "line": 25,
       "level": "DEBUG",
       "message": "Entering age_hours",
       "kind": "entry",
@@ -31,7 +31,7 @@
       "function": "age_hours"
     },
     {
-      "line": 32,
+      "line": 31,
       "level": "DEBUG",
       "message": "Entering matches",
       "kind": "entry",
@@ -59,7 +59,7 @@
       "function": "matches"
     },
     {
-      "line": 40,
+      "line": 39,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -73,7 +73,7 @@
       "function": "to_dict"
     },
     {
-      "line": 52,
+      "line": 51,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -87,10 +87,10 @@
       "function": "from_dict"
     },
     {
-      "line": 67,
+      "line": 66,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -101,21 +101,21 @@
       "function": "from_dict"
     },
     {
-      "line": 72,
+      "line": 71,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 76,
+      "line": 75,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 79,
+      "line": 78,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -129,7 +129,7 @@
       "function": "get"
     },
     {
-      "line": 82,
+      "line": 81,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -143,7 +143,7 @@
       "function": "all"
     },
     {
-      "line": 85,
+      "line": 84,
       "level": "DEBUG",
       "message": "Entering search",
       "kind": "entry",
@@ -157,7 +157,7 @@
       "function": "search"
     },
     {
-      "line": 88,
+      "line": 87,
       "level": "DEBUG",
       "message": "Entering low_stock",
       "kind": "entry",
@@ -171,7 +171,7 @@
       "function": "low_stock"
     },
     {
-      "line": 91,
+      "line": 90,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -185,7 +185,7 @@
       "function": "to_dict"
     },
     {
-      "line": 98,
+      "line": 97,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -199,14 +199,14 @@
       "function": "from_dict"
     },
     {
-      "line": 108,
+      "line": 107,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 112,
+      "line": 111,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -220,7 +220,7 @@
       "function": "_url"
     },
     {
-      "line": 115,
+      "line": 114,
       "level": "DEBUG",
       "message": "Entering fetch_price",
       "kind": "entry",
@@ -241,10 +241,10 @@
       "function": "fetch_price"
     },
     {
-      "line": 125,
+      "line": 124,
       "level": "ERROR",
       "message": "Exception in fetch_price",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_price"
     },
     {
@@ -255,7 +255,7 @@
       "function": "fetch_price"
     },
     {
-      "line": 129,
+      "line": 128,
       "level": "DEBUG",
       "message": "Entering load_inventory",
       "kind": "entry",
@@ -269,10 +269,10 @@
       "function": "load_inventory"
     },
     {
-      "line": 133,
+      "line": 132,
       "level": "ERROR",
       "message": "Exception in load_inventory",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_inventory"
     },
     {
@@ -283,28 +283,28 @@
       "function": "load_inventory"
     },
     {
-      "line": 137,
+      "line": 136,
       "level": "DEBUG",
       "message": "Entering save_inventory",
       "kind": "entry",
       "function": "save_inventory"
     },
     {
-      "line": 143,
+      "line": 142,
       "level": "ERROR",
       "message": "Exception in save_inventory",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_inventory"
     },
     {
-      "line": 147,
+      "line": 146,
       "level": "ERROR",
       "message": "Exception in save_inventory",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_inventory"
     },
     {
-      "line": 151,
+      "line": 150,
       "level": "DEBUG",
       "message": "Entering compute_summary",
       "kind": "entry",
@@ -325,7 +325,7 @@
       "function": "compute_summary"
     },
     {
-      "line": 164,
+      "line": 163,
       "level": "DEBUG",
       "message": "Entering update_prices",
       "kind": "entry",
@@ -339,7 +339,7 @@
       "function": "update_prices"
     },
     {
-      "line": 175,
+      "line": 174,
       "level": "DEBUG",
       "message": "Entering simulate_sales",
       "kind": "entry",
@@ -360,7 +360,7 @@
       "function": "simulate_sales"
     },
     {
-      "line": 189,
+      "line": 188,
       "level": "DEBUG",
       "message": "Entering restock_low",
       "kind": "entry",
@@ -374,17 +374,17 @@
       "function": "restock_low"
     },
     {
-      "line": 199,
+      "line": 198,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 217,
+      "line": 216,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

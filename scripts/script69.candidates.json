@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 22,
-      "end_line": 22,
+      "line": 21,
+      "end_line": 21,
       "function": "is_recent",
       "class_name": "Order",
       "code": "def is_recent(self, hours: int = 24) -> bool:",
@@ -17,7 +17,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 23,
       "end_line": 23,
       "function": "is_recent",
@@ -28,13 +28,13 @@
         "ref",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 26,
-      "end_line": 26,
+      "line": 25,
+      "end_line": 25,
       "function": "to_dict",
       "class_name": "Order",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -45,7 +45,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 26,
       "end_line": 26,
       "function": "to_dict",
@@ -54,13 +54,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 36,
-      "end_line": 36,
+      "line": 35,
+      "end_line": 35,
       "function": "from_dict",
       "class_name": "Order",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Order\"]:",
@@ -74,7 +74,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 39,
       "end_line": 39,
       "function": "from_dict",
@@ -86,13 +86,13 @@
         "created_raw",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 47,
-      "end_line": 47,
+      "kind": "exception_handler_entry",
+      "line": 46,
+      "end_line": 46,
       "function": "from_dict",
       "class_name": "Order",
       "code": "except ...",
@@ -102,11 +102,11 @@
         "created_raw",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 47,
       "end_line": 47,
       "function": "from_dict",
@@ -118,13 +118,13 @@
         "created_raw",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 59,
-      "end_line": 59,
+      "line": 58,
+      "end_line": 58,
       "function": "add_order",
       "class_name": "Customer",
       "code": "def add_order(self, order: Order) -> None:",
@@ -136,7 +136,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 60,
       "end_line": 60,
       "function": "add_order",
@@ -146,13 +146,13 @@
         "order",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 64,
-      "end_line": 64,
+      "line": 63,
+      "end_line": 63,
       "function": "lifetime_value",
       "class_name": "Customer",
       "code": "def lifetime_value(self) -> float:",
@@ -163,7 +163,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 64,
       "end_line": 64,
       "function": "lifetime_value",
@@ -172,13 +172,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 67,
-      "end_line": 67,
+      "line": 66,
+      "end_line": 66,
       "function": "matches",
       "class_name": "Customer",
       "code": "def matches(self, query: str) -> bool:",
@@ -191,7 +191,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 69,
       "end_line": 69,
       "function": "matches",
@@ -202,11 +202,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 70,
       "end_line": 70,
       "function": "matches",
@@ -217,13 +217,13 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 73,
-      "end_line": 73,
+      "line": 72,
+      "end_line": 72,
       "function": "to_dict",
       "class_name": "Customer",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -234,7 +234,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 73,
       "end_line": 73,
       "function": "to_dict",
@@ -243,13 +243,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 83,
-      "end_line": 83,
+      "line": 82,
+      "end_line": 82,
       "function": "from_dict",
       "class_name": "Customer",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Customer\":",
@@ -265,9 +265,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 87,
-      "end_line": 87,
+      "kind": "exception_handler_entry",
+      "line": 86,
+      "end_line": 86,
       "function": "from_dict",
       "class_name": "Customer",
       "code": "except ...",
@@ -279,11 +279,11 @@
         "order",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 98,
       "end_line": 98,
       "function": "from_dict",
@@ -297,13 +297,13 @@
         "order",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 103,
-      "end_line": 103,
+      "line": 102,
+      "end_line": 102,
       "function": "__init__",
       "class_name": "AnalyticsClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
@@ -317,8 +317,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 107,
-      "end_line": 107,
+      "line": 106,
+      "end_line": 106,
       "function": "_url",
       "class_name": "AnalyticsClient",
       "code": "def _url(self, path: str) -> str:",
@@ -330,7 +330,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 107,
       "end_line": 107,
       "function": "_url",
@@ -340,13 +340,13 @@
         "path",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 110,
-      "end_line": 110,
+      "line": 109,
+      "end_line": 109,
       "function": "fetch_benchmarks",
       "class_name": "AnalyticsClient",
       "code": "def fetch_benchmarks(self) -> Optional[Dict[str, Any]]:",
@@ -360,7 +360,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 111,
       "end_line": 111,
       "function": "fetch_benchmarks",
@@ -372,11 +372,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 117,
       "end_line": 117,
       "function": "fetch_benchmarks",
@@ -388,13 +388,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 119,
-      "end_line": 119,
+      "kind": "exception_handler_entry",
+      "line": 118,
+      "end_line": 118,
       "function": "fetch_benchmarks",
       "class_name": "AnalyticsClient",
       "code": "except ...",
@@ -404,11 +404,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 119,
       "end_line": 119,
       "function": "fetch_benchmarks",
@@ -420,13 +420,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 122,
-      "end_line": 122,
+      "line": 121,
+      "end_line": 121,
       "function": "push_summary",
       "class_name": "AnalyticsClient",
       "code": "def push_summary(self, summary: Dict[str, Any]) -> bool:",
@@ -441,7 +441,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 123,
       "end_line": 123,
       "function": "push_summary",
@@ -454,11 +454,11 @@
         "summary",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 130,
       "end_line": 130,
       "function": "push_summary",
@@ -471,13 +471,13 @@
         "summary",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 132,
-      "end_line": 132,
+      "kind": "exception_handler_entry",
+      "line": 131,
+      "end_line": 131,
       "function": "push_summary",
       "class_name": "AnalyticsClient",
       "code": "except ...",
@@ -488,11 +488,11 @@
         "summary",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 132,
       "end_line": 132,
       "function": "push_summary",
@@ -505,13 +505,13 @@
         "summary",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 136,
-      "end_line": 136,
+      "line": 135,
+      "end_line": 135,
       "function": "load_customers",
       "class_name": null,
       "code": "def load_customers(path: Path) -> List[Customer]:",
@@ -525,7 +525,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 142,
       "end_line": 142,
       "function": "load_customers",
@@ -537,13 +537,13 @@
         "raw",
         "result"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 144,
-      "end_line": 144,
+      "kind": "exception_handler_entry",
+      "line": 143,
+      "end_line": 143,
       "function": "load_customers",
       "class_name": null,
       "code": "except ...",
@@ -553,11 +553,11 @@
         "raw",
         "result"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 144,
       "end_line": 144,
       "function": "load_customers",
@@ -569,13 +569,13 @@
         "raw",
         "result"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 146,
-      "end_line": 146,
+      "kind": "exception_handler_entry",
+      "line": 145,
+      "end_line": 145,
       "function": "load_customers",
       "class_name": null,
       "code": "except ...",
@@ -585,11 +585,11 @@
         "raw",
         "result"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 146,
       "end_line": 146,
       "function": "load_customers",
@@ -601,13 +601,13 @@
         "raw",
         "result"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 150,
-      "end_line": 150,
+      "line": 149,
+      "end_line": 149,
       "function": "save_customers",
       "class_name": null,
       "code": "def save_customers(path: Path, customers: List[Customer]) -> None:",
@@ -621,9 +621,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 156,
-      "end_line": 156,
+      "kind": "exception_handler_entry",
+      "line": 155,
+      "end_line": 155,
       "function": "save_customers",
       "class_name": null,
       "code": "except ...",
@@ -633,13 +633,13 @@
         "payload",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "except",
-      "line": 160,
-      "end_line": 160,
+      "kind": "exception_handler_entry",
+      "line": 159,
+      "end_line": 159,
       "function": "save_customers",
       "class_name": null,
       "code": "except ...",
@@ -649,13 +649,13 @@
         "payload",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 164,
-      "end_line": 164,
+      "line": 163,
+      "end_line": 163,
       "function": "compute_kpis",
       "class_name": null,
       "code": "def compute_kpis(customers: List[Customer]) -> Dict[str, Any]:",
@@ -668,7 +668,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 165,
       "end_line": 165,
       "function": "compute_kpis",
@@ -679,11 +679,11 @@
         "customers",
         "ltvs"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 168,
       "end_line": 168,
       "function": "compute_kpis",
@@ -694,13 +694,13 @@
         "customers",
         "ltvs"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 176,
-      "end_line": 176,
+      "line": 175,
+      "end_line": 175,
       "function": "simulate_orders",
       "class_name": null,
       "code": "def simulate_orders(customers: List[Customer], days: int = 3) -> List[Order]:",
@@ -717,7 +717,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 178,
       "end_line": 178,
       "function": "simulate_orders",
@@ -732,11 +732,11 @@
         "order",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 195,
       "end_line": 195,
       "function": "simulate_orders",
@@ -751,13 +751,13 @@
         "order",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 199,
-      "end_line": 199,
+      "line": 198,
+      "end_line": 198,
       "function": "apply_discounts",
       "class_name": null,
       "code": "def apply_discounts(customers: List[Customer], threshold: float = 200.0, pct: float = 0.1) -> int:",
@@ -771,7 +771,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 205,
       "end_line": 205,
       "function": "apply_discounts",
@@ -783,13 +783,13 @@
         "threshold",
         "updated"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 209,
-      "end_line": 209,
+      "line": 208,
+      "end_line": 208,
       "function": "merge_remote_benchmarks",
       "class_name": null,
       "code": "def merge_remote_benchmarks(summary: Dict[str, Any], remote: Optional[Dict[str, Any]]) -> Dict[str, Any]:",
@@ -802,7 +802,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 210,
       "end_line": 210,
       "function": "merge_remote_benchmarks",
@@ -813,11 +813,11 @@
         "result",
         "summary"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 217,
       "end_line": 217,
       "function": "merge_remote_benchmarks",
@@ -828,13 +828,13 @@
         "result",
         "summary"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 221,
-      "end_line": 221,
+      "line": 220,
+      "end_line": 220,
       "function": "main",
       "class_name": null,
       "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
@@ -854,9 +854,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 244,
-      "end_line": 244,
+      "kind": "exception_handler_entry",
+      "line": 243,
+      "end_line": 243,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -872,13 +872,13 @@
         "remote",
         "summary_path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "except",
-      "line": 250,
-      "end_line": 250,
+      "kind": "exception_handler_entry",
+      "line": 249,
+      "end_line": 249,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -894,11 +894,11 @@
         "remote",
         "summary_path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 250,
       "end_line": 250,
       "function": "main",
@@ -916,11 +916,11 @@
         "remote",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 251,
       "end_line": 251,
       "function": "main",
@@ -938,7 +938,7 @@
         "remote",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

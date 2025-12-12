@@ -26,9 +26,9 @@
       "function": "matches"
     },
     {
-      "line": 35,
+      "line": 34,
       "level": "DEBUG",
-      "message": "Random log at line 35 in to_dict",
+      "message": "Random log at line 34 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -68,16 +68,16 @@
       "function": "weekly_progress"
     },
     {
-      "line": 93,
+      "line": 92,
       "level": "WARNING",
-      "message": "Random log at line 93 in to_dict",
+      "message": "Random log at line 92 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 146,
+      "line": 145,
       "level": "INFO",
-      "message": "Random log at line 146 in push_summary",
+      "message": "Random log at line 145 in push_summary",
       "kind": "entry",
       "function": "push_summary"
     },
@@ -89,16 +89,16 @@
       "function": "load_profile"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "WARNING",
-      "message": "Random log at line 173 in save_profile",
+      "message": "Random log at line 172 in save_profile",
       "kind": "entry",
       "function": "save_profile"
     },
     {
-      "line": 188,
+      "line": 187,
       "level": "INFO",
-      "message": "Random log at line 188 in summarize_profile",
+      "message": "Random log at line 187 in summarize_profile",
       "kind": "entry",
       "function": "summarize_profile"
     },

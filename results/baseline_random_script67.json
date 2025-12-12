@@ -12,17 +12,17 @@
       "function": "is_recent"
     },
     {
-      "line": 26,
+      "line": 25,
       "level": "INFO",
-      "message": "Random log at line 26 in to_dict",
+      "message": "Random log at line 25 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 47,
+      "line": 46,
       "level": "ERROR",
-      "message": "Random log at line 47 in from_dict",
-      "kind": "except",
+      "message": "Random log at line 46 in from_dict",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -33,16 +33,16 @@
       "function": "from_dict"
     },
     {
-      "line": 57,
+      "line": 56,
       "level": "DEBUG",
-      "message": "Random log at line 57 in touch",
+      "message": "Random log at line 56 in touch",
       "kind": "entry",
       "function": "touch"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "DEBUG",
-      "message": "Random log at line 75 in from_dict",
+      "message": "Random log at line 74 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
@@ -54,9 +54,9 @@
       "function": "from_dict"
     },
     {
-      "line": 93,
+      "line": 92,
       "level": "WARNING",
-      "message": "Random log at line 93 in _url",
+      "message": "Random log at line 92 in _url",
       "kind": "entry",
       "function": "_url"
     },
@@ -68,17 +68,17 @@
       "function": "_url"
     },
     {
-      "line": 96,
+      "line": 95,
       "level": "WARNING",
-      "message": "Random log at line 96 in fetch_recommendations",
+      "message": "Random log at line 95 in fetch_recommendations",
       "kind": "entry",
       "function": "fetch_recommendations"
     },
     {
-      "line": 133,
+      "line": 132,
       "level": "INFO",
-      "message": "Random log at line 133 in save_user",
-      "kind": "except",
+      "message": "Random log at line 132 in save_user",
+      "kind": "exception",
       "function": "save_user"
     },
     {
@@ -89,16 +89,16 @@
       "function": "compute_preferences"
     },
     {
-      "line": 170,
+      "line": 167,
       "level": "WARNING",
-      "message": "Random log at line 170 in simulate_session",
+      "message": "Random log at line 167 in simulate_session",
       "kind": "entry",
       "function": "simulate_session"
     },
     {
-      "line": 183,
+      "line": 182,
       "level": "INFO",
-      "message": "Random log at line 183 in main",
+      "message": "Random log at line 182 in main",
       "kind": "entry",
       "function": "main"
     },

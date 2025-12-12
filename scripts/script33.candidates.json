@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 19,
-      "end_line": 19,
+      "line": 18,
+      "end_line": 18,
       "function": "to_dict",
       "class_name": "Endpoint",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -15,7 +15,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 19,
       "end_line": 19,
       "function": "to_dict",
@@ -24,13 +24,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 29,
-      "end_line": 29,
+      "line": 28,
+      "end_line": 28,
       "function": "is_error",
       "class_name": "MetricSample",
       "code": "def is_error(self) -> bool:",
@@ -41,7 +41,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 29,
       "end_line": 29,
       "function": "is_error",
@@ -50,13 +50,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 32,
-      "end_line": 32,
+      "line": 31,
+      "end_line": 31,
       "function": "is_slow",
       "class_name": "MetricSample",
       "code": "def is_slow(self, threshold_ms: float = 800.0) -> bool:",
@@ -68,7 +68,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 32,
       "end_line": 32,
       "function": "is_slow",
@@ -78,13 +78,13 @@
         "self",
         "threshold_ms"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 37,
-      "end_line": 37,
+      "line": 36,
+      "end_line": 36,
       "function": "__init__",
       "class_name": "HttpProbe",
       "code": "def __init__(self, timeout: int = 4) -> None:",
@@ -97,8 +97,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 40,
-      "end_line": 40,
+      "line": 39,
+      "end_line": 39,
       "function": "measure",
       "class_name": "HttpProbe",
       "code": "def measure(self, url: str) -> MetricSample:",
@@ -113,9 +113,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 46,
-      "end_line": 46,
+      "kind": "exception_handler_entry",
+      "line": 45,
+      "end_line": 45,
       "function": "measure",
       "class_name": "HttpProbe",
       "code": "except ...",
@@ -126,11 +126,11 @@
         "status",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 46,
       "end_line": 46,
       "function": "measure",
@@ -143,13 +143,13 @@
         "status",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 48,
-      "end_line": 48,
+      "kind": "exception_handler_entry",
+      "line": 47,
+      "end_line": 47,
       "function": "measure",
       "class_name": "HttpProbe",
       "code": "except ...",
@@ -160,11 +160,11 @@
         "status",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 48,
       "end_line": 48,
       "function": "measure",
@@ -177,11 +177,11 @@
         "status",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 49,
       "end_line": 49,
       "function": "measure",
@@ -194,13 +194,13 @@
         "status",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 54,
-      "end_line": 54,
+      "line": 53,
+      "end_line": 53,
       "function": "__init__",
       "class_name": "MetricStore",
       "code": "def __init__(self, path: Path) -> None:",
@@ -213,8 +213,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 57,
-      "end_line": 57,
+      "line": 56,
+      "end_line": 56,
       "function": "save",
       "class_name": "MetricStore",
       "code": "def save(self, samples: List[MetricSample]) -> None:",
@@ -228,8 +228,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 70,
-      "end_line": 70,
+      "line": 69,
+      "end_line": 69,
       "function": "load",
       "class_name": "MetricStore",
       "code": "def load(self) -> List[MetricSample]:",
@@ -245,7 +245,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 71,
       "end_line": 71,
       "function": "load",
@@ -259,13 +259,13 @@
         "samples",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 76,
-      "end_line": 76,
+      "kind": "exception_handler_entry",
+      "line": 75,
+      "end_line": 75,
       "function": "load",
       "class_name": "MetricStore",
       "code": "except ...",
@@ -277,11 +277,11 @@
         "samples",
         "self"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 76,
       "end_line": 76,
       "function": "load",
@@ -295,13 +295,13 @@
         "samples",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 84,
-      "end_line": 84,
+      "kind": "exception_handler_entry",
+      "line": 83,
+      "end_line": 83,
       "function": "load",
       "class_name": "MetricStore",
       "code": "except ...",
@@ -313,11 +313,11 @@
         "samples",
         "self"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 86,
       "end_line": 86,
       "function": "load",
@@ -331,13 +331,13 @@
         "samples",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 90,
-      "end_line": 90,
+      "line": 89,
+      "end_line": 89,
       "function": "read_endpoints",
       "class_name": null,
       "code": "def read_endpoints(path: Path) -> List[Endpoint]:",
@@ -353,7 +353,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 91,
       "end_line": 91,
       "function": "read_endpoints",
@@ -367,13 +367,13 @@
         "url",
         "weight"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 96,
-      "end_line": 96,
+      "kind": "exception_handler_entry",
+      "line": 95,
+      "end_line": 95,
       "function": "read_endpoints",
       "class_name": null,
       "code": "except ...",
@@ -385,11 +385,11 @@
         "url",
         "weight"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 96,
       "end_line": 96,
       "function": "read_endpoints",
@@ -403,13 +403,13 @@
         "url",
         "weight"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 104,
-      "end_line": 104,
+      "kind": "exception_handler_entry",
+      "line": 103,
+      "end_line": 103,
       "function": "read_endpoints",
       "class_name": null,
       "code": "except ...",
@@ -421,11 +421,11 @@
         "url",
         "weight"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 106,
       "end_line": 106,
       "function": "read_endpoints",
@@ -439,13 +439,13 @@
         "url",
         "weight"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 110,
-      "end_line": 110,
+      "line": 109,
+      "end_line": 109,
       "function": "group_by_endpoint",
       "class_name": null,
       "code": "def group_by_endpoint(samples: List[MetricSample]) -> Dict[str, List[MetricSample]]:",
@@ -457,7 +457,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 113,
       "end_line": 113,
       "function": "group_by_endpoint",
@@ -467,13 +467,13 @@
         "grouped",
         "samples"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 117,
-      "end_line": 117,
+      "line": 116,
+      "end_line": 116,
       "function": "compute_endpoint_stats",
       "class_name": null,
       "code": "def compute_endpoint_stats(samples: List[MetricSample]) -> Dict[str, Any]:",
@@ -487,7 +487,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 118,
       "end_line": 118,
       "function": "compute_endpoint_stats",
@@ -499,11 +499,11 @@
         "rts",
         "samples"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 122,
       "end_line": 122,
       "function": "compute_endpoint_stats",
@@ -515,13 +515,13 @@
         "rts",
         "samples"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 130,
-      "end_line": 130,
+      "line": 129,
+      "end_line": 129,
       "function": "compute_overall_stats",
       "class_name": null,
       "code": "def compute_overall_stats(samples: List[MetricSample]) -> Dict[str, Any]:",
@@ -534,7 +534,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 131,
       "end_line": 131,
       "function": "compute_overall_stats",
@@ -545,11 +545,11 @@
         "samples",
         "slow"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 134,
       "end_line": 134,
       "function": "compute_overall_stats",
@@ -560,13 +560,13 @@
         "samples",
         "slow"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 138,
-      "end_line": 138,
+      "line": 137,
+      "end_line": 137,
       "function": "export_report",
       "class_name": null,
       "code": "def export_report(path: Path, samples: List[MetricSample]) -> None:",
@@ -583,8 +583,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 153,
-      "end_line": 153,
+      "line": 152,
+      "end_line": 152,
       "function": "filter_failed",
       "class_name": null,
       "code": "def filter_failed(samples: List[MetricSample]) -> List[MetricSample]:",
@@ -595,7 +595,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 153,
       "end_line": 153,
       "function": "filter_failed",
@@ -604,13 +604,13 @@
       "vars_in_scope": [
         "samples"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 157,
-      "end_line": 157,
+      "line": 156,
+      "end_line": 156,
       "function": "measure_all",
       "class_name": null,
       "code": "def measure_all(endpoints: List[Endpoint], probe: HttpProbe) -> List[MetricSample]:",
@@ -624,7 +624,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 161,
       "end_line": 161,
       "function": "measure_all",
@@ -636,13 +636,13 @@
         "sample",
         "samples"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 165,
-      "end_line": 165,
+      "line": 164,
+      "end_line": 164,
       "function": "retry_failed",
       "class_name": null,
       "code": "def retry_failed(failed: List[MetricSample], endpoints: List[Endpoint], probe: HttpProbe) -> List[MetricSample]:",
@@ -659,7 +659,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 166,
       "end_line": 166,
       "function": "retry_failed",
@@ -674,11 +674,11 @@
         "probe",
         "retried"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 175,
       "end_line": 175,
       "function": "retry_failed",
@@ -693,13 +693,13 @@
         "probe",
         "retried"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 179,
-      "end_line": 179,
+      "line": 178,
+      "end_line": 178,
       "function": "main",
       "class_name": null,
       "code": "def main(config_path: str = \"endpoints.json\") -> int:",
@@ -720,7 +720,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 182,
       "end_line": 182,
       "function": "main",
@@ -739,11 +739,11 @@
         "samples",
         "store"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 200,
       "end_line": 200,
       "function": "main",
@@ -762,11 +762,11 @@
         "samples",
         "store"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 201,
       "end_line": 201,
       "function": "main",
@@ -785,7 +785,7 @@
         "samples",
         "store"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

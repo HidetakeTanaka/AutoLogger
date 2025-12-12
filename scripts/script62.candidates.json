@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 24,
-      "end_line": 24,
+      "line": 23,
+      "end_line": 23,
       "function": "is_overdue",
       "class_name": "Task",
       "code": "def is_overdue(self, ref: Optional[datetime] = None) -> bool:",
@@ -16,7 +16,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 25,
       "end_line": 25,
       "function": "is_overdue",
@@ -26,11 +26,11 @@
         "ref",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 27,
       "end_line": 27,
       "function": "is_overdue",
@@ -40,13 +40,13 @@
         "ref",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 30,
-      "end_line": 30,
+      "line": 29,
+      "end_line": 29,
       "function": "mark_done",
       "class_name": "Task",
       "code": "def mark_done(self) -> None:",
@@ -58,8 +58,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 33,
-      "end_line": 33,
+      "line": 32,
+      "end_line": 32,
       "function": "matches",
       "class_name": "Task",
       "code": "def matches(self, query: str) -> bool:",
@@ -72,7 +72,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 35,
       "end_line": 35,
       "function": "matches",
@@ -83,11 +83,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 37,
       "end_line": 37,
       "function": "matches",
@@ -98,11 +98,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 38,
       "end_line": 38,
       "function": "matches",
@@ -113,13 +113,13 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 41,
-      "end_line": 41,
+      "line": 40,
+      "end_line": 40,
       "function": "to_dict",
       "class_name": "Task",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -130,7 +130,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 41,
       "end_line": 41,
       "function": "to_dict",
@@ -139,13 +139,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 53,
-      "end_line": 53,
+      "line": 52,
+      "end_line": 52,
       "function": "from_dict",
       "class_name": "Task",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Task\"]:",
@@ -160,7 +160,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 57,
       "end_line": 57,
       "function": "from_dict",
@@ -173,13 +173,13 @@
         "due_raw",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 67,
-      "end_line": 67,
+      "kind": "exception_handler_entry",
+      "line": 66,
+      "end_line": 66,
       "function": "from_dict",
       "class_name": "Task",
       "code": "except ...",
@@ -190,11 +190,11 @@
         "due_raw",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 67,
       "end_line": 67,
       "function": "from_dict",
@@ -207,13 +207,13 @@
         "due_raw",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 72,
-      "end_line": 72,
+      "line": 71,
+      "end_line": 71,
       "function": "__init__",
       "class_name": "Project",
       "code": "def __init__(self, project_id: str, name: str) -> None:",
@@ -227,8 +227,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 77,
-      "end_line": 77,
+      "line": 76,
+      "end_line": 76,
       "function": "add_task",
       "class_name": "Project",
       "code": "def add_task(self, task: Task) -> None:",
@@ -241,8 +241,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 80,
-      "end_line": 80,
+      "line": 79,
+      "end_line": 79,
       "function": "get_task",
       "class_name": "Project",
       "code": "def get_task(self, task_id: str) -> Optional[Task]:",
@@ -254,7 +254,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 80,
       "end_line": 80,
       "function": "get_task",
@@ -264,13 +264,13 @@
         "self",
         "task_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 83,
-      "end_line": 83,
+      "line": 82,
+      "end_line": 82,
       "function": "pending_tasks",
       "class_name": "Project",
       "code": "def pending_tasks(self) -> List[Task]:",
@@ -281,7 +281,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 83,
       "end_line": 83,
       "function": "pending_tasks",
@@ -290,13 +290,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 86,
-      "end_line": 86,
+      "line": 85,
+      "end_line": 85,
       "function": "completed_ratio",
       "class_name": "Project",
       "code": "def completed_ratio(self) -> float:",
@@ -309,7 +309,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 88,
       "end_line": 88,
       "function": "completed_ratio",
@@ -320,11 +320,11 @@
         "self",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 90,
       "end_line": 90,
       "function": "completed_ratio",
@@ -335,13 +335,13 @@
         "self",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 93,
-      "end_line": 93,
+      "line": 92,
+      "end_line": 92,
       "function": "to_dict",
       "class_name": "Project",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -352,7 +352,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 93,
       "end_line": 93,
       "function": "to_dict",
@@ -361,13 +361,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 101,
-      "end_line": 101,
+      "line": 100,
+      "end_line": 100,
       "function": "from_dict",
       "class_name": "Project",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Project\":",
@@ -381,7 +381,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 109,
       "end_line": 109,
       "function": "from_dict",
@@ -393,13 +393,13 @@
         "raw",
         "task"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 114,
-      "end_line": 114,
+      "line": 113,
+      "end_line": 113,
       "function": "__init__",
       "class_name": "ApiClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
@@ -413,8 +413,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 118,
-      "end_line": 118,
+      "line": 117,
+      "end_line": 117,
       "function": "_url",
       "class_name": "ApiClient",
       "code": "def _url(self, project_id: str) -> str:",
@@ -426,7 +426,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 118,
       "end_line": 118,
       "function": "_url",
@@ -436,13 +436,13 @@
         "project_id",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 121,
-      "end_line": 121,
+      "line": 120,
+      "end_line": 120,
       "function": "fetch_project",
       "class_name": "ApiClient",
       "code": "def fetch_project(self, project_id: str) -> Optional[Dict[str, Any]]:",
@@ -457,7 +457,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 122,
       "end_line": 122,
       "function": "fetch_project",
@@ -470,11 +470,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 128,
       "end_line": 128,
       "function": "fetch_project",
@@ -487,13 +487,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 130,
-      "end_line": 130,
+      "kind": "exception_handler_entry",
+      "line": 129,
+      "end_line": 129,
       "function": "fetch_project",
       "class_name": "ApiClient",
       "code": "except ...",
@@ -504,11 +504,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 130,
       "end_line": 130,
       "function": "fetch_project",
@@ -521,13 +521,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 133,
-      "end_line": 133,
+      "line": 132,
+      "end_line": 132,
       "function": "push_summary",
       "class_name": "ApiClient",
       "code": "def push_summary(self, project_id: str, summary: Dict[str, Any]) -> bool:",
@@ -543,7 +543,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 134,
       "end_line": 134,
       "function": "push_summary",
@@ -557,11 +557,11 @@
         "summary",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 145,
       "end_line": 145,
       "function": "push_summary",
@@ -575,13 +575,13 @@
         "summary",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 147,
-      "end_line": 147,
+      "kind": "exception_handler_entry",
+      "line": 146,
+      "end_line": 146,
       "function": "push_summary",
       "class_name": "ApiClient",
       "code": "except ...",
@@ -593,11 +593,11 @@
         "summary",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 147,
       "end_line": 147,
       "function": "push_summary",
@@ -611,13 +611,13 @@
         "summary",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 151,
-      "end_line": 151,
+      "line": 150,
+      "end_line": 150,
       "function": "load_project",
       "class_name": null,
       "code": "def load_project(path: Path) -> Project:",
@@ -629,7 +629,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 153,
       "end_line": 153,
       "function": "load_project",
@@ -639,13 +639,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 155,
-      "end_line": 155,
+      "kind": "exception_handler_entry",
+      "line": 154,
+      "end_line": 154,
       "function": "load_project",
       "class_name": null,
       "code": "except ...",
@@ -653,11 +653,11 @@
         "path",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 155,
       "end_line": 155,
       "function": "load_project",
@@ -667,13 +667,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 159,
-      "end_line": 159,
+      "line": 158,
+      "end_line": 158,
       "function": "save_project",
       "class_name": null,
       "code": "def save_project(path: Path, project: Project) -> None:",
@@ -687,9 +687,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 165,
-      "end_line": 165,
+      "kind": "exception_handler_entry",
+      "line": 164,
+      "end_line": 164,
       "function": "save_project",
       "class_name": null,
       "code": "except ...",
@@ -699,13 +699,13 @@
         "project",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "except",
-      "line": 169,
-      "end_line": 169,
+      "kind": "exception_handler_entry",
+      "line": 168,
+      "end_line": 168,
       "function": "save_project",
       "class_name": null,
       "code": "except ...",
@@ -715,13 +715,13 @@
         "project",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 173,
-      "end_line": 173,
+      "line": 172,
+      "end_line": 172,
       "function": "summarize_project",
       "class_name": null,
       "code": "def summarize_project(project: Project) -> Dict[str, Any]:",
@@ -734,7 +734,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 175,
       "end_line": 175,
       "function": "summarize_project",
@@ -745,11 +745,11 @@
         "project",
         "tasks"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 177,
       "end_line": 177,
       "function": "summarize_project",
@@ -760,13 +760,13 @@
         "project",
         "tasks"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 185,
-      "end_line": 185,
+      "line": 184,
+      "end_line": 184,
       "function": "merge_remote",
       "class_name": null,
       "code": "def merge_remote(project: Project, remote_raw: Optional[Dict[str, Any]]) -> int:",
@@ -780,7 +780,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 186,
       "end_line": 186,
       "function": "merge_remote",
@@ -792,11 +792,11 @@
         "remote",
         "remote_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 193,
       "end_line": 193,
       "function": "merge_remote",
@@ -808,13 +808,13 @@
         "remote",
         "remote_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 197,
-      "end_line": 197,
+      "line": 196,
+      "end_line": 196,
       "function": "simulate_progress",
       "class_name": null,
       "code": "def simulate_progress(project: Project, steps: int = 3) -> None:",
@@ -831,8 +831,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 208,
-      "end_line": 208,
+      "line": 207,
+      "end_line": 207,
       "function": "main",
       "class_name": null,
       "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
@@ -852,7 +852,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 224,
       "end_line": 224,
       "function": "main",
@@ -870,13 +870,13 @@
         "summary",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 230,
-      "end_line": 230,
+      "kind": "exception_handler_entry",
+      "line": 229,
+      "end_line": 229,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -892,11 +892,11 @@
         "summary",
         "summary_path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 230,
       "end_line": 230,
       "function": "main",
@@ -914,11 +914,11 @@
         "summary",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 232,
       "end_line": 232,
       "function": "main",
@@ -936,7 +936,7 @@
         "summary",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

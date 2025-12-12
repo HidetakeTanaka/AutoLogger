@@ -2,55 +2,55 @@
   "file": "script63.py",
   "logs": [
     {
-      "line": 20,
+      "line": 19,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering average method for Student: {self}\")"
     },
     {
-      "line": 22,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Calculated average grade for student {self}: {sum(self.grades.values()) / len(self.grades):.2f}')"
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered passed() with threshold={threshold} for student {self}\")"
     },
     {
       "line": 27,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Student did not pass: average {avg} is below threshold {threshold}')"
+      "message": "logging.info(f'Student {self} did not pass with average {avg} below threshold {threshold}')"
     },
     {
-      "line": 31,
+      "line": 30,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering matches method with query: {query}\")"
     },
     {
-      "line": 48,
+      "line": 47,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 62,
-      "kind": "except",
+      "line": 61,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to parse enrollment date from raw data: {enrolled_raw}')"
+      "message": "logging.error(f'Failed to create Student from dict: {raw}', exc_info=True)"
     },
     {
-      "line": 67,
+      "line": 66,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing Course with course_id={course_id}, title={title}\")"
     },
     {
-      "line": 72,
+      "line": 71,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering add_student with student: {student}\")"
+      "message": "logging.debug(f\"Entering add_student with student id={student.id} name={student.name}\")"
     },
     {
-      "line": 75,
+      "line": 74,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering get_student with student_id={student_id}\")"
@@ -59,112 +59,100 @@
       "line": 75,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Retrieving student with ID: {student_id}')"
+      "message": "logging.info(f'Retrieved student with ID {student_id}: {self._students.get(student_id)}')"
     },
     {
-      "line": 78,
+      "line": 77,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering all_students method of Course instance {self}\")"
     },
     {
-      "line": 95,
+      "line": 94,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+      "message": "logging.debug(f\"Entering Course.from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 105,
+      "line": 104,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing AnalyticsClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 109,
+      "line": 108,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with course_id={course_id}\")"
     },
     {
-      "line": 112,
+      "line": 111,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering fetch_benchmarks with course_id={course_id}\")"
+      "message": "logging.debug(f\"Entered fetch_benchmarks with course_id={course_id}\")"
     },
     {
-      "line": 121,
-      "kind": "except",
+      "line": 120,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to fetch benchmarks for course_id {course_id} from {url}', exc_info=True)"
     },
     {
-      "line": 124,
+      "line": 123,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering push_summary with course_id={course_id} and summary keys={list(summary.keys())}\")"
     },
     {
-      "line": 132,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Push summary response status: {resp.status} for course_id: {course_id}')"
-    },
-    {
-      "line": 134,
-      "kind": "except",
+      "line": 133,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to push summary for course_id {course_id} to {url} with body {body}')"
+      "message": "logging.error(f'Failed to push summary for course_id {course_id} to {url} with body {body}', exc_info=True)"
     },
     {
-      "line": 138,
+      "line": 137,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_course with path: {path}\")"
     },
     {
-      "line": 141,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Loaded course from {path} with data keys: {list(raw.keys())}')"
-    },
-    {
-      "line": 143,
-      "kind": "except",
+      "line": 142,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load course from {path} with raw data: {raw}', exc_info=True)"
+      "message": "logging.error(f'Failed to load course from path: {path}', exc_info=True)"
     },
     {
-      "line": 147,
+      "line": 146,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered save_course with path={path} and course={course}\")"
     },
     {
-      "line": 155,
-      "kind": "except",
+      "line": 154,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to save course {course} to path {path} with payload {payload} and tmp {tmp}', exc_info=True)"
+      "message": "logging.error(f'Failed to save course {course} to path {path}', exc_info=True)"
     },
     {
-      "line": 160,
+      "line": 159,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered summarize_course with course id: {course.id}, name: {course.name}\")"
+      "message": "logging.debug(f\"Entering summarize_course for course: {course.name}\")"
     },
     {
       "line": 165,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Summary computed: count={count}, class_avg={course.class_average():.2f}, pass_rate={(passed / count if count else 0.0):.2f}\")"
+      "message": "logging.info(f\"Summary generated: count={count}, class_avg={course.class_average():.2f}, pass_rate={(passed / count if count else 0.0):.2f}\")"
     },
     {
-      "line": 173,
+      "line": 172,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Applying curve to course {course} with curve value {curve}\")"
+      "message": "logging.debug(f\"Applying curve of {curve} to course {course}\")"
     },
     {
-      "line": 182,
+      "line": 179,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering merge_remote_benchmarks with target={target}\")"
@@ -179,23 +167,23 @@
       "line": 189,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Merging complete for target {target} with {len(merged)} entries from remote {remote}.')"
+      "message": "logging.info(f'Merging complete for target {target} with remote {remote}. Summary: {summary}. Result: {merged}')"
     },
     {
-      "line": 193,
+      "line": 192,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Starting simulate_study with course={course} for {days} days\")"
+      "message": "logging.debug(f\"Starting simulate_study for course {course} with days={days}\")"
     },
     {
-      "line": 205,
+      "line": 204,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 228,
-      "kind": "except",
+      "line": 227,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }

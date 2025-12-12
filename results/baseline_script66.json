@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 21,
+      "line": 20,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -17,7 +17,7 @@
       "function": "is_recent"
     },
     {
-      "line": 25,
+      "line": 24,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -31,7 +31,7 @@
       "function": "to_dict"
     },
     {
-      "line": 34,
+      "line": 33,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -52,10 +52,10 @@
       "function": "from_dict"
     },
     {
-      "line": 46,
+      "line": 45,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -66,14 +66,14 @@
       "function": "from_dict"
     },
     {
-      "line": 51,
+      "line": 50,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 56,
+      "line": 55,
       "level": "DEBUG",
       "message": "Entering add_reading",
       "kind": "entry",
@@ -87,7 +87,7 @@
       "function": "add_reading"
     },
     {
-      "line": 62,
+      "line": 61,
       "level": "DEBUG",
       "message": "Entering latest",
       "kind": "entry",
@@ -108,7 +108,7 @@
       "function": "latest"
     },
     {
-      "line": 67,
+      "line": 66,
       "level": "DEBUG",
       "message": "Entering average_temperature",
       "kind": "entry",
@@ -129,7 +129,7 @@
       "function": "average_temperature"
     },
     {
-      "line": 73,
+      "line": 72,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -143,7 +143,7 @@
       "function": "to_dict"
     },
     {
-      "line": 81,
+      "line": 80,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -157,14 +157,14 @@
       "function": "from_dict"
     },
     {
-      "line": 94,
+      "line": 93,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 98,
+      "line": 97,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -178,7 +178,7 @@
       "function": "_url"
     },
     {
-      "line": 101,
+      "line": 100,
       "level": "DEBUG",
       "message": "Entering fetch_station_data",
       "kind": "entry",
@@ -199,10 +199,10 @@
       "function": "fetch_station_data"
     },
     {
-      "line": 110,
+      "line": 109,
       "level": "ERROR",
       "message": "Exception in fetch_station_data",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_station_data"
     },
     {
@@ -213,7 +213,7 @@
       "function": "fetch_station_data"
     },
     {
-      "line": 114,
+      "line": 113,
       "level": "DEBUG",
       "message": "Entering load_station",
       "kind": "entry",
@@ -227,10 +227,10 @@
       "function": "load_station"
     },
     {
-      "line": 119,
+      "line": 118,
       "level": "ERROR",
       "message": "Exception in load_station",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_station"
     },
     {
@@ -241,28 +241,28 @@
       "function": "load_station"
     },
     {
-      "line": 123,
+      "line": 122,
       "level": "DEBUG",
       "message": "Entering save_station",
       "kind": "entry",
       "function": "save_station"
     },
     {
-      "line": 130,
+      "line": 129,
       "level": "ERROR",
       "message": "Exception in save_station",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_station"
     },
     {
-      "line": 134,
+      "line": 133,
       "level": "ERROR",
       "message": "Exception in save_station",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_station"
     },
     {
-      "line": 138,
+      "line": 137,
       "level": "DEBUG",
       "message": "Entering summarize_station",
       "kind": "entry",
@@ -283,7 +283,7 @@
       "function": "summarize_station"
     },
     {
-      "line": 153,
+      "line": 152,
       "level": "DEBUG",
       "message": "Entering merge_remote",
       "kind": "entry",
@@ -304,7 +304,7 @@
       "function": "merge_remote"
     },
     {
-      "line": 166,
+      "line": 165,
       "level": "DEBUG",
       "message": "Entering simulate_station",
       "kind": "entry",
@@ -318,7 +318,7 @@
       "function": "simulate_station"
     },
     {
-      "line": 182,
+      "line": 181,
       "level": "DEBUG",
       "message": "Entering filter_hot_readings",
       "kind": "entry",
@@ -332,17 +332,17 @@
       "function": "filter_hot_readings"
     },
     {
-      "line": 186,
+      "line": 185,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 203,
+      "line": 202,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

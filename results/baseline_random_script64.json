@@ -19,9 +19,9 @@
       "function": "is_recent"
     },
     {
-      "line": 44,
+      "line": 43,
       "level": "ERROR",
-      "message": "Random log at line 44 in from_dict",
+      "message": "Random log at line 43 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
@@ -33,30 +33,30 @@
       "function": "from_dict"
     },
     {
-      "line": 57,
+      "line": 56,
       "level": "DEBUG",
-      "message": "Random log at line 57 in from_dict",
-      "kind": "except",
+      "message": "Random log at line 56 in from_dict",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
-      "line": 72,
+      "line": 71,
       "level": "DEBUG",
-      "message": "Random log at line 72 in all",
+      "message": "Random log at line 71 in all",
       "kind": "entry",
       "function": "all"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "ERROR",
-      "message": "Random log at line 75 in active_devices",
+      "message": "Random log at line 74 in active_devices",
       "kind": "entry",
       "function": "active_devices"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "WARNING",
-      "message": "Random log at line 78 in to_dict",
+      "message": "Random log at line 77 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -68,44 +68,44 @@
       "function": "to_dict"
     },
     {
-      "line": 85,
+      "line": 84,
       "level": "WARNING",
-      "message": "Random log at line 85 in from_dict",
+      "message": "Random log at line 84 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
     {
-      "line": 123,
+      "line": 122,
       "level": "INFO",
-      "message": "Random log at line 123 in push_aggregates",
-      "kind": "except",
+      "message": "Random log at line 122 in push_aggregates",
+      "kind": "exception",
       "function": "push_aggregates"
     },
     {
-      "line": 145,
+      "line": 144,
       "level": "WARNING",
-      "message": "Random log at line 145 in save_fleet",
-      "kind": "except",
+      "message": "Random log at line 144 in save_fleet",
+      "kind": "exception",
       "function": "save_fleet"
     },
     {
-      "line": 149,
+      "line": 148,
       "level": "WARNING",
-      "message": "Random log at line 149 in compute_stats",
+      "message": "Random log at line 148 in compute_stats",
       "kind": "entry",
       "function": "compute_stats"
     },
     {
-      "line": 164,
+      "line": 163,
       "level": "INFO",
-      "message": "Random log at line 164 in detect_offline",
+      "message": "Random log at line 163 in detect_offline",
       "kind": "entry",
       "function": "detect_offline"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "ERROR",
-      "message": "Random log at line 173 in simulate_fleet",
+      "message": "Random log at line 172 in simulate_fleet",
       "kind": "entry",
       "function": "simulate_fleet"
     },

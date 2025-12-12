@@ -1,102 +1,347 @@
 {
-  "file": "script65.py",
-  "logs": [
-    {
-      "line": 52,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering Product.from_dict"
-    },
-    {
-      "line": 67,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to parse product in Product.from_dict"
-    },
-    {
-      "line": 115,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering PricingClient.fetch_price"
-    },
-    {
-      "line": 123,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Received price from remote service in PricingClient.fetch_price"
-    },
-    {
-      "line": 125,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error while fetching price in PricingClient.fetch_price"
-    },
-    {
-      "line": 129,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering load_inventory"
-    },
-    {
-      "line": 133,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to load inventory, using empty local inventory in load_inventory"
-    },
-    {
-      "line": 137,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering save_inventory"
-    },
-    {
-      "line": 143,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error while writing fleet file in save_inventory"
-    },
-    {
-      "line": 151,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering compute_summary"
-    },
-    {
-      "line": 156,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Returning non-empty summary result from compute_summary"
-    },
-    {
-      "line": 164,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering update_prices"
-    },
-    {
-      "line": 171,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Returning updated count from update_prices"
-    },
-    {
-      "line": 199,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering main"
-    },
-    {
-      "line": 217,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to write summary file, exiting with error in main"
-    },
-    {
-      "line": 218,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Completed successfully, exiting with code 0 in main"
-    }
-  ]
+"file": "script65.py",
+"logs": [
+{
+"line": 22,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Product.is_low_stock"
+},
+{
+"line": 23,
+"kind": "return",
+"level": "INFO",
+"message": "Returning low-stock boolean in Product.is_low_stock"
+},
+{
+"line": 25,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Product.age_hours"
+},
+{
+"line": 29,
+"kind": "return",
+"level": "INFO",
+"message": "Returning product age in hours from Product.age_hours"
+},
+{
+"line": 31,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Product.matches"
+},
+{
+"line": 34,
+"kind": "return",
+"level": "INFO",
+"message": "Returning True in Product.matches"
+},
+{
+"line": 36,
+"kind": "return",
+"level": "INFO",
+"message": "Returning True in Product.matches"
+},
+{
+"line": 37,
+"kind": "return",
+"level": "INFO",
+"message": "Returning whether any tag contains the query in Product.matches"
+},
+{
+"line": 39,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Product.to_dict"
+},
+{
+"line": 40,
+"kind": "return",
+"level": "INFO",
+"message": "Returning product dict in Product.to_dict"
+},
+{
+"line": 51,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Product.from_dict"
+},
+{
+"line": 57,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Product instance from Product.from_dict"
+},
+{
+"line": 66,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to create Product from raw data in Product.from_dict"
+},
+{
+"line": 67,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from Product.from_dict"
+},
+{
+"line": 71,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Inventory.init"
+},
+{
+"line": 75,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Inventory.add"
+},
+{
+"line": 78,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Inventory.get"
+},
+{
+"line": 79,
+"kind": "return",
+"level": "INFO",
+"message": "Returning product from Inventory.get"
+},
+{
+"line": 81,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Inventory.all"
+},
+{
+"line": 82,
+"kind": "return",
+"level": "INFO",
+"message": "Returning list of products from Inventory.all"
+},
+{
+"line": 84,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Inventory.search"
+},
+{
+"line": 85,
+"kind": "return",
+"level": "INFO",
+"message": "Returning search results from Inventory.search"
+},
+{
+"line": 87,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Inventory.low_stock"
+},
+{
+"line": 88,
+"kind": "return",
+"level": "INFO",
+"message": "Returning low-stock products from Inventory.low_stock"
+},
+{
+"line": 90,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Inventory.to_dict"
+},
+{
+"line": 91,
+"kind": "return",
+"level": "INFO",
+"message": "Returning inventory dict in Inventory.to_dict"
+},
+{
+"line": 97,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Inventory.from_dict"
+},
+{
+"line": 103,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Inventory instance from Inventory.from_dict"
+},
+{
+"line": 107,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering PricingClient.init"
+},
+{
+"line": 111,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering PricingClient._url"
+},
+{
+"line": 112,
+"kind": "return",
+"level": "INFO",
+"message": "Returning pricing URL in PricingClient._url"
+},
+{
+"line": 114,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering PricingClient.fetch_price"
+},
+{
+"line": 122,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None (no price) from PricingClient.fetch_price"
+},
+{
+"line": 123,
+"kind": "return",
+"level": "INFO",
+"message": "Returning fetched price from PricingClient.fetch_price"
+},
+{
+"line": 124,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to fetch or parse price in PricingClient.fetch_price"
+},
+{
+"line": 125,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from PricingClient.fetch_price after error"
+},
+{
+"line": 128,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering load_inventory"
+},
+{
+"line": 131,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Inventory from load_inventory"
+},
+{
+"line": 132,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to load inventory from path in load_inventory"
+},
+{
+"line": 133,
+"kind": "return",
+"level": "INFO",
+"message": "Returning default local Inventory from load_inventory"
+},
+{
+"line": 136,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering save_inventory"
+},
+{
+"line": 142,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to write inventory to disk in save_inventory"
+},
+{
+"line": 146,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to finalize inventory save in save_inventory"
+},
+{
+"line": 150,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering compute_summary"
+},
+{
+"line": 153,
+"kind": "return",
+"level": "INFO",
+"message": "Returning empty summary in compute_summary"
+},
+{
+"line": 156,
+"kind": "return",
+"level": "INFO",
+"message": "Returning computed summary in compute_summary"
+},
+{
+"line": 163,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering update_prices"
+},
+{
+"line": 171,
+"kind": "return",
+"level": "INFO",
+"message": "Returning number of updated prices from update_prices"
+},
+{
+"line": 174,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering simulate_sales"
+},
+{
+"line": 178,
+"kind": "return",
+"level": "INFO",
+"message": "Returning simulation history from simulate_sales"
+},
+{
+"line": 185,
+"kind": "return",
+"level": "INFO",
+"message": "Returning simulation history from simulate_sales"
+},
+{
+"line": 188,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering restock_low"
+},
+{
+"line": 195,
+"kind": "return",
+"level": "INFO",
+"message": "Returning restocked count from restock_low"
+},
+{
+"line": 198,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering main"
+},
+{
+"line": 216,
+"kind": "exception",
+"level": "ERROR",
+"message": "Unexpected error in main"
+},
+{
+"line": 217,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 1 (error) from main"
+},
+{
+"line": 218,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0 (success) from main"
 }
-
+]
+}
