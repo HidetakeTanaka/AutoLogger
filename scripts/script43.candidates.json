@@ -1,10 +1,10 @@
 {
-  "file": "scripts/script43.py",
+  "file": "scripts\\script43.py",
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 21,
-      "end_line": 21,
+      "line": 20,
+      "end_line": 20,
       "function": "is_recent",
       "class_name": "Note",
       "code": "def is_recent(self, days: int = 7) -> bool:",
@@ -17,7 +17,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 22,
       "end_line": 22,
       "function": "is_recent",
@@ -28,13 +28,13 @@
         "now",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 25,
-      "end_line": 25,
+      "line": 24,
+      "end_line": 24,
       "function": "matches_query",
       "class_name": "Note",
       "code": "def matches_query(self, query: str) -> bool:",
@@ -48,7 +48,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 27,
       "end_line": 27,
       "function": "matches_query",
@@ -60,11 +60,11 @@
         "self",
         "text"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 30,
       "end_line": 30,
       "function": "matches_query",
@@ -76,11 +76,11 @@
         "self",
         "text"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 31,
       "end_line": 31,
       "function": "matches_query",
@@ -92,13 +92,13 @@
         "self",
         "text"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 34,
-      "end_line": 34,
+      "line": 33,
+      "end_line": 33,
       "function": "to_dict",
       "class_name": "Note",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -109,7 +109,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 34,
       "end_line": 34,
       "function": "to_dict",
@@ -118,13 +118,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 45,
-      "end_line": 45,
+      "line": 44,
+      "end_line": 44,
       "function": "from_dict",
       "class_name": "Note",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Note\":",
@@ -138,9 +138,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 50,
-      "end_line": 50,
+      "kind": "exception_handler_entry",
+      "line": 49,
+      "end_line": 49,
       "function": "from_dict",
       "class_name": "Note",
       "code": "except ...",
@@ -150,11 +150,11 @@
         "created_raw",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 53,
       "end_line": 53,
       "function": "from_dict",
@@ -166,13 +166,13 @@
         "created_raw",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 68,
-      "end_line": 68,
+      "line": 67,
+      "end_line": 67,
       "function": "add",
       "class_name": "Notebook",
       "code": "def add(self, note: Note) -> None:",
@@ -185,8 +185,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 71,
-      "end_line": 71,
+      "line": 70,
+      "end_line": 70,
       "function": "get",
       "class_name": "Notebook",
       "code": "def get(self, note_id: str) -> Optional[Note]:",
@@ -198,7 +198,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 71,
       "end_line": 71,
       "function": "get",
@@ -208,13 +208,13 @@
         "note_id",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 74,
-      "end_line": 74,
+      "line": 73,
+      "end_line": 73,
       "function": "all",
       "class_name": "Notebook",
       "code": "def all(self) -> List[Note]:",
@@ -225,7 +225,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 74,
       "end_line": 74,
       "function": "all",
@@ -234,13 +234,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 77,
-      "end_line": 77,
+      "line": 76,
+      "end_line": 76,
       "function": "active_notes",
       "class_name": "Notebook",
       "code": "def active_notes(self) -> List[Note]:",
@@ -251,7 +251,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 77,
       "end_line": 77,
       "function": "active_notes",
@@ -260,13 +260,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 82,
-      "end_line": 82,
+      "line": 81,
+      "end_line": 81,
       "function": "__init__",
       "class_name": "SyncClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
@@ -280,8 +280,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 86,
-      "end_line": 86,
+      "line": 85,
+      "end_line": 85,
       "function": "_url",
       "class_name": "SyncClient",
       "code": "def _url(self, path: str) -> str:",
@@ -293,7 +293,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 88,
       "end_line": 88,
       "function": "_url",
@@ -303,13 +303,13 @@
         "path",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 91,
-      "end_line": 91,
+      "line": 90,
+      "end_line": 90,
       "function": "fetch_notes",
       "class_name": "SyncClient",
       "code": "def fetch_notes(self) -> List[Dict[str, Any]]:",
@@ -325,9 +325,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 97,
-      "end_line": 97,
+      "kind": "exception_handler_entry",
+      "line": 96,
+      "end_line": 96,
       "function": "fetch_notes",
       "class_name": "SyncClient",
       "code": "except ...",
@@ -339,11 +339,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 97,
       "end_line": 97,
       "function": "fetch_notes",
@@ -357,13 +357,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 101,
-      "end_line": 101,
+      "kind": "exception_handler_entry",
+      "line": 100,
+      "end_line": 100,
       "function": "fetch_notes",
       "class_name": "SyncClient",
       "code": "except ...",
@@ -375,11 +375,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 101,
       "end_line": 101,
       "function": "fetch_notes",
@@ -393,11 +393,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 104,
       "end_line": 104,
       "function": "fetch_notes",
@@ -411,11 +411,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 105,
       "end_line": 105,
       "function": "fetch_notes",
@@ -429,13 +429,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 109,
-      "end_line": 109,
+      "line": 108,
+      "end_line": 108,
       "function": "load_notes",
       "class_name": null,
       "code": "def load_notes(path: Path) -> Notebook:",
@@ -450,7 +450,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 111,
       "end_line": 111,
       "function": "load_notes",
@@ -463,13 +463,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 116,
-      "end_line": 116,
+      "kind": "exception_handler_entry",
+      "line": 115,
+      "end_line": 115,
       "function": "load_notes",
       "class_name": null,
       "code": "except ...",
@@ -480,11 +480,11 @@
         "path",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 116,
       "end_line": 116,
       "function": "load_notes",
@@ -497,11 +497,11 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 122,
       "end_line": 122,
       "function": "load_notes",
@@ -514,13 +514,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 126,
-      "end_line": 126,
+      "line": 125,
+      "end_line": 125,
       "function": "save_notes",
       "class_name": null,
       "code": "def save_notes(path: Path, notebook: Notebook) -> None:",
@@ -535,8 +535,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 133,
-      "end_line": 133,
+      "line": 132,
+      "end_line": 132,
       "function": "filter_notes_by_tag",
       "class_name": null,
       "code": "def filter_notes_by_tag(notes: Iterable[Note], tag: str) -> List[Note]:",
@@ -549,7 +549,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 135,
       "end_line": 135,
       "function": "filter_notes_by_tag",
@@ -560,11 +560,11 @@
         "notes",
         "tag"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 136,
       "end_line": 136,
       "function": "filter_notes_by_tag",
@@ -575,13 +575,13 @@
         "notes",
         "tag"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 140,
-      "end_line": 140,
+      "line": 139,
+      "end_line": 139,
       "function": "search_notes",
       "class_name": null,
       "code": "def search_notes(notes: Iterable[Note], query: str) -> List[Note]:",
@@ -594,7 +594,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 142,
       "end_line": 142,
       "function": "search_notes",
@@ -605,13 +605,13 @@
         "notes",
         "query"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 146,
-      "end_line": 146,
+      "line": 145,
+      "end_line": 145,
       "function": "merge_remote_notes",
       "class_name": null,
       "code": "def merge_remote_notes(notebook: Notebook, remote_rows: List[Dict[str, Any]]) -> int:",
@@ -626,7 +626,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 158,
       "end_line": 158,
       "function": "merge_remote_notes",
@@ -639,13 +639,13 @@
         "notebook",
         "remote_rows"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 162,
-      "end_line": 162,
+      "line": 161,
+      "end_line": 161,
       "function": "summarize_by_tag",
       "class_name": null,
       "code": "def summarize_by_tag(notes: Iterable[Note]) -> Dict[str, int]:",
@@ -658,7 +658,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 169,
       "end_line": 169,
       "function": "summarize_by_tag",
@@ -669,13 +669,13 @@
         "key",
         "notes"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 173,
-      "end_line": 173,
+      "line": 172,
+      "end_line": 172,
       "function": "choose_note_to_review",
       "class_name": null,
       "code": "def choose_note_to_review(notes: Iterable[Note]) -> Optional[Note]:",
@@ -688,7 +688,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 175,
       "end_line": 175,
       "function": "choose_note_to_review",
@@ -699,11 +699,11 @@
         "idx",
         "notes"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 181,
       "end_line": 181,
       "function": "choose_note_to_review",
@@ -714,11 +714,11 @@
         "idx",
         "notes"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 182,
       "end_line": 182,
       "function": "choose_note_to_review",
@@ -729,13 +729,13 @@
         "idx",
         "notes"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 186,
-      "end_line": 186,
+      "line": 185,
+      "end_line": 185,
       "function": "main",
       "class_name": null,
       "code": "def main(base_dir: str = \"data\") -> int:",
@@ -759,9 +759,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 196,
-      "end_line": 196,
+      "kind": "exception_handler_entry",
+      "line": 195,
+      "end_line": 195,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -781,13 +781,13 @@
         "summary_path",
         "tag_counts"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "except",
-      "line": 215,
-      "end_line": 215,
+      "kind": "exception_handler_entry",
+      "line": 214,
+      "end_line": 214,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -807,11 +807,11 @@
         "summary_path",
         "tag_counts"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 215,
       "end_line": 215,
       "function": "main",
@@ -833,11 +833,11 @@
         "summary_path",
         "tag_counts"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 216,
       "end_line": 216,
       "function": "main",
@@ -859,7 +859,7 @@
         "summary_path",
         "tag_counts"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]
