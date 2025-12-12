@@ -1,10 +1,10 @@
 {
-  "file": "scripts/script44.py",
+  "file": "scripts\\script44.py",
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 17,
-      "end_line": 17,
+      "line": 16,
+      "end_line": 16,
       "function": "is_overdue",
       "class_name": "Task",
       "code": "def is_overdue(self, now: Optional[datetime] = None) -> bool:",
@@ -16,7 +16,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 20,
       "end_line": 20,
       "function": "is_overdue",
@@ -26,11 +26,11 @@
         "now",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 21,
       "end_line": 21,
       "function": "is_overdue",
@@ -40,13 +40,13 @@
         "now",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 24,
-      "end_line": 24,
+      "line": 23,
+      "end_line": 23,
       "function": "to_dict",
       "class_name": "Task",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -57,7 +57,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 24,
       "end_line": 24,
       "function": "to_dict",
@@ -66,13 +66,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 34,
-      "end_line": 34,
+      "line": 33,
+      "end_line": 33,
       "function": "from_dict",
       "class_name": "Task",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Task\":",
@@ -86,9 +86,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 38,
-      "end_line": 38,
+      "kind": "exception_handler_entry",
+      "line": 37,
+      "end_line": 37,
       "function": "from_dict",
       "class_name": "Task",
       "code": "except ...",
@@ -98,11 +98,11 @@
         "due_raw",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 39,
       "end_line": 39,
       "function": "from_dict",
@@ -114,13 +114,13 @@
         "due_raw",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 53,
-      "end_line": 53,
+      "line": 52,
+      "end_line": 52,
       "function": "__init__",
       "class_name": "Board",
       "code": "def __init__(self) -> None:",
@@ -132,8 +132,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 56,
-      "end_line": 56,
+      "line": 55,
+      "end_line": 55,
       "function": "add",
       "class_name": "Board",
       "code": "def add(self, task: Task) -> None:",
@@ -146,8 +146,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 59,
-      "end_line": 59,
+      "line": 58,
+      "end_line": 58,
       "function": "get",
       "class_name": "Board",
       "code": "def get(self, task_id: str) -> Optional[Task]:",
@@ -159,7 +159,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 59,
       "end_line": 59,
       "function": "get",
@@ -169,13 +169,13 @@
         "self",
         "task_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 62,
-      "end_line": 62,
+      "line": 61,
+      "end_line": 61,
       "function": "all",
       "class_name": "Board",
       "code": "def all(self) -> List[Task]:",
@@ -186,7 +186,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 62,
       "end_line": 62,
       "function": "all",
@@ -195,13 +195,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 65,
-      "end_line": 65,
+      "line": 64,
+      "end_line": 64,
       "function": "pending",
       "class_name": "Board",
       "code": "def pending(self) -> List[Task]:",
@@ -212,7 +212,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 65,
       "end_line": 65,
       "function": "pending",
@@ -221,13 +221,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 68,
-      "end_line": 68,
+      "line": 67,
+      "end_line": 67,
       "function": "to_dict",
       "class_name": "Board",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -238,7 +238,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 68,
       "end_line": 68,
       "function": "to_dict",
@@ -247,13 +247,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 72,
-      "end_line": 72,
+      "line": 71,
+      "end_line": 71,
       "function": "load_board",
       "class_name": null,
       "code": "def load_board(path: Path) -> Board:",
@@ -267,7 +267,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 74,
       "end_line": 74,
       "function": "load_board",
@@ -279,13 +279,13 @@
         "path",
         "rows"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 79,
-      "end_line": 79,
+      "kind": "exception_handler_entry",
+      "line": 78,
+      "end_line": 78,
       "function": "load_board",
       "class_name": null,
       "code": "except ...",
@@ -295,11 +295,11 @@
         "path",
         "rows"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 79,
       "end_line": 79,
       "function": "load_board",
@@ -311,11 +311,11 @@
         "path",
         "rows"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 84,
       "end_line": 84,
       "function": "load_board",
@@ -327,13 +327,13 @@
         "path",
         "rows"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 88,
-      "end_line": 88,
+      "line": 87,
+      "end_line": 87,
       "function": "save_board",
       "class_name": null,
       "code": "def save_board(path: Path, board: Board) -> None:",
@@ -346,9 +346,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 94,
-      "end_line": 94,
+      "kind": "exception_handler_entry",
+      "line": 93,
+      "end_line": 93,
       "function": "save_board",
       "class_name": null,
       "code": "except ...",
@@ -357,11 +357,11 @@
         "path",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 94,
       "end_line": 94,
       "function": "save_board",
@@ -372,13 +372,13 @@
         "path",
         "tmp"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 98,
-      "end_line": 98,
+      "line": 97,
+      "end_line": 97,
       "function": "filter_overdue",
       "class_name": null,
       "code": "def filter_overdue(tasks: Iterable[Task], now: Optional[datetime] = None) -> List[Task]:",
@@ -390,7 +390,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 100,
       "end_line": 100,
       "function": "filter_overdue",
@@ -400,13 +400,13 @@
         "now",
         "tasks"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 104,
-      "end_line": 104,
+      "line": 103,
+      "end_line": 103,
       "function": "compute_summary",
       "class_name": null,
       "code": "def compute_summary(tasks: Iterable[Task]) -> Dict[str, Any]:",
@@ -420,7 +420,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 106,
       "end_line": 106,
       "function": "compute_summary",
@@ -432,11 +432,11 @@
         "overdue",
         "tasks"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 109,
       "end_line": 109,
       "function": "compute_summary",
@@ -448,13 +448,13 @@
         "overdue",
         "tasks"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 113,
-      "end_line": 113,
+      "line": 112,
+      "end_line": 112,
       "function": "main",
       "class_name": null,
       "code": "def main(base_dir: str = \"data\") -> int:",
@@ -480,9 +480,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 117,
-      "end_line": 117,
+      "kind": "exception_handler_entry",
+      "line": 116,
+      "end_line": 116,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -504,11 +504,11 @@
         "summary",
         "tasks_path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 117,
       "end_line": 117,
       "function": "main",
@@ -532,13 +532,13 @@
         "summary",
         "tasks_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 150,
-      "end_line": 150,
+      "kind": "exception_handler_entry",
+      "line": 149,
+      "end_line": 149,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -560,11 +560,11 @@
         "summary",
         "tasks_path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 150,
       "end_line": 150,
       "function": "main",
@@ -588,11 +588,11 @@
         "summary",
         "tasks_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 160,
       "end_line": 160,
       "function": "main",
@@ -616,7 +616,7 @@
         "summary",
         "tasks_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]
