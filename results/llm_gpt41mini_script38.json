@@ -2,145 +2,109 @@
   "file": "script38.py",
   "logs": [
     {
-      "line": 40,
+      "line": 39,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering add_reading with reading: {reading}\")"
     },
     {
-      "line": 63,
+      "line": 62,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering get_or_create with device_id={device_id}, location={location}\")"
     },
     {
-      "line": 64,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Retrieved device with ID {device_id} from fleet devices.')"
-    },
-    {
       "line": 67,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Returning device with ID {device_id} from get_or_create at location {location}')"
+      "message": "logging.info(f'Returning device with ID {device_id} from get_or_create')"
     },
     {
-      "line": 70,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering all_readings method of Fleet instance {self}\")"
-    },
-    {
-      "line": 80,
+      "line": 79,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_config with path: {path}\")"
     },
     {
-      "line": 84,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Configuration loaded successfully from {path}')"
-    },
-    {
-      "line": 86,
-      "kind": "except",
+      "line": 85,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
     },
     {
-      "line": 90,
+      "line": 89,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered fetch_remote_readings with url={url}, retries={retries}, timeout={timeout}\")"
     },
     {
-      "line": 97,
-      "kind": "except",
+      "line": 96,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch remote readings from {url} after {attempt} attempts with timeout {timeout}')"
+      "message": "logging.error(f'Exception occurred while fetching remote readings from {url} on attempt {attempt}', exc_info=True)"
     },
     {
-      "line": 105,
-      "kind": "except",
+      "line": 104,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch remote readings from {url} after {attempt} attempts with timeout {timeout}s and retries {retries}', exc_info=True)"
+      "message": "logging.error(f'Exception occurred while fetching remote readings from {url} on attempt {attempt}', exc_info=True)"
     },
     {
-      "line": 105,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'No data found, returning empty list after {attempt} attempts to fetch from {url}')"
-    },
-    {
-      "line": 109,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning {len(items)} remote readings fetched from {url}')"
-    },
-    {
-      "line": 114,
+      "line": 113,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering read_local_cache with path: {path}\")"
     },
     {
-      "line": 120,
-      "kind": "except",
+      "line": 119,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to read local cache from {path}', exc_info=True)"
+      "message": "logging.error(f'Failed to read local cache from {path} with {rows} rows', exc_info=True)"
     },
     {
-      "line": 136,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error(f\"Failed to normalize row for device_id={device_id}, sensor_id={sensor_id}, timestamp={ts}\", exc_info=True)"
+      "line": 127,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"normalize_row called with row: {row}\")"
     },
     {
-      "line": 144,
+      "line": 135,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Error normalizing row for device_id={device_id}, sensor_id={sensor_id}, location={location}, ts={ts}', exc_info=True)"
+    },
+    {
+      "line": 143,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Starting ingest_readings for fleet {fleet} with {len(rows)} rows\")"
     },
     {
-      "line": 155,
+      "line": 154,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered compute_statistics with {len(readings)} readings\")"
     },
     {
-      "line": 162,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Statistics computed: count={count}, min={min(values)}, max={max(values)}, avg={total / count}')"
-    },
-    {
-      "line": 171,
+      "line": 170,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering group_by_unit with {len(readings)} readings\")"
+      "message": "logging.debug(f\"Entered group_by_unit with {len(readings)} readings\")"
     },
     {
-      "line": 177,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning grouped result with {len(result)} units from {len(readings)} readings')"
-    },
-    {
-      "line": 181,
+      "line": 180,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering save_report with path={path} and fleet={fleet.name if hasattr(fleet, 'name') else 'unknown'}\")"
+      "message": "logging.debug(f\"Entered save_report with path={path} and fleet={fleet}\")"
     },
     {
-      "line": 192,
+      "line": 191,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered select_recent with {len(readings)} readings and seconds={seconds}\")"
     },
     {
-      "line": 199,
+      "line": 198,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"

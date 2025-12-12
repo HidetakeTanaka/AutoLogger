@@ -2,7 +2,7 @@
   "file": "script34.py",
   "logs": [
     {
-      "line": 18,
+      "line": 17,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Sensor.is_temperature"
@@ -11,10 +11,10 @@
       "line": 18,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning temperature unit check result from Sensor.is_temperature"
+      "message": "Returning from Sensor.is_temperature"
     },
     {
-      "line": 21,
+      "line": 20,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Sensor.to_dict"
@@ -23,10 +23,10 @@
       "line": 21,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning dict representation from Sensor.to_dict"
+      "message": "Returning from Sensor.to_dict"
     },
     {
-      "line": 36,
+      "line": 35,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Reading.exceeds"
@@ -35,10 +35,10 @@
       "line": 36,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning threshold comparison result from Reading.exceeds"
+      "message": "Returning from Reading.exceeds"
     },
     {
-      "line": 39,
+      "line": 38,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Reading.to_tuple"
@@ -50,13 +50,13 @@
       "message": "Returning (sensor_id, value) tuple from Reading.to_tuple"
     },
     {
-      "line": 44,
+      "line": 43,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "Entering SensorStore.**init**"
+      "message": "Entering SensorStore.__init__"
     },
     {
-      "line": 48,
+      "line": 47,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering SensorStore.load"
@@ -68,10 +68,10 @@
       "message": "Returning from SensorStore.load"
     },
     {
-      "line": 55,
+      "line": 54,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to load sensors file in SensorStore.load"
+      "message": "Exception in SensorStore.load"
     },
     {
       "line": 56,
@@ -80,13 +80,13 @@
       "message": "Returning from SensorStore.load after load failure"
     },
     {
-      "line": 65,
+      "line": 64,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to parse sensor data in SensorStore.load"
+      "message": "Exception in SensorStore.load"
     },
     {
-      "line": 70,
+      "line": 69,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering SensorStore.get"
@@ -98,7 +98,7 @@
       "message": "Returning sensor from SensorStore.get"
     },
     {
-      "line": 73,
+      "line": 72,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering SensorStore.all"
@@ -107,10 +107,10 @@
       "line": 73,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning list of sensors from SensorStore.all"
+      "message": "Returning from SensorStore.all"
     },
     {
-      "line": 77,
+      "line": 76,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_readings_csv"
@@ -122,16 +122,16 @@
       "message": "Returning readings from load_readings_csv"
     },
     {
-      "line": 89,
+      "line": 88,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to open readings CSV in load_readings_csv"
+      "message": "Exception in load_readings_csv"
     },
     {
-      "line": 92,
+      "line": 91,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to parse readings CSV in load_readings_csv"
+      "message": "Exception in load_readings_csv"
     },
     {
       "line": 92,
@@ -146,7 +146,7 @@
       "message": "Returning readings from load_readings_csv after successful load"
     },
     {
-      "line": 97,
+      "line": 96,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering group_by_sensor"
@@ -158,7 +158,7 @@
       "message": "Returning readings grouped by sensor in group_by_sensor"
     },
     {
-      "line": 104,
+      "line": 103,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering compute_statistics"
@@ -167,16 +167,16 @@
       "line": 105,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning default statistics for empty values in compute_statistics"
+      "message": "Returning from compute_statistics"
     },
     {
       "line": 109,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning computed statistics in compute_statistics"
+      "message": "Returning from compute_statistics"
     },
     {
-      "line": 113,
+      "line": 112,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering find_alarms"
@@ -188,19 +188,19 @@
       "message": "Returning alarms list from find_alarms"
     },
     {
-      "line": 133,
+      "line": 132,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering export_alarms"
     },
     {
-      "line": 139,
+      "line": 138,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering export_stats"
     },
     {
-      "line": 145,
+      "line": 144,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_config"
@@ -218,7 +218,7 @@
       "message": "Returning loaded config from load_config"
     },
     {
-      "line": 151,
+      "line": 150,
       "kind": "exception",
       "level": "ERROR",
       "message": "Failed to load config in load_config"
@@ -227,10 +227,10 @@
       "line": 151,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning empty config from load_config after error"
+      "message": "Exception in load_config after error"
     },
     {
-      "line": 155,
+      "line": 154,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering summarize_sensors"
@@ -242,7 +242,7 @@
       "message": "Returning sensor summary from summarize_sensors"
     },
     {
-      "line": 170,
+      "line": 169,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering main"

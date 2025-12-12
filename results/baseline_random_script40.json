@@ -19,9 +19,9 @@
       "function": "is_in_stock"
     },
     {
-      "line": 30,
+      "line": 29,
       "level": "ERROR",
-      "message": "Random log at line 30 in to_dict",
+      "message": "Random log at line 29 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -33,9 +33,9 @@
       "function": "to_dict"
     },
     {
-      "line": 45,
+      "line": 44,
       "level": "DEBUG",
-      "message": "Random log at line 45 in total",
+      "message": "Random log at line 44 in total",
       "kind": "entry",
       "function": "total"
     },
@@ -47,16 +47,16 @@
       "function": "is_open"
     },
     {
-      "line": 79,
+      "line": 78,
       "level": "ERROR",
-      "message": "Random log at line 79 in get",
+      "message": "Random log at line 78 in get",
       "kind": "entry",
       "function": "get"
     },
     {
-      "line": 82,
+      "line": 81,
       "level": "WARNING",
-      "message": "Random log at line 82 in all",
+      "message": "Random log at line 81 in all",
       "kind": "entry",
       "function": "all"
     },
@@ -68,9 +68,9 @@
       "function": "all"
     },
     {
-      "line": 85,
+      "line": 84,
       "level": "WARNING",
-      "message": "Random log at line 85 in to_dict",
+      "message": "Random log at line 84 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -89,31 +89,31 @@
       "function": "load_orders"
     },
     {
-      "line": 161,
+      "line": 160,
       "level": "WARNING",
-      "message": "Random log at line 161 in load_orders",
-      "kind": "except",
+      "message": "Random log at line 160 in load_orders",
+      "kind": "exception",
       "function": "load_orders"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "INFO",
-      "message": "Random log at line 173 in summarize_orders",
+      "message": "Random log at line 172 in summarize_orders",
       "kind": "entry",
       "function": "summarize_orders"
     },
     {
-      "line": 189,
+      "line": 188,
       "level": "ERROR",
-      "message": "Random log at line 189 in find_high_value_orders",
+      "message": "Random log at line 188 in find_high_value_orders",
       "kind": "entry",
       "function": "find_high_value_orders"
     },
     {
-      "line": 221,
+      "line": 220,
       "level": "DEBUG",
-      "message": "Random log at line 221 in load_config",
-      "kind": "except",
+      "message": "Random log at line 220 in load_config",
+      "kind": "exception",
       "function": "load_config"
     },
     {

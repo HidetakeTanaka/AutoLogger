@@ -19,9 +19,9 @@
       "function": "popularity_score"
     },
     {
-      "line": 45,
+      "line": 44,
       "level": "ERROR",
-      "message": "Random log at line 45 in load",
+      "message": "Random log at line 44 in load",
       "kind": "entry",
       "function": "load"
     },
@@ -33,23 +33,23 @@
       "function": "load"
     },
     {
-      "line": 52,
+      "line": 51,
       "level": "DEBUG",
-      "message": "Random log at line 52 in load",
-      "kind": "except",
+      "message": "Random log at line 51 in load",
+      "kind": "exception",
       "function": "load"
     },
     {
-      "line": 77,
+      "line": 76,
       "level": "DEBUG",
-      "message": "Random log at line 77 in all",
+      "message": "Random log at line 76 in all",
       "kind": "entry",
       "function": "all"
     },
     {
-      "line": 82,
+      "line": 81,
       "level": "ERROR",
-      "message": "Random log at line 82 in __init__",
+      "message": "Random log at line 81 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
@@ -61,10 +61,10 @@
       "function": "load"
     },
     {
-      "line": 91,
+      "line": 90,
       "level": "ERROR",
-      "message": "Random log at line 91 in load",
-      "kind": "except",
+      "message": "Random log at line 90 in load",
+      "kind": "exception",
       "function": "load"
     },
     {

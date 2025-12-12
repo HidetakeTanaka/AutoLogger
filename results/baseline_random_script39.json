@@ -26,9 +26,9 @@
       "function": "is_recent"
     },
     {
-      "line": 48,
+      "line": 47,
       "level": "DEBUG",
-      "message": "Random log at line 48 in to_dict",
+      "message": "Random log at line 47 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -40,30 +40,30 @@
       "function": "to_dict"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "DEBUG",
-      "message": "Random log at line 80 in load",
+      "message": "Random log at line 79 in load",
       "kind": "entry",
       "function": "load"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "ERROR",
-      "message": "Random log at line 87 in load",
-      "kind": "except",
+      "message": "Random log at line 86 in load",
+      "kind": "exception",
       "function": "load"
     },
     {
-      "line": 99,
+      "line": 98,
       "level": "WARNING",
-      "message": "Random log at line 99 in load",
-      "kind": "except",
+      "message": "Random log at line 98 in load",
+      "kind": "exception",
       "function": "load"
     },
     {
-      "line": 104,
+      "line": 103,
       "level": "ERROR",
-      "message": "Random log at line 104 in all",
+      "message": "Random log at line 103 in all",
       "kind": "entry",
       "function": "all"
     },
@@ -75,16 +75,16 @@
       "function": "all"
     },
     {
-      "line": 152,
+      "line": 151,
       "level": "INFO",
-      "message": "Random log at line 152 in get_json",
-      "kind": "except",
+      "message": "Random log at line 151 in get_json",
+      "kind": "exception",
       "function": "get_json"
     },
     {
-      "line": 179,
+      "line": 178,
       "level": "WARNING",
-      "message": "Random log at line 179 in load_users",
+      "message": "Random log at line 178 in load_users",
       "kind": "entry",
       "function": "load_users"
     },
@@ -96,16 +96,16 @@
       "function": "load_users"
     },
     {
-      "line": 196,
+      "line": 195,
       "level": "INFO",
-      "message": "Random log at line 196 in load_users",
-      "kind": "except",
+      "message": "Random log at line 195 in load_users",
+      "kind": "exception",
       "function": "load_users"
     },
     {
-      "line": 201,
+      "line": 200,
       "level": "ERROR",
-      "message": "Random log at line 201 in fetch_remote_products",
+      "message": "Random log at line 200 in fetch_remote_products",
       "kind": "entry",
       "function": "fetch_remote_products"
     },

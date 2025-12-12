@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 20,
-      "end_line": 20,
+      "line": 19,
+      "end_line": 19,
       "function": "is_recent",
       "class_name": "Event",
       "code": "def is_recent(self, now: Optional[datetime] = None, minutes: int = 60) -> bool:",
@@ -18,7 +18,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 23,
       "end_line": 23,
       "function": "is_recent",
@@ -30,13 +30,13 @@
         "now",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 26,
-      "end_line": 26,
+      "line": 25,
+      "end_line": 25,
       "function": "to_dict",
       "class_name": "Event",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -47,7 +47,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 26,
       "end_line": 26,
       "function": "to_dict",
@@ -56,13 +56,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 43,
-      "end_line": 43,
+      "line": 42,
+      "end_line": 42,
       "function": "is_active",
       "class_name": "User",
       "code": "def is_active(self) -> bool:",
@@ -73,7 +73,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 43,
       "end_line": 43,
       "function": "is_active",
@@ -82,13 +82,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 46,
-      "end_line": 46,
+      "line": 45,
+      "end_line": 45,
       "function": "update_country",
       "class_name": "User",
       "code": "def update_country(self, country: str) -> None:",
@@ -101,8 +101,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 49,
-      "end_line": 49,
+      "line": 48,
+      "end_line": 48,
       "function": "to_dict",
       "class_name": "User",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -113,7 +113,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 49,
       "end_line": 49,
       "function": "to_dict",
@@ -122,13 +122,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 64,
-      "end_line": 64,
+      "line": 63,
+      "end_line": 63,
       "function": "matches",
       "class_name": "Segment",
       "code": "def matches(self, user: User, events: List[Event]) -> bool:",
@@ -142,7 +142,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 65,
       "end_line": 65,
       "function": "matches",
@@ -154,11 +154,11 @@
         "self",
         "user"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 67,
       "end_line": 67,
       "function": "matches",
@@ -170,13 +170,13 @@
         "self",
         "user"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 72,
-      "end_line": 72,
+      "line": 71,
+      "end_line": 71,
       "function": "__init__",
       "class_name": "UserStore",
       "code": "def __init__(self, path: Path) -> None:",
@@ -189,8 +189,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 76,
-      "end_line": 76,
+      "line": 75,
+      "end_line": 75,
       "function": "load",
       "class_name": "UserStore",
       "code": "def load(self) -> None:",
@@ -207,7 +207,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 78,
       "end_line": 78,
       "function": "load",
@@ -222,13 +222,13 @@
         "uid",
         "users"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 83,
-      "end_line": 83,
+      "kind": "exception_handler_entry",
+      "line": 82,
+      "end_line": 82,
       "function": "load",
       "class_name": "UserStore",
       "code": "except ...",
@@ -241,11 +241,11 @@
         "uid",
         "users"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 84,
       "end_line": 84,
       "function": "load",
@@ -260,13 +260,13 @@
         "uid",
         "users"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 97,
-      "end_line": 97,
+      "line": 96,
+      "end_line": 96,
       "function": "save",
       "class_name": "UserStore",
       "code": "def save(self) -> None:",
@@ -280,8 +280,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 105,
-      "end_line": 105,
+      "line": 104,
+      "end_line": 104,
       "function": "get",
       "class_name": "UserStore",
       "code": "def get(self, user_id: str) -> Optional[User]:",
@@ -293,7 +293,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 105,
       "end_line": 105,
       "function": "get",
@@ -303,13 +303,13 @@
         "self",
         "user_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 108,
-      "end_line": 108,
+      "line": 107,
+      "end_line": 107,
       "function": "upsert",
       "class_name": "UserStore",
       "code": "def upsert(self, user: User) -> None:",
@@ -322,8 +322,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 111,
-      "end_line": 111,
+      "line": 110,
+      "end_line": 110,
       "function": "all",
       "class_name": "UserStore",
       "code": "def all(self) -> List[User]:",
@@ -334,7 +334,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 111,
       "end_line": 111,
       "function": "all",
@@ -343,13 +343,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 116,
-      "end_line": 116,
+      "line": 115,
+      "end_line": 115,
       "function": "__init__",
       "class_name": "EventStore",
       "code": "def __init__(self, path: Path) -> None:",
@@ -362,8 +362,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 119,
-      "end_line": 119,
+      "line": 118,
+      "end_line": 118,
       "function": "load",
       "class_name": "EventStore",
       "code": "def load(self) -> List[Event]:",
@@ -378,7 +378,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 120,
       "end_line": 120,
       "function": "load",
@@ -391,13 +391,13 @@
         "evt",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 125,
-      "end_line": 125,
+      "kind": "exception_handler_entry",
+      "line": 124,
+      "end_line": 124,
       "function": "load",
       "class_name": "EventStore",
       "code": "except ...",
@@ -408,11 +408,11 @@
         "evt",
         "self"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 125,
       "end_line": 125,
       "function": "load",
@@ -425,13 +425,13 @@
         "evt",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 131,
-      "end_line": 131,
+      "kind": "exception_handler_entry",
+      "line": 130,
+      "end_line": 130,
       "function": "load",
       "class_name": "EventStore",
       "code": "except ...",
@@ -442,11 +442,11 @@
         "evt",
         "self"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 140,
       "end_line": 140,
       "function": "load",
@@ -459,13 +459,13 @@
         "evt",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 144,
-      "end_line": 144,
+      "line": 143,
+      "end_line": 143,
       "function": "generate_random_events",
       "class_name": null,
       "code": "def generate_random_events(users: List[User], count: int = 50) -> List[Event]:",
@@ -482,7 +482,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 145,
       "end_line": 145,
       "function": "generate_random_events",
@@ -497,11 +497,11 @@
         "user",
         "users"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 159,
       "end_line": 159,
       "function": "generate_random_events",
@@ -516,13 +516,13 @@
         "user",
         "users"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 163,
-      "end_line": 163,
+      "line": 162,
+      "end_line": 162,
       "function": "write_events",
       "class_name": null,
       "code": "def write_events(path: Path, events: List[Event]) -> None:",
@@ -536,8 +536,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 170,
-      "end_line": 170,
+      "line": 169,
+      "end_line": 169,
       "function": "filter_recent_events",
       "class_name": null,
       "code": "def filter_recent_events(events: List[Event], minutes: int = 60) -> List[Event]:",
@@ -550,7 +550,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 171,
       "end_line": 171,
       "function": "filter_recent_events",
@@ -561,13 +561,13 @@
         "minutes",
         "now"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 175,
-      "end_line": 175,
+      "line": 174,
+      "end_line": 174,
       "function": "build_segments",
       "class_name": null,
       "code": "def build_segments() -> List[Segment]:",
@@ -576,20 +576,20 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 175,
       "end_line": 175,
       "function": "build_segments",
       "class_name": null,
       "code": "return [Segment(name='EU-active', countries=['DE', 'FR', 'ES'], min_events=2), Segment(name='Global-heavy', countries=[], min_events=5)]",
       "vars_in_scope": [],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 186,
-      "end_line": 186,
+      "line": 181,
+      "end_line": 181,
       "function": "assign_segments",
       "class_name": null,
       "code": "def assign_segments(",
@@ -603,7 +603,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 193,
       "end_line": 193,
       "function": "assign_segments",
@@ -615,13 +615,13 @@
         "segments",
         "users"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 197,
-      "end_line": 197,
+      "line": 196,
+      "end_line": 196,
       "function": "export_segments",
       "class_name": null,
       "code": "def export_segments(path: Path, mapping: Dict[str, List[str]]) -> None:",
@@ -635,8 +635,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 204,
-      "end_line": 204,
+      "line": 203,
+      "end_line": 203,
       "function": "load_or_create_users",
       "class_name": null,
       "code": "def load_or_create_users(path: Path) -> UserStore:",
@@ -649,7 +649,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 216,
       "end_line": 216,
       "function": "load_or_create_users",
@@ -660,13 +660,13 @@
         "store",
         "user"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 220,
-      "end_line": 220,
+      "line": 219,
+      "end_line": 219,
       "function": "main",
       "class_name": null,
       "code": "def main(base_dir: str = \"data\") -> int:",
@@ -687,7 +687,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 241,
       "end_line": 241,
       "function": "main",
@@ -706,7 +706,7 @@
         "store",
         "users_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 18,
-      "end_line": 18,
+      "line": 17,
+      "end_line": 17,
       "function": "can_withdraw",
       "class_name": "Account",
       "code": "def can_withdraw(self, amount: float) -> bool:",
@@ -16,7 +16,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 19,
       "end_line": 19,
       "function": "can_withdraw",
@@ -26,11 +26,11 @@
         "amount",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 20,
       "end_line": 20,
       "function": "can_withdraw",
@@ -40,13 +40,13 @@
         "amount",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 23,
-      "end_line": 23,
+      "line": 22,
+      "end_line": 22,
       "function": "withdraw",
       "class_name": "Account",
       "code": "def withdraw(self, amount: float) -> bool:",
@@ -58,7 +58,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 24,
       "end_line": 24,
       "function": "withdraw",
@@ -68,11 +68,11 @@
         "amount",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 26,
       "end_line": 26,
       "function": "withdraw",
@@ -82,13 +82,13 @@
         "amount",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 29,
-      "end_line": 29,
+      "line": 28,
+      "end_line": 28,
       "function": "deposit",
       "class_name": "Account",
       "code": "def deposit(self, amount: float) -> bool:",
@@ -100,7 +100,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 30,
       "end_line": 30,
       "function": "deposit",
@@ -110,11 +110,11 @@
         "amount",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 32,
       "end_line": 32,
       "function": "deposit",
@@ -124,13 +124,13 @@
         "amount",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 35,
-      "end_line": 35,
+      "line": 34,
+      "end_line": 34,
       "function": "to_dict",
       "class_name": "Account",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -141,7 +141,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 35,
       "end_line": 35,
       "function": "to_dict",
@@ -150,13 +150,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 52,
-      "end_line": 52,
+      "line": 51,
+      "end_line": 51,
       "function": "is_debit",
       "class_name": "Transaction",
       "code": "def is_debit(self) -> bool:",
@@ -167,7 +167,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 52,
       "end_line": 52,
       "function": "is_debit",
@@ -176,13 +176,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 55,
-      "end_line": 55,
+      "line": 54,
+      "end_line": 54,
       "function": "to_dict",
       "class_name": "Transaction",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -193,7 +193,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 55,
       "end_line": 55,
       "function": "to_dict",
@@ -202,13 +202,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 66,
-      "end_line": 66,
+      "line": 65,
+      "end_line": 65,
       "function": "__init__",
       "class_name": "AccountStore",
       "code": "def __init__(self, path: Path) -> None:",
@@ -221,8 +221,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 70,
-      "end_line": 70,
+      "line": 69,
+      "end_line": 69,
       "function": "load",
       "class_name": "AccountStore",
       "code": "def load(self) -> None:",
@@ -239,7 +239,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 72,
       "end_line": 72,
       "function": "load",
@@ -254,13 +254,13 @@
         "owner",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 77,
-      "end_line": 77,
+      "kind": "exception_handler_entry",
+      "line": 76,
+      "end_line": 76,
       "function": "load",
       "class_name": "AccountStore",
       "code": "except ...",
@@ -273,11 +273,11 @@
         "owner",
         "self"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 78,
       "end_line": 78,
       "function": "load",
@@ -292,13 +292,13 @@
         "owner",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 87,
-      "end_line": 87,
+      "kind": "exception_handler_entry",
+      "line": 86,
+      "end_line": 86,
       "function": "load",
       "class_name": "AccountStore",
       "code": "except ...",
@@ -311,13 +311,13 @@
         "owner",
         "self"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 92,
-      "end_line": 92,
+      "line": 91,
+      "end_line": 91,
       "function": "save",
       "class_name": "AccountStore",
       "code": "def save(self) -> None:",
@@ -330,8 +330,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 98,
-      "end_line": 98,
+      "line": 97,
+      "end_line": 97,
       "function": "get",
       "class_name": "AccountStore",
       "code": "def get(self, account_id: str) -> Optional[Account]:",
@@ -343,7 +343,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 98,
       "end_line": 98,
       "function": "get",
@@ -353,13 +353,13 @@
         "account_id",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 101,
-      "end_line": 101,
+      "line": 100,
+      "end_line": 100,
       "function": "all",
       "class_name": "AccountStore",
       "code": "def all(self) -> List[Account]:",
@@ -370,7 +370,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 101,
       "end_line": 101,
       "function": "all",
@@ -379,13 +379,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 106,
-      "end_line": 106,
+      "line": 105,
+      "end_line": 105,
       "function": "__init__",
       "class_name": "TransactionStore",
       "code": "def __init__(self, path: Path) -> None:",
@@ -398,8 +398,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 109,
-      "end_line": 109,
+      "line": 108,
+      "end_line": 108,
       "function": "load",
       "class_name": "TransactionStore",
       "code": "def load(self) -> List[Transaction]:",
@@ -417,7 +417,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 110,
       "end_line": 110,
       "function": "load",
@@ -433,13 +433,13 @@
         "tx_id",
         "txs"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 115,
-      "end_line": 115,
+      "kind": "exception_handler_entry",
+      "line": 114,
+      "end_line": 114,
       "function": "load",
       "class_name": "TransactionStore",
       "code": "except ...",
@@ -453,11 +453,11 @@
         "tx_id",
         "txs"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 115,
       "end_line": 115,
       "function": "load",
@@ -473,13 +473,13 @@
         "tx_id",
         "txs"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 125,
-      "end_line": 125,
+      "kind": "exception_handler_entry",
+      "line": 124,
+      "end_line": 124,
       "function": "load",
       "class_name": "TransactionStore",
       "code": "except ...",
@@ -493,11 +493,11 @@
         "tx_id",
         "txs"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 127,
       "end_line": 127,
       "function": "load",
@@ -513,13 +513,13 @@
         "tx_id",
         "txs"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 130,
-      "end_line": 130,
+      "line": 129,
+      "end_line": 129,
       "function": "save",
       "class_name": "TransactionStore",
       "code": "def save(self, txs: List[Transaction]) -> None:",
@@ -533,8 +533,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 137,
-      "end_line": 137,
+      "line": 136,
+      "end_line": 136,
       "function": "apply_transactions",
       "class_name": null,
       "code": "def apply_transactions(accounts: AccountStore, txs: List[Transaction]) -> Tuple[int, int]:",
@@ -549,7 +549,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 154,
       "end_line": 154,
       "function": "apply_transactions",
@@ -562,13 +562,13 @@
         "rejected",
         "txs"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 158,
-      "end_line": 158,
+      "line": 157,
+      "end_line": 157,
       "function": "summarize_accounts",
       "class_name": null,
       "code": "def summarize_accounts(accounts: List[Account]) -> Dict[str, Any]:",
@@ -582,7 +582,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 159,
       "end_line": 159,
       "function": "summarize_accounts",
@@ -594,11 +594,11 @@
         "balances",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 163,
       "end_line": 163,
       "function": "summarize_accounts",
@@ -610,13 +610,13 @@
         "balances",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 167,
-      "end_line": 167,
+      "line": 166,
+      "end_line": 166,
       "function": "find_suspicious_transactions",
       "class_name": null,
       "code": "def find_suspicious_transactions(txs: List[Transaction], hours: int = 24, amount_threshold: float = 10000.0) -> List[Transaction]:",
@@ -631,7 +631,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 168,
       "end_line": 168,
       "function": "find_suspicious_transactions",
@@ -644,11 +644,11 @@
         "suspicious",
         "txs"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 174,
       "end_line": 174,
       "function": "find_suspicious_transactions",
@@ -661,13 +661,13 @@
         "suspicious",
         "txs"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 178,
-      "end_line": 178,
+      "line": 177,
+      "end_line": 177,
       "function": "export_summary",
       "class_name": null,
       "code": "def export_summary(path: Path, summary: Dict[str, Any]) -> None:",
@@ -680,8 +680,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 184,
-      "end_line": 184,
+      "line": 183,
+      "end_line": 183,
       "function": "export_suspicious",
       "class_name": null,
       "code": "def export_suspicious(path: Path, txs: List[Transaction]) -> None:",
@@ -695,8 +695,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 191,
-      "end_line": 191,
+      "line": 190,
+      "end_line": 190,
       "function": "load_config",
       "class_name": null,
       "code": "def load_config(path: Path) -> Dict[str, Any]:",
@@ -707,7 +707,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 192,
       "end_line": 192,
       "function": "load_config",
@@ -716,11 +716,11 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 195,
       "end_line": 195,
       "function": "load_config",
@@ -729,24 +729,24 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 197,
-      "end_line": 197,
+      "kind": "exception_handler_entry",
+      "line": 196,
+      "end_line": 196,
       "function": "load_config",
       "class_name": null,
       "code": "except ...",
       "vars_in_scope": [
         "path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 197,
       "end_line": 197,
       "function": "load_config",
@@ -755,13 +755,13 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 201,
-      "end_line": 201,
+      "line": 200,
+      "end_line": 200,
       "function": "main",
       "class_name": null,
       "code": "def main() -> int:",
@@ -785,7 +785,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 215,
       "end_line": 215,
       "function": "main",
@@ -807,11 +807,11 @@
         "txs",
         "txs_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 231,
       "end_line": 231,
       "function": "main",
@@ -833,7 +833,7 @@
         "txs",
         "txs_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

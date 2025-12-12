@@ -12,23 +12,23 @@
       "function": "is_recent"
     },
     {
-      "line": 26,
+      "line": 25,
       "level": "INFO",
-      "message": "Random log at line 26 in to_dict",
+      "message": "Random log at line 25 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 46,
+      "line": 45,
       "level": "ERROR",
-      "message": "Random log at line 46 in update_country",
+      "message": "Random log at line 45 in update_country",
       "kind": "entry",
       "function": "update_country"
     },
     {
-      "line": 49,
+      "line": 48,
       "level": "DEBUG",
-      "message": "Random log at line 49 in to_dict",
+      "message": "Random log at line 48 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -54,9 +54,9 @@
       "function": "load"
     },
     {
-      "line": 105,
+      "line": 104,
       "level": "WARNING",
-      "message": "Random log at line 105 in get",
+      "message": "Random log at line 104 in get",
       "kind": "entry",
       "function": "get"
     },
@@ -68,23 +68,23 @@
       "function": "get"
     },
     {
-      "line": 108,
+      "line": 107,
       "level": "WARNING",
-      "message": "Random log at line 108 in upsert",
+      "message": "Random log at line 107 in upsert",
       "kind": "entry",
       "function": "upsert"
     },
     {
-      "line": 163,
+      "line": 162,
       "level": "INFO",
-      "message": "Random log at line 163 in write_events",
+      "message": "Random log at line 162 in write_events",
       "kind": "entry",
       "function": "write_events"
     },
     {
-      "line": 204,
+      "line": 203,
       "level": "WARNING",
-      "message": "Random log at line 204 in load_or_create_users",
+      "message": "Random log at line 203 in load_or_create_users",
       "kind": "entry",
       "function": "load_or_create_users"
     },

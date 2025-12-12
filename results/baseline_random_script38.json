@@ -26,9 +26,9 @@
       "function": "add_reading"
     },
     {
-      "line": 45,
+      "line": 44,
       "level": "DEBUG",
-      "message": "Random log at line 45 in latest_value",
+      "message": "Random log at line 44 in latest_value",
       "kind": "entry",
       "function": "latest_value"
     },
@@ -61,9 +61,9 @@
       "function": "to_dict"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "ERROR",
-      "message": "Random log at line 80 in load_config",
+      "message": "Random log at line 79 in load_config",
       "kind": "entry",
       "function": "load_config"
     },

@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 19,
+      "line": 18,
       "level": "DEBUG",
       "message": "Entering is_valid",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_valid"
     },
     {
-      "line": 24,
+      "line": 23,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -38,7 +38,7 @@
       "function": "to_dict"
     },
     {
-      "line": 40,
+      "line": 39,
       "level": "DEBUG",
       "message": "Entering add_reading",
       "kind": "entry",
@@ -52,7 +52,7 @@
       "function": "add_reading"
     },
     {
-      "line": 45,
+      "line": 44,
       "level": "DEBUG",
       "message": "Entering latest_value",
       "kind": "entry",
@@ -73,7 +73,7 @@
       "function": "latest_value"
     },
     {
-      "line": 50,
+      "line": 49,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -87,7 +87,7 @@
       "function": "to_dict"
     },
     {
-      "line": 63,
+      "line": 62,
       "level": "DEBUG",
       "message": "Entering get_or_create",
       "kind": "entry",
@@ -108,7 +108,7 @@
       "function": "get_or_create"
     },
     {
-      "line": 70,
+      "line": 69,
       "level": "DEBUG",
       "message": "Entering all_readings",
       "kind": "entry",
@@ -122,7 +122,7 @@
       "function": "all_readings"
     },
     {
-      "line": 76,
+      "line": 75,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -136,7 +136,7 @@
       "function": "to_dict"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "DEBUG",
       "message": "Entering load_config",
       "kind": "entry",
@@ -157,10 +157,10 @@
       "function": "load_config"
     },
     {
-      "line": 86,
+      "line": 85,
       "level": "ERROR",
       "message": "Exception in load_config",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_config"
     },
     {
@@ -171,17 +171,17 @@
       "function": "load_config"
     },
     {
-      "line": 90,
+      "line": 89,
       "level": "DEBUG",
       "message": "Entering fetch_remote_readings",
       "kind": "entry",
       "function": "fetch_remote_readings"
     },
     {
-      "line": 97,
+      "line": 96,
       "level": "ERROR",
       "message": "Exception in fetch_remote_readings",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_remote_readings"
     },
     {
@@ -192,10 +192,10 @@
       "function": "fetch_remote_readings"
     },
     {
-      "line": 105,
+      "line": 104,
       "level": "ERROR",
       "message": "Exception in fetch_remote_readings",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_remote_readings"
     },
     {
@@ -227,7 +227,7 @@
       "function": "fetch_remote_readings"
     },
     {
-      "line": 114,
+      "line": 113,
       "level": "DEBUG",
       "message": "Entering read_local_cache",
       "kind": "entry",
@@ -241,10 +241,10 @@
       "function": "read_local_cache"
     },
     {
-      "line": 120,
+      "line": 119,
       "level": "ERROR",
       "message": "Exception in read_local_cache",
-      "kind": "except",
+      "kind": "exception",
       "function": "read_local_cache"
     },
     {
@@ -269,17 +269,17 @@
       "function": "read_local_cache"
     },
     {
-      "line": 128,
+      "line": 127,
       "level": "DEBUG",
       "message": "Entering normalize_row",
       "kind": "entry",
       "function": "normalize_row"
     },
     {
-      "line": 136,
+      "line": 135,
       "level": "ERROR",
       "message": "Exception in normalize_row",
-      "kind": "except",
+      "kind": "exception",
       "function": "normalize_row"
     },
     {
@@ -304,14 +304,14 @@
       "function": "normalize_row"
     },
     {
-      "line": 144,
+      "line": 143,
       "level": "DEBUG",
       "message": "Entering ingest_readings",
       "kind": "entry",
       "function": "ingest_readings"
     },
     {
-      "line": 155,
+      "line": 154,
       "level": "DEBUG",
       "message": "Entering compute_statistics",
       "kind": "entry",
@@ -339,7 +339,7 @@
       "function": "compute_statistics"
     },
     {
-      "line": 171,
+      "line": 170,
       "level": "DEBUG",
       "message": "Entering group_by_unit",
       "kind": "entry",
@@ -353,14 +353,14 @@
       "function": "group_by_unit"
     },
     {
-      "line": 181,
+      "line": 180,
       "level": "DEBUG",
       "message": "Entering save_report",
       "kind": "entry",
       "function": "save_report"
     },
     {
-      "line": 192,
+      "line": 191,
       "level": "DEBUG",
       "message": "Entering select_recent",
       "kind": "entry",
@@ -381,7 +381,7 @@
       "function": "select_recent"
     },
     {
-      "line": 199,
+      "line": 198,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

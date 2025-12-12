@@ -1,10 +1,15 @@
 {
+<<<<<<< HEAD
   "file": "script70.py",
+=======
+  "file": "script40.py",
+>>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
   "baseline_type": "random",
   "seed": 42,
   "probability": 0.3,
   "logs": [
     {
+<<<<<<< HEAD
       "line": 23,
       "level": "WARNING",
       "message": "Random log at line 23 in is_long",
@@ -127,6 +132,130 @@
       "line": 253,
       "level": "ERROR",
       "message": "Random log at line 253 in main",
+=======
+      "line": 20,
+      "level": "WARNING",
+      "message": "Random log at line 20 in is_in_stock",
+      "kind": "return",
+      "function": "is_in_stock"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Random log at line 21 in is_in_stock",
+      "kind": "return",
+      "function": "is_in_stock"
+    },
+    {
+      "line": 29,
+      "level": "ERROR",
+      "message": "Random log at line 29 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 30,
+      "level": "DEBUG",
+      "message": "Random log at line 30 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Random log at line 44 in total",
+      "kind": "entry",
+      "function": "total"
+    },
+    {
+      "line": 68,
+      "level": "DEBUG",
+      "message": "Random log at line 68 in is_open",
+      "kind": "return",
+      "function": "is_open"
+    },
+    {
+      "line": 78,
+      "level": "ERROR",
+      "message": "Random log at line 78 in get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 81,
+      "level": "WARNING",
+      "message": "Random log at line 81 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 82,
+      "level": "ERROR",
+      "message": "Random log at line 82 in all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 84,
+      "level": "WARNING",
+      "message": "Random log at line 84 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 119,
+      "level": "INFO",
+      "message": "Random log at line 119 in load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 148,
+      "level": "WARNING",
+      "message": "Random log at line 148 in load_orders",
+      "kind": "return",
+      "function": "load_orders"
+    },
+    {
+      "line": 160,
+      "level": "WARNING",
+      "message": "Random log at line 160 in load_orders",
+      "kind": "exception",
+      "function": "load_orders"
+    },
+    {
+      "line": 172,
+      "level": "INFO",
+      "message": "Random log at line 172 in summarize_orders",
+      "kind": "entry",
+      "function": "summarize_orders"
+    },
+    {
+      "line": 188,
+      "level": "ERROR",
+      "message": "Random log at line 188 in find_high_value_orders",
+      "kind": "entry",
+      "function": "find_high_value_orders"
+    },
+    {
+      "line": 220,
+      "level": "DEBUG",
+      "message": "Random log at line 220 in load_config",
+      "kind": "exception",
+      "function": "load_config"
+    },
+    {
+      "line": 234,
+      "level": "WARNING",
+      "message": "Random log at line 234 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 260,
+      "level": "ERROR",
+      "message": "Random log at line 260 in main",
+>>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "kind": "return",
       "function": "main"
     }
