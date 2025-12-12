@@ -2,25 +2,187 @@
   "file": "script60.py",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Article.is_recent"
     },
     {
+      "line": 23,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False for recency check in Article.is_recent"
+    },
+    {
+      "line": 25,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recency comparison result in Article.is_recent"
+    },
+    {
+      "line": 27,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.matches"
+    },
+    {
+      "line": 30,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True (match found) in Article.matches"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning True (match found) in Article.matches"
+    },
+    {
+      "line": 33,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning tag match result in Article.matches"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.to_dict"
+    },
+    {
+      "line": 36,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Article in Article.to_dict"
+    },
+    {
+      "line": 46,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Article.from_dict"
+    },
+    {
       "line": 50,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning article instance from Article.from_dict"
+      "message": "Returning Article instance from Article.from_dict"
+    },
+    {
+      "line": 58,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Article from dict in Article.from_dict"
     },
     {
       "line": 59,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to parse data in Article.from_dict"
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Article.from_dict after parse failure"
     },
     {
-      "line": 113,
+      "line": 63,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Feed.__init__"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Feed.add"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Feed.get"
+    },
+    {
+      "line": 72,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Article from Feed.get"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Feed.all"
+    },
+    {
+      "line": 75,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning all articles list in Feed.all"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Feed.search"
+    },
+    {
+      "line": 79,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning search results sorted by published date in Feed.search"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Feed.recent"
+    },
+    {
+      "line": 82,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent articles list in Feed.recent"
+    },
+    {
+      "line": 84,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Feed.to_dict"
+    },
+    {
+      "line": 85,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Feed in Feed.to_dict"
+    },
+    {
+      "line": 92,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Feed.from_dict"
+    },
+    {
+      "line": 101,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Feed instance from Feed.from_dict"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HttpClient.__init__"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering HttpClient._url"
+    },
+    {
+      "line": 110,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning feed URL in HttpClient._url"
+    },
+    {
+      "line": 112,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering HttpClient.fetch_feed"
@@ -29,16 +191,22 @@
       "line": 118,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning response body from HttpClient.fetch_feed"
+      "message": "Returning decoded feed payload in HttpClient.fetch_feed"
+    },
+    {
+      "line": 119,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching feed in HttpClient.fetch_feed"
     },
     {
       "line": 120,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error in HttpClient.fetch_feed"
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from HttpClient.fetch_feed after error"
     },
     {
-      "line": 124,
+      "line": 123,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_feed"
@@ -47,44 +215,148 @@
       "line": 126,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning loaded feed from load_feed"
+      "message": "Returning Feed loaded from disk in load_feed"
+    },
+    {
+      "line": 127,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while loading feed from disk in load_feed"
     },
     {
       "line": 128,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to load feed in load_feed"
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning local Feed fallback in load_feed after load error"
     },
     {
-      "line": 148,
+      "line": 129,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while creating secondary fallback Feed in load_feed"
+    },
+    {
+      "line": 130,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning secondary local Feed fallback in load_feed after error"
+    },
+    {
+      "line": 133,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_feed"
+    },
+    {
+      "line": 139,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while writing temporary feed file in save_feed"
+    },
+    {
+      "line": 143,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while replacing feed file in save_feed"
+    },
+    {
+      "line": 147,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering summarize_feed"
     },
     {
+      "line": 150,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty feed summary in summarize_feed"
+    },
+    {
       "line": 153,
       "kind": "return",
       "level": "INFO",
-      "message": "Returning aggregated statistics from summarize_feed"
+      "message": "Returning computed feed summary in summarize_feed"
     },
     {
-      "line": 197,
+      "line": 160,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering pick_random_article"
+    },
+    {
+      "line": 163,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None (no candidate articles) in pick_random_article"
+    },
+    {
+      "line": 167,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random recent article in pick_random_article"
+    },
+    {
+      "line": 168,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning random article in pick_random_article"
+    },
+    {
+      "line": 171,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering merge_remote_feed"
+    },
+    {
+      "line": 173,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 added articles in merge_remote_feed"
+    },
+    {
+      "line": 180,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning number of merged remote articles in merge_remote_feed"
+    },
+    {
+      "line": 183,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering enrich_scores"
+    },
+    {
+      "line": 186,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from enrich_scores"
+    },
+    {
+      "line": 196,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering main"
     },
     {
-      "line": 213,
+      "line": 212,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Unhandled error in metrics pipeline in main"
+      "message": "Unhandled exception in main"
+    },
+    {
+      "line": 213,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 1 from main after error"
     },
     {
       "line": 216,
       "kind": "return",
       "level": "INFO",
-      "message": "Completed successfully with code 0 in main"
+      "message": "Returning status 0 from main"
     }
   ]
 }
+
+
 
