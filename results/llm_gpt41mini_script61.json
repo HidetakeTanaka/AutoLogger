@@ -2,79 +2,55 @@
   "file": "script61.py",
   "logs": [
     {
-      "line": 20,
+      "line": 19,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering matches method with query: {query}\")"
     },
     {
-      "line": 37,
+      "line": 36,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+      "message": "logging.debug(f\"Entering {cls.__name__}.from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 45,
-      "kind": "except",
+      "line": 44,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('Failed to create Product from dict: %s', raw, exc_info=True)"
+      "message": "logging.error(f'Failed to create Product from dict: {raw}', exc_info=True)"
     },
     {
-      "line": 54,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Calculating line total for product {self.product.name}: price {self.product.price} * quantity {self.quantity} = {self.product.price * self.quantity}')"
-    },
-    {
-      "line": 59,
+      "line": 63,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f'Initializing Cart with cart_id={cart_id}')"
+      "message": "logging.debug(f\"Entering add method: adding {quantity} of product {product} to cart\")"
     },
     {
-      "line": 64,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering add method: product={product}, quantity={quantity}\")"
-    },
-    {
-      "line": 70,
+      "line": 69,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering remove method with product_id={product_id}\")"
     },
     {
-      "line": 74,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('Entered Cart.total method')"
-    },
-    {
-      "line": 91,
+      "line": 90,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 100,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Created Cart from dict with {len(cart.items)} items')"
-    },
-    {
-      "line": 105,
+      "line": 104,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing PricingClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 109,
+      "line": 108,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with product_id={product_id}\")"
     },
     {
-      "line": 112,
+      "line": 111,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering fetch_price with product_id={product_id}\")"
@@ -83,61 +59,67 @@
       "line": 119,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Fetched price {data.get('price')} for product {product_id} from {url}\")"
+      "message": "logging.info(f'Fetched price {data.get(\"price\")} for product {product_id}')"
     },
     {
-      "line": 121,
-      "kind": "except",
+      "line": 120,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to fetch price for product_id {product_id} from {url}', exc_info=True)"
     },
     {
-      "line": 125,
+      "line": 124,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_cart with path: {path}\")"
     },
     {
-      "line": 129,
-      "kind": "except",
+      "line": 128,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load cart from {path} with raw data: {raw}', exc_info=True)"
+      "message": "logging.error(f'Failed to load cart from {path}', exc_info=True)"
     },
     {
-      "line": 133,
+      "line": 132,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save_cart with path={path} and cart={cart}\")"
     },
     {
-      "line": 139,
-      "kind": "except",
+      "line": 138,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save cart to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 143,
-      "kind": "except",
+      "line": 142,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to save cart to {path} with payload {payload} and tmp {tmp}', exc_info=True)"
+      "message": "logging.error(f'Failed to save cart to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 147,
+      "line": 146,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered apply_discounts with cart containing {len(cart.items)} items and now={now}\")"
+      "message": "logging.debug(f\"Entering apply_discounts with cart containing {len(cart.items)} items and now={now}\")"
     },
     {
-      "line": 160,
+      "line": 153,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Applying 10% discount, final total: {total * 0.9}')"
+    },
+    {
+      "line": 155,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Applying 5% discount to total {total}, final amount: {total * 0.95}')"
+    },
+    {
+      "line": 159,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering pick_best_deal with {len(carts)} carts\")"
-    },
-    {
-      "line": 161,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('No suitable deal found, returning None. Best value: %s', best_value)"
     },
     {
       "line": 169,
@@ -146,32 +128,32 @@
       "message": "logging.info(f'Returning best deal with value: {best_value}')"
     },
     {
-      "line": 173,
+      "line": 172,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered update_prices_from_remote with cart id: {cart.id} and client: {client}\")"
+      "message": "logging.debug(f\"Entered update_prices_from_remote with cart id={cart.id} and client={client}\")"
     },
     {
       "line": 181,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Price update completed with updated={updated}')"
+      "message": "logging.info(f'update_prices_from_remote completed with updated={updated}')"
     },
     {
-      "line": 185,
+      "line": 184,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Starting simulate_cart with cart id={cart.id} for {steps} steps\")"
+      "message": "logging.debug(f\"Starting simulate_cart with cart={cart} for {steps} steps\")"
     },
     {
-      "line": 209,
+      "line": 208,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 236,
-      "kind": "except",
+      "line": 235,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }

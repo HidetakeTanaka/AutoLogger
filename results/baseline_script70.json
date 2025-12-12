@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "level": "DEBUG",
       "message": "Entering is_long",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_long"
     },
     {
-      "line": 27,
+      "line": 26,
       "level": "DEBUG",
       "message": "Entering matches",
       "kind": "entry",
@@ -52,14 +52,14 @@
       "function": "matches"
     },
     {
-      "line": 35,
+      "line": 34,
       "level": "DEBUG",
       "message": "Entering mark_done",
       "kind": "entry",
       "function": "mark_done"
     },
     {
-      "line": 38,
+      "line": 37,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -73,7 +73,7 @@
       "function": "to_dict"
     },
     {
-      "line": 49,
+      "line": 48,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -87,10 +87,10 @@
       "function": "from_dict"
     },
     {
-      "line": 65,
+      "line": 64,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -101,14 +101,14 @@
       "function": "from_dict"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "DEBUG",
       "message": "Entering add_task",
       "kind": "entry",
       "function": "add_task"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "DEBUG",
       "message": "Entering get_task",
       "kind": "entry",
@@ -129,7 +129,7 @@
       "function": "get_task"
     },
     {
-      "line": 84,
+      "line": 83,
       "level": "DEBUG",
       "message": "Entering completed_tasks",
       "kind": "entry",
@@ -143,7 +143,7 @@
       "function": "completed_tasks"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "DEBUG",
       "message": "Entering active_tasks",
       "kind": "entry",
@@ -157,7 +157,7 @@
       "function": "active_tasks"
     },
     {
-      "line": 90,
+      "line": 89,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -171,7 +171,7 @@
       "function": "to_dict"
     },
     {
-      "line": 98,
+      "line": 97,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -185,14 +185,14 @@
       "function": "from_dict"
     },
     {
-      "line": 112,
+      "line": 111,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 116,
+      "line": 115,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -206,7 +206,7 @@
       "function": "_url"
     },
     {
-      "line": 119,
+      "line": 118,
       "level": "DEBUG",
       "message": "Entering fetch_suggestions",
       "kind": "entry",
@@ -227,10 +227,10 @@
       "function": "fetch_suggestions"
     },
     {
-      "line": 128,
+      "line": 127,
       "level": "ERROR",
       "message": "Exception in fetch_suggestions",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_suggestions"
     },
     {
@@ -241,7 +241,7 @@
       "function": "fetch_suggestions"
     },
     {
-      "line": 131,
+      "line": 130,
       "level": "DEBUG",
       "message": "Entering push_summary",
       "kind": "entry",
@@ -262,10 +262,10 @@
       "function": "push_summary"
     },
     {
-      "line": 141,
+      "line": 140,
       "level": "ERROR",
       "message": "Exception in push_summary",
-      "kind": "except",
+      "kind": "exception",
       "function": "push_summary"
     },
     {
@@ -276,7 +276,7 @@
       "function": "push_summary"
     },
     {
-      "line": 145,
+      "line": 144,
       "level": "DEBUG",
       "message": "Entering load_project",
       "kind": "entry",
@@ -290,10 +290,10 @@
       "function": "load_project"
     },
     {
-      "line": 150,
+      "line": 149,
       "level": "ERROR",
       "message": "Exception in load_project",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_project"
     },
     {
@@ -304,28 +304,28 @@
       "function": "load_project"
     },
     {
-      "line": 154,
+      "line": 153,
       "level": "DEBUG",
       "message": "Entering save_project",
       "kind": "entry",
       "function": "save_project"
     },
     {
-      "line": 160,
+      "line": 159,
       "level": "ERROR",
       "message": "Exception in save_project",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_project"
     },
     {
-      "line": 164,
+      "line": 163,
       "level": "ERROR",
       "message": "Exception in save_project",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_project"
     },
     {
-      "line": 168,
+      "line": 167,
       "level": "DEBUG",
       "message": "Entering compute_stats",
       "kind": "entry",
@@ -353,7 +353,7 @@
       "function": "compute_stats"
     },
     {
-      "line": 191,
+      "line": 190,
       "level": "DEBUG",
       "message": "Entering simulate_work",
       "kind": "entry",
@@ -374,7 +374,7 @@
       "function": "simulate_work"
     },
     {
-      "line": 212,
+      "line": 211,
       "level": "DEBUG",
       "message": "Entering merge_remote_suggestions",
       "kind": "entry",
@@ -395,17 +395,17 @@
       "function": "merge_remote_suggestions"
     },
     {
-      "line": 230,
+      "line": 229,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 252,
+      "line": 251,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

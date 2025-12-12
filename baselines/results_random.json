@@ -1,78 +1,134 @@
 {
-  "file": "script31.py",
+  "file": "script70.py",
   "baseline_type": "random",
   "seed": 42,
   "probability": 0.3,
   "logs": [
     {
-      "line": 32,
+      "line": 23,
       "level": "WARNING",
-      "message": "Random log at line 32 in score_ratio",
+      "message": "Random log at line 23 in is_long",
       "kind": "return",
-      "function": "score_ratio"
+      "function": "is_long"
     },
     {
-      "line": 33,
+      "line": 24,
       "level": "INFO",
-      "message": "Random log at line 33 in score_ratio",
+      "message": "Random log at line 24 in is_long",
       "kind": "return",
-      "function": "score_ratio"
+      "function": "is_long"
     },
     {
-      "line": 44,
+      "line": 32,
       "level": "ERROR",
-      "message": "Random log at line 44 in ensure_data_dir",
-      "kind": "entry",
-      "function": "ensure_data_dir"
-    },
-    {
-      "line": 48,
-      "level": "DEBUG",
-      "message": "Random log at line 48 in generate_sample_attempts",
-      "kind": "entry",
-      "function": "generate_sample_attempts"
-    },
-    {
-      "line": 75,
-      "level": "DEBUG",
-      "message": "Random log at line 75 in load_attempts",
-      "kind": "entry",
-      "function": "load_attempts"
-    },
-    {
-      "line": 112,
-      "level": "DEBUG",
-      "message": "Random log at line 112 in summarize_user",
+      "message": "Random log at line 32 in matches",
       "kind": "return",
-      "function": "summarize_user"
+      "function": "matches"
     },
     {
-      "line": 127,
-      "level": "ERROR",
-      "message": "Random log at line 127 in find_suspicious_users",
+      "line": 34,
+      "level": "DEBUG",
+      "message": "Random log at line 34 in mark_done",
       "kind": "entry",
-      "function": "find_suspicious_users"
+      "function": "mark_done"
     },
     {
-      "line": 136,
+      "line": 37,
+      "level": "DEBUG",
+      "message": "Random log at line 37 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 74,
+      "level": "DEBUG",
+      "message": "Random log at line 74 in add_task",
+      "kind": "entry",
+      "function": "add_task"
+    },
+    {
+      "line": 80,
+      "level": "ERROR",
+      "message": "Random log at line 80 in get_task",
+      "kind": "return",
+      "function": "get_task"
+    },
+    {
+      "line": 83,
       "level": "WARNING",
-      "message": "Random log at line 136 in interactive_menu",
+      "message": "Random log at line 83 in completed_tasks",
       "kind": "entry",
-      "function": "interactive_menu"
+      "function": "completed_tasks"
     },
     {
-      "line": 143,
+      "line": 84,
       "level": "ERROR",
-      "message": "Random log at line 143 in interactive_menu",
+      "message": "Random log at line 84 in completed_tasks",
+      "kind": "return",
+      "function": "completed_tasks"
+    },
+    {
+      "line": 86,
+      "level": "WARNING",
+      "message": "Random log at line 86 in active_tasks",
+      "kind": "entry",
+      "function": "active_tasks"
+    },
+    {
+      "line": 128,
+      "level": "INFO",
+      "message": "Random log at line 128 in fetch_suggestions",
+      "kind": "return",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 149,
+      "level": "WARNING",
+      "message": "Random log at line 149 in load_project",
       "kind": "exception",
-      "function": "interactive_menu"
+      "function": "load_project"
     },
     {
-      "line": 145,
+      "line": 150,
       "level": "WARNING",
-      "message": "Random log at line 145 in interactive_menu",
+      "message": "Random log at line 150 in load_project",
       "kind": "return",
-      "function": "interactive_menu"
+      "function": "load_project"
+    },
+    {
+      "line": 163,
+      "level": "INFO",
+      "message": "Random log at line 163 in save_project",
+      "kind": "exception",
+      "function": "save_project"
+    },
+    {
+      "line": 170,
+      "level": "ERROR",
+      "message": "Random log at line 170 in compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
+    },
+    {
+      "line": 226,
+      "level": "DEBUG",
+      "message": "Random log at line 226 in merge_remote_suggestions",
+      "kind": "return",
+      "function": "merge_remote_suggestions"
+    },
+    {
+      "line": 252,
+      "level": "WARNING",
+      "message": "Random log at line 252 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 253,
+      "level": "ERROR",
+      "message": "Random log at line 253 in main",
+      "kind": "return",
+      "function": "main"
     }
   ]
 }

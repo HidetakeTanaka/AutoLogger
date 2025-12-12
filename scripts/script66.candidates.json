@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 21,
-      "end_line": 21,
+      "line": 20,
+      "end_line": 20,
       "function": "is_recent",
       "class_name": "Reading",
       "code": "def is_recent(self, minutes: int = 60) -> bool:",
@@ -17,7 +17,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 22,
       "end_line": 22,
       "function": "is_recent",
@@ -28,13 +28,13 @@
         "ref",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 25,
-      "end_line": 25,
+      "line": 24,
+      "end_line": 24,
       "function": "to_dict",
       "class_name": "Reading",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -45,7 +45,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 25,
       "end_line": 25,
       "function": "to_dict",
@@ -54,13 +54,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 34,
-      "end_line": 34,
+      "line": 33,
+      "end_line": 33,
       "function": "from_dict",
       "class_name": "Reading",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Reading\"]:",
@@ -74,7 +74,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 37,
       "end_line": 37,
       "function": "from_dict",
@@ -86,11 +86,11 @@
         "ts",
         "ts_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 39,
       "end_line": 39,
       "function": "from_dict",
@@ -102,13 +102,13 @@
         "ts",
         "ts_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 46,
-      "end_line": 46,
+      "kind": "exception_handler_entry",
+      "line": 45,
+      "end_line": 45,
       "function": "from_dict",
       "class_name": "Reading",
       "code": "except ...",
@@ -118,11 +118,11 @@
         "ts",
         "ts_raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 46,
       "end_line": 46,
       "function": "from_dict",
@@ -134,13 +134,13 @@
         "ts",
         "ts_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 51,
-      "end_line": 51,
+      "line": 50,
+      "end_line": 50,
       "function": "__init__",
       "class_name": "Station",
       "code": "def __init__(self, station_id: str, name: str) -> None:",
@@ -154,8 +154,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 56,
-      "end_line": 56,
+      "line": 55,
+      "end_line": 55,
       "function": "add_reading",
       "class_name": "Station",
       "code": "def add_reading(self, reading: Reading) -> None:",
@@ -167,7 +167,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 57,
       "end_line": 57,
       "function": "add_reading",
@@ -177,13 +177,13 @@
         "reading",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 62,
-      "end_line": 62,
+      "line": 61,
+      "end_line": 61,
       "function": "latest",
       "class_name": "Station",
       "code": "def latest(self) -> Optional[Reading]:",
@@ -194,7 +194,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 63,
       "end_line": 63,
       "function": "latest",
@@ -203,11 +203,11 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 64,
       "end_line": 64,
       "function": "latest",
@@ -216,13 +216,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 67,
-      "end_line": 67,
+      "line": 66,
+      "end_line": 66,
       "function": "average_temperature",
       "class_name": "Station",
       "code": "def average_temperature(self, recent_minutes: int = 60) -> float:",
@@ -235,7 +235,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 69,
       "end_line": 69,
       "function": "average_temperature",
@@ -246,11 +246,11 @@
         "recents",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 70,
       "end_line": 70,
       "function": "average_temperature",
@@ -261,13 +261,13 @@
         "recents",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 73,
-      "end_line": 73,
+      "line": 72,
+      "end_line": 72,
       "function": "to_dict",
       "class_name": "Station",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -278,7 +278,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 73,
       "end_line": 73,
       "function": "to_dict",
@@ -287,13 +287,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 81,
-      "end_line": 81,
+      "line": 80,
+      "end_line": 80,
       "function": "from_dict",
       "class_name": "Station",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Station\":",
@@ -307,7 +307,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 89,
       "end_line": 89,
       "function": "from_dict",
@@ -319,13 +319,13 @@
         "raw",
         "station"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 94,
-      "end_line": 94,
+      "line": 93,
+      "end_line": 93,
       "function": "__init__",
       "class_name": "WeatherClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
@@ -339,8 +339,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 98,
-      "end_line": 98,
+      "line": 97,
+      "end_line": 97,
       "function": "_url",
       "class_name": "WeatherClient",
       "code": "def _url(self, station_id: str) -> str:",
@@ -352,7 +352,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 98,
       "end_line": 98,
       "function": "_url",
@@ -362,13 +362,13 @@
         "self",
         "station_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 101,
-      "end_line": 101,
+      "line": 100,
+      "end_line": 100,
       "function": "fetch_station_data",
       "class_name": "WeatherClient",
       "code": "def fetch_station_data(self, station_id: str) -> Optional[Dict[str, Any]]:",
@@ -383,7 +383,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 102,
       "end_line": 102,
       "function": "fetch_station_data",
@@ -396,11 +396,11 @@
         "station_id",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 108,
       "end_line": 108,
       "function": "fetch_station_data",
@@ -413,13 +413,13 @@
         "station_id",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 110,
-      "end_line": 110,
+      "kind": "exception_handler_entry",
+      "line": 109,
+      "end_line": 109,
       "function": "fetch_station_data",
       "class_name": "WeatherClient",
       "code": "except ...",
@@ -430,11 +430,11 @@
         "station_id",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 110,
       "end_line": 110,
       "function": "fetch_station_data",
@@ -447,13 +447,13 @@
         "station_id",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 114,
-      "end_line": 114,
+      "line": 113,
+      "end_line": 113,
       "function": "load_station",
       "class_name": null,
       "code": "def load_station(path: Path) -> Station:",
@@ -465,7 +465,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 117,
       "end_line": 117,
       "function": "load_station",
@@ -475,13 +475,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 119,
-      "end_line": 119,
+      "kind": "exception_handler_entry",
+      "line": 118,
+      "end_line": 118,
       "function": "load_station",
       "class_name": null,
       "code": "except ...",
@@ -489,11 +489,11 @@
         "path",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 119,
       "end_line": 119,
       "function": "load_station",
@@ -503,13 +503,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 123,
-      "end_line": 123,
+      "line": 122,
+      "end_line": 122,
       "function": "save_station",
       "class_name": null,
       "code": "def save_station(path: Path, station: Station) -> None:",
@@ -523,9 +523,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 130,
-      "end_line": 130,
+      "kind": "exception_handler_entry",
+      "line": 129,
+      "end_line": 129,
       "function": "save_station",
       "class_name": null,
       "code": "except ...",
@@ -535,13 +535,13 @@
         "station",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "except",
-      "line": 134,
-      "end_line": 134,
+      "kind": "exception_handler_entry",
+      "line": 133,
+      "end_line": 133,
       "function": "save_station",
       "class_name": null,
       "code": "except ...",
@@ -551,13 +551,13 @@
         "station",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 138,
-      "end_line": 138,
+      "line": 137,
+      "end_line": 137,
       "function": "summarize_station",
       "class_name": null,
       "code": "def summarize_station(station: Station) -> Dict[str, Any]:",
@@ -570,7 +570,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 140,
       "end_line": 140,
       "function": "summarize_station",
@@ -581,11 +581,11 @@
         "station",
         "temps"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 142,
       "end_line": 142,
       "function": "summarize_station",
@@ -596,13 +596,13 @@
         "station",
         "temps"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 153,
-      "end_line": 153,
+      "line": 152,
+      "end_line": 152,
       "function": "merge_remote",
       "class_name": null,
       "code": "def merge_remote(station: Station, remote_raw: Optional[Dict[str, Any]]) -> int:",
@@ -617,7 +617,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 154,
       "end_line": 154,
       "function": "merge_remote",
@@ -630,11 +630,11 @@
         "remote_raw",
         "station"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 162,
       "end_line": 162,
       "function": "merge_remote",
@@ -647,13 +647,13 @@
         "remote_raw",
         "station"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 166,
-      "end_line": 166,
+      "line": 165,
+      "end_line": 165,
       "function": "simulate_station",
       "class_name": null,
       "code": "def simulate_station(station: Station, steps: int = 3) -> List[Reading]:",
@@ -669,7 +669,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 178,
       "end_line": 178,
       "function": "simulate_station",
@@ -683,13 +683,13 @@
         "station",
         "steps"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 182,
-      "end_line": 182,
+      "line": 181,
+      "end_line": 181,
       "function": "filter_hot_readings",
       "class_name": null,
       "code": "def filter_hot_readings(station: Station, threshold: float = 30.0) -> List[Reading]:",
@@ -701,7 +701,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 182,
       "end_line": 182,
       "function": "filter_hot_readings",
@@ -711,13 +711,13 @@
         "station",
         "threshold"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 186,
-      "end_line": 186,
+      "line": 185,
+      "end_line": 185,
       "function": "main",
       "class_name": null,
       "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
@@ -736,9 +736,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 203,
-      "end_line": 203,
+      "kind": "exception_handler_entry",
+      "line": 202,
+      "end_line": 202,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -753,11 +753,11 @@
         "summary",
         "summary_path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 203,
       "end_line": 203,
       "function": "main",
@@ -774,11 +774,11 @@
         "summary",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 206,
       "end_line": 206,
       "function": "main",
@@ -795,7 +795,7 @@
         "summary",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

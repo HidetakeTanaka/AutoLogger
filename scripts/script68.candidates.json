@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 22,
-      "end_line": 22,
+      "line": 21,
+      "end_line": 21,
       "function": "is_long",
       "class_name": "WorkoutSession",
       "code": "def is_long(self, threshold: int = 45) -> bool:",
@@ -16,7 +16,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 23,
       "end_line": 23,
       "function": "is_long",
@@ -26,11 +26,11 @@
         "self",
         "threshold"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 24,
       "end_line": 24,
       "function": "is_long",
@@ -40,13 +40,13 @@
         "self",
         "threshold"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 27,
-      "end_line": 27,
+      "line": 26,
+      "end_line": 26,
       "function": "matches",
       "class_name": "WorkoutSession",
       "code": "def matches(self, query: str) -> bool:",
@@ -59,7 +59,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 29,
       "end_line": 29,
       "function": "matches",
@@ -70,11 +70,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 31,
       "end_line": 31,
       "function": "matches",
@@ -85,11 +85,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 32,
       "end_line": 32,
       "function": "matches",
@@ -100,13 +100,13 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 35,
-      "end_line": 35,
+      "line": 34,
+      "end_line": 34,
       "function": "to_dict",
       "class_name": "WorkoutSession",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -117,7 +117,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 35,
       "end_line": 35,
       "function": "to_dict",
@@ -126,13 +126,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 46,
-      "end_line": 46,
+      "line": 45,
+      "end_line": 45,
       "function": "from_dict",
       "class_name": "WorkoutSession",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"WorkoutSession\"]:",
@@ -146,7 +146,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 53,
       "end_line": 53,
       "function": "from_dict",
@@ -158,13 +158,13 @@
         "start",
         "start_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 62,
-      "end_line": 62,
+      "kind": "exception_handler_entry",
+      "line": 61,
+      "end_line": 61,
       "function": "from_dict",
       "class_name": "WorkoutSession",
       "code": "except ...",
@@ -174,11 +174,11 @@
         "start",
         "start_raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 62,
       "end_line": 62,
       "function": "from_dict",
@@ -190,13 +190,13 @@
         "start",
         "start_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 74,
-      "end_line": 74,
+      "line": 73,
+      "end_line": 73,
       "function": "add_session",
       "class_name": "UserProfile",
       "code": "def add_session(self, session: WorkoutSession) -> None:",
@@ -208,7 +208,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 75,
       "end_line": 75,
       "function": "add_session",
@@ -218,13 +218,13 @@
         "self",
         "session"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 80,
-      "end_line": 80,
+      "line": 79,
+      "end_line": 79,
       "function": "total_minutes",
       "class_name": "UserProfile",
       "code": "def total_minutes(self) -> int:",
@@ -235,7 +235,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 80,
       "end_line": 80,
       "function": "total_minutes",
@@ -244,13 +244,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 83,
-      "end_line": 83,
+      "line": 82,
+      "end_line": 82,
       "function": "weekly_progress",
       "class_name": "UserProfile",
       "code": "def weekly_progress(self, ref: Optional[datetime] = None) -> float:",
@@ -264,7 +264,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 89,
       "end_line": 89,
       "function": "weekly_progress",
@@ -276,11 +276,11 @@
         "self",
         "week_start"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 90,
       "end_line": 90,
       "function": "weekly_progress",
@@ -292,13 +292,13 @@
         "self",
         "week_start"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 93,
-      "end_line": 93,
+      "line": 92,
+      "end_line": 92,
       "function": "to_dict",
       "class_name": "UserProfile",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -309,7 +309,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 93,
       "end_line": 93,
       "function": "to_dict",
@@ -318,13 +318,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 103,
-      "end_line": 103,
+      "line": 102,
+      "end_line": 102,
       "function": "from_dict",
       "class_name": "UserProfile",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"UserProfile\":",
@@ -340,9 +340,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 111,
-      "end_line": 111,
+      "kind": "exception_handler_entry",
+      "line": 110,
+      "end_line": 110,
       "function": "from_dict",
       "class_name": "UserProfile",
       "code": "except ...",
@@ -354,11 +354,11 @@
         "updated",
         "updated_raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 122,
       "end_line": 122,
       "function": "from_dict",
@@ -372,13 +372,13 @@
         "updated",
         "updated_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 127,
-      "end_line": 127,
+      "line": 126,
+      "end_line": 126,
       "function": "__init__",
       "class_name": "AnalyticsClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
@@ -392,8 +392,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 131,
-      "end_line": 131,
+      "line": 130,
+      "end_line": 130,
       "function": "_url",
       "class_name": "AnalyticsClient",
       "code": "def _url(self, user_id: str) -> str:",
@@ -405,7 +405,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 131,
       "end_line": 131,
       "function": "_url",
@@ -415,13 +415,13 @@
         "self",
         "user_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 134,
-      "end_line": 134,
+      "line": 133,
+      "end_line": 133,
       "function": "fetch_benchmarks",
       "class_name": "AnalyticsClient",
       "code": "def fetch_benchmarks(self, user_id: str) -> Optional[Dict[str, Any]]:",
@@ -436,7 +436,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 136,
       "end_line": 136,
       "function": "fetch_benchmarks",
@@ -449,11 +449,11 @@
         "url",
         "user_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 141,
       "end_line": 141,
       "function": "fetch_benchmarks",
@@ -466,13 +466,13 @@
         "url",
         "user_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 143,
-      "end_line": 143,
+      "kind": "exception_handler_entry",
+      "line": 142,
+      "end_line": 142,
       "function": "fetch_benchmarks",
       "class_name": "AnalyticsClient",
       "code": "except ...",
@@ -483,11 +483,11 @@
         "url",
         "user_id"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 143,
       "end_line": 143,
       "function": "fetch_benchmarks",
@@ -500,13 +500,13 @@
         "url",
         "user_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 146,
-      "end_line": 146,
+      "line": 145,
+      "end_line": 145,
       "function": "push_summary",
       "class_name": "AnalyticsClient",
       "code": "def push_summary(self, user_id: str, summary: Dict[str, Any]) -> bool:",
@@ -522,7 +522,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 147,
       "end_line": 147,
       "function": "push_summary",
@@ -536,11 +536,11 @@
         "url",
         "user_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 158,
       "end_line": 158,
       "function": "push_summary",
@@ -554,13 +554,13 @@
         "url",
         "user_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 160,
-      "end_line": 160,
+      "kind": "exception_handler_entry",
+      "line": 159,
+      "end_line": 159,
       "function": "push_summary",
       "class_name": "AnalyticsClient",
       "code": "except ...",
@@ -572,11 +572,11 @@
         "url",
         "user_id"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 160,
       "end_line": 160,
       "function": "push_summary",
@@ -590,13 +590,13 @@
         "url",
         "user_id"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 164,
-      "end_line": 164,
+      "line": 163,
+      "end_line": 163,
       "function": "load_profile",
       "class_name": null,
       "code": "def load_profile(path: Path) -> UserProfile:",
@@ -608,7 +608,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 167,
       "end_line": 167,
       "function": "load_profile",
@@ -618,13 +618,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 169,
-      "end_line": 169,
+      "kind": "exception_handler_entry",
+      "line": 168,
+      "end_line": 168,
       "function": "load_profile",
       "class_name": null,
       "code": "except ...",
@@ -632,11 +632,11 @@
         "path",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 169,
       "end_line": 169,
       "function": "load_profile",
@@ -646,13 +646,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 173,
-      "end_line": 173,
+      "line": 172,
+      "end_line": 172,
       "function": "save_profile",
       "class_name": null,
       "code": "def save_profile(path: Path, profile: UserProfile) -> None:",
@@ -666,9 +666,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 180,
-      "end_line": 180,
+      "kind": "exception_handler_entry",
+      "line": 179,
+      "end_line": 179,
       "function": "save_profile",
       "class_name": null,
       "code": "except ...",
@@ -678,13 +678,13 @@
         "profile",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "except",
-      "line": 184,
-      "end_line": 184,
+      "kind": "exception_handler_entry",
+      "line": 183,
+      "end_line": 183,
       "function": "save_profile",
       "class_name": null,
       "code": "except ...",
@@ -694,13 +694,13 @@
         "profile",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 188,
-      "end_line": 188,
+      "line": 187,
+      "end_line": 187,
       "function": "summarize_profile",
       "class_name": null,
       "code": "def summarize_profile(profile: UserProfile) -> Dict[str, Any]:",
@@ -712,7 +712,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 189,
       "end_line": 189,
       "function": "summarize_profile",
@@ -722,11 +722,11 @@
         "long_sessions",
         "profile"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 197,
       "end_line": 197,
       "function": "summarize_profile",
@@ -736,13 +736,13 @@
         "long_sessions",
         "profile"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 208,
-      "end_line": 208,
+      "line": 207,
+      "end_line": 207,
       "function": "simulate_week",
       "class_name": null,
       "code": "def simulate_week(profile: UserProfile, days: int = 7) -> None:",
@@ -759,8 +759,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 228,
-      "end_line": 228,
+      "line": 225,
+      "end_line": 225,
       "function": "merge_benchmarks",
       "class_name": null,
       "code": "def merge_benchmarks(",
@@ -774,7 +774,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 229,
       "end_line": 229,
       "function": "merge_benchmarks",
@@ -786,11 +786,11 @@
         "summary",
         "target"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 237,
       "end_line": 237,
       "function": "merge_benchmarks",
@@ -802,13 +802,13 @@
         "summary",
         "target"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 241,
-      "end_line": 241,
+      "line": 240,
+      "end_line": 240,
       "function": "main",
       "class_name": null,
       "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
@@ -828,9 +828,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 257,
-      "end_line": 257,
+      "kind": "exception_handler_entry",
+      "line": 256,
+      "end_line": 256,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -846,11 +846,11 @@
         "summary",
         "summary_path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 257,
       "end_line": 257,
       "function": "main",
@@ -868,11 +868,11 @@
         "summary",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 260,
       "end_line": 260,
       "function": "main",
@@ -890,7 +890,7 @@
         "summary",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 22,
-      "end_line": 22,
+      "line": 21,
+      "end_line": 21,
       "function": "is_recent",
       "class_name": "Device",
       "code": "def is_recent(self, minutes: int = 5) -> bool:",
@@ -17,7 +17,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 24,
       "end_line": 24,
       "function": "is_recent",
@@ -28,11 +28,11 @@
         "ref",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 25,
       "end_line": 25,
       "function": "is_recent",
@@ -43,13 +43,13 @@
         "ref",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 28,
-      "end_line": 28,
+      "line": 27,
+      "end_line": 27,
       "function": "update_metric",
       "class_name": "Device",
       "code": "def update_metric(self, name: str, value: float) -> None:",
@@ -63,8 +63,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 34,
-      "end_line": 34,
+      "line": 33,
+      "end_line": 33,
       "function": "to_dict",
       "class_name": "Device",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -75,7 +75,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 34,
       "end_line": 34,
       "function": "to_dict",
@@ -84,13 +84,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 44,
-      "end_line": 44,
+      "line": 43,
+      "end_line": 43,
       "function": "from_dict",
       "class_name": "Device",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Device\"]:",
@@ -104,7 +104,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 49,
       "end_line": 49,
       "function": "from_dict",
@@ -116,13 +116,13 @@
         "raw",
         "ts_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 57,
-      "end_line": 57,
+      "kind": "exception_handler_entry",
+      "line": 56,
+      "end_line": 56,
       "function": "from_dict",
       "class_name": "Device",
       "code": "except ...",
@@ -132,11 +132,11 @@
         "raw",
         "ts_raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 57,
       "end_line": 57,
       "function": "from_dict",
@@ -148,13 +148,13 @@
         "raw",
         "ts_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 62,
-      "end_line": 62,
+      "line": 61,
+      "end_line": 61,
       "function": "__init__",
       "class_name": "Fleet",
       "code": "def __init__(self, fleet_id: str) -> None:",
@@ -167,8 +167,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 66,
-      "end_line": 66,
+      "line": 65,
+      "end_line": 65,
       "function": "add",
       "class_name": "Fleet",
       "code": "def add(self, device: Device) -> None:",
@@ -181,8 +181,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 69,
-      "end_line": 69,
+      "line": 68,
+      "end_line": 68,
       "function": "get",
       "class_name": "Fleet",
       "code": "def get(self, device_id: str) -> Optional[Device]:",
@@ -194,7 +194,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 69,
       "end_line": 69,
       "function": "get",
@@ -204,13 +204,13 @@
         "device_id",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 72,
-      "end_line": 72,
+      "line": 71,
+      "end_line": 71,
       "function": "all",
       "class_name": "Fleet",
       "code": "def all(self) -> List[Device]:",
@@ -221,7 +221,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 72,
       "end_line": 72,
       "function": "all",
@@ -230,13 +230,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 75,
-      "end_line": 75,
+      "line": 74,
+      "end_line": 74,
       "function": "active_devices",
       "class_name": "Fleet",
       "code": "def active_devices(self) -> List[Device]:",
@@ -247,7 +247,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 75,
       "end_line": 75,
       "function": "active_devices",
@@ -256,13 +256,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 78,
-      "end_line": 78,
+      "line": 77,
+      "end_line": 77,
       "function": "to_dict",
       "class_name": "Fleet",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -273,7 +273,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 78,
       "end_line": 78,
       "function": "to_dict",
@@ -282,13 +282,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 85,
-      "end_line": 85,
+      "line": 84,
+      "end_line": 84,
       "function": "from_dict",
       "class_name": "Fleet",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Fleet\":",
@@ -302,7 +302,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 90,
       "end_line": 90,
       "function": "from_dict",
@@ -314,13 +314,13 @@
         "fleet",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 95,
-      "end_line": 95,
+      "line": 94,
+      "end_line": 94,
       "function": "__init__",
       "class_name": "TelemetryClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
@@ -334,8 +334,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 99,
-      "end_line": 99,
+      "line": 98,
+      "end_line": 98,
       "function": "_url",
       "class_name": "TelemetryClient",
       "code": "def _url(self, fleet_id: str) -> str:",
@@ -347,7 +347,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 99,
       "end_line": 99,
       "function": "_url",
@@ -357,13 +357,13 @@
         "fleet_id",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 102,
-      "end_line": 102,
+      "line": 101,
+      "end_line": 101,
       "function": "fetch_fleet_snapshot",
       "class_name": "TelemetryClient",
       "code": "def fetch_fleet_snapshot(self, fleet_id: str) -> Optional[Dict[str, Any]]:",
@@ -378,7 +378,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 103,
       "end_line": 103,
       "function": "fetch_fleet_snapshot",
@@ -391,11 +391,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 109,
       "end_line": 109,
       "function": "fetch_fleet_snapshot",
@@ -408,13 +408,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 111,
-      "end_line": 111,
+      "kind": "exception_handler_entry",
+      "line": 110,
+      "end_line": 110,
       "function": "fetch_fleet_snapshot",
       "class_name": "TelemetryClient",
       "code": "except ...",
@@ -425,11 +425,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 111,
       "end_line": 111,
       "function": "fetch_fleet_snapshot",
@@ -442,13 +442,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 114,
-      "end_line": 114,
+      "line": 113,
+      "end_line": 113,
       "function": "push_aggregates",
       "class_name": "TelemetryClient",
       "code": "def push_aggregates(self, fleet_id: str, payload: Dict[str, Any]) -> bool:",
@@ -464,7 +464,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 115,
       "end_line": 115,
       "function": "push_aggregates",
@@ -478,11 +478,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 121,
       "end_line": 121,
       "function": "push_aggregates",
@@ -496,13 +496,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 123,
-      "end_line": 123,
+      "kind": "exception_handler_entry",
+      "line": 122,
+      "end_line": 122,
       "function": "push_aggregates",
       "class_name": "TelemetryClient",
       "code": "except ...",
@@ -514,11 +514,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 123,
       "end_line": 123,
       "function": "push_aggregates",
@@ -532,13 +532,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 127,
-      "end_line": 127,
+      "line": 126,
+      "end_line": 126,
       "function": "load_fleet",
       "class_name": null,
       "code": "def load_fleet(path: Path) -> Fleet:",
@@ -550,7 +550,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 129,
       "end_line": 129,
       "function": "load_fleet",
@@ -560,13 +560,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 131,
-      "end_line": 131,
+      "kind": "exception_handler_entry",
+      "line": 130,
+      "end_line": 130,
       "function": "load_fleet",
       "class_name": null,
       "code": "except ...",
@@ -574,11 +574,11 @@
         "path",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 131,
       "end_line": 131,
       "function": "load_fleet",
@@ -588,13 +588,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 135,
-      "end_line": 135,
+      "line": 134,
+      "end_line": 134,
       "function": "save_fleet",
       "class_name": null,
       "code": "def save_fleet(path: Path, fleet: Fleet) -> None:",
@@ -608,9 +608,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 141,
-      "end_line": 141,
+      "kind": "exception_handler_entry",
+      "line": 140,
+      "end_line": 140,
       "function": "save_fleet",
       "class_name": null,
       "code": "except ...",
@@ -620,13 +620,13 @@
         "payload",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "except",
-      "line": 145,
-      "end_line": 145,
+      "kind": "exception_handler_entry",
+      "line": 144,
+      "end_line": 144,
       "function": "save_fleet",
       "class_name": null,
       "code": "except ...",
@@ -636,13 +636,13 @@
         "payload",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 149,
-      "end_line": 149,
+      "line": 148,
+      "end_line": 148,
       "function": "compute_stats",
       "class_name": null,
       "code": "def compute_stats(fleet: Fleet) -> Dict[str, Any]:",
@@ -658,7 +658,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 151,
       "end_line": 151,
       "function": "compute_stats",
@@ -672,11 +672,11 @@
         "online",
         "totals"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 160,
       "end_line": 160,
       "function": "compute_stats",
@@ -690,13 +690,13 @@
         "online",
         "totals"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 164,
-      "end_line": 164,
+      "line": 163,
+      "end_line": 163,
       "function": "detect_offline",
       "class_name": null,
       "code": "def detect_offline(fleet: Fleet, minutes: int = 10) -> List[str]:",
@@ -709,7 +709,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 165,
       "end_line": 165,
       "function": "detect_offline",
@@ -720,13 +720,13 @@
         "minutes",
         "ref"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 173,
-      "end_line": 173,
+      "line": 172,
+      "end_line": 172,
       "function": "simulate_fleet",
       "class_name": null,
       "code": "def simulate_fleet(fleet: Fleet, steps: int = 3) -> List[Dict[str, Any]]:",
@@ -745,7 +745,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 189,
       "end_line": 189,
       "function": "simulate_fleet",
@@ -762,13 +762,13 @@
         "steps",
         "value"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 193,
-      "end_line": 193,
+      "line": 192,
+      "end_line": 192,
       "function": "merge_remote_snapshot",
       "class_name": null,
       "code": "def merge_remote_snapshot(fleet: Fleet, remote_raw: Optional[Dict[str, Any]]) -> int:",
@@ -783,7 +783,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 194,
       "end_line": 194,
       "function": "merge_remote_snapshot",
@@ -796,11 +796,11 @@
         "remote",
         "remote_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 207,
       "end_line": 207,
       "function": "merge_remote_snapshot",
@@ -813,13 +813,13 @@
         "remote",
         "remote_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 211,
-      "end_line": 211,
+      "line": 210,
+      "end_line": 210,
       "function": "main",
       "class_name": null,
       "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
@@ -838,9 +838,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 230,
-      "end_line": 230,
+      "kind": "exception_handler_entry",
+      "line": 229,
+      "end_line": 229,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -855,11 +855,11 @@
         "stats",
         "summary_path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 230,
       "end_line": 230,
       "function": "main",
@@ -876,11 +876,11 @@
         "stats",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 233,
       "end_line": 233,
       "function": "main",
@@ -897,7 +897,7 @@
         "stats",
         "summary_path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

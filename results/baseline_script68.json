@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "level": "DEBUG",
       "message": "Entering is_long",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_long"
     },
     {
-      "line": 27,
+      "line": 26,
       "level": "DEBUG",
       "message": "Entering matches",
       "kind": "entry",
@@ -52,7 +52,7 @@
       "function": "matches"
     },
     {
-      "line": 35,
+      "line": 34,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -66,7 +66,7 @@
       "function": "to_dict"
     },
     {
-      "line": 46,
+      "line": 45,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -80,10 +80,10 @@
       "function": "from_dict"
     },
     {
-      "line": 62,
+      "line": 61,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -94,7 +94,7 @@
       "function": "from_dict"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "DEBUG",
       "message": "Entering add_session",
       "kind": "entry",
@@ -108,7 +108,7 @@
       "function": "add_session"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "DEBUG",
       "message": "Entering total_minutes",
       "kind": "entry",
@@ -122,7 +122,7 @@
       "function": "total_minutes"
     },
     {
-      "line": 83,
+      "line": 82,
       "level": "DEBUG",
       "message": "Entering weekly_progress",
       "kind": "entry",
@@ -143,7 +143,7 @@
       "function": "weekly_progress"
     },
     {
-      "line": 93,
+      "line": 92,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -157,17 +157,17 @@
       "function": "to_dict"
     },
     {
-      "line": 103,
+      "line": 102,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
     {
-      "line": 111,
+      "line": 110,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -178,14 +178,14 @@
       "function": "from_dict"
     },
     {
-      "line": 127,
+      "line": 126,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 131,
+      "line": 130,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -199,7 +199,7 @@
       "function": "_url"
     },
     {
-      "line": 134,
+      "line": 133,
       "level": "DEBUG",
       "message": "Entering fetch_benchmarks",
       "kind": "entry",
@@ -220,10 +220,10 @@
       "function": "fetch_benchmarks"
     },
     {
-      "line": 143,
+      "line": 142,
       "level": "ERROR",
       "message": "Exception in fetch_benchmarks",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_benchmarks"
     },
     {
@@ -234,7 +234,7 @@
       "function": "fetch_benchmarks"
     },
     {
-      "line": 146,
+      "line": 145,
       "level": "DEBUG",
       "message": "Entering push_summary",
       "kind": "entry",
@@ -255,10 +255,10 @@
       "function": "push_summary"
     },
     {
-      "line": 160,
+      "line": 159,
       "level": "ERROR",
       "message": "Exception in push_summary",
-      "kind": "except",
+      "kind": "exception",
       "function": "push_summary"
     },
     {
@@ -269,7 +269,7 @@
       "function": "push_summary"
     },
     {
-      "line": 164,
+      "line": 163,
       "level": "DEBUG",
       "message": "Entering load_profile",
       "kind": "entry",
@@ -283,10 +283,10 @@
       "function": "load_profile"
     },
     {
-      "line": 169,
+      "line": 168,
       "level": "ERROR",
       "message": "Exception in load_profile",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_profile"
     },
     {
@@ -297,28 +297,28 @@
       "function": "load_profile"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "DEBUG",
       "message": "Entering save_profile",
       "kind": "entry",
       "function": "save_profile"
     },
     {
-      "line": 180,
+      "line": 179,
       "level": "ERROR",
       "message": "Exception in save_profile",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_profile"
     },
     {
-      "line": 184,
+      "line": 183,
       "level": "ERROR",
       "message": "Exception in save_profile",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_profile"
     },
     {
-      "line": 188,
+      "line": 187,
       "level": "DEBUG",
       "message": "Entering summarize_profile",
       "kind": "entry",
@@ -339,14 +339,14 @@
       "function": "summarize_profile"
     },
     {
-      "line": 208,
+      "line": 207,
       "level": "DEBUG",
       "message": "Entering simulate_week",
       "kind": "entry",
       "function": "simulate_week"
     },
     {
-      "line": 228,
+      "line": 225,
       "level": "DEBUG",
       "message": "Entering merge_benchmarks",
       "kind": "entry",
@@ -367,17 +367,17 @@
       "function": "merge_benchmarks"
     },
     {
-      "line": 241,
+      "line": 240,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 257,
+      "line": 256,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

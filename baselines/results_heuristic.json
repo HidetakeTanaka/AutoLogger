@@ -1,166 +1,425 @@
 {
-  "file": "script31.py",
+  "file": "script70.py",
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 30,
+      "line": 21,
       "level": "DEBUG",
-      "message": "Entering score_ratio",
+      "message": "Entering is_long",
       "kind": "entry",
-      "function": "score_ratio"
+      "function": "is_long"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_long",
+      "kind": "return",
+      "function": "is_long"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting is_long",
+      "kind": "return",
+      "function": "is_long"
+    },
+    {
+      "line": 26,
+      "level": "DEBUG",
+      "message": "Entering matches",
+      "kind": "entry",
+      "function": "matches"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 31,
+      "level": "INFO",
+      "message": "Exiting matches",
+      "kind": "return",
+      "function": "matches"
     },
     {
       "line": 32,
       "level": "INFO",
-      "message": "Exiting score_ratio",
+      "message": "Exiting matches",
       "kind": "return",
-      "function": "score_ratio"
+      "function": "matches"
     },
     {
-      "line": 33,
-      "level": "INFO",
-      "message": "Exiting score_ratio",
-      "kind": "return",
-      "function": "score_ratio"
-    },
-    {
-      "line": 35,
+      "line": 34,
       "level": "DEBUG",
-      "message": "Entering is_suspicious",
+      "message": "Entering mark_done",
       "kind": "entry",
-      "function": "is_suspicious"
+      "function": "mark_done"
+    },
+    {
+      "line": 37,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
     },
     {
       "line": 38,
       "level": "INFO",
-      "message": "Exiting is_suspicious",
+      "message": "Exiting to_dict",
       "kind": "return",
-      "function": "is_suspicious"
-    },
-    {
-      "line": 41,
-      "level": "INFO",
-      "message": "Exiting is_suspicious",
-      "kind": "return",
-      "function": "is_suspicious"
-    },
-    {
-      "line": 44,
-      "level": "DEBUG",
-      "message": "Entering ensure_data_dir",
-      "kind": "entry",
-      "function": "ensure_data_dir"
+      "function": "to_dict"
     },
     {
       "line": 48,
       "level": "DEBUG",
-      "message": "Entering generate_sample_attempts",
+      "message": "Entering from_dict",
       "kind": "entry",
-      "function": "generate_sample_attempts"
+      "function": "from_dict"
     },
     {
-      "line": 75,
+      "line": 56,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 64,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "exception",
+      "function": "from_dict"
+    },
+    {
+      "line": 65,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 74,
       "level": "DEBUG",
-      "message": "Entering load_attempts",
+      "message": "Entering add_task",
       "kind": "entry",
-      "function": "load_attempts"
+      "function": "add_task"
+    },
+    {
+      "line": 77,
+      "level": "DEBUG",
+      "message": "Entering get_task",
+      "kind": "entry",
+      "function": "get_task"
+    },
+    {
+      "line": 80,
+      "level": "INFO",
+      "message": "Exiting get_task",
+      "kind": "return",
+      "function": "get_task"
+    },
+    {
+      "line": 81,
+      "level": "INFO",
+      "message": "Exiting get_task",
+      "kind": "return",
+      "function": "get_task"
+    },
+    {
+      "line": 83,
+      "level": "DEBUG",
+      "message": "Entering completed_tasks",
+      "kind": "entry",
+      "function": "completed_tasks"
+    },
+    {
+      "line": 84,
+      "level": "INFO",
+      "message": "Exiting completed_tasks",
+      "kind": "return",
+      "function": "completed_tasks"
+    },
+    {
+      "line": 86,
+      "level": "DEBUG",
+      "message": "Entering active_tasks",
+      "kind": "entry",
+      "function": "active_tasks"
+    },
+    {
+      "line": 87,
+      "level": "INFO",
+      "message": "Exiting active_tasks",
+      "kind": "return",
+      "function": "active_tasks"
+    },
+    {
+      "line": 89,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 90,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
     },
     {
       "line": 97,
-      "level": "ERROR",
-      "message": "Exception in load_attempts",
-      "kind": "exception",
-      "function": "load_attempts"
-    },
-    {
-      "line": 100,
-      "level": "INFO",
-      "message": "Exiting load_attempts",
-      "kind": "return",
-      "function": "load_attempts"
-    },
-    {
-      "line": 103,
       "level": "DEBUG",
-      "message": "Entering group_by_user",
+      "message": "Entering from_dict",
       "kind": "entry",
-      "function": "group_by_user"
+      "function": "from_dict"
     },
     {
       "line": 107,
       "level": "INFO",
-      "message": "Exiting group_by_user",
+      "message": "Exiting from_dict",
       "kind": "return",
-      "function": "group_by_user"
+      "function": "from_dict"
     },
     {
-      "line": 110,
+      "line": 111,
       "level": "DEBUG",
-      "message": "Entering summarize_user",
+      "message": "Entering __init__",
       "kind": "entry",
-      "function": "summarize_user"
+      "function": "__init__"
     },
     {
-      "line": 112,
+      "line": 115,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 116,
       "level": "INFO",
-      "message": "Exiting summarize_user",
+      "message": "Exiting _url",
       "kind": "return",
-      "function": "summarize_user"
+      "function": "_url"
     },
     {
       "line": 118,
+      "level": "DEBUG",
+      "message": "Entering fetch_suggestions",
+      "kind": "entry",
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 120,
       "level": "INFO",
-      "message": "Exiting summarize_user",
+      "message": "Exiting fetch_suggestions",
       "kind": "return",
-      "function": "summarize_user"
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 126,
+      "level": "INFO",
+      "message": "Exiting fetch_suggestions",
+      "kind": "return",
+      "function": "fetch_suggestions"
     },
     {
       "line": 127,
-      "level": "DEBUG",
-      "message": "Entering find_suspicious_users",
-      "kind": "entry",
-      "function": "find_suspicious_users"
-    },
-    {
-      "line": 133,
-      "level": "INFO",
-      "message": "Exiting find_suspicious_users",
-      "kind": "return",
-      "function": "find_suspicious_users"
-    },
-    {
-      "line": 136,
-      "level": "DEBUG",
-      "message": "Entering interactive_menu",
-      "kind": "entry",
-      "function": "interactive_menu"
-    },
-    {
-      "line": 143,
       "level": "ERROR",
-      "message": "Exception in interactive_menu",
+      "message": "Exception in fetch_suggestions",
       "kind": "exception",
-      "function": "interactive_menu"
+      "function": "fetch_suggestions"
     },
     {
-      "line": 145,
+      "line": 128,
       "level": "INFO",
-      "message": "Exiting interactive_menu",
+      "message": "Exiting fetch_suggestions",
       "kind": "return",
-      "function": "interactive_menu"
+      "function": "fetch_suggestions"
+    },
+    {
+      "line": 130,
+      "level": "DEBUG",
+      "message": "Entering push_summary",
+      "kind": "entry",
+      "function": "push_summary"
+    },
+    {
+      "line": 132,
+      "level": "INFO",
+      "message": "Exiting push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 139,
+      "level": "INFO",
+      "message": "Exiting push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 140,
+      "level": "ERROR",
+      "message": "Exception in push_summary",
+      "kind": "exception",
+      "function": "push_summary"
+    },
+    {
+      "line": 141,
+      "level": "INFO",
+      "message": "Exiting push_summary",
+      "kind": "return",
+      "function": "push_summary"
+    },
+    {
+      "line": 144,
+      "level": "DEBUG",
+      "message": "Entering load_project",
+      "kind": "entry",
+      "function": "load_project"
+    },
+    {
+      "line": 148,
+      "level": "INFO",
+      "message": "Exiting load_project",
+      "kind": "return",
+      "function": "load_project"
+    },
+    {
+      "line": 149,
+      "level": "ERROR",
+      "message": "Exception in load_project",
+      "kind": "exception",
+      "function": "load_project"
+    },
+    {
+      "line": 150,
+      "level": "INFO",
+      "message": "Exiting load_project",
+      "kind": "return",
+      "function": "load_project"
+    },
+    {
+      "line": 153,
+      "level": "DEBUG",
+      "message": "Entering save_project",
+      "kind": "entry",
+      "function": "save_project"
+    },
+    {
+      "line": 159,
+      "level": "ERROR",
+      "message": "Exception in save_project",
+      "kind": "exception",
+      "function": "save_project"
+    },
+    {
+      "line": 163,
+      "level": "ERROR",
+      "message": "Exception in save_project",
+      "kind": "exception",
+      "function": "save_project"
+    },
+    {
+      "line": 167,
+      "level": "DEBUG",
+      "message": "Entering compute_stats",
+      "kind": "entry",
+      "function": "compute_stats"
     },
     {
       "line": 170,
-      "level": "ERROR",
-      "message": "Exception in interactive_menu",
-      "kind": "exception",
-      "function": "interactive_menu"
+      "level": "INFO",
+      "message": "Exiting compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
     },
     {
-      "line": 181,
+      "line": 175,
+      "level": "INFO",
+      "message": "Exiting compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
+    },
+    {
+      "line": 182,
+      "level": "INFO",
+      "message": "Exiting compute_stats",
+      "kind": "return",
+      "function": "compute_stats"
+    },
+    {
+      "line": 190,
+      "level": "DEBUG",
+      "message": "Entering simulate_work",
+      "kind": "entry",
+      "function": "simulate_work"
+    },
+    {
+      "line": 193,
+      "level": "INFO",
+      "message": "Exiting simulate_work",
+      "kind": "return",
+      "function": "simulate_work"
+    },
+    {
+      "line": 208,
+      "level": "INFO",
+      "message": "Exiting simulate_work",
+      "kind": "return",
+      "function": "simulate_work"
+    },
+    {
+      "line": 211,
+      "level": "DEBUG",
+      "message": "Entering merge_remote_suggestions",
+      "kind": "entry",
+      "function": "merge_remote_suggestions"
+    },
+    {
+      "line": 213,
+      "level": "INFO",
+      "message": "Exiting merge_remote_suggestions",
+      "kind": "return",
+      "function": "merge_remote_suggestions"
+    },
+    {
+      "line": 226,
+      "level": "INFO",
+      "message": "Exiting merge_remote_suggestions",
+      "kind": "return",
+      "function": "merge_remote_suggestions"
+    },
+    {
+      "line": 229,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 251,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "exception",
+      "function": "main"
+    },
+    {
+      "line": 252,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 253,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
       "function": "main"
     }
   ]

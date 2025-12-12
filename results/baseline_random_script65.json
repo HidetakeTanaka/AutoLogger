@@ -12,9 +12,9 @@
       "function": "is_low_stock"
     },
     {
-      "line": 26,
+      "line": 25,
       "level": "INFO",
-      "message": "Random log at line 26 in age_hours",
+      "message": "Random log at line 25 in age_hours",
       "kind": "entry",
       "function": "age_hours"
     },
@@ -33,30 +33,30 @@
       "function": "matches"
     },
     {
-      "line": 40,
+      "line": 39,
       "level": "DEBUG",
-      "message": "Random log at line 40 in to_dict",
+      "message": "Random log at line 39 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 72,
+      "line": 71,
       "level": "DEBUG",
-      "message": "Random log at line 72 in __init__",
+      "message": "Random log at line 71 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 79,
+      "line": 78,
       "level": "ERROR",
-      "message": "Random log at line 79 in get",
+      "message": "Random log at line 78 in get",
       "kind": "entry",
       "function": "get"
     },
     {
-      "line": 82,
+      "line": 81,
       "level": "WARNING",
-      "message": "Random log at line 82 in all",
+      "message": "Random log at line 81 in all",
       "kind": "entry",
       "function": "all"
     },
@@ -68,9 +68,9 @@
       "function": "all"
     },
     {
-      "line": 85,
+      "line": 84,
       "level": "WARNING",
-      "message": "Random log at line 85 in search",
+      "message": "Random log at line 84 in search",
       "kind": "entry",
       "function": "search"
     },
@@ -82,17 +82,17 @@
       "function": "fetch_price"
     },
     {
-      "line": 143,
+      "line": 142,
       "level": "WARNING",
-      "message": "Random log at line 143 in save_inventory",
-      "kind": "except",
+      "message": "Random log at line 142 in save_inventory",
+      "kind": "exception",
       "function": "save_inventory"
     },
     {
-      "line": 147,
+      "line": 146,
       "level": "WARNING",
-      "message": "Random log at line 147 in save_inventory",
-      "kind": "except",
+      "message": "Random log at line 146 in save_inventory",
+      "kind": "exception",
       "function": "save_inventory"
     },
     {

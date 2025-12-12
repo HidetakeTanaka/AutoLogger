@@ -19,9 +19,9 @@
       "function": "matches"
     },
     {
-      "line": 37,
+      "line": 36,
       "level": "ERROR",
-      "message": "Random log at line 37 in from_dict",
+      "message": "Random log at line 36 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
@@ -33,16 +33,16 @@
       "function": "from_dict"
     },
     {
-      "line": 45,
+      "line": 44,
       "level": "DEBUG",
-      "message": "Random log at line 45 in from_dict",
-      "kind": "except",
+      "message": "Random log at line 44 in from_dict",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
-      "line": 70,
+      "line": 69,
       "level": "DEBUG",
-      "message": "Random log at line 70 in remove",
+      "message": "Random log at line 69 in remove",
       "kind": "entry",
       "function": "remove"
     },
@@ -61,9 +61,9 @@
       "function": "to_dict"
     },
     {
-      "line": 91,
+      "line": 90,
       "level": "ERROR",
-      "message": "Random log at line 91 in from_dict",
+      "message": "Random log at line 90 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
@@ -75,16 +75,16 @@
       "function": "from_dict"
     },
     {
-      "line": 133,
+      "line": 132,
       "level": "INFO",
-      "message": "Random log at line 133 in save_cart",
+      "message": "Random log at line 132 in save_cart",
       "kind": "entry",
       "function": "save_cart"
     },
     {
-      "line": 160,
+      "line": 159,
       "level": "WARNING",
-      "message": "Random log at line 160 in pick_best_deal",
+      "message": "Random log at line 159 in pick_best_deal",
       "kind": "entry",
       "function": "pick_best_deal"
     },

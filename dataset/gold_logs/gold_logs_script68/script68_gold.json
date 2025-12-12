@@ -1,96 +1,341 @@
 {
-  "file": "script68.py",
-  "logs": [
-    {
-      "line": 34,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering WorkoutSession.is_long"
-    },
-    {
-      "line": 62,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to deserialize WorkoutSession in WorkoutSession.from_dict"
-    },
-    {
-      "line": 103,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering UserProfile.from_dict"
-    },
-    {
-      "line": 134,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering AnalyticsClient.fetch_benchmarks"
-    },
-    {
-      "line": 143,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error while fetching benchmarks in AnalyticsClient.fetch_benchmarks"
-    },
-    {
-      "line": 146,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering AnalyticsClient.push_summary"
-    },
-    {
-      "line": 160,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error while pushing summary in AnalyticsClient.push_summary"
-    },
-    {
-      "line": 164,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering load_profile"
-    },
-    {
-      "line": 169,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to load profile, using fallback profile"
-    },
-    {
-      "line": 173,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering save_profile"
-    },
-    {
-      "line": 180,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to write profile file in save_profile"
-    },
-    {
-      "line": 188,
-      "kind": "entry",
-      "level": "INFO",
-      "message": "Computing profile summary in summarize_profile"
-    },
-    {
-      "line": 228,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering merge_benchmarks"
-    },
-    {
-      "line": 241,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering main"
-    },
-    {
-      "line": 257,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to execute main"
-    }
-  ]
+"file": "script68.py",
+"logs": [
+{
+"line": 21,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering WorkoutSession.is_long"
+},
+{
+"line": 23,
+"kind": "return",
+"level": "INFO",
+"message": "Returning default False in WorkoutSession.is_long"
+},
+{
+"line": 24,
+"kind": "return",
+"level": "INFO",
+"message": "Returning whether session is long in WorkoutSession.is_long"
+},
+{
+"line": 26,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering WorkoutSession.matches"
+},
+{
+"line": 29,
+"kind": "return",
+"level": "INFO",
+"message": "Returning match True in WorkoutSession.matches"
+},
+{
+"line": 31,
+"kind": "return",
+"level": "INFO",
+"message": "Returning match True in WorkoutSession.matches"
+},
+{
+"line": 32,
+"kind": "return",
+"level": "INFO",
+"message": "Returning whether query matches tags in WorkoutSession.matches"
+},
+{
+"line": 34,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering WorkoutSession.to_dict"
+},
+{
+"line": 35,
+"kind": "return",
+"level": "INFO",
+"message": "Returning session dict in WorkoutSession.to_dict"
+},
+{
+"line": 45,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering WorkoutSession.from_dict"
+},
+{
+"line": 53,
+"kind": "return",
+"level": "INFO",
+"message": "Returning WorkoutSession instance from WorkoutSession.from_dict"
+},
+{
+"line": 61,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to parse WorkoutSession from raw data in WorkoutSession.from_dict"
+},
+{
+"line": 62,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from WorkoutSession.from_dict after error"
+},
+{
+"line": 73,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering UserProfile.add_session"
+},
+{
+"line": 75,
+"kind": "return",
+"level": "INFO",
+"message": "Returning from UserProfile.add_session"
+},
+{
+"line": 79,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering UserProfile.total_minutes"
+},
+{
+"line": 80,
+"kind": "return",
+"level": "INFO",
+"message": "Returning total minutes from UserProfile.total_minutes"
+},
+{
+"line": 82,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering UserProfile.weekly_progress"
+},
+{
+"line": 89,
+"kind": "return",
+"level": "INFO",
+"message": "Returning default weekly progress in UserProfile.weekly_progress"
+},
+{
+"line": 90,
+"kind": "return",
+"level": "INFO",
+"message": "Returning computed weekly progress in UserProfile.weekly_progress"
+},
+{
+"line": 92,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering UserProfile.to_dict"
+},
+{
+"line": 93,
+"kind": "return",
+"level": "INFO",
+"message": "Returning profile dict in UserProfile.to_dict"
+},
+{
+"line": 102,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering UserProfile.from_dict"
+},
+{
+"line": 110,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to parse UserProfile from raw data in UserProfile.from_dict"
+},
+{
+"line": 122,
+"kind": "return",
+"level": "INFO",
+"message": "Returning UserProfile instance from UserProfile.from_dict"
+},
+{
+"line": 126,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient.init"
+},
+{
+"line": 130,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient._url"
+},
+{
+"line": 131,
+"kind": "return",
+"level": "INFO",
+"message": "Returning benchmarks URL in AnalyticsClient._url"
+},
+{
+"line": 133,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient.fetch_benchmarks"
+},
+{
+"line": 136,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from AnalyticsClient.fetch_benchmarks (no data)"
+},
+{
+"line": 141,
+"kind": "return",
+"level": "INFO",
+"message": "Returning parsed benchmarks from AnalyticsClient.fetch_benchmarks"
+},
+{
+"line": 142,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to fetch benchmarks in AnalyticsClient.fetch_benchmarks"
+},
+{
+"line": 143,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from AnalyticsClient.fetch_benchmarks after error"
+},
+{
+"line": 145,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient.push_summary"
+},
+{
+"line": 147,
+"kind": "return",
+"level": "INFO",
+"message": "Returning False from AnalyticsClient.push_summary (not sent)"
+},
+{
+"line": 158,
+"kind": "return",
+"level": "INFO",
+"message": "Returning success flag from AnalyticsClient.push_summary"
+},
+{
+"line": 159,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to push summary in AnalyticsClient.push_summary"
+},
+{
+"line": 160,
+"kind": "return",
+"level": "INFO",
+"message": "Returning False from AnalyticsClient.push_summary after error"
+},
+{
+"line": 163,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering load_profile"
+},
+{
+"line": 167,
+"kind": "return",
+"level": "INFO",
+"message": "Returning UserProfile from load_profile"
+},
+{
+"line": 168,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to load profile from path in load_profile"
+},
+{
+"line": 169,
+"kind": "return",
+"level": "INFO",
+"message": "Returning default local UserProfile from load_profile"
+},
+{
+"line": 172,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering save_profile"
+},
+{
+"line": 179,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to write profile to disk in save_profile"
+},
+{
+"line": 183,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to finalize saving profile in save_profile"
+},
+{
+"line": 187,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering summarize_profile"
+},
+{
+"line": 189,
+"kind": "return",
+"level": "INFO",
+"message": "Returning empty summary from summarize_profile"
+},
+{
+"line": 197,
+"kind": "return",
+"level": "INFO",
+"message": "Returning full profile summary from summarize_profile"
+},
+{
+"line": 207,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering simulate_week"
+},
+{
+"line": 225,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering merge_benchmarks"
+},
+{
+"line": 229,
+"kind": "return",
+"level": "INFO",
+"message": "Returning summary from merge_benchmarks"
+},
+{
+"line": 237,
+"kind": "return",
+"level": "INFO",
+"message": "Returning result from merge_benchmarks"
+},
+{
+"line": 240,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering main"
+},
+{
+"line": 256,
+"kind": "exception",
+"level": "ERROR",
+"message": "Unexpected error in main"
+},
+{
+"line": 257,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 1 (error) from main"
+},
+{
+"line": 260,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0 (success) from main"
 }
-
+]
+}

@@ -3,126 +3,126 @@
   "logs": [
     {
       "candidate_id": 0,
-      "lineno": 22,
+      "lineno": 21,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 2,
-      "lineno": 26,
+      "lineno": 25,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 4,
-      "lineno": 36,
+      "lineno": 35,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 8,
-      "lineno": 57,
+      "lineno": 56,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 9,
-      "lineno": 60,
+      "lineno": 59,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 10,
-      "lineno": 64,
+      "lineno": 63,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 12,
-      "lineno": 67,
+      "lineno": 66,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 14,
-      "lineno": 75,
+      "lineno": 74,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 17,
-      "lineno": 89,
+      "lineno": 88,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 18,
-      "lineno": 93,
+      "lineno": 92,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 20,
-      "lineno": 96,
+      "lineno": 95,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 27,
-      "lineno": 113,
+      "lineno": 112,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 31,
-      "lineno": 122,
+      "lineno": 121,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 34,
-      "lineno": 137,
+      "lineno": 136,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 36,
-      "lineno": 147,
+      "lineno": 144,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 39,
-      "lineno": 158,
+      "lineno": 157,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 42,
-      "lineno": 170,
+      "lineno": 167,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
       "candidate_id": 45,
-      "lineno": 183,
+      "lineno": 182,
       "col_offset": 0,
       "kind": "func_entry",
       "log_code": "logging.info('[GPT-5.1] Function entry logged')"

@@ -1,78 +1,317 @@
 {
-  "file": "script61.py",
-  "logs": [
-    {
-      "line": 112,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering fetch_price"
-    },
-    {
-      "line": 119,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Returning price from fetch_price"
-    },
-    {
-      "line": 121,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Request failed in fetch_price"
-    },
-    {
-      "line": 125,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering load_cart"
-    },
-    {
-      "line": 129,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to read cart, using empty in load_cart"
-    },
-    {
-      "line": 133,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering save_cart"
-    },
-    {
-      "line": 139,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to persist cart in save_cart"
-    },
-    {
-      "line": 173,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering update_prices_from_remote"
-    },
-    {
-      "line": 181,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Returning updated count from update_prices_from_remote"
-    },
-    {
-      "line": 209,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering main"
-    },
-    {
-      "line": 236,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Unhandled exception in main"
-    },
-    {
-      "line": 236,
-      "kind": "return",
-      "level": "WARNING",
-      "message": "Exiting with error in main"
-    }
-  ]
+"file": "script61.py",
+"logs": [
+{
+"line": 19,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Product.matches"
+},
+{
+"line": 22,
+"kind": "return",
+"level": "INFO",
+"message": "Returning True in Product.matches"
+},
+{
+"line": 24,
+"kind": "return",
+"level": "INFO",
+"message": "Returning True in Product.matches"
+},
+{
+"line": 25,
+"kind": "return",
+"level": "INFO",
+"message": "Returning whether any tag contains the query in Product.matches"
+},
+{
+"line": 27,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Product.to_dict"
+},
+{
+"line": 28,
+"kind": "return",
+"level": "INFO",
+"message": "Returning product dict in Product.to_dict"
+},
+{
+"line": 36,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Product.from_dict"
+},
+{
+"line": 38,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Product instance from Product.from_dict"
+},
+{
+"line": 44,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to create Product from raw data in Product.from_dict"
+},
+{
+"line": 45,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from Product.from_dict"
+},
+{
+"line": 53,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering CartItem.line_total"
+},
+{
+"line": 54,
+"kind": "return",
+"level": "INFO",
+"message": "Returning line total in CartItem.line_total"
+},
+{
+"line": 58,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Cart.init"
+},
+{
+"line": 63,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Cart.add"
+},
+{
+"line": 69,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Cart.remove"
+},
+{
+"line": 73,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Cart.total"
+},
+{
+"line": 74,
+"kind": "return",
+"level": "INFO",
+"message": "Returning cart total in Cart.total"
+},
+{
+"line": 76,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Cart.to_dict"
+},
+{
+"line": 77,
+"kind": "return",
+"level": "INFO",
+"message": "Returning cart dict in Cart.to_dict"
+},
+{
+"line": 90,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Cart.from_dict"
+},
+{
+"line": 100,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Cart instance from Cart.from_dict"
+},
+{
+"line": 104,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering PricingClient.init"
+},
+{
+"line": 108,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering PricingClient._url"
+},
+{
+"line": 109,
+"kind": "return",
+"level": "INFO",
+"message": "Returning pricing URL in PricingClient._url"
+},
+{
+"line": 111,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering PricingClient.fetch_price"
+},
+{
+"line": 113,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None (no price) from PricingClient.fetch_price"
+},
+{
+"line": 119,
+"kind": "return",
+"level": "INFO",
+"message": "Returning fetched price from PricingClient.fetch_price"
+},
+{
+"line": 120,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to fetch or parse price in PricingClient.fetch_price"
+},
+{
+"line": 121,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from PricingClient.fetch_price after error"
+},
+{
+"line": 124,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering load_cart"
+},
+{
+"line": 127,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Cart from load_cart"
+},
+{
+"line": 128,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to load cart from path in load_cart"
+},
+{
+"line": 129,
+"kind": "return",
+"level": "INFO",
+"message": "Returning new local Cart from load_cart"
+},
+{
+"line": 132,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering save_cart"
+},
+{
+"line": 138,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to write cart to disk in save_cart"
+},
+{
+"line": 142,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to finalize cart save in save_cart"
+},
+{
+"line": 146,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering apply_discounts"
+},
+{
+"line": 151,
+"kind": "return",
+"level": "INFO",
+"message": "Returning zero discount in apply_discounts"
+},
+{
+"line": 153,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 10% discounted total from apply_discounts"
+},
+{
+"line": 155,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 5% discounted total from apply_discounts"
+},
+{
+"line": 156,
+"kind": "return",
+"level": "INFO",
+"message": "Returning total without discount from apply_discounts"
+},
+{
+"line": 159,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering pick_best_deal"
+},
+{
+"line": 161,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None (no best deal) from pick_best_deal"
+},
+{
+"line": 169,
+"kind": "return",
+"level": "INFO",
+"message": "Returning best Cart from pick_best_deal"
+},
+{
+"line": 172,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering update_prices_from_remote"
+},
+{
+"line": 181,
+"kind": "return",
+"level": "INFO",
+"message": "Returning number of updated prices from update_prices_from_remote"
+},
+{
+"line": 184,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering simulate_cart"
+},
+{
+"line": 205,
+"kind": "return",
+"level": "INFO",
+"message": "Returning simulation history from simulate_cart"
+},
+{
+"line": 208,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering main"
+},
+{
+"line": 235,
+"kind": "exception",
+"level": "ERROR",
+"message": "Unexpected error in main"
+},
+{
+"line": 236,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 1 (error) from main"
+},
+{
+"line": 237,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0 (success) from main"
 }
-
+]
+}

@@ -2,170 +2,158 @@
   "file": "script70.py",
   "logs": [
     {
-      "line": 27,
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_long with threshold={threshold}\")"
+    },
+    {
+      "line": 26,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering matches with query='{query}'\")"
     },
     {
-      "line": 49,
+      "line": 48,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+      "message": "logging.debug(f\"Entering Task.from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 65,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error('Failed to create Task from dict: %s', raw, exc_info=True)"
-    },
-    {
-      "line": 75,
+      "line": 74,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering add_task with task: {task}\")"
     },
     {
-      "line": 78,
+      "line": 77,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering get_task with task_id={task_id}\")"
     },
     {
-      "line": 84,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('Entered completed_tasks method of Project class')"
+      "line": 81,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Task with id {task_id} not found, returning None')"
     },
     {
-      "line": 98,
+      "line": 97,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering Project.from_dict with raw data keys: {list(raw.keys())}\")"
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 112,
+      "line": 111,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing AnalyticsClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 116,
+      "line": 115,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with project_id={project_id}\")"
     },
     {
-      "line": 119,
+      "line": 118,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering fetch_suggestions with project_id={project_id}\")"
     },
     {
-      "line": 126,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Fetched suggestions for project_id={project_id} from URL {url}')"
-    },
-    {
-      "line": 128,
-      "kind": "except",
+      "line": 127,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch suggestions for project_id={project_id} from {url}', exc_info=True)"
+      "message": "logging.error(f'Failed to fetch suggestions for project_id={project_id} from url={url}', exc_info=True)"
     },
     {
-      "line": 131,
+      "line": 130,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering push_summary with project_id={project_id} and summary keys={list(summary.keys())}\")"
     },
     {
-      "line": 139,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Push summary response status: {resp.status} for project_id: {project_id}')"
-    },
-    {
-      "line": 141,
-      "kind": "except",
+      "line": 140,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to push summary for project {project_id} to {url} with body {body}', exc_info=True)"
+      "message": "logging.error(f'Exception occurred while pushing summary for project {project_id} to {url}', exc_info=True)"
     },
     {
-      "line": 145,
+      "line": 144,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_project with path: {path}\")"
     },
     {
-      "line": 150,
-      "kind": "except",
+      "line": 149,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load project from {path} with data: {data}')"
+      "message": "logging.error(f'Failed to load project from {path}', exc_info=True)"
     },
     {
-      "line": 154,
+      "line": 153,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save_project with path={path} and project={project}\")"
     },
     {
-      "line": 160,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to save project at {path} with payload {payload}')"
-    },
-    {
-      "line": 164,
-      "kind": "except",
+      "line": 159,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save project at {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 168,
+      "line": 163,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save project at {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 167,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering compute_stats for project: {project}\")"
     },
     {
-      "line": 170,
+      "line": 175,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info('Returning empty stats: count=0, completed=0, avg_duration=0.0, long_tasks=0')"
+      "message": "logging.info(f\"Returning stats: count={len(tasks)}, completed={completed}, avg_duration=0.0, long_tasks={long_tasks}\")"
     },
     {
       "line": 182,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Computed stats for project {project}: count={len(tasks)}, completed={completed}, avg_duration={avg}, long_tasks={long_tasks}\")"
+      "message": "logging.info(f\"Returning stats for project {project}: count={len(tasks)}, completed={completed}, avg_duration={avg}, long_tasks={long_tasks}\")"
     },
     {
-      "line": 191,
+      "line": 190,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Starting simulate_work for project {project} with {steps} steps\")"
     },
     {
-      "line": 212,
+      "line": 211,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering merge_remote_suggestions for project {project} with remote data keys: {list(remote.keys()) if remote else 'None'}\")"
+      "message": "logging.debug(f\"Entered merge_remote_suggestions with project={project} and remote keys={list(remote.keys()) if remote else None}\")"
     },
     {
       "line": 226,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Merge completed for project {project} with remote {remote}. Number of suggestions added: {len(added)}')"
+      "message": "logging.info(f'Merge completed with {len(added)} new suggestions added to project {project}')"
     },
     {
-      "line": 230,
+      "line": 229,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 252,
-      "kind": "except",
+      "line": 251,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }

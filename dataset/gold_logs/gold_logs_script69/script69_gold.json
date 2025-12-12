@@ -1,102 +1,353 @@
 {
-  "file": "script69.py",
-  "logs": [
-    {
-      "line": 36,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering Order.from_dict"
-    },
-    {
-      "line": 47,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to parse order payload in Order.from_dict"
-    },
-    {
-      "line": 110,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering AnalyticsClient.fetch_benchmarks"
-    },
-    {
-      "line": 117,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Received benchmarks response from AnalyticsClient.fetch_benchmarks"
-    },
-    {
-      "line": 119,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error fetching benchmarks in AnalyticsClient.fetch_benchmarks"
-    },
-    {
-      "line": 122,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering AnalyticsClient.push_summary"
-    },
-    {
-      "line": 132,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error sending summary in AnalyticsClient.push_summary"
-    },
-    {
-      "line": 136,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering load_customers"
-    },
-    {
-      "line": 144,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to read or parse customers file in load_customers"
-    },
-    {
-      "line": 150,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering save_customers"
-    },
-    {
-      "line": 156,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error writing temporary customers file in save_customers"
-    },
-    {
-      "line": 164,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering compute_kpis"
-    },
-    {
-      "line": 168,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Returning computed KPI metrics from compute_kpis"
-    },
-    {
-      "line": 221,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering merge_benchmarks"
-    },
-    {
-      "line": 241,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering main"
-    },
-    {
-      "line": 257,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Unexpected error during main execution"
-    }
-  ]
+"file": "script69.py",
+"logs": [
+{
+"line": 21,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Order.is_recent"
+},
+{
+"line": 23,
+"kind": "return",
+"level": "INFO",
+"message": "Returning recency check in Order.is_recent"
+},
+{
+"line": 25,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Order.to_dict"
+},
+{
+"line": 26,
+"kind": "return",
+"level": "INFO",
+"message": "Returning order dict in Order.to_dict"
+},
+{
+"line": 35,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Order.from_dict"
+},
+{
+"line": 39,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Order instance from Order.from_dict"
+},
+{
+"line": 46,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to parse Order from raw data in Order.from_dict"
+},
+{
+"line": 47,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from Order.from_dict after error"
+},
+{
+"line": 58,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Customer.add_order"
+},
+{
+"line": 60,
+"kind": "return",
+"level": "INFO",
+"message": "Returning from Customer.add_order"
+},
+{
+"line": 63,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Customer.lifetime_value"
+},
+{
+"line": 64,
+"kind": "return",
+"level": "INFO",
+"message": "Returning lifetime value in Customer.lifetime_value"
+},
+{
+"line": 66,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Customer.matches"
+},
+{
+"line": 69,
+"kind": "return",
+"level": "INFO",
+"message": "Returning True match in Customer.matches"
+},
+{
+"line": 70,
+"kind": "return",
+"level": "INFO",
+"message": "Returning tag-match result in Customer.matches"
+},
+{
+"line": 72,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Customer.to_dict"
+},
+{
+"line": 73,
+"kind": "return",
+"level": "INFO",
+"message": "Returning customer dict in Customer.to_dict"
+},
+{
+"line": 82,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Customer.from_dict"
+},
+{
+"line": 86,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to parse Customer from raw data in Customer.from_dict"
+},
+{
+"line": 98,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Customer instance from Customer.from_dict"
+},
+{
+"line": 102,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient.init"
+},
+{
+"line": 106,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient._url"
+},
+{
+"line": 107,
+"kind": "return",
+"level": "INFO",
+"message": "Returning constructed URL in AnalyticsClient._url"
+},
+{
+"line": 109,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient.fetch_benchmarks"
+},
+{
+"line": 111,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from AnalyticsClient.fetch_benchmarks (no data)"
+},
+{
+"line": 117,
+"kind": "return",
+"level": "INFO",
+"message": "Returning parsed benchmarks from AnalyticsClient.fetch_benchmarks"
+},
+{
+"line": 118,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to fetch benchmarks in AnalyticsClient.fetch_benchmarks"
+},
+{
+"line": 119,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from AnalyticsClient.fetch_benchmarks after error"
+},
+{
+"line": 121,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient.push_summary"
+},
+{
+"line": 123,
+"kind": "return",
+"level": "INFO",
+"message": "Returning False from AnalyticsClient.push_summary (not sent)"
+},
+{
+"line": 130,
+"kind": "return",
+"level": "INFO",
+"message": "Returning success flag from AnalyticsClient.push_summary"
+},
+{
+"line": 131,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to push summary in AnalyticsClient.push_summary"
+},
+{
+"line": 132,
+"kind": "return",
+"level": "INFO",
+"message": "Returning False from AnalyticsClient.push_summary after error"
+},
+{
+"line": 135,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering load_customers"
+},
+{
+"line": 142,
+"kind": "return",
+"level": "INFO",
+"message": "Returning loaded customers from load_customers"
+},
+{
+"line": 143,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to load customers in load_customers"
+},
+{
+"line": 144,
+"kind": "return",
+"level": "INFO",
+"message": "Returning empty list from load_customers after error"
+},
+{
+"line": 145,
+"kind": "exception",
+"level": "ERROR",
+"message": "Unexpected error while loading customers in load_customers"
+},
+{
+"line": 146,
+"kind": "return",
+"level": "INFO",
+"message": "Returning empty list from load_customers after unexpected error"
+},
+{
+"line": 149,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering save_customers"
+},
+{
+"line": 155,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to save customers in save_customers"
+},
+{
+"line": 159,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to finalize saving customers in save_customers"
+},
+{
+"line": 163,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering compute_kpis"
+},
+{
+"line": 165,
+"kind": "return",
+"level": "INFO",
+"message": "Returning empty KPI summary from compute_kpis"
+},
+{
+"line": 168,
+"kind": "return",
+"level": "INFO",
+"message": "Returning computed KPIs from compute_kpis"
+},
+{
+"line": 175,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering simulate_orders"
+},
+{
+"line": 178,
+"kind": "return",
+"level": "INFO",
+"message": "Returning simulated order history (short) from simulate_orders"
+},
+{
+"line": 195,
+"kind": "return",
+"level": "INFO",
+"message": "Returning simulated order history from simulate_orders"
+},
+{
+"line": 198,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering apply_discounts"
+},
+{
+"line": 205,
+"kind": "return",
+"level": "INFO",
+"message": "Returning number of customers updated in apply_discounts"
+},
+{
+"line": 208,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering merge_remote_benchmarks"
+},
+{
+"line": 210,
+"kind": "return",
+"level": "INFO",
+"message": "Returning summary from merge_remote_benchmarks"
+},
+{
+"line": 217,
+"kind": "return",
+"level": "INFO",
+"message": "Returning merged result from merge_remote_benchmarks"
+},
+{
+"line": 220,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering main"
+},
+{
+"line": 243,
+"kind": "exception",
+"level": "ERROR",
+"message": "Unexpected error in main (first handler)"
+},
+{
+"line": 249,
+"kind": "exception",
+"level": "ERROR",
+"message": "Unexpected error in main (second handler)"
+},
+{
+"line": 250,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 1 (error) from main"
+},
+{
+"line": 251,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0 (success) from main"
 }
-
+]
+}

@@ -19,9 +19,9 @@
       "function": "average"
     },
     {
-      "line": 31,
+      "line": 30,
       "level": "ERROR",
-      "message": "Random log at line 31 in matches",
+      "message": "Random log at line 30 in matches",
       "kind": "entry",
       "function": "matches"
     },
@@ -40,23 +40,23 @@
       "function": "matches"
     },
     {
-      "line": 62,
+      "line": 61,
       "level": "DEBUG",
-      "message": "Random log at line 62 in from_dict",
-      "kind": "except",
+      "message": "Random log at line 61 in from_dict",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
-      "line": 67,
+      "line": 66,
       "level": "ERROR",
-      "message": "Random log at line 67 in __init__",
+      "message": "Random log at line 66 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "WARNING",
-      "message": "Random log at line 75 in get_student",
+      "message": "Random log at line 74 in get_student",
       "kind": "entry",
       "function": "get_student"
     },
@@ -68,9 +68,9 @@
       "function": "get_student"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "WARNING",
-      "message": "Random log at line 78 in all_students",
+      "message": "Random log at line 77 in all_students",
       "kind": "entry",
       "function": "all_students"
     },
@@ -89,9 +89,9 @@
       "function": "push_summary"
     },
     {
-      "line": 138,
+      "line": 137,
       "level": "WARNING",
-      "message": "Random log at line 138 in load_course",
+      "message": "Random log at line 137 in load_course",
       "kind": "entry",
       "function": "load_course"
     },
@@ -103,24 +103,24 @@
       "function": "load_course"
     },
     {
-      "line": 155,
+      "line": 154,
       "level": "ERROR",
-      "message": "Random log at line 155 in save_course",
-      "kind": "except",
+      "message": "Random log at line 154 in save_course",
+      "kind": "exception",
       "function": "save_course"
     },
     {
-      "line": 193,
+      "line": 192,
       "level": "DEBUG",
-      "message": "Random log at line 193 in simulate_study",
+      "message": "Random log at line 192 in simulate_study",
       "kind": "entry",
       "function": "simulate_study"
     },
     {
-      "line": 228,
+      "line": 227,
       "level": "WARNING",
-      "message": "Random log at line 228 in main",
-      "kind": "except",
+      "message": "Random log at line 227 in main",
+      "kind": "exception",
       "function": "main"
     },
     {

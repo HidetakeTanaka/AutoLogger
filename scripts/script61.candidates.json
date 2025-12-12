@@ -3,8 +3,8 @@
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 20,
-      "end_line": 20,
+      "line": 19,
+      "end_line": 19,
       "function": "matches",
       "class_name": "Product",
       "code": "def matches(self, query: str) -> bool:",
@@ -17,7 +17,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 22,
       "end_line": 22,
       "function": "matches",
@@ -28,11 +28,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 24,
       "end_line": 24,
       "function": "matches",
@@ -43,11 +43,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 25,
       "end_line": 25,
       "function": "matches",
@@ -58,13 +58,13 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 28,
-      "end_line": 28,
+      "line": 27,
+      "end_line": 27,
       "function": "to_dict",
       "class_name": "Product",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -75,7 +75,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 28,
       "end_line": 28,
       "function": "to_dict",
@@ -84,13 +84,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 37,
-      "end_line": 37,
+      "line": 36,
+      "end_line": 36,
       "function": "from_dict",
       "class_name": "Product",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Product\"]:",
@@ -102,7 +102,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 38,
       "end_line": 38,
       "function": "from_dict",
@@ -112,13 +112,13 @@
         "cls",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 45,
-      "end_line": 45,
+      "kind": "exception_handler_entry",
+      "line": 44,
+      "end_line": 44,
       "function": "from_dict",
       "class_name": "Product",
       "code": "except ...",
@@ -126,11 +126,11 @@
         "cls",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 45,
       "end_line": 45,
       "function": "from_dict",
@@ -140,13 +140,13 @@
         "cls",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 54,
-      "end_line": 54,
+      "line": 53,
+      "end_line": 53,
       "function": "line_total",
       "class_name": "CartItem",
       "code": "def line_total(self) -> float:",
@@ -157,7 +157,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 54,
       "end_line": 54,
       "function": "line_total",
@@ -166,13 +166,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 59,
-      "end_line": 59,
+      "line": 58,
+      "end_line": 58,
       "function": "__init__",
       "class_name": "Cart",
       "code": "def __init__(self, cart_id: str) -> None:",
@@ -185,8 +185,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 64,
-      "end_line": 64,
+      "line": 63,
+      "end_line": 63,
       "function": "add",
       "class_name": "Cart",
       "code": "def add(self, product: Product, quantity: int = 1) -> None:",
@@ -200,8 +200,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 70,
-      "end_line": 70,
+      "line": 69,
+      "end_line": 69,
       "function": "remove",
       "class_name": "Cart",
       "code": "def remove(self, product_id: str) -> None:",
@@ -214,8 +214,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 74,
-      "end_line": 74,
+      "line": 73,
+      "end_line": 73,
       "function": "total",
       "class_name": "Cart",
       "code": "def total(self) -> float:",
@@ -226,7 +226,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 74,
       "end_line": 74,
       "function": "total",
@@ -235,13 +235,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 77,
-      "end_line": 77,
+      "line": 76,
+      "end_line": 76,
       "function": "to_dict",
       "class_name": "Cart",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -252,7 +252,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 77,
       "end_line": 77,
       "function": "to_dict",
@@ -261,13 +261,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 91,
-      "end_line": 91,
+      "line": 90,
+      "end_line": 90,
       "function": "from_dict",
       "class_name": "Cart",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Cart\":",
@@ -284,7 +284,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 100,
       "end_line": 100,
       "function": "from_dict",
@@ -299,13 +299,13 @@
         "qty",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 105,
-      "end_line": 105,
+      "line": 104,
+      "end_line": 104,
       "function": "__init__",
       "class_name": "PricingClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
@@ -319,8 +319,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 109,
-      "end_line": 109,
+      "line": 108,
+      "end_line": 108,
       "function": "_url",
       "class_name": "PricingClient",
       "code": "def _url(self, product_id: str) -> str:",
@@ -332,7 +332,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 109,
       "end_line": 109,
       "function": "_url",
@@ -342,13 +342,13 @@
         "product_id",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 112,
-      "end_line": 112,
+      "line": 111,
+      "end_line": 111,
       "function": "fetch_price",
       "class_name": "PricingClient",
       "code": "def fetch_price(self, product_id: str) -> Optional[float]:",
@@ -363,7 +363,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 113,
       "end_line": 113,
       "function": "fetch_price",
@@ -376,11 +376,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 119,
       "end_line": 119,
       "function": "fetch_price",
@@ -393,13 +393,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 121,
-      "end_line": 121,
+      "kind": "exception_handler_entry",
+      "line": 120,
+      "end_line": 120,
       "function": "fetch_price",
       "class_name": "PricingClient",
       "code": "except ...",
@@ -410,11 +410,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 121,
       "end_line": 121,
       "function": "fetch_price",
@@ -427,13 +427,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 125,
-      "end_line": 125,
+      "line": 124,
+      "end_line": 124,
       "function": "load_cart",
       "class_name": null,
       "code": "def load_cart(path: Path) -> Cart:",
@@ -445,7 +445,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 127,
       "end_line": 127,
       "function": "load_cart",
@@ -455,13 +455,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 129,
-      "end_line": 129,
+      "kind": "exception_handler_entry",
+      "line": 128,
+      "end_line": 128,
       "function": "load_cart",
       "class_name": null,
       "code": "except ...",
@@ -469,11 +469,11 @@
         "path",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 129,
       "end_line": 129,
       "function": "load_cart",
@@ -483,13 +483,13 @@
         "path",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 133,
-      "end_line": 133,
+      "line": 132,
+      "end_line": 132,
       "function": "save_cart",
       "class_name": null,
       "code": "def save_cart(path: Path, cart: Cart) -> None:",
@@ -503,9 +503,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 139,
-      "end_line": 139,
+      "kind": "exception_handler_entry",
+      "line": 138,
+      "end_line": 138,
       "function": "save_cart",
       "class_name": null,
       "code": "except ...",
@@ -515,13 +515,13 @@
         "payload",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "except",
-      "line": 143,
-      "end_line": 143,
+      "kind": "exception_handler_entry",
+      "line": 142,
+      "end_line": 142,
       "function": "save_cart",
       "class_name": null,
       "code": "except ...",
@@ -531,13 +531,13 @@
         "payload",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 147,
-      "end_line": 147,
+      "line": 146,
+      "end_line": 146,
       "function": "apply_discounts",
       "class_name": null,
       "code": "def apply_discounts(cart: Cart, now: Optional[datetime] = None) -> float:",
@@ -550,7 +550,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 151,
       "end_line": 151,
       "function": "apply_discounts",
@@ -561,11 +561,11 @@
         "now",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 153,
       "end_line": 153,
       "function": "apply_discounts",
@@ -576,11 +576,11 @@
         "now",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 155,
       "end_line": 155,
       "function": "apply_discounts",
@@ -591,11 +591,11 @@
         "now",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 156,
       "end_line": 156,
       "function": "apply_discounts",
@@ -606,13 +606,13 @@
         "now",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 160,
-      "end_line": 160,
+      "line": 159,
+      "end_line": 159,
       "function": "pick_best_deal",
       "class_name": null,
       "code": "def pick_best_deal(carts: List[Cart]) -> Optional[Cart]:",
@@ -626,7 +626,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 161,
       "end_line": 161,
       "function": "pick_best_deal",
@@ -638,11 +638,11 @@
         "carts",
         "value"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 169,
       "end_line": 169,
       "function": "pick_best_deal",
@@ -654,13 +654,13 @@
         "carts",
         "value"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 173,
-      "end_line": 173,
+      "line": 172,
+      "end_line": 172,
       "function": "update_prices_from_remote",
       "class_name": null,
       "code": "def update_prices_from_remote(cart: Cart, client: PricingClient) -> int:",
@@ -674,7 +674,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 181,
       "end_line": 181,
       "function": "update_prices_from_remote",
@@ -686,13 +686,13 @@
         "new_price",
         "updated"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 185,
-      "end_line": 185,
+      "line": 184,
+      "end_line": 184,
       "function": "simulate_cart",
       "class_name": null,
       "code": "def simulate_cart(cart: Cart, steps: int = 3) -> List[Dict[str, Any]]:",
@@ -707,7 +707,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 205,
       "end_line": 205,
       "function": "simulate_cart",
@@ -720,13 +720,13 @@
         "product_id",
         "steps"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 209,
-      "end_line": 209,
+      "line": 208,
+      "end_line": 208,
       "function": "main",
       "class_name": null,
       "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
@@ -747,9 +747,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 236,
-      "end_line": 236,
+      "kind": "exception_handler_entry",
+      "line": 235,
+      "end_line": 235,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -766,11 +766,11 @@
         "total_after",
         "total_before"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 236,
       "end_line": 236,
       "function": "main",
@@ -789,11 +789,11 @@
         "total_after",
         "total_before"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 237,
       "end_line": 237,
       "function": "main",
@@ -812,7 +812,7 @@
         "total_after",
         "total_before"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

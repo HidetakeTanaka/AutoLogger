@@ -1,96 +1,371 @@
 {
-  "file": "script63.py",
-  "logs": [
-    {
-      "line": 48,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering Student.from_dict"
-    },
-    {
-      "line": 62,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to deserialize student in Student.from_dict"
-    },
-    {
-      "line": 112,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering AnalyticsClient.fetch_benchmarks"
-    },
-    {
-      "line": 119,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Returning decoded benchmark payload from AnalyticsClient.fetch_benchmarks"
-    },
-    {
-      "line": 121,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error while fetching benchmarks in AnalyticsClient.fetch_benchmarks"
-    },
-    {
-      "line": 124,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering AnalyticsClient.push_summary"
-    },
-    {
-      "line": 132,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Successfully pushed project summary in AnalyticsClient.push_summary"
-    },
-    {
-      "line": 134,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to push summary in AnalyticsClient.push_summary"
-    },
-    {
-      "line": 138,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering load_course"
-    },
-    {
-      "line": 143,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error reading or parsing course file in load_course"
-    },
-    {
-      "line": 147,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering save_course"
-    },
-    {
-      "line": 155,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to persist course file in save_course"
-    },
-    {
-      "line": 165,
-      "kind": "return",
-      "level": "INFO",
-      "message": "Returning computed project summary from summarize_course"
-    },
-    {
-      "line": 205,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "Entering main"
-    },
-    {
-      "line": 228,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Unhandled exception in main"
-    }
-  ]
+"file": "script63.py",
+"logs": [
+{
+"line": 19,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Student.average"
+},
+{
+"line": 21,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0.0 in Student.average"
+},
+{
+"line": 22,
+"kind": "return",
+"level": "INFO",
+"message": "Returning computed average in Student.average"
+},
+{
+"line": 24,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Student.passed"
+},
+{
+"line": 27,
+"kind": "return",
+"level": "INFO",
+"message": "Returning False in Student.passed"
+},
+{
+"line": 28,
+"kind": "return",
+"level": "INFO",
+"message": "Returning pass boolean in Student.passed"
+},
+{
+"line": 30,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Student.matches"
+},
+{
+"line": 33,
+"kind": "return",
+"level": "INFO",
+"message": "Returning True in Student.matches"
+},
+{
+"line": 35,
+"kind": "return",
+"level": "INFO",
+"message": "Returning True in Student.matches"
+},
+{
+"line": 36,
+"kind": "return",
+"level": "INFO",
+"message": "Returning whether student_id contains query in Student.matches"
+},
+{
+"line": 38,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Student.to_dict"
+},
+{
+"line": 39,
+"kind": "return",
+"level": "INFO",
+"message": "Returning student dict in Student.to_dict"
+},
+{
+"line": 47,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Student.from_dict"
+},
+{
+"line": 55,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Student instance from Student.from_dict"
+},
+{
+"line": 61,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to parse Student from raw data in Student.from_dict"
+},
+{
+"line": 62,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from Student.from_dict"
+},
+{
+"line": 66,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Course.init"
+},
+{
+"line": 71,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Course.add_student"
+},
+{
+"line": 74,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Course.get_student"
+},
+{
+"line": 75,
+"kind": "return",
+"level": "INFO",
+"message": "Returning student from Course.get_student"
+},
+{
+"line": 77,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Course.all_students"
+},
+{
+"line": 78,
+"kind": "return",
+"level": "INFO",
+"message": "Returning list of students from Course.all_students"
+},
+{
+"line": 80,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Course.class_average"
+},
+{
+"line": 83,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0.0 as class average in Course.class_average"
+},
+{
+"line": 84,
+"kind": "return",
+"level": "INFO",
+"message": "Returning computed class average in Course.class_average"
+},
+{
+"line": 86,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Course.to_dict"
+},
+{
+"line": 87,
+"kind": "return",
+"level": "INFO",
+"message": "Returning course dict in Course.to_dict"
+},
+{
+"line": 94,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering Course.from_dict"
+},
+{
+"line": 100,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Course instance from Course.from_dict"
+},
+{
+"line": 104,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient.init"
+},
+{
+"line": 108,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient._url"
+},
+{
+"line": 109,
+"kind": "return",
+"level": "INFO",
+"message": "Returning benchmarks URL in AnalyticsClient._url"
+},
+{
+"line": 111,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient.fetch_benchmarks"
+},
+{
+"line": 113,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None (no data) from AnalyticsClient.fetch_benchmarks"
+},
+{
+"line": 119,
+"kind": "return",
+"level": "INFO",
+"message": "Returning parsed benchmarks from AnalyticsClient.fetch_benchmarks"
+},
+{
+"line": 120,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to fetch or parse benchmarks in AnalyticsClient.fetch_benchmarks"
+},
+{
+"line": 121,
+"kind": "return",
+"level": "INFO",
+"message": "Returning None from AnalyticsClient.fetch_benchmarks after error"
+},
+{
+"line": 123,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering AnalyticsClient.push_summary"
+},
+{
+"line": 125,
+"kind": "return",
+"level": "INFO",
+"message": "Returning False in AnalyticsClient.push_summary"
+},
+{
+"line": 132,
+"kind": "return",
+"level": "INFO",
+"message": "Returning whether push succeeded in AnalyticsClient.push_summary"
+},
+{
+"line": 133,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to push summary to remote in AnalyticsClient.push_summary"
+},
+{
+"line": 134,
+"kind": "return",
+"level": "INFO",
+"message": "Returning False from AnalyticsClient.push_summary after error"
+},
+{
+"line": 137,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering load_course"
+},
+{
+"line": 141,
+"kind": "return",
+"level": "INFO",
+"message": "Returning Course from load_course"
+},
+{
+"line": 142,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to load course from path in load_course"
+},
+{
+"line": 143,
+"kind": "return",
+"level": "INFO",
+"message": "Returning default local Course from load_course"
+},
+{
+"line": 146,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering save_course"
+},
+{
+"line": 154,
+"kind": "exception",
+"level": "ERROR",
+"message": "Failed to write course to disk in save_course"
+},
+{
+"line": 159,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering summarize_course"
+},
+{
+"line": 162,
+"kind": "return",
+"level": "INFO",
+"message": "Returning empty summary in summarize_course"
+},
+{
+"line": 165,
+"kind": "return",
+"level": "INFO",
+"message": "Returning computed summary in summarize_course"
+},
+{
+"line": 172,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering apply_curve"
+},
+{
+"line": 179,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering merge_remote_benchmarks"
+},
+{
+"line": 183,
+"kind": "return",
+"level": "INFO",
+"message": "Returning summary from merge_remote_benchmarks"
+},
+{
+"line": 189,
+"kind": "return",
+"level": "INFO",
+"message": "Returning merged benchmarks from merge_remote_benchmarks"
+},
+{
+"line": 192,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering simulate_study"
+},
+{
+"line": 204,
+"kind": "entry",
+"level": "DEBUG",
+"message": "Entering main"
+},
+{
+"line": 222,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 1 (error) from main"
+},
+{
+"line": 227,
+"kind": "exception",
+"level": "ERROR",
+"message": "Unexpected error in main"
+},
+{
+"line": 228,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 1 from main after error"
+},
+{
+"line": 229,
+"kind": "return",
+"level": "INFO",
+"message": "Returning 0 (success) from main"
 }
-
+]
+}

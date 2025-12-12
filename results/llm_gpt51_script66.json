@@ -2,115 +2,115 @@
   "file": "script66.py",
   "logs": [
     {
-      "line": 21,
+      "line": 20,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 25,
+      "line": 24,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 34,
+      "line": 33,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 51,
+      "line": 50,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 56,
+      "line": 55,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 62,
+      "line": 61,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 67,
+      "line": 66,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 73,
+      "line": 72,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 81,
+      "line": 80,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 94,
+      "line": 93,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 98,
+      "line": 97,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 101,
+      "line": 100,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 114,
+      "line": 113,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 123,
+      "line": 122,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 138,
+      "line": 137,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 153,
+      "line": 152,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 166,
+      "line": 165,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 182,
+      "line": 181,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-      "line": 186,
+      "line": 185,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"

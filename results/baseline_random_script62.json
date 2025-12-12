@@ -33,30 +33,30 @@
       "function": "matches"
     },
     {
-      "line": 41,
+      "line": 40,
       "level": "DEBUG",
-      "message": "Random log at line 41 in to_dict",
+      "message": "Random log at line 40 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 72,
+      "line": 71,
       "level": "DEBUG",
-      "message": "Random log at line 72 in __init__",
+      "message": "Random log at line 71 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "ERROR",
-      "message": "Random log at line 80 in get_task",
+      "message": "Random log at line 79 in get_task",
       "kind": "entry",
       "function": "get_task"
     },
     {
-      "line": 83,
+      "line": 82,
       "level": "WARNING",
-      "message": "Random log at line 83 in pending_tasks",
+      "message": "Random log at line 82 in pending_tasks",
       "kind": "entry",
       "function": "pending_tasks"
     },
@@ -68,17 +68,17 @@
       "function": "pending_tasks"
     },
     {
-      "line": 86,
+      "line": 85,
       "level": "WARNING",
-      "message": "Random log at line 86 in completed_ratio",
+      "message": "Random log at line 85 in completed_ratio",
       "kind": "entry",
       "function": "completed_ratio"
     },
     {
-      "line": 130,
+      "line": 129,
       "level": "INFO",
-      "message": "Random log at line 130 in fetch_project",
-      "kind": "except",
+      "message": "Random log at line 129 in fetch_project",
+      "kind": "exception",
       "function": "fetch_project"
     },
     {
@@ -89,23 +89,23 @@
       "function": "load_project"
     },
     {
-      "line": 155,
+      "line": 154,
       "level": "WARNING",
-      "message": "Random log at line 155 in load_project",
-      "kind": "except",
+      "message": "Random log at line 154 in load_project",
+      "kind": "exception",
       "function": "load_project"
     },
     {
-      "line": 165,
+      "line": 164,
       "level": "INFO",
-      "message": "Random log at line 165 in save_project",
-      "kind": "except",
+      "message": "Random log at line 164 in save_project",
+      "kind": "exception",
       "function": "save_project"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "ERROR",
-      "message": "Random log at line 173 in summarize_project",
+      "message": "Random log at line 172 in summarize_project",
       "kind": "entry",
       "function": "summarize_project"
     },
