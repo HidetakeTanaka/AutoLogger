@@ -1,10 +1,10 @@
 {
-  "file": "scripts/script42.py",
+  "file": "scripts\\script42.py",
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 21,
-      "end_line": 21,
+      "line": 20,
+      "end_line": 20,
       "function": "is_long",
       "class_name": "Activity",
       "code": "def is_long(self, threshold: int = 90) -> bool:",
@@ -16,7 +16,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 21,
       "end_line": 21,
       "function": "is_long",
@@ -26,13 +26,13 @@
         "self",
         "threshold"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 24,
-      "end_line": 24,
+      "line": 23,
+      "end_line": 23,
       "function": "matches_mood",
       "class_name": "Activity",
       "code": "def matches_mood(self, mood: str) -> bool:",
@@ -45,7 +45,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 26,
       "end_line": 26,
       "function": "matches_mood",
@@ -56,11 +56,11 @@
         "q",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 28,
       "end_line": 28,
       "function": "matches_mood",
@@ -71,11 +71,11 @@
         "q",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 29,
       "end_line": 29,
       "function": "matches_mood",
@@ -86,13 +86,13 @@
         "q",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 32,
-      "end_line": 32,
+      "line": 31,
+      "end_line": 31,
       "function": "to_dict",
       "class_name": "Activity",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -103,7 +103,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 32,
       "end_line": 32,
       "function": "to_dict",
@@ -112,13 +112,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 43,
-      "end_line": 43,
+      "line": 42,
+      "end_line": 42,
       "function": "from_dict",
       "class_name": "Activity",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Activity\":",
@@ -130,7 +130,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 43,
       "end_line": 43,
       "function": "from_dict",
@@ -140,13 +140,13 @@
         "cls",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 59,
-      "end_line": 59,
+      "line": 58,
+      "end_line": 58,
       "function": "add_activity",
       "class_name": "Schedule",
       "code": "def add_activity(self, activity: Activity) -> None:",
@@ -159,8 +159,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 62,
-      "end_line": 62,
+      "line": 61,
+      "end_line": 61,
       "function": "total_duration",
       "class_name": "Schedule",
       "code": "def total_duration(self) -> int:",
@@ -171,7 +171,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 62,
       "end_line": 62,
       "function": "total_duration",
@@ -180,13 +180,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 65,
-      "end_line": 65,
+      "line": 64,
+      "end_line": 64,
       "function": "to_dict",
       "class_name": "Schedule",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -197,7 +197,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 65,
       "end_line": 65,
       "function": "to_dict",
@@ -206,13 +206,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 69,
-      "end_line": 69,
+      "line": 68,
+      "end_line": 68,
       "function": "from_dict",
       "class_name": "Schedule",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> \"Schedule\":",
@@ -227,9 +227,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 73,
-      "end_line": 73,
+      "kind": "exception_handler_entry",
+      "line": 72,
+      "end_line": 72,
       "function": "from_dict",
       "class_name": "Schedule",
       "code": "except ...",
@@ -240,11 +240,11 @@
         "dt",
         "raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 75,
       "end_line": 75,
       "function": "from_dict",
@@ -257,13 +257,13 @@
         "dt",
         "raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 80,
-      "end_line": 80,
+      "line": 79,
+      "end_line": 79,
       "function": "__init__",
       "class_name": "RecommendationClient",
       "code": "def __init__(self, base_url: str, timeout: int = 4) -> None:",
@@ -277,8 +277,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 84,
-      "end_line": 84,
+      "line": 83,
+      "end_line": 83,
       "function": "_url",
       "class_name": "RecommendationClient",
       "code": "def _url(self, mood: str) -> str:",
@@ -290,7 +290,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 84,
       "end_line": 84,
       "function": "_url",
@@ -300,13 +300,13 @@
         "mood",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 87,
-      "end_line": 87,
+      "line": 86,
+      "end_line": 86,
       "function": "fetch_suggestions",
       "class_name": "RecommendationClient",
       "code": "def fetch_suggestions(self, mood: str) -> List[Dict[str, Any]]:",
@@ -323,7 +323,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 92,
       "end_line": 92,
       "function": "fetch_suggestions",
@@ -338,34 +338,34 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
+      "kind": "exception_handler_entry",
+      "line": 94,
+      "end_line": 94,
+      "function": "fetch_suggestions",
+      "class_name": "RecommendationClient",
+      "code": "except ...",
+      "vars_in_scope": [
+        "body",
+        "data",
+        "items",
+        "mood",
+        "req",
+        "self",
+        "url"
+      ],
+      "why": "exception handler enry",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "return_stmt",
       "line": 95,
       "end_line": 95,
       "function": "fetch_suggestions",
       "class_name": "RecommendationClient",
-      "code": "except ...",
-      "vars_in_scope": [
-        "body",
-        "data",
-        "items",
-        "mood",
-        "req",
-        "self",
-        "url"
-      ],
-      "why": "inside except",
-      "severity_hint": "ERROR"
-    },
-    {
-      "kind": "before_return",
-      "line": 95,
-      "end_line": 95,
-      "function": "fetch_suggestions",
-      "class_name": "RecommendationClient",
       "code": "return []",
       "vars_in_scope": [
         "body",
@@ -376,13 +376,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 97,
-      "end_line": 97,
+      "kind": "exception_handler_entry",
+      "line": 96,
+      "end_line": 96,
       "function": "fetch_suggestions",
       "class_name": "RecommendationClient",
       "code": "except ...",
@@ -395,11 +395,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 97,
       "end_line": 97,
       "function": "fetch_suggestions",
@@ -414,13 +414,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 101,
-      "end_line": 101,
+      "kind": "exception_handler_entry",
+      "line": 100,
+      "end_line": 100,
       "function": "fetch_suggestions",
       "class_name": "RecommendationClient",
       "code": "except ...",
@@ -433,11 +433,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 101,
       "end_line": 101,
       "function": "fetch_suggestions",
@@ -452,11 +452,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 103,
       "end_line": 103,
       "function": "fetch_suggestions",
@@ -471,13 +471,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 107,
-      "end_line": 107,
+      "line": 106,
+      "end_line": 106,
       "function": "load_activities",
       "class_name": null,
       "code": "def load_activities(path: Path) -> List[Activity]:",
@@ -492,7 +492,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 108,
       "end_line": 108,
       "function": "load_activities",
@@ -505,13 +505,13 @@
         "result",
         "rows"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 113,
-      "end_line": 113,
+      "kind": "exception_handler_entry",
+      "line": 112,
+      "end_line": 112,
       "function": "load_activities",
       "class_name": null,
       "code": "except ...",
@@ -522,11 +522,11 @@
         "result",
         "rows"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 113,
       "end_line": 113,
       "function": "load_activities",
@@ -539,13 +539,13 @@
         "result",
         "rows"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 122,
-      "end_line": 122,
+      "kind": "exception_handler_entry",
+      "line": 121,
+      "end_line": 121,
       "function": "load_activities",
       "class_name": null,
       "code": "except ...",
@@ -556,11 +556,11 @@
         "result",
         "rows"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 124,
       "end_line": 124,
       "function": "load_activities",
@@ -573,13 +573,13 @@
         "result",
         "rows"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 128,
-      "end_line": 128,
+      "line": 127,
+      "end_line": 127,
       "function": "save_schedule",
       "class_name": null,
       "code": "def save_schedule(path: Path, schedule: Schedule) -> None:",
@@ -594,8 +594,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 141,
-      "end_line": 141,
+      "line": 136,
+      "end_line": 136,
       "function": "pick_activities",
       "class_name": null,
       "code": "def pick_activities(",
@@ -611,7 +611,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 143,
       "end_line": 143,
       "function": "pick_activities",
@@ -625,11 +625,11 @@
         "pool",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 153,
       "end_line": 153,
       "function": "pick_activities",
@@ -643,11 +643,11 @@
         "pool",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 154,
       "end_line": 154,
       "function": "pick_activities",
@@ -661,13 +661,13 @@
         "pool",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 158,
-      "end_line": 158,
+      "line": 157,
+      "end_line": 157,
       "function": "summarize",
       "class_name": null,
       "code": "def summarize(activities: Iterable[Activity]) -> Dict[str, Any]:",
@@ -681,7 +681,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 160,
       "end_line": 160,
       "function": "summarize",
@@ -693,11 +693,11 @@
         "indoor",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 163,
       "end_line": 163,
       "function": "summarize",
@@ -709,13 +709,13 @@
         "indoor",
         "total"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 171,
-      "end_line": 171,
+      "line": 170,
+      "end_line": 170,
       "function": "load_config",
       "class_name": null,
       "code": "def load_config(path: Path) -> Dict[str, Any]:",
@@ -726,7 +726,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 172,
       "end_line": 172,
       "function": "load_config",
@@ -735,11 +735,11 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 175,
       "end_line": 175,
       "function": "load_config",
@@ -748,24 +748,24 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 177,
-      "end_line": 177,
+      "kind": "exception_handler_entry",
+      "line": 176,
+      "end_line": 176,
       "function": "load_config",
       "class_name": null,
       "code": "except ...",
       "vars_in_scope": [
         "path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 177,
       "end_line": 177,
       "function": "load_config",
@@ -774,13 +774,13 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 181,
-      "end_line": 181,
+      "line": 180,
+      "end_line": 180,
       "function": "ensure_sample_data",
       "class_name": null,
       "code": "def ensure_sample_data(base: Path) -> None:",
@@ -793,7 +793,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 183,
       "end_line": 183,
       "function": "ensure_sample_data",
@@ -804,13 +804,13 @@
         "base",
         "sample"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 210,
-      "end_line": 210,
+      "line": 209,
+      "end_line": 209,
       "function": "main",
       "class_name": null,
       "code": "def main(base_dir: str = \"data\", mood: str = \"\") -> int:",
@@ -832,7 +832,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 219,
       "end_line": 219,
       "function": "main",
@@ -852,13 +852,13 @@
         "remote",
         "sched"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 227,
-      "end_line": 227,
+      "kind": "exception_handler_entry",
+      "line": 226,
+      "end_line": 226,
       "function": "main",
       "class_name": null,
       "code": "except ...",
@@ -876,11 +876,11 @@
         "remote",
         "sched"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 233,
       "end_line": 233,
       "function": "main",
@@ -900,11 +900,11 @@
         "remote",
         "sched"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 234,
       "end_line": 234,
       "function": "main",
@@ -924,7 +924,7 @@
         "remote",
         "sched"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]
