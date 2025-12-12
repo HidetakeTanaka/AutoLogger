@@ -1,10 +1,10 @@
 {
-  "file": "scripts/script45.py",
+  "file": "scripts//script45.py",
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 22,
-      "end_line": 22,
+      "line": 21,
+      "end_line": 21,
       "function": "is_recent",
       "class_name": "SensorReading",
       "code": "def is_recent(self, hours: int = 1) -> bool:",
@@ -17,7 +17,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 23,
       "end_line": 23,
       "function": "is_recent",
@@ -28,13 +28,13 @@
         "now",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 26,
-      "end_line": 26,
+      "line": 25,
+      "end_line": 25,
       "function": "is_anomalous",
       "class_name": "SensorReading",
       "code": "def is_anomalous(self, min_val: float = 0.0, max_val: float = 100.0) -> bool:",
@@ -47,7 +47,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 27,
       "end_line": 27,
       "function": "is_anomalous",
@@ -58,11 +58,11 @@
         "min_val",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 29,
       "end_line": 29,
       "function": "is_anomalous",
@@ -73,11 +73,11 @@
         "min_val",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 31,
       "end_line": 31,
       "function": "is_anomalous",
@@ -88,11 +88,11 @@
         "min_val",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 32,
       "end_line": 32,
       "function": "is_anomalous",
@@ -103,13 +103,13 @@
         "min_val",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 35,
-      "end_line": 35,
+      "line": 34,
+      "end_line": 34,
       "function": "to_row",
       "class_name": "SensorReading",
       "code": "def to_row(self) -> List[str]:",
@@ -120,7 +120,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 35,
       "end_line": 35,
       "function": "to_row",
@@ -129,13 +129,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 44,
-      "end_line": 44,
+      "line": 43,
+      "end_line": 43,
       "function": "from_row",
       "class_name": "SensorReading",
       "code": "def from_row(cls, row: Dict[str, str]) -> Optional[\"SensorReading\"]:",
@@ -151,7 +151,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 50,
       "end_line": 50,
       "function": "from_row",
@@ -165,11 +165,11 @@
         "ts",
         "value"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 51,
       "end_line": 51,
       "function": "from_row",
@@ -183,13 +183,13 @@
         "ts",
         "value"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 53,
-      "end_line": 53,
+      "kind": "exception_handler_entry",
+      "line": 52,
+      "end_line": 52,
       "function": "from_row",
       "class_name": "SensorReading",
       "code": "except ...",
@@ -201,11 +201,11 @@
         "ts",
         "value"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 53,
       "end_line": 53,
       "function": "from_row",
@@ -219,13 +219,13 @@
         "ts",
         "value"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 64,
-      "end_line": 64,
+      "line": 63,
+      "end_line": 63,
       "function": "update",
       "class_name": "DeviceState",
       "code": "def update(self, reading: SensorReading) -> None:",
@@ -238,8 +238,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 69,
-      "end_line": 69,
+      "line": 68,
+      "end_line": 68,
       "function": "average_value",
       "class_name": "DeviceState",
       "code": "def average_value(self) -> Optional[float]:",
@@ -250,7 +250,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 70,
       "end_line": 70,
       "function": "average_value",
@@ -259,11 +259,11 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 71,
       "end_line": 71,
       "function": "average_value",
@@ -272,13 +272,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 74,
-      "end_line": 74,
+      "line": 73,
+      "end_line": 73,
       "function": "is_stale",
       "class_name": "DeviceState",
       "code": "def is_stale(self, max_age_minutes: int = 10) -> bool:",
@@ -290,7 +290,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 75,
       "end_line": 75,
       "function": "is_stale",
@@ -300,11 +300,11 @@
         "max_age_minutes",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 76,
       "end_line": 76,
       "function": "is_stale",
@@ -314,13 +314,13 @@
         "max_age_minutes",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 79,
-      "end_line": 79,
+      "line": 78,
+      "end_line": 78,
       "function": "to_dict",
       "class_name": "DeviceState",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -331,7 +331,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 79,
       "end_line": 79,
       "function": "to_dict",
@@ -340,13 +340,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 90,
-      "end_line": 90,
+      "line": 89,
+      "end_line": 89,
       "function": "__init__",
       "class_name": "TelemetryClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
@@ -360,8 +360,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 94,
-      "end_line": 94,
+      "line": 93,
+      "end_line": 93,
       "function": "_url",
       "class_name": "TelemetryClient",
       "code": "def _url(self, path: str) -> str:",
@@ -373,7 +373,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 96,
       "end_line": 96,
       "function": "_url",
@@ -383,13 +383,13 @@
         "path",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 99,
-      "end_line": 99,
+      "line": 98,
+      "end_line": 98,
       "function": "fetch_remote_config",
       "class_name": "TelemetryClient",
       "code": "def fetch_remote_config(self, device_id: str) -> Dict[str, Any]:",
@@ -405,7 +405,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 100,
       "end_line": 100,
       "function": "fetch_remote_config",
@@ -419,11 +419,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 108,
       "end_line": 108,
       "function": "fetch_remote_config",
@@ -437,11 +437,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 109,
       "end_line": 109,
       "function": "fetch_remote_config",
@@ -455,13 +455,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 111,
-      "end_line": 111,
+      "kind": "exception_handler_entry",
+      "line": 110,
+      "end_line": 110,
       "function": "fetch_remote_config",
       "class_name": "TelemetryClient",
       "code": "except ...",
@@ -473,11 +473,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 111,
       "end_line": 111,
       "function": "fetch_remote_config",
@@ -491,13 +491,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 114,
-      "end_line": 114,
+      "line": 113,
+      "end_line": 113,
       "function": "push_aggregate",
       "class_name": "TelemetryClient",
       "code": "def push_aggregate(self, payload: Dict[str, Any]) -> bool:",
@@ -513,7 +513,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 115,
       "end_line": 115,
       "function": "push_aggregate",
@@ -527,11 +527,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 122,
       "end_line": 122,
       "function": "push_aggregate",
@@ -545,13 +545,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 124,
-      "end_line": 124,
+      "kind": "exception_handler_entry",
+      "line": 123,
+      "end_line": 123,
       "function": "push_aggregate",
       "class_name": "TelemetryClient",
       "code": "except ...",
@@ -563,11 +563,11 @@
         "self",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 124,
       "end_line": 124,
       "function": "push_aggregate",
@@ -581,13 +581,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 128,
-      "end_line": 128,
+      "line": 127,
+      "end_line": 127,
       "function": "parse_csv",
       "class_name": null,
       "code": "def parse_csv(path: Path) -> List[SensorReading]:",
@@ -601,9 +601,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 138,
-      "end_line": 138,
+      "kind": "exception_handler_entry",
+      "line": 137,
+      "end_line": 137,
       "function": "parse_csv",
       "class_name": null,
       "code": "except ...",
@@ -613,11 +613,11 @@
         "reading",
         "readings"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 138,
       "end_line": 138,
       "function": "parse_csv",
@@ -629,11 +629,11 @@
         "reading",
         "readings"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 139,
       "end_line": 139,
       "function": "parse_csv",
@@ -645,13 +645,13 @@
         "reading",
         "readings"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 143,
-      "end_line": 143,
+      "line": 142,
+      "end_line": 142,
       "function": "aggregate_by_device",
       "class_name": null,
       "code": "def aggregate_by_device(readings: Iterable[SensorReading]) -> Dict[str, DeviceState]:",
@@ -663,7 +663,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 148,
       "end_line": 148,
       "function": "aggregate_by_device",
@@ -673,13 +673,13 @@
         "devices",
         "readings"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 156,
-      "end_line": 156,
+      "line": 151,
+      "end_line": 151,
       "function": "detect_anomalies",
       "class_name": null,
       "code": "def detect_anomalies(",
@@ -693,7 +693,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 160,
       "end_line": 160,
       "function": "detect_anomalies",
@@ -705,13 +705,13 @@
         "min_val",
         "readings"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 168,
-      "end_line": 168,
+      "line": 163,
+      "end_line": 163,
       "function": "save_report",
       "class_name": null,
       "code": "def save_report(",
@@ -727,8 +727,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 181,
-      "end_line": 181,
+      "line": 180,
+      "end_line": 180,
       "function": "load_config",
       "class_name": null,
       "code": "def load_config(path: Path) -> Dict[str, Any]:",
@@ -740,7 +740,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 185,
       "end_line": 185,
       "function": "load_config",
@@ -750,11 +750,11 @@
         "data",
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 186,
       "end_line": 186,
       "function": "load_config",
@@ -764,13 +764,13 @@
         "data",
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 188,
-      "end_line": 188,
+      "kind": "exception_handler_entry",
+      "line": 187,
+      "end_line": 187,
       "function": "load_config",
       "class_name": null,
       "code": "except ...",
@@ -778,11 +778,11 @@
         "data",
         "path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 188,
       "end_line": 188,
       "function": "load_config",
@@ -792,13 +792,13 @@
         "data",
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 192,
-      "end_line": 192,
+      "line": 191,
+      "end_line": 191,
       "function": "summarize_anomalies",
       "class_name": null,
       "code": "def summarize_anomalies(anomalies: Iterable[SensorReading]) -> Dict[str, int]:",
@@ -810,7 +810,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 195,
       "end_line": 195,
       "function": "summarize_anomalies",
@@ -820,13 +820,13 @@
         "anomalies",
         "counts"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 199,
-      "end_line": 199,
+      "line": 198,
+      "end_line": 198,
       "function": "main",
       "class_name": null,
       "code": "def main(data_dir: str = \"data\", base_url: str = \"\") -> int:",
@@ -852,7 +852,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 208,
       "end_line": 208,
       "function": "main",
@@ -876,11 +876,11 @@
         "report_path",
         "summary"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 217,
       "end_line": 217,
       "function": "main",
@@ -904,7 +904,7 @@
         "report_path",
         "summary"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]
