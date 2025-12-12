@@ -1,112 +1,92 @@
 {
-  "file": "scripts/script40.py",
+  "file": "scripts/script31.py",
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 18,
-      "end_line": 18,
-      "function": "is_in_stock",
-      "class_name": "Item",
-      "code": "def is_in_stock(self, quantity: int = 1) -> bool:",
-      "vars_in_scope": [
-        "quantity",
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 20,
-      "end_line": 20,
-      "function": "is_in_stock",
-      "class_name": "Item",
-      "code": "return False",
-      "vars_in_scope": [
-        "quantity",
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 21,
-      "end_line": 21,
-      "function": "is_in_stock",
-      "class_name": "Item",
-      "code": "return self.stock >= quantity",
-      "vars_in_scope": [
-        "quantity",
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 23,
-      "end_line": 23,
-      "function": "reserve",
-      "class_name": "Item",
-      "code": "def reserve(self, quantity: int) -> bool:",
-      "vars_in_scope": [
-        "quantity",
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 25,
-      "end_line": 25,
-      "function": "reserve",
-      "class_name": "Item",
-      "code": "return False",
-      "vars_in_scope": [
-        "quantity",
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 27,
-      "end_line": 27,
-      "function": "reserve",
-      "class_name": "Item",
-      "code": "return True",
-      "vars_in_scope": [
-        "quantity",
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 29,
-      "end_line": 29,
-      "function": "to_dict",
-      "class_name": "Item",
-      "code": "def to_dict(self) -> Dict[str, Any]:",
-      "vars_in_scope": [
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
       "line": 30,
       "end_line": 30,
-      "function": "to_dict",
-      "class_name": "Item",
-      "code": "return {'item_id': self.item_id, 'name': self.name, 'category': self.category, 'price': self.price, 'stock': self.stock}",
+      "function": "score_ratio",
+      "class_name": "QuizAttempt",
+      "code": "def score_ratio(self) -> float:",
       "vars_in_scope": [
         "self"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "return_stmt",
+      "line": 32,
+      "end_line": 32,
+      "function": "score_ratio",
+      "class_name": "QuizAttempt",
+      "code": "return 0.0",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "return statement",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "return_stmt",
+      "line": 33,
+      "end_line": 33,
+      "function": "score_ratio",
+      "class_name": "QuizAttempt",
+      "code": "return self.score / self.max_score",
+      "vars_in_scope": [
+        "self"
+      ],
+      "why": "return statement",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 35,
+      "end_line": 35,
+      "function": "is_suspicious",
+      "class_name": "QuizAttempt",
+      "code": "def is_suspicious(self, fast_threshold: int = 60, high_ratio: float = 0.9) -> bool:",
+      "vars_in_scope": [
+        "fast_threshold",
+        "high_ratio",
+        "self",
+        "very_fast",
+        "very_high"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "return_stmt",
+      "line": 38,
+      "end_line": 38,
+      "function": "is_suspicious",
+      "class_name": "QuizAttempt",
+      "code": "return False",
+      "vars_in_scope": [
+        "fast_threshold",
+        "high_ratio",
+        "self",
+        "very_fast",
+        "very_high"
+      ],
+      "why": "return statement",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "return_stmt",
+      "line": 41,
+      "end_line": 41,
+      "function": "is_suspicious",
+      "class_name": "QuizAttempt",
+      "code": "return very_fast and very_high",
+      "vars_in_scope": [
+        "fast_threshold",
+        "high_ratio",
+        "self",
+        "very_fast",
+        "very_high"
       ],
       "why": "return statement",
       "severity_hint": "INFO"
@@ -115,834 +95,284 @@
       "kind": "func_entry",
       "line": 44,
       "end_line": 44,
-      "function": "total",
-      "class_name": "OrderLine",
-      "code": "def total(self, item: Item) -> float:",
-      "vars_in_scope": [
-        "item",
-        "self"
-      ],
+      "function": "ensure_data_dir",
+      "class_name": null,
+      "code": "def ensure_data_dir() -> None:",
+      "vars_in_scope": [],
       "why": "function entry",
       "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 46,
-      "end_line": 46,
-      "function": "total",
-      "class_name": "OrderLine",
-      "code": "return 0.0",
-      "vars_in_scope": [
-        "item",
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 47,
-      "end_line": 47,
-      "function": "total",
-      "class_name": "OrderLine",
-      "code": "return item.price * self.quantity",
-      "vars_in_scope": [
-        "item",
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 58,
-      "end_line": 58,
-      "function": "total_amount",
-      "class_name": "Order",
-      "code": "def total_amount(self, items: Dict[str, Item]) -> float:",
+      "line": 48,
+      "end_line": 48,
+      "function": "generate_sample_attempts",
+      "class_name": null,
+      "code": "def generate_sample_attempts(num_users: int = 10) -> None:",
       "vars_in_scope": [
-        "item",
-        "items",
-        "self",
-        "total"
+        "attempts",
+        "base",
+        "duration",
+        "max_score",
+        "num_users",
+        "score",
+        "user_id"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 65,
-      "end_line": 65,
-      "function": "total_amount",
-      "class_name": "Order",
-      "code": "return total",
-      "vars_in_scope": [
-        "item",
-        "items",
-        "self",
-        "total"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 67,
-      "end_line": 67,
-      "function": "is_open",
-      "class_name": "Order",
-      "code": "def is_open(self) -> bool:",
-      "vars_in_scope": [
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 68,
-      "end_line": 68,
-      "function": "is_open",
-      "class_name": "Order",
-      "code": "return self.status in {'pending', 'processing'}",
-      "vars_in_scope": [
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
       "line": 75,
       "end_line": 75,
-      "function": "add_item",
-      "class_name": "Inventory",
-      "code": "def add_item(self, item: Item) -> None:",
+      "function": "load_attempts",
+      "class_name": null,
+      "code": "def load_attempts(path: Path) -> List[QuizAttempt]:",
       "vars_in_scope": [
-        "item",
-        "self"
+        "attempts",
+        "duration",
+        "max_score",
+        "path",
+        "raw",
+        "score"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "func_entry",
-      "line": 78,
-      "end_line": 78,
-      "function": "get",
-      "class_name": "Inventory",
-      "code": "def get(self, item_id: str) -> Optional[Item]:",
-      "vars_in_scope": [
-        "item_id",
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 79,
-      "end_line": 79,
-      "function": "get",
-      "class_name": "Inventory",
-      "code": "return self.items.get(item_id)",
-      "vars_in_scope": [
-        "item_id",
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 81,
-      "end_line": 81,
-      "function": "all",
-      "class_name": "Inventory",
-      "code": "def all(self) -> List[Item]:",
-      "vars_in_scope": [
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 82,
-      "end_line": 82,
-      "function": "all",
-      "class_name": "Inventory",
-      "code": "return list(self.items.values())",
-      "vars_in_scope": [
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 84,
-      "end_line": 84,
-      "function": "to_dict",
-      "class_name": "Inventory",
-      "code": "def to_dict(self) -> Dict[str, Any]:",
-      "vars_in_scope": [
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 85,
-      "end_line": 85,
-      "function": "to_dict",
-      "class_name": "Inventory",
-      "code": "return {'items': [i.to_dict() for i in self.items.values()]}",
-      "vars_in_scope": [
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 89,
-      "end_line": 89,
-      "function": "__init__",
-      "class_name": "OrderProcessor",
-      "code": "def __init__(self, inventory: Inventory) -> None:",
-      "vars_in_scope": [
-        "inventory",
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "func_entry",
-      "line": 92,
-      "end_line": 92,
-      "function": "can_fulfil",
-      "class_name": "OrderProcessor",
-      "code": "def can_fulfil(self, order: Order) -> bool:",
-      "vars_in_scope": [
-        "item",
-        "order",
-        "self"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 96,
-      "end_line": 96,
-      "function": "can_fulfil",
-      "class_name": "OrderProcessor",
-      "code": "return False",
-      "vars_in_scope": [
-        "item",
-        "order",
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "return_stmt",
+      "kind": "exception_handler_entry",
       "line": 97,
       "end_line": 97,
-      "function": "can_fulfil",
-      "class_name": "OrderProcessor",
-      "code": "return True",
+      "function": "load_attempts",
+      "class_name": null,
+      "code": "except ...",
       "vars_in_scope": [
-        "item",
-        "order",
-        "self"
+        "attempts",
+        "duration",
+        "max_score",
+        "path",
+        "raw",
+        "score"
+      ],
+      "why": "exception handler enry",
+      "severity_hint": "ERROR"
+    },
+    {
+      "kind": "return_stmt",
+      "line": 100,
+      "end_line": 100,
+      "function": "load_attempts",
+      "class_name": null,
+      "code": "return attempts",
+      "vars_in_scope": [
+        "attempts",
+        "duration",
+        "max_score",
+        "path",
+        "raw",
+        "score"
       ],
       "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 99,
-      "end_line": 99,
-      "function": "apply_order",
-      "class_name": "OrderProcessor",
-      "code": "def apply_order(self, order: Order) -> bool:",
+      "line": 103,
+      "end_line": 103,
+      "function": "group_by_user",
+      "class_name": null,
+      "code": "def group_by_user(attempts: List[QuizAttempt]) -> Dict[str, List[QuizAttempt]]:",
       "vars_in_scope": [
-        "item",
-        "order",
-        "self"
+        "attempts",
+        "grouped"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
       "kind": "return_stmt",
-      "line": 101,
-      "end_line": 101,
-      "function": "apply_order",
-      "class_name": "OrderProcessor",
-      "code": "return False",
+      "line": 107,
+      "end_line": 107,
+      "function": "group_by_user",
+      "class_name": null,
+      "code": "return grouped",
       "vars_in_scope": [
-        "item",
-        "order",
-        "self"
+        "attempts",
+        "grouped"
       ],
       "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "return_stmt",
-      "line": 104,
-      "end_line": 104,
-      "function": "apply_order",
-      "class_name": "OrderProcessor",
-      "code": "return False",
+      "kind": "func_entry",
+      "line": 110,
+      "end_line": 110,
+      "function": "summarize_user",
+      "class_name": null,
+      "code": "def summarize_user(attempts: List[QuizAttempt]) -> Dict[str, object]:",
       "vars_in_scope": [
-        "item",
-        "order",
-        "self"
+        "any_passed",
+        "attempts",
+        "avg",
+        "best",
+        "ratios",
+        "suspicious"
       ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 109,
-      "end_line": 109,
-      "function": "apply_order",
-      "class_name": "OrderProcessor",
-      "code": "return False",
-      "vars_in_scope": [
-        "item",
-        "order",
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
+      "why": "function entry",
+      "severity_hint": "DEBUG"
     },
     {
       "kind": "return_stmt",
       "line": 112,
       "end_line": 112,
-      "function": "apply_order",
-      "class_name": "OrderProcessor",
-      "code": "return False",
+      "function": "summarize_user",
+      "class_name": null,
+      "code": "return {'count': 0, 'best_ratio': 0.0, 'avg_ratio': 0.0, 'any_passed': False}",
       "vars_in_scope": [
-        "item",
-        "order",
-        "self"
+        "any_passed",
+        "attempts",
+        "avg",
+        "best",
+        "ratios",
+        "suspicious"
       ],
       "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "return_stmt",
-      "line": 114,
-      "end_line": 114,
-      "function": "apply_order",
-      "class_name": "OrderProcessor",
-      "code": "return True",
-      "vars_in_scope": [
-        "item",
-        "order",
-        "self"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 117,
-      "end_line": 117,
-      "function": "load_inventory",
+      "line": 118,
+      "end_line": 118,
+      "function": "summarize_user",
       "class_name": null,
-      "code": "def load_inventory(path: Path) -> Inventory:",
+      "code": "return {'count': len(attempts), 'best_ratio': round(best, 3), 'avg_ratio': round(avg, 3), 'any_passed': any_passed, 'suspicious': suspicious}",
       "vars_in_scope": [
-        "data",
-        "inv",
-        "item",
-        "path"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 119,
-      "end_line": 119,
-      "function": "load_inventory",
-      "class_name": null,
-      "code": "return Inventory()",
-      "vars_in_scope": [
-        "data",
-        "inv",
-        "item",
-        "path"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "exception_handler_entry",
-      "line": 123,
-      "end_line": 123,
-      "function": "load_inventory",
-      "class_name": null,
-      "code": "except ...",
-      "vars_in_scope": [
-        "data",
-        "inv",
-        "item",
-        "path"
-      ],
-      "why": "exception handler enry",
-      "severity_hint": "ERROR"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 124,
-      "end_line": 124,
-      "function": "load_inventory",
-      "class_name": null,
-      "code": "return Inventory()",
-      "vars_in_scope": [
-        "data",
-        "inv",
-        "item",
-        "path"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "exception_handler_entry",
-      "line": 135,
-      "end_line": 135,
-      "function": "load_inventory",
-      "class_name": null,
-      "code": "except ...",
-      "vars_in_scope": [
-        "data",
-        "inv",
-        "item",
-        "path"
-      ],
-      "why": "exception handler enry",
-      "severity_hint": "ERROR"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 138,
-      "end_line": 138,
-      "function": "load_inventory",
-      "class_name": null,
-      "code": "return inv",
-      "vars_in_scope": [
-        "data",
-        "inv",
-        "item",
-        "path"
+        "any_passed",
+        "attempts",
+        "avg",
+        "best",
+        "ratios",
+        "suspicious"
       ],
       "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 141,
-      "end_line": 141,
-      "function": "load_orders",
+      "line": 127,
+      "end_line": 127,
+      "function": "find_suspicious_users",
       "class_name": null,
-      "code": "def load_orders(path: Path) -> List[Order]:",
+      "code": "def find_suspicious_users(grouped: Dict[str, List[QuizAttempt]]) -> List[str]:",
       "vars_in_scope": [
-        "created_at",
-        "customer_id",
-        "data",
-        "item_id",
-        "lines",
-        "order_id",
-        "path",
-        "quantity",
-        "result"
+        "grouped",
+        "summary",
+        "suspects"
       ],
       "why": "function entry",
       "severity_hint": "DEBUG"
     },
     {
       "kind": "return_stmt",
+      "line": 133,
+      "end_line": 133,
+      "function": "find_suspicious_users",
+      "class_name": null,
+      "code": "return suspects",
+      "vars_in_scope": [
+        "grouped",
+        "summary",
+        "suspects"
+      ],
+      "why": "return statement",
+      "severity_hint": "INFO"
+    },
+    {
+      "kind": "func_entry",
+      "line": 136,
+      "end_line": 136,
+      "function": "interactive_menu",
+      "class_name": null,
+      "code": "def interactive_menu() -> None:",
+      "vars_in_scope": [
+        "attempts",
+        "choice",
+        "grouped",
+        "n",
+        "n_str",
+        "summary",
+        "suspects"
+      ],
+      "why": "function entry",
+      "severity_hint": "DEBUG"
+    },
+    {
+      "kind": "exception_handler_entry",
       "line": 143,
       "end_line": 143,
-      "function": "load_orders",
-      "class_name": null,
-      "code": "return []",
-      "vars_in_scope": [
-        "created_at",
-        "customer_id",
-        "data",
-        "item_id",
-        "lines",
-        "order_id",
-        "path",
-        "quantity",
-        "result"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "exception_handler_entry",
-      "line": 147,
-      "end_line": 147,
-      "function": "load_orders",
+      "function": "interactive_menu",
       "class_name": null,
       "code": "except ...",
       "vars_in_scope": [
-        "created_at",
-        "customer_id",
-        "data",
-        "item_id",
-        "lines",
-        "order_id",
-        "path",
-        "quantity",
-        "result"
-      ],
-      "why": "exception handler enry",
-      "severity_hint": "ERROR"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 148,
-      "end_line": 148,
-      "function": "load_orders",
-      "class_name": null,
-      "code": "return []",
-      "vars_in_scope": [
-        "created_at",
-        "customer_id",
-        "data",
-        "item_id",
-        "lines",
-        "order_id",
-        "path",
-        "quantity",
-        "result"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "exception_handler_entry",
-      "line": 160,
-      "end_line": 160,
-      "function": "load_orders",
-      "class_name": null,
-      "code": "except ...",
-      "vars_in_scope": [
-        "created_at",
-        "customer_id",
-        "data",
-        "item_id",
-        "lines",
-        "order_id",
-        "path",
-        "quantity",
-        "result"
-      ],
-      "why": "exception handler enry",
-      "severity_hint": "ERROR"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 163,
-      "end_line": 163,
-      "function": "load_orders",
-      "class_name": null,
-      "code": "return result",
-      "vars_in_scope": [
-        "created_at",
-        "customer_id",
-        "data",
-        "item_id",
-        "lines",
-        "order_id",
-        "path",
-        "quantity",
-        "result"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 166,
-      "end_line": 166,
-      "function": "save_inventory",
-      "class_name": null,
-      "code": "def save_inventory(path: Path, inventory: Inventory) -> None:",
-      "vars_in_scope": [
-        "inventory",
-        "path"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "func_entry",
-      "line": 172,
-      "end_line": 172,
-      "function": "summarize_orders",
-      "class_name": null,
-      "code": "def summarize_orders(orders: Iterable[Order], inventory: Inventory) -> Dict[str, Any]:",
-      "vars_in_scope": [
-        "inventory",
-        "orders",
-        "summary"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 185,
-      "end_line": 185,
-      "function": "summarize_orders",
-      "class_name": null,
-      "code": "return summary",
-      "vars_in_scope": [
-        "inventory",
-        "orders",
-        "summary"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 188,
-      "end_line": 188,
-      "function": "find_high_value_orders",
-      "class_name": null,
-      "code": "def find_high_value_orders(orders: Iterable[Order], inventory: Inventory, threshold: float) -> List[Tuple[str, float]]:",
-      "vars_in_scope": [
-        "amount",
-        "inventory",
-        "orders",
-        "result",
-        "threshold"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 194,
-      "end_line": 194,
-      "function": "find_high_value_orders",
-      "class_name": null,
-      "code": "return result",
-      "vars_in_scope": [
-        "amount",
-        "inventory",
-        "orders",
-        "result",
-        "threshold"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 197,
-      "end_line": 197,
-      "function": "group_orders_by_customer",
-      "class_name": null,
-      "code": "def group_orders_by_customer(orders: Iterable[Order]) -> Dict[str, List[Order]]:",
-      "vars_in_scope": [
+        "attempts",
+        "choice",
         "grouped",
-        "orders"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 201,
-      "end_line": 201,
-      "function": "group_orders_by_customer",
-      "class_name": null,
-      "code": "return grouped",
-      "vars_in_scope": [
-        "grouped",
-        "orders"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "func_entry",
-      "line": 204,
-      "end_line": 204,
-      "function": "export_report",
-      "class_name": null,
-      "code": "def export_report(path: Path, summary: Dict[str, Any], high_value: List[Tuple[str, float]]) -> None:",
-      "vars_in_scope": [
-        "high_value",
-        "path",
-        "payload",
-        "summary"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "func_entry",
-      "line": 214,
-      "end_line": 214,
-      "function": "load_config",
-      "class_name": null,
-      "code": "def load_config(path: Path) -> Dict[str, Any]:",
-      "vars_in_scope": [
-        "path"
-      ],
-      "why": "function entry",
-      "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 216,
-      "end_line": 216,
-      "function": "load_config",
-      "class_name": null,
-      "code": "return {}",
-      "vars_in_scope": [
-        "path"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 219,
-      "end_line": 219,
-      "function": "load_config",
-      "class_name": null,
-      "code": "return json.load(f)",
-      "vars_in_scope": [
-        "path"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "exception_handler_entry",
-      "line": 220,
-      "end_line": 220,
-      "function": "load_config",
-      "class_name": null,
-      "code": "except ...",
-      "vars_in_scope": [
-        "path"
+        "n",
+        "n_str",
+        "summary",
+        "suspects"
       ],
       "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "return_stmt",
-      "line": 221,
-      "end_line": 221,
-      "function": "load_config",
+      "line": 145,
+      "end_line": 145,
+      "function": "interactive_menu",
       "class_name": null,
-      "code": "return {}",
+      "code": "return",
       "vars_in_scope": [
-        "path"
+        "attempts",
+        "choice",
+        "grouped",
+        "n",
+        "n_str",
+        "summary",
+        "suspects"
       ],
       "why": "return statement",
       "severity_hint": "INFO"
+    },
+    {
+      "kind": "exception_handler_entry",
+      "line": 170,
+      "end_line": 170,
+      "function": "interactive_menu",
+      "class_name": null,
+      "code": "except ...",
+      "vars_in_scope": [
+        "attempts",
+        "choice",
+        "grouped",
+        "n",
+        "n_str",
+        "summary",
+        "suspects"
+      ],
+      "why": "exception handler enry",
+      "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 224,
-      "end_line": 224,
+      "line": 181,
+      "end_line": 181,
       "function": "main",
       "class_name": null,
-      "code": "def main(base_dir: str = \"data\") -> int:",
-      "vars_in_scope": [
-        "base",
-        "base_dir",
-        "cfg",
-        "config_path",
-        "count",
-        "groups",
-        "high_value",
-        "inv_path",
-        "inventory",
-        "orders",
-        "orders_path",
-        "processor",
-        "report_path",
-        "summary",
-        "threshold"
-      ],
+      "code": "def main() -> None:",
+      "vars_in_scope": [],
       "why": "function entry",
       "severity_hint": "DEBUG"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 234,
-      "end_line": 234,
-      "function": "main",
-      "class_name": null,
-      "code": "return 1",
-      "vars_in_scope": [
-        "base",
-        "base_dir",
-        "cfg",
-        "config_path",
-        "count",
-        "groups",
-        "high_value",
-        "inv_path",
-        "inventory",
-        "orders",
-        "orders_path",
-        "processor",
-        "report_path",
-        "summary",
-        "threshold"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
-    },
-    {
-      "kind": "return_stmt",
-      "line": 260,
-      "end_line": 260,
-      "function": "main",
-      "class_name": null,
-      "code": "return 0",
-      "vars_in_scope": [
-        "base",
-        "base_dir",
-        "cfg",
-        "config_path",
-        "count",
-        "groups",
-        "high_value",
-        "inv_path",
-        "inventory",
-        "orders",
-        "orders_path",
-        "processor",
-        "report_path",
-        "summary",
-        "threshold"
-      ],
-      "why": "return statement",
-      "severity_hint": "INFO"
     }
   ]
 }
