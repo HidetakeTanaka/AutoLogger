@@ -2,102 +2,109 @@
   "file": "script44.py",
   "logs": [
     {
-      "candidate_id": 0,
-      "lineno": 17,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
-    },
-    {
-      "candidate_id": 3,
-      "lineno": 24,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
-    },
-    {
       "candidate_id": 5,
-      "lineno": 34,
+      "lineno": 33,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering Task.from_dict with raw data: {raw}\")"
     },
     {
-      "candidate_id": 8,
-      "lineno": 53,
+      "candidate_id": 6,
+      "lineno": 37,
       "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "kind": "exception_handler_entry",
+      "log_code": "logging.error('Failed to create Task from dict with due_raw=%s and raw=%s', due_raw, raw, exc_info=True)"
     },
     {
       "candidate_id": 9,
-      "lineno": 56,
+      "lineno": 55,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering add method with task: {task}\")"
     },
     {
       "candidate_id": 10,
-      "lineno": 59,
+      "lineno": 58,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
-    },
-    {
-      "candidate_id": 12,
-      "lineno": 62,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering get method with task_id={task_id}\")"
     },
     {
       "candidate_id": 14,
-      "lineno": 65,
+      "lineno": 64,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
-    },
-    {
-      "candidate_id": 16,
-      "lineno": 68,
-      "col_offset": 0,
-      "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug('Entered Board.pending method')"
     },
     {
       "candidate_id": 18,
-      "lineno": 72,
+      "lineno": 71,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering load_board with path: {path}\")"
+    },
+    {
+      "candidate_id": 20,
+      "lineno": 78,
+      "col_offset": 0,
+      "kind": "exception_handler_entry",
+      "log_code": "logging.error(f'Failed to load board from {path} with data {data} and rows {rows}', exc_info=True)"
     },
     {
       "candidate_id": 23,
-      "lineno": 88,
+      "lineno": 87,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entering save_board with path={path} and board={board}\")"
+    },
+    {
+      "candidate_id": 24,
+      "lineno": 93,
+      "col_offset": 0,
+      "kind": "exception_handler_entry",
+      "log_code": "logging.error(f'Failed to save board to {path}', exc_info=True)"
     },
     {
       "candidate_id": 26,
-      "lineno": 98,
+      "lineno": 97,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entered filter_overdue with {len(tasks)} tasks and now={now}\")"
     },
     {
       "candidate_id": 28,
-      "lineno": 104,
+      "lineno": 103,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entered compute_summary with {len(list(tasks))} tasks\")"
+    },
+    {
+      "candidate_id": 30,
+      "lineno": 109,
+      "col_offset": 0,
+      "kind": "return_stmt",
+      "log_code": "logging.info(f\"Summary computed: count={len(items)}, completed={completed}, overdue={overdue}\")"
     },
     {
       "candidate_id": 31,
-      "lineno": 113,
+      "lineno": 112,
       "col_offset": 0,
       "kind": "func_entry",
-      "log_code": "logging.info('[GPT-5.1] Function entry logged')"
+      "log_code": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"
+    },
+    {
+      "candidate_id": 32,
+      "lineno": 116,
+      "col_offset": 0,
+      "kind": "exception_handler_entry",
+      "log_code": "logging.error('Exception occurred in main function', exc_info=True)"
+    },
+    {
+      "candidate_id": 34,
+      "lineno": 149,
+      "col_offset": 0,
+      "kind": "exception_handler_entry",
+      "log_code": "logging.error('Exception occurred in main function', exc_info=True)"
     }
   ]
 }
