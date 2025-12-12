@@ -2,31 +2,217 @@
   "file": "script59.py",
   "logs": [
     {
-      "line": 39,
+      "line": 17,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricSample.is_recent"
+    },
+    {
+      "line": 19,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning False for recency check in MetricSample.is_recent"
+    },
+    {
+      "line": 20,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recency flag in MetricSample.is_recent"
+    },
+    {
+      "line": 30,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.add_sample"
+    },
+    {
+      "line": 32,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning from Sensor.add_sample"
+    },
+    {
+      "line": 35,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.latest"
+    },
+    {
+      "line": 37,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning None (no samples) in Sensor.latest"
+    },
+    {
+      "line": 38,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning latest MetricSample in Sensor.latest"
+    },
+    {
+      "line": 40,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.recent_values"
+    },
+    {
+      "line": 41,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning recent values list in Sensor.recent_values"
+    },
+    {
+      "line": 43,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering Sensor.to_dict"
+    },
+    {
+      "line": 44,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized Sensor dict in Sensor.to_dict"
+    },
+    {
+      "line": 55,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering Sensor.from_dict"
     },
     {
-      "line": 69,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Failed to parse raw data in Sensor.from_dict"
+      "line": 62,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Sensor instance from Sensor.from_dict"
     },
     {
-      "line": 114,
+      "line": 68,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Failed to parse Sensor from dict in Sensor.from_dict"
+    },
+    {
+      "line": 69,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from Sensor.from_dict after parse failure"
+    },
+    {
+      "line": 73,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorNetwork.__init__"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorNetwork.add"
+    },
+    {
+      "line": 80,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorNetwork.get"
+    },
+    {
+      "line": 81,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning Sensor from SensorNetwork.get"
+    },
+    {
+      "line": 83,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorNetwork.all"
+    },
+    {
+      "line": 84,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of all sensors in SensorNetwork.all"
+    },
+    {
+      "line": 86,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorNetwork.enabled_sensors"
+    },
+    {
+      "line": 87,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning enabled sensors list in SensorNetwork.enabled_sensors"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorNetwork.to_dict"
+    },
+    {
+      "line": 90,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning serialized SensorNetwork dict in SensorNetwork.to_dict"
+    },
+    {
+      "line": 96,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering SensorNetwork.from_dict"
+    },
+    {
+      "line": 102,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning SensorNetwork instance from SensorNetwork.from_dict"
+    },
+    {
+      "line": 106,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricsClient.__init__"
+    },
+    {
+      "line": 110,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering MetricsClient._url"
+    },
+    {
+      "line": 111,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning metrics URL in MetricsClient._url"
+    },
+    {
+      "line": 113,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering MetricsClient.fetch"
     },
     {
-      "line": 121,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "Error during HTTP request in MetricsClient.fetch"
+      "line": 119,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning decoded metrics payload in MetricsClient.fetch"
     },
     {
-      "line": 124,
+      "line": 120,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while fetching metrics in MetricsClient.fetch"
+    },
+    {
+      "line": 121,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning None from MetricsClient.fetch after error"
+    },
+    {
+      "line": 123,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering MetricsClient.push"
@@ -35,44 +221,160 @@
       "line": 129,
       "kind": "return",
       "level": "INFO",
-      "message": "Request completed successfully in MetricsClient.push"
+      "message": "Returning push success flag in MetricsClient.push"
     },
     {
-      "line": 139,
+      "line": 130,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while pushing metrics in MetricsClient.push"
+    },
+    {
+      "line": 131,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning False from MetricsClient.push after error"
+    },
+    {
+      "line": 134,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering load_network"
     },
     {
-      "line": 143,
+      "line": 137,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning SensorNetwork loaded from data in load_network"
+    },
+    {
+      "line": 138,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Failed to read network file in load_network"
+      "message": "Error while loading SensorNetwork from disk in load_network"
+    },
+    {
+      "line": 139,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning local SensorNetwork(network_id='local') in load_network after load error"
+    },
+    {
+      "line": 140,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while creating fallback SensorNetwork in load_network"
+    },
+    {
+      "line": 141,
+      "kind": "return",
+      "level": "WARNING",
+      "message": "Returning second fallback SensorNetwork(network_id='local') in load_network after error"
+    },
+    {
+      "line": 144,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering save_network"
+    },
+    {
+      "line": 150,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while writing temporary network file in save_network"
+    },
+    {
+      "line": 154,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "Error while replacing network file in save_network"
+    },
+    {
+      "line": 158,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering aggregate_metrics"
+    },
+    {
+      "line": 161,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning empty metrics summary in aggregate_metrics"
+    },
+    {
+      "line": 168,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning metrics summary with zero average in aggregate_metrics"
     },
     {
       "line": 170,
       "kind": "return",
       "level": "INFO",
-      "message": "Computed aggregate values in aggregate_metrics"
+      "message": "Returning computed metrics summary in aggregate_metrics"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering detect_anomalies"
+    },
+    {
+      "line": 180,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning list of anomalous sensor IDs in detect_anomalies"
+    },
+    {
+      "line": 183,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering sync_remote_metrics"
+    },
+    {
+      "line": 186,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning 0 (no remote metrics synced) in sync_remote_metrics"
     },
     {
       "line": 193,
       "kind": "return",
       "level": "INFO",
-      "message": "Merged remote metrics into local network in sync_remote_metrics"
+      "message": "Returning count of synced remote metrics in sync_remote_metrics"
     },
     {
-      "line": 206,
+      "line": 196,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "Entering simulate_network"
+    },
+    {
+      "line": 205,
       "kind": "entry",
       "level": "DEBUG",
       "message": "Entering main"
     },
     {
-      "line": 224,
+      "line": 223,
       "kind": "exception",
       "level": "ERROR",
-      "message": "Unhandled error in metrics pipeline in main"
+      "message": "Unhandled exception in main"
+    },
+    {
+      "line": 224,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 1 from main due to error"
+    },
+    {
+      "line": 227,
+      "kind": "return",
+      "level": "INFO",
+      "message": "Returning status 0 from main"
     }
   ]
 }
+
+
 
