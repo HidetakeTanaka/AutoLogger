@@ -2,11 +2,7 @@
   "file": "script61.py",
   "logs": [
     {
-<<<<<<< HEAD
-      "line": 19,
-=======
       "line": 30,
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function matches')"
@@ -60,15 +56,6 @@
       "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
     },
     {
-<<<<<<< HEAD
-      "line": 45,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
-    },
-    {
-      "line": 53,
-=======
       "line": 44,
       "kind": "entry",
       "level": "DEBUG",
@@ -76,7 +63,6 @@
     },
     {
       "line": 48,
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function line_total')"
@@ -124,23 +110,10 @@
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
     },
     {
-<<<<<<< HEAD
-      "line": 77,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
-    },
-    {
-      "line": 90,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
-=======
       "line": 97,
       "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function load_attempts')"
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
     },
     {
       "line": 100,
@@ -209,17 +182,10 @@
       "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function load_cart')"
     },
     {
-<<<<<<< HEAD
-      "line": 128,
-      "kind": "exception",
-      "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function load_cart')"
-=======
       "line": 127,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function find_suspicious_users')"
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
     },
     {
       "line": 129,
@@ -228,21 +194,13 @@
       "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function load_cart')"
     },
     {
-<<<<<<< HEAD
-      "line": 132,
-=======
       "line": 136,
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function save_cart')"
     },
     {
-<<<<<<< HEAD
-      "line": 138,
-=======
       "line": 143,
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function save_cart')"
@@ -266,69 +224,6 @@
       "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function apply_discounts')"
     },
     {
-<<<<<<< HEAD
-      "line": 153,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function apply_discounts')"
-    },
-    {
-      "line": 155,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function apply_discounts')"
-    },
-    {
-      "line": 156,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function apply_discounts')"
-    },
-    {
-      "line": 159,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function pick_best_deal')"
-    },
-    {
-      "line": 161,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function pick_best_deal')"
-    },
-    {
-      "line": 169,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function pick_best_deal')"
-    },
-    {
-      "line": 172,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function update_prices_from_remote')"
-    },
-    {
-      "line": 181,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function update_prices_from_remote')"
-    },
-    {
-      "line": 184,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function simulate_cart')"
-    },
-    {
-      "line": 205,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function simulate_cart')"
-    },
-    {
-      "line": 208,
-=======
       "line": 170,
       "kind": "exception",
       "level": "ERROR",
@@ -336,7 +231,6 @@
     },
     {
       "line": 181,
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function main')"

@@ -14,15 +14,12 @@
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
-<<<<<<< HEAD
-=======
       "line": 44,
       "kind": "entry",
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
     },
     {
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "line": 48,
       "kind": "entry",
       "level": "INFO",
@@ -31,25 +28,8 @@
     {
       "line": 75,
       "kind": "entry",
-<<<<<<< HEAD
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering load_attempts with path: {path}\")"
-    },
-    {
-      "line": 97,
-      "kind": "event",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to load attempts from {path} after processing {len(attempts)} attempts, duration {duration}s, max_score {max_score}', exc_info=True)"
-    },
-    {
-      "line": 100,
-      "kind": "event",
-      "level": "INFO",
-      "message": "logging.info(f'Returning {len(attempts)} attempts from load_attempts')"
-=======
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
     },
     {
       "line": 103,
@@ -72,19 +52,8 @@
     {
       "line": 127,
       "kind": "entry",
-<<<<<<< HEAD
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entered find_suspicious_users with {len(grouped)} user groups\")"
-    },
-    {
-      "line": 133,
-      "kind": "event",
-      "level": "INFO",
-      "message": "logging.info(f'Returning suspects list with {len(suspects)} users identified as suspicious')"
-=======
       "level": "INFO",
       "message": "logging.info('[GPT-5.1] Function entry logged')"
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
     },
     {
       "line": 136,

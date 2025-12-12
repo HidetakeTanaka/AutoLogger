@@ -1,78 +1,4 @@
 {
-<<<<<<< HEAD
-  "file": "script70.py",
-  "baseline_type": "heuristic",
-  "logs": [
-    {
-      "line": 21,
-      "level": "DEBUG",
-      "message": "Entering is_long",
-      "kind": "entry",
-      "function": "is_long"
-    },
-    {
-      "line": 23,
-      "level": "INFO",
-      "message": "Exiting is_long",
-      "kind": "return",
-      "function": "is_long"
-    },
-    {
-      "line": 24,
-      "level": "INFO",
-      "message": "Exiting is_long",
-      "kind": "return",
-      "function": "is_long"
-    },
-    {
-      "line": 26,
-      "level": "DEBUG",
-      "message": "Entering matches",
-      "kind": "entry",
-      "function": "matches"
-    },
-    {
-      "line": 29,
-      "level": "INFO",
-      "message": "Exiting matches",
-      "kind": "return",
-      "function": "matches"
-    },
-    {
-      "line": 31,
-      "level": "INFO",
-      "message": "Exiting matches",
-      "kind": "return",
-      "function": "matches"
-    },
-    {
-      "line": 32,
-      "level": "INFO",
-      "message": "Exiting matches",
-      "kind": "return",
-      "function": "matches"
-    },
-    {
-      "line": 34,
-      "level": "DEBUG",
-      "message": "Entering mark_done",
-      "kind": "entry",
-      "function": "mark_done"
-    },
-    {
-      "line": 37,
-      "level": "DEBUG",
-      "message": "Entering to_dict",
-      "kind": "entry",
-      "function": "to_dict"
-    },
-    {
-      "line": 38,
-      "level": "INFO",
-      "message": "Exiting to_dict",
-      "kind": "return",
-      "function": "to_dict"
-=======
   "file": "script40.py",
   "baseline_type": "heuristic",
   "logs": [
@@ -138,7 +64,6 @@
       "message": "Entering total",
       "kind": "entry",
       "function": "total"
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
     },
     {
       "line": 46,
@@ -157,11 +82,6 @@
     {
       "line": 58,
       "level": "DEBUG",
-<<<<<<< HEAD
-      "message": "Entering from_dict",
-      "kind": "entry",
-      "function": "from_dict"
-=======
       "message": "Entering total_amount",
       "kind": "entry",
       "function": "total_amount"
@@ -186,7 +106,6 @@
       "message": "Exiting is_open",
       "kind": "return",
       "function": "is_open"
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
     },
     {
       "line": 56,
@@ -212,63 +131,6 @@
     {
       "line": 74,
       "level": "DEBUG",
-<<<<<<< HEAD
-      "message": "Entering add_task",
-      "kind": "entry",
-      "function": "add_task"
-    },
-    {
-      "line": 77,
-      "level": "DEBUG",
-      "message": "Entering get_task",
-      "kind": "entry",
-      "function": "get_task"
-    },
-    {
-      "line": 80,
-      "level": "INFO",
-      "message": "Exiting get_task",
-      "kind": "return",
-      "function": "get_task"
-    },
-    {
-      "line": 81,
-      "level": "INFO",
-      "message": "Exiting get_task",
-      "kind": "return",
-      "function": "get_task"
-    },
-    {
-      "line": 83,
-      "level": "DEBUG",
-      "message": "Entering completed_tasks",
-      "kind": "entry",
-      "function": "completed_tasks"
-    },
-    {
-      "line": 84,
-      "level": "INFO",
-      "message": "Exiting completed_tasks",
-      "kind": "return",
-      "function": "completed_tasks"
-    },
-    {
-      "line": 86,
-      "level": "DEBUG",
-      "message": "Entering active_tasks",
-      "kind": "entry",
-      "function": "active_tasks"
-    },
-    {
-      "line": 87,
-      "level": "INFO",
-      "message": "Exiting active_tasks",
-      "kind": "return",
-      "function": "active_tasks"
-    },
-    {
-      "line": 89,
-=======
       "message": "Entering add_item",
       "kind": "entry",
       "function": "add_item"
@@ -303,31 +165,17 @@
     },
     {
       "line": 84,
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-<<<<<<< HEAD
-      "line": 90,
-=======
       "line": 85,
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "level": "INFO",
       "message": "Exiting to_dict",
       "kind": "return",
       "function": "to_dict"
-<<<<<<< HEAD
-    },
-    {
-      "line": 97,
-      "level": "DEBUG",
-      "message": "Entering from_dict",
-      "kind": "entry",
-      "function": "from_dict"
-=======
     },
     {
       "line": 89,
@@ -363,23 +211,10 @@
       "message": "Entering apply_order",
       "kind": "entry",
       "function": "apply_order"
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
     },
     {
       "line": 101,
       "level": "INFO",
-<<<<<<< HEAD
-      "message": "Exiting from_dict",
-      "kind": "return",
-      "function": "from_dict"
-    },
-    {
-      "line": 111,
-      "level": "DEBUG",
-      "message": "Entering __init__",
-      "kind": "entry",
-      "function": "__init__"
-=======
       "message": "Exiting apply_order",
       "kind": "return",
       "function": "apply_order"
@@ -397,7 +232,6 @@
       "message": "Exiting apply_order",
       "kind": "return",
       "function": "apply_order"
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
     },
     {
       "line": 115,
@@ -409,203 +243,6 @@
     {
       "line": 116,
       "level": "INFO",
-<<<<<<< HEAD
-      "message": "Exiting _url",
-      "kind": "return",
-      "function": "_url"
-    },
-    {
-      "line": 118,
-      "level": "DEBUG",
-      "message": "Entering fetch_suggestions",
-      "kind": "entry",
-      "function": "fetch_suggestions"
-    },
-    {
-      "line": 120,
-      "level": "INFO",
-      "message": "Exiting fetch_suggestions",
-      "kind": "return",
-      "function": "fetch_suggestions"
-    },
-    {
-      "line": 126,
-      "level": "INFO",
-      "message": "Exiting fetch_suggestions",
-      "kind": "return",
-      "function": "fetch_suggestions"
-    },
-    {
-      "line": 127,
-      "level": "ERROR",
-      "message": "Exception in fetch_suggestions",
-      "kind": "exception",
-      "function": "fetch_suggestions"
-    },
-    {
-      "line": 128,
-      "level": "INFO",
-      "message": "Exiting fetch_suggestions",
-      "kind": "return",
-      "function": "fetch_suggestions"
-    },
-    {
-      "line": 130,
-      "level": "DEBUG",
-      "message": "Entering push_summary",
-      "kind": "entry",
-      "function": "push_summary"
-    },
-    {
-      "line": 132,
-      "level": "INFO",
-      "message": "Exiting push_summary",
-      "kind": "return",
-      "function": "push_summary"
-    },
-    {
-      "line": 139,
-      "level": "INFO",
-      "message": "Exiting push_summary",
-      "kind": "return",
-      "function": "push_summary"
-    },
-    {
-      "line": 140,
-      "level": "ERROR",
-      "message": "Exception in push_summary",
-      "kind": "exception",
-      "function": "push_summary"
-    },
-    {
-      "line": 141,
-      "level": "INFO",
-      "message": "Exiting push_summary",
-      "kind": "return",
-      "function": "push_summary"
-    },
-    {
-      "line": 144,
-      "level": "DEBUG",
-      "message": "Entering load_project",
-      "kind": "entry",
-      "function": "load_project"
-    },
-    {
-      "line": 148,
-      "level": "INFO",
-      "message": "Exiting load_project",
-      "kind": "return",
-      "function": "load_project"
-    },
-    {
-      "line": 149,
-      "level": "ERROR",
-      "message": "Exception in load_project",
-      "kind": "exception",
-      "function": "load_project"
-    },
-    {
-      "line": 150,
-      "level": "INFO",
-      "message": "Exiting load_project",
-      "kind": "return",
-      "function": "load_project"
-    },
-    {
-      "line": 153,
-      "level": "DEBUG",
-      "message": "Entering save_project",
-      "kind": "entry",
-      "function": "save_project"
-    },
-    {
-      "line": 159,
-      "level": "ERROR",
-      "message": "Exception in save_project",
-      "kind": "exception",
-      "function": "save_project"
-    },
-    {
-      "line": 163,
-      "level": "ERROR",
-      "message": "Exception in save_project",
-      "kind": "exception",
-      "function": "save_project"
-    },
-    {
-      "line": 167,
-      "level": "DEBUG",
-      "message": "Entering compute_stats",
-      "kind": "entry",
-      "function": "compute_stats"
-    },
-    {
-      "line": 170,
-      "level": "INFO",
-      "message": "Exiting compute_stats",
-      "kind": "return",
-      "function": "compute_stats"
-    },
-    {
-      "line": 175,
-      "level": "INFO",
-      "message": "Exiting compute_stats",
-      "kind": "return",
-      "function": "compute_stats"
-    },
-    {
-      "line": 182,
-      "level": "INFO",
-      "message": "Exiting compute_stats",
-      "kind": "return",
-      "function": "compute_stats"
-    },
-    {
-      "line": 190,
-      "level": "DEBUG",
-      "message": "Entering simulate_work",
-      "kind": "entry",
-      "function": "simulate_work"
-    },
-    {
-      "line": 193,
-      "level": "INFO",
-      "message": "Exiting simulate_work",
-      "kind": "return",
-      "function": "simulate_work"
-    },
-    {
-      "line": 208,
-      "level": "INFO",
-      "message": "Exiting simulate_work",
-      "kind": "return",
-      "function": "simulate_work"
-    },
-    {
-      "line": 211,
-      "level": "DEBUG",
-      "message": "Entering merge_remote_suggestions",
-      "kind": "entry",
-      "function": "merge_remote_suggestions"
-    },
-    {
-      "line": 213,
-      "level": "INFO",
-      "message": "Exiting merge_remote_suggestions",
-      "kind": "return",
-      "function": "merge_remote_suggestions"
-    },
-    {
-      "line": 226,
-      "level": "INFO",
-      "message": "Exiting merge_remote_suggestions",
-      "kind": "return",
-      "function": "merge_remote_suggestions"
-    },
-    {
-      "line": 229,
-=======
       "message": "Exiting apply_order",
       "kind": "return",
       "function": "apply_order"
@@ -794,36 +431,20 @@
     },
     {
       "line": 224,
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-<<<<<<< HEAD
-      "line": 251,
-      "level": "ERROR",
-      "message": "Exception in main",
-      "kind": "exception",
-      "function": "main"
-    },
-    {
-      "line": 252,
-=======
       "line": 234,
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "level": "INFO",
       "message": "Exiting main",
       "kind": "return",
       "function": "main"
     },
     {
-<<<<<<< HEAD
-      "line": 253,
-=======
       "line": 260,
->>>>>>> 63a32e39d22ebe700d76173477bf9f8f0461e4c0
       "level": "INFO",
       "message": "Exiting main",
       "kind": "return",
