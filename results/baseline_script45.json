@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -17,7 +17,7 @@
       "function": "is_recent"
     },
     {
-      "line": 26,
+      "line": 25,
       "level": "DEBUG",
       "message": "Entering is_anomalous",
       "kind": "entry",
@@ -52,7 +52,7 @@
       "function": "is_anomalous"
     },
     {
-      "line": 35,
+      "line": 34,
       "level": "DEBUG",
       "message": "Entering to_row",
       "kind": "entry",
@@ -66,7 +66,7 @@
       "function": "to_row"
     },
     {
-      "line": 44,
+      "line": 43,
       "level": "DEBUG",
       "message": "Entering from_row",
       "kind": "entry",
@@ -87,10 +87,10 @@
       "function": "from_row"
     },
     {
-      "line": 53,
+      "line": 52,
       "level": "ERROR",
       "message": "Exception in from_row",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_row"
     },
     {
@@ -101,14 +101,14 @@
       "function": "from_row"
     },
     {
-      "line": 64,
+      "line": 63,
       "level": "DEBUG",
       "message": "Entering update",
       "kind": "entry",
       "function": "update"
     },
     {
-      "line": 69,
+      "line": 68,
       "level": "DEBUG",
       "message": "Entering average_value",
       "kind": "entry",
@@ -129,7 +129,7 @@
       "function": "average_value"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "DEBUG",
       "message": "Entering is_stale",
       "kind": "entry",
@@ -150,7 +150,7 @@
       "function": "is_stale"
     },
     {
-      "line": 79,
+      "line": 78,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -164,14 +164,14 @@
       "function": "to_dict"
     },
     {
-      "line": 90,
+      "line": 89,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 94,
+      "line": 93,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -185,7 +185,7 @@
       "function": "_url"
     },
     {
-      "line": 99,
+      "line": 98,
       "level": "DEBUG",
       "message": "Entering fetch_remote_config",
       "kind": "entry",
@@ -213,10 +213,10 @@
       "function": "fetch_remote_config"
     },
     {
-      "line": 111,
+      "line": 110,
       "level": "ERROR",
       "message": "Exception in fetch_remote_config",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_remote_config"
     },
     {
@@ -227,7 +227,7 @@
       "function": "fetch_remote_config"
     },
     {
-      "line": 114,
+      "line": 113,
       "level": "DEBUG",
       "message": "Entering push_aggregate",
       "kind": "entry",
@@ -248,10 +248,10 @@
       "function": "push_aggregate"
     },
     {
-      "line": 124,
+      "line": 123,
       "level": "ERROR",
       "message": "Exception in push_aggregate",
-      "kind": "except",
+      "kind": "exception",
       "function": "push_aggregate"
     },
     {
@@ -262,17 +262,17 @@
       "function": "push_aggregate"
     },
     {
-      "line": 128,
+      "line": 127,
       "level": "DEBUG",
       "message": "Entering parse_csv",
       "kind": "entry",
       "function": "parse_csv"
     },
     {
-      "line": 138,
+      "line": 137,
       "level": "ERROR",
       "message": "Exception in parse_csv",
-      "kind": "except",
+      "kind": "exception",
       "function": "parse_csv"
     },
     {
@@ -290,7 +290,7 @@
       "function": "parse_csv"
     },
     {
-      "line": 143,
+      "line": 142,
       "level": "DEBUG",
       "message": "Entering aggregate_by_device",
       "kind": "entry",
@@ -304,7 +304,7 @@
       "function": "aggregate_by_device"
     },
     {
-      "line": 156,
+      "line": 151,
       "level": "DEBUG",
       "message": "Entering detect_anomalies",
       "kind": "entry",
@@ -318,14 +318,14 @@
       "function": "detect_anomalies"
     },
     {
-      "line": 168,
+      "line": 163,
       "level": "DEBUG",
       "message": "Entering save_report",
       "kind": "entry",
       "function": "save_report"
     },
     {
-      "line": 181,
+      "line": 180,
       "level": "DEBUG",
       "message": "Entering load_config",
       "kind": "entry",
@@ -346,10 +346,10 @@
       "function": "load_config"
     },
     {
-      "line": 188,
+      "line": 187,
       "level": "ERROR",
       "message": "Exception in load_config",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_config"
     },
     {
@@ -360,7 +360,7 @@
       "function": "load_config"
     },
     {
-      "line": 192,
+      "line": 191,
       "level": "DEBUG",
       "message": "Entering summarize_anomalies",
       "kind": "entry",
@@ -374,7 +374,7 @@
       "function": "summarize_anomalies"
     },
     {
-      "line": 199,
+      "line": 198,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

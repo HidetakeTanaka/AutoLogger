@@ -19,10 +19,10 @@
       "function": "is_overdue"
     },
     {
-      "line": 38,
+      "line": 37,
       "level": "ERROR",
-      "message": "Random log at line 38 in from_dict",
-      "kind": "except",
+      "message": "Random log at line 37 in from_dict",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -33,30 +33,30 @@
       "function": "from_dict"
     },
     {
-      "line": 53,
+      "line": 52,
       "level": "DEBUG",
-      "message": "Random log at line 53 in __init__",
+      "message": "Random log at line 52 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 65,
+      "line": 64,
       "level": "DEBUG",
-      "message": "Random log at line 65 in pending",
+      "message": "Random log at line 64 in pending",
       "kind": "entry",
       "function": "pending"
     },
     {
-      "line": 68,
+      "line": 67,
       "level": "ERROR",
-      "message": "Random log at line 68 in to_dict",
+      "message": "Random log at line 67 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 72,
+      "line": 71,
       "level": "WARNING",
-      "message": "Random log at line 72 in load_board",
+      "message": "Random log at line 71 in load_board",
       "kind": "entry",
       "function": "load_board"
     },
@@ -68,10 +68,10 @@
       "function": "load_board"
     },
     {
-      "line": 79,
+      "line": 78,
       "level": "WARNING",
-      "message": "Random log at line 79 in load_board",
-      "kind": "except",
+      "message": "Random log at line 78 in load_board",
+      "kind": "exception",
       "function": "load_board"
     },
     {

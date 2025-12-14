@@ -5,9 +5,9 @@
   "probability": 0.3,
   "logs": [
     {
-      "line": 25,
+      "line": 24,
       "level": "WARNING",
-      "message": "Random log at line 25 in is_recent",
+      "message": "Random log at line 24 in is_recent",
       "kind": "entry",
       "function": "is_recent"
     },
@@ -47,9 +47,9 @@
       "function": "from_dict"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "ERROR",
-      "message": "Random log at line 75 in add",
+      "message": "Random log at line 74 in add",
       "kind": "entry",
       "function": "add"
     },
@@ -61,9 +61,9 @@
       "function": "get"
     },
     {
-      "line": 81,
+      "line": 80,
       "level": "ERROR",
-      "message": "Random log at line 81 in all",
+      "message": "Random log at line 80 in all",
       "kind": "entry",
       "function": "all"
     },
@@ -82,10 +82,10 @@
       "function": "fetch_remote_notebook"
     },
     {
-      "line": 150,
+      "line": 149,
       "level": "WARNING",
-      "message": "Random log at line 150 in push_notebook",
-      "kind": "except",
+      "message": "Random log at line 149 in push_notebook",
+      "kind": "exception",
       "function": "push_notebook"
     },
     {
@@ -103,10 +103,10 @@
       "function": "load_notebook"
     },
     {
-      "line": 162,
+      "line": 161,
       "level": "ERROR",
-      "message": "Random log at line 162 in load_notebook",
-      "kind": "except",
+      "message": "Random log at line 161 in load_notebook",
+      "kind": "exception",
       "function": "load_notebook"
     },
     {
@@ -124,9 +124,9 @@
       "function": "pick_random_note"
     },
     {
-      "line": 214,
+      "line": 213,
       "level": "ERROR",
-      "message": "Random log at line 214 in main",
+      "message": "Random log at line 213 in main",
       "kind": "entry",
       "function": "main"
     }

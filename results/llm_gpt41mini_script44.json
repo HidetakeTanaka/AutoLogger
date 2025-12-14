@@ -2,67 +2,67 @@
   "file": "script44.py",
   "logs": [
     {
-      "line": 34,
+      "line": 33,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering from_dict with raw data: {raw}\")"
+      "message": "logging.debug(f\"Entering Task.from_dict with raw data: {raw}\")"
     },
     {
-      "line": 38,
-      "kind": "except",
+      "line": 37,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to parse due date from raw data: {due_raw}', exc_info=True)"
+      "message": "logging.error('Failed to create Task from dict with due_raw=%s and raw=%s', due_raw, raw, exc_info=True)"
     },
     {
-      "line": 56,
+      "line": 55,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering add method with task: {task}\")"
     },
     {
-      "line": 59,
+      "line": 58,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering Board.get with task_id={task_id}\")"
+      "message": "logging.debug(f\"Entering get method with task_id={task_id}\")"
     },
     {
-      "line": 72,
+      "line": 64,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered Board.pending method')"
+    },
+    {
+      "line": 71,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_board with path: {path}\")"
     },
     {
-      "line": 79,
-      "kind": "except",
+      "line": 78,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load board from {path} with data {data} and rows {rows}', exc_info=True)"
     },
     {
-      "line": 79,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Board loaded successfully with {rows} rows from {path}')"
-    },
-    {
-      "line": 88,
+      "line": 87,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save_board with path={path} and board={board}\")"
     },
     {
-      "line": 94,
-      "kind": "except",
+      "line": 93,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to save board to {path} using temporary file {tmp}', exc_info=True)"
+      "message": "logging.error(f'Failed to save board to {path}', exc_info=True)"
     },
     {
-      "line": 98,
+      "line": 97,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered filter_overdue with {len(tasks)} tasks and now={now}\")"
     },
     {
-      "line": 104,
+      "line": 103,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered compute_summary with {len(list(tasks))} tasks\")"
@@ -74,20 +74,20 @@
       "message": "logging.info(f\"Summary computed: count={len(items)}, completed={completed}, overdue={overdue}\")"
     },
     {
-      "line": 113,
+      "line": 112,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"
     },
     {
-      "line": 117,
-      "kind": "except",
+      "line": 116,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     },
     {
-      "line": 150,
-      "kind": "except",
+      "line": 149,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }

@@ -2,178 +2,148 @@
   "file": "script49.py",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering is_recent with days={days}\")"
+      "message": "logging.debug(f\"Entering is_recent with days={days} for transaction id={self.id}\")"
     },
     {
-      "line": 43,
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_large with threshold={threshold}\")"
+    },
+    {
+      "line": 42,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 57,
-      "kind": "except",
+      "line": 56,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to create Transaction from dict: {raw}', exc_info=True)"
+      "message": "logging.error('Failed to create Transaction from dict: %s', raw, exc_info=True)"
     },
     {
-      "line": 68,
+      "line": 67,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering add_transaction with transaction id={tx.id} amount={tx.amount}\")"
     },
     {
-      "line": 73,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering balance method of Account id={self.id}\")"
-    },
-    {
-      "line": 76,
+      "line": 75,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered recent_spending with days={days} for account {self}\")"
     },
     {
-      "line": 77,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Recent spending calculated for last {days} days: {-sum((t.amount for t in recent))}')"
-    },
-    {
-      "line": 90,
+      "line": 89,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Initializing BudgetClient with base_url={base_url} and timeout={timeout}\")"
+      "message": "logging.debug(f'Initializing BudgetClient with base_url={base_url} and timeout={timeout}')"
     },
     {
-      "line": 94,
+      "line": 93,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with account_id={account_id}\")"
     },
     {
-      "line": 97,
+      "line": 96,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering fetch_limits with account_id={account_id}\")"
     },
     {
-      "line": 107,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Fetched limits for account_id={account_id}: {data}')"
-    },
-    {
-      "line": 109,
-      "kind": "except",
+      "line": 108,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch limits for account {account_id} from {url} with request {req} and body {body}', exc_info=True)"
+      "message": "logging.error(f'Failed to fetch limits for account {account_id} from {url}', exc_info=True)"
     },
     {
-      "line": 113,
+      "line": 112,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered load_transactions with path: {path}\")"
     },
     {
-      "line": 114,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'No transactions found in file: {path}, returning empty list')"
-    },
-    {
-      "line": 119,
-      "kind": "except",
+      "line": 118,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load transactions from {path} with raw_items: {raw_items}')"
+      "message": "logging.error(f'Failed to load transactions from {path}', exc_info=True)"
     },
     {
-      "line": 129,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Loaded {len(result)} transactions from {path}')"
-    },
-    {
-      "line": 133,
+      "line": 132,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save_transactions with path={path} and {len(list(txs))} transactions\")"
     },
     {
-      "line": 141,
-      "kind": "except",
+      "line": 140,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save transactions to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 145,
-      "kind": "except",
+      "line": 144,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to save transactions to {path} with payload {payload}')"
+      "message": "logging.error(f'Failed to save transactions to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 149,
+      "line": 148,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering group_by_category with {len(list(txs))} transactions\")"
     },
     {
-      "line": 152,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning grouped transactions by category with {len(groups)} groups and {len(txs)} total transactions')"
-    },
-    {
-      "line": 156,
+      "line": 155,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering summarize_account for account: {account}\")"
+      "message": "logging.debug(f\"Entered summarize_account for account: {account}\")"
     },
     {
       "line": 160,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Summarized account {account.account_id} for owner {account.owner} with balance {account.balance()} and categories {category_totals}\")"
+      "message": "logging.info(f\"Returning summary for account_id={account.account_id} with balance={account.balance()}\")"
     },
     {
-      "line": 172,
+      "line": 169,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered detect_overspend with account={account}, limit={limit}, limits={limits}\")"
+      "message": "logging.debug(f\"Entered detect_overspend with account={account}, groups={groups}, limit={limit}, limits={limits}, overspend={overspend}, spent={spent}\")"
     },
     {
       "line": 181,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Overspend detected for account {account}: overspend amount {overspend}')"
+      "message": "logging.info(f'Returning overspend value: {overspend} for account {account}')"
     },
     {
-      "line": 187,
+      "line": 184,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered filter_large_transactions with threshold={threshold} and {len(txs)} transactions\")"
     },
     {
-      "line": 194,
+      "line": 193,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 206,
-      "kind": "except",
+      "line": 205,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('Exception occurred while processing account %s', account, exc_info=True)"
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
     },
     {
-      "line": 233,
-      "kind": "except",
+      "line": 232,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('Exception occurred while processing account %s', account, exc_info=True)"
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }
   ]
 }

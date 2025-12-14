@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 21,
+      "line": 20,
       "level": "DEBUG",
       "message": "Entering matches",
       "kind": "entry",
@@ -31,7 +31,7 @@
       "function": "matches"
     },
     {
-      "line": 29,
+      "line": 28,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -45,7 +45,7 @@
       "function": "to_dict"
     },
     {
-      "line": 39,
+      "line": 38,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -59,10 +59,10 @@
       "function": "from_dict"
     },
     {
-      "line": 48,
+      "line": 47,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -73,7 +73,7 @@
       "function": "from_dict"
     },
     {
-      "line": 59,
+      "line": 58,
       "level": "DEBUG",
       "message": "Entering total_value",
       "kind": "entry",
@@ -87,7 +87,7 @@
       "function": "total_value"
     },
     {
-      "line": 62,
+      "line": 61,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -108,7 +108,7 @@
       "function": "is_recent"
     },
     {
-      "line": 67,
+      "line": 66,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -122,7 +122,7 @@
       "function": "to_dict"
     },
     {
-      "line": 76,
+      "line": 75,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -136,10 +136,10 @@
       "function": "from_dict"
     },
     {
-      "line": 91,
+      "line": 90,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -150,21 +150,21 @@
       "function": "from_dict"
     },
     {
-      "line": 96,
+      "line": 95,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 100,
+      "line": 99,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 103,
+      "line": 102,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -178,7 +178,7 @@
       "function": "get"
     },
     {
-      "line": 106,
+      "line": 105,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -192,7 +192,7 @@
       "function": "all"
     },
     {
-      "line": 109,
+      "line": 108,
       "level": "DEBUG",
       "message": "Entering open_orders",
       "kind": "entry",
@@ -206,7 +206,7 @@
       "function": "open_orders"
     },
     {
-      "line": 112,
+      "line": 111,
       "level": "DEBUG",
       "message": "Entering search_by_product",
       "kind": "entry",
@@ -220,7 +220,7 @@
       "function": "search_by_product"
     },
     {
-      "line": 119,
+      "line": 118,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -234,7 +234,7 @@
       "function": "to_dict"
     },
     {
-      "line": 126,
+      "line": 125,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -248,14 +248,14 @@
       "function": "from_dict"
     },
     {
-      "line": 136,
+      "line": 135,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 140,
+      "line": 139,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -269,7 +269,7 @@
       "function": "_url"
     },
     {
-      "line": 143,
+      "line": 142,
       "level": "DEBUG",
       "message": "Entering fetch_orders",
       "kind": "entry",
@@ -283,10 +283,10 @@
       "function": "fetch_orders"
     },
     {
-      "line": 150,
+      "line": 149,
       "level": "ERROR",
       "message": "Exception in fetch_orders",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_orders"
     },
     {
@@ -297,7 +297,7 @@
       "function": "fetch_orders"
     },
     {
-      "line": 153,
+      "line": 152,
       "level": "DEBUG",
       "message": "Entering push_summary",
       "kind": "entry",
@@ -311,10 +311,10 @@
       "function": "push_summary"
     },
     {
-      "line": 160,
+      "line": 159,
       "level": "ERROR",
       "message": "Exception in push_summary",
-      "kind": "except",
+      "kind": "exception",
       "function": "push_summary"
     },
     {
@@ -325,7 +325,7 @@
       "function": "push_summary"
     },
     {
-      "line": 164,
+      "line": 163,
       "level": "DEBUG",
       "message": "Entering load_order_book",
       "kind": "entry",
@@ -339,10 +339,10 @@
       "function": "load_order_book"
     },
     {
-      "line": 168,
+      "line": 167,
       "level": "ERROR",
       "message": "Exception in load_order_book",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_order_book"
     },
     {
@@ -353,10 +353,10 @@
       "function": "load_order_book"
     },
     {
-      "line": 170,
+      "line": 169,
       "level": "ERROR",
       "message": "Exception in load_order_book",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_order_book"
     },
     {
@@ -367,28 +367,28 @@
       "function": "load_order_book"
     },
     {
-      "line": 174,
+      "line": 173,
       "level": "DEBUG",
       "message": "Entering save_order_book",
       "kind": "entry",
       "function": "save_order_book"
     },
     {
-      "line": 180,
+      "line": 179,
       "level": "ERROR",
       "message": "Exception in save_order_book",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_order_book"
     },
     {
-      "line": 184,
+      "line": 183,
       "level": "ERROR",
       "message": "Exception in save_order_book",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_order_book"
     },
     {
-      "line": 188,
+      "line": 187,
       "level": "DEBUG",
       "message": "Entering summarize_orders",
       "kind": "entry",
@@ -409,7 +409,7 @@
       "function": "summarize_orders"
     },
     {
-      "line": 198,
+      "line": 197,
       "level": "DEBUG",
       "message": "Entering filter_large_orders",
       "kind": "entry",
@@ -423,7 +423,7 @@
       "function": "filter_large_orders"
     },
     {
-      "line": 206,
+      "line": 205,
       "level": "DEBUG",
       "message": "Entering merge_remote_orders",
       "kind": "entry",
@@ -444,7 +444,7 @@
       "function": "merge_remote_orders"
     },
     {
-      "line": 218,
+      "line": 217,
       "level": "DEBUG",
       "message": "Entering simulate_processing",
       "kind": "entry",
@@ -458,17 +458,17 @@
       "function": "simulate_processing"
     },
     {
-      "line": 230,
+      "line": 229,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 248,
+      "line": 247,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

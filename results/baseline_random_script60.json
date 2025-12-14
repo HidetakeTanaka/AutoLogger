@@ -26,9 +26,9 @@
       "function": "matches"
     },
     {
-      "line": 36,
+      "line": 35,
       "level": "DEBUG",
-      "message": "Random log at line 36 in to_dict",
+      "message": "Random log at line 35 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -40,9 +40,9 @@
       "function": "to_dict"
     },
     {
-      "line": 69,
+      "line": 68,
       "level": "DEBUG",
-      "message": "Random log at line 69 in add",
+      "message": "Random log at line 68 in add",
       "kind": "entry",
       "function": "add"
     },
@@ -61,9 +61,9 @@
       "function": "all"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "ERROR",
-      "message": "Random log at line 78 in search",
+      "message": "Random log at line 77 in search",
       "kind": "entry",
       "function": "search"
     },
@@ -82,17 +82,17 @@
       "function": "fetch_feed"
     },
     {
-      "line": 140,
+      "line": 139,
       "level": "WARNING",
-      "message": "Random log at line 140 in save_feed",
-      "kind": "except",
+      "message": "Random log at line 139 in save_feed",
+      "kind": "exception",
       "function": "save_feed"
     },
     {
-      "line": 144,
+      "line": 143,
       "level": "WARNING",
-      "message": "Random log at line 144 in save_feed",
-      "kind": "except",
+      "message": "Random log at line 143 in save_feed",
+      "kind": "exception",
       "function": "save_feed"
     },
     {
@@ -110,9 +110,9 @@
       "function": "pick_random_article"
     },
     {
-      "line": 197,
+      "line": 196,
       "level": "DEBUG",
-      "message": "Random log at line 197 in main",
+      "message": "Random log at line 196 in main",
       "kind": "entry",
       "function": "main"
     },

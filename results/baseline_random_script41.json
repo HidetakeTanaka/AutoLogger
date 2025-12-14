@@ -12,16 +12,16 @@
       "function": "is_recent"
     },
     {
-      "line": 25,
+      "line": 24,
       "level": "INFO",
-      "message": "Random log at line 25 in matches_query",
+      "message": "Random log at line 24 in matches_query",
       "kind": "entry",
       "function": "matches_query"
     },
     {
-      "line": 33,
+      "line": 32,
       "level": "ERROR",
-      "message": "Random log at line 33 in to_dict",
+      "message": "Random log at line 32 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -33,9 +33,9 @@
       "function": "to_dict"
     },
     {
-      "line": 52,
+      "line": 51,
       "level": "DEBUG",
-      "message": "Random log at line 52 in can_borrow",
+      "message": "Random log at line 51 in can_borrow",
       "kind": "entry",
       "function": "can_borrow"
     },
@@ -54,9 +54,9 @@
       "function": "return_book"
     },
     {
-      "line": 71,
+      "line": 70,
       "level": "WARNING",
-      "message": "Random log at line 71 in to_dict",
+      "message": "Random log at line 70 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -68,16 +68,16 @@
       "function": "to_dict"
     },
     {
-      "line": 82,
+      "line": 81,
       "level": "WARNING",
-      "message": "Random log at line 82 in __init__",
+      "message": "Random log at line 81 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 143,
+      "line": 142,
       "level": "INFO",
-      "message": "Random log at line 143 in all_members",
+      "message": "Random log at line 142 in all_members",
       "kind": "entry",
       "function": "all_members"
     },
@@ -89,10 +89,10 @@
       "function": "fetch_metadata"
     },
     {
-      "line": 165,
+      "line": 164,
       "level": "WARNING",
-      "message": "Random log at line 165 in fetch_metadata",
-      "kind": "except",
+      "message": "Random log at line 164 in fetch_metadata",
+      "kind": "exception",
       "function": "fetch_metadata"
     },
     {
@@ -103,10 +103,10 @@
       "function": "load_json_safely"
     },
     {
-      "line": 175,
+      "line": 174,
       "level": "ERROR",
-      "message": "Random log at line 175 in load_json_safely",
-      "kind": "except",
+      "message": "Random log at line 174 in load_json_safely",
+      "kind": "exception",
       "function": "load_json_safely"
     },
     {
@@ -117,9 +117,9 @@
       "function": "borrow_book"
     },
     {
-      "line": 202,
+      "line": 201,
       "level": "WARNING",
-      "message": "Random log at line 202 in return_book",
+      "message": "Random log at line 201 in return_book",
       "kind": "entry",
       "function": "return_book"
     },

@@ -2,154 +2,130 @@
   "file": "script60.py",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering is_recent with hours={hours} for article id={self.id if hasattr(self, 'id') else 'unknown'}\")"
+      "message": "logging.debug(f\"Entering is_recent with hours={hours} for article id={self.id}\")"
     },
     {
-      "line": 28,
+      "line": 27,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering matches method with query: {query}\")"
     },
     {
-      "line": 36,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('Entering to_dict method of Article instance')"
-    },
-    {
-      "line": 47,
+      "line": 46,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 59,
-      "kind": "except",
+      "line": 58,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to parse publication date from raw data: {pub_raw}', exc_info=True)"
+      "message": "logging.error(f'Failed to create Article from dict: {pub_raw}', exc_info=True)"
     },
     {
-      "line": 64,
+      "line": 63,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f'Initializing Feed with feed_id={feed_id}, name={name}')"
+      "message": "logging.debug(f\"Initializing Feed with feed_id={feed_id}, name={name}\")"
     },
     {
-      "line": 69,
+      "line": 68,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering add method of Feed with article id: {article.id}\")"
     },
     {
-      "line": 72,
+      "line": 71,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering get method with article_id={article_id}\")"
+      "message": "logging.debug(f\"Entering Feed.get with article_id={article_id}\")"
     },
     {
-      "line": 75,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('Entered Feed.all method')"
-    },
-    {
-      "line": 78,
+      "line": 77,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering search with query='{query}'\")"
     },
     {
-      "line": 82,
+      "line": 81,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered recent() with hours={hours}\")"
     },
     {
-      "line": 93,
+      "line": 92,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f'Entering Feed.from_dict with raw keys: {list(raw.keys())}')"
+      "message": "logging.debug(f\"Entering Feed.from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 106,
+      "line": 105,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Initializing HttpClient with base_url={base_url} and timeout={timeout}\")"
+      "message": "logging.debug(f\"HttpClient initialized with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 110,
+      "line": 109,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with feed_id={feed_id}\")"
     },
     {
-      "line": 110,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning URL for feed_id {feed_id}: {self.base_url}/feeds/{feed_id}.json')"
-    },
-    {
-      "line": 113,
+      "line": 112,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering fetch_feed with feed_id={feed_id}\")"
     },
     {
-      "line": 120,
-      "kind": "except",
+      "line": 119,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to fetch feed {feed_id} from {url}', exc_info=True)"
     },
     {
-      "line": 124,
+      "line": 123,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_feed with path: {path}\")"
     },
     {
-      "line": 126,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Loaded feed from {path} with {len(raw)} entries')"
-    },
-    {
-      "line": 128,
-      "kind": "except",
+      "line": 127,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load feed from {path}')"
+      "message": "logging.error(f'Failed to load feed from {path}', exc_info=True)"
     },
     {
-      "line": 130,
-      "kind": "except",
+      "line": 129,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load feed from {path}')"
+      "message": "logging.error(f'Failed to load feed from {path}', exc_info=True)"
     },
     {
-      "line": 134,
+      "line": 133,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save_feed with path={path} and feed={feed}\")"
     },
     {
-      "line": 140,
-      "kind": "except",
+      "line": 139,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save feed to {path} with payload {payload} and tmp {tmp}', exc_info=True)"
+    },
+    {
+      "line": 143,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save feed to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 144,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to save feed to {path} with payload {payload}')"
-    },
-    {
-      "line": 148,
+      "line": 147,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering summarize_feed for feed: {feed}\")"
+      "message": "logging.debug(f\"Entered summarize_feed for feed with {len(feed.articles)} articles\")"
     },
     {
       "line": 153,
@@ -158,16 +134,10 @@
       "message": "logging.info(f\"Summary for feed '{feed}': count={len(articles)}, avg_score={total / len(articles):.2f}, recent={recent}\")"
     },
     {
-      "line": 161,
+      "line": 160,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering pick_random_article with feed={feed} and recent_only={recent_only}\")"
-    },
-    {
-      "line": 163,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('No suitable article found in feed: %s with recent_only=%s', feed, recent_only)"
     },
     {
       "line": 167,
@@ -179,37 +149,37 @@
       "line": 168,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Randomly selected article from {len(items)} items in feed {feed}')"
+      "message": "logging.info(f'Selected random article: {rec}')"
     },
     {
-      "line": 172,
+      "line": 171,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered merge_remote_feed with local feed id={id(local)} and remote_raw keys={list(remote_raw.keys()) if remote_raw else None}\")"
+      "message": "logging.debug(f\"Entering merge_remote_feed with local feed id={getattr(local, 'id', 'unknown')} and remote_raw keys={list(remote_raw.keys()) if remote_raw else 'None'}\")"
     },
     {
       "line": 180,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Merge completed with {len(added)} items added from remote feed.')"
+      "message": "logging.info(f'Merge completed, added {added} new items from remote feed.')"
     },
     {
-      "line": 184,
+      "line": 183,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering enrich_scores for feed {feed.id} with {len(feed.articles)} articles, age_hours={age_hours}, base={base}, now={now}\")"
+      "message": "logging.debug(f'Starting enrich_scores for feed with {len(feed.articles)} articles, age_hours={age_hours}, base={base}')"
     },
     {
-      "line": 197,
+      "line": 196,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 213,
-      "kind": "except",
+      "line": 212,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('Exception occurred while processing feed at %s', feed_path, exc_info=True)"
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }
   ]
 }

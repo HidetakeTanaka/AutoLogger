@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 21,
+      "line": 20,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -17,7 +17,7 @@
       "function": "is_recent"
     },
     {
-      "line": 25,
+      "line": 24,
       "level": "DEBUG",
       "message": "Entering matches_query",
       "kind": "entry",
@@ -45,7 +45,7 @@
       "function": "matches_query"
     },
     {
-      "line": 34,
+      "line": 33,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -59,17 +59,17 @@
       "function": "to_dict"
     },
     {
-      "line": 45,
+      "line": 44,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
     {
-      "line": 50,
+      "line": 49,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -80,14 +80,14 @@
       "function": "from_dict"
     },
     {
-      "line": 68,
+      "line": 67,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 71,
+      "line": 70,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -101,7 +101,7 @@
       "function": "get"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -115,7 +115,7 @@
       "function": "all"
     },
     {
-      "line": 77,
+      "line": 76,
       "level": "DEBUG",
       "message": "Entering active_notes",
       "kind": "entry",
@@ -129,14 +129,14 @@
       "function": "active_notes"
     },
     {
-      "line": 82,
+      "line": 81,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 86,
+      "line": 85,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -150,17 +150,17 @@
       "function": "_url"
     },
     {
-      "line": 91,
+      "line": 90,
       "level": "DEBUG",
       "message": "Entering fetch_notes",
       "kind": "entry",
       "function": "fetch_notes"
     },
     {
-      "line": 97,
+      "line": 96,
       "level": "ERROR",
       "message": "Exception in fetch_notes",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_notes"
     },
     {
@@ -171,10 +171,10 @@
       "function": "fetch_notes"
     },
     {
-      "line": 101,
+      "line": 100,
       "level": "ERROR",
       "message": "Exception in fetch_notes",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_notes"
     },
     {
@@ -199,7 +199,7 @@
       "function": "fetch_notes"
     },
     {
-      "line": 109,
+      "line": 108,
       "level": "DEBUG",
       "message": "Entering load_notes",
       "kind": "entry",
@@ -213,10 +213,10 @@
       "function": "load_notes"
     },
     {
-      "line": 116,
+      "line": 115,
       "level": "ERROR",
       "message": "Exception in load_notes",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_notes"
     },
     {
@@ -234,14 +234,14 @@
       "function": "load_notes"
     },
     {
-      "line": 126,
+      "line": 125,
       "level": "DEBUG",
       "message": "Entering save_notes",
       "kind": "entry",
       "function": "save_notes"
     },
     {
-      "line": 133,
+      "line": 132,
       "level": "DEBUG",
       "message": "Entering filter_notes_by_tag",
       "kind": "entry",
@@ -262,7 +262,7 @@
       "function": "filter_notes_by_tag"
     },
     {
-      "line": 140,
+      "line": 139,
       "level": "DEBUG",
       "message": "Entering search_notes",
       "kind": "entry",
@@ -276,7 +276,7 @@
       "function": "search_notes"
     },
     {
-      "line": 146,
+      "line": 145,
       "level": "DEBUG",
       "message": "Entering merge_remote_notes",
       "kind": "entry",
@@ -290,7 +290,7 @@
       "function": "merge_remote_notes"
     },
     {
-      "line": 162,
+      "line": 161,
       "level": "DEBUG",
       "message": "Entering summarize_by_tag",
       "kind": "entry",
@@ -304,7 +304,7 @@
       "function": "summarize_by_tag"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "DEBUG",
       "message": "Entering choose_note_to_review",
       "kind": "entry",
@@ -332,24 +332,24 @@
       "function": "choose_note_to_review"
     },
     {
-      "line": 186,
+      "line": 185,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 196,
+      "line": 195,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {
-      "line": 215,
+      "line": 214,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

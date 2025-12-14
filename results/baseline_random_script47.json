@@ -68,23 +68,23 @@
       "function": "subtotal"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "WARNING",
-      "message": "Random log at line 78 in add",
+      "message": "Random log at line 77 in add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 116,
+      "line": 115,
       "level": "INFO",
-      "message": "Random log at line 116 in fetch_price",
-      "kind": "except",
+      "message": "Random log at line 115 in fetch_price",
+      "kind": "exception",
       "function": "fetch_price"
     },
     {
-      "line": 131,
+      "line": 130,
       "level": "WARNING",
-      "message": "Random log at line 131 in load_products",
+      "message": "Random log at line 130 in load_products",
       "kind": "entry",
       "function": "load_products"
     },
@@ -103,16 +103,16 @@
       "function": "load_products"
     },
     {
-      "line": 153,
+      "line": 152,
       "level": "ERROR",
-      "message": "Random log at line 153 in save_cart",
-      "kind": "except",
+      "message": "Random log at line 152 in save_cart",
+      "kind": "exception",
       "function": "save_cart"
     },
     {
-      "line": 202,
+      "line": 201,
       "level": "DEBUG",
-      "message": "Random log at line 202 in summarize_cart",
+      "message": "Random log at line 201 in summarize_cart",
       "kind": "entry",
       "function": "summarize_cart"
     },

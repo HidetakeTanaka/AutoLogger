@@ -2,151 +2,145 @@
   "file": "script57.py",
   "logs": [
     {
-      "line": 23,
+      "line": 22,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering is_active with days={days} for user_id={self.user_id}\")"
+      "message": "logging.debug(f\"Entering is_active with days={days}\")"
     },
     {
-      "line": 36,
+      "line": 35,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering matches with query='{query}' for user {self}\")"
+      "message": "logging.debug(f\"Entering matches() with query='{query}'\")"
     },
     {
-      "line": 56,
+      "line": 55,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+      "message": "logging.debug(f\"Entering UserProfile.from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 60,
-      "kind": "except",
+      "line": 59,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to create UserProfile from dict: {raw}', exc_info=True)"
+      "message": "logging.error('Failed to create UserProfile from dict: %s', raw, exc_info=True)"
     },
     {
-      "line": 74,
+      "line": 73,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Initializing UserDirectory with directory_id={directory_id}\")"
+      "message": "logging.debug(f'Initializing UserDirectory with directory_id={directory_id}')"
     },
     {
-      "line": 78,
+      "line": 77,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering add method with user: {user}\")"
     },
     {
-      "line": 81,
+      "line": 80,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering get method with user_id={user_id}\")"
+      "message": "logging.debug(f\"Entering UserDirectory.get with user_id={user_id}\")"
     },
     {
-      "line": 87,
+      "line": 86,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering search with query='{query}'\")"
     },
     {
-      "line": 91,
+      "line": 90,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering active_users with days={days}\")"
+      "message": "logging.debug(f\"Entered active_users with days={days}\")"
     },
     {
-      "line": 101,
+      "line": 100,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw keys: {list(raw.keys())}\")"
     },
     {
-      "line": 111,
+      "line": 110,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing RemoteClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 115,
+      "line": 114,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with directory_id={directory_id}\")"
     },
     {
-      "line": 118,
+      "line": 117,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering fetch method with directory_id={directory_id}\")"
+      "message": "logging.debug(f\"Entering fetch with directory_id={directory_id}\")"
     },
     {
-      "line": 125,
-      "kind": "except",
+      "line": 124,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch from URL {url} with directory_id {directory_id} and request {req}')"
+      "message": "logging.error(f'Exception occurred in fetch for directory_id={directory_id} and url={url}', exc_info=True)"
     },
     {
-      "line": 128,
+      "line": 127,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering push with directory_id={directory_id} and payload keys={list(payload.keys())}\")"
+      "message": "logging.debug(f\"Entering push method with directory_id={directory_id} and payload keys={list(payload.keys())}\")"
     },
     {
-      "line": 135,
-      "kind": "except",
+      "line": 134,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to push data to {url} for directory {directory_id} with payload {payload}', exc_info=True)"
+      "message": "logging.error(f'Exception occurred while pushing data to {url} for directory {directory_id}', exc_info=True)"
     },
     {
-      "line": 139,
+      "line": 138,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_directory with path: {path}\")"
     },
     {
-      "line": 143,
-      "kind": "except",
+      "line": 142,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load data from path: {path}', exc_info=True)"
+      "message": "logging.error(f'Failed to load directory at path: {path}', exc_info=True)"
     },
     {
-      "line": 145,
-      "kind": "except",
+      "line": 144,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load data from path: {path}', exc_info=True)"
+      "message": "logging.error(f'Failed to load data from {path}', exc_info=True)"
     },
     {
-      "line": 149,
+      "line": 148,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save_directory with path={path} and directory={directory}\")"
     },
     {
-      "line": 155,
-      "kind": "except",
+      "line": 154,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to save directory {directory} at path {path} with payload {payload}')"
+      "message": "logging.error(f'Failed to save directory {directory} at path {path}', exc_info=True)"
     },
     {
-      "line": 159,
-      "kind": "except",
+      "line": 158,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to save directory {directory} at path {path} with payload {payload}')"
+      "message": "logging.error(f'Failed to save directory {directory} at path {path}', exc_info=True)"
     },
     {
-      "line": 163,
+      "line": 162,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered calculate_statistics with directory: {directory}\")"
     },
     {
-      "line": 170,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f\"Statistics calculated: count={len(users)}, active={len(active)}, avg_score={avg_score:.2f}, premium_ratio={ratio:.2f}\")"
-    },
-    {
-      "line": 179,
+      "line": 178,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered choose_random_user with directory={directory} and active_only={active_only}\")"
@@ -155,41 +149,35 @@
       "line": 182,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Chose random user: {random.choice(candidates)} from {len(candidates)} candidates (active_only={active_only})')"
+      "message": "logging.info(f'Randomly selected user from candidates: {candidates}')"
     },
     {
-      "line": 186,
+      "line": 185,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered promote_inactive_users with directory={directory} and days={days}\")"
     },
     {
-      "line": 195,
+      "line": 194,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering sync_remote with directory={directory} and client={client}\")"
     },
     {
-      "line": 205,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Sync complete with {len(updates)} updates between local {local} and remote {remote}.')"
-    },
-    {
-      "line": 209,
+      "line": 208,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Starting simulate_activity with directory={directory} and steps={steps}\")"
     },
     {
-      "line": 221,
+      "line": 220,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 238,
-      "kind": "except",
+      "line": 237,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }

@@ -19,9 +19,9 @@
       "function": "is_recent"
     },
     {
-      "line": 32,
+      "line": 31,
       "level": "ERROR",
-      "message": "Random log at line 32 in to_dict",
+      "message": "Random log at line 31 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -33,9 +33,9 @@
       "function": "to_dict"
     },
     {
-      "line": 43,
+      "line": 42,
       "level": "DEBUG",
-      "message": "Random log at line 43 in from_dict",
+      "message": "Random log at line 42 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
@@ -61,9 +61,9 @@
       "function": "recent_spending"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "ERROR",
-      "message": "Random log at line 80 in to_dict",
+      "message": "Random log at line 79 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -82,9 +82,9 @@
       "function": "load_transactions"
     },
     {
-      "line": 156,
+      "line": 155,
       "level": "WARNING",
-      "message": "Random log at line 156 in summarize_account",
+      "message": "Random log at line 155 in summarize_account",
       "kind": "entry",
       "function": "summarize_account"
     },

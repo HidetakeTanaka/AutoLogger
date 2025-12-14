@@ -26,9 +26,9 @@
       "function": "matches_goal"
     },
     {
-      "line": 35,
+      "line": 34,
       "level": "DEBUG",
-      "message": "Random log at line 35 in to_dict",
+      "message": "Random log at line 34 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -40,23 +40,23 @@
       "function": "to_dict"
     },
     {
-      "line": 72,
+      "line": 71,
       "level": "DEBUG",
-      "message": "Random log at line 72 in recent_sessions",
+      "message": "Random log at line 71 in recent_sessions",
       "kind": "entry",
       "function": "recent_sessions"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "ERROR",
-      "message": "Random log at line 75 in total_calories",
+      "message": "Random log at line 74 in total_calories",
       "kind": "entry",
       "function": "total_calories"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "WARNING",
-      "message": "Random log at line 78 in to_dict",
+      "message": "Random log at line 77 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -68,9 +68,9 @@
       "function": "to_dict"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "WARNING",
-      "message": "Random log at line 87 in from_dict",
+      "message": "Random log at line 86 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
@@ -82,16 +82,16 @@
       "function": "fetch_recommendations"
     },
     {
-      "line": 158,
+      "line": 157,
       "level": "WARNING",
-      "message": "Random log at line 158 in save_profiles",
-      "kind": "except",
+      "message": "Random log at line 157 in save_profiles",
+      "kind": "exception",
       "function": "save_profiles"
     },
     {
-      "line": 162,
+      "line": 161,
       "level": "WARNING",
-      "message": "Random log at line 162 in choose_next_session",
+      "message": "Random log at line 161 in choose_next_session",
       "kind": "entry",
       "function": "choose_next_session"
     },
@@ -110,17 +110,17 @@
       "function": "summarize_sessions"
     },
     {
-      "line": 221,
+      "line": 220,
       "level": "DEBUG",
-      "message": "Random log at line 221 in main",
+      "message": "Random log at line 220 in main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 256,
+      "line": 255,
       "level": "WARNING",
-      "message": "Random log at line 256 in main",
-      "kind": "except",
+      "message": "Random log at line 255 in main",
+      "kind": "exception",
       "function": "main"
     },
     {

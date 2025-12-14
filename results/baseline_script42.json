@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 21,
+      "line": 20,
       "level": "DEBUG",
       "message": "Entering is_long",
       "kind": "entry",
@@ -17,7 +17,7 @@
       "function": "is_long"
     },
     {
-      "line": 24,
+      "line": 23,
       "level": "DEBUG",
       "message": "Entering matches_mood",
       "kind": "entry",
@@ -45,7 +45,7 @@
       "function": "matches_mood"
     },
     {
-      "line": 32,
+      "line": 31,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -59,7 +59,7 @@
       "function": "to_dict"
     },
     {
-      "line": 43,
+      "line": 42,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -73,14 +73,14 @@
       "function": "from_dict"
     },
     {
-      "line": 59,
+      "line": 58,
       "level": "DEBUG",
       "message": "Entering add_activity",
       "kind": "entry",
       "function": "add_activity"
     },
     {
-      "line": 62,
+      "line": 61,
       "level": "DEBUG",
       "message": "Entering total_duration",
       "kind": "entry",
@@ -94,7 +94,7 @@
       "function": "total_duration"
     },
     {
-      "line": 65,
+      "line": 64,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -108,17 +108,17 @@
       "function": "to_dict"
     },
     {
-      "line": 69,
+      "line": 68,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
     {
-      "line": 73,
+      "line": 72,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -129,14 +129,14 @@
       "function": "from_dict"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 84,
+      "line": 83,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -150,7 +150,7 @@
       "function": "_url"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "DEBUG",
       "message": "Entering fetch_suggestions",
       "kind": "entry",
@@ -164,10 +164,10 @@
       "function": "fetch_suggestions"
     },
     {
-      "line": 95,
+      "line": 94,
       "level": "ERROR",
       "message": "Exception in fetch_suggestions",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_suggestions"
     },
     {
@@ -178,10 +178,10 @@
       "function": "fetch_suggestions"
     },
     {
-      "line": 97,
+      "line": 96,
       "level": "ERROR",
       "message": "Exception in fetch_suggestions",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_suggestions"
     },
     {
@@ -192,10 +192,10 @@
       "function": "fetch_suggestions"
     },
     {
-      "line": 101,
+      "line": 100,
       "level": "ERROR",
       "message": "Exception in fetch_suggestions",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_suggestions"
     },
     {
@@ -213,7 +213,7 @@
       "function": "fetch_suggestions"
     },
     {
-      "line": 107,
+      "line": 106,
       "level": "DEBUG",
       "message": "Entering load_activities",
       "kind": "entry",
@@ -227,10 +227,10 @@
       "function": "load_activities"
     },
     {
-      "line": 113,
+      "line": 112,
       "level": "ERROR",
       "message": "Exception in load_activities",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_activities"
     },
     {
@@ -241,10 +241,10 @@
       "function": "load_activities"
     },
     {
-      "line": 122,
+      "line": 121,
       "level": "ERROR",
       "message": "Exception in load_activities",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_activities"
     },
     {
@@ -255,14 +255,14 @@
       "function": "load_activities"
     },
     {
-      "line": 128,
+      "line": 127,
       "level": "DEBUG",
       "message": "Entering save_schedule",
       "kind": "entry",
       "function": "save_schedule"
     },
     {
-      "line": 141,
+      "line": 136,
       "level": "DEBUG",
       "message": "Entering pick_activities",
       "kind": "entry",
@@ -290,7 +290,7 @@
       "function": "pick_activities"
     },
     {
-      "line": 158,
+      "line": 157,
       "level": "DEBUG",
       "message": "Entering summarize",
       "kind": "entry",
@@ -311,7 +311,7 @@
       "function": "summarize"
     },
     {
-      "line": 171,
+      "line": 170,
       "level": "DEBUG",
       "message": "Entering load_config",
       "kind": "entry",
@@ -332,10 +332,10 @@
       "function": "load_config"
     },
     {
-      "line": 177,
+      "line": 176,
       "level": "ERROR",
       "message": "Exception in load_config",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_config"
     },
     {
@@ -346,7 +346,7 @@
       "function": "load_config"
     },
     {
-      "line": 181,
+      "line": 180,
       "level": "DEBUG",
       "message": "Entering ensure_sample_data",
       "kind": "entry",
@@ -360,7 +360,7 @@
       "function": "ensure_sample_data"
     },
     {
-      "line": 210,
+      "line": 209,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
@@ -374,10 +374,10 @@
       "function": "main"
     },
     {
-      "line": 227,
+      "line": 226,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

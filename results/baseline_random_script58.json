@@ -19,9 +19,9 @@
       "function": "matches"
     },
     {
-      "line": 39,
+      "line": 38,
       "level": "ERROR",
-      "message": "Random log at line 39 in from_dict",
+      "message": "Random log at line 38 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
@@ -33,10 +33,10 @@
       "function": "from_dict"
     },
     {
-      "line": 48,
+      "line": 47,
       "level": "DEBUG",
-      "message": "Random log at line 48 in from_dict",
-      "kind": "except",
+      "message": "Random log at line 47 in from_dict",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -61,10 +61,10 @@
       "function": "from_dict"
     },
     {
-      "line": 91,
+      "line": 90,
       "level": "ERROR",
-      "message": "Random log at line 91 in from_dict",
-      "kind": "except",
+      "message": "Random log at line 90 in from_dict",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -75,9 +75,9 @@
       "function": "from_dict"
     },
     {
-      "line": 126,
+      "line": 125,
       "level": "INFO",
-      "message": "Random log at line 126 in from_dict",
+      "message": "Random log at line 125 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
@@ -89,9 +89,9 @@
       "function": "fetch_orders"
     },
     {
-      "line": 153,
+      "line": 152,
       "level": "WARNING",
-      "message": "Random log at line 153 in push_summary",
+      "message": "Random log at line 152 in push_summary",
       "kind": "entry",
       "function": "push_summary"
     },
@@ -110,16 +110,16 @@
       "function": "load_order_book"
     },
     {
-      "line": 188,
+      "line": 187,
       "level": "DEBUG",
-      "message": "Random log at line 188 in summarize_orders",
+      "message": "Random log at line 187 in summarize_orders",
       "kind": "entry",
       "function": "summarize_orders"
     },
     {
-      "line": 198,
+      "line": 197,
       "level": "WARNING",
-      "message": "Random log at line 198 in filter_large_orders",
+      "message": "Random log at line 197 in filter_large_orders",
       "kind": "entry",
       "function": "filter_large_orders"
     },
@@ -131,9 +131,9 @@
       "function": "filter_large_orders"
     },
     {
-      "line": 218,
+      "line": 217,
       "level": "INFO",
-      "message": "Random log at line 218 in simulate_processing",
+      "message": "Random log at line 217 in simulate_processing",
       "kind": "entry",
       "function": "simulate_processing"
     }

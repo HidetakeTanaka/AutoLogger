@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 23,
+      "line": 22,
       "level": "DEBUG",
       "message": "Entering is_active",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_active"
     },
     {
-      "line": 29,
+      "line": 28,
       "level": "DEBUG",
       "message": "Entering update_activity",
       "kind": "entry",
@@ -38,7 +38,7 @@
       "function": "update_activity"
     },
     {
-      "line": 36,
+      "line": 35,
       "level": "DEBUG",
       "message": "Entering matches",
       "kind": "entry",
@@ -66,7 +66,7 @@
       "function": "matches"
     },
     {
-      "line": 44,
+      "line": 43,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -80,17 +80,17 @@
       "function": "to_dict"
     },
     {
-      "line": 56,
+      "line": 55,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
     {
-      "line": 60,
+      "line": 59,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -108,21 +108,21 @@
       "function": "from_dict"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 81,
+      "line": 80,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -136,7 +136,7 @@
       "function": "get"
     },
     {
-      "line": 84,
+      "line": 83,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -150,7 +150,7 @@
       "function": "all"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "DEBUG",
       "message": "Entering search",
       "kind": "entry",
@@ -164,7 +164,7 @@
       "function": "search"
     },
     {
-      "line": 91,
+      "line": 90,
       "level": "DEBUG",
       "message": "Entering active_users",
       "kind": "entry",
@@ -178,7 +178,7 @@
       "function": "active_users"
     },
     {
-      "line": 94,
+      "line": 93,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -192,7 +192,7 @@
       "function": "to_dict"
     },
     {
-      "line": 101,
+      "line": 100,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -206,14 +206,14 @@
       "function": "from_dict"
     },
     {
-      "line": 111,
+      "line": 110,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 115,
+      "line": 114,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -227,7 +227,7 @@
       "function": "_url"
     },
     {
-      "line": 118,
+      "line": 117,
       "level": "DEBUG",
       "message": "Entering fetch",
       "kind": "entry",
@@ -241,10 +241,10 @@
       "function": "fetch"
     },
     {
-      "line": 125,
+      "line": 124,
       "level": "ERROR",
       "message": "Exception in fetch",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch"
     },
     {
@@ -255,7 +255,7 @@
       "function": "fetch"
     },
     {
-      "line": 128,
+      "line": 127,
       "level": "DEBUG",
       "message": "Entering push",
       "kind": "entry",
@@ -269,10 +269,10 @@
       "function": "push"
     },
     {
-      "line": 135,
+      "line": 134,
       "level": "ERROR",
       "message": "Exception in push",
-      "kind": "except",
+      "kind": "exception",
       "function": "push"
     },
     {
@@ -283,7 +283,7 @@
       "function": "push"
     },
     {
-      "line": 139,
+      "line": 138,
       "level": "DEBUG",
       "message": "Entering load_directory",
       "kind": "entry",
@@ -297,10 +297,10 @@
       "function": "load_directory"
     },
     {
-      "line": 143,
+      "line": 142,
       "level": "ERROR",
       "message": "Exception in load_directory",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_directory"
     },
     {
@@ -311,10 +311,10 @@
       "function": "load_directory"
     },
     {
-      "line": 145,
+      "line": 144,
       "level": "ERROR",
       "message": "Exception in load_directory",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_directory"
     },
     {
@@ -325,28 +325,28 @@
       "function": "load_directory"
     },
     {
-      "line": 149,
+      "line": 148,
       "level": "DEBUG",
       "message": "Entering save_directory",
       "kind": "entry",
       "function": "save_directory"
     },
     {
-      "line": 155,
+      "line": 154,
       "level": "ERROR",
       "message": "Exception in save_directory",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_directory"
     },
     {
-      "line": 159,
+      "line": 158,
       "level": "ERROR",
       "message": "Exception in save_directory",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_directory"
     },
     {
-      "line": 163,
+      "line": 162,
       "level": "DEBUG",
       "message": "Entering calculate_statistics",
       "kind": "entry",
@@ -367,7 +367,7 @@
       "function": "calculate_statistics"
     },
     {
-      "line": 179,
+      "line": 178,
       "level": "DEBUG",
       "message": "Entering choose_random_user",
       "kind": "entry",
@@ -388,7 +388,7 @@
       "function": "choose_random_user"
     },
     {
-      "line": 186,
+      "line": 185,
       "level": "DEBUG",
       "message": "Entering promote_inactive_users",
       "kind": "entry",
@@ -402,7 +402,7 @@
       "function": "promote_inactive_users"
     },
     {
-      "line": 195,
+      "line": 194,
       "level": "DEBUG",
       "message": "Entering sync_remote",
       "kind": "entry",
@@ -423,7 +423,7 @@
       "function": "sync_remote"
     },
     {
-      "line": 209,
+      "line": 208,
       "level": "DEBUG",
       "message": "Entering simulate_activity",
       "kind": "entry",
@@ -437,17 +437,17 @@
       "function": "simulate_activity"
     },
     {
-      "line": 221,
+      "line": 220,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 238,
+      "line": 237,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

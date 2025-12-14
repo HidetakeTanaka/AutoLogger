@@ -26,9 +26,9 @@
       "function": "matches"
     },
     {
-      "line": 33,
+      "line": 32,
       "level": "DEBUG",
-      "message": "Random log at line 33 in to_dict",
+      "message": "Random log at line 32 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -61,9 +61,9 @@
       "function": "search"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "ERROR",
-      "message": "Random log at line 78 in to_dict",
+      "message": "Random log at line 77 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -75,10 +75,10 @@
       "function": "to_dict"
     },
     {
-      "line": 121,
+      "line": 120,
       "level": "INFO",
-      "message": "Random log at line 121 in load_feed",
-      "kind": "except",
+      "message": "Random log at line 120 in load_feed",
+      "kind": "exception",
       "function": "load_feed"
     },
     {
@@ -89,16 +89,16 @@
       "function": "filter_articles"
     },
     {
-      "line": 167,
+      "line": 166,
       "level": "WARNING",
-      "message": "Random log at line 167 in paginate_titles",
+      "message": "Random log at line 166 in paginate_titles",
       "kind": "entry",
       "function": "paginate_titles"
     },
     {
-      "line": 179,
+      "line": 178,
       "level": "INFO",
-      "message": "Random log at line 179 in pick_random_article",
+      "message": "Random log at line 178 in pick_random_article",
       "kind": "entry",
       "function": "pick_random_article"
     },

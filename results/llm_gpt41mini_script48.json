@@ -2,169 +2,145 @@
   "file": "script48.py",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering is_recent with days={days}\")"
     },
     {
-      "line": 27,
+      "line": 26,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering matches_goal with goal={goal}\")"
     },
     {
-      "line": 46,
+      "line": 45,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+      "message": "logging.debug(f\"Entering WorkoutSession.from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 58,
-      "kind": "except",
+      "line": 57,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to create WorkoutSession from dict: {raw}', exc_info=True)"
     },
     {
-      "line": 69,
+      "line": 68,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering add_session for user {self.user_id} with session {session.id}\")"
+      "message": "logging.debug(f\"Entering add_session with session id: {session.id}\")"
     },
     {
-      "line": 72,
+      "line": 71,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering recent_sessions with days={days}\")"
     },
     {
-      "line": 75,
+      "line": 74,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering total_calories with days={days} for user_id={self.user_id}\")"
+      "message": "logging.debug(f\"Entering total_calories with days={days} for user {self}\")"
     },
     {
-      "line": 87,
+      "line": 86,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f'Entering from_dict with raw data keys: {list(raw.keys())}')"
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 94,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Creating UserProfile from dict with user_id={raw.get(\"user_id\", \"\")}, name={raw.get(\"name\", \"\")}, goal={raw.get(\"goal\", \"\")}, sessions_count={len(sessions)}')"
-    },
-    {
-      "line": 101,
-      "kind": "except",
+      "line": 100,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('Failed to create UserProfile from dict: %s', raw, exc_info=True)"
+      "message": "logging.error(f'Failed to create UserProfile from dict: {raw}', exc_info=True)"
     },
     {
-      "line": 106,
+      "line": 105,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Initializing RecommendationClient with base_url={base_url} and timeout={timeout}\")"
+      "message": "logging.debug(f'RecommendationClient initialized with base_url={base_url} and timeout={timeout}')"
     },
     {
-      "line": 110,
+      "line": 109,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering _url with goal: {goal}\")"
+      "message": "logging.debug(f\"Entered _url with goal={goal}\")"
     },
     {
-      "line": 113,
+      "line": 112,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering fetch_recommendations with goal: {goal}\")"
+      "message": "logging.debug(f\"Entered fetch_recommendations with goal: {goal}\")"
     },
     {
-      "line": 121,
-      "kind": "except",
+      "line": 120,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch recommendations from {url} with goal {goal}', exc_info=True)"
+      "message": "logging.error(f'Exception occurred while fetching recommendations from {url} with goal {goal}', exc_info=True)"
     },
     {
-      "line": 125,
-      "kind": "except",
+      "line": 124,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to fetch recommendations from {url} with goal {goal}', exc_info=True)"
     },
     {
-      "line": 131,
+      "line": 130,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_profiles with path: {path}\")"
     },
     {
-      "line": 137,
-      "kind": "except",
+      "line": 136,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load profile from {path} with data {data}: {prof}', exc_info=True)"
+      "message": "logging.error(f'Failed to load profile from {path} with data {data}', exc_info=True)"
     },
     {
-      "line": 143,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Loaded profiles from {path}, total profiles: {len(result)}')"
-    },
-    {
-      "line": 147,
+      "line": 146,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save_profiles with path={path} and {len(list(profiles))} profiles\")"
     },
     {
-      "line": 154,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to save profiles to {path} with payload {payload} and tmp data {tmp}', exc_info=True)"
-    },
-    {
-      "line": 158,
-      "kind": "except",
+      "line": 153,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save profiles to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 162,
+      "line": 157,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save profiles to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 161,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering choose_next_session with profile id={profile.id}\")"
-    },
-    {
-      "line": 164,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'No next session chosen for profile {profile} from pool {pool} considering recent sessions {recent}')"
-    },
-    {
-      "line": 169,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'No next session chosen for profile {profile} from pool {pool} with recent sessions {recent}')"
+      "message": "logging.debug(f\"Entering choose_next_session with profile: {profile}\")"
     },
     {
       "line": 170,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Choosing next session from pool of size {len(pool)}\")"
+      "message": "logging.info(f'Chose next session: {random.choice(pool)} from pool of size {len(pool)}')"
     },
     {
-      "line": 174,
+      "line": 173,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering summarize_sessions with {len(list(sessions))} sessions\")"
+      "message": "logging.debug(f\"Entering summarize_sessions with {len(sessions)} sessions\")"
     },
     {
       "line": 179,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Session summary computed: count={len(items)}, total_minutes={total_minutes}, avg_calories={total_calories / len(items):.2f}\")"
+      "message": "logging.info(f\"Summarized {len(items)} sessions: total_minutes={total_minutes}, avg_calories={total_calories / len(items):.2f}\")"
     },
     {
-      "line": 187,
+      "line": 186,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_config with path: {path}\")"
@@ -176,28 +152,28 @@
       "message": "logging.info(f'Configuration loaded successfully from {path}')"
     },
     {
-      "line": 191,
-      "kind": "except",
+      "line": 190,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
     },
     {
-      "line": 195,
+      "line": 194,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered ensure_sample_profile with path: {path}\")"
     },
     {
-      "line": 221,
+      "line": 220,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}, base_url={base_url}\")"
+      "message": "logging.debug(f\"Entered main with base_dir={base_dir}, base_url={base_url}\")"
     },
     {
-      "line": 256,
-      "kind": "except",
+      "line": 255,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+      "message": "logging.error('Exception caught in main function', exc_info=True)"
     }
   ]
 }

@@ -12,16 +12,16 @@
       "function": "is_long"
     },
     {
-      "line": 24,
+      "line": 23,
       "level": "INFO",
-      "message": "Random log at line 24 in matches_mood",
+      "message": "Random log at line 23 in matches_mood",
       "kind": "entry",
       "function": "matches_mood"
     },
     {
-      "line": 32,
+      "line": 31,
       "level": "ERROR",
-      "message": "Random log at line 32 in to_dict",
+      "message": "Random log at line 31 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -33,9 +33,9 @@
       "function": "to_dict"
     },
     {
-      "line": 43,
+      "line": 42,
       "level": "DEBUG",
-      "message": "Random log at line 43 in from_dict",
+      "message": "Random log at line 42 in from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
@@ -47,23 +47,23 @@
       "function": "to_dict"
     },
     {
-      "line": 73,
+      "line": 72,
       "level": "ERROR",
-      "message": "Random log at line 73 in from_dict",
-      "kind": "except",
+      "message": "Random log at line 72 in from_dict",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "WARNING",
-      "message": "Random log at line 80 in __init__",
+      "message": "Random log at line 79 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 84,
+      "line": 83,
       "level": "ERROR",
-      "message": "Random log at line 84 in _url",
+      "message": "Random log at line 83 in _url",
       "kind": "entry",
       "function": "_url"
     },
@@ -82,9 +82,9 @@
       "function": "load_activities"
     },
     {
-      "line": 158,
+      "line": 157,
       "level": "WARNING",
-      "message": "Random log at line 158 in summarize",
+      "message": "Random log at line 157 in summarize",
       "kind": "entry",
       "function": "summarize"
     },
@@ -103,10 +103,10 @@
       "function": "load_config"
     },
     {
-      "line": 177,
+      "line": 176,
       "level": "ERROR",
-      "message": "Random log at line 177 in load_config",
-      "kind": "except",
+      "message": "Random log at line 176 in load_config",
+      "kind": "exception",
       "function": "load_config"
     },
     {

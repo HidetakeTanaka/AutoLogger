@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 17,
+      "line": 16,
       "level": "DEBUG",
       "message": "Entering is_overdue",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_overdue"
     },
     {
-      "line": 24,
+      "line": 23,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -38,17 +38,17 @@
       "function": "to_dict"
     },
     {
-      "line": 34,
+      "line": 33,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
       "function": "from_dict"
     },
     {
-      "line": 38,
+      "line": 37,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -59,21 +59,21 @@
       "function": "from_dict"
     },
     {
-      "line": 53,
+      "line": 52,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 56,
+      "line": 55,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 59,
+      "line": 58,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -87,7 +87,7 @@
       "function": "get"
     },
     {
-      "line": 62,
+      "line": 61,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -101,7 +101,7 @@
       "function": "all"
     },
     {
-      "line": 65,
+      "line": 64,
       "level": "DEBUG",
       "message": "Entering pending",
       "kind": "entry",
@@ -115,7 +115,7 @@
       "function": "pending"
     },
     {
-      "line": 68,
+      "line": 67,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -129,7 +129,7 @@
       "function": "to_dict"
     },
     {
-      "line": 72,
+      "line": 71,
       "level": "DEBUG",
       "message": "Entering load_board",
       "kind": "entry",
@@ -143,10 +143,10 @@
       "function": "load_board"
     },
     {
-      "line": 79,
+      "line": 78,
       "level": "ERROR",
       "message": "Exception in load_board",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_board"
     },
     {
@@ -164,17 +164,17 @@
       "function": "load_board"
     },
     {
-      "line": 88,
+      "line": 87,
       "level": "DEBUG",
       "message": "Entering save_board",
       "kind": "entry",
       "function": "save_board"
     },
     {
-      "line": 94,
+      "line": 93,
       "level": "ERROR",
       "message": "Exception in save_board",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_board"
     },
     {
@@ -185,7 +185,7 @@
       "function": "save_board"
     },
     {
-      "line": 98,
+      "line": 97,
       "level": "DEBUG",
       "message": "Entering filter_overdue",
       "kind": "entry",
@@ -199,7 +199,7 @@
       "function": "filter_overdue"
     },
     {
-      "line": 104,
+      "line": 103,
       "level": "DEBUG",
       "message": "Entering compute_summary",
       "kind": "entry",
@@ -220,17 +220,17 @@
       "function": "compute_summary"
     },
     {
-      "line": 113,
+      "line": 112,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 117,
+      "line": 116,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {
@@ -241,10 +241,10 @@
       "function": "main"
     },
     {
-      "line": 150,
+      "line": 149,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

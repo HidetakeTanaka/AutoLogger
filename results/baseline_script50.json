@@ -3,14 +3,14 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 18,
+      "line": 10,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 25,
+      "line": 24,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -31,7 +31,7 @@
       "function": "is_recent"
     },
     {
-      "line": 30,
+      "line": 29,
       "level": "DEBUG",
       "message": "Entering matches_query",
       "kind": "entry",
@@ -66,7 +66,7 @@
       "function": "matches_query"
     },
     {
-      "line": 40,
+      "line": 39,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -80,7 +80,7 @@
       "function": "to_dict"
     },
     {
-      "line": 50,
+      "line": 49,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -94,10 +94,10 @@
       "function": "from_dict"
     },
     {
-      "line": 65,
+      "line": 64,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -108,21 +108,21 @@
       "function": "from_dict"
     },
     {
-      "line": 70,
+      "line": 69,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -136,7 +136,7 @@
       "function": "get"
     },
     {
-      "line": 81,
+      "line": 80,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -150,7 +150,7 @@
       "function": "all"
     },
     {
-      "line": 84,
+      "line": 83,
       "level": "DEBUG",
       "message": "Entering search",
       "kind": "entry",
@@ -164,7 +164,7 @@
       "function": "search"
     },
     {
-      "line": 94,
+      "line": 93,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -178,7 +178,7 @@
       "function": "to_dict"
     },
     {
-      "line": 102,
+      "line": 101,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -192,14 +192,14 @@
       "function": "from_dict"
     },
     {
-      "line": 115,
+      "line": 114,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 119,
+      "line": 118,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -213,7 +213,7 @@
       "function": "_url"
     },
     {
-      "line": 124,
+      "line": 123,
       "level": "DEBUG",
       "message": "Entering fetch_remote_notebook",
       "kind": "entry",
@@ -227,10 +227,10 @@
       "function": "fetch_remote_notebook"
     },
     {
-      "line": 131,
+      "line": 130,
       "level": "ERROR",
       "message": "Exception in fetch_remote_notebook",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_remote_notebook"
     },
     {
@@ -241,10 +241,10 @@
       "function": "fetch_remote_notebook"
     },
     {
-      "line": 133,
+      "line": 132,
       "level": "ERROR",
       "message": "Exception in fetch_remote_notebook",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_remote_notebook"
     },
     {
@@ -262,10 +262,10 @@
       "function": "fetch_remote_notebook"
     },
     {
-      "line": 137,
+      "line": 136,
       "level": "ERROR",
       "message": "Exception in fetch_remote_notebook",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_remote_notebook"
     },
     {
@@ -276,7 +276,7 @@
       "function": "fetch_remote_notebook"
     },
     {
-      "line": 140,
+      "line": 139,
       "level": "DEBUG",
       "message": "Entering push_notebook",
       "kind": "entry",
@@ -290,10 +290,10 @@
       "function": "push_notebook"
     },
     {
-      "line": 150,
+      "line": 149,
       "level": "ERROR",
       "message": "Exception in push_notebook",
-      "kind": "except",
+      "kind": "exception",
       "function": "push_notebook"
     },
     {
@@ -311,7 +311,7 @@
       "function": "push_notebook"
     },
     {
-      "line": 155,
+      "line": 154,
       "level": "DEBUG",
       "message": "Entering load_notebook",
       "kind": "entry",
@@ -332,10 +332,10 @@
       "function": "load_notebook"
     },
     {
-      "line": 162,
+      "line": 161,
       "level": "ERROR",
       "message": "Exception in load_notebook",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_notebook"
     },
     {
@@ -346,28 +346,28 @@
       "function": "load_notebook"
     },
     {
-      "line": 166,
+      "line": 165,
       "level": "DEBUG",
       "message": "Entering save_notebook",
       "kind": "entry",
       "function": "save_notebook"
     },
     {
-      "line": 173,
+      "line": 172,
       "level": "ERROR",
       "message": "Exception in save_notebook",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_notebook"
     },
     {
-      "line": 177,
+      "line": 176,
       "level": "ERROR",
       "message": "Exception in save_notebook",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_notebook"
     },
     {
-      "line": 181,
+      "line": 180,
       "level": "DEBUG",
       "message": "Entering summarize_tags",
       "kind": "entry",
@@ -381,7 +381,7 @@
       "function": "summarize_tags"
     },
     {
-      "line": 194,
+      "line": 193,
       "level": "DEBUG",
       "message": "Entering merge_notebooks",
       "kind": "entry",
@@ -395,7 +395,7 @@
       "function": "merge_notebooks"
     },
     {
-      "line": 204,
+      "line": 203,
       "level": "DEBUG",
       "message": "Entering pick_random_note",
       "kind": "entry",
@@ -416,7 +416,7 @@
       "function": "pick_random_note"
     },
     {
-      "line": 214,
+      "line": 213,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

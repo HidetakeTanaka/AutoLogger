@@ -26,9 +26,9 @@
       "function": "matches"
     },
     {
-      "line": 35,
+      "line": 34,
       "level": "DEBUG",
-      "message": "Random log at line 35 in to_dict",
+      "message": "Random log at line 34 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -61,9 +61,9 @@
       "function": "recent_products"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "ERROR",
-      "message": "Random log at line 78 in total_value",
+      "message": "Random log at line 77 in total_value",
       "kind": "entry",
       "function": "total_value"
     },
@@ -103,9 +103,9 @@
       "function": "pick_random_product"
     },
     {
-      "line": 185,
+      "line": 184,
       "level": "ERROR",
-      "message": "Random log at line 185 in main",
+      "message": "Random log at line 184 in main",
       "kind": "entry",
       "function": "main"
     }

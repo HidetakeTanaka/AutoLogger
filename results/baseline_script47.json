@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 20,
+      "line": 19,
       "level": "DEBUG",
       "message": "Entering is_discountable",
       "kind": "entry",
@@ -38,7 +38,7 @@
       "function": "is_discountable"
     },
     {
-      "line": 29,
+      "line": 28,
       "level": "DEBUG",
       "message": "Entering matches_query",
       "kind": "entry",
@@ -73,7 +73,7 @@
       "function": "matches_query"
     },
     {
-      "line": 39,
+      "line": 38,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -87,7 +87,7 @@
       "function": "to_dict"
     },
     {
-      "line": 49,
+      "line": 48,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -108,10 +108,10 @@
       "function": "from_dict"
     },
     {
-      "line": 59,
+      "line": 58,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -122,7 +122,7 @@
       "function": "from_dict"
     },
     {
-      "line": 68,
+      "line": 67,
       "level": "DEBUG",
       "message": "Entering subtotal",
       "kind": "entry",
@@ -143,7 +143,7 @@
       "function": "subtotal"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
@@ -164,7 +164,7 @@
       "function": "add"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "DEBUG",
       "message": "Entering total_quantity",
       "kind": "entry",
@@ -178,7 +178,7 @@
       "function": "total_quantity"
     },
     {
-      "line": 90,
+      "line": 89,
       "level": "DEBUG",
       "message": "Entering total_price",
       "kind": "entry",
@@ -192,7 +192,7 @@
       "function": "total_price"
     },
     {
-      "line": 93,
+      "line": 92,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -206,14 +206,14 @@
       "function": "to_dict"
     },
     {
-      "line": 103,
+      "line": 102,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 107,
+      "line": 106,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -227,17 +227,17 @@
       "function": "_url"
     },
     {
-      "line": 110,
+      "line": 109,
       "level": "DEBUG",
       "message": "Entering fetch_price",
       "kind": "entry",
       "function": "fetch_price"
     },
     {
-      "line": 116,
+      "line": 115,
       "level": "ERROR",
       "message": "Exception in fetch_price",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_price"
     },
     {
@@ -248,10 +248,10 @@
       "function": "fetch_price"
     },
     {
-      "line": 120,
+      "line": 119,
       "level": "ERROR",
       "message": "Exception in fetch_price",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_price"
     },
     {
@@ -276,10 +276,10 @@
       "function": "fetch_price"
     },
     {
-      "line": 127,
+      "line": 126,
       "level": "ERROR",
       "message": "Exception in fetch_price",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_price"
     },
     {
@@ -290,7 +290,7 @@
       "function": "fetch_price"
     },
     {
-      "line": 131,
+      "line": 130,
       "level": "DEBUG",
       "message": "Entering load_products",
       "kind": "entry",
@@ -304,10 +304,10 @@
       "function": "load_products"
     },
     {
-      "line": 137,
+      "line": 136,
       "level": "ERROR",
       "message": "Exception in load_products",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_products"
     },
     {
@@ -325,28 +325,28 @@
       "function": "load_products"
     },
     {
-      "line": 147,
+      "line": 146,
       "level": "DEBUG",
       "message": "Entering save_cart",
       "kind": "entry",
       "function": "save_cart"
     },
     {
-      "line": 153,
+      "line": 152,
       "level": "ERROR",
       "message": "Exception in save_cart",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_cart"
     },
     {
-      "line": 157,
+      "line": 156,
       "level": "ERROR",
       "message": "Exception in save_cart",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_cart"
     },
     {
-      "line": 161,
+      "line": 160,
       "level": "DEBUG",
       "message": "Entering apply_discounts",
       "kind": "entry",
@@ -360,7 +360,7 @@
       "function": "apply_discounts"
     },
     {
-      "line": 177,
+      "line": 176,
       "level": "DEBUG",
       "message": "Entering compute_cart_total",
       "kind": "entry",
@@ -374,7 +374,7 @@
       "function": "compute_cart_total"
     },
     {
-      "line": 188,
+      "line": 187,
       "level": "DEBUG",
       "message": "Entering sync_remote_prices",
       "kind": "entry",
@@ -388,7 +388,7 @@
       "function": "sync_remote_prices"
     },
     {
-      "line": 202,
+      "line": 201,
       "level": "DEBUG",
       "message": "Entering summarize_cart",
       "kind": "entry",
@@ -402,7 +402,7 @@
       "function": "summarize_cart"
     },
     {
-      "line": 217,
+      "line": 216,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",

@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 18,
+      "line": 17,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_recent"
     },
     {
-      "line": 31,
+      "line": 30,
       "level": "DEBUG",
       "message": "Entering add_sample",
       "kind": "entry",
@@ -38,7 +38,7 @@
       "function": "add_sample"
     },
     {
-      "line": 36,
+      "line": 35,
       "level": "DEBUG",
       "message": "Entering latest",
       "kind": "entry",
@@ -59,7 +59,7 @@
       "function": "latest"
     },
     {
-      "line": 41,
+      "line": 40,
       "level": "DEBUG",
       "message": "Entering recent_values",
       "kind": "entry",
@@ -73,7 +73,7 @@
       "function": "recent_values"
     },
     {
-      "line": 44,
+      "line": 43,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -87,7 +87,7 @@
       "function": "to_dict"
     },
     {
-      "line": 56,
+      "line": 55,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -101,10 +101,10 @@
       "function": "from_dict"
     },
     {
-      "line": 69,
+      "line": 68,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -115,21 +115,21 @@
       "function": "from_dict"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 81,
+      "line": 80,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -143,7 +143,7 @@
       "function": "get"
     },
     {
-      "line": 84,
+      "line": 83,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -157,7 +157,7 @@
       "function": "all"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "DEBUG",
       "message": "Entering enabled_sensors",
       "kind": "entry",
@@ -171,7 +171,7 @@
       "function": "enabled_sensors"
     },
     {
-      "line": 90,
+      "line": 89,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -185,7 +185,7 @@
       "function": "to_dict"
     },
     {
-      "line": 97,
+      "line": 96,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -199,14 +199,14 @@
       "function": "from_dict"
     },
     {
-      "line": 107,
+      "line": 106,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 111,
+      "line": 110,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -220,7 +220,7 @@
       "function": "_url"
     },
     {
-      "line": 114,
+      "line": 113,
       "level": "DEBUG",
       "message": "Entering fetch",
       "kind": "entry",
@@ -234,10 +234,10 @@
       "function": "fetch"
     },
     {
-      "line": 121,
+      "line": 120,
       "level": "ERROR",
       "message": "Exception in fetch",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch"
     },
     {
@@ -248,7 +248,7 @@
       "function": "fetch"
     },
     {
-      "line": 124,
+      "line": 123,
       "level": "DEBUG",
       "message": "Entering push",
       "kind": "entry",
@@ -262,10 +262,10 @@
       "function": "push"
     },
     {
-      "line": 131,
+      "line": 130,
       "level": "ERROR",
       "message": "Exception in push",
-      "kind": "except",
+      "kind": "exception",
       "function": "push"
     },
     {
@@ -276,7 +276,7 @@
       "function": "push"
     },
     {
-      "line": 135,
+      "line": 134,
       "level": "DEBUG",
       "message": "Entering load_network",
       "kind": "entry",
@@ -290,10 +290,10 @@
       "function": "load_network"
     },
     {
-      "line": 139,
+      "line": 138,
       "level": "ERROR",
       "message": "Exception in load_network",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_network"
     },
     {
@@ -304,10 +304,10 @@
       "function": "load_network"
     },
     {
-      "line": 141,
+      "line": 140,
       "level": "ERROR",
       "message": "Exception in load_network",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_network"
     },
     {
@@ -318,28 +318,28 @@
       "function": "load_network"
     },
     {
-      "line": 145,
+      "line": 144,
       "level": "DEBUG",
       "message": "Entering save_network",
       "kind": "entry",
       "function": "save_network"
     },
     {
-      "line": 151,
+      "line": 150,
       "level": "ERROR",
       "message": "Exception in save_network",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_network"
     },
     {
-      "line": 155,
+      "line": 154,
       "level": "ERROR",
       "message": "Exception in save_network",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_network"
     },
     {
-      "line": 159,
+      "line": 158,
       "level": "DEBUG",
       "message": "Entering aggregate_metrics",
       "kind": "entry",
@@ -367,7 +367,7 @@
       "function": "aggregate_metrics"
     },
     {
-      "line": 174,
+      "line": 173,
       "level": "DEBUG",
       "message": "Entering detect_anomalies",
       "kind": "entry",
@@ -381,7 +381,7 @@
       "function": "detect_anomalies"
     },
     {
-      "line": 184,
+      "line": 183,
       "level": "DEBUG",
       "message": "Entering sync_remote_metrics",
       "kind": "entry",
@@ -402,24 +402,24 @@
       "function": "sync_remote_metrics"
     },
     {
-      "line": 197,
+      "line": 196,
       "level": "DEBUG",
       "message": "Entering simulate_network",
       "kind": "entry",
       "function": "simulate_network"
     },
     {
-      "line": 206,
+      "line": 205,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 224,
+      "line": 223,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

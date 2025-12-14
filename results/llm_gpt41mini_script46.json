@@ -2,37 +2,49 @@
   "file": "script46.py",
   "logs": [
     {
-      "line": 47,
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with days={days} for article id={self.id}\")"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_query with query='{query}'\")"
+    },
+    {
+      "line": 46,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 60,
-      "kind": "except",
+      "line": 59,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to parse published date from raw value: {raw}', exc_info=True)"
+      "message": "logging.error(f'Failed to create Article from dict with published={published}, raw={raw}, ts_raw={ts_raw}', exc_info=True)"
     },
     {
-      "line": 68,
+      "line": 67,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering add method with article id={article.id}\")"
+      "message": "logging.debug(f\"Entering add method with article id: {article.id}\")"
     },
     {
-      "line": 76,
+      "line": 75,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering get method with article_id={article_id}\")"
     },
     {
-      "line": 82,
+      "line": 81,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering recent() with days={days}\")"
+      "message": "logging.debug(f\"Entered recent() with days={days}\")"
     },
     {
-      "line": 85,
+      "line": 84,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering filter with query='{query}' and min_score={min_score}\")"
@@ -41,46 +53,40 @@
       "line": 92,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Filter applied with min_score={min_score}, query=\"{query}\"; returning {len(result)} results')"
+      "message": "logging.info(f'Filter applied with query=\"{query}\" and min_score={min_score}, returning {len(result)} results')"
     },
     {
-      "line": 97,
+      "line": 96,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing NewsApiClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 101,
+      "line": 100,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with path: {path}\")"
     },
     {
-      "line": 106,
+      "line": 105,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _request_json with url: {url}, tries: {tries}\")"
     },
     {
-      "line": 113,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Successfully decoded JSON response from {url} after {tries} tries')"
-    },
-    {
-      "line": 115,
-      "kind": "except",
+      "line": 114,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Request to {url} failed after {tries} tries. Response body: {body}')"
+      "message": "logging.error(f'Exception occurred during request to {url} on try {tries}', exc_info=True)"
     },
     {
-      "line": 120,
+      "line": 119,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered fetch_headlines with topic='{topic}' and url='{url}'\")"
+      "message": "logging.debug(f\"Entering fetch_headlines with topic='{topic}' and url='{url}'\")"
     },
     {
-      "line": 132,
+      "line": 131,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering fetch_article_detail with article_id={article_id}\")"
@@ -89,103 +95,67 @@
       "line": 138,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Fetched article detail for article_id={article_id} from URL: {url}')"
+      "message": "logging.info(f'Returning article detail data for article_id={article_id} from URL {url}')"
     },
     {
-      "line": 142,
+      "line": 141,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_config with path: {path}\")"
     },
     {
-      "line": 146,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Configuration loaded successfully from {path}')"
-    },
-    {
-      "line": 148,
-      "kind": "except",
+      "line": 147,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
     },
     {
-      "line": 152,
+      "line": 151,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_local_articles with path: {path}\")"
     },
     {
-      "line": 154,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning store with {len(store)} articles loaded from {path}')"
-    },
-    {
-      "line": 159,
-      "kind": "except",
+      "line": 158,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load article from {path} with data {data}', exc_info=True)"
     },
     {
-      "line": 159,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning store with {len(store)} articles loaded from {path}')"
-    },
-    {
-      "line": 166,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning store with {len(store)} articles loaded from local path: {path}')"
-    },
-    {
-      "line": 170,
+      "line": 169,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering save_digest with path={path} and {len(list(articles))} articles\")"
     },
     {
-      "line": 178,
-      "kind": "except",
+      "line": 177,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save digest to {path} with {len(rows)} rows and {len(articles)} articles', exc_info=True)"
     },
     {
-      "line": 183,
+      "line": 182,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering filter_articles_by_score with min_score={min_score} and {len(list(articles))} articles\")"
+      "message": "logging.debug(f\"Entered filter_articles_by_score with min_score={min_score} and {len(list(articles))} articles\")"
     },
     {
-      "line": 190,
+      "line": 189,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered group_by_source with {len(list(articles))} articles\")"
     },
     {
-      "line": 193,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning groups dictionary with {len(groups)} keys after grouping {len(articles)} articles')"
-    },
-    {
-      "line": 197,
+      "line": 196,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered summarize_sources with {len(groups)} groups\")"
     },
     {
-      "line": 207,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Summary generated with {len(summary)} entries from {len(groups)} groups and top {top} items.')"
-    },
-    {
-      "line": 211,
+      "line": 210,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main function with base_dir={base_dir} and topic='{topic}'\")"
+      "message": "logging.debug(f\"Entered main with base_dir={base_dir}, topic={topic}\")"
     }
   ]
 }

@@ -26,9 +26,9 @@
       "function": "matches_query"
     },
     {
-      "line": 35,
+      "line": 34,
       "level": "DEBUG",
-      "message": "Random log at line 35 in to_dict",
+      "message": "Random log at line 34 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -47,16 +47,16 @@
       "function": "add"
     },
     {
-      "line": 76,
+      "line": 75,
       "level": "ERROR",
-      "message": "Random log at line 76 in get",
+      "message": "Random log at line 75 in get",
       "kind": "entry",
       "function": "get"
     },
     {
-      "line": 79,
+      "line": 78,
       "level": "WARNING",
-      "message": "Random log at line 79 in all",
+      "message": "Random log at line 78 in all",
       "kind": "entry",
       "function": "all"
     },
@@ -68,9 +68,9 @@
       "function": "all"
     },
     {
-      "line": 82,
+      "line": 81,
       "level": "WARNING",
-      "message": "Random log at line 82 in recent",
+      "message": "Random log at line 81 in recent",
       "kind": "entry",
       "function": "recent"
     },
@@ -82,9 +82,9 @@
       "function": "fetch_headlines"
     },
     {
-      "line": 142,
+      "line": 141,
       "level": "WARNING",
-      "message": "Random log at line 142 in load_config",
+      "message": "Random log at line 141 in load_config",
       "kind": "entry",
       "function": "load_config"
     },
@@ -117,9 +117,9 @@
       "function": "filter_articles_by_score"
     },
     {
-      "line": 197,
+      "line": 196,
       "level": "WARNING",
-      "message": "Random log at line 197 in summarize_sources",
+      "message": "Random log at line 196 in summarize_sources",
       "kind": "entry",
       "function": "summarize_sources"
     },

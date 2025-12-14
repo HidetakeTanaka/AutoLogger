@@ -2,166 +2,160 @@
   "file": "script42.py",
   "logs": [
     {
-      "line": 21,
+      "line": 20,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering is_long with threshold={threshold}\")"
     },
     {
-      "line": 24,
+      "line": 23,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering matches_mood with mood={mood}\")"
     },
     {
-      "line": 43,
+      "line": 42,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 59,
+      "line": 58,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering add_activity with activity: {activity}\")"
     },
     {
-      "line": 62,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Total duration calculated: {sum(a.duration_minutes for a in self.activities)} minutes')"
-    },
-    {
-      "line": 69,
+      "line": 68,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering Schedule.from_dict with raw data keys: {list(raw.keys())}\")"
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 73,
-      "kind": "except",
+      "line": 72,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to parse Schedule from dict with date_raw={date_raw} and raw={raw}', exc_info=True)"
+      "message": "logging.error(f'Failed to create Schedule from dict with date_raw={date_raw} and raw={raw}', exc_info=True)"
     },
     {
-      "line": 75,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Schedule created from dict with date: {dt} and {len(acts)} activities')"
-    },
-    {
-      "line": 80,
+      "line": 79,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f'RecommendationClient initialized with base_url={base_url} and timeout={timeout}')"
+      "message": "logging.debug(f\"Initializing RecommendationClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 84,
+      "line": 83,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering _url with mood={mood}\")"
+      "message": "logging.debug(f\"Entered _url with mood={mood}\")"
     },
     {
-      "line": 87,
+      "line": 86,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered fetch_suggestions with mood={mood}\")"
+      "message": "logging.debug(f\"Entering fetch_suggestions with mood={mood}\")"
     },
     {
-      "line": 95,
-      "kind": "except",
+      "line": 94,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch suggestions from {url} with mood {mood}', exc_info=True)"
+      "message": "logging.error(f'Exception occurred while fetching suggestions from {url} with request {req}', exc_info=True)"
     },
     {
-      "line": 97,
-      "kind": "except",
+      "line": 96,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Error fetching suggestions from {url} with mood {mood}')"
+      "message": "logging.error(f'Exception occurred while fetching suggestions from {url} with request {req}', exc_info=True)"
     },
     {
-      "line": 101,
-      "kind": "except",
+      "line": 100,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch suggestions from {url} with mood {mood}', exc_info=True)"
+      "message": "logging.error(f'Exception occurred while fetching suggestions from {url} with mood {mood}', exc_info=True)"
     },
     {
-      "line": 107,
+      "line": 106,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered load_activities with path: {path}\")"
     },
     {
-      "line": 113,
-      "kind": "except",
+      "line": 112,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load activities from {path} with data {data}', exc_info=True)"
     },
     {
-      "line": 122,
-      "kind": "except",
+      "line": 121,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load activities from {path} with data {data}')"
+      "message": "logging.error(f'Failed to load activities from {path} with data {data}', exc_info=True)"
     },
     {
-      "line": 124,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Loaded {len(rows)} activities from {path}')"
-    },
-    {
-      "line": 128,
+      "line": 127,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered save_schedule with path={path} and schedule={schedule}\")"
     },
     {
-      "line": 141,
+      "line": 136,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered pick_activities with max_minutes={max_minutes}, min_minutes={min_minutes}, total={total}, activities count={len(activities)}\")"
+      "message": "logging.debug(f\"Entered pick_activities with max_minutes={max_minutes}, min_minutes={min_minutes}, total={total}, pool size={len(pool)}\")"
     },
     {
       "line": 153,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Chosen activities: {chosen} within time limits {min_minutes}-{max_minutes} minutes')"
+      "message": "logging.info(f'pick_activities returning chosen list with {len(chosen)} activities, total time {sum(a.duration for a in chosen)} minutes')"
     },
     {
       "line": 154,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Chosen activities: {chosen} within time range {min_minutes}-{max_minutes} minutes')"
+      "message": "logging.info(f'Returning chosen activities: {chosen} within time limits {min_minutes}-{max_minutes} minutes')"
     },
     {
-      "line": 158,
+      "line": 157,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered summarize function with {len(list(activities))} activities\")"
+      "message": "logging.debug(f\"Entered summarize with {len(list(activities))} activities\")"
     },
     {
-      "line": 171,
+      "line": 170,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_config with path: {path}\")"
     },
     {
-      "line": 177,
-      "kind": "except",
+      "line": 175,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Configuration loaded successfully from {path}')"
+    },
+    {
+      "line": 176,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
     },
     {
-      "line": 181,
+      "line": 180,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering ensure_sample_data with base={base}\")"
+      "message": "logging.debug(f\"Entered ensure_sample_data with base path: {base}\")"
     },
     {
-      "line": 210,
+      "line": 209,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main with base_dir={base_dir!r}, mood={mood!r}\")"
+      "message": "logging.debug(f\"Entered main with base_dir={base_dir}, mood={mood}\")"
+    },
+    {
+      "line": 226,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception caught in main function', exc_info=True)"
     }
   ]
 }

@@ -3,14 +3,14 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 10,
+      "line": 9,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 16,
+      "line": 15,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -31,7 +31,7 @@
       "function": "is_recent"
     },
     {
-      "line": 21,
+      "line": 20,
       "level": "DEBUG",
       "message": "Entering matches",
       "kind": "entry",
@@ -59,7 +59,7 @@
       "function": "matches"
     },
     {
-      "line": 29,
+      "line": 28,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -73,7 +73,7 @@
       "function": "to_dict"
     },
     {
-      "line": 38,
+      "line": 37,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -87,10 +87,10 @@
       "function": "from_dict"
     },
     {
-      "line": 48,
+      "line": 47,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -101,21 +101,21 @@
       "function": "from_dict"
     },
     {
-      "line": 53,
+      "line": 52,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 58,
+      "line": 57,
       "level": "DEBUG",
       "message": "Entering add_reading",
       "kind": "entry",
       "function": "add_reading"
     },
     {
-      "line": 61,
+      "line": 60,
       "level": "DEBUG",
       "message": "Entering recent",
       "kind": "entry",
@@ -129,7 +129,7 @@
       "function": "recent"
     },
     {
-      "line": 64,
+      "line": 63,
       "level": "DEBUG",
       "message": "Entering filter_by_tag",
       "kind": "entry",
@@ -143,7 +143,7 @@
       "function": "filter_by_tag"
     },
     {
-      "line": 67,
+      "line": 66,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -157,7 +157,7 @@
       "function": "to_dict"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -171,10 +171,10 @@
       "function": "from_dict"
     },
     {
-      "line": 86,
+      "line": 85,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -185,14 +185,14 @@
       "function": "from_dict"
     },
     {
-      "line": 91,
+      "line": 90,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 95,
+      "line": 94,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -206,7 +206,7 @@
       "function": "_url"
     },
     {
-      "line": 98,
+      "line": 97,
       "level": "DEBUG",
       "message": "Entering fetch_remote",
       "kind": "entry",
@@ -220,10 +220,10 @@
       "function": "fetch_remote"
     },
     {
-      "line": 104,
+      "line": 103,
       "level": "ERROR",
       "message": "Exception in fetch_remote",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_remote"
     },
     {
@@ -234,17 +234,17 @@
       "function": "fetch_remote"
     },
     {
-      "line": 108,
+      "line": 107,
       "level": "DEBUG",
       "message": "Entering load_sensors",
       "kind": "entry",
       "function": "load_sensors"
     },
     {
-      "line": 112,
+      "line": 111,
       "level": "ERROR",
       "message": "Exception in load_sensors",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_sensors"
     },
     {
@@ -262,21 +262,21 @@
       "function": "load_sensors"
     },
     {
-      "line": 122,
+      "line": 121,
       "level": "DEBUG",
       "message": "Entering save_sensors",
       "kind": "entry",
       "function": "save_sensors"
     },
     {
-      "line": 129,
+      "line": 128,
       "level": "ERROR",
       "message": "Exception in save_sensors",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_sensors"
     },
     {
-      "line": 134,
+      "line": 133,
       "level": "DEBUG",
       "message": "Entering merge_sensor",
       "kind": "entry",
@@ -290,7 +290,7 @@
       "function": "merge_sensor"
     },
     {
-      "line": 140,
+      "line": 139,
       "level": "DEBUG",
       "message": "Entering summarize",
       "kind": "entry",
@@ -311,7 +311,7 @@
       "function": "summarize"
     },
     {
-      "line": 148,
+      "line": 147,
       "level": "DEBUG",
       "message": "Entering pick_random_recent",
       "kind": "entry",
@@ -332,17 +332,17 @@
       "function": "pick_random_recent"
     },
     {
-      "line": 155,
+      "line": 154,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 175,
+      "line": 174,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {
