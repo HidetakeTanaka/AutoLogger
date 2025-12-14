@@ -2,37 +2,37 @@
   "file": "script55.py",
   "logs": [
     {
-      "line": 28,
+      "line": 27,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering matches method with query: {query}\")"
     },
     {
-      "line": 49,
+      "line": 48,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f'Entering Book.from_dict with raw data keys: {list(raw.keys())}')"
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 61,
-      "kind": "except",
+      "line": 60,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to parse published date from raw data: {published_raw}', exc_info=True)"
     },
     {
-      "line": 66,
+      "line": 65,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing Library with library_id={library_id}, name={name}\")"
     },
     {
-      "line": 71,
+      "line": 70,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering add method with book: {book}\")"
     },
     {
-      "line": 74,
+      "line": 73,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering get method with book_id={book_id}\")"
@@ -41,148 +41,118 @@
       "line": 74,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Retrieving book with ID: {book_id}')"
+      "message": "logging.info(f'Retrieved book with ID {book_id}: {self._books.get(book_id)}')"
     },
     {
-      "line": 80,
+      "line": 79,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering search method with query='{query}'\")"
+      "message": "logging.debug(f\"Entering search with query='{query}' in Library\")"
     },
     {
-      "line": 84,
+      "line": 83,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered recent() with years={years}\")"
     },
     {
-      "line": 95,
+      "line": 94,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f'Entering Library.from_dict with raw data keys: {list(raw.keys())}')"
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 105,
+      "line": 104,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing LibraryClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 109,
+      "line": 108,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering _url with library_id={library_id}\")"
     },
     {
-      "line": 112,
+      "line": 111,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering fetch_remote with library_id={library_id} and url={url}\")"
+      "message": "logging.debug(f\"Entering fetch_remote with library_id={library_id}\")"
     },
     {
-      "line": 117,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Fetched and decoded response from {url} for library_id {library_id}')"
-    },
-    {
-      "line": 119,
-      "kind": "except",
+      "line": 118,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch remote library {library_id} from {url} with request {req} and body {body}', exc_info=True)"
+      "message": "logging.error(f'Failed to fetch remote library {library_id} from {url} with request {req}', exc_info=True)"
     },
     {
-      "line": 123,
+      "line": 122,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_library with path: {path}\")"
     },
     {
-      "line": 125,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Library loaded successfully from {path}')"
+      "line": 126,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load library from {path}', exc_info=True)"
     },
     {
-      "line": 127,
-      "kind": "except",
+      "line": 128,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to load library from path: {path}', exc_info=True)"
     },
     {
-      "line": 129,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to load library from path: {path}', exc_info=True)"
-    },
-    {
-      "line": 133,
+      "line": 132,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering save_library with path={path} and library name={lib.name}\")"
+      "message": "logging.debug(f\"Entering save_library with path={path} and library={lib.name}\")"
     },
     {
-      "line": 139,
-      "kind": "except",
+      "line": 138,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to save library at {path} with payload {payload}', exc_info=True)"
+      "message": "logging.error(f'Failed to save library at {path}', exc_info=True)"
     },
     {
-      "line": 143,
-      "kind": "except",
+      "line": 142,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to save library at {path} with payload {payload}', exc_info=True)"
+      "message": "logging.error(f'Failed to save library at {path}', exc_info=True)"
     },
     {
-      "line": 147,
+      "line": 146,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering summarize_library for library: {lib.name}\")"
+      "message": "logging.debug(f\"Entered summarize_library for library: {lib.name} with {len(books)} books\")"
     },
     {
       "line": 152,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f\"Summary computed for library '{lib}': count={len(books)}, avg_rating={total_rating / len(books):.2f}, recent={recent}\")"
+      "message": "logging.info(f\"Summary computed: count={len(books)}, avg_rating={total_rating / len(books):.2f}, recent={recent}\")"
     },
     {
-      "line": 160,
+      "line": 159,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered filter_books with min_rating={min_rating}, recent_only={recent_only}, library size={len(lib.books)}\")"
     },
     {
-      "line": 167,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Filtered books with min_rating={min_rating}, recent_only={recent_only}, resulting in {len(result)} books')"
-    },
-    {
-      "line": 171,
+      "line": 170,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered pick_random_book with prefer_recent={prefer_recent} in library {lib}\")"
     },
     {
-      "line": 173,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('No suitable book found to pick from library with prefer_recent=%s and recent=%s', prefer_recent, recent)"
-    },
-    {
-      "line": 177,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Selected a random recent book: {recent}')"
-    },
-    {
       "line": 178,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Selected random book: {books}')"
+      "message": "logging.info(f'Randomly selected book: {books}')"
     },
     {
-      "line": 182,
+      "line": 181,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering merge_remote_library with local library '{local.name}' and remote_data keys: {list(remote_data.keys()) if remote_data else 'None'}\")"
@@ -191,17 +161,17 @@
       "line": 190,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Merge completed with {len(added)} items added from remote library.')"
+      "message": "logging.info(f'Merge completed, added: {added}')"
     },
     {
-      "line": 194,
+      "line": 193,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 209,
-      "kind": "except",
+      "line": 208,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }
