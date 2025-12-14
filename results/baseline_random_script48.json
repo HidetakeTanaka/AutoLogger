@@ -1,0 +1,134 @@
+{
+  "file": "script48.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 32,
+      "level": "ERROR",
+      "message": "Random log at line 32 in matches_goal",
+      "kind": "return",
+      "function": "matches_goal"
+    },
+    {
+      "line": 34,
+      "level": "DEBUG",
+      "message": "Random log at line 34 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 71,
+      "level": "DEBUG",
+      "message": "Random log at line 71 in recent_sessions",
+      "kind": "entry",
+      "function": "recent_sessions"
+    },
+    {
+      "line": 74,
+      "level": "ERROR",
+      "message": "Random log at line 74 in total_calories",
+      "kind": "entry",
+      "function": "total_calories"
+    },
+    {
+      "line": 77,
+      "level": "WARNING",
+      "message": "Random log at line 77 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 78,
+      "level": "ERROR",
+      "message": "Random log at line 78 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 86,
+      "level": "WARNING",
+      "message": "Random log at line 86 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 127,
+      "level": "INFO",
+      "message": "Random log at line 127 in fetch_recommendations",
+      "kind": "return",
+      "function": "fetch_recommendations"
+    },
+    {
+      "line": 157,
+      "level": "WARNING",
+      "message": "Random log at line 157 in save_profiles",
+      "kind": "exception",
+      "function": "save_profiles"
+    },
+    {
+      "line": 161,
+      "level": "WARNING",
+      "message": "Random log at line 161 in choose_next_session",
+      "kind": "entry",
+      "function": "choose_next_session"
+    },
+    {
+      "line": 170,
+      "level": "INFO",
+      "message": "Random log at line 170 in choose_next_session",
+      "kind": "return",
+      "function": "choose_next_session"
+    },
+    {
+      "line": 176,
+      "level": "ERROR",
+      "message": "Random log at line 176 in summarize_sessions",
+      "kind": "return",
+      "function": "summarize_sessions"
+    },
+    {
+      "line": 220,
+      "level": "DEBUG",
+      "message": "Random log at line 220 in main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 255,
+      "level": "WARNING",
+      "message": "Random log at line 255 in main",
+      "kind": "exception",
+      "function": "main"
+    },
+    {
+      "line": 256,
+      "level": "ERROR",
+      "message": "Random log at line 256 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

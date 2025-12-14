@@ -1,0 +1,134 @@
+{
+  "file": "script47.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 21,
+      "level": "WARNING",
+      "message": "Random log at line 21 in is_discountable",
+      "kind": "return",
+      "function": "is_discountable"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Random log at line 23 in is_discountable",
+      "kind": "return",
+      "function": "is_discountable"
+    },
+    {
+      "line": 31,
+      "level": "ERROR",
+      "message": "Random log at line 31 in matches_query",
+      "kind": "return",
+      "function": "matches_query"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Random log at line 33 in matches_query",
+      "kind": "return",
+      "function": "matches_query"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in matches_query",
+      "kind": "return",
+      "function": "matches_query"
+    },
+    {
+      "line": 57,
+      "level": "DEBUG",
+      "message": "Random log at line 57 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 59,
+      "level": "ERROR",
+      "message": "Random log at line 59 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 69,
+      "level": "WARNING",
+      "message": "Random log at line 69 in subtotal",
+      "kind": "return",
+      "function": "subtotal"
+    },
+    {
+      "line": 70,
+      "level": "ERROR",
+      "message": "Random log at line 70 in subtotal",
+      "kind": "return",
+      "function": "subtotal"
+    },
+    {
+      "line": 77,
+      "level": "WARNING",
+      "message": "Random log at line 77 in add",
+      "kind": "entry",
+      "function": "add"
+    },
+    {
+      "line": 115,
+      "level": "INFO",
+      "message": "Random log at line 115 in fetch_price",
+      "kind": "exception",
+      "function": "fetch_price"
+    },
+    {
+      "line": 130,
+      "level": "WARNING",
+      "message": "Random log at line 130 in load_products",
+      "kind": "entry",
+      "function": "load_products"
+    },
+    {
+      "line": 132,
+      "level": "WARNING",
+      "message": "Random log at line 132 in load_products",
+      "kind": "return",
+      "function": "load_products"
+    },
+    {
+      "line": 143,
+      "level": "INFO",
+      "message": "Random log at line 143 in load_products",
+      "kind": "return",
+      "function": "load_products"
+    },
+    {
+      "line": 152,
+      "level": "ERROR",
+      "message": "Random log at line 152 in save_cart",
+      "kind": "exception",
+      "function": "save_cart"
+    },
+    {
+      "line": 201,
+      "level": "DEBUG",
+      "message": "Random log at line 201 in summarize_cart",
+      "kind": "entry",
+      "function": "summarize_cart"
+    },
+    {
+      "line": 222,
+      "level": "WARNING",
+      "message": "Random log at line 222 in main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 237,
+      "level": "ERROR",
+      "message": "Random log at line 237 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

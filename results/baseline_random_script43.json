@@ -1,0 +1,113 @@
+{
+  "file": "script43.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 22,
+      "level": "WARNING",
+      "message": "Random log at line 22 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in matches_query",
+      "kind": "entry",
+      "function": "matches_query"
+    },
+    {
+      "line": 33,
+      "level": "ERROR",
+      "message": "Random log at line 33 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 34,
+      "level": "DEBUG",
+      "message": "Random log at line 34 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 44,
+      "level": "DEBUG",
+      "message": "Random log at line 44 in from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 73,
+      "level": "DEBUG",
+      "message": "Random log at line 73 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 76,
+      "level": "ERROR",
+      "message": "Random log at line 76 in active_notes",
+      "kind": "entry",
+      "function": "active_notes"
+    },
+    {
+      "line": 81,
+      "level": "WARNING",
+      "message": "Random log at line 81 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 85,
+      "level": "ERROR",
+      "message": "Random log at line 85 in _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 88,
+      "level": "WARNING",
+      "message": "Random log at line 88 in _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 125,
+      "level": "INFO",
+      "message": "Random log at line 125 in save_notes",
+      "kind": "entry",
+      "function": "save_notes"
+    },
+    {
+      "line": 161,
+      "level": "WARNING",
+      "message": "Random log at line 161 in summarize_by_tag",
+      "kind": "entry",
+      "function": "summarize_by_tag"
+    },
+    {
+      "line": 169,
+      "level": "WARNING",
+      "message": "Random log at line 169 in summarize_by_tag",
+      "kind": "return",
+      "function": "summarize_by_tag"
+    },
+    {
+      "line": 181,
+      "level": "INFO",
+      "message": "Random log at line 181 in choose_note_to_review",
+      "kind": "return",
+      "function": "choose_note_to_review"
+    },
+    {
+      "line": 185,
+      "level": "ERROR",
+      "message": "Random log at line 185 in main",
+      "kind": "entry",
+      "function": "main"
+    }
+  ]
+}

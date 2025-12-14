@@ -1,0 +1,85 @@
+{
+  "file": "script44.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 20,
+      "level": "WARNING",
+      "message": "Random log at line 20 in is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Random log at line 21 in is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 37,
+      "level": "ERROR",
+      "message": "Random log at line 37 in from_dict",
+      "kind": "exception",
+      "function": "from_dict"
+    },
+    {
+      "line": 39,
+      "level": "DEBUG",
+      "message": "Random log at line 39 in from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 52,
+      "level": "DEBUG",
+      "message": "Random log at line 52 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 64,
+      "level": "DEBUG",
+      "message": "Random log at line 64 in pending",
+      "kind": "entry",
+      "function": "pending"
+    },
+    {
+      "line": 67,
+      "level": "ERROR",
+      "message": "Random log at line 67 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 71,
+      "level": "WARNING",
+      "message": "Random log at line 71 in load_board",
+      "kind": "entry",
+      "function": "load_board"
+    },
+    {
+      "line": 74,
+      "level": "ERROR",
+      "message": "Random log at line 74 in load_board",
+      "kind": "return",
+      "function": "load_board"
+    },
+    {
+      "line": 78,
+      "level": "WARNING",
+      "message": "Random log at line 78 in load_board",
+      "kind": "exception",
+      "function": "load_board"
+    },
+    {
+      "line": 117,
+      "level": "INFO",
+      "message": "Random log at line 117 in main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}
