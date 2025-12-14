@@ -1,0 +1,191 @@
+{
+  "file": "script50.py",
+  "logs": [
+    {
+      "line": 10,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing Note with note_id={note_id}, title={title}, tags={tags}, created={created}\")"
+    },
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with days={days} for Note id={self.id}\")"
+    },
+    {
+      "line": 29,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_query with query='{query}'\")"
+    },
+    {
+      "line": 49,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 64,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Note from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 69,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing Notebook with notebook_id={notebook_id} and owner={owner}\")"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add method with note: {note}\")"
+    },
+    {
+      "line": 77,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get method with note_id={note_id}\")"
+    },
+    {
+      "line": 83,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered search with query='{query}' and recent_days={recent_days}\")"
+    },
+    {
+      "line": 101,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing SyncClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 118,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 123,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_remote_notebook with notebook_id={notebook_id}\")"
+    },
+    {
+      "line": 125,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'No notebook found for notebook_id={notebook_id} at url={url}, returning None')"
+    },
+    {
+      "line": 130,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch remote notebook {notebook_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 131,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'fetch_remote_notebook: No notebook found for notebook_id={notebook_id} at url={url}')"
+    },
+    {
+      "line": 132,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch remote notebook {notebook_id} from {url} with body {body}', exc_info=True)"
+    },
+    {
+      "line": 133,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'No notebook found for notebook_id={notebook_id} at url={url}, returning None')"
+    },
+    {
+      "line": 136,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch remote notebook {notebook_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering push_notebook with payload keys: {list(payload.keys())}\")"
+    },
+    {
+      "line": 149,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Exception occurred in push_notebook while pushing to {url}', exc_info=True)"
+    },
+    {
+      "line": 154,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_notebook with path: {path}\")"
+    },
+    {
+      "line": 161,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load notebook from {path}', exc_info=True)"
+    },
+    {
+      "line": 165,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_notebook with path={path}\")"
+    },
+    {
+      "line": 172,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save notebook at {path}', exc_info=True)"
+    },
+    {
+      "line": 176,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save notebook at {path}', exc_info=True)"
+    },
+    {
+      "line": 180,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_tags with {len(notes)} notes\")"
+    },
+    {
+      "line": 193,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering merge_notebooks with local={local} and remote={remote}\")"
+    },
+    {
+      "line": 203,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered pick_random_note with only_recent={only_recent} and notebook containing {len(notebook.notes)} notes\")"
+    },
+    {
+      "line": 210,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning note at index {idx} from candidates list of length {len(candidates)}')"
+    },
+    {
+      "line": 213,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with base_dir={base_dir}, base_url={base_url}\")"
+    }
+  ]
+}

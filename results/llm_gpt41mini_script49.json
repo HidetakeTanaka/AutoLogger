@@ -1,0 +1,149 @@
+{
+  "file": "script49.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with days={days} for transaction id={self.id}\")"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_large with threshold={threshold}\")"
+    },
+    {
+      "line": 42,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 56,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Transaction from dict: %s', raw, exc_info=True)"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_transaction with transaction id={tx.id} amount={tx.amount}\")"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent_spending with days={days} for account {self}\")"
+    },
+    {
+      "line": 89,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Initializing BudgetClient with base_url={base_url} and timeout={timeout}')"
+    },
+    {
+      "line": 93,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with account_id={account_id}\")"
+    },
+    {
+      "line": 96,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_limits with account_id={account_id}\")"
+    },
+    {
+      "line": 108,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch limits for account {account_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered load_transactions with path: {path}\")"
+    },
+    {
+      "line": 118,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load transactions from {path}', exc_info=True)"
+    },
+    {
+      "line": 132,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_transactions with path={path} and {len(list(txs))} transactions\")"
+    },
+    {
+      "line": 140,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save transactions to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 144,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save transactions to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 148,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering group_by_category with {len(list(txs))} transactions\")"
+    },
+    {
+      "line": 155,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_account for account: {account}\")"
+    },
+    {
+      "line": 160,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Returning summary for account_id={account.account_id} with balance={account.balance()}\")"
+    },
+    {
+      "line": 169,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered detect_overspend with account={account}, groups={groups}, limit={limit}, limits={limits}, overspend={overspend}, spent={spent}\")"
+    },
+    {
+      "line": 181,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning overspend value: {overspend} for account {account}')"
+    },
+    {
+      "line": 184,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_large_transactions with threshold={threshold} and {len(txs)} transactions\")"
+    },
+    {
+      "line": 193,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 205,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    },
+    {
+      "line": 232,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

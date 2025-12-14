@@ -1,0 +1,179 @@
+{
+  "file": "script48.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with days={days}\")"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_goal with goal={goal}\")"
+    },
+    {
+      "line": 45,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering WorkoutSession.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 57,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create WorkoutSession from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 68,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_session with session id: {session.id}\")"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering recent_sessions with days={days}\")"
+    },
+    {
+      "line": 74,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering total_calories with days={days} for user {self}\")"
+    },
+    {
+      "line": 86,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 100,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create UserProfile from dict: {raw}', exc_info=True)"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'RecommendationClient initialized with base_url={base_url} and timeout={timeout}')"
+    },
+    {
+      "line": 109,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered _url with goal={goal}\")"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_recommendations with goal: {goal}\")"
+    },
+    {
+      "line": 120,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Exception occurred while fetching recommendations from {url} with goal {goal}', exc_info=True)"
+    },
+    {
+      "line": 124,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch recommendations from {url} with goal {goal}', exc_info=True)"
+    },
+    {
+      "line": 130,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_profiles with path: {path}\")"
+    },
+    {
+      "line": 136,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load profile from {path} with data {data}', exc_info=True)"
+    },
+    {
+      "line": 146,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_profiles with path={path} and {len(list(profiles))} profiles\")"
+    },
+    {
+      "line": 153,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save profiles to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 157,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save profiles to {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering choose_next_session with profile: {profile}\")"
+    },
+    {
+      "line": 170,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Chose next session: {random.choice(pool)} from pool of size {len(pool)}')"
+    },
+    {
+      "line": 173,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering summarize_sessions with {len(sessions)} sessions\")"
+    },
+    {
+      "line": 179,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summarized {len(items)} sessions: total_minutes={total_minutes}, avg_calories={total_calories / len(items):.2f}\")"
+    },
+    {
+      "line": 186,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_config with path: {path}\")"
+    },
+    {
+      "line": 189,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Configuration loaded successfully from {path}')"
+    },
+    {
+      "line": 190,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
+    },
+    {
+      "line": 194,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered ensure_sample_profile with path: {path}\")"
+    },
+    {
+      "line": 220,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with base_dir={base_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 255,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception caught in main function', exc_info=True)"
+    }
+  ]
+}

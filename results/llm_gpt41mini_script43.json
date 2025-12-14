@@ -1,0 +1,161 @@
+{
+  "file": "script43.py",
+  "logs": [
+    {
+      "line": 24,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_query with query='{query}' for Note with text='{self.text[:30]}...'\")"
+    },
+    {
+      "line": 44,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Note.from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 49,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Note from dict with created_raw=%s and raw=%s', created_raw, raw, exc_info=True)"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add method with note: {note}\")"
+    },
+    {
+      "line": 70,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get method with note_id={note_id}\")"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing SyncClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 85,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path={path}\")"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered fetch_notes method')"
+    },
+    {
+      "line": 96,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Exception occurred while fetching notes from {url}', exc_info=True)"
+    },
+    {
+      "line": 100,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to fetch notes from {url} with request {req}', exc_info=True)"
+    },
+    {
+      "line": 108,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_notes with path: {path}\")"
+    },
+    {
+      "line": 111,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning notebook with {len(nb.notes)} notes loaded from {path}')"
+    },
+    {
+      "line": 115,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load note {nb} from path {path}', exc_info=True)"
+    },
+    {
+      "line": 116,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning notebook with {len(nb)} notes loaded from {path}')"
+    },
+    {
+      "line": 122,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning notebook with {len(nb)} notes loaded from {path}')"
+    },
+    {
+      "line": 125,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_notes with path={path} and notebook={notebook}\")"
+    },
+    {
+      "line": 132,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering filter_notes_by_tag with tag={tag} and {len(notes)} notes\")"
+    },
+    {
+      "line": 139,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered search_notes with query: '{query}' and {len(list(notes))} notes to search\")"
+    },
+    {
+      "line": 145,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering merge_remote_notes with notebook id={notebook.id} and {len(remote_rows)} remote rows\")"
+    },
+    {
+      "line": 158,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merging completed for note ID {nid} with {len(merged)} merged entries.')"
+    },
+    {
+      "line": 161,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_by_tag with {len(list(notes))} notes\")"
+    },
+    {
+      "line": 172,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered choose_note_to_review with {len(notes)} notes\")"
+    },
+    {
+      "line": 181,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning candidate at index {idx}: {candidates[idx]}')"
+    },
+    {
+      "line": 185,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"
+    },
+    {
+      "line": 195,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    },
+    {
+      "line": 214,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception caught in main function', exc_info=True)"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "file": "script46.py",
+  "logs": [
+    {
+      "line": 21,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_recent with days={days} for article id={self.id}\")"
+    },
+    {
+      "line": 26,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_query with query='{query}'\")"
+    },
+    {
+      "line": 46,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 59,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Article from dict with published={published}, raw={raw}, ts_raw={ts_raw}', exc_info=True)"
+    },
+    {
+      "line": 67,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add method with article id: {article.id}\")"
+    },
+    {
+      "line": 75,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get method with article_id={article_id}\")"
+    },
+    {
+      "line": 81,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered recent() with days={days}\")"
+    },
+    {
+      "line": 84,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering filter with query='{query}' and min_score={min_score}\")"
+    },
+    {
+      "line": 92,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Filter applied with query=\"{query}\" and min_score={min_score}, returning {len(result)} results')"
+    },
+    {
+      "line": 96,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Initializing NewsApiClient with base_url={base_url} and timeout={timeout}\")"
+    },
+    {
+      "line": 100,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 105,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _request_json with url: {url}, tries: {tries}\")"
+    },
+    {
+      "line": 114,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Exception occurred during request to {url} on try {tries}', exc_info=True)"
+    },
+    {
+      "line": 119,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_headlines with topic='{topic}' and url='{url}'\")"
+    },
+    {
+      "line": 131,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering fetch_article_detail with article_id={article_id}\")"
+    },
+    {
+      "line": 138,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Returning article detail data for article_id={article_id} from URL {url}')"
+    },
+    {
+      "line": 141,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_config with path: {path}\")"
+    },
+    {
+      "line": 147,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load config from {path}', exc_info=True)"
+    },
+    {
+      "line": 151,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_local_articles with path: {path}\")"
+    },
+    {
+      "line": 158,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load article from {path} with data {data}', exc_info=True)"
+    },
+    {
+      "line": 169,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_digest with path={path} and {len(list(articles))} articles\")"
+    },
+    {
+      "line": 177,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save digest to {path} with {len(rows)} rows and {len(articles)} articles', exc_info=True)"
+    },
+    {
+      "line": 182,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_articles_by_score with min_score={min_score} and {len(list(articles))} articles\")"
+    },
+    {
+      "line": 189,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered group_by_source with {len(list(articles))} articles\")"
+    },
+    {
+      "line": 196,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_sources with {len(groups)} groups\")"
+    },
+    {
+      "line": 210,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main with base_dir={base_dir}, topic={topic}\")"
+    }
+  ]
+}

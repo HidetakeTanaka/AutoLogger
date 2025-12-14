@@ -1,0 +1,95 @@
+{
+  "file": "script44.py",
+  "logs": [
+    {
+      "line": 33,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering Task.from_dict with raw data: {raw}\")"
+    },
+    {
+      "line": 37,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Failed to create Task from dict with due_raw=%s and raw=%s', due_raw, raw, exc_info=True)"
+    },
+    {
+      "line": 55,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add method with task: {task}\")"
+    },
+    {
+      "line": 58,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering get method with task_id={task_id}\")"
+    },
+    {
+      "line": 64,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug('Entered Board.pending method')"
+    },
+    {
+      "line": 71,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_board with path: {path}\")"
+    },
+    {
+      "line": 78,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load board from {path} with data {data} and rows {rows}', exc_info=True)"
+    },
+    {
+      "line": 87,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_board with path={path} and board={board}\")"
+    },
+    {
+      "line": 93,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save board to {path}', exc_info=True)"
+    },
+    {
+      "line": 97,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered filter_overdue with {len(tasks)} tasks and now={now}\")"
+    },
+    {
+      "line": 103,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered compute_summary with {len(list(tasks))} tasks\")"
+    },
+    {
+      "line": 109,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Summary computed: count={len(items)}, completed={completed}, overdue={overdue}\")"
+    },
+    {
+      "line": 112,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}\")"
+    },
+    {
+      "line": 116,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    },
+    {
+      "line": 149,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}
