@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 23,
+      "line": 22,
       "level": "DEBUG",
       "message": "Entering is_overdue",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_overdue"
     },
     {
-      "line": 30,
+      "line": 29,
       "level": "DEBUG",
       "message": "Entering matches_query",
       "kind": "entry",
@@ -52,7 +52,7 @@
       "function": "matches_query"
     },
     {
-      "line": 38,
+      "line": 37,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -66,7 +66,7 @@
       "function": "to_dict"
     },
     {
-      "line": 49,
+      "line": 48,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -87,10 +87,10 @@
       "function": "from_dict"
     },
     {
-      "line": 64,
+      "line": 63,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -101,14 +101,14 @@
       "function": "from_dict"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "DEBUG",
       "message": "Entering add_task",
       "kind": "entry",
       "function": "add_task"
     },
     {
-      "line": 77,
+      "line": 76,
       "level": "DEBUG",
       "message": "Entering active_tasks",
       "kind": "entry",
@@ -122,7 +122,7 @@
       "function": "active_tasks"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "DEBUG",
       "message": "Entering overdue_tasks",
       "kind": "entry",
@@ -136,7 +136,7 @@
       "function": "overdue_tasks"
     },
     {
-      "line": 83,
+      "line": 82,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -150,7 +150,7 @@
       "function": "to_dict"
     },
     {
-      "line": 91,
+      "line": 90,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -164,10 +164,10 @@
       "function": "from_dict"
     },
     {
-      "line": 103,
+      "line": 102,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -178,14 +178,14 @@
       "function": "from_dict"
     },
     {
-      "line": 108,
+      "line": 107,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 112,
+      "line": 111,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -199,7 +199,7 @@
       "function": "_url"
     },
     {
-      "line": 115,
+      "line": 114,
       "level": "DEBUG",
       "message": "Entering fetch_remote_tasks",
       "kind": "entry",
@@ -220,10 +220,10 @@
       "function": "fetch_remote_tasks"
     },
     {
-      "line": 125,
+      "line": 124,
       "level": "ERROR",
       "message": "Exception in fetch_remote_tasks",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_remote_tasks"
     },
     {
@@ -234,7 +234,7 @@
       "function": "fetch_remote_tasks"
     },
     {
-      "line": 129,
+      "line": 128,
       "level": "DEBUG",
       "message": "Entering load_project",
       "kind": "entry",
@@ -262,10 +262,10 @@
       "function": "load_project"
     },
     {
-      "line": 147,
+      "line": 146,
       "level": "ERROR",
       "message": "Exception in load_project",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_project"
     },
     {
@@ -276,28 +276,28 @@
       "function": "load_project"
     },
     {
-      "line": 151,
+      "line": 150,
       "level": "DEBUG",
       "message": "Entering save_project",
       "kind": "entry",
       "function": "save_project"
     },
     {
-      "line": 158,
+      "line": 157,
       "level": "ERROR",
       "message": "Exception in save_project",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_project"
     },
     {
-      "line": 162,
+      "line": 161,
       "level": "ERROR",
       "message": "Exception in save_project",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_project"
     },
     {
-      "line": 166,
+      "line": 165,
       "level": "DEBUG",
       "message": "Entering merge_remote_tasks",
       "kind": "entry",
@@ -311,7 +311,7 @@
       "function": "merge_remote_tasks"
     },
     {
-      "line": 185,
+      "line": 184,
       "level": "DEBUG",
       "message": "Entering choose_next_task",
       "kind": "entry",
@@ -339,7 +339,7 @@
       "function": "choose_next_task"
     },
     {
-      "line": 197,
+      "line": 196,
       "level": "DEBUG",
       "message": "Entering summarize_project",
       "kind": "entry",
@@ -360,17 +360,17 @@
       "function": "summarize_project"
     },
     {
-      "line": 211,
+      "line": 210,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 237,
+      "line": 236,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

@@ -1,10 +1,10 @@
 {
-  "file": "scripts/script46.py",
+  "file": "scripts\\script46.py",
   "candidates": [
     {
       "kind": "func_entry",
-      "line": 22,
-      "end_line": 22,
+      "line": 21,
+      "end_line": 21,
       "function": "is_recent",
       "class_name": "Article",
       "code": "def is_recent(self, days: int = 2) -> bool:",
@@ -16,7 +16,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 23,
       "end_line": 23,
       "function": "is_recent",
@@ -26,11 +26,11 @@
         "days",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 24,
       "end_line": 24,
       "function": "is_recent",
@@ -40,13 +40,13 @@
         "days",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 27,
-      "end_line": 27,
+      "line": 26,
+      "end_line": 26,
       "function": "matches_query",
       "class_name": "Article",
       "code": "def matches_query(self, query: str) -> bool:",
@@ -59,7 +59,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 29,
       "end_line": 29,
       "function": "matches_query",
@@ -70,11 +70,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 31,
       "end_line": 31,
       "function": "matches_query",
@@ -85,11 +85,11 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 32,
       "end_line": 32,
       "function": "matches_query",
@@ -100,13 +100,13 @@
         "query",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 35,
-      "end_line": 35,
+      "line": 34,
+      "end_line": 34,
       "function": "to_dict",
       "class_name": "Article",
       "code": "def to_dict(self) -> Dict[str, Any]:",
@@ -117,7 +117,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 35,
       "end_line": 35,
       "function": "to_dict",
@@ -126,13 +126,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 47,
-      "end_line": 47,
+      "line": 46,
+      "end_line": 46,
       "function": "from_dict",
       "class_name": "Article",
       "code": "def from_dict(cls, raw: Dict[str, Any]) -> Optional[\"Article\"]:",
@@ -146,7 +146,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 50,
       "end_line": 50,
       "function": "from_dict",
@@ -158,13 +158,13 @@
         "raw",
         "ts_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 60,
-      "end_line": 60,
+      "kind": "exception_handler_entry",
+      "line": 59,
+      "end_line": 59,
       "function": "from_dict",
       "class_name": "Article",
       "code": "except ...",
@@ -174,11 +174,11 @@
         "raw",
         "ts_raw"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 60,
       "end_line": 60,
       "function": "from_dict",
@@ -190,13 +190,13 @@
         "raw",
         "ts_raw"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 68,
-      "end_line": 68,
+      "line": 67,
+      "end_line": 67,
       "function": "add",
       "class_name": "NewsStore",
       "code": "def add(self, article: Article) -> None:",
@@ -209,7 +209,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 69,
       "end_line": 69,
       "function": "add",
@@ -220,11 +220,11 @@
         "existing",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 72,
       "end_line": 72,
       "function": "add",
@@ -235,13 +235,13 @@
         "existing",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 76,
-      "end_line": 76,
+      "line": 75,
+      "end_line": 75,
       "function": "get",
       "class_name": "NewsStore",
       "code": "def get(self, article_id: str) -> Optional[Article]:",
@@ -253,7 +253,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 76,
       "end_line": 76,
       "function": "get",
@@ -263,13 +263,13 @@
         "article_id",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 79,
-      "end_line": 79,
+      "line": 78,
+      "end_line": 78,
       "function": "all",
       "class_name": "NewsStore",
       "code": "def all(self) -> List[Article]:",
@@ -280,7 +280,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 79,
       "end_line": 79,
       "function": "all",
@@ -289,13 +289,13 @@
       "vars_in_scope": [
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 82,
-      "end_line": 82,
+      "line": 81,
+      "end_line": 81,
       "function": "recent",
       "class_name": "NewsStore",
       "code": "def recent(self, days: int = 2) -> List[Article]:",
@@ -307,7 +307,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 82,
       "end_line": 82,
       "function": "recent",
@@ -317,13 +317,13 @@
         "days",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 85,
-      "end_line": 85,
+      "line": 84,
+      "end_line": 84,
       "function": "filter",
       "class_name": "NewsStore",
       "code": "def filter(self, query: str = \"\", min_score: float = 0.0) -> List[Article]:",
@@ -337,7 +337,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 92,
       "end_line": 92,
       "function": "filter",
@@ -349,13 +349,13 @@
         "result",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 97,
-      "end_line": 97,
+      "line": 96,
+      "end_line": 96,
       "function": "__init__",
       "class_name": "NewsApiClient",
       "code": "def __init__(self, base_url: str, timeout: int = 5) -> None:",
@@ -369,8 +369,8 @@
     },
     {
       "kind": "func_entry",
-      "line": 101,
-      "end_line": 101,
+      "line": 100,
+      "end_line": 100,
       "function": "_url",
       "class_name": "NewsApiClient",
       "code": "def _url(self, path: str) -> str:",
@@ -382,7 +382,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 103,
       "end_line": 103,
       "function": "_url",
@@ -392,13 +392,13 @@
         "path",
         "self"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 106,
-      "end_line": 106,
+      "line": 105,
+      "end_line": 105,
       "function": "_request_json",
       "class_name": "NewsApiClient",
       "code": "def _request_json(self, url: str) -> Optional[Dict[str, Any]]:",
@@ -413,7 +413,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 113,
       "end_line": 113,
       "function": "_request_json",
@@ -426,13 +426,13 @@
         "tries",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 115,
-      "end_line": 115,
+      "kind": "exception_handler_entry",
+      "line": 114,
+      "end_line": 114,
       "function": "_request_json",
       "class_name": "NewsApiClient",
       "code": "except ...",
@@ -443,11 +443,11 @@
         "tries",
         "url"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 116,
       "end_line": 116,
       "function": "_request_json",
@@ -460,11 +460,11 @@
         "tries",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 117,
       "end_line": 117,
       "function": "_request_json",
@@ -477,13 +477,13 @@
         "tries",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 120,
-      "end_line": 120,
+      "line": 119,
+      "end_line": 119,
       "function": "fetch_headlines",
       "class_name": "NewsApiClient",
       "code": "def fetch_headlines(self, topic: str = \"\") -> List[Dict[str, Any]]:",
@@ -498,7 +498,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 121,
       "end_line": 121,
       "function": "fetch_headlines",
@@ -511,11 +511,11 @@
         "topic",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 125,
       "end_line": 125,
       "function": "fetch_headlines",
@@ -528,11 +528,11 @@
         "topic",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 128,
       "end_line": 128,
       "function": "fetch_headlines",
@@ -545,11 +545,11 @@
         "topic",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 129,
       "end_line": 129,
       "function": "fetch_headlines",
@@ -562,13 +562,13 @@
         "topic",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 132,
-      "end_line": 132,
+      "line": 131,
+      "end_line": 131,
       "function": "fetch_article_detail",
       "class_name": "NewsApiClient",
       "code": "def fetch_article_detail(self, article_id: str) -> Optional[Dict[str, Any]]:",
@@ -582,7 +582,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 133,
       "end_line": 133,
       "function": "fetch_article_detail",
@@ -594,11 +594,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 137,
       "end_line": 137,
       "function": "fetch_article_detail",
@@ -610,11 +610,11 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 138,
       "end_line": 138,
       "function": "fetch_article_detail",
@@ -626,13 +626,13 @@
         "self",
         "url"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 142,
-      "end_line": 142,
+      "line": 141,
+      "end_line": 141,
       "function": "load_config",
       "class_name": null,
       "code": "def load_config(path: Path) -> Dict[str, Any]:",
@@ -643,7 +643,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 143,
       "end_line": 143,
       "function": "load_config",
@@ -652,11 +652,11 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 146,
       "end_line": 146,
       "function": "load_config",
@@ -665,24 +665,24 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 148,
-      "end_line": 148,
+      "kind": "exception_handler_entry",
+      "line": 147,
+      "end_line": 147,
       "function": "load_config",
       "class_name": null,
       "code": "except ...",
       "vars_in_scope": [
         "path"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 148,
       "end_line": 148,
       "function": "load_config",
@@ -691,13 +691,13 @@
       "vars_in_scope": [
         "path"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 152,
-      "end_line": 152,
+      "line": 151,
+      "end_line": 151,
       "function": "load_local_articles",
       "class_name": null,
       "code": "def load_local_articles(path: Path) -> NewsStore:",
@@ -711,7 +711,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 154,
       "end_line": 154,
       "function": "load_local_articles",
@@ -723,13 +723,13 @@
         "path",
         "store"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "except",
-      "line": 159,
-      "end_line": 159,
+      "kind": "exception_handler_entry",
+      "line": 158,
+      "end_line": 158,
       "function": "load_local_articles",
       "class_name": null,
       "code": "except ...",
@@ -739,11 +739,11 @@
         "path",
         "store"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 159,
       "end_line": 159,
       "function": "load_local_articles",
@@ -755,11 +755,11 @@
         "path",
         "store"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 166,
       "end_line": 166,
       "function": "load_local_articles",
@@ -771,13 +771,13 @@
         "path",
         "store"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 170,
-      "end_line": 170,
+      "line": 169,
+      "end_line": 169,
       "function": "save_digest",
       "class_name": null,
       "code": "def save_digest(path: Path, articles: Iterable[Article]) -> None:",
@@ -791,9 +791,9 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "except",
-      "line": 178,
-      "end_line": 178,
+      "kind": "exception_handler_entry",
+      "line": 177,
+      "end_line": 177,
       "function": "save_digest",
       "class_name": null,
       "code": "except ...",
@@ -803,13 +803,13 @@
         "rows",
         "tmp"
       ],
-      "why": "inside except",
+      "why": "exception handler enry",
       "severity_hint": "ERROR"
     },
     {
       "kind": "func_entry",
-      "line": 183,
-      "end_line": 183,
+      "line": 182,
+      "end_line": 182,
       "function": "filter_articles_by_score",
       "class_name": null,
       "code": "def filter_articles_by_score(articles: Iterable[Article], min_score: float) -> List[Article]:",
@@ -822,7 +822,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 185,
       "end_line": 185,
       "function": "filter_articles_by_score",
@@ -833,11 +833,11 @@
         "min_score",
         "result"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 186,
       "end_line": 186,
       "function": "filter_articles_by_score",
@@ -848,13 +848,13 @@
         "min_score",
         "result"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 190,
-      "end_line": 190,
+      "line": 189,
+      "end_line": 189,
       "function": "group_by_source",
       "class_name": null,
       "code": "def group_by_source(articles: Iterable[Article]) -> Dict[str, List[Article]]:",
@@ -866,7 +866,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 193,
       "end_line": 193,
       "function": "group_by_source",
@@ -876,13 +876,13 @@
         "articles",
         "groups"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 197,
-      "end_line": 197,
+      "line": 196,
+      "end_line": 196,
       "function": "summarize_sources",
       "class_name": null,
       "code": "def summarize_sources(groups: Dict[str, List[Article]]) -> Dict[str, Any]:",
@@ -895,7 +895,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 207,
       "end_line": 207,
       "function": "summarize_sources",
@@ -906,13 +906,13 @@
         "summary",
         "top"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
       "kind": "func_entry",
-      "line": 211,
-      "end_line": 211,
+      "line": 210,
+      "end_line": 210,
       "function": "main",
       "class_name": null,
       "code": "def main(base_dir: str = \"data\", topic: str = \"\") -> int:",
@@ -935,7 +935,7 @@
       "severity_hint": "DEBUG"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 226,
       "end_line": 226,
       "function": "main",
@@ -956,11 +956,11 @@
         "summary",
         "topic"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 234,
       "end_line": 234,
       "function": "main",
@@ -981,11 +981,11 @@
         "summary",
         "topic"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     },
     {
-      "kind": "before_return",
+      "kind": "return_stmt",
       "line": 235,
       "end_line": 235,
       "function": "main",
@@ -1006,7 +1006,7 @@
         "summary",
         "topic"
       ],
-      "why": "before return",
+      "why": "return statement",
       "severity_hint": "INFO"
     }
   ]

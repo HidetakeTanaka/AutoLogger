@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 23,
+      "line": 22,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_recent"
     },
     {
-      "line": 28,
+      "line": 27,
       "level": "DEBUG",
       "message": "Entering matches",
       "kind": "entry",
@@ -59,7 +59,7 @@
       "function": "matches"
     },
     {
-      "line": 38,
+      "line": 37,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -73,7 +73,7 @@
       "function": "to_dict"
     },
     {
-      "line": 49,
+      "line": 48,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -87,10 +87,10 @@
       "function": "from_dict"
     },
     {
-      "line": 61,
+      "line": 60,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -101,21 +101,21 @@
       "function": "from_dict"
     },
     {
-      "line": 66,
+      "line": 65,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 71,
+      "line": 70,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -129,7 +129,7 @@
       "function": "get"
     },
     {
-      "line": 77,
+      "line": 76,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -143,7 +143,7 @@
       "function": "all"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "DEBUG",
       "message": "Entering search",
       "kind": "entry",
@@ -157,7 +157,7 @@
       "function": "search"
     },
     {
-      "line": 84,
+      "line": 83,
       "level": "DEBUG",
       "message": "Entering recent",
       "kind": "entry",
@@ -171,7 +171,7 @@
       "function": "recent"
     },
     {
-      "line": 87,
+      "line": 86,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -185,7 +185,7 @@
       "function": "to_dict"
     },
     {
-      "line": 95,
+      "line": 94,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -199,14 +199,14 @@
       "function": "from_dict"
     },
     {
-      "line": 105,
+      "line": 104,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 109,
+      "line": 108,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -220,7 +220,7 @@
       "function": "_url"
     },
     {
-      "line": 112,
+      "line": 111,
       "level": "DEBUG",
       "message": "Entering fetch_remote",
       "kind": "entry",
@@ -234,10 +234,10 @@
       "function": "fetch_remote"
     },
     {
-      "line": 119,
+      "line": 118,
       "level": "ERROR",
       "message": "Exception in fetch_remote",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_remote"
     },
     {
@@ -248,7 +248,7 @@
       "function": "fetch_remote"
     },
     {
-      "line": 123,
+      "line": 122,
       "level": "DEBUG",
       "message": "Entering load_library",
       "kind": "entry",
@@ -262,10 +262,10 @@
       "function": "load_library"
     },
     {
-      "line": 127,
+      "line": 126,
       "level": "ERROR",
       "message": "Exception in load_library",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_library"
     },
     {
@@ -276,10 +276,10 @@
       "function": "load_library"
     },
     {
-      "line": 129,
+      "line": 128,
       "level": "ERROR",
       "message": "Exception in load_library",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_library"
     },
     {
@@ -290,28 +290,28 @@
       "function": "load_library"
     },
     {
-      "line": 133,
+      "line": 132,
       "level": "DEBUG",
       "message": "Entering save_library",
       "kind": "entry",
       "function": "save_library"
     },
     {
-      "line": 139,
+      "line": 138,
       "level": "ERROR",
       "message": "Exception in save_library",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_library"
     },
     {
-      "line": 143,
+      "line": 142,
       "level": "ERROR",
       "message": "Exception in save_library",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_library"
     },
     {
-      "line": 147,
+      "line": 146,
       "level": "DEBUG",
       "message": "Entering summarize_library",
       "kind": "entry",
@@ -332,7 +332,7 @@
       "function": "summarize_library"
     },
     {
-      "line": 160,
+      "line": 159,
       "level": "DEBUG",
       "message": "Entering filter_books",
       "kind": "entry",
@@ -346,7 +346,7 @@
       "function": "filter_books"
     },
     {
-      "line": 171,
+      "line": 170,
       "level": "DEBUG",
       "message": "Entering pick_random_book",
       "kind": "entry",
@@ -374,7 +374,7 @@
       "function": "pick_random_book"
     },
     {
-      "line": 182,
+      "line": 181,
       "level": "DEBUG",
       "message": "Entering merge_remote_library",
       "kind": "entry",
@@ -395,17 +395,17 @@
       "function": "merge_remote_library"
     },
     {
-      "line": 194,
+      "line": 193,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 209,
+      "line": 208,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {

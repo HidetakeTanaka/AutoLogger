@@ -33,30 +33,30 @@
       "function": "matches"
     },
     {
-      "line": 38,
+      "line": 37,
       "level": "DEBUG",
-      "message": "Random log at line 38 in to_dict",
+      "message": "Random log at line 37 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 66,
+      "line": 65,
       "level": "DEBUG",
-      "message": "Random log at line 66 in __init__",
+      "message": "Random log at line 65 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "ERROR",
-      "message": "Random log at line 74 in get",
+      "message": "Random log at line 73 in get",
       "kind": "entry",
       "function": "get"
     },
     {
-      "line": 77,
+      "line": 76,
       "level": "WARNING",
-      "message": "Random log at line 77 in all",
+      "message": "Random log at line 76 in all",
       "kind": "entry",
       "function": "all"
     },
@@ -68,31 +68,31 @@
       "function": "all"
     },
     {
-      "line": 80,
+      "line": 79,
       "level": "WARNING",
-      "message": "Random log at line 80 in search",
+      "message": "Random log at line 79 in search",
       "kind": "entry",
       "function": "search"
     },
     {
-      "line": 119,
+      "line": 118,
       "level": "INFO",
-      "message": "Random log at line 119 in fetch_remote",
-      "kind": "except",
+      "message": "Random log at line 118 in fetch_remote",
+      "kind": "exception",
       "function": "fetch_remote"
     },
     {
-      "line": 133,
+      "line": 132,
       "level": "WARNING",
-      "message": "Random log at line 133 in save_library",
+      "message": "Random log at line 132 in save_library",
       "kind": "entry",
       "function": "save_library"
     },
     {
-      "line": 139,
+      "line": 138,
       "level": "WARNING",
-      "message": "Random log at line 139 in save_library",
-      "kind": "except",
+      "message": "Random log at line 138 in save_library",
+      "kind": "exception",
       "function": "save_library"
     },
     {
@@ -103,9 +103,9 @@
       "function": "summarize_library"
     },
     {
-      "line": 160,
+      "line": 159,
       "level": "ERROR",
-      "message": "Random log at line 160 in filter_books",
+      "message": "Random log at line 159 in filter_books",
       "kind": "entry",
       "function": "filter_books"
     },

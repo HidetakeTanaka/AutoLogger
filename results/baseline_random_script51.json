@@ -5,9 +5,9 @@
   "probability": 0.3,
   "logs": [
     {
-      "line": 16,
+      "line": 15,
       "level": "WARNING",
-      "message": "Random log at line 16 in is_recent",
+      "message": "Random log at line 15 in is_recent",
       "kind": "entry",
       "function": "is_recent"
     },
@@ -33,30 +33,30 @@
       "function": "matches"
     },
     {
-      "line": 29,
+      "line": 28,
       "level": "DEBUG",
-      "message": "Random log at line 29 in to_dict",
+      "message": "Random log at line 28 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 53,
+      "line": 52,
       "level": "DEBUG",
-      "message": "Random log at line 53 in __init__",
+      "message": "Random log at line 52 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 61,
+      "line": 60,
       "level": "ERROR",
-      "message": "Random log at line 61 in recent",
+      "message": "Random log at line 60 in recent",
       "kind": "entry",
       "function": "recent"
     },
     {
-      "line": 64,
+      "line": 63,
       "level": "WARNING",
-      "message": "Random log at line 64 in filter_by_tag",
+      "message": "Random log at line 63 in filter_by_tag",
       "kind": "entry",
       "function": "filter_by_tag"
     },
@@ -68,23 +68,23 @@
       "function": "filter_by_tag"
     },
     {
-      "line": 67,
+      "line": 66,
       "level": "WARNING",
-      "message": "Random log at line 67 in to_dict",
+      "message": "Random log at line 66 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
     {
-      "line": 108,
+      "line": 107,
       "level": "INFO",
-      "message": "Random log at line 108 in load_sensors",
+      "message": "Random log at line 107 in load_sensors",
       "kind": "entry",
       "function": "load_sensors"
     },
     {
-      "line": 140,
+      "line": 139,
       "level": "WARNING",
-      "message": "Random log at line 140 in summarize",
+      "message": "Random log at line 139 in summarize",
       "kind": "entry",
       "function": "summarize"
     },
@@ -103,9 +103,9 @@
       "function": "pick_random_recent"
     },
     {
-      "line": 155,
+      "line": 154,
       "level": "ERROR",
-      "message": "Random log at line 155 in main",
+      "message": "Random log at line 154 in main",
       "kind": "entry",
       "function": "main"
     }

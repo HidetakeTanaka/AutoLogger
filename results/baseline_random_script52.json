@@ -26,9 +26,9 @@
       "function": "matches_query"
     },
     {
-      "line": 38,
+      "line": 37,
       "level": "DEBUG",
-      "message": "Random log at line 38 in to_dict",
+      "message": "Random log at line 37 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -40,9 +40,9 @@
       "function": "to_dict"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "DEBUG",
-      "message": "Random log at line 74 in add_task",
+      "message": "Random log at line 73 in add_task",
       "kind": "entry",
       "function": "add_task"
     },
@@ -61,9 +61,9 @@
       "function": "overdue_tasks"
     },
     {
-      "line": 83,
+      "line": 82,
       "level": "ERROR",
-      "message": "Random log at line 83 in to_dict",
+      "message": "Random log at line 82 in to_dict",
       "kind": "entry",
       "function": "to_dict"
     },
@@ -75,23 +75,23 @@
       "function": "to_dict"
     },
     {
-      "line": 129,
+      "line": 128,
       "level": "INFO",
-      "message": "Random log at line 129 in load_project",
+      "message": "Random log at line 128 in load_project",
       "kind": "entry",
       "function": "load_project"
     },
     {
-      "line": 162,
+      "line": 161,
       "level": "WARNING",
-      "message": "Random log at line 162 in save_project",
-      "kind": "except",
+      "message": "Random log at line 161 in save_project",
+      "kind": "exception",
       "function": "save_project"
     },
     {
-      "line": 166,
+      "line": 165,
       "level": "WARNING",
-      "message": "Random log at line 166 in merge_remote_tasks",
+      "message": "Random log at line 165 in merge_remote_tasks",
       "kind": "entry",
       "function": "merge_remote_tasks"
     },

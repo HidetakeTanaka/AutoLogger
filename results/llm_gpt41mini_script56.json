@@ -2,139 +2,145 @@
   "file": "script56.py",
   "logs": [
     {
-      "line": 29,
+      "line": 22,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering is_overdue with ref={ref}\")"
+    },
+    {
+      "line": 28,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering matches with query: {query}\")"
     },
     {
-      "line": 51,
+      "line": 50,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 66,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to parse dates in from_dict with raw data: {raw}', exc_info=True)"
+      "line": 56,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Creating Task from dict with task_id={raw.get(\"task_id\", \"\")}, title={raw.get(\"title\", \"\")}, status={raw.get(\"status\", \"pending\")}, created_at={created_at}, due_at={due_at}, tags={raw.get(\"tags\", [])}, effort={raw.get(\"effort\", 1)}')"
     },
     {
-      "line": 71,
+      "line": 65,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to create Task from dict with raw data: {raw}', exc_info=True)"
+    },
+    {
+      "line": 70,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing TaskList with list_id={list_id}, name={name}\")"
     },
     {
-      "line": 76,
+      "line": 75,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering add method with task: {task}\")"
     },
     {
-      "line": 79,
+      "line": 78,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering TaskList.get with task_id={task_id}\")"
+      "message": "logging.debug(f\"Entering get method with task_id={task_id}\")"
     },
     {
-      "line": 79,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Retrieved task with ID {task_id}')"
-    },
-    {
-      "line": 85,
+      "line": 84,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering search with query='{query}' in TaskList\")"
     },
     {
-      "line": 89,
+      "line": 88,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('Entered TaskList.open_tasks method')"
+      "message": "logging.debug('Entered open_tasks method of TaskList')"
     },
     {
-      "line": 100,
+      "line": 99,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering from_dict with raw keys: {list(raw.keys())}\")"
     },
     {
-      "line": 110,
+      "line": 109,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing SyncClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 114,
+      "line": 116,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering _url with list_id={list_id}\")"
+      "message": "logging.debug(f\"Entering fetch_remote with list_id={list_id}\")"
     },
     {
-      "line": 117,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering fetch_remote with list_id={list_id} and url={url}\")"
-    },
-    {
-      "line": 124,
-      "kind": "except",
+      "line": 123,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch remote list {list_id} from {url} with body {body}', exc_info=True)"
+      "message": "logging.error(f'Failed to fetch remote data from {url} for list_id {list_id}', exc_info=True)"
     },
     {
-      "line": 127,
+      "line": 126,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering push_update with list_id={list_id} and payload keys={list(payload.keys())}\")"
     },
     {
-      "line": 134,
-      "kind": "except",
+      "line": 133,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to push update for list_id {list_id} to {url} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 138,
+      "line": 137,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_task_list with path: {path}\")"
     },
     {
-      "line": 142,
-      "kind": "except",
-      "level": "ERROR",
-      "message": "logging.error(f'Failed to load task list from {path} with raw data: {raw}', exc_info=True)"
+      "line": 140,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Task list loaded successfully from {path} with {len(raw)} entries')"
     },
     {
-      "line": 144,
-      "kind": "except",
+      "line": 141,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load task list from {path} with raw data: {raw}', exc_info=True)"
+      "message": "logging.error(f'Failed to load task list from {path}', exc_info=True)"
     },
     {
-      "line": 148,
+      "line": 143,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to load task list from {path}', exc_info=True)"
+    },
+    {
+      "line": 147,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered save_task_list with path={path} and task list of size={len(tl.tasks)}\")"
     },
     {
-      "line": 154,
-      "kind": "except",
+      "line": 153,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save task list to {path}', exc_info=True)"
     },
     {
-      "line": 158,
-      "kind": "except",
+      "line": 157,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save task list to {path}', exc_info=True)"
     },
     {
-      "line": 162,
+      "line": 161,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered summarize_task_list with TaskList containing {len(tl.tasks)} tasks\")"
@@ -146,62 +152,38 @@
       "message": "logging.info(f\"Task summary: total={len(tasks)}, open={len(open_tasks)}, overdue={overdue}\")"
     },
     {
-      "line": 176,
+      "line": 170,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered filter_tasks with max_effort={max_effort}, only_open={only_open}, tag={tag}, tl={tl}\")"
     },
     {
-      "line": 185,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'filter_tasks returning {len(results)} results with max_effort={max_effort}, only_open={only_open}, tag={tag}')"
-    },
-    {
-      "line": 189,
+      "line": 188,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered pick_next_task with prefer_short={prefer_short}, total tasks in list={len(tl)}\")"
+      "message": "logging.debug(f\"Entering pick_next_task with {len(tl)} tasks, prefer_short={prefer_short}\")"
     },
     {
-      "line": 196,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Picking next task from candidates: {candidates}')"
-    },
-    {
-      "line": 201,
+      "line": 200,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered simulate_progress with TaskList of size {len(tl)} and days={days}\")"
+      "message": "logging.debug(f\"Starting simulate_progress with days={days} and task list of length={len(tl)}\")"
     },
     {
-      "line": 217,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Simulation complete after {len(history)} steps, total days simulated: {days}')"
-    },
-    {
-      "line": 221,
+      "line": 220,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered merge_remote_tasks with local tasks count: {len(local)} and remote_data keys: {list(remote_data.keys()) if remote_data else 'None'}\")"
+      "message": "logging.debug(f\"Entering merge_remote_tasks with local tasks count: {len(local)} and remote_data keys: {list(remote_data.keys()) if remote_data else 'None'}\")"
     },
     {
-      "line": 229,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Merge completed with {len(added)} tasks added from remote data.')"
-    },
-    {
-      "line": 233,
+      "line": 232,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main function with data_dir={data_dir} and base_url={base_url}\")"
+      "message": "logging.debug(f\"Entered main function with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 248,
-      "kind": "except",
+      "line": 247,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }

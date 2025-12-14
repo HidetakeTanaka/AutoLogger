@@ -2,310 +2,142 @@
   "file": "script51.py",
   "logs": [
     {
-      "line": 10,
+      "line": 9,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+      "message": "logging.debug(f\"Initializing Reading with id={reading_id}, value={value}, timestamp={ts}, tags={list(tags)}\")"
     },
     {
-      "line": 16,
+      "line": 20,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function is_recent')"
+      "message": "logging.debug(f\"Entering matches() with keyword='{keyword}'\")"
     },
     {
-      "line": 17,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function is_recent')"
-    },
-    {
-      "line": 18,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function is_recent')"
-    },
-    {
-      "line": 21,
+      "line": 37,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function matches')"
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 23,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function matches')"
-    },
-    {
-      "line": 25,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function matches')"
-    },
-    {
-      "line": 26,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function matches')"
-    },
-    {
-      "line": 29,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
-    },
-    {
-      "line": 29,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
-    },
-    {
-      "line": 38,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
-    },
-    {
-      "line": 41,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
-    },
-    {
-      "line": 48,
-      "kind": "except",
+      "line": 47,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+      "message": "logging.error('Failed to create Reading from dict: %s', raw, exc_info=True)"
     },
     {
-      "line": 48,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
-    },
-    {
-      "line": 53,
+      "line": 57,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+      "message": "logging.debug(f\"Entering add_reading with reading: {r}\")"
     },
     {
-      "line": 58,
+      "line": 60,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function add_reading')"
+      "message": "logging.debug(f\"Entered recent() with hours={hours}\")"
     },
     {
-      "line": 61,
+      "line": 63,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function recent')"
+      "message": "logging.debug(f\"Entering filter_by_tag with tag={tag}\")"
     },
     {
-      "line": 61,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function recent')"
-    },
-    {
-      "line": 64,
+      "line": 74,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function filter_by_tag')"
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 64,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function filter_by_tag')"
-    },
-    {
-      "line": 67,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
-    },
-    {
-      "line": 67,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function to_dict')"
-    },
-    {
-      "line": 75,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
-    },
-    {
-      "line": 84,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
-    },
-    {
-      "line": 86,
-      "kind": "except",
+      "line": 85,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
+      "message": "logging.error(f'Failed to create Sensor from dict: {raw}', exc_info=True)"
     },
     {
-      "line": 86,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function from_dict')"
-    },
-    {
-      "line": 91,
+      "line": 90,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function __init__')"
+      "message": "logging.debug(f\"Initializing SyncClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 95,
+      "line": 94,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function _url')"
+      "message": "logging.debug(f\"Entering _url with sensor_id={sensor_id}\")"
     },
     {
-      "line": 95,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function _url')"
-    },
-    {
-      "line": 98,
+      "line": 97,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote')"
+      "message": "logging.debug(f\"Entering fetch_remote with sensor_id={sensor_id} and url={url}\")"
     },
     {
-      "line": 102,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote')"
-    },
-    {
-      "line": 104,
-      "kind": "except",
+      "line": 103,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote')"
+      "message": "logging.error(f'Failed to fetch remote data for sensor {sensor_id} from {url}', exc_info=True)"
     },
     {
-      "line": 104,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function fetch_remote')"
-    },
-    {
-      "line": 108,
+      "line": 107,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function load_sensors')"
+      "message": "logging.debug(f\"Entering load_sensors with path: {path}\")"
     },
     {
-      "line": 112,
-      "kind": "except",
+      "line": 111,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function load_sensors')"
+      "message": "logging.error(f'Failed to load sensor data from {path}: {s}', exc_info=True)"
     },
     {
-      "line": 112,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function load_sensors')"
-    },
-    {
-      "line": 118,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function load_sensors')"
-    },
-    {
-      "line": 122,
+      "line": 121,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function save_sensors')"
+      "message": "logging.debug(f\"Entering save_sensors with path={path} and {len(sensors)} sensors\")"
     },
     {
-      "line": 129,
-      "kind": "except",
+      "line": 128,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function save_sensors')"
+      "message": "logging.error(f'Failed to save sensors data to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 134,
+      "line": 133,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function merge_sensor')"
+      "message": "logging.debug(f\"Entering merge_sensor with local={local} and remote={remote}\")"
     },
     {
-      "line": 136,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function merge_sensor')"
-    },
-    {
-      "line": 140,
+      "line": 139,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function summarize')"
+      "message": "logging.debug(f\"Entered summarize function with {len(sens)} sensors\")"
     },
     {
-      "line": 142,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function summarize')"
-    },
-    {
-      "line": 144,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function summarize')"
-    },
-    {
-      "line": 148,
+      "line": 147,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function pick_random_recent')"
-    },
-    {
-      "line": 150,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function pick_random_recent')"
+      "message": "logging.debug(f\"Entered pick_random_recent with sensor: {sensor}\")"
     },
     {
       "line": 151,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function pick_random_recent')"
+      "message": "logging.info(f\"pick_random_recent selected candidate: {cands}\")"
     },
     {
-      "line": 155,
+      "line": 154,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug('[HEURISTIC] AutoLogger: reached candidate in function main')"
+      "message": "logging.debug(f\"Entered main with data_dir={data_dir}, base_url={base_url}\")"
     },
     {
-      "line": 175,
-      "kind": "except",
+      "line": 174,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('[HEURISTIC] AutoLogger: reached candidate in function main')"
-    },
-    {
-      "line": 175,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function main')"
-    },
-    {
-      "line": 177,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info('[HEURISTIC] AutoLogger: reached candidate in function main')"
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }
   ]
 }

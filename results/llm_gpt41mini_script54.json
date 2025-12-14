@@ -2,139 +2,103 @@
   "file": "script54.py",
   "logs": [
     {
-      "line": 20,
+      "line": 24,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering is_recent with days={days} for Article id={self.id}\")"
+      "message": "logging.debug(f\"Entering matches with query='{query}'\")"
     },
     {
-      "line": 25,
+      "line": 43,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering matches with query: {query}\")"
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 44,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering from_dict with raw keys: {list(raw.keys())}\")"
-    },
-    {
-      "line": 56,
-      "kind": "except",
+      "line": 55,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to create Article from dict: {raw}', exc_info=True)"
     },
     {
-      "line": 66,
+      "line": 65,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering add_article with article id={article.id} title='{article.title}'\")"
+      "message": "logging.debug(f\"Entering add_article with article id={article.id} title={article.title}\")"
     },
     {
-      "line": 72,
+      "line": 71,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered recent_articles with days={days}\")"
     },
     {
-      "line": 75,
+      "line": 74,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering Feed.search with query: {query}\")"
+      "message": "logging.debug(f\"Entering search with query: {query}\")"
     },
     {
-      "line": 86,
+      "line": 85,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering Feed.from_dict with raw data keys: {list(raw.keys())}\")"
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
     },
     {
-      "line": 96,
+      "line": 95,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Initializing SyncClient with base_url={base_url} and timeout={timeout}\")"
     },
     {
-      "line": 100,
-      "kind": "entry",
-      "level": "DEBUG",
-      "message": "logging.debug(f\"Entering _url with feed_id={feed_id}\")"
-    },
-    {
-      "line": 100,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Returning URL for feed_id {feed_id}: {self.base_url}/feeds/{feed_id}.json')"
-    },
-    {
-      "line": 103,
+      "line": 102,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering fetch_remote_feed with feed_id={feed_id}\")"
     },
     {
-      "line": 110,
-      "kind": "except",
+      "line": 109,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to fetch remote feed {feed_id} from {url} with request {req}', exc_info=True)"
+      "message": "logging.error(f'Failed to fetch remote feed for feed_id {feed_id} from {url}', exc_info=True)"
     },
     {
-      "line": 114,
+      "line": 113,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering load_feed with path: {path}\")"
     },
     {
-      "line": 119,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Loaded feed from {path} with data keys: {list(data.keys())}')"
-    },
-    {
-      "line": 121,
-      "kind": "except",
+      "line": 120,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error(f'Failed to load feed from {path} with data: {data}', exc_info=True)"
+      "message": "logging.error(f'Failed to load feed from {path}', exc_info=True)"
     },
     {
-      "line": 125,
+      "line": 124,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entered save_feed with path={path} and feed={feed}\")"
     },
     {
-      "line": 132,
-      "kind": "except",
+      "line": 131,
+      "kind": "exception",
       "level": "ERROR",
       "message": "logging.error(f'Failed to save feed to {path} with payload {payload}', exc_info=True)"
     },
     {
-      "line": 137,
+      "line": 136,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering summarize_feed for feed with id: {getattr(feed, 'id', 'unknown')}\")"
+      "message": "logging.debug(f\"Entered summarize_feed with feed id: {getattr(feed, 'id', 'unknown')}\")"
     },
     {
-      "line": 148,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f\"Summarized feed with {len(items)} items, {len(authors)} authors, average views {views / len(items):.2f}\")"
-    },
-    {
-      "line": 156,
+      "line": 155,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered filter_articles with min_views={min_views}, recent_days={recent_days}\")"
+      "message": "logging.debug(f\"Entered filter_articles with feed={feed}, min_views={min_views}, recent_days={recent_days}\")"
     },
     {
-      "line": 163,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'Filtered articles from feed with min_views={min_views} and recent_days={recent_days}, returning {len(result)} articles')"
-    },
-    {
-      "line": 167,
+      "line": 166,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"paginate_titles called with page_size={page_size}\")"
@@ -146,46 +110,40 @@
       "message": "logging.info(f'Returning {len(pages)} pages with page size {page_size}')"
     },
     {
-      "line": 179,
+      "line": 178,
       "kind": "entry",
       "level": "DEBUG",
       "message": "logging.debug(f\"Entering pick_random_article with feed={feed} and recent_only={recent_only}\")"
     },
     {
-      "line": 184,
-      "kind": "return",
-      "level": "INFO",
-      "message": "logging.info(f'No article selected from feed {feed} with recent_only={recent_only}')"
-    },
-    {
       "line": 185,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Selected random article from {len(candidates)} candidates, recent_only={recent_only}')"
+      "message": "logging.info(f'Selected random article from {len(candidates)} candidates.')"
     },
     {
-      "line": 189,
+      "line": 188,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entering merge_remote with feed={feed} and {len(list(remote_rows))} remote rows\")"
+      "message": "logging.debug(f\"Entering merge_remote for feed {feed} with {len(list(remote_rows))} remote rows\")"
     },
     {
       "line": 205,
       "kind": "return",
       "level": "INFO",
-      "message": "logging.info(f'Merge completed with {len(added)} items added.')"
+      "message": "logging.info(f'Merge completed, added {len(added)} new items')"
     },
     {
-      "line": 209,
+      "line": 208,
       "kind": "entry",
       "level": "DEBUG",
-      "message": "logging.debug(f\"Entered main with base_dir={base_dir}, base_url={base_url}\")"
+      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}, base_url={base_url}\")"
     },
     {
-      "line": 227,
-      "kind": "except",
+      "line": 226,
+      "kind": "exception",
       "level": "ERROR",
-      "message": "logging.error('Exception occurred while processing feed at %s', feed_path, exc_info=True)"
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
     }
   ]
 }

@@ -33,30 +33,30 @@
       "function": "latest"
     },
     {
-      "line": 41,
+      "line": 40,
       "level": "DEBUG",
-      "message": "Random log at line 41 in recent_values",
+      "message": "Random log at line 40 in recent_values",
       "kind": "entry",
       "function": "recent_values"
     },
     {
-      "line": 69,
+      "line": 68,
       "level": "DEBUG",
-      "message": "Random log at line 69 in from_dict",
-      "kind": "except",
+      "message": "Random log at line 68 in from_dict",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
-      "line": 74,
+      "line": 73,
       "level": "ERROR",
-      "message": "Random log at line 74 in __init__",
+      "message": "Random log at line 73 in __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 81,
+      "line": 80,
       "level": "WARNING",
-      "message": "Random log at line 81 in get",
+      "message": "Random log at line 80 in get",
       "kind": "entry",
       "function": "get"
     },
@@ -68,24 +68,24 @@
       "function": "get"
     },
     {
-      "line": 84,
+      "line": 83,
       "level": "WARNING",
-      "message": "Random log at line 84 in all",
+      "message": "Random log at line 83 in all",
       "kind": "entry",
       "function": "all"
     },
     {
-      "line": 121,
+      "line": 120,
       "level": "INFO",
-      "message": "Random log at line 121 in fetch",
-      "kind": "except",
+      "message": "Random log at line 120 in fetch",
+      "kind": "exception",
       "function": "fetch"
     },
     {
-      "line": 139,
+      "line": 138,
       "level": "WARNING",
-      "message": "Random log at line 139 in load_network",
-      "kind": "except",
+      "message": "Random log at line 138 in load_network",
+      "kind": "exception",
       "function": "load_network"
     },
     {
@@ -96,17 +96,17 @@
       "function": "load_network"
     },
     {
-      "line": 145,
+      "line": 144,
       "level": "INFO",
-      "message": "Random log at line 145 in save_network",
+      "message": "Random log at line 144 in save_network",
       "kind": "entry",
       "function": "save_network"
     },
     {
-      "line": 155,
+      "line": 154,
       "level": "ERROR",
-      "message": "Random log at line 155 in save_network",
-      "kind": "except",
+      "message": "Random log at line 154 in save_network",
+      "kind": "exception",
       "function": "save_network"
     },
     {
@@ -117,17 +117,17 @@
       "function": "sync_remote_metrics"
     },
     {
-      "line": 206,
+      "line": 205,
       "level": "WARNING",
-      "message": "Random log at line 206 in main",
+      "message": "Random log at line 205 in main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 224,
+      "line": 223,
       "level": "ERROR",
-      "message": "Random log at line 224 in main",
-      "kind": "except",
+      "message": "Random log at line 223 in main",
+      "kind": "exception",
       "function": "main"
     }
   ]

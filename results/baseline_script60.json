@@ -3,7 +3,7 @@
   "baseline_type": "heuristic",
   "logs": [
     {
-      "line": 22,
+      "line": 21,
       "level": "DEBUG",
       "message": "Entering is_recent",
       "kind": "entry",
@@ -24,7 +24,7 @@
       "function": "is_recent"
     },
     {
-      "line": 28,
+      "line": 27,
       "level": "DEBUG",
       "message": "Entering matches",
       "kind": "entry",
@@ -52,7 +52,7 @@
       "function": "matches"
     },
     {
-      "line": 36,
+      "line": 35,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -66,7 +66,7 @@
       "function": "to_dict"
     },
     {
-      "line": 47,
+      "line": 46,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -80,10 +80,10 @@
       "function": "from_dict"
     },
     {
-      "line": 59,
+      "line": 58,
       "level": "ERROR",
       "message": "Exception in from_dict",
-      "kind": "except",
+      "kind": "exception",
       "function": "from_dict"
     },
     {
@@ -94,21 +94,21 @@
       "function": "from_dict"
     },
     {
-      "line": 64,
+      "line": 63,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 69,
+      "line": 68,
       "level": "DEBUG",
       "message": "Entering add",
       "kind": "entry",
       "function": "add"
     },
     {
-      "line": 72,
+      "line": 71,
       "level": "DEBUG",
       "message": "Entering get",
       "kind": "entry",
@@ -122,7 +122,7 @@
       "function": "get"
     },
     {
-      "line": 75,
+      "line": 74,
       "level": "DEBUG",
       "message": "Entering all",
       "kind": "entry",
@@ -136,7 +136,7 @@
       "function": "all"
     },
     {
-      "line": 78,
+      "line": 77,
       "level": "DEBUG",
       "message": "Entering search",
       "kind": "entry",
@@ -150,7 +150,7 @@
       "function": "search"
     },
     {
-      "line": 82,
+      "line": 81,
       "level": "DEBUG",
       "message": "Entering recent",
       "kind": "entry",
@@ -164,7 +164,7 @@
       "function": "recent"
     },
     {
-      "line": 85,
+      "line": 84,
       "level": "DEBUG",
       "message": "Entering to_dict",
       "kind": "entry",
@@ -178,7 +178,7 @@
       "function": "to_dict"
     },
     {
-      "line": 93,
+      "line": 92,
       "level": "DEBUG",
       "message": "Entering from_dict",
       "kind": "entry",
@@ -192,14 +192,14 @@
       "function": "from_dict"
     },
     {
-      "line": 106,
+      "line": 105,
       "level": "DEBUG",
       "message": "Entering __init__",
       "kind": "entry",
       "function": "__init__"
     },
     {
-      "line": 110,
+      "line": 109,
       "level": "DEBUG",
       "message": "Entering _url",
       "kind": "entry",
@@ -213,7 +213,7 @@
       "function": "_url"
     },
     {
-      "line": 113,
+      "line": 112,
       "level": "DEBUG",
       "message": "Entering fetch_feed",
       "kind": "entry",
@@ -227,10 +227,10 @@
       "function": "fetch_feed"
     },
     {
-      "line": 120,
+      "line": 119,
       "level": "ERROR",
       "message": "Exception in fetch_feed",
-      "kind": "except",
+      "kind": "exception",
       "function": "fetch_feed"
     },
     {
@@ -241,7 +241,7 @@
       "function": "fetch_feed"
     },
     {
-      "line": 124,
+      "line": 123,
       "level": "DEBUG",
       "message": "Entering load_feed",
       "kind": "entry",
@@ -255,10 +255,10 @@
       "function": "load_feed"
     },
     {
-      "line": 128,
+      "line": 127,
       "level": "ERROR",
       "message": "Exception in load_feed",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_feed"
     },
     {
@@ -269,10 +269,10 @@
       "function": "load_feed"
     },
     {
-      "line": 130,
+      "line": 129,
       "level": "ERROR",
       "message": "Exception in load_feed",
-      "kind": "except",
+      "kind": "exception",
       "function": "load_feed"
     },
     {
@@ -283,28 +283,28 @@
       "function": "load_feed"
     },
     {
-      "line": 134,
+      "line": 133,
       "level": "DEBUG",
       "message": "Entering save_feed",
       "kind": "entry",
       "function": "save_feed"
     },
     {
-      "line": 140,
+      "line": 139,
       "level": "ERROR",
       "message": "Exception in save_feed",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_feed"
     },
     {
-      "line": 144,
+      "line": 143,
       "level": "ERROR",
       "message": "Exception in save_feed",
-      "kind": "except",
+      "kind": "exception",
       "function": "save_feed"
     },
     {
-      "line": 148,
+      "line": 147,
       "level": "DEBUG",
       "message": "Entering summarize_feed",
       "kind": "entry",
@@ -325,7 +325,7 @@
       "function": "summarize_feed"
     },
     {
-      "line": 161,
+      "line": 160,
       "level": "DEBUG",
       "message": "Entering pick_random_article",
       "kind": "entry",
@@ -353,7 +353,7 @@
       "function": "pick_random_article"
     },
     {
-      "line": 172,
+      "line": 171,
       "level": "DEBUG",
       "message": "Entering merge_remote_feed",
       "kind": "entry",
@@ -374,7 +374,7 @@
       "function": "merge_remote_feed"
     },
     {
-      "line": 184,
+      "line": 183,
       "level": "DEBUG",
       "message": "Entering enrich_scores",
       "kind": "entry",
@@ -388,17 +388,17 @@
       "function": "enrich_scores"
     },
     {
-      "line": 197,
+      "line": 196,
       "level": "DEBUG",
       "message": "Entering main",
       "kind": "entry",
       "function": "main"
     },
     {
-      "line": 213,
+      "line": 212,
       "level": "ERROR",
       "message": "Exception in main",
-      "kind": "except",
+      "kind": "exception",
       "function": "main"
     },
     {
