@@ -1,0 +1,391 @@
+{
+  "file": "script49.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 21,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 26,
+      "level": "DEBUG",
+      "message": "Entering is_large",
+      "kind": "entry",
+      "function": "is_large"
+    },
+    {
+      "line": 28,
+      "level": "INFO",
+      "message": "Exiting is_large",
+      "kind": "return",
+      "function": "is_large"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting is_large",
+      "kind": "return",
+      "function": "is_large"
+    },
+    {
+      "line": 31,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 42,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 46,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 48,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 56,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "exception",
+      "function": "from_dict"
+    },
+    {
+      "line": 57,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Entering add_transaction",
+      "kind": "entry",
+      "function": "add_transaction"
+    },
+    {
+      "line": 69,
+      "level": "INFO",
+      "message": "Exiting add_transaction",
+      "kind": "return",
+      "function": "add_transaction"
+    },
+    {
+      "line": 72,
+      "level": "DEBUG",
+      "message": "Entering balance",
+      "kind": "entry",
+      "function": "balance"
+    },
+    {
+      "line": 73,
+      "level": "INFO",
+      "message": "Exiting balance",
+      "kind": "return",
+      "function": "balance"
+    },
+    {
+      "line": 75,
+      "level": "DEBUG",
+      "message": "Entering recent_spending",
+      "kind": "entry",
+      "function": "recent_spending"
+    },
+    {
+      "line": 77,
+      "level": "INFO",
+      "message": "Exiting recent_spending",
+      "kind": "return",
+      "function": "recent_spending"
+    },
+    {
+      "line": 79,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 80,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 89,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 93,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 94,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 96,
+      "level": "DEBUG",
+      "message": "Entering fetch_limits",
+      "kind": "entry",
+      "function": "fetch_limits"
+    },
+    {
+      "line": 98,
+      "level": "INFO",
+      "message": "Exiting fetch_limits",
+      "kind": "return",
+      "function": "fetch_limits"
+    },
+    {
+      "line": 106,
+      "level": "INFO",
+      "message": "Exiting fetch_limits",
+      "kind": "return",
+      "function": "fetch_limits"
+    },
+    {
+      "line": 107,
+      "level": "INFO",
+      "message": "Exiting fetch_limits",
+      "kind": "return",
+      "function": "fetch_limits"
+    },
+    {
+      "line": 108,
+      "level": "ERROR",
+      "message": "Exception in fetch_limits",
+      "kind": "exception",
+      "function": "fetch_limits"
+    },
+    {
+      "line": 109,
+      "level": "INFO",
+      "message": "Exiting fetch_limits",
+      "kind": "return",
+      "function": "fetch_limits"
+    },
+    {
+      "line": 112,
+      "level": "DEBUG",
+      "message": "Entering load_transactions",
+      "kind": "entry",
+      "function": "load_transactions"
+    },
+    {
+      "line": 114,
+      "level": "INFO",
+      "message": "Exiting load_transactions",
+      "kind": "return",
+      "function": "load_transactions"
+    },
+    {
+      "line": 118,
+      "level": "ERROR",
+      "message": "Exception in load_transactions",
+      "kind": "exception",
+      "function": "load_transactions"
+    },
+    {
+      "line": 119,
+      "level": "INFO",
+      "message": "Exiting load_transactions",
+      "kind": "return",
+      "function": "load_transactions"
+    },
+    {
+      "line": 121,
+      "level": "INFO",
+      "message": "Exiting load_transactions",
+      "kind": "return",
+      "function": "load_transactions"
+    },
+    {
+      "line": 129,
+      "level": "INFO",
+      "message": "Exiting load_transactions",
+      "kind": "return",
+      "function": "load_transactions"
+    },
+    {
+      "line": 132,
+      "level": "DEBUG",
+      "message": "Entering save_transactions",
+      "kind": "entry",
+      "function": "save_transactions"
+    },
+    {
+      "line": 140,
+      "level": "ERROR",
+      "message": "Exception in save_transactions",
+      "kind": "exception",
+      "function": "save_transactions"
+    },
+    {
+      "line": 144,
+      "level": "ERROR",
+      "message": "Exception in save_transactions",
+      "kind": "exception",
+      "function": "save_transactions"
+    },
+    {
+      "line": 148,
+      "level": "DEBUG",
+      "message": "Entering group_by_category",
+      "kind": "entry",
+      "function": "group_by_category"
+    },
+    {
+      "line": 152,
+      "level": "INFO",
+      "message": "Exiting group_by_category",
+      "kind": "return",
+      "function": "group_by_category"
+    },
+    {
+      "line": 155,
+      "level": "DEBUG",
+      "message": "Entering summarize_account",
+      "kind": "entry",
+      "function": "summarize_account"
+    },
+    {
+      "line": 160,
+      "level": "INFO",
+      "message": "Exiting summarize_account",
+      "kind": "return",
+      "function": "summarize_account"
+    },
+    {
+      "line": 169,
+      "level": "DEBUG",
+      "message": "Entering detect_overspend",
+      "kind": "entry",
+      "function": "detect_overspend"
+    },
+    {
+      "line": 173,
+      "level": "INFO",
+      "message": "Exiting detect_overspend",
+      "kind": "return",
+      "function": "detect_overspend"
+    },
+    {
+      "line": 181,
+      "level": "INFO",
+      "message": "Exiting detect_overspend",
+      "kind": "return",
+      "function": "detect_overspend"
+    },
+    {
+      "line": 184,
+      "level": "DEBUG",
+      "message": "Entering filter_large_transactions",
+      "kind": "entry",
+      "function": "filter_large_transactions"
+    },
+    {
+      "line": 189,
+      "level": "INFO",
+      "message": "Exiting filter_large_transactions",
+      "kind": "return",
+      "function": "filter_large_transactions"
+    },
+    {
+      "line": 190,
+      "level": "INFO",
+      "message": "Exiting filter_large_transactions",
+      "kind": "return",
+      "function": "filter_large_transactions"
+    },
+    {
+      "line": 193,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 200,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 205,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "exception",
+      "function": "main"
+    },
+    {
+      "line": 232,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "exception",
+      "function": "main"
+    },
+    {
+      "line": 233,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 235,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "file": "script46.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 21,
+      "level": "DEBUG",
+      "message": "Entering is_recent",
+      "kind": "entry",
+      "function": "is_recent"
+    },
+    {
+      "line": 23,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 26,
+      "level": "DEBUG",
+      "message": "Entering matches_query",
+      "kind": "entry",
+      "function": "matches_query"
+    },
+    {
+      "line": 29,
+      "level": "INFO",
+      "message": "Exiting matches_query",
+      "kind": "return",
+      "function": "matches_query"
+    },
+    {
+      "line": 31,
+      "level": "INFO",
+      "message": "Exiting matches_query",
+      "kind": "return",
+      "function": "matches_query"
+    },
+    {
+      "line": 32,
+      "level": "INFO",
+      "message": "Exiting matches_query",
+      "kind": "return",
+      "function": "matches_query"
+    },
+    {
+      "line": 34,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 35,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 46,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 50,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 59,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "exception",
+      "function": "from_dict"
+    },
+    {
+      "line": 60,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Entering add",
+      "kind": "entry",
+      "function": "add"
+    },
+    {
+      "line": 69,
+      "level": "INFO",
+      "message": "Exiting add",
+      "kind": "return",
+      "function": "add"
+    },
+    {
+      "line": 72,
+      "level": "INFO",
+      "message": "Exiting add",
+      "kind": "return",
+      "function": "add"
+    },
+    {
+      "line": 75,
+      "level": "DEBUG",
+      "message": "Entering get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 76,
+      "level": "INFO",
+      "message": "Exiting get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 78,
+      "level": "DEBUG",
+      "message": "Entering all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 79,
+      "level": "INFO",
+      "message": "Exiting all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 81,
+      "level": "DEBUG",
+      "message": "Entering recent",
+      "kind": "entry",
+      "function": "recent"
+    },
+    {
+      "line": 82,
+      "level": "INFO",
+      "message": "Exiting recent",
+      "kind": "return",
+      "function": "recent"
+    },
+    {
+      "line": 84,
+      "level": "DEBUG",
+      "message": "Entering filter",
+      "kind": "entry",
+      "function": "filter"
+    },
+    {
+      "line": 92,
+      "level": "INFO",
+      "message": "Exiting filter",
+      "kind": "return",
+      "function": "filter"
+    },
+    {
+      "line": 96,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 100,
+      "level": "DEBUG",
+      "message": "Entering _url",
+      "kind": "entry",
+      "function": "_url"
+    },
+    {
+      "line": 103,
+      "level": "INFO",
+      "message": "Exiting _url",
+      "kind": "return",
+      "function": "_url"
+    },
+    {
+      "line": 105,
+      "level": "DEBUG",
+      "message": "Entering _request_json",
+      "kind": "entry",
+      "function": "_request_json"
+    },
+    {
+      "line": 113,
+      "level": "INFO",
+      "message": "Exiting _request_json",
+      "kind": "return",
+      "function": "_request_json"
+    },
+    {
+      "line": 114,
+      "level": "ERROR",
+      "message": "Exception in _request_json",
+      "kind": "exception",
+      "function": "_request_json"
+    },
+    {
+      "line": 116,
+      "level": "INFO",
+      "message": "Exiting _request_json",
+      "kind": "return",
+      "function": "_request_json"
+    },
+    {
+      "line": 117,
+      "level": "INFO",
+      "message": "Exiting _request_json",
+      "kind": "return",
+      "function": "_request_json"
+    },
+    {
+      "line": 119,
+      "level": "DEBUG",
+      "message": "Entering fetch_headlines",
+      "kind": "entry",
+      "function": "fetch_headlines"
+    },
+    {
+      "line": 121,
+      "level": "INFO",
+      "message": "Exiting fetch_headlines",
+      "kind": "return",
+      "function": "fetch_headlines"
+    },
+    {
+      "line": 125,
+      "level": "INFO",
+      "message": "Exiting fetch_headlines",
+      "kind": "return",
+      "function": "fetch_headlines"
+    },
+    {
+      "line": 128,
+      "level": "INFO",
+      "message": "Exiting fetch_headlines",
+      "kind": "return",
+      "function": "fetch_headlines"
+    },
+    {
+      "line": 129,
+      "level": "INFO",
+      "message": "Exiting fetch_headlines",
+      "kind": "return",
+      "function": "fetch_headlines"
+    },
+    {
+      "line": 131,
+      "level": "DEBUG",
+      "message": "Entering fetch_article_detail",
+      "kind": "entry",
+      "function": "fetch_article_detail"
+    },
+    {
+      "line": 133,
+      "level": "INFO",
+      "message": "Exiting fetch_article_detail",
+      "kind": "return",
+      "function": "fetch_article_detail"
+    },
+    {
+      "line": 137,
+      "level": "INFO",
+      "message": "Exiting fetch_article_detail",
+      "kind": "return",
+      "function": "fetch_article_detail"
+    },
+    {
+      "line": 138,
+      "level": "INFO",
+      "message": "Exiting fetch_article_detail",
+      "kind": "return",
+      "function": "fetch_article_detail"
+    },
+    {
+      "line": 141,
+      "level": "DEBUG",
+      "message": "Entering load_config",
+      "kind": "entry",
+      "function": "load_config"
+    },
+    {
+      "line": 143,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 146,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 147,
+      "level": "ERROR",
+      "message": "Exception in load_config",
+      "kind": "exception",
+      "function": "load_config"
+    },
+    {
+      "line": 148,
+      "level": "INFO",
+      "message": "Exiting load_config",
+      "kind": "return",
+      "function": "load_config"
+    },
+    {
+      "line": 151,
+      "level": "DEBUG",
+      "message": "Entering load_local_articles",
+      "kind": "entry",
+      "function": "load_local_articles"
+    },
+    {
+      "line": 154,
+      "level": "INFO",
+      "message": "Exiting load_local_articles",
+      "kind": "return",
+      "function": "load_local_articles"
+    },
+    {
+      "line": 158,
+      "level": "ERROR",
+      "message": "Exception in load_local_articles",
+      "kind": "exception",
+      "function": "load_local_articles"
+    },
+    {
+      "line": 159,
+      "level": "INFO",
+      "message": "Exiting load_local_articles",
+      "kind": "return",
+      "function": "load_local_articles"
+    },
+    {
+      "line": 166,
+      "level": "INFO",
+      "message": "Exiting load_local_articles",
+      "kind": "return",
+      "function": "load_local_articles"
+    },
+    {
+      "line": 169,
+      "level": "DEBUG",
+      "message": "Entering save_digest",
+      "kind": "entry",
+      "function": "save_digest"
+    },
+    {
+      "line": 177,
+      "level": "ERROR",
+      "message": "Exception in save_digest",
+      "kind": "exception",
+      "function": "save_digest"
+    },
+    {
+      "line": 182,
+      "level": "DEBUG",
+      "message": "Entering filter_articles_by_score",
+      "kind": "entry",
+      "function": "filter_articles_by_score"
+    },
+    {
+      "line": 185,
+      "level": "INFO",
+      "message": "Exiting filter_articles_by_score",
+      "kind": "return",
+      "function": "filter_articles_by_score"
+    },
+    {
+      "line": 186,
+      "level": "INFO",
+      "message": "Exiting filter_articles_by_score",
+      "kind": "return",
+      "function": "filter_articles_by_score"
+    },
+    {
+      "line": 189,
+      "level": "DEBUG",
+      "message": "Entering group_by_source",
+      "kind": "entry",
+      "function": "group_by_source"
+    },
+    {
+      "line": 193,
+      "level": "INFO",
+      "message": "Exiting group_by_source",
+      "kind": "return",
+      "function": "group_by_source"
+    },
+    {
+      "line": 196,
+      "level": "DEBUG",
+      "message": "Entering summarize_sources",
+      "kind": "entry",
+      "function": "summarize_sources"
+    },
+    {
+      "line": 207,
+      "level": "INFO",
+      "message": "Exiting summarize_sources",
+      "kind": "return",
+      "function": "summarize_sources"
+    },
+    {
+      "line": 210,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 226,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 234,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 235,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "file": "script44.py",
+  "baseline_type": "heuristic",
+  "logs": [
+    {
+      "line": 16,
+      "level": "DEBUG",
+      "message": "Entering is_overdue",
+      "kind": "entry",
+      "function": "is_overdue"
+    },
+    {
+      "line": 20,
+      "level": "INFO",
+      "message": "Exiting is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 21,
+      "level": "INFO",
+      "message": "Exiting is_overdue",
+      "kind": "return",
+      "function": "is_overdue"
+    },
+    {
+      "line": 23,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 33,
+      "level": "DEBUG",
+      "message": "Entering from_dict",
+      "kind": "entry",
+      "function": "from_dict"
+    },
+    {
+      "line": 37,
+      "level": "ERROR",
+      "message": "Exception in from_dict",
+      "kind": "exception",
+      "function": "from_dict"
+    },
+    {
+      "line": 39,
+      "level": "INFO",
+      "message": "Exiting from_dict",
+      "kind": "return",
+      "function": "from_dict"
+    },
+    {
+      "line": 52,
+      "level": "DEBUG",
+      "message": "Entering __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 55,
+      "level": "DEBUG",
+      "message": "Entering add",
+      "kind": "entry",
+      "function": "add"
+    },
+    {
+      "line": 58,
+      "level": "DEBUG",
+      "message": "Entering get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 59,
+      "level": "INFO",
+      "message": "Exiting get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 61,
+      "level": "DEBUG",
+      "message": "Entering all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 62,
+      "level": "INFO",
+      "message": "Exiting all",
+      "kind": "return",
+      "function": "all"
+    },
+    {
+      "line": 64,
+      "level": "DEBUG",
+      "message": "Entering pending",
+      "kind": "entry",
+      "function": "pending"
+    },
+    {
+      "line": 65,
+      "level": "INFO",
+      "message": "Exiting pending",
+      "kind": "return",
+      "function": "pending"
+    },
+    {
+      "line": 67,
+      "level": "DEBUG",
+      "message": "Entering to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 68,
+      "level": "INFO",
+      "message": "Exiting to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 71,
+      "level": "DEBUG",
+      "message": "Entering load_board",
+      "kind": "entry",
+      "function": "load_board"
+    },
+    {
+      "line": 74,
+      "level": "INFO",
+      "message": "Exiting load_board",
+      "kind": "return",
+      "function": "load_board"
+    },
+    {
+      "line": 78,
+      "level": "ERROR",
+      "message": "Exception in load_board",
+      "kind": "exception",
+      "function": "load_board"
+    },
+    {
+      "line": 79,
+      "level": "INFO",
+      "message": "Exiting load_board",
+      "kind": "return",
+      "function": "load_board"
+    },
+    {
+      "line": 84,
+      "level": "INFO",
+      "message": "Exiting load_board",
+      "kind": "return",
+      "function": "load_board"
+    },
+    {
+      "line": 87,
+      "level": "DEBUG",
+      "message": "Entering save_board",
+      "kind": "entry",
+      "function": "save_board"
+    },
+    {
+      "line": 93,
+      "level": "ERROR",
+      "message": "Exception in save_board",
+      "kind": "exception",
+      "function": "save_board"
+    },
+    {
+      "line": 94,
+      "level": "INFO",
+      "message": "Exiting save_board",
+      "kind": "return",
+      "function": "save_board"
+    },
+    {
+      "line": 97,
+      "level": "DEBUG",
+      "message": "Entering filter_overdue",
+      "kind": "entry",
+      "function": "filter_overdue"
+    },
+    {
+      "line": 100,
+      "level": "INFO",
+      "message": "Exiting filter_overdue",
+      "kind": "return",
+      "function": "filter_overdue"
+    },
+    {
+      "line": 103,
+      "level": "DEBUG",
+      "message": "Entering compute_summary",
+      "kind": "entry",
+      "function": "compute_summary"
+    },
+    {
+      "line": 106,
+      "level": "INFO",
+      "message": "Exiting compute_summary",
+      "kind": "return",
+      "function": "compute_summary"
+    },
+    {
+      "line": 109,
+      "level": "INFO",
+      "message": "Exiting compute_summary",
+      "kind": "return",
+      "function": "compute_summary"
+    },
+    {
+      "line": 112,
+      "level": "DEBUG",
+      "message": "Entering main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 116,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "exception",
+      "function": "main"
+    },
+    {
+      "line": 117,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 149,
+      "level": "ERROR",
+      "message": "Exception in main",
+      "kind": "exception",
+      "function": "main"
+    },
+    {
+      "line": 150,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    },
+    {
+      "line": 160,
+      "level": "INFO",
+      "message": "Exiting main",
+      "kind": "return",
+      "function": "main"
+    }
+  ]
+}
