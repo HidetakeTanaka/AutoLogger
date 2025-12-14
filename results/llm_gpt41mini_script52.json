@@ -1,0 +1,131 @@
+{
+  "file": "script52.py",
+  "logs": [
+    {
+      "line": 29,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering matches_query with query='{query}'\")"
+    },
+    {
+      "line": 48,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data: {raw}\")"
+    },
+    {
+      "line": 63,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Failed to parse due date from raw data: %s', due_raw, exc_info=True)"
+    },
+    {
+      "line": 73,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering add_task with task: {task}\")"
+    },
+    {
+      "line": 90,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering from_dict with raw data keys: {list(raw.keys())}\")"
+    },
+    {
+      "line": 107,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f'Initializing PlannerClient with base_url={base_url} and timeout={timeout}')"
+    },
+    {
+      "line": 111,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering _url with path: {path}\")"
+    },
+    {
+      "line": 114,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered fetch_remote_tasks with project_id={project_id}\")"
+    },
+    {
+      "line": 124,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Exception occurred while fetching remote tasks for project_id {project_id} from {url}', exc_info=True)"
+    },
+    {
+      "line": 128,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering load_project with path: {path}\")"
+    },
+    {
+      "line": 146,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred while loading project at path %s', path, exc_info=True)"
+    },
+    {
+      "line": 150,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering save_project with path={path} and project={project}\")"
+    },
+    {
+      "line": 157,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save project at {path} with payload {payload}', exc_info=True)"
+    },
+    {
+      "line": 161,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error(f'Failed to save project at {path}', exc_info=True)"
+    },
+    {
+      "line": 165,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering merge_remote_tasks for project {project} with {len(list(remote_rows))} remote rows\")"
+    },
+    {
+      "line": 181,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f'Merge completed: {len(added)} tasks added to project {project}')"
+    },
+    {
+      "line": 184,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entering choose_next_task with project: {project}\")"
+    },
+    {
+      "line": 196,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered summarize_project for project: {project.name}\")"
+    },
+    {
+      "line": 202,
+      "kind": "return",
+      "level": "INFO",
+      "message": "logging.info(f\"Project summary computed: total={total}, completed={completed}, overdue={overdue}, completion_rate={completed / total:.2f}\")"
+    },
+    {
+      "line": 210,
+      "kind": "entry",
+      "level": "DEBUG",
+      "message": "logging.debug(f\"Entered main function with base_dir={base_dir}, base_url={base_url}\")"
+    },
+    {
+      "line": 236,
+      "kind": "exception",
+      "level": "ERROR",
+      "message": "logging.error('Exception occurred in main function', exc_info=True)"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "file": "script59.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 19,
+      "level": "WARNING",
+      "message": "Random log at line 19 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 20,
+      "level": "INFO",
+      "message": "Random log at line 20 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 37,
+      "level": "ERROR",
+      "message": "Random log at line 37 in latest",
+      "kind": "return",
+      "function": "latest"
+    },
+    {
+      "line": 38,
+      "level": "DEBUG",
+      "message": "Random log at line 38 in latest",
+      "kind": "return",
+      "function": "latest"
+    },
+    {
+      "line": 40,
+      "level": "DEBUG",
+      "message": "Random log at line 40 in recent_values",
+      "kind": "entry",
+      "function": "recent_values"
+    },
+    {
+      "line": 68,
+      "level": "DEBUG",
+      "message": "Random log at line 68 in from_dict",
+      "kind": "exception",
+      "function": "from_dict"
+    },
+    {
+      "line": 73,
+      "level": "ERROR",
+      "message": "Random log at line 73 in __init__",
+      "kind": "entry",
+      "function": "__init__"
+    },
+    {
+      "line": 80,
+      "level": "WARNING",
+      "message": "Random log at line 80 in get",
+      "kind": "entry",
+      "function": "get"
+    },
+    {
+      "line": 81,
+      "level": "ERROR",
+      "message": "Random log at line 81 in get",
+      "kind": "return",
+      "function": "get"
+    },
+    {
+      "line": 83,
+      "level": "WARNING",
+      "message": "Random log at line 83 in all",
+      "kind": "entry",
+      "function": "all"
+    },
+    {
+      "line": 120,
+      "level": "INFO",
+      "message": "Random log at line 120 in fetch",
+      "kind": "exception",
+      "function": "fetch"
+    },
+    {
+      "line": 138,
+      "level": "WARNING",
+      "message": "Random log at line 138 in load_network",
+      "kind": "exception",
+      "function": "load_network"
+    },
+    {
+      "line": 139,
+      "level": "WARNING",
+      "message": "Random log at line 139 in load_network",
+      "kind": "return",
+      "function": "load_network"
+    },
+    {
+      "line": 144,
+      "level": "INFO",
+      "message": "Random log at line 144 in save_network",
+      "kind": "entry",
+      "function": "save_network"
+    },
+    {
+      "line": 154,
+      "level": "ERROR",
+      "message": "Random log at line 154 in save_network",
+      "kind": "exception",
+      "function": "save_network"
+    },
+    {
+      "line": 186,
+      "level": "DEBUG",
+      "message": "Random log at line 186 in sync_remote_metrics",
+      "kind": "return",
+      "function": "sync_remote_metrics"
+    },
+    {
+      "line": 205,
+      "level": "WARNING",
+      "message": "Random log at line 205 in main",
+      "kind": "entry",
+      "function": "main"
+    },
+    {
+      "line": 223,
+      "level": "ERROR",
+      "message": "Random log at line 223 in main",
+      "kind": "exception",
+      "function": "main"
+    }
+  ]
+}

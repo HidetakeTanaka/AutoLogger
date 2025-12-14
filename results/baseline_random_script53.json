@@ -1,0 +1,113 @@
+{
+  "file": "script53.py",
+  "baseline_type": "random",
+  "seed": 42,
+  "probability": 0.3,
+  "logs": [
+    {
+      "line": 23,
+      "level": "WARNING",
+      "message": "Random log at line 23 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 24,
+      "level": "INFO",
+      "message": "Random log at line 24 in is_recent",
+      "kind": "return",
+      "function": "is_recent"
+    },
+    {
+      "line": 32,
+      "level": "ERROR",
+      "message": "Random log at line 32 in matches",
+      "kind": "return",
+      "function": "matches"
+    },
+    {
+      "line": 34,
+      "level": "DEBUG",
+      "message": "Random log at line 34 in to_dict",
+      "kind": "entry",
+      "function": "to_dict"
+    },
+    {
+      "line": 35,
+      "level": "DEBUG",
+      "message": "Random log at line 35 in to_dict",
+      "kind": "return",
+      "function": "to_dict"
+    },
+    {
+      "line": 68,
+      "level": "DEBUG",
+      "message": "Random log at line 68 in add_product",
+      "kind": "return",
+      "function": "add_product"
+    },
+    {
+      "line": 72,
+      "level": "ERROR",
+      "message": "Random log at line 72 in find",
+      "kind": "return",
+      "function": "find"
+    },
+    {
+      "line": 75,
+      "level": "WARNING",
+      "message": "Random log at line 75 in recent_products",
+      "kind": "return",
+      "function": "recent_products"
+    },
+    {
+      "line": 77,
+      "level": "ERROR",
+      "message": "Random log at line 77 in total_value",
+      "kind": "entry",
+      "function": "total_value"
+    },
+    {
+      "line": 78,
+      "level": "WARNING",
+      "message": "Random log at line 78 in total_value",
+      "kind": "return",
+      "function": "total_value"
+    },
+    {
+      "line": 127,
+      "level": "INFO",
+      "message": "Random log at line 127 in load_inventory",
+      "kind": "return",
+      "function": "load_inventory"
+    },
+    {
+      "line": 161,
+      "level": "WARNING",
+      "message": "Random log at line 161 in summarize_inventory",
+      "kind": "return",
+      "function": "summarize_inventory"
+    },
+    {
+      "line": 164,
+      "level": "WARNING",
+      "message": "Random log at line 164 in summarize_inventory",
+      "kind": "return",
+      "function": "summarize_inventory"
+    },
+    {
+      "line": 180,
+      "level": "INFO",
+      "message": "Random log at line 180 in pick_random_product",
+      "kind": "return",
+      "function": "pick_random_product"
+    },
+    {
+      "line": 184,
+      "level": "ERROR",
+      "message": "Random log at line 184 in main",
+      "kind": "entry",
+      "function": "main"
+    }
+  ]
+}
