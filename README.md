@@ -1,253 +1,177 @@
 # AutoLogger – AI-Assisted Automatic Logging for Python
 
-AutoLogger is an AI-assisted system that automatically generates and inserts Python logging statements into source code.
-It combines AST-based program analysis, LLM reasoning, and baseline heuristic methods to produce high-quality logging suggestions and evaluate them against human-annotated gold standard logs.
+AutoLogger is an AI-assisted framework for **automatic log position selection** in Python source code.
+It combines **AST-based static analysis**, **baseline heuristics**, and **large language models (LLMs)** to suggest logging positions and evaluate them against **manually curated gold annotations**.
 
-Inspired by UniLog (ICSE 2024), this project is developed as part of the Software Engineering course at HSRW (WS2025/26).
-
----
-
-
-## Features
-- Python **AST-based analysis** to extract candidate logging locations
-- **Heuristic baseline** and **Random baseline** implementations
-- **Multiple LLM backends:**
-  - OpenAI GPT-4.1-mini
-  - OpenAI GPT-5.1
-  - Google Flan-T5 (base / large)
-- **Unified evaluation pipeline with:**
-  - True Positives (TP)
-  - False Positives (FP)
-  - False Negatives (FN)
-  - Precision, Recall, F1-score
-  - (Optional) Position accuracy metrics
-
-
+This project is inspired by **UniLog (ICSE 2024)** and was developed as part of the
+**Software Engineering course at Hochschule Rhein-Waal (WS 2025/26)**.
 
 ---
 
-# 1. Installation
+## Key Features
 
-## 1.1. Clone the Repository
-```bash
-git clone https://github.com/<your-username>/AutoLogger.git
-cd AutoLogger
+* AST-based extraction of candidate logging positions
+* Heuristic and random baseline implementations
+* LLM-based log position selection:
 
-```
+  * OpenAI GPT-4.1-mini
+  * OpenAI GPT-5.1
+  * Google Flan-T5 (base / large)
+* Unified **position-only evaluation pipeline**
 
-
-
-## 1.2. Create and Activate a Virtual Environment
-```bash
-python3 -m venv venv
-source venv/bin/activate     # macOS/Linux
-venv\Scripts\activate        # Windows
-
-```
-
-
-
-## 1.3. Install Dependencies
-```bash
-pip install -r requirements.txt
-
-```
-
-
-
-## 1.4. Configure API Keys (we use OpenAI for GPT and HuggingFace for Flan-T5)
-```bash
-export OPENAI_API_KEY="your_key_here"
-export HUGGINGFACE_API_KEY="your_key_here"
-
-```
-
-
+  * TP / FP / FN
+  * Precision, Recall, F1 (macro & micro)
+* Cross-platform reproducibility (Windows / macOS / Linux)
+* Fully documented gold annotation policy and JSON schema
 
 ---
 
-# 2. Project Structure
+## Installation & Environment Setup
 
-```bash
+**Using a virtual environment is mandatory!**
+
+AutoLogger is developed and evaluated using **Conda (Python 3.11)**.
+Please follow the unified setup guide: **`docs/environment_setup.md`** 
+
+This guide covers:
+
+* Windows / macOS / Linux
+* API key setup (OpenAI & HuggingFace)
+* Cloud Resilience Lab compatibility
+
+---
+
+## Project Structure
+
+```text
 AutoLogger/
-  ├── baselines/
-  │     ├── baseline_heuristic.py
-  │     ├── baseline_random.py
-  │     └── results_*.json
-  ├── parser/
-  │     └── ast_parser.py
-  ├── llm/
-  │     ├── llm_openai.py
-  │     ├── llm_flan.py
-  │     └── llm_utils.py
-  ├── dataset/
-  │     ├── raw/                 # LLM output candidates
-  │     └── gold/                # Human-annotated gold labels
-  ├── results/
-  ├── scripts/
-  │     ├── run_eval_sample1.sh
-  │     ├── run_eval_sample2.sh
-  │     └── scriptXX.py
-  └── README.md
-
+├── baselines/
+│   ├── baseline_heuristic.py
+│   ├── baseline_random.py
+│   ├── *.json                    # baseline outputs
+├── dataset/
+│   ├── gold_logs/
+│   │    ├── gold_logs_scriptXX/  # per-script gold annotations
+│   └── raw/                      # sample1.py, sample2.py and FLAN-T5 outputs
+├── docs/
+│   ├── environment_setup.md
+│   ├── evaluation_guide.md
+│   ├── handwriting_goldjson_guide.md
+│   └── schema.md
+├── eval/
+│   ├── convert_llm_for_eval.py
+│   ├── eval_message_quality.py   
+│   └── eval_positions.py
+├── llm/
+│   └── autologger.py
+├── parser/
+│   └── parser.py
+├── results/
+│   └── *.json                    # evaluation outputs
+├── scripts/
+│   └── scriptXX.py               # input programs
+├── requirements.txt
+├── pyproject.toml
+└── README.md
 ```
 
 ---
 
-# 3. Running Demo Evaluations
-AutoLogger includes two demo scripts (sample1.py and sample2.py) to verify the full
-pipeline.
+## Evaluation Workflow (High-Level)
 
+1. **Parse source code** to extract candidate log positions
+2. **Manually create gold annotations** from candidates
+3. **Run baseline or LLM-based selection**
+4. **Evaluate predicted positions** against gold annotations
 
-## 3.1. Run Sample 1
-```bash
-cd scripts
-./run_eval_sample1.sh
+Detailed, step-by-step instructions are provided in: **`docs/evaluation_guide.md`** 
 
-```
-
-
-This will run the following proceduces...:
-* Heuristic baseline
-* Random baseline
-* LLM (GPT-4.1-mini)
-* LLM (GPT-5.1)
-* LLM (Flan-T5 base)
-* LLM (Flan-T5 large)
-
-Outputs will be stored in:
-
-```bash
-baselines/
-dataset/raw/
-results/
-
-```
-
-
-
-## 3.2. Run Sample 2
-```bash
-./run_eval_sample2.sh
-
-```
 ---
 
-# 4. Understanding Evaluation Metrics
-Each evaluation produces the following values:
+## Gold Annotation Policy
 
-**True Positives (TP):**<br>
-The model inserted a log statement at a location that is also annotated in the gold labels.
+Gold annotations are **manually written** and **strictly constrained** to parser-generated candidates.
 
-**False Positives (FP):** <br>
-The model inserted a log in a location that is not in the gold labels.
+* Gold files are **not generated automatically**
+* LLMs may assist annotation, but final decisions are human-defined
+* This ensures fair and reproducible evaluation
 
-**False Negatives (FN)**: <br>
-The model missed a gold-label location.
+Detailed rules, examples, and formatting guidelines are documented in: **`docs/handwriting_goldjson_guide.md`** 
 
-### Precision
-```ini
+---
+
+## JSON Schema
+
+All intermediate and final JSON files follow a shared schema across modules:
+
+* Parser output
+* Baseline predictions
+* LLM predictions
+* Gold annotations
+* Evaluation inputs
+
+The authoritative schema is defined in: **`docs/schema.md`** 
+
+---
+
+## Example Commands
+
+### Run parser
+
+```bash
+python parser/parser.py scripts/script31.py
+```
+
+### Run GPT-4.1-mini
+
+```bash
+python llm/autologger2.py \
+  scripts/script31.candidates.json \
+  --provider openai \
+  --model gpt-4.1-mini
+```
+
+### Run evaluation
+
+```bash
+python eval/eval_positions.py \
+  dataset/gold_logs/gold_logs_script31 \
+  results/llm_gpt41mini_script31.json
+```
+
+---
+
+## Evaluation Metrics
+
+AutoLogger evaluates **log position accuracy only**.
+
+* **True Positive (TP)**: predicted position exists in gold
+* **False Positive (FP)**: predicted position not in gold
+* **False Negative (FN)**: gold position not predicted
+
+```text
 Precision = TP / (TP + FP)
-```
-### Recall
-```ini
-Recall = TP / (TP + FN)
-```
-### F1-Score
-```ini
-F1 = 2 * (Precision * Recall) / (Precision + Recall)
+Recall    = TP / (TP + FN)
+F1-score  = 2 * (Precision * Recall) / (Precision + Recall)
 ```
 
-All metrics are printed automatically in the console after each model/baseline finishes!
+Both **macro-averaged** and **micro-averaged** metrics are reported.
 
 ---
 
-# 5. Output Files
+## Authors & Contributions
 
-## 5.1. Baseline outputs
-```bash
-baselines/results_heuristic.json
-baselines/results_random.json
+Developed by **Group 7 (Software Engineering WS 2025/26, HSRW)**:
 
-```
-
-## 5.2. LLM raw predictions
-```bash
-dataset/raw/<filename>.candidates.logs.json
-
-```
-
-## 5.3. LLM converted predictions
-```bash
-results/llm_<model>_<script>.json
-
-```
-
-## 5.4. Final evaluation summaries
-Printed in terminal and stored inside results/.
-<br>
+* **Hidetake Tanaka (34254)** — AST parser, evaluation pipeline, integration, coordination
+* **Khushi Trivedi (35726)** — LLM integration, runtime validation, Cloud Resilience Lab testing
+* **Farhana Easmin Mithila (32050)** — Baseline implementations
+* **Farjana Akter (33565)** — Evaluation framework and dataset coordination
 
 ---
 
-## 6. Extending the Evaluation to Larger Datasets
-1. Place new Python source files inside:
+## License
 
-```bash
-dataset/source/
-```
-
-2. Create corresponding gold-label log files in:
-
-```bash
-dataset/gold/
-```
-
-3. Run the full evaluation:
-```bash
-./scripts/run_eval_dataset.sh
-```
-<br>
-
-# 7. Troubleshooting
-Q1. If no API key found like this below?: 
-```bash
-openai.error.AuthenticationError: No API key provided.
-
-```
-
-A1. Add your API key:
-```bash
-export OPENAI_API_KEY="your_key_here"
-```
-<br>
-Q2. If HuggingFace model not available?<br>
-A2. Install additional packages:
-
-```bash
-pip install transformers accelerate
-```
-<br>
-Q3. If UTF-8 encoding issues on Windows? <br>
-A3. Use this code below:
-
-```bash
-export PYTHONUTF8=1
-```
-
----
-
-# 8. Authors
-Developed by Group 7 (Software Engineering WS2025/26, HSRW):
-
-A: AST Parser Developer: Hidetake Tanaka(34254)
-
-B: LLM Integration: Khushi
-
-C: Baseline Implementations: Mithila
-
-D: Dataset & Integration Testing: Zarin
-
----
-
-# 9. License
 MIT License.
+
+---
