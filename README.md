@@ -25,6 +25,16 @@ This project is inspired by **UniLog (ICSE 2024)** and was developed as part of 
 * Fully documented gold annotation policy and JSON schema
 
 ---
+## Repository Setup
+
+Clone the AutoLogger repository from GitHub:
+
+```bash
+git clone https://github.com/HidetakeTanaka/AutoLogger.git
+cd AutoLogger
+```
+
+---
 
 ## Installation & Environment Setup
 
