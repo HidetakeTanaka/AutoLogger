@@ -176,6 +176,13 @@ scripts and evaluation phases.
 
 ## **I-3. Create gold directory and move the file**
 
+**Note:**  
+In the current repository structure, the directory `dataset/gold_logs/gold_logs_script31/` may already exist and already contain `script31_gold.json`.
+
+If the file is already present in this directory, you can **skip this step**.  
+The following commands are only required when the gold file has been newly created　and is still located at `dataset/gold_logs/script31_gold.json`.
+
+
 ### macOS / Linux
 
 ```bash
